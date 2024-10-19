@@ -1,0 +1,10 @@
+title: Your Name
+description: Your personal website and blog
+url: "https://terrylinhaochen.github.io"
+github_username: terrylinhaochen
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
