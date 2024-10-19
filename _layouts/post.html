@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<article class="post">
+    <h2>{{ page.title }}</h2>
+    <p class="post-meta">
+        Date: {{ page.date | date: "%B %d, %Y" }} | 
+        Estimated Reading Time: {{ content | number_of_words | divided_by: 200 | plus: 1 }} min |
+        Author: {{ page.author }}
+    </p>
+    {{ content }}
+</article>

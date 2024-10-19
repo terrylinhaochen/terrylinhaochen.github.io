@@ -1,10 +1,4 @@
-title: Your Name
-description: Your personal website and blog
+title: Terry's Blog
+description: Hi, this is Terry. I'm documenting my product ideas and learning notes in this blog. I'm interested in llm generation synthesis and data insights through content understanding across text, image, and audio. Feel free to reach me at terrychen2026@u.northwestern.edu
 url: "https://terrylinhaochen.github.io"
 github_username: terrylinhaochen
-
-# Build settings
-markdown: kramdown
-theme: minima
-plugins:
-  - jekyll-feed
