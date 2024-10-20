@@ -1,8 +1,8 @@
 ---
 layout: post
-title: The Beginning"
-date: 2024-10-19
+title: One post to start them all
+date: 2024-10-17
 author: Terry Chen
 ---
 
-This is the content of your first blog post.
+Inspiration unlocks the future, technology will catch up. -Hayao Miyazaki
