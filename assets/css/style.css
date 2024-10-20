@@ -55,3 +55,24 @@ footer {
     margin-top: 40px;
     display: none;
 }
+
+#search-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#search-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#results-container {
+    margin-top: 20px;
+    list-style-type: none;
+    padding: 0;
+}
+
+#results-container li {
+    margin-bottom: 10px;
+}

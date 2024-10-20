@@ -3,3 +3,6 @@ description: Hi, this is Terry. I'm documenting my product thoughts and learning
 url: "https://terrylinhaochen.github.io"
 github_username: terrylinhaochen
 linkedin_username: terry-chen-3b44911a4
+collections:
+  projects:
+    output: true
