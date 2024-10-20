@@ -5,20 +5,11 @@ layout: null
   {% for post in site.posts %}
     {
       "title"    : "{{ post.title | escape }}",
+      "category" : "{{ post.category }}",
+      "tags"     : "{{ post.tags | join: ', ' }}",
       "url"      : "{{ site.baseurl }}{{ post.url }}",
-      "content"  : {{ post.content | strip_html | jsonify }},
-      "snippet"  : "{{ post.content | strip_html | truncatewords: 20 | escape }}"
-    }{% unless forloop.last %},{% endunless %}
+      "date"     : "{{ post.date | date: '%B %d, %Y' }}",
+      "content"  : {{ post.content | strip_html | jsonify }}
+    } {% unless forloop.last %},{% endunless %}
   {% endfor %}
-  {% if site.projects %}
-    ,
-    {% for project in site.projects %}
-      {
-        "title"    : "{{ project.title | escape }}",
-        "url"      : "{{ site.baseurl }}{{ project.url }}",
-        "content"  : {{ project.content | strip_html | jsonify }},
-        "snippet"  : "{{ project.content | strip_html | truncatewords: 20 | escape }}"
-      }{% unless forloop.last %},{% endunless %}
-    {% endfor %}
-  {% endif %}
 ]

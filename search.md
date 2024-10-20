@@ -4,21 +4,20 @@ title: Search
 permalink: /search/
 ---
 
-<div class="search-container">
-    <h1>Search <span class="search-icon">🔍</span></h1>
-    <input type="text" id="search-input" placeholder="Search posts and projects...">
+<div id="search-container">
+    <input type="text" id="search-input" placeholder="Search blog posts...">
     <ul id="results-container"></ul>
 </div>
 
 <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
 <script>
-SimpleJekyllSearch({
+    SimpleJekyllSearch({
     searchInput: document.getElementById('search-input'),
     resultsContainer: document.getElementById('results-container'),
-    json: '/search.json',
-    searchResultTemplate: '<li><a href="{url}">{title}</a><p>{snippet}</p></li>',
+    json: '{{ site.baseurl }}/search.json',
+    searchResultTemplate: '<li><a href="{url}">{title}</a><br><span>{date}</span></li>',
     noResultsText: 'No results found',
     limit: 10,
-    fuzzy: false,
-})
+    fuzzy: false
+    })
 </script>

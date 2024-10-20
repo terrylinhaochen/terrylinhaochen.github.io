@@ -20,10 +20,9 @@
         {{ content }}
     </main>
     <footer>
-        <a href="https://github.com/{{ site.github_username }}"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/terry-chen-3b44911a4/" target="_blank">
-        <img src="assets/linkedin_icon.png" alt="LinkedIn" />
-    </a>
+        <a href="{{ '/feed.xml' | relative_url }}" target="_blank"><i class="fas fa-rss"></i></a>
+        <a href="https://github.com/{{ site.github_username }}" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank"><i class="fab fa-linkedin"></i></a>
     </footer>
 </body>
 </html>

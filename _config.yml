@@ -6,3 +6,5 @@ linkedin_username: terry-chen-3b44911a4
 collections:
   projects:
     output: true
+baseurl: ""
+
