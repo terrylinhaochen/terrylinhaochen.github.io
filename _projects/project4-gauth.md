@@ -3,5 +3,5 @@ layout: post
 title: "Gauth AI"
 date: 2024-8-20
 ---
-AI Homework Helper for All School Subjects
+AI Homework helper with advanced reasoning and visualization for all school subjects.
 https://www.gauthmath.com/
