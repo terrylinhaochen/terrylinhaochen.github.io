@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "TikTok Insight Spotlight"
+title: "Insight Spotlight"
 date: 2024-8-20
 ---
-Managed Insight Products; leverage billion parameter data to provide actionable trends & insights for key agencies. 
-Currently in Beta. 
+Analyze thousands of tiktoks to provide actionable trends & insights for key agencies. (Worked on multi-modal content understanding)
+Currently in Beta, to be released on TikTok Creative Center (https://ads.tiktok.com/business/creativecenter/pc/en)
