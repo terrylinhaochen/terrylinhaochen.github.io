@@ -7,3 +7,18 @@ collections:
   projects:
     output: true
 baseurl: ""
+
+menu:
+  main:
+    - name: Posts
+      url: /
+      weight: 10
+    - name: Projects
+      url: /projects/
+      weight: 20
+    - name: Search
+      url: /search/
+      weight: 30
+    - name: Subscribe
+      url: /subscribe/
+      weight: 40

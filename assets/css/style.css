@@ -94,3 +94,15 @@ footer {
     font-size: 0.8em;
     color: #666;
 }
+
+.subscribe-form {
+    /* Add any additional styles for the subscribe form container */
+}
+
+.subscribe-form iframe {
+    /* Customize the embedded Google Form */
+    width: 100%;
+    height: 200px;  /* Adjust as needed */
+    border: none;
+    background-color: transparent;
+}
