@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "5 Minute Journals"
-date: 2024-10-23
+title: "Insight extraction from popular opinion"
+date: 2024-11-06
 ---
-5 minute of realtime conversation to help you note down journals for the day.
+Multi-modal ai content understanding for opinion and insight extraction from shortform videos. (crowdlistening.com)
