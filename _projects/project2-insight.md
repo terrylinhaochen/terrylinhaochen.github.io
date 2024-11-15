@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Insight Spotlight"
+title: "TikTok Insight Spotlight"
 date: 2024-8-20
 ---
 Analyze thousands of tiktoks to provide actionable trends & insights for key agencies. (Worked on multi-modal content understanding)
