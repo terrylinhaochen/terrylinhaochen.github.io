@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Social Listening"
+title: "Crowd Listening"
 date: 2024-11-06
 category: startup
 url: crowdlistening.com
