@@ -1,16 +1,163 @@
 ---
 layout: default
 ---
-<div class="projects">
-  <h1>{{ page.title }}</h1>
 
-  {% for project in site.projects %}
-    <article class="post-preview">
-      <h2><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h2>
-      <p>{{ project.excerpt | strip_html | truncatewords: 30 }}</p>
-      <p class="post-meta">
-        Date: {{ project.date | date: "%B %d, %Y" }}
-      </p>
-    </article>
-  {% endfor %}
+<style>
+  .projects-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  
+  .section {
+    margin-bottom: 3rem;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .projects-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .projects-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .project-card {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .project-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-title a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .project-title a:hover {
+    color: #0066cc;
+  }
+  
+  .project-description {
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  
+  .project-meta {
+    font-size: 0.875rem;
+    color: #888;
+  }
+</style>
+
+<div class="projects-container">
+  <h1>Projects</h1>
+  
+  <!-- Work Projects -->
+  {% assign work_projects = site.projects | where: "category", "work" %}
+  {% if work_projects.size > 0 %}
+  <section class="section">
+    <h2 class="section-title">Work Experience</h2>
+    <div class="projects-grid">
+      {% for project in work_projects %}
+      <div class="project-card">
+        <h3 class="project-title">
+          <a href="{{ project.url }}">{{ project.title }}</a>
+        </h3>
+        <p class="project-description">{{ project.excerpt | strip_html | truncate: 160 }}</p>
+        <p class="project-meta">
+          {{ project.date | date: "%B %d, %Y" }}
+        </p>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+  
+  <!-- Startup Projects -->
+  {% assign startup_projects = site.projects | where: "category", "startup" %}
+  {% if startup_projects.size > 0 %}
+  <section class="section">
+    <h2 class="section-title">Startup Projects</h2>
+    <div class="projects-grid">
+      {% for project in startup_projects %}
+      <div class="project-card">
+        <h3 class="project-title">
+          <a href="{{ project.url }}">{{ project.title }}</a>
+        </h3>
+        <p class="project-description">{{ project.excerpt | strip_html | truncate: 160 }}</p>
+        <p class="project-meta">
+          {{ project.date | date: "%B %d, %Y" }}
+        </p>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+  
+  <!-- Research Projects -->
+  {% assign research_projects = site.projects | where: "category", "research" %}
+  {% if research_projects.size > 0 %}
+  <section class="section">
+    <h2 class="section-title">Research</h2>
+    <div class="projects-grid">
+      {% for project in research_projects %}
+      <div class="project-card">
+        <h3 class="project-title">
+          <a href="{{ project.url }}">{{ project.title }}</a>
+        </h3>
+        <p class="project-description">{{ project.excerpt | strip_html | truncate: 160 }}</p>
+        <p class="project-meta">
+          {{ project.date | date: "%B %d, %Y" }}
+        </p>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  <!-- Product Prototypes -->
+  {% assign prototype_projects = site.projects | where: "category", "prototype" %}
+  {% if prototype_projects.size > 0 %}
+  <section class="section">
+    <h2 class="section-title">Product Prototypes</h2>
+    <div class="projects-grid">
+      {% for project in prototype_projects %}
+      <div class="project-card">
+        <h3 class="project-title">
+          <a href="{{ project.url }}">{{ project.title }}</a>
+        </h3>
+        <p class="project-description">{{ project.excerpt | strip_html | truncate: 160 }}</p>
+        <p class="project-meta">
+          {{ project.date | date: "%B %d, %Y" }}
+        </p>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
 </div>
