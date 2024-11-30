@@ -4,7 +4,7 @@ layout: default
 
 <style>
   .projects-container {
-    max-width: 800px;  /* Reduced from 1200px to match posts width */
+    max-width: 800px;
     margin: 0 auto;
     padding: 2rem 1rem;
   }
@@ -48,12 +48,18 @@ layout: default
     color: #333;
   }
   
+  .project-description {
+    color: #666;
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+  }
+  
   .project-meta {
     font-size: 0.875rem;
     color: #888;
   }
 
-  /* Modal styles remain the same */
+  /* Modal styles */
   .modal-overlay {
     position: fixed;
     top: 0;
@@ -116,6 +122,7 @@ layout: default
       {% for project in work_projects %}
       <div class="project-card" onclick="openModal('{{ project.title | slugify }}')">
         <h3 class="project-title">{{ project.title }}</h3>
+        <p class="project-description">{{ project.excerpt | strip_html | truncate: 160 }}</p>
         <p class="project-meta">
           {{ project.date | date: "%B %d, %Y" }}
         </p>
@@ -134,6 +141,7 @@ layout: default
       {% for project in startup_projects %}
       <div class="project-card" onclick="openModal('{{ project.title | slugify }}')">
         <h3 class="project-title">{{ project.title }}</h3>
+        <p class="project-description">{{ project.excerpt | strip_html | truncate: 160 }}</p>
         <p class="project-meta">
           {{ project.date | date: "%B %d, %Y" }}
         </p>
@@ -152,6 +160,7 @@ layout: default
       {% for project in research_projects %}
       <div class="project-card" onclick="openModal('{{ project.title | slugify }}')">
         <h3 class="project-title">{{ project.title }}</h3>
+        <p class="project-description">{{ project.excerpt | strip_html | truncate: 160 }}</p>
         <p class="project-meta">
           {{ project.date | date: "%B %d, %Y" }}
         </p>
@@ -170,6 +179,7 @@ layout: default
       {% for project in prototype_projects %}
       <div class="project-card" onclick="openModal('{{ project.title | slugify }}')">
         <h3 class="project-title">{{ project.title }}</h3>
+        <p class="project-description">{{ project.excerpt | strip_html | truncate: 160 }}</p>
         <p class="project-meta">
           {{ project.date | date: "%B %d, %Y" }}
         </p>
