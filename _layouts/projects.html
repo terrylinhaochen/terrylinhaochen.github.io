@@ -71,26 +71,27 @@ layout: default
     justify-content: center;
     align-items: center;
     z-index: 1000;
+    padding: 2rem;  /* Added padding to ensure modal doesn't touch screen edges */
   }
 
   .modal {
     background-color: white;
     border-radius: 8px;
-    padding: 2rem;
-    max-width: 600px;
-    width: 90%;
-    max-height: 90vh;
+    padding: 3rem;  /* Increased padding */
+    max-width: 900px;  /* Increased from 600px */
+    width: 95%;    /* Increased from 90% */
+    max-height: 95vh; /* Increased from 90vh */
     overflow-y: auto;
     position: relative;
   }
 
   .modal-close {
     position: absolute;
-    top: 1rem;
-    right: 1rem;
+    top: 1.5rem;   /* Adjusted for new padding */
+    right: 1.5rem; /* Adjusted for new padding */
     background: none;
     border: none;
-    font-size: 1.5rem;
+    font-size: 1.75rem; /* Slightly larger close button */
     cursor: pointer;
     color: #666;
   }
@@ -105,8 +106,9 @@ layout: default
   }
   
   .modal-content {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     line-height: 1.6;
+    font-size: 1.1rem;  /* Slightly larger content text */
   }
 </style>
 
