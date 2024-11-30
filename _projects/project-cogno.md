@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Cogno AI"
+title: "Cogno"
 date: 2024-3-1
 category: startup
 url: https://cognogpt.com

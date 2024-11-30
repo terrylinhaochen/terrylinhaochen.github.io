@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "TikTok Insight Spotlight"
+title: "Insight Spotlight"
 date: 2024-8-20
 category: work
 url: [url]

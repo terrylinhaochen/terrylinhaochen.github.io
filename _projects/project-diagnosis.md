@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Multimodal Medical Diagnosis"
+title: "Medical Diagnosis"
 date: 2023-12-01
 category: research
 url: [url]

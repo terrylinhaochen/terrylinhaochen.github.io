@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "TikTok Symphony"
+title: "Symphony Assistant"
 date: 2024-5-20
 category: work
 url: https://ads.tiktok.com/business/copilot/standalone

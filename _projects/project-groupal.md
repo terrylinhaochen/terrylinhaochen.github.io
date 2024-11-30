@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "GrouPal"
+title: "Learning Aid"
 date: 2024-11-10
 category: research
 ---
