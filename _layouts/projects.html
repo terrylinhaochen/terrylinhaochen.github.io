@@ -4,277 +4,195 @@ layout: default
 
 <style>
   .projects-container {
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
-    padding: 3rem 1rem;
+    padding: 2rem 1rem;
   }
   
-  /* Themes Section */
-  .themes-section {
-    margin-bottom: 4rem;
-    padding: 2rem;
-    background: linear-gradient(to right, #f8f9fa, #ffffff);
-    border-radius: 12px;
+  .section {
+    margin-bottom: 3rem;
   }
   
-  .themes-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-  }
-  
-  .theme-card {
-    padding: 1.5rem;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    transition: transform 0.2s ease;
-  }
-  
-  .theme-card:hover {
-    transform: translateY(-4px);
-  }
-  
-  .theme-icon {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+  .section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
     color: #333;
   }
   
-  /* Timeline Section */
-  .timeline-section {
-    margin: 4rem 0;
-    position: relative;
-    padding: 2rem 0;
-  }
-  
-  .timeline {
-    position: relative;
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-  
-  .timeline::after {
-    content: '';
-    position: absolute;
-    width: 2px;
-    background: #e0e0e0;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -1px;
-  }
-  
-  .timeline-item {
-    padding: 10px 40px;
-    position: relative;
-    width: 50%;
-    box-sizing: border-box;
-  }
-  
-  .timeline-item::after {
-    content: '';
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    right: -8px;
-    background-color: white;
-    border: 2px solid #333;
-    top: 15px;
-    border-radius: 50%;
-    z-index: 1;
-  }
-  
-  .timeline-item.left {
-    left: 0;
-  }
-  
-  .timeline-item.right {
-    left: 50%;
-  }
-  
-  .timeline-item.right::after {
-    left: -8px;
-  }
-  
-  .timeline-content {
-    padding: 1rem;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-  }
-  
-  /* Projects Grid */
   .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
   }
   
   .project-card {
     background-color: white;
-    border-radius: 12px;
+    border-radius: 8px;
     padding: 1.5rem;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    border: 1px solid #f0f0f0;
+    width: 100%;
   }
   
   .project-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
   
-  .project-card.featured {
-    grid-column: span 2;
-    background: linear-gradient(to right bottom, #ffffff, #f8f9fa);
-  }
-  
-  .section-title {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
+  .project-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
     color: #333;
   }
   
-  .section-subtitle {
+  .project-description {
     color: #666;
-    margin-bottom: 2rem;
-    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
   }
   
-  /* Modal enhancements */
+  .project-meta {
+    font-size: 0.875rem;
+    color: #888;
+  }
+
+  /* Modal styles */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 2rem;  /* Added padding to ensure modal doesn't touch screen edges */
+  }
+
   .modal {
     background-color: white;
-    border-radius: 12px;
-    padding: 3rem;
-    max-width: 1000px;
-    width: 95%;
-    max-height: 90vh;
+    border-radius: 8px;
+    padding: 3rem;  /* Increased padding */
+    max-width: 900px;  /* Increased from 600px */
+    width: 95%;    /* Increased from 90% */
+    max-height: 95vh; /* Increased from 90vh */
     overflow-y: auto;
+    position: relative;
+  }
+
+  .modal-close {
+    position: absolute;
+    top: 1.5rem;   /* Adjusted for new padding */
+    right: 1.5rem; /* Adjusted for new padding */
+    background: none;
+    border: none;
+    font-size: 1.75rem; /* Slightly larger close button */
+    cursor: pointer;
+    color: #666;
+  }
+
+  .modal-close:hover {
+    color: #333;
+  }
+
+  .modal.active,
+  .modal-overlay.active {
+    display: flex;
   }
   
-  @media (max-width: 768px) {
-    .timeline::after {
-      left: 31px;
-    }
-    
-    .timeline-item {
-      width: 100%;
-      padding-left: 70px;
-      padding-right: 25px;
-    }
-    
-    .timeline-item.right {
-      left: 0;
-    }
-    
-    .timeline-item.left::after,
-    .timeline-item.right::after {
-      left: 23px;
-    }
-    
-    .project-card.featured {
-      grid-column: span 1;
-    }
+  .modal-content {
+    margin-top: 1.5rem;
+    line-height: 1.6;
+    font-size: 1.1rem;  /* Slightly larger content text */
   }
 </style>
 
 <div class="projects-container">
-  <!-- Key Themes Section -->
-  <section class="themes-section">
-    <h2 class="section-title">Key Themes</h2>
-    <p class="section-subtitle">Areas where I focus my work and research</p>
-    
-    <div class="themes-grid">
-      <div class="theme-card">
-        <div class="theme-icon">🤖</div>
-        <h3>Multi-agent LLM Systems</h3>
-        <p>Building multi-agent systems for complex reasoning and human-ai collaboration</p>
-      </div>
-      
-      <div class="theme-card">
-        <div class="theme-icon">🌐</div>
-        <h3>Data Insights from Unstructured data</h3>
-        <p>Identifying key insights from mass amounts of multi-modal user generated content</p>
-      </div>
-      
-      <div class="theme-card">
-        <div class="theme-icon">📊</div>
-        <h3>Insight Enabled Content Generation</h3>
-        <p>Leveraging synthesized insight for content grounding and enhanced generation</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Timeline Section -->
-  <section class="timeline-section">
-    <h2 class="section-title">Journey & Progress</h2>
-    <div class="timeline">
-      <div class="timeline-item left">
-        <div class="timeline-content">
-          <h3>2024</h3>
-          <p>Launched Cogno AI - Multi-agent system for e-commerce automation</p>
-        </div>
-      </div>
-      
-      <div class="timeline-item right">
-        <div class="timeline-content">
-          <h3>2023</h3>
-          <p>Research & Development in AI applications for cross-border commerce</p>
-        </div>
-      </div>
-      
-      <div class="timeline-item left">
-        <div class="timeline-content">
-          <h3>2022</h3>
-          <p>Product prototypes and market research</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Startup Projects (Featured) -->
+  <h1>Projects</h1>
+  
+  <!-- Work Projects -->
+  {% assign work_projects = site.projects | where: "category", "work" %}
+  {% if work_projects.size > 0 %}
   <section class="section">
-    <h2 class="section-title">Startup Projects</h2>
+    <h2 class="section-title">Work</h2>
     <div class="projects-grid">
-      {% assign startup_projects = site.projects | where: "category", "startup" %}
-      {% for project in startup_projects %}
-      <div class="project-card featured" onclick="openModal('{{ project.title | slugify }}')">
+      {% for project in work_projects %}
+      <div class="project-card" onclick="openModal('{{ project.title | slugify }}')">
         <h3 class="project-title">{{ project.title }}</h3>
-        <p class="project-description">{{ project.excerpt | strip_html | truncate: 200 }}</p>
-        <p class="project-meta">{{ project.date | date: "%B %d, %Y" }}</p>
+        <p class="project-description">{{ project.excerpt | strip_html | truncate: 160 }}</p>
+        <p class="project-meta">
+          {{ project.date | date: "%B %d, %Y" }}
+        </p>
       </div>
       {% endfor %}
     </div>
   </section>
-
-  <!-- Other Projects -->
-  {% for category in site.categories %}
-    {% if category != "startup" %}
-    {% assign projects = site.projects | where: "category", category %}
-    {% if projects.size > 0 %}
-    <section class="section">
-      <h2 class="section-title">{{ category | capitalize }}</h2>
-      <div class="projects-grid">
-        {% for project in projects %}
-        <div class="project-card" onclick="openModal('{{ project.title | slugify }}')">
-          <h3 class="project-title">{{ project.title }}</h3>
-          <p class="project-description">{{ project.excerpt | strip_html | truncate: 160 }}</p>
-          <p class="project-meta">{{ project.date | date: "%B %d, %Y" }}</p>
-        </div>
-        {% endfor %}
+  {% endif %}
+  
+  <!-- Startup Projects -->
+  {% assign startup_projects = site.projects | where: "category", "startup" %}
+  {% if startup_projects.size > 0 %}
+  <section class="section">
+    <h2 class="section-title">Startup</h2>
+    <div class="projects-grid">
+      {% for project in startup_projects %}
+      <div class="project-card" onclick="openModal('{{ project.title | slugify }}')">
+        <h3 class="project-title">{{ project.title }}</h3>
+        <p class="project-description">{{ project.excerpt | strip_html | truncate: 160 }}</p>
+        <p class="project-meta">
+          {{ project.date | date: "%B %d, %Y" }}
+        </p>
       </div>
-    </section>
-    {% endif %}
-    {% endif %}
-  {% endfor %}
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+  
+  <!-- Research Projects -->
+  {% assign research_projects = site.projects | where: "category", "research" %}
+  {% if research_projects.size > 0 %}
+  <section class="section">
+    <h2 class="section-title">Research</h2>
+    <div class="projects-grid">
+      {% for project in research_projects %}
+      <div class="project-card" onclick="openModal('{{ project.title | slugify }}')">
+        <h3 class="project-title">{{ project.title }}</h3>
+        <p class="project-description">{{ project.excerpt | strip_html | truncate: 160 }}</p>
+        <p class="project-meta">
+          {{ project.date | date: "%B %d, %Y" }}
+        </p>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  <!-- Product Prototypes -->
+  {% assign prototype_projects = site.projects | where: "category", "prototype" %}
+  {% if prototype_projects.size > 0 %}
+  <section class="section">
+    <h2 class="section-title">Prototypes</h2>
+    <div class="projects-grid">
+      {% for project in prototype_projects %}
+      <div class="project-card" onclick="openModal('{{ project.title | slugify }}')">
+        <h3 class="project-title">{{ project.title }}</h3>
+        <p class="project-description">{{ project.excerpt | strip_html | truncate: 160 }}</p>
+        <p class="project-meta">
+          {{ project.date | date: "%B %d, %Y" }}
+        </p>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
 </div>
 
-<!-- Modal Template (unchanged) -->
+<!-- Modal Template -->
 {% for project in site.projects %}
 <div id="modal-{{ project.title | slugify }}" class="modal-overlay">
   <div class="modal">
