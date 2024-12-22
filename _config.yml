@@ -24,6 +24,3 @@ menu:
     - name: Search
       url: /search/
       weight: 30
-    - name: Subscribe
-      url: /subscribe/
-      weight: 40

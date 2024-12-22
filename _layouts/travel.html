@@ -3,20 +3,42 @@ layout: default
 ---
 
 <section class="welcome">
-    <h2>世界是新的 | The World is Ever-New</h2>
-    <p>Documenting things I find interesting during my travels</p>
+    <h2>世界是新的</h2>
+    <p>Documenting things I find interesting</p>
 </section>
 
 <section class="posts">
-    {% for post in site.travel %}
-    <article class="post-preview">
-        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-        <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
-        <p class="post-meta">
-            Date: {{ post.date | date: "%B %d, %Y" }} | 
-            Estimated Reading Time: {{ post.content | number_of_words | divided_by: 200 | plus: 1 }} min |
-            Location: {{ post.location }}
-        </p>
-    </article>
+    {% assign grouped_posts = site.travel | group_by: "category" | sort: "name" %}
+    {% for group in grouped_posts %}
+    <h2 class="country-header">{{ group.name }}</h2>
+    <div class="country-posts">
+        {% assign sorted_posts = group.items | sort: "title" %}
+        {% for post in sorted_posts %}
+        <article class="post-preview">
+            <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+            <p>{{ post.excerpt }}</p>
+            <p class="post-meta">
+                Location: {{ post.location }}
+            </p>
+        </article>
+        {% endfor %}
+    </div>
     {% endfor %}
-</section> 
+</section>
+
+<style>
+.country-header {
+    margin-top: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #eee;
+    color: #333;
+}
+
+.country-posts {
+    margin-bottom: 3rem;
+}
+
+.post-preview {
+    margin-top: 1.5rem;
+}
+</style> 
