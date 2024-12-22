@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Groupal-Realtime conversational learning aid"
+title: "Realtime conversational learning aid"
 date: 2024-11-10
 category: research
 ---
