@@ -27,4 +27,16 @@ layout: null
       "type"     : "project"
     }{% unless forloop.last %},{% endunless %}
   {% endfor %}
+  {% if site.projects and site.travel %},{% endif %}
+  {% for travel in site.travel %}
+    {
+      "title"    : {{ travel.title | jsonify }},
+      "category" : {{ travel.category | jsonify }},
+      "location" : {{ travel.location | jsonify }},
+      "url"      : {{ site.baseurl | append: travel.url | jsonify }},
+      "snippet"  : {{ travel.excerpt | jsonify }},
+      "content"  : {{ travel.content | strip_html | jsonify }},
+      "type"     : "travel"
+    }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
 ]
