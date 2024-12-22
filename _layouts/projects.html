@@ -24,7 +24,7 @@ layout: default
   .theme-slide {
     min-width: 100%;
     padding: 2rem;
-    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    background: linear-gradient(135deg, #e8f0ff 0%, #ffffff 100%);
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
   }
@@ -97,7 +97,8 @@ layout: default
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   }
 
-  .project-card.featured {
+  .project-card.featured,
+  .work-card {
     grid-column: span 2;
     background: linear-gradient(to right bottom, #ffffff, #f8f9fa);
   }
@@ -138,7 +139,7 @@ layout: default
       <p class="section-subtitle">Current ventures and innovations</p>
     </div>
     <div class="projects-grid">
-      {% assign startup_projects = site.projects | where: "category", "startup" %}
+      {% assign startup_projects = site.projects | where: "category", "startup" | sort: "date" | reverse %}
       {% for project in startup_projects %}
       <div class="project-card featured" onclick="openModal('{{ project.title | slugify }}')">
         <h3 class="project-title">{{ project.title }}</h3>
@@ -157,7 +158,7 @@ layout: default
     <div class="projects-grid">
       {% assign work_projects = site.projects | where: "category", "work" %}
       {% for project in work_projects %}
-      <div class="project-card" onclick="openModal('{{ project.title | slugify }}')">
+      <div class="project-card featured work-card" onclick="openModal('{{ project.title | slugify }}')">
         <h3 class="project-title">{{ project.title }}</h3>
         <p class="project-description">{{ project.excerpt | strip_html | truncate: 160 }}</p>
         <p class="project-meta">{{ project.date | date: "%B %d, %Y" }}</p>
@@ -222,5 +223,98 @@ document.addEventListener('DOMContentLoaded', function() {
     currentSlide = (currentSlide + 1) % slides.length;
     goToSlide(currentSlide);
   }, 5000);
+});
+</script>
+
+<!-- Modal Template -->
+<div class="modal-container">
+  {% for project in site.projects %}
+  <div id="modal-{{ project.title | slugify }}" class="modal-overlay">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('{{ project.title | slugify }}')">&times;</button>
+      <h2>{{ project.title }}</h2>
+      <p class="project-meta">{{ project.date | date: "%B %d, %Y" }}</p>
+      <div class="modal-content">
+        {{ project.content }}
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+<style>
+  .modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 800px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+  }
+
+  .modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  .modal-overlay.active {
+    display: flex;
+  }
+</style>
+
+<script>
+function openModal(projectId) {
+  const modal = document.getElementById(`modal-${projectId}`);
+  if (modal) {
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+}
+
+function closeModal(projectId) {
+  const modal = document.getElementById(`modal-${projectId}`);
+  if (modal) {
+    modal.classList.remove('active');
+    document.body.style.overflow = 'auto';
+  }
+}
+
+// Close modal when clicking outside
+document.addEventListener('click', function(event) {
+  if (event.target.classList.contains('modal-overlay')) {
+    event.target.classList.remove('active');
+    document.body.style.overflow = 'auto';
+  }
+});
+
+// Close modal on escape key
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'Escape') {
+    const activeModal = document.querySelector('.modal-overlay.active');
+    if (activeModal) {
+      activeModal.classList.remove('active');
+      document.body.style.overflow = 'auto';
+    }
+  }
 });
 </script>
