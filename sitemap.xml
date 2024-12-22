@@ -1,0 +1,32 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    {% for post in site.posts %}
+    <url>
+        <loc>{{ site.url }}{{ post.url }}</loc>
+        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+    </url>
+    {% endfor %}
+    {% for project in site.projects %}
+    <url>
+        <loc>{{ site.url }}{{ project.url }}</loc>
+        <lastmod>{{ project.date | date_to_xmlschema }}</lastmod>
+    </url>
+    {% endfor %}
+    {% for travel in site.travel %}
+    <url>
+        <loc>{{ site.url }}{{ travel.url }}</loc>
+        <lastmod>{{ travel.date | date_to_xmlschema }}</lastmod>
+    </url>
+    {% endfor %}
+    {% for page in site.pages %}
+    {% if page.layout != null and page.layout != 'feed' %}
+    <url>
+        <loc>{{ site.url }}{{ page.url }}</loc>
+        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    </url>
+    {% endif %}
+    {% endfor %}
+</urlset> 

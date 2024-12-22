@@ -1,13 +1,56 @@
-title: Terry's Blog
-description: Hi, this is Terry. I'm documenting my product ideas and learning notes in this blog. I'm interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction. Feel free to reach me at terrychen2026@u.northwestern.edu
-url: "https://terrylinhaochen.github.io"
-github_username: terrylinhaochen
-linkedin_username: terry-chen-3b44911a4
+# Site Settings
+title: Terry Chen
+description: "Personal website of Terry Chen - Exploring AI, Technology, and Travel"
+url: "https://terrylinhaochen.github.io/" # Replace with your domain
+author: Terry Chen
+twitter:
+  username: terrychen # Replace with your Twitter handle if you have one
+  card: summary_large_image
+logo: /assets/images/logo.png # Add if you have a logo
+social:
+  name: Terry Chen
+  links:
+    - https://github.com/terrychen98
+    - https://www.linkedin.com/in/terry-chen-1998
+
+# SEO Settings
+lang: en_US
+locale: en_US
+google_analytics: # Add your Google Analytics ID if you have one
+
+# Collections
 collections:
   projects:
     output: true
   travel:
     output: true
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+
+# Defaults for SEO
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/default-social.jpg # Create a default social image
+  - scope:
+      path: "_posts"
+    values:
+      layout: post
+      author: Terry Chen
+  - scope:
+      path: "_projects"
+    values:
+      layout: project
+      author: Terry Chen
+  - scope:
+      path: "_travel"
+    values:
+      layout: post
+      author: Terry Chen
+
 baseurl: ""
 
 menu:
