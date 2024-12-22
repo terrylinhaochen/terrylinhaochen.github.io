@@ -167,6 +167,23 @@ layout: default
     </div>
   </section>
 
+  <!-- Research Projects -->
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title">Research</h2>
+    </div>
+    <div class="projects-grid">
+      {% assign research_projects = site.projects | where: "category", "research" | sort: "date" | reverse %}
+      {% for project in research_projects %}
+      <div class="project-card featured work-card" onclick="openModal('{{ project.title | slugify }}')">
+        <h3 class="project-title">{{ project.title }}</h3>
+        <p class="project-description">{{ project.excerpt | strip_html | truncate: 160 }}</p>
+        <p class="project-meta">{{ project.date | date: "%B %d, %Y" }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
   <!-- Prototype Projects -->
   <section class="section">
     <div class="section-header">
