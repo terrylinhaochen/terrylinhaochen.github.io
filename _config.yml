@@ -6,6 +6,8 @@ linkedin_username: terry-chen-3b44911a4
 collections:
   projects:
     output: true
+  travel:
+    output: true
 baseurl: ""
 
 menu:
@@ -16,6 +18,9 @@ menu:
     - name: Projects
       url: /projects/
       weight: 20
+    - name: Travel
+      url: /travel/
+      weight: 25
     - name: Search
       url: /search/
       weight: 30

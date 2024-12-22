@@ -43,6 +43,20 @@ nav a {
     margin-bottom: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+.post-preview:hover {
+    transform: translateY(-2px);
+}
+
+.post-preview h3 a {
+    color: #333;
+    text-decoration: none;
+}
+
+.post-preview h3 a:hover {
+    color: #666;
 }
 
 .post-meta {
@@ -105,4 +119,10 @@ footer {
     height: 200px;  /* Adjust as needed */
     border: none;
     background-color: transparent;
+}
+
+.welcome h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
 }

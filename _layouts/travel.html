@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<section class="welcome">
+    <h2>世界是新的 | The World is Ever-New</h2>
+    <p>Documenting things I find interesting during my travels</p>
+</section>
+
+<section class="posts">
+    {% for post in site.travel %}
+    <article class="post-preview">
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+        <p class="post-meta">
+            Date: {{ post.date | date: "%B %d, %Y" }} | 
+            Estimated Reading Time: {{ post.content | number_of_words | divided_by: 200 | plus: 1 }} min |
+            Location: {{ post.location }}
+        </p>
+    </article>
+    {% endfor %}
+</section> 
