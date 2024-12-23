@@ -2,68 +2,145 @@
 layout: default
 ---
 
-<div class="projects-container">
-  <div class="projects-grid">
-    {% assign sorted_travel = site.travel | sort: "title" %}
-    {% for post in sorted_travel %}
-    <div class="project-card" onclick="openModal('{{ post.title | slugify }}')">
-      <h3 class="project-title">{{ post.title }}</h3>
-      <p class="project-description">{{ post.location }}</p>
-      <p class="project-meta">{{ post.excerpt }}</p>
+<section class="welcome">
+    <h2>世界是新的</h2>
+    <p>Documenting things I find interesting</p>
+</section>
+
+<section class="posts">
+    {% assign grouped_posts = site.travel | group_by: "category" | sort: "name" %}
+    {% for group in grouped_posts %}
+    <h2 class="country-header">{{ group.name }}</h2>
+    <div class="country-posts">
+        {% assign sorted_posts = group.items | sort: "title" %}
+        {% for post in sorted_posts %}
+        <article class="post-preview" onclick="openModal('{{ post.title | slugify }}')">
+            <h3>{{ post.title }}</h3>
+            <p>{{ post.excerpt }}</p>
+            <p class="post-meta">
+                Location: {{ post.location }}
+            </p>
+        </article>
+        {% endfor %}
     </div>
     {% endfor %}
-  </div>
-</div>
+</section>
 
 <!-- Modal Template -->
 <div class="modal-container">
-  {% for post in site.travel %}
-  <div id="modal-{{ post.title | slugify }}" class="modal-overlay">
-    <div class="modal">
-      <button class="modal-close" onclick="closeModal('{{ post.title | slugify }}')">&times;</button>
-      <h2>{{ post.title }}</h2>
-      <p class="project-meta">{{ post.location }}</p>
-      <div class="modal-content">
-        {{ post.content }}
-      </div>
+    {% for post in site.travel %}
+    <div id="modal-{{ post.title | slugify }}" class="modal-overlay">
+        <div class="modal">
+            <button class="modal-close" onclick="closeModal('{{ post.title | slugify }}')">&times;</button>
+            <h2>{{ post.title }}</h2>
+            <p class="project-meta">{{ post.location }}</p>
+            <div class="modal-content">
+                {{ post.content }}
+            </div>
+        </div>
     </div>
-  </div>
-  {% endfor %}
+    {% endfor %}
 </div>
+
+<style>
+.country-header {
+    margin-top: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #eee;
+    color: #333;
+}
+
+.country-posts {
+    margin-bottom: 3rem;
+}
+
+.post-preview {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.post-preview:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 800px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.modal-overlay.active {
+    display: flex;
+}
+</style>
 
 <script>
 function openModal(postId) {
-  const modal = document.getElementById(`modal-${postId}`);
-  if (modal) {
-    modal.classList.add('active');
-    document.body.style.overflow = 'hidden';
-  }
+    const modal = document.getElementById(`modal-${postId}`);
+    if (modal) {
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
 }
 
 function closeModal(postId) {
-  const modal = document.getElementById(`modal-${postId}`);
-  if (modal) {
-    modal.classList.remove('active');
-    document.body.style.overflow = 'auto';
-  }
+    const modal = document.getElementById(`modal-${postId}`);
+    if (modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
 }
 
 // Close modal when clicking outside
 document.addEventListener('click', function(event) {
-  if (event.target.classList.contains('modal-overlay')) {
-    event.target.classList.remove('active');
-    document.body.style.overflow = 'auto';
-  }
+    if (event.target.classList.contains('modal-overlay')) {
+        event.target.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
 });
 
 // Close modal on escape key
 document.addEventListener('keydown', function(event) {
-  if (event.key === 'Escape') {
-    const activeModal = document.querySelector('.modal-overlay.active');
-    if (activeModal) {
-      activeModal.classList.remove('active');
-      document.body.style.overflow = 'auto';
+    if (event.key === 'Escape') {
+        const activeModal = document.querySelector('.modal-overlay.active');
+        if (activeModal) {
+            activeModal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
     }
-  }
 });
 </script> 
