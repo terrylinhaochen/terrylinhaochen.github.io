@@ -5,4 +5,4 @@ location: "New York City, USA"
 category: "United States"
 excerpt: "Home away from Home?"
 --- 
-TBD
+Pretty much a bit of everything.
