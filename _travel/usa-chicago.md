@@ -1,4 +1,4 @@
- ---
+---
 layout: post
 title: "Chicago"
 location: "Chicago, USA"
