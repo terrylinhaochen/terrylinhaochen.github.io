@@ -100,22 +100,67 @@ body {
   color: #bbbbbb !important;
 }
 
-:root[data-theme="dark"] .project-card {
-  background-color: var(--entry);
+/* Comprehensive dark mode styling for projects template */
+:root[data-theme="dark"] .theme-slide {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%) !important;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2) !important;
+}
+
+:root[data-theme="dark"] .theme-slide h2,
+:root[data-theme="dark"] .theme-slide p {
   color: #ffffff !important;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+:root[data-theme="dark"] .theme-nav button {
+  background: #555 !important;
+}
+
+:root[data-theme="dark"] .theme-nav button.active {
+  background: #ffffff !important;
+}
+
+:root[data-theme="dark"] .section-title {
+  color: #ffffff !important;
+}
+
+:root[data-theme="dark"] .section-subtitle {
+  color: #bbbbbb !important;
+}
+
+:root[data-theme="dark"] .project-card {
+  background-color: #2d2d2d !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2) !important;
 }
 
 :root[data-theme="dark"] .project-card:hover {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25) !important;
 }
 
-:root[data-theme="dark"] .project-card h2,
 :root[data-theme="dark"] .project-card h3,
 :root[data-theme="dark"] .project-card p,
-:root[data-theme="dark"] .project-card a,
-:root[data-theme="dark"] .project-card span,
-:root[data-theme="dark"] .project-card div {
+:root[data-theme="dark"] .project-title,
+:root[data-theme="dark"] .project-description,
+:root[data-theme="dark"] .project-meta {
+  color: #ffffff !important;
+}
+
+:root[data-theme="dark"] .project-card.featured,
+:root[data-theme="dark"] .work-card {
+  background: linear-gradient(to right bottom, #2d2d2d, #222222) !important;
+}
+
+:root[data-theme="dark"] .modal {
+  background: #2d2d2d !important;
+}
+
+:root[data-theme="dark"] .modal h2,
+:root[data-theme="dark"] .modal p,
+:root[data-theme="dark"] .modal-content,
+:root[data-theme="dark"] .modal-content * {
+  color: #ffffff !important;
+}
+
+:root[data-theme="dark"] .modal-close {
   color: #ffffff !important;
 }
 
