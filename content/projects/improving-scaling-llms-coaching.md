@@ -1,12 +1,7 @@
 ---
 title: "Improving & Scaling LLMs for Coaching"
 date: 2023-06-15
-categories: ["research"]
-tags: ["llm", "ai", "education", "coaching"]
-cover:
-    image: "/images/projects/improving-scaling-llms-coaching/codebook-system.png"
-    alt: "LLM Coaching System"
-    caption: "Regulation Skills Codebook for LLM-Enhanced Coaching"
+categories: research
 ---
 
 # Situated Practice Systems: Improving and Scaling Coaching through LLMs

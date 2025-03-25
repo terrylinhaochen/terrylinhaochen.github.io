@@ -535,3 +535,113 @@ article {
 .post-single {
   padding: 1.5rem;
 }
+
+/* Archive page styling */
+.archive-year {
+    margin-bottom: 40px;
+}
+
+.archive-year-header {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    position: relative;
+}
+
+.archive-month {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.archive-month-header {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.archive-count {
+    font-size: 0.8em;
+    color: var(--secondary);
+}
+
+.archive-entry {
+    position: relative;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: var(--radius);
+    transition: transform 0.1s;
+    border: 1px solid var(--border);
+}
+
+.archive-entry:hover {
+    transform: translateY(-2px);
+    background-color: var(--entry);
+}
+
+.archive-entry-title {
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.archive-meta {
+    font-size: 0.9rem;
+    color: var(--secondary);
+}
+
+.archive-tag {
+    display: inline-block;
+    color: var(--secondary);
+}
+
+.archive-tag[data-tag="archived"] {
+    color: #e67e22;
+    font-weight: 500;
+}
+
+.archive-empty {
+    margin: 40px 0;
+    padding: 20px;
+    border: 1px dashed var(--border);
+    border-radius: var(--radius);
+    text-align: center;
+}
+
+.archive-empty p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.archive-empty ul {
+    display: inline-block;
+    text-align: left;
+    margin: 0 auto;
+    padding-left: 20px;
+}
+
+.archive-empty li {
+    margin-bottom: 10px;
+}
+
+.entry-link {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+/* Dark mode support */
+.dark .archive-entry:hover {
+    background-color: var(--entry);
+}
+
+.dark .archive-count {
+    color: var(--secondary);
+}
+
+.dark .archive-meta {
+    color: var(--secondary);
+}
+
+.dark .archive-empty {
+    border-color: var(--border);
+    color: var(--primary);
+}

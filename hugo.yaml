@@ -7,6 +7,9 @@ params:
   description: "Hi, this is Terry. I'm documenting my product ideas and learning notes in this blog. I'm interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction."
   author: Terry Chen
   
+  # Set mainSections to include all content types that should appear in archived listings
+  mainSections: ["posts", "projects", "archived"]
+  
   # PaperMod specific parameters
   defaultTheme: auto
   ShowReadingTime: true
@@ -61,6 +64,10 @@ menu:
       name: Projects
       url: /projects/
       weight: 20
+    - identifier: archived
+      name: Archived
+      url: /archived/
+      weight: 25
     - identifier: search
       name: Search
       url: /search/
