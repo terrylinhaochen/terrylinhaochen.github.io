@@ -1,7 +1,7 @@
 ---
 title: "A Human-Inspired Solution to LLM Memory Enhancement"
 date: 2023-08-10
-categories: ["research"]
+categories: research
 ---
 
 # A Human-Inspired Solution to LLM Memory Enhancement
