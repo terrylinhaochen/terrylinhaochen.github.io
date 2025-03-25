@@ -1,8 +1,9 @@
 ---
-title: "GAuth"
+layout: post
+title: "Gauth AI"
 date: 2023-08-20
-categories: work
-projectURL: https://www.gauthmath.com
+category: work
+url: https://www.gauthmath.com
 ---
-Enhancing user email security and facilitating account migration with ML-powered Gmail authentication.
-Team: Makarand Pande
+AI Homework helper with advanced reasoning and visualization for all school subjects. (Worked on LLM Reasoning)
+https://www.gauthmath.com/
