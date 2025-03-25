@@ -350,3 +350,56 @@ article {
     transition: background-color 0.2s ease;
     margin-top: 0.5rem;
 }
+
+/* Ensure post content matches other page types in size */
+.post-single {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  font-size: var(--card-font-size);
+}
+
+.post-single .post-content {
+  font-size: var(--card-font-size);
+  line-height: 1.6;
+}
+
+.post-single .post-content p,
+.post-single .post-content li,
+.post-single .post-content ul,
+.post-single .post-content ol {
+  font-size: var(--card-font-size);
+  margin-bottom: 1.25rem;
+}
+
+.post-single .post-content h1 {
+  font-size: calc(var(--heading-font-size) * 0.9);
+  margin: 2rem 0 1.5rem;
+}
+
+.post-single .post-content h2 {
+  font-size: var(--subheading-font-size);
+  margin: 1.75rem 0 1.25rem;
+}
+
+.post-single .post-content h3 {
+  font-size: calc(var(--subheading-font-size) * 0.85);
+  margin: 1.5rem 0 1rem;
+}
+
+.post-single .post-content h4,
+.post-single .post-content h5,
+.post-single .post-content h6 {
+  font-size: calc(var(--card-font-size) * 1.1);
+  margin: 1.25rem 0 0.75rem;
+}
+
+/* Adjust post title size to match other pages */
+.post-title {
+  font-size: var(--heading-font-size);
+  margin-bottom: 1rem;
+}
+
+/* Make post padding match other page types */
+.post-single {
+  padding: 1.5rem;
+}
