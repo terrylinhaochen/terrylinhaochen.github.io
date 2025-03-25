@@ -72,22 +72,51 @@ body {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-/* Dark mode styling for project cards to match post-entry */
+/* Dark mode styling for project cards and entries - more comprehensive */
+:root[data-theme="dark"] .post-entry {
+  background-color: var(--entry);
+  color: #ffffff !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+:root[data-theme="dark"] .post-entry:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+:root[data-theme="dark"] .post-entry h2,
+:root[data-theme="dark"] .post-entry h3,
+:root[data-theme="dark"] .post-entry p,
+:root[data-theme="dark"] .post-entry a,
+:root[data-theme="dark"] .post-entry span,
+:root[data-theme="dark"] .post-entry div {
+  color: #ffffff !important;
+}
+
+:root[data-theme="dark"] .post-entry .entry-content {
+  color: #eeeeee !important;
+}
+
+:root[data-theme="dark"] .post-entry time {
+  color: #bbbbbb !important;
+}
+
 :root[data-theme="dark"] .project-card {
   background-color: var(--entry);
-  color: var(--primary);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  color: #ffffff !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
 :root[data-theme="dark"] .project-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
 }
 
 :root[data-theme="dark"] .project-card h2,
 :root[data-theme="dark"] .project-card h3,
-:root[data-theme="dark"] .project-card a {
-  color: var(--primary);
+:root[data-theme="dark"] .project-card p,
+:root[data-theme="dark"] .project-card a,
+:root[data-theme="dark"] .project-card span,
+:root[data-theme="dark"] .project-card div {
+  color: #ffffff !important;
 }
 
 /* Make projects use the same entry styling as posts */
