@@ -4,7 +4,7 @@ title = "Terry Chen"
 theme = "PaperMod"
 
 [params]
-  description = "Hi, this is Terry. I'm documenting my product ideas and learning notes in this blog. I'm interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction. Feel free to reach me at terrychen2026@u.northwestern.edu"
+  description = "Hi, this is Terry. I'm documenting my product ideas and learning notes in this blog. I'm interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction."
   author = "Terry Chen"
   
   # PaperMod specific parameters
