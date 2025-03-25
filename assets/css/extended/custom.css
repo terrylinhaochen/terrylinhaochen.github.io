@@ -1,0 +1,352 @@
+/* Custom CSS migrated from Jekyll site */
+/* Add your custom styles here to match your previous design */
+
+/* Increase base font size for the entire site */
+:root {
+  --main-font-size: 18px;
+  --card-font-size: 1.2rem;
+  --heading-font-size: 2.7rem;
+  --subheading-font-size: 2rem;
+  --meta-font-size: 1.05rem;
+  --content-width: 1000px;
+  --header-padding: 2.5rem;
+}
+
+body {
+  font-size: var(--main-font-size);
+  line-height: 1.7;
+}
+
+/* Make header wider and aligned with top navigation */
+.nav {
+  max-width: var(--content-width);
+  padding: 0 1rem;
+  margin: 0 auto; /* Center the nav */
+  display: flex;
+  flex-direction: row; /* Horizontal layout */
+  justify-content: space-between; /* Put logo on left, menu on right */
+  align-items: center;
+}
+
+/* Increase header size */
+.header {
+  max-width: 100%;
+  padding: var(--header-padding) 0;
+  margin-bottom: 3rem;
+  text-align: center; /* Center the header text */
+}
+
+.logo {
+  margin: 0; /* Remove margins to align properly */
+}
+
+.logo a {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.menu {
+  font-size: 1.2rem;
+  margin: 0; /* Remove margin to align properly */
+}
+
+/* Make sure the menu remains properly spaced */
+.menu .menu__inner {
+  display: flex;
+  gap: 2.5rem; /* Increase gap between menu items */
+}
+
+/* Project cards styling */
+.project-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.8rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 2rem;
+  font-size: var(--card-font-size);
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Travel styling */
+.country-header {
+  margin-top: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #eee;
+  color: #333;
+  font-size: var(--subheading-font-size);
+}
+
+/* Search styling */
+.search-result {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  font-size: var(--card-font-size);
+}
+
+/* Custom styling for the homepage */
+.home-info {
+    text-align: center;
+    padding: 2rem 1rem 4rem;
+    max-width: var(--content-width);
+    margin: 0 auto 3rem;
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.home-info h1 {
+    font-size: var(--heading-font-size);
+    margin-bottom: 1.5rem;
+}
+
+.home-info .entry-content {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+}
+
+/* Style the plain email */
+.plain-email {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    text-decoration: none;
+    font-weight: inherit;
+}
+
+/* Style the social icons */
+.social-icons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f8f8f8;
+    color: #333;
+    transition: all 0.3s ease;
+    border: 1px solid #eaeaea;
+}
+
+.social-icons a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+.social-icons svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* Remove powered by text */
+.footer {
+    display: none;
+}
+
+/* Center the main content and increase width */
+.main {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    padding-bottom: 5rem; /* Add more padding at the bottom of the page */
+}
+
+/* Increase card text size and add more spacing */
+.post-preview, .post {
+    font-size: var(--card-font-size);
+    line-height: 1.6;
+    padding: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.post-preview h2, .post h2 {
+    font-size: var(--subheading-font-size);
+    margin-bottom: 1.25rem;
+}
+
+.post-preview .entry-content, .post .entry-content {
+    font-size: inherit;
+    line-height: 1.7;
+}
+
+.post-preview .post-meta, .post .post-meta {
+    font-size: var(--meta-font-size);
+    color: var(--secondary);
+    margin: 1.25rem 0;
+}
+
+/* First homepage entry should be full width to match other cards */
+.first-entry {
+    margin-bottom: 2.5rem;
+    padding: 2rem;
+    font-size: var(--card-font-size);
+}
+
+.first-entry .entry-header h2 {
+    font-size: var(--subheading-font-size);
+}
+
+.entry-content {
+    font-size: var(--card-font-size);
+    line-height: 1.7;
+}
+
+/* Make all cards have consistent styling */
+.post-entry {
+    margin-bottom: 2.5rem;
+    padding: 2rem;
+    font-size: var(--card-font-size);
+}
+
+.post-entry .entry-header h2 {
+    font-size: var(--subheading-font-size);
+}
+
+/* Global link styling */
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Add spacing for minimal, clean layout */
+.posts {
+    padding: 0 0.5rem;
+}
+
+/* Improved top navigation styling */
+.top-link {
+    margin-right: 1rem;
+}
+
+/* Additional spacing for content sections */
+.post-content {
+    padding: 1rem 0;
+}
+
+article {
+    margin-bottom: 3rem;
+}
+
+/* Featured rotating cards styling */
+.featured-cards {
+    margin-bottom: 4rem;
+}
+
+.featured-cards h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+}
+
+.featured-cards h2:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -10px;
+    left: 0;
+    background-color: #eaeaea;
+}
+
+.featured-cards .post-entry {
+    padding: 2.5rem;
+    font-size: 1.3rem;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    margin-bottom: 3rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featured-cards .post-entry:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.featured-cards .post-entry .entry-header h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.featured-cards .post-entry .entry-header h2:after {
+    display: none;
+}
+
+.featured-cards .post-entry .entry-content {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.featured-cards .post-entry .entry-footer .post-meta {
+    font-size: var(--meta-font-size);
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.featured-cards .post-entry .entry-footer a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+    margin-top: 0.5rem;
+}
+
+.featured-cards .post-entry .entry-footer a:hover {
+    background-color: #efefef;
+    text-decoration: none;
+}
+
+/* Add more space after pagination controls */
+.pagination, .page-footer {
+    margin-bottom: 5rem; /* Add additional space after pagination */
+}
+
+/* Improve post meta display in cards */
+.post-entry .entry-footer .post-meta {
+    font-size: var(--meta-font-size);
+    color: #666;
+    margin-bottom: 0.8rem;
+}
+
+.featured-cards .post-entry .entry-footer .post-meta {
+    font-size: var(--meta-font-size);
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+/* Make sure the read more link is separated from the meta info */
+.featured-cards .post-entry .entry-footer a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+    margin-top: 0.5rem;
+}
