@@ -7,3 +7,5 @@ projectURL: https://www.gauthmath.com
 ---
 AI Homework helper with advanced reasoning and visualization for all school subjects. (Worked on LLM Reasoning)
 https://www.gauthmath.com/
+
+Credits: Lexi Ling, Gauth Team

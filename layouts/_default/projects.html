@@ -1,7 +1,7 @@
 {{ define "main" }}
 <style>
   .projects-container {
-    max-width: 1200px;
+    max-width: var(--content-width);
     margin: 0 auto;
     padding: 2rem 1rem;
   }
@@ -172,13 +172,25 @@
       <h2 class="section-title">Startup Projects</h2>
       <p class="section-subtitle">Things keeping me busy on weekends</p>
     </div>
-    <div class="projects-grid">
+    <div class="projects">
       {{ range where (where .Site.RegularPages "Section" "projects") "Params.categories" "startup" }}
-      <div class="project-card featured" onclick="openModal('{{ .Title | urlize }}')">
-        <h3 class="project-title">{{ .Title }}</h3>
-        <p class="project-description">{{ .Summary | truncate 200 }}</p>
-        <p class="project-meta">{{ if .Date }}{{ .Date.Format "January 2, 2006" }}{{ end }}</p>
-      </div>
+      <article class="post-entry">
+        {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
+        {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
+        <header class="entry-header">
+          <h2>{{ .Title }}</h2>
+        </header>
+        <div class="entry-content">
+          {{ .Summary | plainify | htmlUnescape }}
+        </div>
+        <footer class="entry-footer">
+          <div class="post-meta">
+            <time>{{ .Date.Format (default "January 2, 2006" .Site.Params.DateFormat) }}</time>
+            {{- if (.Param "ShowReadingTime") }} • {{ i18n "read_time" .ReadingTime | default (printf "%d min read" .ReadingTime) }}{{- end }}
+          </div>
+        </footer>
+        <a class="entry-link" href="{{ .Permalink }}"></a>
+      </article>
       {{ end }}
     </div>
   </section>
@@ -188,13 +200,25 @@
     <div class="section-header">
       <h2 class="section-title">Work Projects</h2>
     </div>
-    <div class="projects-grid">
+    <div class="projects">
       {{ range where (where .Site.RegularPages "Section" "projects") "Params.categories" "work" }}
-      <div class="project-card featured work-card" onclick="openModal('{{ .Title | urlize }}')">
-        <h3 class="project-title">{{ .Title }}</h3>
-        <p class="project-description">{{ .Summary | truncate 160 }}</p>
-        <p class="project-meta">{{ if .Date }}{{ .Date.Format "January 2, 2006" }}{{ end }}</p>
-      </div>
+      <article class="post-entry">
+        {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
+        {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
+        <header class="entry-header">
+          <h2>{{ .Title }}</h2>
+        </header>
+        <div class="entry-content">
+          {{ .Summary | plainify | htmlUnescape }}
+        </div>
+        <footer class="entry-footer">
+          <div class="post-meta">
+            <time>{{ .Date.Format (default "January 2, 2006" .Site.Params.DateFormat) }}</time>
+            {{- if (.Param "ShowReadingTime") }} • {{ i18n "read_time" .ReadingTime | default (printf "%d min read" .ReadingTime) }}{{- end }}
+          </div>
+        </footer>
+        <a class="entry-link" href="{{ .Permalink }}"></a>
+      </article>
       {{ end }}
     </div>
   </section>
@@ -204,13 +228,25 @@
     <div class="section-header">
       <h2 class="section-title">Research</h2>
     </div>
-    <div class="projects-grid">
+    <div class="projects">
       {{ range where (where .Site.RegularPages "Section" "projects") "Params.categories" "research" }}
-      <div class="project-card featured work-card" onclick="openModal('{{ .Title | urlize }}')">
-        <h3 class="project-title">{{ .Title }}</h3>
-        <p class="project-description">{{ .Summary | truncate 160 }}</p>
-        <p class="project-meta">{{ if .Date }}{{ .Date.Format "January 2, 2006" }}{{ end }}</p>
-      </div>
+      <article class="post-entry">
+        {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
+        {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
+        <header class="entry-header">
+          <h2>{{ .Title }}</h2>
+        </header>
+        <div class="entry-content">
+          {{ .Summary | plainify | htmlUnescape }}
+        </div>
+        <footer class="entry-footer">
+          <div class="post-meta">
+            <time>{{ .Date.Format (default "January 2, 2006" .Site.Params.DateFormat) }}</time>
+            {{- if (.Param "ShowReadingTime") }} • {{ i18n "read_time" .ReadingTime | default (printf "%d min read" .ReadingTime) }}{{- end }}
+          </div>
+        </footer>
+        <a class="entry-link" href="{{ .Permalink }}"></a>
+      </article>
       {{ end }}
     </div>
   </section>
@@ -220,13 +256,25 @@
     <div class="section-header">
       <h2 class="section-title">Prototypes</h2>
     </div>
-    <div class="projects-grid">
+    <div class="projects">
       {{ range where (where .Site.RegularPages "Section" "projects") "Params.categories" "prototype" }}
-      <div class="project-card" onclick="openModal('{{ .Title | urlize }}')">
-        <h3 class="project-title">{{ .Title }}</h3>
-        <p class="project-description">{{ .Summary | truncate 160 }}</p>
-        <p class="project-meta">{{ if .Date }}{{ .Date.Format "January 2, 2006" }}{{ end }}</p>
-      </div>
+      <article class="post-entry">
+        {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
+        {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
+        <header class="entry-header">
+          <h2>{{ .Title }}</h2>
+        </header>
+        <div class="entry-content">
+          {{ .Summary | plainify | htmlUnescape }}
+        </div>
+        <footer class="entry-footer">
+          <div class="post-meta">
+            <time>{{ .Date.Format (default "January 2, 2006" .Site.Params.DateFormat) }}</time>
+            {{- if (.Param "ShowReadingTime") }} • {{ i18n "read_time" .ReadingTime | default (printf "%d min read" .ReadingTime) }}{{- end }}
+          </div>
+        </footer>
+        <a class="entry-link" href="{{ .Permalink }}"></a>
+      </article>
       {{ end }}
     </div>
   </section>

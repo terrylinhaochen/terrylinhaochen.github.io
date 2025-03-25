@@ -1,7 +1,7 @@
 {{ define "main" }}
 <style>
   .projects-container {
-    max-width: 1200px;
+    max-width: var(--content-width);
     margin: 0 auto;
     padding: 2rem 1rem;
   }
@@ -73,71 +73,6 @@
     color: #666;
     font-size: 1.1rem;
   }
-
-  .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-  }
-
-  .project-card {
-    background: white;
-    border-radius: 12px;
-    padding: 1.5rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-  }
-
-  .project-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  }
-
-  .project-card.featured,
-  .work-card {
-    grid-column: span 2;
-    background: linear-gradient(to right bottom, #ffffff, #f8f9fa);
-  }
-
-  /* Modal styles */
-  .modal-overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    z-index: 1000;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .modal {
-    background: white;
-    padding: 2rem;
-    border-radius: 12px;
-    max-width: 800px;
-    width: 90%;
-    max-height: 90vh;
-    overflow-y: auto;
-    position: relative;
-  }
-
-  .modal-close {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    font-size: 1.5rem;
-    border: none;
-    background: none;
-    cursor: pointer;
-  }
-
-  .modal-overlay.active {
-    display: flex;
-  }
 </style>
 
 <div class="projects-container">
@@ -172,13 +107,25 @@
       <h2 class="section-title">Startup Projects</h2>
       <p class="section-subtitle">Things keeping me busy on weekends</p>
     </div>
-    <div class="projects-grid">
+    <div class="projects">
       {{ range where (where .Site.RegularPages "Section" "projects") "Params.categories" "startup" }}
-      <div class="project-card featured" onclick="openModal('{{ .Title | urlize }}')">
-        <h3 class="project-title">{{ .Title }}</h3>
-        <p class="project-description">{{ .Summary | truncate 200 }}</p>
-        <p class="project-meta">{{ if .Date }}{{ .Date.Format "January 2, 2006" }}{{ end }}</p>
-      </div>
+      <article class="post-entry">
+        {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
+        {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
+        <header class="entry-header">
+          <h2>{{ .Title }}</h2>
+        </header>
+        <div class="entry-content">
+          {{ .Summary | plainify | htmlUnescape }}
+        </div>
+        <footer class="entry-footer">
+          <div class="post-meta">
+            <time>{{ .Date.Format (default "January 2, 2006" .Site.Params.DateFormat) }}</time>
+            {{- if (.Param "ShowReadingTime") }} • {{ i18n "read_time" .ReadingTime | default (printf "%d min read" .ReadingTime) }}{{- end }}
+          </div>
+        </footer>
+        <a class="entry-link" href="{{ .Permalink }}"></a>
+      </article>
       {{ end }}
     </div>
   </section>
@@ -188,13 +135,25 @@
     <div class="section-header">
       <h2 class="section-title">Work Projects</h2>
     </div>
-    <div class="projects-grid">
+    <div class="projects">
       {{ range where (where .Site.RegularPages "Section" "projects") "Params.categories" "work" }}
-      <div class="project-card featured work-card" onclick="openModal('{{ .Title | urlize }}')">
-        <h3 class="project-title">{{ .Title }}</h3>
-        <p class="project-description">{{ .Summary | truncate 160 }}</p>
-        <p class="project-meta">{{ if .Date }}{{ .Date.Format "January 2, 2006" }}{{ end }}</p>
-      </div>
+      <article class="post-entry">
+        {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
+        {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
+        <header class="entry-header">
+          <h2>{{ .Title }}</h2>
+        </header>
+        <div class="entry-content">
+          {{ .Summary | plainify | htmlUnescape }}
+        </div>
+        <footer class="entry-footer">
+          <div class="post-meta">
+            <time>{{ .Date.Format (default "January 2, 2006" .Site.Params.DateFormat) }}</time>
+            {{- if (.Param "ShowReadingTime") }} • {{ i18n "read_time" .ReadingTime | default (printf "%d min read" .ReadingTime) }}{{- end }}
+          </div>
+        </footer>
+        <a class="entry-link" href="{{ .Permalink }}"></a>
+      </article>
       {{ end }}
     </div>
   </section>
@@ -204,13 +163,25 @@
     <div class="section-header">
       <h2 class="section-title">Research</h2>
     </div>
-    <div class="projects-grid">
+    <div class="projects">
       {{ range where (where .Site.RegularPages "Section" "projects") "Params.categories" "research" }}
-      <div class="project-card featured work-card" onclick="openModal('{{ .Title | urlize }}')">
-        <h3 class="project-title">{{ .Title }}</h3>
-        <p class="project-description">{{ .Summary | truncate 160 }}</p>
-        <p class="project-meta">{{ if .Date }}{{ .Date.Format "January 2, 2006" }}{{ end }}</p>
-      </div>
+      <article class="post-entry">
+        {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
+        {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
+        <header class="entry-header">
+          <h2>{{ .Title }}</h2>
+        </header>
+        <div class="entry-content">
+          {{ .Summary | plainify | htmlUnescape }}
+        </div>
+        <footer class="entry-footer">
+          <div class="post-meta">
+            <time>{{ .Date.Format (default "January 2, 2006" .Site.Params.DateFormat) }}</time>
+            {{- if (.Param "ShowReadingTime") }} • {{ i18n "read_time" .ReadingTime | default (printf "%d min read" .ReadingTime) }}{{- end }}
+          </div>
+        </footer>
+        <a class="entry-link" href="{{ .Permalink }}"></a>
+      </article>
       {{ end }}
     </div>
   </section>
@@ -220,32 +191,28 @@
     <div class="section-header">
       <h2 class="section-title">Prototypes</h2>
     </div>
-    <div class="projects-grid">
+    <div class="projects">
       {{ range where (where .Site.RegularPages "Section" "projects") "Params.categories" "prototype" }}
-      <div class="project-card" onclick="openModal('{{ .Title | urlize }}')">
-        <h3 class="project-title">{{ .Title }}</h3>
-        <p class="project-description">{{ .Summary | truncate 160 }}</p>
-        <p class="project-meta">{{ if .Date }}{{ .Date.Format "January 2, 2006" }}{{ end }}</p>
-      </div>
+      <article class="post-entry">
+        {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
+        {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
+        <header class="entry-header">
+          <h2>{{ .Title }}</h2>
+        </header>
+        <div class="entry-content">
+          {{ .Summary | plainify | htmlUnescape }}
+        </div>
+        <footer class="entry-footer">
+          <div class="post-meta">
+            <time>{{ .Date.Format (default "January 2, 2006" .Site.Params.DateFormat) }}</time>
+            {{- if (.Param "ShowReadingTime") }} • {{ i18n "read_time" .ReadingTime | default (printf "%d min read" .ReadingTime) }}{{- end }}
+          </div>
+        </footer>
+        <a class="entry-link" href="{{ .Permalink }}"></a>
+      </article>
       {{ end }}
     </div>
   </section>
-</div>
-
-<!-- Modal Template -->
-<div class="modal-container">
-  {{ range where .Site.RegularPages "Section" "projects" }}
-  <div id="modal-{{ .Title | urlize }}" class="modal-overlay">
-    <div class="modal">
-      <button class="modal-close" onclick="closeModal('{{ .Title | urlize }}')">&times;</button>
-      <h2>{{ .Title }}</h2>
-      <p class="project-meta">{{ if .Date }}{{ .Date.Format "January 2, 2006" }}{{ end }}</p>
-      <div class="modal-content">
-        {{ .Content }}
-      </div>
-    </div>
-  </div>
-  {{ end }}
 </div>
 
 <script>
@@ -284,42 +251,6 @@ document.addEventListener('DOMContentLoaded', function() {
     currentSlide = (currentSlide + 1) % slides.length;
     goToSlide(currentSlide);
   }, 5000);
-});
-
-// Modal functionality
-function openModal(projectId) {
-  const modal = document.getElementById(`modal-${projectId}`);
-  if (modal) {
-    modal.classList.add('active');
-    document.body.style.overflow = 'hidden';
-  }
-}
-
-function closeModal(projectId) {
-  const modal = document.getElementById(`modal-${projectId}`);
-  if (modal) {
-    modal.classList.remove('active');
-    document.body.style.overflow = 'auto';
-  }
-}
-
-// Close modal when clicking outside
-document.addEventListener('click', function(event) {
-  if (event.target.classList.contains('modal-overlay')) {
-    event.target.classList.remove('active');
-    document.body.style.overflow = 'auto';
-  }
-});
-
-// Close modal on escape key
-document.addEventListener('keydown', function(event) {
-  if (event.key === 'Escape') {
-    const activeModal = document.querySelector('.modal-overlay.active');
-    if (activeModal) {
-      activeModal.classList.remove('active');
-      document.body.style.overflow = 'auto';
-    }
-  }
 });
 </script>
 {{ end }} 
