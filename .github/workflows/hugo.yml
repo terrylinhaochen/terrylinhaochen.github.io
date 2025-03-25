@@ -42,10 +42,19 @@ jobs:
           hugo-version: '0.136.2'
           extended: true
       
+      - name: List files
+        run: |
+          echo "Listing content directory:"
+          ls -la content/
+          echo "Listing configuration files:"
+          ls -la *.toml *.yaml || echo "No config files found"
+      
       - name: Build
         run: |
           echo "Building with config.toml"
           hugo --minify --config=config.toml
+          echo "Pages in public directory:"
+          find public -type f -name "*.html" | sort
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
