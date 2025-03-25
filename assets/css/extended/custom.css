@@ -72,6 +72,42 @@ body {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
+/* Dark mode styling for project cards to match post-entry */
+:root[data-theme="dark"] .project-card {
+  background-color: var(--entry);
+  color: var(--primary);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+:root[data-theme="dark"] .project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+:root[data-theme="dark"] .project-card h2,
+:root[data-theme="dark"] .project-card h3,
+:root[data-theme="dark"] .project-card a {
+  color: var(--primary);
+}
+
+/* Make projects use the same entry styling as posts */
+.projects {
+  padding: 0 0.5rem;
+}
+
+.projects .post-entry {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: var(--entry);
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projects .post-entry:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
 /* Travel styling */
 .country-header {
   margin-top: 2rem;
@@ -79,6 +115,11 @@ body {
   border-bottom: 2px solid #eee;
   color: #333;
   font-size: var(--subheading-font-size);
+}
+
+:root[data-theme="dark"] .country-header {
+  color: var(--primary);
+  border-bottom: 2px solid var(--border);
 }
 
 /* Search styling */
@@ -91,6 +132,12 @@ body {
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   font-size: var(--card-font-size);
+}
+
+:root[data-theme="dark"] .search-result {
+  background-color: var(--entry);
+  border-bottom: 1px solid var(--border);
+  color: var(--primary);
 }
 
 /* Custom styling for the homepage */
@@ -146,10 +193,21 @@ body {
     border: 1px solid #eaeaea;
 }
 
+:root[data-theme="dark"] .social-icons a {
+    background-color: var(--entry);
+    color: var(--primary);
+    border: 1px solid var(--border);
+}
+
 .social-icons a:hover {
     transform: translateY(-3px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #ffffff;
+}
+
+:root[data-theme="dark"] .social-icons a:hover {
+    background-color: var(--entry);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .social-icons svg {
