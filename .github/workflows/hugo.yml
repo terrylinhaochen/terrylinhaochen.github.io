@@ -42,7 +42,7 @@ jobs:
           extended: true
       
       - name: Build
-        run: hugo --minify
+        run: hugo --minify --config=config.toml
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
