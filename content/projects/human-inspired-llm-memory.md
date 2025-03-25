@@ -24,6 +24,8 @@ This work introduces a novel biomimetic approach to LLM memory extension that mo
 ## System Architecture
 Our memory improvement system utilizes a three-layer architecture inspired by human cognition:
 
+![Three-Tiered Memory Architecture](/images/projects/human-inspired-llm-memory/memory-architecture.png)
+
 ### Working Memory (LLM Context Window)
 We divide the context window into two distinct segments:
 - **Multi-Round Conversation History (MCH)**: Stores current conversation context, maintaining flow up to a defined token limit.
