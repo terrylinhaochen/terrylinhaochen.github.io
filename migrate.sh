@@ -259,7 +259,7 @@ description: "Hi, this is Terry. I'm documenting my product ideas and learning n
 
 ## 👋 Welcome to Terry's Blog
 
-I'm interested in creating new user experiences through generative AI, focusing on synthesized content generation and actionable insight extraction. Feel free to reach me at terrychen2026@u.northwestern.edu.
+I'm interested in creating new user experiences through generative AI, focusing on synthesized content generation and actionable insight extraction.
 EOF
 
 # Create project index page
