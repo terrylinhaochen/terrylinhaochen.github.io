@@ -296,34 +296,32 @@ a:hover {
 
 ## Deployment
 
-Your site is configured to automatically deploy to GitHub Pages:
+Your site is configured to deploy to GitHub Pages from the `gh-pages` branch:
 
-1. Any changes you push to the `main` branch will trigger a GitHub Actions workflow
-2. The workflow will build your Hugo site and deploy it to GitHub Pages
-3. You can view your deployed site at: https://terrylinhaochen.github.io/
+1. Any changes you make to your site content should be made in the `main` branch
+2. After making changes, you need to build and deploy using the reset script:
 
-### Deployment Process
+```bash
+# Make your content changes
+# Then run the deployment script
+./reset-github-pages.sh
+```
 
-1. **Make changes to your site locally**
-   ```bash
-   # Edit files in your text editor
-   ```
+3. The script will:
+   - Clean the public directory
+   - Build your site using Hugo
+   - Push the generated content to the `gh-pages` branch
+   - GitHub Pages will then serve your site from the `gh-pages` branch
 
-2. **Preview changes locally with:**
-   ```bash
-   hugo server -D
-   ```
+### Important Settings
+Make sure your GitHub Pages settings are configured to deploy from the `gh-pages` branch, not from GitHub Actions.
 
-3. **Commit and push changes:**
-   ```bash
-   git add .
-   git commit -m "Description of your changes"
-   git push origin main
-   ```
-
-4. **Wait for GitHub Actions to deploy**
-   - Check your repository's Actions tab to see build progress: https://github.com/terrylinhaochen/terrylinhaochen.github.io/actions
-   - After successful deployment, your changes will be live
+### Troubleshooting Deployment Issues
+If your site is not updating or showing 404 errors for some pages:
+1. Check that GitHub Pages is set to deploy from the `gh-pages` branch (not "GitHub Actions")
+2. Run the `reset-github-pages.sh` script again to force a clean build and push
+3. Wait a few minutes for GitHub's cache to update
+4. Check browser cache by doing a hard refresh (Ctrl+F5 or Cmd+Shift+R)
 
 ## Troubleshooting
 
