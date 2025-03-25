@@ -3,18 +3,18 @@
 
 /* Increase base font size for the entire site */
 :root {
-  --main-font-size: 18px;
-  --card-font-size: 1.2rem;
-  --heading-font-size: 2.7rem;
-  --subheading-font-size: 2rem;
-  --meta-font-size: 1.05rem;
-  --content-width: 1000px;
-  --header-padding: 2.5rem;
+  --main-font-size: 16px;
+  --card-font-size: 1rem;
+  --heading-font-size: 2.3rem;
+  --subheading-font-size: 1.8rem;
+  --meta-font-size: 0.95rem;
+  --content-width: 900px;
+  --header-padding: 2rem;
 }
 
 body {
   font-size: var(--main-font-size);
-  line-height: 1.7;
+  line-height: 1.6;
 }
 
 /* Make header wider and aligned with top navigation */
@@ -41,19 +41,19 @@ body {
 }
 
 .logo a {
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 700;
 }
 
 .menu {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin: 0; /* Remove margin to align properly */
 }
 
 /* Make sure the menu remains properly spaced */
 .menu .menu__inner {
   display: flex;
-  gap: 2.5rem; /* Increase gap between menu items */
+  gap: 2rem; /* Increase gap between menu items */
 }
 
 /* Project cards styling */
@@ -110,9 +110,9 @@ body {
 }
 
 .home-info .entry-content {
-    font-size: 1.3rem;
-    line-height: 1.8;
-    margin-bottom: 2rem;
+    font-size: 1.15rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
     padding: 0 1rem;
 }
 
@@ -137,8 +137,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     background-color: #f8f8f8;
     color: #333;
@@ -174,8 +174,8 @@ body {
 .post-preview, .post {
     font-size: var(--card-font-size);
     line-height: 1.6;
-    padding: 2rem;
-    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .post-preview h2, .post h2 {
@@ -196,8 +196,8 @@ body {
 
 /* First homepage entry should be full width to match other cards */
 .first-entry {
-    margin-bottom: 2.5rem;
-    padding: 2rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
     font-size: var(--card-font-size);
 }
 
@@ -212,8 +212,8 @@ body {
 
 /* Make all cards have consistent styling */
 .post-entry {
-    margin-bottom: 2.5rem;
-    padding: 2rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
     font-size: var(--card-font-size);
 }
 
