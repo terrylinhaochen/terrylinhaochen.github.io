@@ -34,6 +34,7 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
+          token: ${{ github.token }}
       
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
@@ -42,7 +43,9 @@ jobs:
           extended: true
       
       - name: Build
-        run: hugo --minify --config=config.toml
+        run: |
+          echo "Building with config.toml"
+          hugo --minify --config=config.toml
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
