@@ -1,7 +1,11 @@
 ---
 title: "Smart Expense Tracker with Auto-Categorization"
 date: 2023-03-21
-categories: prototype
+categories: ["prototype"]
+cover:
+    image: "/images/projects/smart-expense-tracker/architecture.png"
+    alt: "Smart Expense Tracker Architecture"
+    caption: "AWS Serverless Architecture for Smart Expense Tracking"
 ---
 
 The Smart Expense Tracker with Auto-Categorization is a cloud-native application built on AWS serverless architecture. The system automates the tedious process of expense tracking by leveraging AWS services to process receipts, categorize transactions, and provide financial insights. The application offers several key features including receipt scanning and data extraction using AWS Textract, automatic expense categorization with AI (using AWS Bedrock), comprehensive expense tracking, budget setting with automated alerts via SNS, and financial report generation in CSV or PDF formats.
@@ -9,7 +13,7 @@ The Smart Expense Tracker with Auto-Categorization is a cloud-native application
 ## System Architecture
 The application uses a serverless architecture centered around AWS Lambda functions and Amazon RDS. This design ensures scalability, reliability, and cost efficiency by leveraging AWS managed services.
 
-![Smart Expense Tracker Architecture](static/images/projects/smart-expense-tracker/architecture.png)
+![Smart Expense Tracker Architecture](/images/projects/smart-expense-tracker/architecture.png)
 
 The Client Application provides a web/mobile interface for user interactions. AWS API Gateway exposes the backend as a RESTful API and routes client requests to appropriate Lambda functions. Four AWS Lambda functions handle all backend operations, with a custom datatier module managing database interactions. Amazon RDS (MySQL) serves as the persistent data store for users, transactions, and receipt metadata. AWS S3 securely stores uploaded receipt images, while AWS Textract processes these images with OCR to extract transaction details. An AI service (AWS Bedrock) automatically categorizes expenses based on merchant and description. Finally, Amazon SNS sends budget alerts via email notifications when spending exceeds predefined thresholds.
 
@@ -81,7 +85,7 @@ The application exposes a RESTful API through AWS API Gateway with the following
 ## Database Schema
 The application uses a MySQL database on Amazon RDS with the following schema:
 
-![Database Schema](static/images/projects/smart-expense-tracker/sql_schema.png)
+![Database Schema](/images/projects/smart-expense-tracker/sql_schema.png)
 
 - The **Users** table stores basic user information. The `userid` field serves as the primary key and unique identifier for each user. The `email` field contains the user's email address for notifications. The `budget` field is a JSON object storing category-specific budget limits (e.g., {"Food": 500, "Transport": 200}). The `sns_topic_arn` field contains the Amazon SNS topic ARN for sending notifications to this user.
 
