@@ -6,13 +6,12 @@
             {{- partial "home_info.html" . }}
         {{- end }}
 
-        {{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
-        {{- $featuredPosts := where $pages "Params.featured" "eq" true }}
+        {{- $mainThemes := where site.RegularPages "Section" "main-themes" }}
         
-        {{- if and $featuredPosts (eq .Paginator.PageNumber 1) }}
+        {{- if and $mainThemes (eq .Paginator.PageNumber 1) }}
         <div class="featured-cards">
             <h2>Main Themes</h2>
-            {{- range $featuredPosts }}
+            {{- range $mainThemes }}
             <article class="post-entry">
                 <header class="entry-header">
                     <h2>{{ .Title }}</h2>
