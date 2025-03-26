@@ -1,5 +1,5 @@
 ---
-title: "Marrrket - AI Listing Secondhand Marketplace"
+title: "Marrrket: AI Listing Secondhand Marketplace"
 date: 2024-03-20
 categories: prototype
 projectURL: https://marrrket.com
