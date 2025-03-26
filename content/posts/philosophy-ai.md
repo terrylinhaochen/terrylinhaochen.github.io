@@ -3,6 +3,7 @@ title: "From What should we do with our brain? to Morphing intelligence"
 date: 2022-12-01
 author: Terry Chen
 ---
+
 From What should we do with our brain? to Morphing intelligence: How does Malabou’s analysis of biological plasticity and technological flexibility invite or impede understanding of the difference between humans and artificial intelligence?
 
 With the appearance of synaptic chips, artificial intelligence (AI) has experienced epigenetic transformation analogous to the biological process (Malabou, 2021). From the invention of IBM’s blue brain (Dharmendra, 2011) to the more recent development of OpenAI’s ChatGPT (OpenAI, 2022), AI has grown to be capable of executing complex tasks and self-optimizing through environmental feedback. In light of this, Catherine Malabou authored Morphing intelligence as a critique to her previous book What should we do with our brain?, stating that the difference between biological plasticity and technological flexibility at the heart of her earlier book did not exist. However, if such an argument were true, is it still possible to differentiate humans from AI? This raises the question: How does Malabou’s perspective on biological plasticity and technological flexibility facilitate or impede understanding of the difference between humans and AI? To understand the difference between humans and AI, we must explore their epigenetic process beyond surface level metaphors and recognize the role of consciousness in dictating human action.
