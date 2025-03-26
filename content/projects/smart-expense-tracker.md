@@ -2,10 +2,6 @@
 title: "Smart Expense Tracker with Auto-Categorization"
 date: 2023-03-21
 categories: ["prototype"]
-cover:
-    image: "/images/projects/smart-expense-tracker/architecture.png"
-    alt: "Smart Expense Tracker Architecture"
-    caption: "AWS Serverless Architecture for Smart Expense Tracking"
 ---
 
 The Smart Expense Tracker with Auto-Categorization is a cloud-native application built on AWS serverless architecture. The system automates the tedious process of expense tracking by leveraging AWS services to process receipts, categorize transactions, and provide financial insights. The application offers several key features including receipt scanning and data extraction using AWS Textract, automatic expense categorization with AI (using AWS Bedrock), comprehensive expense tracking, budget setting with automated alerts via SNS, and financial report generation in CSV or PDF formats.

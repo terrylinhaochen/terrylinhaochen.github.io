@@ -686,3 +686,59 @@ article {
 :root[data-theme="dark"] .find-more-posts a {
   color: var(--primary);
 }
+
+/* Custom styling for archived section */
+.archive-list {
+  padding: 0;
+}
+
+.archive-list .post-entry {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: var(--entry);
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.archive-list .post-entry:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.archive-list .post-entry h2 {
+  font-size: var(--subheading-font-size);
+  margin-bottom: 1rem;
+}
+
+:root[data-theme="dark"] .archive-list .post-entry {
+  background-color: var(--entry);
+  color: #ffffff !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+:root[data-theme="dark"] .archive-list .post-entry:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.archive-list .post-entry .entry-content {
+  font-size: var(--card-font-size);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+/* Fix empty archive styling */
+.archive-empty {
+  text-align: center;
+  padding: 3rem 1.5rem;
+  background-color: var(--entry);
+  border-radius: 12px;
+  margin: 2rem 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+:root[data-theme="dark"] .archive-empty {
+  background-color: var(--entry);
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
