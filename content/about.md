@@ -7,7 +7,7 @@ hidemeta: true
 ShowBreadCrumbs: false
 ---
 
-My name is Terry (陈麟昊). I currently live in Evanston, studying Computer Science at Northwestern. I enjoy traveling and learning about the strange quirks that make us human. I like building things, with a focus on content understanding & generation with agentic workflows. In my free time, I play tennis and soccer. I'm still figuring out life, so I'll spare you the formal introduction. If you're in town and interested in chatting, let's grab coffee at Peet's.
+My name is Terry (陈麟昊). I currently live in Evanston, studying Computer Science at Northwestern. I enjoy observing and learning about the strange quirks that make us human. I also like building things, with a focus on content understanding & generation with agentic workflows. Previously, I have worked in product and engineering at TikTok and ByteDance. In my free time, I play tennis and ocassionally cook. I'm still figuring out life, so I'll spare you the formal introduction. If you're in town and interested in chatting, let's grab coffee at Peet's.
 
 ## Contact
 

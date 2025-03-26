@@ -65,11 +65,12 @@ theme = "PaperMod"
     name = "Projects"
     url = "/projects/"
     weight = 20
-  [[menu.main]]
-    identifier = "archived"
-    name = "Archived"
-    url = "/archived/"
-    weight = 25
+  # Archived section temporarily hidden
+  # [[menu.main]]
+  #   identifier = "archived"
+  #   name = "Archived"
+  #   url = "/archived/"
+  #   weight = 25
   [[menu.main]]
     identifier = "search"
     name = "Search"

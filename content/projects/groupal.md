@@ -1,5 +1,5 @@
 ---
-title: "Realtime conversational learning aid"
+title: "Realtime Conversational Learning Aid"
 date: 2024-11-10
 categories: research
 ---
