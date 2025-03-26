@@ -11,8 +11,8 @@
         
         {{- if and $featuredPosts (eq .Paginator.PageNumber 1) }}
         <div class="featured-cards">
-            <h2>Featured</h2>
-            {{- range first 3 $featuredPosts }}
+            <h2>Main Themes</h2>
+            {{- range $featuredPosts }}
             <article class="post-entry">
                 <header class="entry-header">
                     <h2>{{ .Title }}</h2>
@@ -30,74 +30,11 @@
             </article>
             {{- end }}
         </div>
-        {{- end }}
 
-        {{- $paginator := .Paginate $pages }}
-        {{- if .Site.Params.ShowAllPagesInArchive }}
-            {{- if gt $paginator.TotalPages 0 }}
-                <div class="pagination">
-                    <div class="pagination__buttons">
-                        {{ if $paginator.HasPrev }}
-                            <span class="button previous">
-                                <a href="{{ $paginator.Prev.URL | absURL }}">
-                                    <span class="button__icon">←</span>
-                                    <span class="button__text">{{ i18n "newer_posts" | default "Newer posts" }}</span>
-                                </a>
-                            </span>
-                        {{ end }}
-                        {{ if $paginator.HasNext }}
-                            <span class="button next">
-                                <a href="{{ $paginator.Next.URL | absURL }}">
-                                    <span class="button__text">{{ i18n "older_posts" | default "Older posts" }}</span>
-                                    <span class="button__icon">→</span>
-                                </a>
-                            </span>
-                        {{ end }}
-                    </div>
-                </div>
-            {{- end }}
-        {{- else }}
-            <div class="posts">
-                {{- if gt $paginator.TotalPages 0 }}
-                    {{- range $index, $post := $paginator.Pages }}
-                        {{- if ne $post.Params.featured true }}
-                            <article class="post-entry">
-                                {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
-                                {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
-                                <header class="entry-header">
-                                    <h2>{{ .Title }}</h2>
-                                </header>
-                                <div class="entry-content">
-                                    {{ .Summary | plainify | htmlUnescape }}
-                                </div>
-                                <footer class="entry-footer">
-                                    <div class="post-meta">
-                                        <time>{{ .Date.Format (default "January 2, 2006" .Site.Params.DateFormat) }}</time>
-                                        {{- if (.Param "ShowReadingTime") }} • {{ i18n "read_time" .ReadingTime | default (printf "%d min read" .ReadingTime) }}{{- end }}
-                                    </div>
-                                </footer>
-                                <a class="entry-link" href="{{ .Permalink }}"></a>
-                            </article>
-                        {{- end }}
-                    {{- end }}
-                {{- end }}
-            </div>
-            {{- if gt $paginator.TotalPages 1 }}
-                <footer class="page-footer">
-                    <nav class="pagination">
-                        {{- if $paginator.HasPrev }}
-                            <a class="prev" href="{{ $paginator.Prev.URL | absURL }}">
-                                «&nbsp;{{ i18n "prev_page" | default "Prev" }}
-                            </a>
-                        {{- end }}
-                        {{- if $paginator.HasNext }}
-                            <a class="next" href="{{ $paginator.Next.URL | absURL }}">
-                                {{ i18n "next_page" | default "Next" }}&nbsp;»
-                            </a>
-                        {{- end }}
-                    </nav>
-                </footer>
-            {{- end }}
+        <!-- Information about finding all posts -->
+        <div class="find-more-posts">
+            <p>To view all posts, please visit the <a href="/posts/">Posts</a> section.</p>
+        </div>
         {{- end }}
     {{- end }}
 {{ end }} 

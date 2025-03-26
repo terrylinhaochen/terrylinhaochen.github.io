@@ -645,3 +645,44 @@ article {
     border-color: var(--border);
     color: var(--primary);
 }
+
+/* Style for the "find more posts" section */
+.find-more-posts {
+  text-align: center;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: var(--entry);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+.find-more-posts p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.find-more-posts a {
+  font-weight: bold;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.find-more-posts a:hover {
+  text-decoration: underline;
+}
+
+/* Make sure all featured cards are shown with enough space */
+.featured-cards .post-entry {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+}
+
+/* Dark mode styles for find-more-posts */
+:root[data-theme="dark"] .find-more-posts {
+  background: var(--entry);
+  border: 1px solid var(--border);
+}
+
+:root[data-theme="dark"] .find-more-posts a {
+  color: var(--primary);
+}
