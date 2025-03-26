@@ -1,5 +1,5 @@
 ---
-title: "What2Do"
+title: "What2Do: AI Trip Planning Tool"
 date: 2024-11-10
 categories: prototype
 ---

@@ -1,5 +1,5 @@
 ---
-title: "A Human-Inspired Solution to LLM Memory Enhancement"
+title: "LLM Memory Consolidation and Augmentation"
 date: 2023-08-10
 categories: research
 ---
