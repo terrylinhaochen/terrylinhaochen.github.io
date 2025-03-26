@@ -7,6 +7,9 @@ theme = "PaperMod"
   description = "Hi, this is Terry. I'm documenting my product ideas and learning notes in this blog. I'm interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction."
   author = "Terry Chen"
   
+  # Main sections to include in lists and archives
+  mainSections = ["posts", "projects", "archived"]
+  
   # PaperMod specific parameters
   defaultTheme = "auto"
   ShowReadingTime = true
@@ -62,6 +65,11 @@ theme = "PaperMod"
     name = "Projects"
     url = "/projects/"
     weight = 20
+  [[menu.main]]
+    identifier = "archived"
+    name = "Archived"
+    url = "/archived/"
+    weight = 25
   [[menu.main]]
     identifier = "search"
     name = "Search"
