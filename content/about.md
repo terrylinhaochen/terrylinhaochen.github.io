@@ -11,4 +11,4 @@ My name is Terry (陈麟昊). I currently live in Evanston, studying Computer Sc
 
 ## Contact
 
-Feel free to reach out to me at [terrychen2026@u.northwestern.edu](mailto:terrychen2026@u.northwestern.edu) or connect with me on [LinkedIn](https://www.linkedin.com/in/terry-chen-1998).
+Feel free to reach out to me at [terrychen2026@u.northwestern.edu](mailto:terrychen2026@u.northwestern.edu) or connect with me on [LinkedIn](https://www.linkedin.com/in/terry-chen-3b44911a4/).
