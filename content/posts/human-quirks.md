@@ -1,6 +1,6 @@
 ---
 title: "Human Quirks"
-date: 2024-10-1
+date: 2024-10-01
 description: "Observing and understanding the strange quirks of individuals and crowds"
 tags: ["Observation", "Behavior", "Opportunities", "Humans"]
 categories: ["Research"]
