@@ -33,6 +33,9 @@ terrylinhaochen.github.io/          # Root directory of the project
 ├── content/                        # Where all your content lives
 │   ├── _index.md                   # Homepage content
 │   ├── about.md                    # About page
+│   ├── archived/                   # Archived content
+│   │   ├── _index.md               # Archived section landing page
+│   │   └── *.md                    # Individual archived files
 │   ├── posts/                      # Blog posts
 │   │   └── *.md                    # Individual post files
 │   ├── projects/                   # Project pages
@@ -61,8 +64,13 @@ terrylinhaochen.github.io/          # Root directory of the project
 ├── themes/                         # Hugo themes
 │   └── PaperMod/                   # PaperMod theme
 ├── .gitignore                      # Files to ignore in Git
+├── archive.sh                      # Main archiving script with menu options
+├── archive-note.sh                 # Script to move content to archived section
+├── tag-as-archived.sh              # Script to tag content as archived
 ├── create-post.sh                  # Script to create new posts
-├── hugo.yaml                       # Main Hugo configuration file
+├── reset-github-pages.sh           # Script to reset and deploy to GitHub Pages
+├── config.toml                     # Main Hugo configuration file
+├── hugo.yaml                       # Alternative Hugo configuration
 └── README.md                       # This file
 ```
 
@@ -83,6 +91,18 @@ hugo --minify
 
 # Create a new travel post using the script
 ./create-post.sh "Your Travel Title" travel
+
+# Archive a post using the interactive menu
+./archive.sh
+
+# Archive a post by moving it to the archived section
+./archive-note.sh content/posts/post-to-archive.md
+
+# Archive a post by tagging it without moving
+./tag-as-archived.sh content/posts/post-to-archive.md
+
+# Deploy to GitHub Pages
+./reset-github-pages.sh
 ```
 
 ## Creating Content
@@ -324,13 +344,37 @@ Key settings you might want to modify:
 - `params.description`: Site description
 - `params.homeInfoParams`: Welcome section content
 - `params.socialIcons`: Social media links
-- `menu.main`: Navigation menu items
+- `menu.main`: Navigation menu items (posts, projects, archived, search, about)
+- `params.mainSections`: Content types to include in archives and listings (posts, projects, archived)
 
 Example of updating the site description:
 
 ```yaml
 params:
   description: "Your new site description goes here"
+```
+
+Example of menu configuration:
+
+```yaml
+menu:
+  main:
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 10
+    - identifier: projects
+      name: Projects
+      url: /projects/
+      weight: 20
+    - identifier: archived
+      name: Archived
+      url: /archived/
+      weight: 25
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 30
 ```
 
 ### Custom CSS: `assets/css/extended/custom.css`
@@ -400,7 +444,12 @@ If your site is not updating or showing 404 errors for some pages:
    - Ensure you're modifying the correct file in `assets/css/extended/custom.css`
    - Check that your CSS selectors are specific enough to override theme defaults
 
-4. **Deployment failures:**
+4. **Archived content not showing up:**
+   - Make sure `archived` is included in the `mainSections` parameter in your config file
+   - Check that the `archived` menu item is properly configured in the menu section
+   - Verify the page has the right frontmatter (if using tags for archiving)
+
+5. **Deployment failures:**
    - Check the GitHub Actions logs for errors
    - Ensure your Hugo version in `.github/workflows/hugo.yml` matches your local version
    - Verify there are no invalid front matter or syntax issues in your markdown files
