@@ -1,6 +1,6 @@
 ---
 title: "The Essence of Creativity is Finding the Right Vantage Point"
-date: 2024-08-30
+date: 2024-08-25
 author: Terry Chen
 ---
 
