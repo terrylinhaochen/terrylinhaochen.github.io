@@ -5,6 +5,73 @@
         Hi, this is Terry. I'm documenting my product ideas and learning notes in this blog. I'm interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.
     </div>
     
+    <!-- Email Subscription Form -->
+    <div class="subscribe-form">
+      <form id="subscribe-form">
+        <div class="subscribe-input-container">
+          <input type="email" id="subscriber-email" name="email" placeholder="Your email address" required>
+          <button type="submit">Get email updates</button>
+        </div>
+        <div id="form-message" class="form-message"></div>
+      </form>
+
+      <script>
+        document.getElementById('subscribe-form').addEventListener('submit', function(e) {
+          e.preventDefault();
+          
+          const form = this;
+          const email = document.getElementById('subscriber-email').value;
+          const messageEl = document.getElementById('form-message');
+          const submitButton = form.querySelector('button[type="submit"]');
+          
+          // Disable the button during submission
+          submitButton.disabled = true;
+          submitButton.textContent = 'Subscribing...';
+          
+          // Clear any previous messages
+          messageEl.textContent = '';
+          messageEl.className = 'form-message';
+          
+          // Get current page URL
+          const pageUrl = window.location.href;
+          
+          // Send data to Google Sheets
+          fetch('https://script.google.com/macros/s/AKfycbxF7czbmo2JEeATzFoMnHIfGASoSTzogbjJcuQm30sjBXFqmDOqISWkIHBr64GdmURS/exec', {
+            method: 'POST',
+            mode: 'no-cors', // Important for cross-domain requests
+            headers: {
+              'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: new URLSearchParams({
+              'email': email,
+              'pageUrl': pageUrl
+            })
+          })
+          .then(function() {
+            // Show success message
+            messageEl.textContent = 'Thank you for subscribing!';
+            messageEl.classList.add('success');
+            
+            // Reset form
+            form.reset();
+          })
+          .catch(function(error) {
+            // Show error message
+            messageEl.textContent = 'Something went wrong. Please try again.';
+            messageEl.classList.add('error');
+            console.error('Error:', error);
+          })
+          .finally(function() {
+            // Re-enable the button
+            submitButton.disabled = false;
+            submitButton.textContent = 'Get email updates';
+          });
+          
+          return false;
+        });
+      </script>
+    </div>
+    
     <div class="social-icons">
         {{- range site.Params.socialIcons }}
             <a href="{{ trim .url " " }}" target="_blank" rel="noopener noreferrer" title="{{ .name | title }}">
