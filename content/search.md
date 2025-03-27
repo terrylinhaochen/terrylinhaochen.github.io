@@ -2,5 +2,5 @@
 title: "Search"
 layout: "search"
 summary: "search"
-placeholder: "Search for posts, projects, or travel"
+placeholder: "Search for posts, projects, or topics"
 --- 

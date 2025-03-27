@@ -2,7 +2,7 @@
 title: "Human Quirks"
 date: 2024-10-01
 description: "Observing and understanding the strange quirks of individuals and crowds"
-tags: ["Observations", "Humans"]
+tags: ["Observations"]
 categories: ["Research"]
 featured: true
 ---

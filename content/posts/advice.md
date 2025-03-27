@@ -2,7 +2,7 @@
 title: "Advice"
 date: 2024-09-01
 author: Patrick Collison, Paul Graham, etc
-tags: ["Observations", "Humans"]
+tags: ["Observations"]
 ---
 Every now and then I like to read about the advice of others who've succeeded in their field. Here's a few that I personally found to be enlightening and practical. 
 

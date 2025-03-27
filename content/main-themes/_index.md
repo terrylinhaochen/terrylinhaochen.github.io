@@ -1,5 +1,5 @@
 ---
-title: "Main Themes"
+title: "Themes"
 ---
 
 Areas of Interest
