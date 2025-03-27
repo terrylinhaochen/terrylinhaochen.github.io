@@ -102,21 +102,27 @@ body {
 
 /* Comprehensive dark mode styling for projects template */
 :root[data-theme="dark"] .theme-slide {
-  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%) !important;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.2) !important;
+  background: linear-gradient(135deg, #e0e0e0 0%, #f5f5f5 100%) !important; /* Light grey background */
 }
 
-:root[data-theme="dark"] .theme-slide h2,
+:root[data-theme="dark"] .theme-slide h2 {
+  color: #000000 !important; /* Pure black heading color for maximum contrast */
+  font-weight: 700 !important; /* Make text bolder */
+  font-size: 2.5rem !important; /* Make text larger */
+  text-shadow: none !important; /* Remove shadow */
+}
+
 :root[data-theme="dark"] .theme-slide p {
-  color: #ffffff !important;
+  color: #000000 !important; /* Pure black paragraph text for maximum contrast */
+  font-weight: 500 !important; /* Added medium font weight for better readability */
 }
 
 :root[data-theme="dark"] .theme-nav button {
-  background: #555 !important;
+  background: #4a5568; /* Darker grey for inactive dots */
 }
 
 :root[data-theme="dark"] .theme-nav button.active {
-  background: #ffffff !important;
+  background: #ffffff; /* White for active dot */
 }
 
 :root[data-theme="dark"] .section-title {
@@ -745,10 +751,9 @@ article {
 
 /* Email Subscription Form Styles */
 .subscribe-form {
-    margin: 2rem 0;
-    width: 100%;
-    max-width: 500px;
-    margin-left: auto;
+    margin: 2rem 0 1rem;
+    width: calc(100% + 1.5rem);
+    margin-left: -1rem;
     margin-right: auto;
 }
 
@@ -756,7 +761,6 @@ article {
     display: flex;
     flex-direction: row;
     width: 100%;
-    max-width: 500px;
     margin: 0 auto;
 }
 
@@ -819,7 +823,7 @@ article {
 /* Dark mode support */
 :root[data-theme="dark"] .subscribe-form input[type="email"] {
     background-color: var(--entry);
-    color: var(--primary);
+    color: #fff;
     border-color: var(--border);
 }
 
@@ -841,6 +845,37 @@ article {
 }
 
 /* Responsive design for mobile */
+@media (max-width: 600px) {
+    .subscribe-input-container {
+        flex-direction: column;
+    }
+    
+    .subscribe-form input[type="email"] {
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+    
+    .subscribe-form button {
+        border-radius: 4px;
+        width: 100%;
+    }
+}
+
+/* Dark mode specific improvements for main themes content */
+:root[data-theme="dark"] .featured-cards .post-entry .entry-header h2 {
+    color: #ffffff; /* Make titles white instead of grey */
+}
+
+:root[data-theme="dark"] .featured-cards .post-entry .entry-content {
+    color: #e0e0e0; /* Lighter grey for better contrast on dark backgrounds */
+}
+
+/* Ensure main theme text is visible in dark mode */
+:root[data-theme="dark"] .post-entry .entry-content {
+    color: #e0e0e0; /* Lighter grey for better contrast */
+}
+
+/* Media queries for mobile */
 @media (max-width: 600px) {
     .subscribe-input-container {
         flex-direction: column;
