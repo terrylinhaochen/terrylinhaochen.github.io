@@ -2,6 +2,7 @@
 title: "From What should we do with our brain? to Morphing intelligence"
 date: 2022-12-01
 author: Terry Chen
+tags: ["Technology", "Humans", "Observations"]
 ---
 
 From What should we do with our brain? to Morphing intelligence: How does Malabou’s analysis of biological plasticity and technological flexibility invite or impede understanding of the difference between humans and artificial intelligence?

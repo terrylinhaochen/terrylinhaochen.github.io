@@ -2,6 +2,7 @@
 title: "Eat Less Meat, Save the Planet?"
 date: 2022-12-01
 author: Terry Chen
+tags: ["Observations", "Humans"]
 ---
 
 The slogan “Eat Less Meat, Save the Planet” appears on the advertisements of many plant-based products. While there is still ongoing debate as to whether shifting to a plant-based diet is our only option, companies like Impossible Foods are attracting more people to try plant-based alternatives, claiming that their products use 92% less water, produce 91% less GreenHouse Gas (GHG) emissions, and take up 96% less land compared to meat production (Impossible Foods, 2023). However, are plant-based meats necessarily more sustainable, or is it the method of production that matters? To fully analyze the environmental impact of meat production and whether plant-based products are as sustainable as they claim, this essay will focus on evaluating the effectiveness of current Life Cycle Assessment (LCA) methods used by Impossible Foods in their comparison with traditional meat producers such as JBS and White Oak Pastures.

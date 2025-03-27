@@ -2,6 +2,7 @@
 title: "LLM Memory Consolidation and Augmentation"
 date: 2023-08-10
 categories: research
+tags: ["Technology", "Research"]
 ---
 
 # A Human-Inspired Solution to LLM Memory Enhancement

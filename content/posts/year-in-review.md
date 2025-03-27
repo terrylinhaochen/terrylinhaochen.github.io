@@ -2,6 +2,7 @@
 title: "2024 in Review"
 date: 2024-12-31
 author: Terry Chen
+tags: ["Observations"]
 ---
 2024 felt to have passed by very quickly, in part because I had interesting work to occupy my time. Early in the year, after expanding Cogno and gaining some traction, work slowly stalled: though we did code and talk to customers, the cycles were far and wide in between. The focus on multi-agent systems was (as of writing this) in the right direction, yet we did not find the niche to tackle sales conversion improvement.
 

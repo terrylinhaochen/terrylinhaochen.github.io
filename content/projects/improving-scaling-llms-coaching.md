@@ -2,6 +2,7 @@
 title: "Improving & Scaling LLMs for Coaching"
 date: 2023-06-15
 categories: research
+tags: ["Technology", "Research"]
 ---
 
 # Situated Practice Systems: Improving and Scaling Coaching through LLMs
