@@ -1,6 +1,6 @@
 ---
 title: "The Craft of Miyazaki in an AI-Generated World"
-date: 2024-10-18
+date: 2025-03-27
 author: Terry Chen
 tags: ["Observations", "Technology"]
 ---
