@@ -5,7 +5,7 @@ author: Terry Chen
 tags: ["Observations", "Technology"]
 ---
 
-[Dust Balls](/images/posts/hayao-miyakazi/dust-balls.png)
+![Dust Balls](/images/posts/hayao-miyakazi/dust-balls.png)
 
 Hayao Miyazaki is my favorite artist and director. Though I haven't watched his entire filmography, every moment of the films I have seen captivates me. In "Spirited Away," the dust ball creatures exemplify his artistic prowess—his ability to infuse life into the mundane through his drawings. His work is truly a labor of love. Every scene in his animated films is hand-drawn and painted with watercolor.
 
@@ -15,7 +15,7 @@ Yet as technologies like [GPT-4o image generation](https://openai.com/index/intr
 
 Miyazaki himself once expressed after viewing [AI generated animations](https://www.youtube.com/watch?v=Pi2rHOhPZZ4): “I am utterly disgusted. I would never wish to incorporate this technology into my work at all. I strongly feel this is an insult to life itself.” However, I hesitate to apply this statement too broadly, as it was made under different circumstances—specifically in response to Dwango AI Lab's demonstration of a 3D zombie animation of substantially lower quality than today's AI art. Objectively speaking, current AI-generated Ghibli-style images demonstrate impressive technical quality, yet for longtime fans, they lack the same emotional resonance.
 
-[Disgust](/images/posts/hayao-miyakazi/distgust.png)
+![Disgust](/images/posts/hayao-miyakazi/distgust.png)
 
 The genius of Ghibli's work transcends time. Released in 1997, "Princess Mononoke" explores humanity's complex relationship with nature through a meticulously crafted world. With a budget of 2.35 billion yen—making it the most expensive animated film of its era—the movie was created just before the digital animation revolution. Approximately 144,000 cells were hand-drawn to build its vision of Muromachi-era feudal Japan. The result was a timeless masterpiece that represented more than a decade of thoughtful development in plot, character, and animation. It was the pinnacle of its time and remains so today.
 
