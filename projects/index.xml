@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Projects on Terry Chen</title><link>https://terrylinhaochen.github.io/projects/</link><description>Recent content in Projects on Terry Chen</description><generator>Hugo -- 0.136.2</generator><language>en-us</language><lastBuildDate>Mon, 30 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://terrylinhaochen.github.io/projects/index.xml" rel="self" type="application/rss+xml"/><item><title>Embedding Based Recommender</title><link>https://terrylinhaochen.github.io/projects/recommender/</link><pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate><guid>https://terrylinhaochen.github.io/projects/recommender/</guid><description>&lt;p>Content recommendation system leveraging embedding similarity for personalized content recommendation.&lt;/p></description><content:encoded>&lt;p>Content recommendation system leveraging embedding similarity for personalized content recommendation.&lt;/p>
+</content:encoded></item><item><title>Multi-agent Dialogue</title><link>https://terrylinhaochen.github.io/projects/multiagent-chat/</link><pubDate>Sat, 28 Dec 2024 00:00:00 +0000</pubDate><guid>https://terrylinhaochen.github.io/projects/multiagent-chat/</guid><description>&lt;p>Interactive chat interface with multiple AI agents, enabling dynamic conversation flows and specialized problem-solving capabilities.&lt;/p></description><content:encoded>&lt;p>Interactive chat interface with multiple AI agents, enabling dynamic conversation flows and specialized problem-solving capabilities.&lt;/p>
+</content:encoded></item><item><title>User Profile Development</title><link>https://terrylinhaochen.github.io/projects/profile/</link><pubDate>Sat, 21 Dec 2024 00:00:00 +0000</pubDate><guid>https://terrylinhaochen.github.io/projects/profile/</guid><description>&lt;p>Content recommendation system based on dynamic user profiles.&lt;/p></description><content:encoded>&lt;p>Content recommendation system based on dynamic user profiles.&lt;/p>
+</content:encoded></item><item><title>Reading Assistant</title><link>https://terrylinhaochen.github.io/projects/readingaid/</link><pubDate>Sat, 07 Dec 2024 00:00:00 +0000</pubDate><guid>https://terrylinhaochen.github.io/projects/readingaid/</guid><description>&lt;p>Interactive learning aids for reading comprehension and engagement.&lt;/p></description><content:encoded>&lt;p>Interactive learning aids for reading comprehension and engagement.&lt;/p>
+</content:encoded></item><item><title>Realtime Conversational Learning Aid</title><link>https://terrylinhaochen.github.io/projects/groupal/</link><pubDate>Sun, 10 Nov 2024 00:00:00 +0000</pubDate><guid>https://terrylinhaochen.github.io/projects/groupal/</guid><description>&lt;p>Advised by Prof. Kristian Hammond. Developed LLM product that analyzes real-time audio conversations, detects relevancy and misconceptions, and provides targeted Socratic questions and material suggestions through RAG.&lt;/p>
+&lt;p>Groupal aims to help students work together more effectively and build a deeper understanding in study sessions. The project’s goal is to create a virtual learning assistant that listens to real-time student discussions, detects misconceptions, and facilitates discussions through Socratic questioning techniques and relevant background knowledge retrieval.&lt;/p></description><content:encoded><![CDATA[<p>Advised by Prof. Kristian Hammond. Developed LLM product that analyzes real-time audio conversations, detects relevancy and misconceptions, and provides targeted Socratic questions and material suggestions through RAG.</p>
+<p>Groupal aims to help students work together more effectively and build a deeper understanding in study sessions. The project’s goal is to create a virtual learning assistant that listens to real-time student discussions, detects misconceptions, and facilitates discussions through Socratic questioning techniques and relevant background knowledge retrieval.</p>
+<p>Our approach is centered around understanding effective study group learning for educational purposes.
+Understanding Learning Barriers: Traditional Q&amp;A systems often provide direct answers, which may limit deeper understanding. Groupal emphasizes learning through inquiry, leveraging Socratic questioning techniques proven to improve knowledge retention and critical thinking.
+Decomposing the Problem: Groupal integrates real-time speech processing, intent routing, and contextual retrieval of relevant background information to support learning. The frontend-backend pipeline connects key components such as document parsing, relevance checks, and question generation that adapts according to the flow of group discussions.
+Real-Time Interaction: Groupal listens to student discussions in real time, converts speech to text, identifies misconceptions, and generates insightful socratic questions. The system retrieves relevant content through a RAG process to supplement the discussion effectively.
+Groupal provides a comprehensive set of features to enhance the effectiveness of collaborative study sessions. Through real-time speech analysis, Groupal transcribes live group discussions into text, identifies misconceptions, and stores them for further review. It detects potential misconceptions in the discussion and generates Socratic-style questions when relevant to encourage further discussions among students. With its background knowledge retrieval capability, Groupal accesses relevant materials through a RAG process, retrieving the top 3 documents from a vector database, and using a Socratic Questioning Model to generate and output the socratic question, giving students immediate access to supporting information and guidance during their sessions. The platform allows users to upload documents, form or join study groups, and explore relevant content in real time, creating a well-organized and interactive learning experience. Groupal ensures discussions remain focused and productive by providing adaptive and context-aware guidance.</p>
+<p>Credits: Tina Liu, Yihang Du, Doohwan Kim.</p>
+]]></content:encoded></item><item><title>Crowd Listening</title><link>https://terrylinhaochen.github.io/projects/crowdlistening/</link><pubDate>Wed, 06 Nov 2024 00:00:00 +0000</pubDate><guid>https://terrylinhaochen.github.io/projects/crowdlistening/</guid><description>&lt;p>Insight extraction from popular opinion. Multi-modal ai content understanding for opinion and insight extraction from shortform videos. (crowdlistening.com)&lt;/p>
+&lt;p>Credits: Madison Bratley, Violet Liu&lt;/p></description><content:encoded>&lt;p>Insight extraction from popular opinion. Multi-modal ai content understanding for opinion and insight extraction from shortform videos. (crowdlistening.com)&lt;/p>
+&lt;p>Credits: Madison Bratley, Violet Liu&lt;/p>
+</content:encoded></item><item><title>Stealth</title><link>https://terrylinhaochen.github.io/projects/stealth-rdai/</link><pubDate>Fri, 01 Nov 2024 00:00:00 +0000</pubDate><guid>https://terrylinhaochen.github.io/projects/stealth-rdai/</guid><description>&lt;p>Content understanding, generative agentic workflows, voice ai.&lt;/p></description><content:encoded>&lt;p>Content understanding, generative agentic workflows, voice ai.&lt;/p>
+</content:encoded></item><item><title>Insight Spotlight</title><link>https://terrylinhaochen.github.io/projects/insight/</link><pubDate>Tue, 20 Aug 2024 00:00:00 +0000</pubDate><guid>https://terrylinhaochen.github.io/projects/insight/</guid><description>&lt;p>Analyze thousands of tiktoks to provide actionable trends &amp;amp; insights for key agencies. (Worked on multi-modal content understanding)
+To be released on TikTok Creative Center (&lt;a href="https://ads.tiktok.com/business/creativecenter/pc/en">https://ads.tiktok.com/business/creativecenter/pc/en&lt;/a>)&lt;/p>
+&lt;p>Credits: TikTok Creative Team&lt;/p></description><content:encoded><![CDATA[<p>Analyze thousands of tiktoks to provide actionable trends &amp; insights for key agencies. (Worked on multi-modal content understanding)
+To be released on TikTok Creative Center (<a href="https://ads.tiktok.com/business/creativecenter/pc/en">https://ads.tiktok.com/business/creativecenter/pc/en</a>)</p>
+<p>Credits: TikTok Creative Team</p>
+]]></content:encoded></item><item><title>Symphony Assistant</title><link>https://terrylinhaochen.github.io/projects/copilot/</link><pubDate>Mon, 20 May 2024 00:00:00 +0000</pubDate><guid>https://terrylinhaochen.github.io/projects/copilot/</guid><description>&lt;p>Leverage generative AI capabilities for creative script ideation and video ad creation. (Worked on agentic workflows and interface optimization)
+&lt;a href="https://ads.tiktok.com/business/copilot/standalone?locale=en&amp;amp;deviceType=pc">https://ads.tiktok.com/business/copilot/standalone?locale=en&amp;amp;deviceType=pc&lt;/a>&lt;/p>
+&lt;p>Credits: TikTok Creative Team&lt;/p></description><content:encoded><![CDATA[<p>Leverage generative AI capabilities for creative script ideation and video ad creation. (Worked on agentic workflows and interface optimization)
+<a href="https://ads.tiktok.com/business/copilot/standalone?locale=en&amp;deviceType=pc">https://ads.tiktok.com/business/copilot/standalone?locale=en&amp;deviceType=pc</a></p>
+<p>Credits: TikTok Creative Team</p>
+]]></content:encoded></item><item><title>Gauth AI</title><link>https://terrylinhaochen.github.io/projects/gauth/</link><pubDate>Sun, 20 Aug 2023 00:00:00 +0000</pubDate><guid>https://terrylinhaochen.github.io/projects/gauth/</guid><description>&lt;p>AI Homework helper with advanced reasoning and visualization for all school subjects. (Worked on LLM Reasoning)
+&lt;a href="https://www.gauthmath.com/">https://www.gauthmath.com/&lt;/a>&lt;/p>
+&lt;p>Credits: Lexi Ling, Gauth Team&lt;/p></description><content:encoded><![CDATA[<p>AI Homework helper with advanced reasoning and visualization for all school subjects. (Worked on LLM Reasoning)
+<a href="https://www.gauthmath.com/">https://www.gauthmath.com/</a></p>
+<p>Credits: Lexi Ling, Gauth Team</p>
+]]></content:encoded></item><item><title>LLM Memory Consolidation and Augmentation</title><link>https://terrylinhaochen.github.io/projects/human-inspired-llm-memory/</link><pubDate>Thu, 10 Aug 2023 00:00:00 +0000</pubDate><guid>https://terrylinhaochen.github.io/projects/human-inspired-llm-memory/</guid><description>&lt;h1 id="a-human-inspired-solution-to-llm-memory-enhancement">A Human-Inspired Solution to LLM Memory Enhancement&lt;/h1>
+&lt;p>&lt;strong>Authors: Terry Chen, Kaiwen Che, Matthew Song&lt;/strong>&lt;/p>
+&lt;h2 id="abstract">Abstract&lt;/h2>
+&lt;p>Despite advances in large language model (LLM) capability, their fundamental limitation of not being able to store context over long-lived interactions persists. In this paper, a novel human-inspired three-tiered memory architecture is presented that addresses these limitations through biomimetic design principles rooted in cognitive science. Our approach aligns the human working memory with the LLM context window, episodic memory with vector stores of experience-based knowledge, and semantic memory with structured knowledge triplets.&lt;/p></description><content:encoded><![CDATA[<h1 id="a-human-inspired-solution-to-llm-memory-enhancement">A Human-Inspired Solution to LLM Memory Enhancement</h1>
+<p><strong>Authors: Terry Chen, Kaiwen Che, Matthew Song</strong></p>
+<h2 id="abstract">Abstract</h2>
+<p>Despite advances in large language model (LLM) capability, their fundamental limitation of not being able to store context over long-lived interactions persists. In this paper, a novel human-inspired three-tiered memory architecture is presented that addresses these limitations through biomimetic design principles rooted in cognitive science. Our approach aligns the human working memory with the LLM context window, episodic memory with vector stores of experience-based knowledge, and semantic memory with structured knowledge triplets.</p>
+<p>In comparison to traditional retrieval-augmented generation (RAG) techniques that store verbatim conversation segments, our system employs strategic memory consolidation procedures, abstracting key information into structured forms. Performance testing on the GoodAI Long-Term Memory benchmark demonstrates significant improvements in performance, with our memory-augmented GPT-4o achieving scores of up to 6.9/11 over the baseline 4.6/11. Additional testing across multi-agent domains demonstrates enhanced persistence and updating capacity of information.</p>
+<h2 id="introduction">Introduction</h2>
+<p>State-of-the-art large language models (LLMs) possess remarkable natural language comprehension and generation. However, their architecture imposes tight constraints on memory retention and contextual comprehension during long-term interaction. Most existing LLMs operate within fixed context windows, typically ranging from 32,000 to 128,000 tokens, which impose inherent constraints on long-term conversation and complex reasoning tasks that span multiple turns.</p>
+<p>The Baddeley and Hitch (1974, 2000) model of working memory provides a robust theoretical account of human information processing. The model presents memory as a multi-component system with central executive control of information flow, an episodic buffer of assembling memories into temporary experiences, a phonological loop of controlling verbal content, and a visuospatial sketchpad of controlling visual and spatial information.</p>
+<p>Current approaches to increasing LLM memory capacity heavily rely on embedding-based retrieval-augmented generation (RAG). While the approach can deliver rapid access to previous data, it suffers greatly from issues like vector explosion, the unsustainable proliferation of embeddings as conversation history grows, lack of semantic structure in stored shreds, and difficulties in maintaining relations among relevant facts.</p>
+<p>This work introduces a novel biomimetic approach to LLM memory extension that more accurately models the cognitive architecture of humans, with a three-tiered memory system distinguishing between immediate context, episodic memories, and semantic facts.</p>
+<h2 id="system-architecture">System Architecture</h2>
+<p>Our memory improvement system utilizes a three-layer architecture inspired by human cognition:</p>
+<p><img alt="Three-Tiered Memory Architecture" loading="lazy" src="/images/projects/human-inspired-llm-memory/memory-architecture.png"></p>
+<h3 id="working-memory-llm-context-window">Working Memory (LLM Context Window)</h3>
+<p>We divide the context window into two distinct segments:</p>
+<ul>
+<li><strong>Multi-Round Conversation History (MCH)</strong>: Stores current conversation context, maintaining flow up to a defined token limit.</li>
+<li><strong>Retrieval Memory Buffer (RMB)</strong>: Provides dedicated space for injecting remembered memories from long-term storage, maintaining a balance of short-term and long-term remembered data.</li>
+</ul>
+<h3 id="long-term-memory-store">Long-Term Memory Store</h3>
+<p>Implemented as a vector database storing two forms of memory:</p>
+<ul>
+<li><strong>Semantic Memory</strong>: Stores factual knowledge gained from conversations as subject-predicate-object triples with optional contextual referencing.</li>
+<li><strong>Episodic Memory</strong>: Stores complete interaction episodes by a formal schema with contextual initialization, reasoning operations, actions taken, and outcomes observed.</li>
+</ul>
+<h3 id="memory-processes">Memory Processes</h3>
+<p>There are specialized components for:</p>
+<ul>
+<li><strong>Memory Consolidation</strong>: Operations for capturing and formalizing memories when conversation history reaches token thresholds.</li>
+<li><strong>Retrieval Mechanisms</strong>: Multi-step operations that determine context adequacy before retrieving from external memory stores.</li>
+</ul>
+<h2 id="memory-schema-implementation">Memory Schema Implementation</h2>
+<h3 id="semantic-memory-triple">Semantic Memory Triple</h3>
+<p>We implemented the semantic memory schema as a structured class:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">SematicMemory</span>(BaseModel):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Store all new facts, preferences, and relationships as triples.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    subject: str
+</span></span><span style="display:flex;"><span>    predicate: str
+</span></span><span style="display:flex;"><span>    object: str
+</span></span><span style="display:flex;"><span>    context: str <span style="color:#f92672">|</span> <span style="color:#66d9ef">None</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
+</span></span></code></pre></div><h3 id="episodic-memory-schema">Episodic Memory Schema</h3>
+<p>Our episodic memory implementation stores experiential information with temporal context:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">EpisodicMemory</span>(BaseModel):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Write the episode from the perspective of the agent within it.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    observation: str <span style="color:#f92672">=</span> Field(<span style="color:#f92672">...</span>, description<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;The context and setup - what happened&#34;</span>)
+</span></span><span style="display:flex;"><span>    thoughts: str <span style="color:#f92672">=</span> Field(
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">...</span>,
+</span></span><span style="display:flex;"><span>        description<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Internal reasoning process and observations of the agent&#34;</span>
+</span></span><span style="display:flex;"><span>    )
+</span></span><span style="display:flex;"><span>    action: str <span style="color:#f92672">=</span> Field(
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">...</span>,
+</span></span><span style="display:flex;"><span>        description<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;What was done, how, and in what format.&#34;</span>
+</span></span><span style="display:flex;"><span>    )
+</span></span><span style="display:flex;"><span>    result: str <span style="color:#f92672">=</span> Field(
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">...</span>,
+</span></span><span style="display:flex;"><span>        description<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Outcome and retrospective.&#34;</span>
+</span></span><span style="display:flex;"><span>    )
+</span></span></code></pre></div><h2 id="memory-consolidation-process">Memory Consolidation Process</h2>
+<p>The foundation of our strategy lies in sophisticated memory consolidation mechanisms that convert raw conversational information into structured memory representations:</p>
+<h3 id="semantic-memory-extraction">Semantic Memory Extraction</h3>
+<p>Our semantic memory schema makes use of subject-predicate-object triples that eliminate episodic detail without sacrificing core relationships. Implementation follows several guiding principles:</p>
+<ul>
+<li>Prioritization of high-frequency accessed information</li>
+<li>Merging of redundant knowledge into a single representation</li>
+<li>Upgrading existing triples whenever new contradicting data exist</li>
+<li>Adding contextual linking to render situationally responsive retrieval</li>
+</ul>
+<h3 id="episodic-memory-extraction">Episodic Memory Extraction</h3>
+<p>Episodic memory stores full interactions in an ordered schema consisting of four main components:</p>
+<ul>
+<li><strong>Observation</strong>: Stores contextual setup and what transpired</li>
+<li><strong>Thoughts</strong>: Stores internal reasoning processes and deliberations</li>
+<li><strong>Action</strong>: Stores particular interventions and methodologies used</li>
+<li><strong>Result</strong>: Stores outcome and subsequent analysis</li>
+</ul>
+<h2 id="evaluation-results">Evaluation Results</h2>
+<p>GoodAI LTM benchmark results indicated radically better performance with our memory augmentation approach:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Configuration</th>
+          <th>Score</th>
+          <th>Performance</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Baseline GPT-4o</td>
+          <td>4.6/11</td>
+          <td>41.8%</td>
+      </tr>
+      <tr>
+          <td>GPT-4o + Semantic Memory</td>
+          <td>6.8/11</td>
+          <td>61.8%</td>
+      </tr>
+      <tr>
+          <td>GPT-4o + Episodic Memory</td>
+          <td>6.9/11</td>
+          <td>62.7%</td>
+      </tr>
+      <tr>
+          <td>GPT-4o + Semantic &amp; Episodic Memory</td>
+          <td>6.0/11</td>
+          <td>54.5%</td>
+      </tr>
+  </tbody>
+</table>
+<p>These results reflect a general 20-percentage-point improvement in memory performance by our augmentation method. The differential performance aligns with the corresponding functional roles these types of memory serve in human cognition, wherein semantic memory enables fact recall and episodic memory enables experiential reasoning.</p>
+<h2 id="discussion-and-future-work">Discussion and Future Work</h2>
+<p>Our research provides empirical evidence for cognitive-inspired LLM memory enhancement methods. The witnessed performance improvements with three-tier memory architecture show that human memory systems offer valuable design concepts for overcoming inherent limitations in current AI designs.</p>
+<p>The unexpected finding was the slightly worse performance of integrated memory systems compared to single implementations. This suggests complex interaction effects, which may mirror interference phenomena observed in human memory systems, where various forms of memory sometimes vie for mental resources.</p>
+<p>Future research directions include:</p>
+<ul>
+<li><strong>Multi-agent Memory Dynamics</strong>: How memory transfers between agents and how social dynamics influence memory consolidation</li>
+<li><strong>Advanced Retrieval Strategies</strong>: Exploring spatially organized memory architectures and hierarchical memory organization</li>
+<li><strong>Optimization of Consolidation Thresholds</strong>: Investigating dynamic thresholds that adapt based on conversation characteristics</li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>This paper presents a novel biomimetic approach to enhancing LLM memory that addresses intrinsic limitations in current architectures. By embracing a three-level memory structure inspired by human cognitive processes, we demonstrate significant improvements in information retention, update, and context recall.</p>
+<p>As LLMs advance towards more general intelligence capabilities, structured memory systems will play a larger role in enabling coherent long-term interactions, homogeneous knowledge states, and contextually appropriate information access. Our research contributes both pragmatic approaches for deploying this aspect of AI progress and theoretical frameworks to continue advancing this critical component of AI work.</p>
+]]></content:encoded></item><item><title>Improving &amp; Scaling LLMs for Coaching</title><link>https://terrylinhaochen.github.io/projects/improving-scaling-llms-coaching/</link><pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate><guid>https://terrylinhaochen.github.io/projects/improving-scaling-llms-coaching/</guid><description>&lt;h1 id="situated-practice-systems-improving-and-scaling-coaching-through-llms">Situated Practice Systems: Improving and Scaling Coaching through LLMs&lt;/h1>
+&lt;p>&lt;strong>Authors: Terry Chen, Allyson Lee&lt;/strong>&lt;/p>
+&lt;h2 id="abstract">Abstract&lt;/h2>
+&lt;p>Effective coaching in project-based learning environments is critical for developing students&amp;rsquo; self-regulation skills, yet scaling high-quality coaching remains a challenge. This paper presents an LLM-enhanced coaching system designed to support project-based learning by helping connect peers struggling with the same regulation gap, and to help coaches by identifying regulation gaps and generating tailored practice suggestions. Our system integrates vector-based semantic matching with LLM-generated regulation gap categorizations for Context Assessment Plan (CAP) notes. Results demonstrate that our system effectively retrieves relevant coaching cases, reducing the cognitive burden on mentors while maintaining high-quality, context-aware feedback.&lt;/p></description><content:encoded><![CDATA[<h1 id="situated-practice-systems-improving-and-scaling-coaching-through-llms">Situated Practice Systems: Improving and Scaling Coaching through LLMs</h1>
+<p><strong>Authors: Terry Chen, Allyson Lee</strong></p>
+<h2 id="abstract">Abstract</h2>
+<p>Effective coaching in project-based learning environments is critical for developing students&rsquo; self-regulation skills, yet scaling high-quality coaching remains a challenge. This paper presents an LLM-enhanced coaching system designed to support project-based learning by helping connect peers struggling with the same regulation gap, and to help coaches by identifying regulation gaps and generating tailored practice suggestions. Our system integrates vector-based semantic matching with LLM-generated regulation gap categorizations for Context Assessment Plan (CAP) notes. Results demonstrate that our system effectively retrieves relevant coaching cases, reducing the cognitive burden on mentors while maintaining high-quality, context-aware feedback.</p>
+<h2 id="introduction">Introduction</h2>
+<p>Training college students to tackle complex, open-ended innovation work requires developing strong regulation skills for self-directed work. Coaches guide the development of these regulation skills, helping students develop cognitive, motivational, emotional, and strategic behaviors needed to problem solve and reach desired outcomes. However, coaches face significant challenges in providing personalized guidance to multiple student teams.</p>
+<p>Existing AI-based project management tools help track tasks but fail to capture nuanced ways students approach their work. Large Language Models (LLMs) show promise in analyzing text-based interactions and generating structured feedback, but their application to coaching remains underexplored.</p>
+<p>To address these issues, we propose utilizing LLMs to develop and integrate three key technical innovations:</p>
+<ul>
+<li><strong>Peer Connections</strong> - Facilitate connections between students with similar challenges</li>
+<li><strong>Coaching Reflections</strong> - Help coaches analyze patterns and improve their practice through identifying regulation gaps</li>
+<li><strong>Practice Suggestions</strong> - Adapt similar cases to new situations</li>
+</ul>
+<h2 id="the-regulation-skills-codebook">The Regulation Skills Codebook</h2>
+<p>Our system is built around a novel codebook consisting of regulation gap definitions and examples gathered across learning science literature. The codebook categorizes student regulation gaps in a tiered approach:</p>
+<h3 id="tier-1-categories">Tier 1 Categories:</h3>
+<ol>
+<li><strong>Cognitive</strong> - Skills for approaching problems with unknown answers</li>
+<li><strong>Metacognitive</strong> - Skills in planning, help-seeking, collaboration, and reflection</li>
+<li><strong>Emotional</strong> - Dispositions toward self and learning that affect motivation</li>
+</ol>
+<h3 id="tier-2-categories-examples">Tier 2 Categories (Examples):</h3>
+<ul>
+<li>Representing problem and solution spaces</li>
+<li>Assessing risks</li>
+<li>Critical thinking and argumentation</li>
+<li>Forming feasible plans</li>
+<li>Planning effective iterations</li>
+<li>Fears and anxieties</li>
+<li>Embracing challenges and learning</li>
+</ul>
+<h2 id="system-architecture">System Architecture</h2>
+<p>Our system combines semantic similarity search with LLM-based analysis in a retrieval-augmented generation approach:</p>
+<ol>
+<li>Student regulation notes are pre-processed with metadata on tier 1 and tier 2 regulation gaps</li>
+<li>Notes are encoded into text embeddings</li>
+<li>A vector database retrieves the most similar historical cases</li>
+<li>An LLM (Deepseek) generates structured responses including:
+<ul>
+<li>Diagnosis of potential regulation gaps</li>
+<li>Practice suggestions targeted to these gaps</li>
+<li>References to similar historical cases</li>
+</ul>
+</li>
+</ol>
+<p>This grounds LLM suggestions in actual coaching experiences rather than generic advice, improving the relevance and actionability of recommendations.</p>
+<h2 id="similarity-methods-for-regulation-gap-analysis">Similarity Methods for Regulation Gap Analysis</h2>
+<p>We developed and tested three approaches to match students with similar regulation challenges:</p>
+<ol>
+<li><strong>Baseline Semantic Approach</strong> - Uses vector embeddings to find similar cases based on textual similarity</li>
+<li><strong>Weighted Semantic Similarity</strong> - Separates and weights regulation gap description (0.7) from contextual information (0.3)</li>
+<li><strong>Hybrid LLM-Codebook Approach</strong> - Combines semantic matching with LLM-generated metadata using our regulation codebook</li>
+</ol>
+<p>The hybrid approach proved most effective, assigning the highest weight (0.5) to tier 2 categories and lower weights to tier 1 categories (0.1) and text content (0.2 each for gap text and context).</p>
+<h2 id="evaluation-and-results">Evaluation and Results</h2>
+<p>We evaluated each model against the same three notes, analyzing the top 5 returned similar notes. The semantic matching performed well when addressing cognitive and metacognitive gaps with repetitive terminology but struggled with emotional regulation gaps. The LLM-codebook approach showed promise in accurately identifying regulation gaps but was computationally intensive. The hybrid model consistently and efficiently identified notes with the same regulation gap while maintaining contextual similarity.</p>
+<h2 id="discussion-and-future-work">Discussion and Future Work</h2>
+<p>Our system effectively bridges the gap between human expertise and AI capabilities in coaching contexts. Key takeaways include:</p>
+<ol>
+<li><strong>Hybrid AI-Driven Case Retrieval</strong> - Combining LLM-driven metadata tagging with traditional semantic matching enables precision in retrieving relevant coaching cases</li>
+<li><strong>Structured Codebooks for Domain-Specific AI</strong> - Our tiered classification system grounds LLM-based reasoning in expert-validated pedagogical frameworks</li>
+</ol>
+<p>Future work will focus on:</p>
+<ul>
+<li>Improving clarity of writing in notes</li>
+<li>Collecting more data through alternative sources</li>
+<li>Developing sub-categorized codebooks with specific examples and reasoning chains</li>
+<li>Exploring more sophisticated reasoning methods like external knowledge bases or memory systems</li>
+</ul>
+<p>This research contributes to the broader field of AI-enhanced education and human-AI collaboration, offering insights into how AI can augment expert-driven mentoring in complex, open-ended learning settings.</p>
+]]></content:encoded></item></channel></rss>
