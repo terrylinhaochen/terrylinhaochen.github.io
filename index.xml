@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>👋 Welcome to Terry's Blog on Terry Chen</title><link>https://terrylinhaochen.github.io/</link><description>Recent content in 👋 Welcome to Terry's Blog on Terry Chen</description><generator>Hugo -- 0.136.2</generator><language>en-us</language><lastBuildDate>Thu, 27 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://terrylinhaochen.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>The Craft of Miyazaki in an AI-Generated World</title><link>https://terrylinhaochen.github.io/posts/craft-miyakazi/</link><pubDate>Thu, 27 Mar 2025 00:00:00 +0000</pubDate><guid>https://terrylinhaochen.github.io/posts/craft-miyakazi/</guid><description>&lt;p>&lt;img alt="Dust Balls" loading="lazy" src="https://terrylinhaochen.github.io/images/posts/hayao-miyakazi/dust-balls.png">&lt;/p>
+&lt;p>Hayao Miyazaki is my favorite artist and director. Though I haven&amp;rsquo;t watched his entire filmography, every moment of the films I have seen captivates me. In &amp;ldquo;Spirited Away,&amp;rdquo; the dust ball creatures exemplify his artistic prowess—his ability to infuse life into the mundane through his drawings. His work is truly a labor of love. Every scene in his animated films is hand-drawn and painted with watercolor.&lt;/p>
+&lt;p>To put this dedication in perspective: a single &lt;a href="https://www.reddit.com/r/nextfuckinglevel/comments/1egdzja/this_4_second_crowd_scene_from_studio_ghiblis/">4 second crowd scene&lt;/a> from Studio Ghibli required 1 year and 3 months to complete. At 24 frames per second, that&amp;rsquo;s 96 images—roughly 6.4 images per month or one-third of an image in an eight-hour workday. At this rate, animators would spend a decade creating just 28.8 seconds of footage. This extraordinary commitment to craft has established Miyazaki&amp;rsquo;s work as iconic for decades.&lt;/p></description><content:encoded><![CDATA[<p><img alt="Dust Balls" loading="lazy" src="/images/posts/hayao-miyakazi/dust-balls.png"></p>
+<p>Hayao Miyazaki is my favorite artist and director. Though I haven&rsquo;t watched his entire filmography, every moment of the films I have seen captivates me. In &ldquo;Spirited Away,&rdquo; the dust ball creatures exemplify his artistic prowess—his ability to infuse life into the mundane through his drawings. His work is truly a labor of love. Every scene in his animated films is hand-drawn and painted with watercolor.</p>
+<p>To put this dedication in perspective: a single <a href="https://www.reddit.com/r/nextfuckinglevel/comments/1egdzja/this_4_second_crowd_scene_from_studio_ghiblis/">4 second crowd scene</a> from Studio Ghibli required 1 year and 3 months to complete. At 24 frames per second, that&rsquo;s 96 images—roughly 6.4 images per month or one-third of an image in an eight-hour workday. At this rate, animators would spend a decade creating just 28.8 seconds of footage. This extraordinary commitment to craft has established Miyazaki&rsquo;s work as iconic for decades.</p>
+<p>Yet as technologies like <a href="https://openai.com/index/introducing-4o-image-generation/">GPT-4o image generation</a> and and &ldquo;Ghibli-style&rdquo; AI art taking the internet by storm, I can&rsquo;t help wondering about the future. When anyone can transform an image into a Ghibli-esque cartoon nearly indistinguishable from Miyazaki&rsquo;s hand-drawn work, we must reconsider what constitutes true craftsmanship and whether we can appreciate his art in the same way.</p>
+<p>Miyazaki himself once expressed after viewing <a href="https://www.youtube.com/watch?v=Pi2rHOhPZZ4">AI generated animations</a>: “I am utterly disgusted. I would never wish to incorporate this technology into my work at all. I strongly feel this is an insult to life itself.” However, I hesitate to apply this statement too broadly, as it was made under different circumstances—specifically in response to Dwango AI Lab&rsquo;s demonstration of a 3D zombie animation of substantially lower quality than today&rsquo;s AI art. Objectively speaking, current AI-generated Ghibli-style images demonstrate impressive technical quality, yet for longtime fans, they lack the same emotional resonance.</p>
+<p><img alt="Disgust" loading="lazy" src="/images/posts/hayao-miyakazi/distgust.png"></p>
+<p>The genius of Ghibli&rsquo;s work transcends time. Released in 1997, &ldquo;Princess Mononoke&rdquo; explores humanity&rsquo;s complex relationship with nature through a meticulously crafted world. With a budget of 2.35 billion yen—making it the most expensive animated film of its era—the movie was created just before the digital animation revolution. Approximately 144,000 cells were hand-drawn to build its vision of Muromachi-era feudal Japan. The result was a timeless masterpiece that represented more than a decade of thoughtful development in plot, character, and animation. It was the pinnacle of its time and remains so today.</p>
+<p>As we process the technological shift that now enables machines to replicate human art at scale, we must consider how this new dynamic will shape creativity&rsquo;s future. When the marginal cost of producing high-quality work approaches zero, what defines creativity? Can creative works be protected, or can anyone replicate a piece after merely seeing it? In an era where everyday users generate sophisticated content with minimal input, how do we distinguish truly exceptional work?</p>
+<p>While I don&rsquo;t have definitive answers, I believe our appreciation for content will evolve—perhaps valuing human-created work more highly or discovering new experiences through previously inconceivable creative expressions. Copyright laws, though often inadequate and slow to adapt, will eventually catch up to protect original works and incentivize innovation. On a positive note, creativity will no longer be limited to those with technical artistic skills. It may ultimately center on taste and the ability to understand and abstract experiences that evoke universal empathy—expressions of our collective human experience.</p>
+<p>However, as creation costs approach zero, we risk the collapse of our collective imagination while maintaining only the illusion of creativity. The dynamic we&rsquo;ve observed in content consumption—preferring cheap, easy, addictive material—now extends to creation. Why face the challenging reality of making something yourself when you can skip to the result? Our aesthetics might become constrained by AI models&rsquo; training data, reducing creativity to mere copying and merging of established works. We risk being left with nothing but juxtaposition.</p>
+<p>The difficult process of creating and thinking deeply is where genuine ideas emerge. Technology evolves rapidly; humans do not. Even in the AI age, there remains space for quality and discernment. The labor, patience, and intention behind Miyazaki&rsquo;s work embody values that transcend technological convenience—values we would be wise to preserve, even as our creative tools transform.</p>
+<p>References: <a href="https://openai.com/index/introducing-4o-image-generation/">https://openai.com/index/introducing-4o-image-generation/</a>, <a href="https://www.reddit.com/r/nextfuckinglevel/comments/1egdzja/this_4_second_crowd_scene_from_studio_ghiblis/">https://www.reddit.com/r/nextfuckinglevel/comments/1egdzja/this_4_second_crowd_scene_from_studio_ghiblis/</a>, <a href="https://www.youtube.com/watch?v=Pi2rHOhPZZ4">https://www.youtube.com/watch?v=Pi2rHOhPZZ4</a>, <a href="https://en.wikipedia.org/wiki/Spirited_Away">https://en.wikipedia.org/wiki/Spirited_Away</a></p>
+]]></content:encoded></item><item><title>User Needs &amp; Opportunities</title><link>https://terrylinhaochen.github.io/posts/user-needs/</link><pubDate>Tue, 25 Mar 2025 00:00:00 +0000</pubDate><guid>https://terrylinhaochen.github.io/posts/user-needs/</guid><description>&lt;p>When you want to look for user pain points, go to a bar in the middle of the week, look for the most desparate looking person and buy them a beer. They&amp;rsquo;d probably have something substantial to talk about. While I don&amp;rsquo;t usually go to bars during weekdays, I&amp;rsquo;ve found some similar ways of identifying user needs, mostly through conversations or online forums. This is a running document of the user needs or pain points that I&amp;rsquo;ve found to be interesting. Perhaps some of them will turn out to be viable business oppportunities.&lt;/p></description><content:encoded><![CDATA[<p>When you want to look for user pain points, go to a bar in the middle of the week, look for the most desparate looking person and buy them a beer. They&rsquo;d probably have something substantial to talk about. While I don&rsquo;t usually go to bars during weekdays, I&rsquo;ve found some similar ways of identifying user needs, mostly through conversations or online forums. This is a running document of the user needs or pain points that I&rsquo;ve found to be interesting. Perhaps some of them will turn out to be viable business oppportunities.</p>
+<h2 id="more-apparent-ones">More apparent ones:</h2>
+<p>2025-03-24</p>
+<ul>
+<li>Career seeking: it&rsquo;s a difficult job market, whether it&rsquo;s doing leetcode or preparing for behavioral interviews, people want a way to cheat their way out of this difficult process, and they&rsquo;re willing to pay for it too.</li>
+</ul>
+<p>2025-03-27</p>
+<ul>
+<li>
+<p>Agentic worklows: I&rsquo;m usually more skeptical towards areas more widely reported, but agentic workflows may well be here to stay. From the initial action gpts (autogpt) agent chains (devin, metagpt, cogno etc), to the more recent operators (MCPs, OpenAI operator), it would indeed be nice to have agents act on our behalf (perhaps hopefuly not the way Anton goes about ordering Hamburgers in Silcon Valley).</p>
+</li>
+<li>
+<p>Building on the previous point concerning agentic computer use. It&rsquo;s also interesting to consider the two approaches towards web navigation: vision-based and ai-native-ui. While people like Aravind Srinivas have openly expressed their skepicism towards vision based web operations, noting the limitations imposed by operating systems, especially iOS, which restrict access to other applications, vision-based web interactions are inherently more versatile and flexible.</p>
+</li>
+<li>
+<p>Content generation: Generative ai is at its core, generative. We have for the past three years seen numerous improvements in text/image/video/avatar generation, with applications in vairous forms of UGC (and now nearing PGC) ads, podcasts, short-form videos. I love how creative people have been with the available AI tools, but at the same time, I view these tools as an available means to scale creativity, not for enabling 0-1 creation.</p>
+</li>
+</ul>
+<h2 id="less-apparent-and-more-interesting-ones">Less apparent (and more interesting) ones:</h2>
+<p>2025-03-25</p>
+<ul>
+<li>Ads through LLM generated content: While I was trying to figure out the best way to add a forms feature to this website yesterday, I asked claude. And interestingly, this was what I got back at first:</li>
+</ul>
+<p><img alt="Claude Recommendation" loading="lazy" src="/images/posts/user-needs/formspree.png"></p>
+<ul>
+<li>
+<p>Note that <a href="https://formspree.io/">Formspree</a> is a paid service. This raises an interesting point about the future of AI generated content and suggestions. On one hand, the result is based on training data inputted into the model, but at the same time, one can easily manipulate it to recommend one solution over another (try Formspree vs Google Forms). This presents an interesting avenue for ads via llm generated content, and given the extent to which people are willing to trust llm results, this could even be an effective avenue. Yet in doing so, we are also risking the reliability of llm generated content.</p>
+</li>
+<li>
+<p>SEO is already changing in the age of LLMs, with AI genearated content flooding web browsers. Another interesting observation is the amount of website traffic going to specific companies from AI-enabled search services such as Perplexity. While looking at website traffic for <a href="https://www.genspark.ai/">Genspark</a> and a few other websites, we can see both ChatGPT and Perplexity listed as the top referring websites (source: similarweb) Though the accuracy of this data is yet to be determined, it make sense intuitively that, owing to the large amount of content genearted via these AI platforms, the pages will be easily indexed by ai-browsers.</p>
+</li>
+</ul>
+<p><img alt="Similarweb Genspark" loading="lazy" src="/images/posts/user-needs/similar-web-genspark.png"></p>
+<h2 id="general-directions">General Directions:</h2>
+<p>These are some relatively well agreed upon directions that one may take:</p>
+<p>2025-03-27</p>
+<ul>
+<li>Better customization: Traditionally, a tradeoff existed between customization and scale. Creating for wider audiences required standardized offerings. However, as LLM inference costs rapidly decrease, information retrieval and content generation are approaching fixed costs. This shift enables customization at scale across various domains—personalized news, cinematography, and other content formats. Additionally, advancements in multimodal capabilities (voice, image, video) will likely introduce greater variety in the content we consume.</li>
+</ul>
+]]></content:encoded></item><item><title>2024 in Review</title><link>https://terrylinhaochen.github.io/posts/year-in-review/</link><pubDate>Tue, 31 Dec 2024 00:00:00 +0000</pubDate><guid>https://terrylinhaochen.github.io/posts/year-in-review/</guid><description>&lt;h2 id="year-in-review">Year in Review&lt;/h2>
+&lt;p>2024 felt to have passed by very quickly, in part because I had interesting work to occupy my time. Early in the year, after expanding Cogno and gaining some traction, work slowly stalled: though we did code and talk to customers, the cycles were far and wide in between. The focus on multi-agent systems was (as of writing this) in the right direction, yet we did not find the niche to tackle sales conversion improvement.&lt;/p></description><content:encoded><![CDATA[<h2 id="year-in-review">Year in Review</h2>
+<p>2024 felt to have passed by very quickly, in part because I had interesting work to occupy my time. Early in the year, after expanding Cogno and gaining some traction, work slowly stalled: though we did code and talk to customers, the cycles were far and wide in between. The focus on multi-agent systems was (as of writing this) in the right direction, yet we did not find the niche to tackle sales conversion improvement.</p>
+<p>One crucial lesson I learned as a first-time founder was the importance of being hands-on with coding the product. Having oversight of product development isn&rsquo;t sufficient – you need to be directly involved in building to achieve faster iteration cycles and truly understand the risks in shipping. This insight came later than I would have liked but proved invaluable.</p>
+<p>While I had actually considered taking a leave of absense to work on &ldquo;the next big thing&rdquo; coming into college, this year I decided that dropping out is not what I wanted at this stage of life – I still desired the complete college experience with its structure, humanities knowledge, friendships, and Chicago&rsquo;s unique energy.</p>
+<p>In March, after more than a year of working on Cogno, I accepted an opportunity at TikTok to build agent systems for Creative Copilots and Insights. I&rsquo;m immensely thankful to Zhengjin and Caoye for the invitation. Though cutting short my long-anticipated vacation in Puerto Rico was not what I had planned for, the learning experience proved far more valuable – not to mention attending Nvidia GTC and Google Next in Vegas.</p>
+<p>Working at TikTok offered a fascinating blend of familiar and novel experiences. While similar to ByteDance in some respects, collaborating with colleagues from multiple countries and being immersed in Silicon Valley provided distinct advantages. The work on insight extraction from multimodal data opened new perspectives on how LLMs interact with different content types. The question of whether probabilistic models like LLMs can truly be creative remains open for debate, yet their outputs can undeniably surprise us in unexpected ways.</p>
+<p>My time at TikTok allowed me to witness firsthand how the field of generative AI is evolving across modalities – text, image, video, and audio – revealing new possibilities for product innovation as these technologies mature. I&rsquo;ve come to believe that the future of generative AI lies in combining reasoning with synthesis (perhaps with greater emphasis on the latter) and multimodal output.</p>
+<p>Later in the year, going to Beijing and returning to school felt like a blur. Yet I found myself enjoying academics more than anticipated this quarter, partly due to great teammates and LLM-focused project-based classes. The academic environment offered a focused intensity often diluted in industry settings.</p>
+<p>This recognition led me to Crowdlistening, which addresses the abundance of unstructured, multimodal content across social media platforms. By extracting meaningful insights from these underanalyzed sources, we can deliver value to users seeking to understand these complex information streams. Now I&rsquo;m helping build up ai features for a stealth startup, so I&rsquo;m less sure how Crowdlistening will evolve, but I still view it as an interesting product.</p>
+<p>I&rsquo;m still figuring things out, but 2024 has undoubtedly been a year of exploration and growth – one for which I&rsquo;m deeply grateful. I look forward to seeing how these parallel paths evolve in the coming year.</p>
+<h2 id="courage-to-be--last">Courage to be  last</h2>
+<p>Reflecting on 2024 (and 2023 for the context of Cogno), among my list of failed projects, very few failed due to lack of innovation. Since I began working with LLMs in fall 2022, there has been an abundance of interesting GenAI technologies to experiment with. It started with &ldquo;domain specific prompting/finetuning&rdquo; and data flywheels (thou not even now does anyone know what this looks like in action). By spring 2023, the focus shifted to LLMs as agents, exemplified by the Generative Agents paper, Microsoft AutoGen, and a few opensource projects like MetaGPT. At Cogno, we also built multi-agent systems, integrating various function calling features and agent collaboration for complex task reasoning. Everyone built, few created value (Glean focused on enterprise search, while Moveworks created value through api actions, neither of which I believe agents to have mattered). Founders encouraged each other&rsquo;s enthusiasm, while investors rushed to learn the latest buzzwords in LLM technology (&lsquo;prompt engineering&rsquo; and &lsquo;function calls&rsquo; sounded less sexy compared to&rsquo;agents&rsquo;).</p>
+<p>Being first to market rarely matters - people won&rsquo;t remember you. What matters is creating defensible moats or developing critical elements that lead to unfair advantages. While Google&rsquo;s technology investment in Android can be considered &rsquo;not just building a moat, but scorching the earth for 250 miles around the castle,&rsquo; most companies&rsquo; self-described technological differentiation is merely self-flattery and a feeble attempt to impress tech-enthusiast investors. Technology truly matters only when it can solve seemingly insurmountable challenges or optimize costs and operations. In every other situation, the focus should be on building sustainable advantages that ensure long-term survival. [Thoughts WIP]</p>
+]]></content:encoded></item><item><title>Embedding Based Recommender</title><link>https://terrylinhaochen.github.io/projects/recommender/</link><pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate><guid>https://terrylinhaochen.github.io/projects/recommender/</guid><description>&lt;p>Content recommendation system leveraging embedding similarity for personalized content recommendation.&lt;/p></description><content:encoded>&lt;p>Content recommendation system leveraging embedding similarity for personalized content recommendation.&lt;/p>
+</content:encoded></item><item><title>Multi-agent Dialogue</title><link>https://terrylinhaochen.github.io/projects/multiagent-chat/</link><pubDate>Sat, 28 Dec 2024 00:00:00 +0000</pubDate><guid>https://terrylinhaochen.github.io/projects/multiagent-chat/</guid><description>&lt;p>Interactive chat interface with multiple AI agents, enabling dynamic conversation flows and specialized problem-solving capabilities.&lt;/p></description><content:encoded>&lt;p>Interactive chat interface with multiple AI agents, enabling dynamic conversation flows and specialized problem-solving capabilities.&lt;/p>
+</content:encoded></item><item><title>User Profile Development</title><link>https://terrylinhaochen.github.io/projects/profile/</link><pubDate>Sat, 21 Dec 2024 00:00:00 +0000</pubDate><guid>https://terrylinhaochen.github.io/projects/profile/</guid><description>&lt;p>Content recommendation system based on dynamic user profiles.&lt;/p></description><content:encoded>&lt;p>Content recommendation system based on dynamic user profiles.&lt;/p>
+</content:encoded></item><item><title>Reading Assistant</title><link>https://terrylinhaochen.github.io/projects/readingaid/</link><pubDate>Sat, 07 Dec 2024 00:00:00 +0000</pubDate><guid>https://terrylinhaochen.github.io/projects/readingaid/</guid><description>&lt;p>Interactive learning aids for reading comprehension and engagement.&lt;/p></description><content:encoded>&lt;p>Interactive learning aids for reading comprehension and engagement.&lt;/p>
+</content:encoded></item><item><title>Realtime Conversational Learning Aid</title><link>https://terrylinhaochen.github.io/projects/groupal/</link><pubDate>Sun, 10 Nov 2024 00:00:00 +0000</pubDate><guid>https://terrylinhaochen.github.io/projects/groupal/</guid><description>&lt;p>Advised by Prof. Kristian Hammond. Developed LLM product that analyzes real-time audio conversations, detects relevancy and misconceptions, and provides targeted Socratic questions and material suggestions through RAG.&lt;/p>
+&lt;p>Groupal aims to help students work together more effectively and build a deeper understanding in study sessions. The project’s goal is to create a virtual learning assistant that listens to real-time student discussions, detects misconceptions, and facilitates discussions through Socratic questioning techniques and relevant background knowledge retrieval.&lt;/p></description><content:encoded><![CDATA[<p>Advised by Prof. Kristian Hammond. Developed LLM product that analyzes real-time audio conversations, detects relevancy and misconceptions, and provides targeted Socratic questions and material suggestions through RAG.</p>
+<p>Groupal aims to help students work together more effectively and build a deeper understanding in study sessions. The project’s goal is to create a virtual learning assistant that listens to real-time student discussions, detects misconceptions, and facilitates discussions through Socratic questioning techniques and relevant background knowledge retrieval.</p>
+<p>Our approach is centered around understanding effective study group learning for educational purposes.
+Understanding Learning Barriers: Traditional Q&amp;A systems often provide direct answers, which may limit deeper understanding. Groupal emphasizes learning through inquiry, leveraging Socratic questioning techniques proven to improve knowledge retention and critical thinking.
+Decomposing the Problem: Groupal integrates real-time speech processing, intent routing, and contextual retrieval of relevant background information to support learning. The frontend-backend pipeline connects key components such as document parsing, relevance checks, and question generation that adapts according to the flow of group discussions.
+Real-Time Interaction: Groupal listens to student discussions in real time, converts speech to text, identifies misconceptions, and generates insightful socratic questions. The system retrieves relevant content through a RAG process to supplement the discussion effectively.
+Groupal provides a comprehensive set of features to enhance the effectiveness of collaborative study sessions. Through real-time speech analysis, Groupal transcribes live group discussions into text, identifies misconceptions, and stores them for further review. It detects potential misconceptions in the discussion and generates Socratic-style questions when relevant to encourage further discussions among students. With its background knowledge retrieval capability, Groupal accesses relevant materials through a RAG process, retrieving the top 3 documents from a vector database, and using a Socratic Questioning Model to generate and output the socratic question, giving students immediate access to supporting information and guidance during their sessions. The platform allows users to upload documents, form or join study groups, and explore relevant content in real time, creating a well-organized and interactive learning experience. Groupal ensures discussions remain focused and productive by providing adaptive and context-aware guidance.</p>
+<p>Credits: Tina Liu, Yihang Du, Doohwan Kim.</p>
+]]></content:encoded></item><item><title>What2Do: AI Trip Planning Tool</title><link>https://terrylinhaochen.github.io/archived/what2do/</link><pubDate>Sun, 10 Nov 2024 00:00:00 +0000</pubDate><guid>https://terrylinhaochen.github.io/archived/what2do/</guid><description>&lt;p>A trip planning tool for generating itinearies based on article url input and content extraction.
+(Prototype: what2do-51224.web.app)&lt;/p></description><content:encoded>&lt;p>A trip planning tool for generating itinearies based on article url input and content extraction.
+(Prototype: what2do-51224.web.app)&lt;/p>
+</content:encoded></item><item><title>Crowd Listening</title><link>https://terrylinhaochen.github.io/projects/crowdlistening/</link><pubDate>Wed, 06 Nov 2024 00:00:00 +0000</pubDate><guid>https://terrylinhaochen.github.io/projects/crowdlistening/</guid><description>&lt;p>Insight extraction from popular opinion. Multi-modal ai content understanding for opinion and insight extraction from shortform videos. (crowdlistening.com)&lt;/p>
+&lt;p>Credits: Madison Bratley, Violet Liu&lt;/p></description><content:encoded>&lt;p>Insight extraction from popular opinion. Multi-modal ai content understanding for opinion and insight extraction from shortform videos. (crowdlistening.com)&lt;/p>
+&lt;p>Credits: Madison Bratley, Violet Liu&lt;/p>
+</content:encoded></item><item><title>Stealth</title><link>https://terrylinhaochen.github.io/projects/stealth-rdai/</link><pubDate>Fri, 01 Nov 2024 00:00:00 +0000</pubDate><guid>https://terrylinhaochen.github.io/projects/stealth-rdai/</guid><description>&lt;p>Content understanding, generative agentic workflows, voice ai.&lt;/p></description><content:encoded>&lt;p>Content understanding, generative agentic workflows, voice ai.&lt;/p>
+</content:encoded></item><item><title>PepTalk: AI Journaling Tool</title><link>https://terrylinhaochen.github.io/archived/peptalk/</link><pubDate>Wed, 23 Oct 2024 00:00:00 +0000</pubDate><guid>https://terrylinhaochen.github.io/archived/peptalk/</guid><description>&lt;p>Realtime conversation with aI companion to help you note down feelings and journals for the day.
+(Prototype: &lt;a href="https://peptalk-navy.web.app/">https://peptalk-navy.web.app/&lt;/a>)&lt;/p>
+&lt;p>Credits: Lian Zhang, Janna Lee, Soham Shah, Jonny Kong&lt;/p></description><content:encoded><![CDATA[<p>Realtime conversation with aI companion to help you note down feelings and journals for the day.
+(Prototype: <a href="https://peptalk-navy.web.app/">https://peptalk-navy.web.app/</a>)</p>
+<p>Credits: Lian Zhang, Janna Lee, Soham Shah, Jonny Kong</p>
+]]></content:encoded></item><item><title>OHours: Office Hour Scheduling Tool</title><link>https://terrylinhaochen.github.io/archived/ohours/</link><pubDate>Sat, 19 Oct 2024 00:00:00 +0000</pubDate><guid>https://terrylinhaochen.github.io/archived/ohours/</guid><description>&lt;p>An office hour queuing system to improve student experience and help TAs manage questions more efficiently.
+(Prototype: ohours.web.app/)&lt;/p>
+&lt;p>Credits: Lian Zhang, Janna Lee, Soham Shah, Jonny Kong&lt;/p></description><content:encoded>&lt;p>An office hour queuing system to improve student experience and help TAs manage questions more efficiently.
+(Prototype: ohours.web.app/)&lt;/p>
+&lt;p>Credits: Lian Zhang, Janna Lee, Soham Shah, Jonny Kong&lt;/p>
+</content:encoded></item><item><title>Technology Will Catch Up</title><link>https://terrylinhaochen.github.io/posts/technology-will-catch-up/</link><pubDate>Fri, 18 Oct 2024 00:00:00 +0000</pubDate><guid>https://terrylinhaochen.github.io/posts/technology-will-catch-up/</guid><description>&lt;p>&amp;ldquo;Inspiration unlocks the future; technology will catch up.&amp;rdquo; This phrase, from one of my favorite directors, Hayao Miyazaki, appears in the animation &amp;ldquo;The Wind Rises&amp;rdquo; (though my favorite movie is &amp;ldquo;Princess Mononoke&amp;rdquo;). While it&amp;rsquo;s easy to get caught up in innovation (and the hype popular news outlets create alongside it), I still view technology as a tool for solving human problems. This may sound counterintuitive, yet most of us are still pretty bad at identifying our own needs and pains, leading to engineering feats with non-existent product-market fit prospects. Returning to the question of why I want to start writing again: I like the language medium; it forces you to express your ideas clearly. I anticipate mainly writing about products and the strange quirks that make us human, but may occasionally add in a few other things that interest me. I&amp;rsquo;ll try to keep these posts relatively short, both to make it manageable for myself and to keep it interesting for you.&lt;/p></description><content:encoded><![CDATA[<p>&ldquo;Inspiration unlocks the future; technology will catch up.&rdquo; This phrase, from one of my favorite directors, Hayao Miyazaki, appears in the animation &ldquo;The Wind Rises&rdquo; (though my favorite movie is &ldquo;Princess Mononoke&rdquo;). While it&rsquo;s easy to get caught up in innovation (and the hype popular news outlets create alongside it), I still view technology as a tool for solving human problems. This may sound counterintuitive, yet most of us are still pretty bad at identifying our own needs and pains, leading to engineering feats with non-existent product-market fit prospects. Returning to the question of why I want to start writing again: I like the language medium; it forces you to express your ideas clearly. I anticipate mainly writing about products and the strange quirks that make us human, but may occasionally add in a few other things that interest me. I&rsquo;ll try to keep these posts relatively short, both to make it manageable for myself and to keep it interesting for you.</p>
+]]></content:encoded></item><item><title>Human Quirks</title><link>https://terrylinhaochen.github.io/main-themes/human-quirks/</link><pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate><guid>https://terrylinhaochen.github.io/main-themes/human-quirks/</guid><description>Observing and understanding the strange quirks of individuals and crowds</description><content:encoded><![CDATA[<h2 id="observing-and-understanding-the-strange-quirks-of-individuals-and-crowds">Observing and understanding the strange quirks of individuals and crowds</h2>
+<p>What makes humans truly &ldquo;human&rdquo; - not perfectly logical machines, but complex beings whose decisions are shaped by psychology, social context, and evolutionary history? By understanding human quirks, we can design better systems that work with human nature rather than against it.</p>
+]]></content:encoded></item><item><title>Advice</title><link>https://terrylinhaochen.github.io/posts/advice/</link><pubDate>Sun, 01 Sep 2024 00:00:00 +0000</pubDate><guid>https://terrylinhaochen.github.io/posts/advice/</guid><description>&lt;p>Every now and then I like to read about the advice of others who&amp;rsquo;ve succeeded in their field. Here&amp;rsquo;s a few that I personally found to be enlightening and practical.&lt;/p>
+&lt;h2 id="patrick-collison">Patrick Collison:&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>Go deep on things. Become an expert. In particular, try to go deep on multiple things. (To varying degrees, I tried to go deep on languages, programming, writing, physics, math. Some of those stuck more than others.) One of the main things you should try to achieve by age 20 is some sense for which kinds of things you enjoy doing. This probably won&amp;rsquo;t change a lot throughout your life and so you should try to discover the shape of that space as quickly as you can.&lt;/p></description><content:encoded><![CDATA[<p>Every now and then I like to read about the advice of others who&rsquo;ve succeeded in their field. Here&rsquo;s a few that I personally found to be enlightening and practical.</p>
+<h2 id="patrick-collison">Patrick Collison:</h2>
+<ul>
+<li>
+<p>Go deep on things. Become an expert. In particular, try to go deep on multiple things. (To varying degrees, I tried to go deep on languages, programming, writing, physics, math. Some of those stuck more than others.) One of the main things you should try to achieve by age 20 is some sense for which kinds of things you enjoy doing. This probably won&rsquo;t change a lot throughout your life and so you should try to discover the shape of that space as quickly as you can.</p>
+</li>
+<li>
+<p>Don&rsquo;t stress out too much about how valuable the things you&rsquo;re going deep on are&hellip; but don&rsquo;t ignore it either. It should be a factor you weigh but not by itself dispositive.</p>
+</li>
+<li>
+<p>To the extent that you enjoy working hard, do. Subject to that constraint, it&rsquo;s not clear that the returns to effort ever diminish substantially. If you&rsquo;re lucky enough to enjoy it a lot, be grateful and take full advantage!</p>
+</li>
+<li>
+<p>Make friends over the internet with people who are great at things you&rsquo;re interested in. The internet is one of the biggest advantages you have over prior generations. Leverage it.</p>
+</li>
+<li>
+<p>Aim to read a lot.</p>
+</li>
+<li>
+<p>If you think something is important but people older than you don&rsquo;t hold it in high regard, there&rsquo;s a reasonable chance that you&rsquo;re right and they&rsquo;re wrong. Status lags by a generation or more.</p>
+</li>
+<li>
+<p>Above all else, don&rsquo;t make the mistake of judging your success based on your current peer group. By all means make friends but being weird as a teenager is generally good.</p>
+</li>
+<li>
+<p>But having good social skills confers life-long benefits. So, don&rsquo;t write them off. Get good at making a good first impression, being funny (if possible&hellip; this author still working on it&hellip;), speaking publicly.</p>
+</li>
+<li>
+<p>Make things. Operating in a space with a lot of uncertainty is a very different experience to learning something.</p>
+</li>
+<li>
+<p>More broadly, nobody is going to teach you to think for yourself. A large fraction of what people around you believe is mistaken. Internalize this and practice coming up with your own worldview. The correlation between it and those around you shouldn&rsquo;t be too strong unless you think you were especially lucky in your initial conditions.</p>
+</li>
+<li>
+<p>If you&rsquo;re in the US and go to a good school, there are a lot of forces that will push you towards following traintracks laid by others rather than charting a course yourself. Make sure that the things you&rsquo;re pursuing are weird things that you want to pursue, not whatever the standard path is. Heuristic: do your friends at school think your path is a bit strange? If not, maybe it&rsquo;s too normal.</p>
+</li>
+<li>
+<p>Figure out a way to travel to San Francisco and to meet other people who&rsquo;ve moved there to pursue their dreams. Why San Francisco? San Francisco is the Schelling point for high-openness, smart, energetic, optimistic people. Global Weird HQ. Take advantage of opportunities to travel to other places too, of course.</p>
+</li>
+<li>
+<p>Find vivid examples of success in the domains you care about. If you want to become a great scientist, try to find ways to spend time with good (or, ideally, great) scientists in person. Watch YouTube videos of interviews. Follow some on Twitter.</p>
+</li>
+<li>
+<p>People who did great things often did so at very surprisingly young ages. (They were grayhaired when they became famous&hellip; not when they did the work.) So, hurry up! You can do great things.</p>
+</li>
+</ul>
+<h2 id="paul-graham---how-to-do-great-work">Paul Graham - How to do Great Work</h2>
+<p><img alt="Great Work" loading="lazy" src="/images/posts/advice/great_work.jpg"></p>
+]]></content:encoded></item><item><title>Essence of Creativity</title><link>https://terrylinhaochen.github.io/posts/essense-of-creativity/</link><pubDate>Sun, 25 Aug 2024 00:00:00 +0000</pubDate><guid>https://terrylinhaochen.github.io/posts/essense-of-creativity/</guid><description>&lt;p>This week, I wanted to organize my thoughts about AI-generated content (AIGC) and creativity-related products from the past few months. Rather than focusing solely on my own projects, I&amp;rsquo;d like to explore the foundational aspects of AI product design, interspersing examples from my recent work. First, I want to emphasize that technology is merely a tool intended to better serve business needs. If it doesn&amp;rsquo;t significantly improve efficiency, traditional methods may be more appropriate. Second, despite the many imaginative possibilities of current technology, applications should ultimately be guided by user needs. Finally, AI technologies and markets evolve rapidly, making predictions difficult to validate, but exploring content understanding and generation remains an intriguing challenge.&lt;/p></description><content:encoded><![CDATA[<p>This week, I wanted to organize my thoughts about AI-generated content (AIGC) and creativity-related products from the past few months. Rather than focusing solely on my own projects, I&rsquo;d like to explore the foundational aspects of AI product design, interspersing examples from my recent work. First, I want to emphasize that technology is merely a tool intended to better serve business needs. If it doesn&rsquo;t significantly improve efficiency, traditional methods may be more appropriate. Second, despite the many imaginative possibilities of current technology, applications should ultimately be guided by user needs. Finally, AI technologies and markets evolve rapidly, making predictions difficult to validate, but exploring content understanding and generation remains an intriguing challenge.</p>
+<h2 id="what-constitutes-creative-work">What Constitutes Creative Work?</h2>
+<p>Let&rsquo;s discuss what kind of creativity AI can enable, establishing the capability boundaries of AI applications. Is it creative to &ldquo;take screenshots of someone else&rsquo;s video and caption them with other people&rsquo;s comments on your own account&rdquo;? Though this involves some editing rather than direct reposting, it&rsquo;s difficult to call this creative work. Simple copying only accelerates content diffusion within an ecosystem while reducing the excess returns of original creation, as economist Schumpeter noted.</p>
+<p>I believe creativity is more about choosing a unique perspective. Content with contrast or conflict naturally captures our attention, but thoughtful, empathetic content is equally creative. From an ecosystem perspective, creativity can be divided into production and diffusion – the former generating new content, the latter deriving from or spreading existing content.</p>
+<p>As for AI&rsquo;s value in this process, generative AI as a probabilistic model struggles to produce content with fresh perspectives. However, it can help us efficiently understand massive amounts of information and generate insights (perspectives). As multimodal AI capabilities (text, image, video) improve, content reproduction costs will rapidly decrease, making products that help users find new inspiration increasingly valuable. Through such creative assistance, we can achieve two main effects:</p>
+<ol>
+<li>Inspiration acquisition: Accelerating original content production</li>
+<li>Content derivation: Accelerating the diffusion of quality creative work</li>
+</ol>
+<h2 id="content-understanding-for-enhanced-generation">Content Understanding for Enhanced Generation</h2>
+<p>How can we make language models produce outputs that meet our expectations? This challenging question can be further divided into: (1) we don&rsquo;t know what our ideal output looks like, and (2) we know what we want, but the language model doesn&rsquo;t understand us. Most people are trying to solve the latter problem (through model alignment, prompting, few-shot learning, RAG, fine-tuning, memory and caching methods). However, the approaches in this space are increasingly similar, with many solutions being open-sourced, which is why many generative products deliver roughly comparable results. The real differentiation lies in how to adapt engineering and data processing to specific business scenarios.</p>
+<p>Returning to the first problem - &ldquo;I don&rsquo;t know what output I want&rdquo; - this stems more from a lack of content understanding. Good script writing requires more than just hooks, USPs, and CTAs; it needs a clear angle: content that resonates with the audience, is appropriate for the context, and achieves its purpose. Some products are creating brand kits or audience profiles to guide more specific content generation through manually defined style rules or user personas. While these types of configurations will likely become common, finding ways to connect insight data with generation without manual setup could be a breakthrough.</p>
+<h2 id="understanding-user-needs">Understanding User Needs</h2>
+<p>Looking at the creative ecosystem, each creative area (ad aggregation, competitor tracking, brand insights, performance analysis, content generation) has 3-4 companies with minimal data or interaction differences. Data products tend to be traditional, while AI products often rely on simple language model adjustments. A potential differentiator would be acquiring more granular data and creating smoother interactions. Connecting upstream and downstream tasks (complete creative production process with participation/adjustment at each stage) could be an ideal product form.</p>
+<p>If we calculate product value as &ldquo;user value = new experience - old experience - replacement cost,&rdquo; we find that most products built on foundational language models (old experience) with fine-tuning or prompting adjustments (incremental new experience) deliver very limited incremental value. From an interaction perspective, users still need to input personalized prompts, and outputs almost always require multiple rounds of editing before use. The question becomes: how do we increase incremental value?</p>
+<h2 id="user-friendly-workflows">User-Friendly Workflows</h2>
+<p>Currently, creators mostly call upon individual capabilities or data, but single capabilities are insufficient for full-process script/video generation. Building workflows can help users connect various AI capabilities, reducing friction between tool switches.</p>
+<p>The concept of &ldquo;workflows, not skills&rdquo; addresses user needs: many users currently need 5-10 AI capabilities to complete their creative work, with most capabilities being disconnected and requiring frequent switching. By establishing a clear workflow, users can more efficiently call upon relevant tools to complete their creative work.</p>
+<p>I previously had a misconception that simply connecting capabilities constitutes a workflow, but deeper design is needed. What we consider Language UI is actually Prompt UI, which differs from true language interaction by missing the context and shared understanding present in human-to-human communication. Introducing these elements through features like detailed follow-up questions and future cross-container reference relationships could enhance user experience. Current prompting is likely a transitional form; eventually, we should eliminate the need for context-specific prompts by enabling LLMs to understand context and generate appropriate guidance.</p>
+<h2 id="multimodal-interaction-and-content-ecosystem">Multimodal Interaction and Content Ecosystem</h2>
+<p>Finally, let&rsquo;s discuss modality. Given the characteristics of different modalities (text - easily editable, images - non-linear, video - linear), different scenarios should use different modalities. The same user may need different interactions in different contexts.</p>
+<p>Switching between modal forms (long/short/mixed) and modal types (text/image/audio/video) will become easier, essentially providing the same content with applicability across different scenarios. Users aren&rsquo;t just people; they&rsquo;re collections of needs. For instance, I might read text at the office due to setting constraints, watch videos while waiting in line with nothing to do, and listen to audio while driving or commuting. The same content may need three modalities (text/video/audio) connected based on the scenario. This could be further refined - people accelerate reading or listening for higher information intake. Finding ways to adapt the same content to different scenarios without increasing creation costs is another interesting challenge.</p>
+<h2 id="case-study-voice-synthesis">Case Study: Voice Synthesis</h2>
+<p>Take voice synthesis as an example. From a technical perspective, this technology is already quite mature, yet the first application that comes to mind might be phone scams. Other applications include David Attenborough&rsquo;s wildlife narration in open-source projects or OpenAI&rsquo;s GPT-4o launch event simulating Samantha&rsquo;s voice (originally Scarlett Johansson) from the movie &ldquo;Her.&rdquo; However, I believe short video creators are truly making the best use of this technology.</p>
+<p>I recently saw a high-quality derivative work based on &ldquo;In the Name of the People&rdquo; (a 2017 Chinese TV drama). The creator (called &ldquo;Yi Tou Jue Lv&rdquo;) made remarkably deep portrayals of character psychology and inner monologues. Only after reading the comments did I learn that the creator used voice synthesis combined with their understanding of the characters to create this derivative work. Looking through this creator&rsquo;s content, I found they cleverly used the original footage but replaced the narration with autobiographical scripts using AI-synthesized voices, making their work deeper and satisfying more viewer perspectives than their peers – essentially creating a new creative genre.</p>
+<h2 id="contrasting-audio--text">Contrasting Audio &amp; Text</h2>
+<p>It&rsquo;s fascinating how differently our brains process audio and text. When we read, we&rsquo;re essentially interacting with a graphical user interface - scanning, jumping between sections, processing information at our own pace. We&rsquo;ve evolved sophisticated tools for text: highlighting, bookmarking, section headers, and search functions. Yet despite these advantages, text may at times feel less engaging than a good conversation. Speaking, in contrast, is inherently linear and social. There&rsquo;s something about the human voice that keeps us present - the subtle shifts in tone, the natural pauses, the back-and-forth rhythm. It&rsquo;s why we can stay engaged in a podcast while walking (and multitask), yet reading typically demands our full attention.</p>
+<p>This contrast reveals something deeper about how we process information. Text excels at conveying complex ideas - we can revisit difficult passages, cross-reference concepts, and process at our own speed. Audio shines in maintaining engagement and conveying emotion, even if the content itself is relatively simple. Perhaps the future lies not in choosing between these mediums, but in finding ways to combine their strengths. Imagine an interface that preserves the natural flow of conversation while adding the structural advantages of text - where you could navigate both temporally and conceptually, maintaining both engagement and comprehension.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>As Roland Barthes suggested with &ldquo;The Death of the Author,&rdquo; once an author creates a work, the interpretation rights transfer to the readers. Video platforms feature various edited compilations, summaries, and analyses of film and television works. With improvements in constrained generative AI (voice synthesis, anime IP unification, future realistic character generation), we may see numerous derivative works based on original IPs, approaching professional quality and satisfying different interpretations and imaginations about the original work. These perspectives might all exist in the original work, but each short video offers a different angle, providing users with unique experiences. There remains much content that people want to see but isn&rsquo;t yet available on platforms. Another interpretation of creativity could be how to push the supply curve outward to meet the demand curve at a new equilibrium point, better satisfying user needs.</p>
+<h2 id="final-thoughts">Final Thoughts</h2>
+<p>While generative AI effects are evolving rapidly, human nature changes slowly. The innovation opportunities brought by technology are often overestimated in the short term but underestimated in the long term. Making probabilistic models creative is challenging yet fascinating work, it&rsquo;s probably something I will continue working on.</p>
+]]></content:encoded></item><item><title>Insight Spotlight</title><link>https://terrylinhaochen.github.io/projects/insight/</link><pubDate>Tue, 20 Aug 2024 00:00:00 +0000</pubDate><guid>https://terrylinhaochen.github.io/projects/insight/</guid><description>&lt;p>Analyze thousands of tiktoks to provide actionable trends &amp;amp; insights for key agencies. (Worked on multi-modal content understanding)
+To be released on TikTok Creative Center (&lt;a href="https://ads.tiktok.com/business/creativecenter/pc/en">https://ads.tiktok.com/business/creativecenter/pc/en&lt;/a>)&lt;/p>
+&lt;p>Credits: TikTok Creative Team&lt;/p></description><content:encoded><![CDATA[<p>Analyze thousands of tiktoks to provide actionable trends &amp; insights for key agencies. (Worked on multi-modal content understanding)
+To be released on TikTok Creative Center (<a href="https://ads.tiktok.com/business/creativecenter/pc/en">https://ads.tiktok.com/business/creativecenter/pc/en</a>)</p>
+<p>Credits: TikTok Creative Team</p>
+]]></content:encoded></item><item><title>Symphony Assistant</title><link>https://terrylinhaochen.github.io/projects/copilot/</link><pubDate>Mon, 20 May 2024 00:00:00 +0000</pubDate><guid>https://terrylinhaochen.github.io/projects/copilot/</guid><description>&lt;p>Leverage generative AI capabilities for creative script ideation and video ad creation. (Worked on agentic workflows and interface optimization)
+&lt;a href="https://ads.tiktok.com/business/copilot/standalone?locale=en&amp;amp;deviceType=pc">https://ads.tiktok.com/business/copilot/standalone?locale=en&amp;amp;deviceType=pc&lt;/a>&lt;/p>
+&lt;p>Credits: TikTok Creative Team&lt;/p></description><content:encoded><![CDATA[<p>Leverage generative AI capabilities for creative script ideation and video ad creation. (Worked on agentic workflows and interface optimization)
+<a href="https://ads.tiktok.com/business/copilot/standalone?locale=en&amp;deviceType=pc">https://ads.tiktok.com/business/copilot/standalone?locale=en&amp;deviceType=pc</a></p>
+<p>Credits: TikTok Creative Team</p>
+]]></content:encoded></item><item><title>Marrrket: AI Listing Secondhand Marketplace</title><link>https://terrylinhaochen.github.io/archived/marrrket/</link><pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate><guid>https://terrylinhaochen.github.io/archived/marrrket/</guid><description>&lt;p>Marrrket is an AI-powered second-hand marketplace platform targeting North American university students, initially focusing on Chinese international students. The platform aims to solve the inefficiency in the current second-hand market by simplifying the listing process through AI-generated product descriptions from images and minimal user input. By reducing friction in the listing process, Marrrket will increase the overall volume of second-hand items available in the market, creating a more efficient marketplace for both buyers and sellers. The platform&amp;rsquo;s innovation centers on using artificial intelligence to dramatically lower the barrier to entry for sellers, which is hypothesized to be the primary constraint on market growth.&lt;/p></description><content:encoded><![CDATA[<p>Marrrket is an AI-powered second-hand marketplace platform targeting North American university students, initially focusing on Chinese international students. The platform aims to solve the inefficiency in the current second-hand market by simplifying the listing process through AI-generated product descriptions from images and minimal user input. By reducing friction in the listing process, Marrrket will increase the overall volume of second-hand items available in the market, creating a more efficient marketplace for both buyers and sellers. The platform&rsquo;s innovation centers on using artificial intelligence to dramatically lower the barrier to entry for sellers, which is hypothesized to be the primary constraint on market growth.</p>
+<h2 id="market-analysis">Market Analysis</h2>
+<h3 id="problem-statement">Problem Statement</h3>
+<p>The current second-hand market in North America lacks efficiency, with transactions primarily occurring through fragmented social media group chats. As consumer purchasing habits become more rational, there is growing demand for second-hand transactions, but the current infrastructure does not support an effective market. The fragmentation of the market across multiple chat groups and platforms creates information asymmetry, where buyers cannot easily find available items and sellers struggle to reach interested buyers. Additionally, the cumbersome process of creating detailed listings discourages many potential sellers from participating in the market, limiting the overall volume of available goods. This inefficiency results in a significant number of usable items being discarded rather than resold, creating both economic waste and environmental impact.</p>
+<h3 id="target-market">Target Market</h3>
+<p>The initial target market consists of Chinese international students in North American universities, beginning with Washington University in St.Louis, and then expanding to other colleges. This demographic was selected for several strategic reasons: they represent a cohesive cultural group with similar communication habits, they are geographically concentrated on campuses, and they can be easily verified through .edu email addresses to reduce platform abuse. This community also experiences regular high-volume second-hand transaction periods coinciding with academic calendars, particularly during move-out periods at semester ends. Following successful penetration of this initial market, expansion will target the broader university student population before eventually extending to the general American user base.</p>
+<h3 id="key-market-assumptions">Key Market Assumptions</h3>
+<p>The business model is built on five critical assumptions that will be validated through initial market testing:</p>
+<ol>
+<li>The potential supply of second-hand products significantly exceeds the current transaction volume, indicating an untapped market opportunity.</li>
+<li>The complexity of listing creation represents the primary barrier preventing potential sellers from participating in the market.</li>
+<li>A streamlined buying experience with easier product discovery will attract more buyers to the platform.</li>
+<li>The platform will experience network effects once it reaches a critical mass of listed items, drawing in additional buyers and sellers.</li>
+<li>The majority of second-hand products (excluding specialty categories like housing rentals and rideshares) are priced between $10-100, making them low-risk transactions.</li>
+</ol>
+<h2 id="product-vision-and-user-experience">Product Vision and User Experience</h2>
+<p>Marrket will innovate the second-hand marketplace experience by leveraging AI (image recognition, content generation) to dramatically simplify the listing process. The core value proposition centers on allowing sellers to create comprehensive, attractive listings with minimal effort - just a few photos and basic information. The AI system analyzes the images, generates detailed product descriptions, suggests appropriate categories, and recommends pricing based on market data. For buyers, the platform offers an intuitive, searchable interface organized by product categories, with advanced filtering capabilities to quickly find desired items. The unified marketplace creates transparency in pricing and availability that is absent in the current fragmented chat-based system.</p>
+<h2 id="user-flow-visualization">User Flow Visualization</h2>
+<pre tabindex="0"><code>┌────────────────┐     ┌───────────────────┐     ┌─────────────────┐     ┌───────────────┐
+│                │     │                   │     │                 │     │               │
+│  Upload Photos │────▶│ AI Generates Draft│────▶│ Review &amp; Publish│────▶│ Manage Listing│
+│                │     │   Description     │     │                 │     │               │
+└────────────────┘     └───────────────────┘     └─────────────────┘     └───────────────┘
+        │                                                                        │
+        │                                                                        │
+        │                                                                        ▼
+        │                                                              ┌───────────────────┐
+        │                                                              │                   │
+        │                                                              │ Transaction &amp; Pay │
+        │                                                              │                   │
+        │                                                              └───────────────────┘
+        │                                                                        ▲
+        ▼                                                                        │
+┌──────────────────┐     ┌───────────────────┐     ┌─────────────────┐           │
+│                  │     │                   │     │                 │           │
+│  Browse Category │────▶│  View Listing     │────▶│ Contact Seller  │───────────┘
+│                  │     │                   │     │                 │
+└──────────────────┘     └───────────────────┘     └─────────────────┘
+</code></pre><h2 id="core-features">Core Features</h2>
+<h3 id="ai-powered-listing-generation">AI-Powered Listing Generation</h3>
+<p>The cornerstone of Marrrket&rsquo;s platform is its innovative AI listing generation system. Sellers simply upload multiple photos of their item and provide minimal information such as the item name and general category. The AI system then analyzes the images to identify the product, its condition, key features, and appropriate categorization. It generates a comprehensive product description, suggests an appropriate price range based on market data for similar items, and creates a complete listing draft for the seller to review. This process transforms what is typically a 15-20 minute task into a 2-3 minute interaction, dramatically reducing the barrier to listing items for sale. The seller maintains full control to edit any aspect of the AI-generated content before publishing the listing.</p>
+<h3 id="intuitive-category-system">Intuitive Category System</h3>
+<p>Marrrket organizes products into clearly defined categories that reflect the unique needs of the university student market. Primary categories include furniture, electronics, textbooks, household items, clothing, and special categories for housing rentals and rideshares. The categorization system is designed to balance simplicity with sufficient specificity to aid discovery. Each category features customized filters relevant to that product type - for example, electronics listings include filters for condition, brand, and age of the device, while textbook listings filter by course subject and edition. This tailored approach ensures buyers can quickly narrow their search to relevant items.</p>
+<h3 id="streamlined-payment-and-verification">Streamlined Payment and Verification</h3>
+<p>To minimize transaction friction while ensuring security, Marrrket integrates with Zelle as its primary payment platform, leveraging its popularity among university students. For higher-value transactions, the platform offers an optional escrow service where the payment is held until the buyer confirms receipt of the item as described. User verification is handled through .edu email domain authentication, creating an additional layer of trust within the platform. The system also implements a reputation system where both buyers and sellers can rate their transaction experience, building credibility over time.</p>
+<h2 id="technical-architecture">Technical Architecture</h2>
+<h3 id="frontend-implementation">Frontend Implementation</h3>
+<p>The frontend architecture employs React with Ant Design components to create a responsive, mobile-friendly user interface. During the initial phase, the buyer interface may be partially implemented using Notion for rapid deployment, with plans to migrate fully to the custom React interface as the platform matures. The user interface prioritizes simplicity and visual browsing of items, with large product images and clear, concise information display. The design system maintains consistency across all interfaces while optimizing for both desktop and mobile browsing scenarios.</p>
+<h3 id="backend-systems">Backend Systems</h3>
+<p>The backend implementation uses Flask for API endpoints with initial data storage utilizing Notion&rsquo;s built-in database capabilities for rapid development. As the platform scales, data will migrate to either SQL or MongoDB, with additional consideration for vector database implementation to enhance AI-powered search capabilities. The system architecture is designed with modularity in mind, allowing individual components to be upgraded or replaced as requirements evolve. Authentication, listing management, messaging, and transaction processing are implemented as separate services to maintain flexibility and scalability.</p>
+<h3 id="ai-integration-architecture">AI Integration Architecture</h3>
+<pre tabindex="0"><code>┌─────────────────┐     ┌─────────────────────┐     ┌───────────────────┐
+│                 │     │                     │     │                   │
+│  Image Analysis │────▶│  Context Generation │────▶│  Content Creation │
+│                 │     │                     │     │                   │
+└─────────────────┘     └─────────────────────┘     └───────────────────┘
+        │                         │                           │
+        ▼                         ▼                           ▼
+┌─────────────────┐     ┌─────────────────────┐     ┌───────────────────┐
+│                 │     │                     │     │                   │
+│ Object Detection│     │   Market Analysis   │     │Listing Template   │
+│                 │     │                     │     │                   │
+└─────────────────┘     └─────────────────────┘     └───────────────────┘
+</code></pre><p>The AI system integrates multiple technologies to transform basic image and text inputs into comprehensive product listings. The process begins with image analysis using object detection to identify the product type, condition, and key features. This information feeds into a context generation phase where market data for similar items is analyzed to determine appropriate pricing and categorization. Finally, the content creation phase generates a structured description following optimized templates for each product category. The system continuously improves through feedback loops, where user edits to the generated content are used to refine future suggestions.</p>
+<h2 id="revenue-model">Revenue Model</h2>
+<p>In the initial phase, Marrrket will prioritize user acquisition and platform growth over immediate monetization. The long-term revenue strategy consists of two primary streams:</p>
+<ol>
+<li>
+<p><strong>Listing Package Fees</strong>: Users can list their first 5 items for free, encouraging initial platform adoption. Beyond that, tiered packages are available - a Basic Package for 5-20 listings and a Power Package for 20-50 listings. To build trust and mitigate risk for sellers, listing fees are automatically refunded if items don&rsquo;t sell, demonstrating the platform&rsquo;s confidence in its ability to connect buyers and sellers effectively.</p>
+</li>
+<li>
+<p><strong>Transaction Fees</strong>: For items priced above $200, a 5% commission is applied to the transaction. This approach ensures that the platform primarily monetizes higher-value transactions where the commission represents a reasonable cost relative to the total value, while keeping lower-value transactions (which constitute the majority of student exchanges) commission-free to encourage platform adoption.</p>
+</li>
+</ol>
+<p>As the platform matures, additional revenue opportunities may include premium listing features, promoted listings for greater visibility, and value-added services such as professional photography or pickup/delivery coordination.</p>
+<h2 id="go-to-market-strategy">Go-to-Market Strategy</h2>
+<h3 id="phase-1-st-louis-campus-launch">Phase 1: St. Louis Campus Launch</h3>
+<p>The initial launch will focus on St. Louis area universities, strategically timed for late April 2025 to coincide with the end-of-semester period when students are moving out of housing and seeking to sell unwanted items. This timing capitalizes on a natural high-volume period in the second-hand market. Marketing efforts will employ a multi-channel approach with carefully prioritized tactics:</p>
+<ol>
+<li>Traditional campus advertising through strategically placed posters in high-traffic areas like student unions, dormitories, and international student centers.</li>
+<li>Partnerships with Chinese student organizations to promote the platform through their established communication channels, including WeChat groups and official accounts.</li>
+<li>Targeted email marketing to student email lists, emphasizing the platform&rsquo;s benefits for both buying and selling.</li>
+<li>Implementation of a referral program where existing users receive incentives for bringing new users to the platform.</li>
+<li>Selective digital display advertising on platforms frequently used by the target demographic.</li>
+<li>Content marketing through popular platforms like Xiaohongshu and Instagram, featuring success stories and platform benefits.</li>
+</ol>
+<h3 id="phase-2-expansion-strategy">Phase 2: Expansion Strategy</h3>
+<p>Following successful implementation in the initial market, expansion will proceed methodically to additional campuses with significant international student populations. The strategy leverages network effects by expanding to geographically connected areas where students may already have connections to the initial user base. Marketing messages will evolve to emphasize proven success metrics from the initial market, such as average time to sell items and average savings for buyers compared to new purchases. As the platform grows beyond the Chinese international student community, marketing will emphasize the platform&rsquo;s ease of use and enhanced features compared to general marketplaces, while maintaining the focus on university communities to preserve the trust and verification benefits of the .edu email system.</p>
+<h2 id="risk-assessment-and-mitigation-strategies">Risk Assessment and Mitigation Strategies</h2>
+<p>Several key risks have been identified that could impact the platform&rsquo;s success, along with corresponding mitigation strategies:</p>
+<ol>
+<li>
+<p><strong>Insufficient Listing Volume</strong>: The platform requires a critical mass of listings to attract buyers. To mitigate this risk, pre-launch partnerships with student organizations will be established to seed initial inventory, and incentives will be offered for early sellers. Additionally, the team will consider listing items themselves if necessary to ensure adequate initial inventory.</p>
+</li>
+<li>
+<p><strong>AI Quality Issues</strong>: If the AI-generated descriptions fail to meet quality standards, sellers may abandon the platform. To address this risk, the system will initially be more conservative in its suggestions, offering simpler descriptions that sellers can enhance rather than attempting complex descriptions that might contain errors. A continuous improvement process based on user edits will be implemented to refine the AI over time.</p>
+</li>
+<li>
+<p><strong>Trust and Safety Concerns</strong>: Second-hand marketplaces can face issues with fraudulent listings or unsafe transactions. The .edu email verification provides a first layer of protection, which will be supplemented by clear community guidelines, a reporting system for problematic listings or users, and an escrow option for higher-value transactions.</p>
+</li>
+<li>
+<p><strong>Payment Verification Challenges</strong>: Ensuring payments are properly made and verified is critical to platform trust. Beyond integrating with Zelle, the platform will implement a confirmation system where both parties must acknowledge the transaction is complete before it is finalized in the system.</p>
+</li>
+<li>
+<p><strong>Competitive Response</strong>: Existing platforms may attempt to replicate the AI-powered listing feature. To maintain competitive advantage, Marrrket will focus on building deep expertise in the specific needs of the university market segment and continuously enhancing the AI capabilities based on the growing dataset of student transactions.</p>
+</li>
+</ol>
+<h2 id="conclusion">Conclusion</h2>
+<p>Marrrket represents a significant innovation in the second-hand marketplace sector by directly addressing the primary friction point in the market: the complexity of creating product listings. By leveraging artificial intelligence to dramatically simplify this process, the platform has the potential to unlock substantial untapped inventory in the university second-hand market. The strategic focus on Chinese international students as an initial target market provides a cohesive, geographically concentrated user base with consistent needs, allowing for efficient marketing and network growth. With successful execution of this strategy, Marrrket can establish itself as the preferred second-hand marketplace for university students before expanding to broader markets</p>
+<p>Credits: Jack Qidiao, Yuri Yin, Dijkstra Liu.</p>
+]]></content:encoded></item><item><title>Cogno: Multi-agent AI for sales automation</title><link>https://terrylinhaochen.github.io/archived/cogno/</link><pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate><guid>https://terrylinhaochen.github.io/archived/cogno/</guid><description>&lt;p>Multi-agent system for cross boarder e-commerce sales automation. Co-founder and head of product.
+&lt;a href="https://cognogpt.com">https://cognogpt.com&lt;/a>&lt;/p>
+&lt;p>Cogno+ is dedicated to revolutionizing global e-commerce by empowering brands with AI-driven assistance that offers seamless, personalized customer experiences. Our mission is to serve as the digital bridge between brands and customers, enhancing interactions and transactions across international markets, and allowing the brand to increase conversion and upsell while reducing time and money spent on manual customer service.&lt;/p></description><content:encoded><![CDATA[<p>Multi-agent system for cross boarder e-commerce sales automation. Co-founder and head of product.
+<a href="https://cognogpt.com">https://cognogpt.com</a></p>
+<p>Cogno+ is dedicated to revolutionizing global e-commerce by empowering brands with AI-driven assistance that offers seamless, personalized customer experiences. Our mission is to serve as the digital bridge between brands and customers, enhancing interactions and transactions across international markets, and allowing the brand to increase conversion and upsell while reducing time and money spent on manual customer service.</p>
+<h2 id="market-opportunity">Market Opportunity</h2>
+<p>The target addressable market size is around 200K-250K, with the marketing being independent brands selling from China &amp; Southeast Asia to the U.S. Our beachhead market is mid-sized Chinese brands selling consumer electronics and other slow-moving consumer goods to the U.S. with the annual recurring rate of more than 2 million USD, consisting around 10K potential end users. Some potential adjacent markets are China and South East Asia B2C E-commerce companies selling unbranded products to the US on their own platform that consolidates products from many factories.</p>
+<h2 id="products--services">Products &amp; Services</h2>
+<p>Cogno+ is an AI-driven interactive assistant designed to enhance e-commerce business growth. It has both personalized engagement and automated and optimized customer service. While the current chatbots and web tools still require extensive workflow setup and are limited in their problem-solving abilities, Cogno has this multi-agent real-time plug-and-play system that offers easy setup, 24-hour support, and high domain knowledge for a better personalization experience that makes us differ from other products in the competition.</p>
+<h2 id="business--sales-strategy">Business &amp; Sales Strategy</h2>
+<p>Cogno+ provides mid-sized international e-commerce brands with automated sales support to help them increase conversions and upselling. We aim to explore beyond the current boundaries of human-ai interaction, developing fully scalable sales automation systems for better engagement between brands and customers around the world.</p>
+<p>In terms of our business strategy, we will employ a B2B SaaS model, charging a tier-based subscription fee based on website traffic (given the cost of using language model APIs). Our business model allows service for a range of e-commerce brands and ensures that brands only pay for the value they are getting via Cogno (increased sales conversion and product upselling).</p>
+<p>For our product roadmap, building on our existing multi-agent system, we aim to continue research and development of dynamic prompting to improve the coordination capabilities of our central logic agent to allow us to leverage more custom domain agents simultaneously.  We are also working to improve user interactions with graphics user interfaces and web interaction as input to language model systems. With these future improvements, we believe we are at the cusp of reinventing how online shopping interactions between brands and customers are made.</p>
+<p>We will initiate customer acquisition with our beachhead market of midsized Chinese e-commerce brands selling consumer electronics and other slow-moving consumer goods to the US with an annual recurring revenue of more than 2 million, and eventually expand to the larger domestic and international e-commerce landscape. We will target customers through distribution channels such as Shopify, WooCommerce, and WordPress as well as direct sales and expo exhibitions with Chinese online retailers. By targeting industry leaders and influencers, we aim to gain a firm grounding in industries such as consumer electronics and other slow-moving consumer goods verticals. Finally, we will conduct SEO and social media marketing to expand our market beyond the Asia-Pacific to the global e-commerce market, eventually bringing Cogno+ to brands and customers in all of our major e-commerce markets.</p>
+<p>Credits: Jack Qidiao, Yuri Yin, Dijkstra Liu, Madison Bratley, Ryan Philips, Eric Chen, Echo Zhou, Esther Zhou, Jingfan Yao, Steven Wang, Lu Zhou, Wendy Hu, Wendy Huang, Letty Lin, Jianpeng Su, Professor Eduardo Acuna, Professor Karen Gordon, Jeff Smith, Toni Milushev, The Farley Center, The Garage, as well as everyone who provided mentorship and advice along the way.</p>
+]]></content:encoded></item><item><title>LLM Medical Diagnosis</title><link>https://terrylinhaochen.github.io/archived/diagnosis/</link><pubDate>Fri, 01 Dec 2023 00:00:00 +0000</pubDate><guid>https://terrylinhaochen.github.io/archived/diagnosis/</guid><description>&lt;p>Advised by Prof. Stephen Xia. Research LLMs for medical decision-making; developed method for learning joint embeddings across CXR, ECG, and EHR data for zero-shot classification of cardiovascular diseases, achieving &amp;gt;60% accuracy.&lt;/p>
+&lt;p>Credits: Nan, Yueyuan.&lt;/p></description><content:encoded><![CDATA[<p>Advised by Prof. Stephen Xia. Research LLMs for medical decision-making; developed method for learning joint embeddings across CXR, ECG, and EHR data for zero-shot classification of cardiovascular diseases, achieving &gt;60% accuracy.</p>
+<p>Credits: Nan, Yueyuan.</p>
+]]></content:encoded></item><item><title>Gauth AI</title><link>https://terrylinhaochen.github.io/projects/gauth/</link><pubDate>Sun, 20 Aug 2023 00:00:00 +0000</pubDate><guid>https://terrylinhaochen.github.io/projects/gauth/</guid><description>&lt;p>AI Homework helper with advanced reasoning and visualization for all school subjects. (Worked on LLM Reasoning)
+&lt;a href="https://www.gauthmath.com/">https://www.gauthmath.com/&lt;/a>&lt;/p>
+&lt;p>Credits: Lexi Ling, Gauth Team&lt;/p></description><content:encoded><![CDATA[<p>AI Homework helper with advanced reasoning and visualization for all school subjects. (Worked on LLM Reasoning)
+<a href="https://www.gauthmath.com/">https://www.gauthmath.com/</a></p>
+<p>Credits: Lexi Ling, Gauth Team</p>
+]]></content:encoded></item><item><title>Multi-agent LLM Systems</title><link>https://terrylinhaochen.github.io/main-themes/multi-agent-systems/</link><pubDate>Sun, 20 Aug 2023 00:00:00 +0000</pubDate><guid>https://terrylinhaochen.github.io/main-themes/multi-agent-systems/</guid><description>Developing capable multi-agent systems for complex reasoning and human-AI collaboration.</description><content:encoded>&lt;h2 id="developing-capable-multi-agent-systems-for-complex-reasoning-and-human-ai-collaboration">Developing capable multi-agent systems for complex reasoning and human-AI collaboration&lt;/h2>
+&lt;p>Single-agent AI systems have limitations in handling complex tasks that require diverse perspectives and specialized knowledge. Multi-agent architectures can enable more sophisticated reasoning, problem-solving, and collaboration capabilities.&lt;/p>
+</content:encoded></item><item><title>Data Insights</title><link>https://terrylinhaochen.github.io/main-themes/data-insights/</link><pubDate>Fri, 18 Aug 2023 00:00:00 +0000</pubDate><guid>https://terrylinhaochen.github.io/main-themes/data-insights/</guid><description>Extracting meaningful insights from unstructured multi-modal content.</description><content:encoded><![CDATA[<h2 id="extracting-meaningful-insights-from-unstructured-multi-modal-content">Extracting meaningful insights from unstructured multi-modal content</h2>
+<p>Most times, the challenge isn&rsquo;t collecting information but extracting value from it. By developing systems that can analyze unstructured multi-modal content (text, images, video, audio), we can extract actionable insights.</p>
+]]></content:encoded></item><item><title>LLM Memory Consolidation and Augmentation</title><link>https://terrylinhaochen.github.io/projects/human-inspired-llm-memory/</link><pubDate>Thu, 10 Aug 2023 00:00:00 +0000</pubDate><guid>https://terrylinhaochen.github.io/projects/human-inspired-llm-memory/</guid><description>&lt;h1 id="a-human-inspired-solution-to-llm-memory-enhancement">A Human-Inspired Solution to LLM Memory Enhancement&lt;/h1>
+&lt;p>&lt;strong>Authors: Terry Chen, Kaiwen Che, Matthew Song&lt;/strong>&lt;/p>
+&lt;h2 id="abstract">Abstract&lt;/h2>
+&lt;p>Despite advances in large language model (LLM) capability, their fundamental limitation of not being able to store context over long-lived interactions persists. In this paper, a novel human-inspired three-tiered memory architecture is presented that addresses these limitations through biomimetic design principles rooted in cognitive science. Our approach aligns the human working memory with the LLM context window, episodic memory with vector stores of experience-based knowledge, and semantic memory with structured knowledge triplets.&lt;/p></description><content:encoded><![CDATA[<h1 id="a-human-inspired-solution-to-llm-memory-enhancement">A Human-Inspired Solution to LLM Memory Enhancement</h1>
+<p><strong>Authors: Terry Chen, Kaiwen Che, Matthew Song</strong></p>
+<h2 id="abstract">Abstract</h2>
+<p>Despite advances in large language model (LLM) capability, their fundamental limitation of not being able to store context over long-lived interactions persists. In this paper, a novel human-inspired three-tiered memory architecture is presented that addresses these limitations through biomimetic design principles rooted in cognitive science. Our approach aligns the human working memory with the LLM context window, episodic memory with vector stores of experience-based knowledge, and semantic memory with structured knowledge triplets.</p>
+<p>In comparison to traditional retrieval-augmented generation (RAG) techniques that store verbatim conversation segments, our system employs strategic memory consolidation procedures, abstracting key information into structured forms. Performance testing on the GoodAI Long-Term Memory benchmark demonstrates significant improvements in performance, with our memory-augmented GPT-4o achieving scores of up to 6.9/11 over the baseline 4.6/11. Additional testing across multi-agent domains demonstrates enhanced persistence and updating capacity of information.</p>
+<h2 id="introduction">Introduction</h2>
+<p>State-of-the-art large language models (LLMs) possess remarkable natural language comprehension and generation. However, their architecture imposes tight constraints on memory retention and contextual comprehension during long-term interaction. Most existing LLMs operate within fixed context windows, typically ranging from 32,000 to 128,000 tokens, which impose inherent constraints on long-term conversation and complex reasoning tasks that span multiple turns.</p>
+<p>The Baddeley and Hitch (1974, 2000) model of working memory provides a robust theoretical account of human information processing. The model presents memory as a multi-component system with central executive control of information flow, an episodic buffer of assembling memories into temporary experiences, a phonological loop of controlling verbal content, and a visuospatial sketchpad of controlling visual and spatial information.</p>
+<p>Current approaches to increasing LLM memory capacity heavily rely on embedding-based retrieval-augmented generation (RAG). While the approach can deliver rapid access to previous data, it suffers greatly from issues like vector explosion, the unsustainable proliferation of embeddings as conversation history grows, lack of semantic structure in stored shreds, and difficulties in maintaining relations among relevant facts.</p>
+<p>This work introduces a novel biomimetic approach to LLM memory extension that more accurately models the cognitive architecture of humans, with a three-tiered memory system distinguishing between immediate context, episodic memories, and semantic facts.</p>
+<h2 id="system-architecture">System Architecture</h2>
+<p>Our memory improvement system utilizes a three-layer architecture inspired by human cognition:</p>
+<p><img alt="Three-Tiered Memory Architecture" loading="lazy" src="/images/projects/human-inspired-llm-memory/memory-architecture.png"></p>
+<h3 id="working-memory-llm-context-window">Working Memory (LLM Context Window)</h3>
+<p>We divide the context window into two distinct segments:</p>
+<ul>
+<li><strong>Multi-Round Conversation History (MCH)</strong>: Stores current conversation context, maintaining flow up to a defined token limit.</li>
+<li><strong>Retrieval Memory Buffer (RMB)</strong>: Provides dedicated space for injecting remembered memories from long-term storage, maintaining a balance of short-term and long-term remembered data.</li>
+</ul>
+<h3 id="long-term-memory-store">Long-Term Memory Store</h3>
+<p>Implemented as a vector database storing two forms of memory:</p>
+<ul>
+<li><strong>Semantic Memory</strong>: Stores factual knowledge gained from conversations as subject-predicate-object triples with optional contextual referencing.</li>
+<li><strong>Episodic Memory</strong>: Stores complete interaction episodes by a formal schema with contextual initialization, reasoning operations, actions taken, and outcomes observed.</li>
+</ul>
+<h3 id="memory-processes">Memory Processes</h3>
+<p>There are specialized components for:</p>
+<ul>
+<li><strong>Memory Consolidation</strong>: Operations for capturing and formalizing memories when conversation history reaches token thresholds.</li>
+<li><strong>Retrieval Mechanisms</strong>: Multi-step operations that determine context adequacy before retrieving from external memory stores.</li>
+</ul>
+<h2 id="memory-schema-implementation">Memory Schema Implementation</h2>
+<h3 id="semantic-memory-triple">Semantic Memory Triple</h3>
+<p>We implemented the semantic memory schema as a structured class:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">SematicMemory</span>(BaseModel):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Store all new facts, preferences, and relationships as triples.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    subject: str
+</span></span><span style="display:flex;"><span>    predicate: str
+</span></span><span style="display:flex;"><span>    object: str
+</span></span><span style="display:flex;"><span>    context: str <span style="color:#f92672">|</span> <span style="color:#66d9ef">None</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
+</span></span></code></pre></div><h3 id="episodic-memory-schema">Episodic Memory Schema</h3>
+<p>Our episodic memory implementation stores experiential information with temporal context:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">EpisodicMemory</span>(BaseModel):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Write the episode from the perspective of the agent within it.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    observation: str <span style="color:#f92672">=</span> Field(<span style="color:#f92672">...</span>, description<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;The context and setup - what happened&#34;</span>)
+</span></span><span style="display:flex;"><span>    thoughts: str <span style="color:#f92672">=</span> Field(
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">...</span>,
+</span></span><span style="display:flex;"><span>        description<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Internal reasoning process and observations of the agent&#34;</span>
+</span></span><span style="display:flex;"><span>    )
+</span></span><span style="display:flex;"><span>    action: str <span style="color:#f92672">=</span> Field(
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">...</span>,
+</span></span><span style="display:flex;"><span>        description<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;What was done, how, and in what format.&#34;</span>
+</span></span><span style="display:flex;"><span>    )
+</span></span><span style="display:flex;"><span>    result: str <span style="color:#f92672">=</span> Field(
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">...</span>,
+</span></span><span style="display:flex;"><span>        description<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Outcome and retrospective.&#34;</span>
+</span></span><span style="display:flex;"><span>    )
+</span></span></code></pre></div><h2 id="memory-consolidation-process">Memory Consolidation Process</h2>
+<p>The foundation of our strategy lies in sophisticated memory consolidation mechanisms that convert raw conversational information into structured memory representations:</p>
+<h3 id="semantic-memory-extraction">Semantic Memory Extraction</h3>
+<p>Our semantic memory schema makes use of subject-predicate-object triples that eliminate episodic detail without sacrificing core relationships. Implementation follows several guiding principles:</p>
+<ul>
+<li>Prioritization of high-frequency accessed information</li>
+<li>Merging of redundant knowledge into a single representation</li>
+<li>Upgrading existing triples whenever new contradicting data exist</li>
+<li>Adding contextual linking to render situationally responsive retrieval</li>
+</ul>
+<h3 id="episodic-memory-extraction">Episodic Memory Extraction</h3>
+<p>Episodic memory stores full interactions in an ordered schema consisting of four main components:</p>
+<ul>
+<li><strong>Observation</strong>: Stores contextual setup and what transpired</li>
+<li><strong>Thoughts</strong>: Stores internal reasoning processes and deliberations</li>
+<li><strong>Action</strong>: Stores particular interventions and methodologies used</li>
+<li><strong>Result</strong>: Stores outcome and subsequent analysis</li>
+</ul>
+<h2 id="evaluation-results">Evaluation Results</h2>
+<p>GoodAI LTM benchmark results indicated radically better performance with our memory augmentation approach:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Configuration</th>
+          <th>Score</th>
+          <th>Performance</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Baseline GPT-4o</td>
+          <td>4.6/11</td>
+          <td>41.8%</td>
+      </tr>
+      <tr>
+          <td>GPT-4o + Semantic Memory</td>
+          <td>6.8/11</td>
+          <td>61.8%</td>
+      </tr>
+      <tr>
+          <td>GPT-4o + Episodic Memory</td>
+          <td>6.9/11</td>
+          <td>62.7%</td>
+      </tr>
+      <tr>
+          <td>GPT-4o + Semantic &amp; Episodic Memory</td>
+          <td>6.0/11</td>
+          <td>54.5%</td>
+      </tr>
+  </tbody>
+</table>
+<p>These results reflect a general 20-percentage-point improvement in memory performance by our augmentation method. The differential performance aligns with the corresponding functional roles these types of memory serve in human cognition, wherein semantic memory enables fact recall and episodic memory enables experiential reasoning.</p>
+<h2 id="discussion-and-future-work">Discussion and Future Work</h2>
+<p>Our research provides empirical evidence for cognitive-inspired LLM memory enhancement methods. The witnessed performance improvements with three-tier memory architecture show that human memory systems offer valuable design concepts for overcoming inherent limitations in current AI designs.</p>
+<p>The unexpected finding was the slightly worse performance of integrated memory systems compared to single implementations. This suggests complex interaction effects, which may mirror interference phenomena observed in human memory systems, where various forms of memory sometimes vie for mental resources.</p>
+<p>Future research directions include:</p>
+<ul>
+<li><strong>Multi-agent Memory Dynamics</strong>: How memory transfers between agents and how social dynamics influence memory consolidation</li>
+<li><strong>Advanced Retrieval Strategies</strong>: Exploring spatially organized memory architectures and hierarchical memory organization</li>
+<li><strong>Optimization of Consolidation Thresholds</strong>: Investigating dynamic thresholds that adapt based on conversation characteristics</li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>This paper presents a novel biomimetic approach to enhancing LLM memory that addresses intrinsic limitations in current architectures. By embracing a three-level memory structure inspired by human cognitive processes, we demonstrate significant improvements in information retention, update, and context recall.</p>
+<p>As LLMs advance towards more general intelligence capabilities, structured memory systems will play a larger role in enabling coherent long-term interactions, homogeneous knowledge states, and contextually appropriate information access. Our research contributes both pragmatic approaches for deploying this aspect of AI progress and theoretical frameworks to continue advancing this critical component of AI work.</p>
+]]></content:encoded></item><item><title>Improving &amp; Scaling LLMs for Coaching</title><link>https://terrylinhaochen.github.io/projects/improving-scaling-llms-coaching/</link><pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate><guid>https://terrylinhaochen.github.io/projects/improving-scaling-llms-coaching/</guid><description>&lt;h1 id="situated-practice-systems-improving-and-scaling-coaching-through-llms">Situated Practice Systems: Improving and Scaling Coaching through LLMs&lt;/h1>
+&lt;p>&lt;strong>Authors: Terry Chen, Allyson Lee&lt;/strong>&lt;/p>
+&lt;h2 id="abstract">Abstract&lt;/h2>
+&lt;p>Effective coaching in project-based learning environments is critical for developing students&amp;rsquo; self-regulation skills, yet scaling high-quality coaching remains a challenge. This paper presents an LLM-enhanced coaching system designed to support project-based learning by helping connect peers struggling with the same regulation gap, and to help coaches by identifying regulation gaps and generating tailored practice suggestions. Our system integrates vector-based semantic matching with LLM-generated regulation gap categorizations for Context Assessment Plan (CAP) notes. Results demonstrate that our system effectively retrieves relevant coaching cases, reducing the cognitive burden on mentors while maintaining high-quality, context-aware feedback.&lt;/p></description><content:encoded><![CDATA[<h1 id="situated-practice-systems-improving-and-scaling-coaching-through-llms">Situated Practice Systems: Improving and Scaling Coaching through LLMs</h1>
+<p><strong>Authors: Terry Chen, Allyson Lee</strong></p>
+<h2 id="abstract">Abstract</h2>
+<p>Effective coaching in project-based learning environments is critical for developing students&rsquo; self-regulation skills, yet scaling high-quality coaching remains a challenge. This paper presents an LLM-enhanced coaching system designed to support project-based learning by helping connect peers struggling with the same regulation gap, and to help coaches by identifying regulation gaps and generating tailored practice suggestions. Our system integrates vector-based semantic matching with LLM-generated regulation gap categorizations for Context Assessment Plan (CAP) notes. Results demonstrate that our system effectively retrieves relevant coaching cases, reducing the cognitive burden on mentors while maintaining high-quality, context-aware feedback.</p>
+<h2 id="introduction">Introduction</h2>
+<p>Training college students to tackle complex, open-ended innovation work requires developing strong regulation skills for self-directed work. Coaches guide the development of these regulation skills, helping students develop cognitive, motivational, emotional, and strategic behaviors needed to problem solve and reach desired outcomes. However, coaches face significant challenges in providing personalized guidance to multiple student teams.</p>
+<p>Existing AI-based project management tools help track tasks but fail to capture nuanced ways students approach their work. Large Language Models (LLMs) show promise in analyzing text-based interactions and generating structured feedback, but their application to coaching remains underexplored.</p>
+<p>To address these issues, we propose utilizing LLMs to develop and integrate three key technical innovations:</p>
+<ul>
+<li><strong>Peer Connections</strong> - Facilitate connections between students with similar challenges</li>
+<li><strong>Coaching Reflections</strong> - Help coaches analyze patterns and improve their practice through identifying regulation gaps</li>
+<li><strong>Practice Suggestions</strong> - Adapt similar cases to new situations</li>
+</ul>
+<h2 id="the-regulation-skills-codebook">The Regulation Skills Codebook</h2>
+<p>Our system is built around a novel codebook consisting of regulation gap definitions and examples gathered across learning science literature. The codebook categorizes student regulation gaps in a tiered approach:</p>
+<h3 id="tier-1-categories">Tier 1 Categories:</h3>
+<ol>
+<li><strong>Cognitive</strong> - Skills for approaching problems with unknown answers</li>
+<li><strong>Metacognitive</strong> - Skills in planning, help-seeking, collaboration, and reflection</li>
+<li><strong>Emotional</strong> - Dispositions toward self and learning that affect motivation</li>
+</ol>
+<h3 id="tier-2-categories-examples">Tier 2 Categories (Examples):</h3>
+<ul>
+<li>Representing problem and solution spaces</li>
+<li>Assessing risks</li>
+<li>Critical thinking and argumentation</li>
+<li>Forming feasible plans</li>
+<li>Planning effective iterations</li>
+<li>Fears and anxieties</li>
+<li>Embracing challenges and learning</li>
+</ul>
+<h2 id="system-architecture">System Architecture</h2>
+<p>Our system combines semantic similarity search with LLM-based analysis in a retrieval-augmented generation approach:</p>
+<ol>
+<li>Student regulation notes are pre-processed with metadata on tier 1 and tier 2 regulation gaps</li>
+<li>Notes are encoded into text embeddings</li>
+<li>A vector database retrieves the most similar historical cases</li>
+<li>An LLM (Deepseek) generates structured responses including:
+<ul>
+<li>Diagnosis of potential regulation gaps</li>
+<li>Practice suggestions targeted to these gaps</li>
+<li>References to similar historical cases</li>
+</ul>
+</li>
+</ol>
+<p>This grounds LLM suggestions in actual coaching experiences rather than generic advice, improving the relevance and actionability of recommendations.</p>
+<h2 id="similarity-methods-for-regulation-gap-analysis">Similarity Methods for Regulation Gap Analysis</h2>
+<p>We developed and tested three approaches to match students with similar regulation challenges:</p>
+<ol>
+<li><strong>Baseline Semantic Approach</strong> - Uses vector embeddings to find similar cases based on textual similarity</li>
+<li><strong>Weighted Semantic Similarity</strong> - Separates and weights regulation gap description (0.7) from contextual information (0.3)</li>
+<li><strong>Hybrid LLM-Codebook Approach</strong> - Combines semantic matching with LLM-generated metadata using our regulation codebook</li>
+</ol>
+<p>The hybrid approach proved most effective, assigning the highest weight (0.5) to tier 2 categories and lower weights to tier 1 categories (0.1) and text content (0.2 each for gap text and context).</p>
+<h2 id="evaluation-and-results">Evaluation and Results</h2>
+<p>We evaluated each model against the same three notes, analyzing the top 5 returned similar notes. The semantic matching performed well when addressing cognitive and metacognitive gaps with repetitive terminology but struggled with emotional regulation gaps. The LLM-codebook approach showed promise in accurately identifying regulation gaps but was computationally intensive. The hybrid model consistently and efficiently identified notes with the same regulation gap while maintaining contextual similarity.</p>
+<h2 id="discussion-and-future-work">Discussion and Future Work</h2>
+<p>Our system effectively bridges the gap between human expertise and AI capabilities in coaching contexts. Key takeaways include:</p>
+<ol>
+<li><strong>Hybrid AI-Driven Case Retrieval</strong> - Combining LLM-driven metadata tagging with traditional semantic matching enables precision in retrieving relevant coaching cases</li>
+<li><strong>Structured Codebooks for Domain-Specific AI</strong> - Our tiered classification system grounds LLM-based reasoning in expert-validated pedagogical frameworks</li>
+</ol>
+<p>Future work will focus on:</p>
+<ul>
+<li>Improving clarity of writing in notes</li>
+<li>Collecting more data through alternative sources</li>
+<li>Developing sub-categorized codebooks with specific examples and reasoning chains</li>
+<li>Exploring more sophisticated reasoning methods like external knowledge bases or memory systems</li>
+</ul>
+<p>This research contributes to the broader field of AI-enhanced education and human-AI collaboration, offering insights into how AI can augment expert-driven mentoring in complex, open-ended learning settings.</p>
+]]></content:encoded></item><item><title>Smart Expense Tracker with Auto-Categorization</title><link>https://terrylinhaochen.github.io/archived/smart-expense-tracker/</link><pubDate>Tue, 21 Mar 2023 00:00:00 +0000</pubDate><guid>https://terrylinhaochen.github.io/archived/smart-expense-tracker/</guid><description>&lt;p>The Smart Expense Tracker with Auto-Categorization is a cloud-native application built on AWS serverless architecture. The system automates the tedious process of expense tracking by leveraging AWS services to process receipts, categorize transactions, and provide financial insights. The application offers several key features including receipt scanning and data extraction using AWS Textract, automatic expense categorization with AI (using AWS Bedrock), comprehensive expense tracking, budget setting with automated alerts via SNS, and financial report generation in CSV or PDF formats.&lt;/p></description><content:encoded><![CDATA[<p>The Smart Expense Tracker with Auto-Categorization is a cloud-native application built on AWS serverless architecture. The system automates the tedious process of expense tracking by leveraging AWS services to process receipts, categorize transactions, and provide financial insights. The application offers several key features including receipt scanning and data extraction using AWS Textract, automatic expense categorization with AI (using AWS Bedrock), comprehensive expense tracking, budget setting with automated alerts via SNS, and financial report generation in CSV or PDF formats.</p>
+<h2 id="system-architecture">System Architecture</h2>
+<p>The application uses a serverless architecture centered around AWS Lambda functions and Amazon RDS. This design ensures scalability, reliability, and cost efficiency by leveraging AWS managed services.</p>
+<p><img alt="Smart Expense Tracker Architecture" loading="lazy" src="/images/projects/smart-expense-tracker/architecture.png"></p>
+<p>The Client Application provides a web/mobile interface for user interactions. AWS API Gateway exposes the backend as a RESTful API and routes client requests to appropriate Lambda functions. Four AWS Lambda functions handle all backend operations, with a custom datatier module managing database interactions. Amazon RDS (MySQL) serves as the persistent data store for users, transactions, and receipt metadata. AWS S3 securely stores uploaded receipt images, while AWS Textract processes these images with OCR to extract transaction details. An AI service (AWS Bedrock) automatically categorizes expenses based on merchant and description. Finally, Amazon SNS sends budget alerts via email notifications when spending exceeds predefined thresholds.</p>
+<h2 id="component-interactions">Component Interactions</h2>
+<p>In the receipt processing flow, a user uploads a receipt image through the frontend application. The API Gateway routes this request to a dedicated Lambda function, which stores the receipt in S3 and creates metadata in RDS. The system then leverages AWS Textract to analyze the image and extract key details such as merchant name, date, and amount. This extracted information is passed to an AI model that categorizes the transaction based on the merchant and description. The complete transaction details are then stored in the RDS database for future reference and analysis.</p>
+<figure>
+    <img loading="lazy" src="/images/projects/smart-expense-tracker/workflow.jpg"
+         alt="Receipt Processing Workflow"/> <figcaption>
+            <p>Receipt Processing and Categorization Workflow</p>
+        </figcaption>
+</figure>
+
+<p>The budget monitoring process begins when a user sets category-specific budget limits via the frontend. A Lambda function updates these settings in the RDS database. Later, when new transactions are processed, the system evaluates current spending against the budget thresholds. If spending exceeds a predefined limit, the SNS service automatically sends a notification to the user&rsquo;s registered email address, providing timely awareness of their financial situation.</p>
+<p>For financial reporting, users can request customized reports through the frontend. A Lambda function queries the relevant transaction data from RDS based on user-specified parameters. This data is then processed and formatted according to the user&rsquo;s preferences, such as report type (transaction details or category summaries) and format (CSV or PDF). The final report is delivered back to the client via the API response, providing valuable insights for financial planning and tax preparation.</p>
+<h2 id="api-specification">API Specification</h2>
+<p>The application exposes a RESTful API through AWS API Gateway with the following endpoints:</p>
+<h3 id="1-receipt-upload-and-analysis">1. Receipt Upload and Analysis</h3>
+<p><strong>POST /upload</strong></p>
+<ul>
+<li><strong>Purpose</strong>: Upload a receipt image for processing</li>
+<li><strong>Request Body</strong>: Multipart form data with image file
+<ul>
+<li><code>userid</code> (required): User identifier</li>
+<li><code>filename</code>: Name of the receipt image</li>
+<li><code>data</code>: Base64-encoded image data</li>
+</ul>
+</li>
+<li><strong>Process</strong>: The system validates if the user exists, stores the receipt image in S3, creates a receipt record in the database, and initiates asynchronous processing. The function also checks whether the user&rsquo;s current monthly spending exceeds the monthly budget, and sends an email alert to the user through SNS.</li>
+<li><strong>Response</strong>:
+<ul>
+<li>Status 200: Success, returns transactionid, userid, amount, category, time</li>
+<li>Status 400: Bad request (missing parameters)</li>
+<li>Status 500: Server error</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-expense-retrieval">2. Expense Retrieval</h3>
+<p><strong>GET /expenses</strong></p>
+<ul>
+<li><strong>Purpose</strong>: Retrieve user expenses with optional filtering</li>
+<li><strong>Query Parameters</strong>:
+<ul>
+<li><code>userid</code> (required): User identifier</li>
+<li><code>start_date</code> (optional): Filter transactions after this date (YYYY-MM-DD)</li>
+<li><code>end_date</code> (optional): Filter transactions before this date (YYYY-MM-DD)</li>
+<li><code>category</code> (optional): Filter by expense category</li>
+</ul>
+</li>
+<li><strong>Response</strong>:
+<ul>
+<li>Status 200: Success, returns list of transactions and summary</li>
+<li>Status 400: Bad request (missing parameters)</li>
+<li>Status 500: Server error</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-budget-management">3. Budget Management</h3>
+<p><strong>POST /budget_and_alert</strong></p>
+<ul>
+<li><strong>Purpose</strong>: Set monthly spending budget</li>
+<li><strong>Process</strong>: The system updates the user&rsquo;s budget in the database, checks current month&rsquo;s spending against the budget, and sends an SNS notification if spending exceeds the budget.</li>
+<li><strong>Response</strong>:
+<ul>
+<li>Status 200: Budget set successfully</li>
+<li>Status 400: Bad request (missing parameters)</li>
+<li>Status 500: Server error</li>
+</ul>
+</li>
+</ul>
+<h3 id="4-financial-reports">4. Financial Reports</h3>
+<p><strong>GET /report</strong></p>
+<ul>
+<li><strong>Purpose</strong>: Generate and export financial report</li>
+<li><strong>Query Parameters</strong>:
+<ul>
+<li><code>userid</code> (required): User identifier</li>
+<li><code>format</code> (optional): &ldquo;csv&rdquo; or &ldquo;pdf&rdquo; (default: &ldquo;csv&rdquo;)</li>
+<li><code>report_type</code> (optional): &ldquo;transactions&rdquo; or &ldquo;summary&rdquo; (default: &ldquo;transactions&rdquo;)</li>
+<li><code>start_date</code> (optional): Starting date for report</li>
+<li><code>end_date</code> (optional): Ending date for report</li>
+<li><code>category</code> (optional): Filter by category</li>
+</ul>
+</li>
+<li><strong>Report Types</strong>: The &ldquo;transactions&rdquo; type lists all individual transactions with details, while the &ldquo;summary&rdquo; type provides aggregated statistics by category (count, total, average, max, min).</li>
+<li><strong>Output Formats</strong>: The system supports CSV (standard comma-separated values) and PDF (HTML structure that would be converted to PDF) formats.</li>
+<li><strong>Process</strong>: The system retrieves filtered transaction data from the database, generates the report in the requested format, and encodes the report data as base64 for transmission.</li>
+<li><strong>Response</strong>:
+<ul>
+<li>Status 200: Success, returns report data</li>
+<li>Status 400: Bad request (missing parameters)</li>
+<li>Status 500: Server error</li>
+</ul>
+</li>
+</ul>
+<h2 id="database-schema">Database Schema</h2>
+<p>The application uses a MySQL database on Amazon RDS with the following schema:</p>
+<p><img alt="Database Schema" loading="lazy" src="/images/projects/smart-expense-tracker/sql_schema.png"></p>
+<ul>
+<li>
+<p>The <strong>Users</strong> table stores basic user information. The <code>userid</code> field serves as the primary key and unique identifier for each user. The <code>email</code> field contains the user&rsquo;s email address for notifications. The <code>budget</code> field is a JSON object storing category-specific budget limits (e.g., {&ldquo;Food&rdquo;: 500, &ldquo;Transport&rdquo;: 200}). The <code>sns_topic_arn</code> field contains the Amazon SNS topic ARN for sending notifications to this user.</p>
+</li>
+<li>
+<p>The <strong>Transactions</strong> table records all user expenditures. The <code>transactionid</code> field is an auto-incrementing primary key. The <code>userid</code> field is a foreign key reference to the Users table. The <code>amount</code> field stores the transaction amount as a decimal with two places of precision. The <code>category</code> field contains the expense category (e.g., Food, Transport, Entertainment) assigned by the AI. The <code>time</code> field records when the transaction occurred.</p>
+</li>
+<li>
+<p>The <strong>Receipts</strong> table tracks uploaded receipt images and their processing status. The <code>receiptid</code> field is an auto-incrementing primary key. The <code>userid</code> field references the Users table. The <code>status</code> field indicates the current processing status (e.g., &ldquo;uploaded&rdquo;, &ldquo;processing&rdquo;, &ldquo;completed&rdquo;, &ldquo;error&rdquo;). The <code>s3_location</code> field contains the S3 bucket path to the stored receipt image. The <code>upload_time</code> field captures when the receipt was uploaded, while <code>analysis_time</code> records when processing was completed.</p>
+</li>
+</ul>
+<h2 id="lambda-functions">Lambda Functions</h2>
+<p>The system is implemented using four main AWS Lambda functions, each dedicated to a specific aspect of the application.</p>
+<ol>
+<li>
+<p>The <strong>Receipt Upload and Analysis</strong> function processes receipt images and extracts transaction details. It handles receipt uploads and storage in S3, uses AWS Textract for OCR processing, employs an AI model for merchant recognition and expense categorization, creates transaction records from extracted data, and updates receipt status through processing stages.</p>
+</li>
+<li>
+<p>The <strong>Get Past Expenses</strong> function retrieves and filters transaction records. It supports filtering by date range and category, generates transaction summaries and category breakdowns, calculates spending statistics (totals, counts), and returns a formatted JSON response.</p>
+</li>
+<li>
+<p>The <strong>Set Budget and Trigger Alerts</strong> function updates budget settings and sends alerts. It updates user budget settings in the database, checks current spending against budget limits, sends notifications via SNS when thresholds are exceeded, calculates budget utilization percentages, and supports category-specific budgets.</p>
+</li>
+<li>
+<p>The <strong>Export Financial Reports</strong> function generates financial reports in different formats. It supports multiple report types (transactions, summary), generates reports in CSV or PDF format, applies filtering options (date range, category), and encodes reports as base64 for transmission.</p>
+</li>
+</ol>
+<h2 id="conclusion">Conclusion</h2>
+<p>The Smart Expense Tracker with Auto-Categorization represents a significant improvement over traditional expense tracking applications by leveraging AWS cloud services and artificial intelligence. By automating the tedious aspects of expense management, the system allows users to gain financial insights with minimal effort.</p>
+]]></content:encoded></item><item><title>About Me</title><link>https://terrylinhaochen.github.io/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://terrylinhaochen.github.io/about/</guid><description>About Terry Chen</description><content:encoded><![CDATA[<p>My name is Terry (陈麟昊). I currently live in Evanston, studying Computer Science at Northwestern. I enjoy observing and learning about the strange quirks that make us human. I like building things, with focuses in content understanding &amp; generation with agentic workflows. Previously, I have worked in product and engineering at TikTok and ByteDance. In my free time, I play tennis and ocassionally cook. I&rsquo;m still figuring out life, so I&rsquo;ll spare you the formal introduction. If you&rsquo;re in town and interested in chatting, let&rsquo;s grab coffee at Peet&rsquo;s.</p>
+<h2 id="contact">Contact</h2>
+<p>Feel free to reach out to me at <a href="mailto:terrychen2026@u.northwestern.edu">terrychen2026@u.northwestern.edu</a> or connect with me on <a href="https://www.linkedin.com/in/terry-chen-3b44911a4/">LinkedIn</a>.</p>
+]]></content:encoded></item></channel></rss>
