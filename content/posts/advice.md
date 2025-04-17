@@ -6,7 +6,7 @@ tags: ["Observations"]
 ---
 Every now and then I like to read about the advice of others who've succeeded in their field. Here's a few that I personally found to be enlightening and practical. 
 
-Patrick Collison: 
+## Patrick Collison: 
 
 - Go deep on things. Become an expert. In particular, try to go deep on multiple things. (To varying degrees, I tried to go deep on languages, programming, writing, physics, math. Some of those stuck more than others.) One of the main things you should try to achieve by age 20 is some sense for which kinds of things you enjoy doing. This probably won't change a lot throughout your life and so you should try to discover the shape of that space as quickly as you can.
 
@@ -35,3 +35,6 @@ Patrick Collison:
 - Find vivid examples of success in the domains you care about. If you want to become a great scientist, try to find ways to spend time with good (or, ideally, great) scientists in person. Watch YouTube videos of interviews. Follow some on Twitter.
 
 - People who did great things often did so at very surprisingly young ages. (They were grayhaired when they became famous... not when they did the work.) So, hurry up! You can do great things.
+
+## Paul Graham - How to do Great Work
+![Great Work](/images/posts/advice/great_work.jpg)
