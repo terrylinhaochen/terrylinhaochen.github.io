@@ -2,7 +2,7 @@ baseURL = "https://chenterry.com/"
 languageCode = "en-us"
 title = "Terry Chen"
 theme = "PaperMod"
-publishDir = "docs"
+publishDir = "public"
 googleAnalytics = "G-M6GS8Q702L"
 
 # Enhanced SEO description
