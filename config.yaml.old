@@ -1,0 +1,90 @@
+baseURL: "https://terrylinhaochen.github.io/"
+languageCode: "en-us"
+title: "Terry Chen"
+theme: "PaperMod"
+
+params:
+  description: "Hi, this is Terry. I'm documenting my product ideas and learning notes in this blog. I'm interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction."
+  author: Terry Chen
+  
+  # PaperMod specific parameters
+  defaultTheme: auto
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+  ShowFullTextinRSS: true
+  
+  # Home page info
+  homeInfoParams:
+    Title: "👋 Welcome to Terry's Blog"
+    Content: >
+      Hi, this is Terry. I'm documenting my product ideas and learning notes in this blog.
+      You can reach me at terrychen2026@u.northwestern.edu
+  
+  # Enable searching
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+  # Social links
+  socialIcons:
+    - name: linkedin
+      url: "https://www.linkedin.com/in/terry-chen-3b44911a4/"
+    - name: github
+      url: "https://github.com/terrylinhaochen"
+    - name: email
+      url: "mailto:terrychen2026@u.northwestern.edu"
+
+  # Assets for cover images and profile pictures
+  assets:
+    favicon: "/favicon.ico"
+    favicon16x16: "/favicon-16x16.png"
+    favicon32x32: "/favicon-32x32.png"
+    apple_touch_icon: "/apple-touch-icon.png"
+    
+# Menu items
+menu:
+  main:
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 10
+    - identifier: projects
+      name: Projects
+      url: /projects/
+      weight: 20
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 30
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 40
+      
+# Taxonomies for categorization
+taxonomies:
+  category: categories
+  tag: tags
+  series: series
+
+# Enable search
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+# Image handling
+markup:
+  goldmark:
+    renderer:
+      unsafe: true  # This allows HTML in markdown files, needed for complex image handling 

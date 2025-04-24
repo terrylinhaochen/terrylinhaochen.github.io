@@ -1,0 +1,50 @@
+{{ define "main" }}
+<article class="post-single">
+  <header class="post-header">
+    <h1 class="post-title">
+      {{ .Title }}
+      {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
+    </h1>
+    {{- if .Description }}
+    <div class="post-description">
+      {{ .Description }}
+    </div>
+    {{- end }}
+  </header>
+
+  {{- if .Content }}
+  <div class="post-content">
+    {{- if not (.Param "disableAnchoredHeadings") }}
+    {{- partial "anchored_headings.html" .Content -}}
+    {{- else }}{{ .Content }}{{ end }}
+  </div>
+  {{- end }}
+
+  <div class="archive-list">
+    {{- range .Pages }}
+    <article class="post-entry">
+      <header class="entry-header">
+        <h2>{{ .Title }}</h2>
+      </header>
+      <div class="entry-content">
+        {{ .Summary | plainify | htmlUnescape }}
+      </div>
+      <footer class="entry-footer">
+        <div class="post-meta">
+          <time>{{ .Date.Format (default "January 2, 2006" .Site.Params.DateFormat) }}</time>
+          {{- if (.Param "ShowReadingTime") }} • {{ i18n "read_time" .ReadingTime | default (printf "%d min read" .ReadingTime) }}{{- end }}
+        </div>
+        <a href="{{ .Permalink }}" title="{{ .Title }}">{{ i18n "read_more" | default "Read More →" }}</a>
+      </footer>
+    </article>
+    {{- end }}
+  </div>
+
+  {{- if .Pages }}
+  {{- else }}
+  <div class="archive-empty">
+    <p>No archived content yet. When you archive content, it will appear here.</p>
+  </div>
+  {{- end }}
+</article>
+{{ end }} 

@@ -1,0 +1,373 @@
+{{ define "main" }}
+<style>
+  .projects-container {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+
+  /* Theme Carousel */
+  .theme-carousel {
+    margin-bottom: 4rem;
+    position: relative;
+  }
+
+  .theme-slides {
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+  }
+
+  .theme-slide {
+    min-width: 100%;
+    padding: 2rem;
+    background: linear-gradient(135deg, #e8f0ff 0%, #ffffff 100%);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  }
+
+  .theme-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .theme-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .theme-nav button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    background: #ddd;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .theme-nav button.active {
+    background: #333;
+  }
+
+  /* Project Sections */
+  .section {
+    margin-bottom: 4rem;
+  }
+
+  .section-header {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+
+  .section-subtitle {
+    color: #666;
+    font-size: 1.1rem;
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .project-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+
+  .project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  .project-card.featured,
+  .work-card {
+    grid-column: span 2;
+    background: linear-gradient(to right bottom, #ffffff, #f8f9fa);
+  }
+
+  /* Modal styles */
+  .modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 800px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+  }
+
+  .modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  .modal-overlay.active {
+    display: flex;
+  }
+</style>
+
+<div class="projects-container">
+  <!-- Theme Carousel -->
+  <section class="theme-carousel">
+    <div class="theme-slides" id="themeSlides">
+      <div class="theme-slide">
+        <div class="theme-content">
+          <h2>Multi-agent LLM Systems</h2>
+          <p>Developing capable multi-agent systems for complex reasoning and human-AI collaboration.</p>
+        </div>
+      </div>
+      <div class="theme-slide">
+        <div class="theme-content">
+          <h2>Data Insights</h2>
+          <p>Extracting meaningful insights from unstructured multi-modal content.</p>
+        </div>
+      </div>
+      <div class="theme-slide">
+        <div class="theme-content">
+          <h2>Content Generation</h2>
+          <p>Leveraging synthesized insights for enhanced content generation.</p>
+        </div>
+      </div>
+    </div>
+    <div class="theme-nav" id="themeNav"></div>
+  </section>
+
+  <!-- Startup Projects -->
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title">Startup Projects</h2>
+      <p class="section-subtitle">Things keeping me busy on weekends</p>
+    </div>
+    <div class="projects">
+      {{ range where (where .Site.RegularPages "Section" "projects") "Params.categories" "startup" }}
+      <article class="post-entry">
+        {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
+        {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
+        <header class="entry-header">
+          <h2>{{ .Title }}</h2>
+        </header>
+        <div class="entry-content">
+          {{ .Summary | plainify | htmlUnescape }}
+        </div>
+        <footer class="entry-footer">
+          <div class="post-meta">
+            <time>{{ .Date.Format (default "January 2, 2006" .Site.Params.DateFormat) }}</time>
+            {{- if (.Param "ShowReadingTime") }} • {{ i18n "read_time" .ReadingTime | default (printf "%d min read" .ReadingTime) }}{{- end }}
+          </div>
+        </footer>
+        <a class="entry-link" href="{{ .Permalink }}"></a>
+      </article>
+      {{ end }}
+    </div>
+  </section>
+
+  <!-- Work Projects -->
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title">Work Projects</h2>
+    </div>
+    <div class="projects">
+      {{ range where (where .Site.RegularPages "Section" "projects") "Params.categories" "work" }}
+      <article class="post-entry">
+        {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
+        {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
+        <header class="entry-header">
+          <h2>{{ .Title }}</h2>
+        </header>
+        <div class="entry-content">
+          {{ .Summary | plainify | htmlUnescape }}
+        </div>
+        <footer class="entry-footer">
+          <div class="post-meta">
+            <time>{{ .Date.Format (default "January 2, 2006" .Site.Params.DateFormat) }}</time>
+            {{- if (.Param "ShowReadingTime") }} • {{ i18n "read_time" .ReadingTime | default (printf "%d min read" .ReadingTime) }}{{- end }}
+          </div>
+        </footer>
+        <a class="entry-link" href="{{ .Permalink }}"></a>
+      </article>
+      {{ end }}
+    </div>
+  </section>
+
+  <!-- Research Projects -->
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title">Research</h2>
+    </div>
+    <div class="projects">
+      {{ range where (where .Site.RegularPages "Section" "projects") "Params.categories" "research" }}
+      <article class="post-entry">
+        {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
+        {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
+        <header class="entry-header">
+          <h2>{{ .Title }}</h2>
+        </header>
+        <div class="entry-content">
+          {{ .Summary | plainify | htmlUnescape }}
+        </div>
+        <footer class="entry-footer">
+          <div class="post-meta">
+            <time>{{ .Date.Format (default "January 2, 2006" .Site.Params.DateFormat) }}</time>
+            {{- if (.Param "ShowReadingTime") }} • {{ i18n "read_time" .ReadingTime | default (printf "%d min read" .ReadingTime) }}{{- end }}
+          </div>
+        </footer>
+        <a class="entry-link" href="{{ .Permalink }}"></a>
+      </article>
+      {{ end }}
+    </div>
+  </section>
+
+  <!-- Prototype Projects -->
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title">Prototypes</h2>
+    </div>
+    <div class="projects">
+      {{ range where (where .Site.RegularPages "Section" "projects") "Params.categories" "prototype" }}
+      <article class="post-entry">
+        {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
+        {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
+        <header class="entry-header">
+          <h2>{{ .Title }}</h2>
+        </header>
+        <div class="entry-content">
+          {{ .Summary | plainify | htmlUnescape }}
+        </div>
+        <footer class="entry-footer">
+          <div class="post-meta">
+            <time>{{ .Date.Format (default "January 2, 2006" .Site.Params.DateFormat) }}</time>
+            {{- if (.Param "ShowReadingTime") }} • {{ i18n "read_time" .ReadingTime | default (printf "%d min read" .ReadingTime) }}{{- end }}
+          </div>
+        </footer>
+        <a class="entry-link" href="{{ .Permalink }}"></a>
+      </article>
+      {{ end }}
+    </div>
+  </section>
+</div>
+
+<!-- Modal Template -->
+<div class="modal-container">
+  {{ range where .Site.RegularPages "Section" "projects" }}
+  <div id="modal-{{ .Title | urlize }}" class="modal-overlay">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('{{ .Title | urlize }}')">&times;</button>
+      <h2>{{ .Title }}</h2>
+      <p class="project-meta">{{ if .Date }}{{ .Date.Format "January 2, 2006" }}{{ end }}</p>
+      <div class="modal-content">
+        {{ .Content }}
+      </div>
+    </div>
+  </div>
+  {{ end }}
+</div>
+
+<script>
+// Theme carousel functionality
+document.addEventListener('DOMContentLoaded', function() {
+  const slides = document.querySelectorAll('.theme-slide');
+  const nav = document.getElementById('themeNav');
+  let currentSlide = 0;
+
+  // Create navigation dots
+  slides.forEach((_, index) => {
+    const button = document.createElement('button');
+    button.onclick = () => goToSlide(index);
+    nav.appendChild(button);
+  });
+
+  function updateNav() {
+    const buttons = nav.querySelectorAll('button');
+    buttons.forEach((button, index) => {
+      button.classList.toggle('active', index === currentSlide);
+    });
+  }
+
+  function goToSlide(index) {
+    const slideWidth = slides[0].offsetWidth;
+    document.getElementById('themeSlides').scrollLeft = slideWidth * index;
+    currentSlide = index;
+    updateNav();
+  }
+
+  // Initialize
+  updateNav();
+
+  // Auto-advance slides every 5 seconds
+  setInterval(() => {
+    currentSlide = (currentSlide + 1) % slides.length;
+    goToSlide(currentSlide);
+  }, 5000);
+});
+
+// Modal functionality
+function openModal(projectId) {
+  const modal = document.getElementById(`modal-${projectId}`);
+  if (modal) {
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+}
+
+function closeModal(projectId) {
+  const modal = document.getElementById(`modal-${projectId}`);
+  if (modal) {
+    modal.classList.remove('active');
+    document.body.style.overflow = 'auto';
+  }
+}
+
+// Close modal when clicking outside
+document.addEventListener('click', function(event) {
+  if (event.target.classList.contains('modal-overlay')) {
+    event.target.classList.remove('active');
+    document.body.style.overflow = 'auto';
+  }
+});
+
+// Close modal on escape key
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'Escape') {
+    const activeModal = document.querySelector('.modal-overlay.active');
+    if (activeModal) {
+      activeModal.classList.remove('active');
+      document.body.style.overflow = 'auto';
+    }
+  }
+});
+</script>
+{{ end }} 

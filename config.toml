@@ -1,0 +1,122 @@
+baseURL = "https://chenterry.com/"
+languageCode = "en-us"
+title = "Terry Chen"
+theme = "PaperMod"
+publishDir = "docs"
+googleAnalytics = "G-M6GS8Q702L"
+
+# Enhanced SEO description
+description = "AI research, multi-agent systems, and content understanding"
+
+# Enable sitemap and robots.txt
+enableRobotsTXT = true
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+[params]
+  description = "Hi, this is Terry. I'm documenting my product ideas and learning notes in this blog. I'm interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction."
+  author = "Terry Chen"
+  env = "production"
+  
+  # SEO-specific params
+  images = ["/images/profile.jpg"] # Default social share image
+  keywords = ["AI", "Machine Learning", "Content Generation", "User Experience"]
+  
+  # Default OpenGraph and Twitter card settings
+  [params.twitter]
+    site = "@YourTwitterHandle" # Replace with yours or remove if not needed
+    card = "summary_large_image"
+  
+  # Main sections to include in lists and archives
+  mainSections = ["posts", "projects", "archived"]
+  
+  # PaperMod specific parameters
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowRssButtonInSectionTermList = true
+  ShowFullTextinRSS = true
+  
+  # Home page info
+  [params.homeInfoParams]
+    Title = "👋 Welcome to Terry's Blog"
+    Content = "Hi, this is Terry. I'm documenting my product ideas and learning notes in this blog. You can reach me at terrychen2026@u.northwestern.edu"
+  
+  # Enable searching
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1000
+    threshold = 0.4
+    minMatchCharLength = 0
+    keys = ["title", "permalink", "summary", "content"]
+
+  # Social links
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/terry-chen-3b44911a4/"
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/terrylinhaochen"
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:terrychen2026@u.northwestern.edu"
+
+  # Assets for cover images and profile pictures
+  [params.assets]
+    favicon = "/favicon.ico"
+    favicon16x16 = "/favicon-16x16.png"
+    favicon32x32 = "/favicon-32x32.png"
+    apple_touch_icon = "/apple-touch-icon.png"
+    
+# Menu items
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "projects"
+    name = "Projects"
+    url = "/projects/"
+    weight = 20
+  # Archived section now has content
+  [[menu.main]]
+    identifier = "archived"
+    name = "Archived"
+    url = "/archived/"
+    weight = 25
+  [[menu.main]]
+    identifier = "search"
+    name = "Search"
+    url = "/search/"
+    weight = 30
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 40
+      
+# Taxonomies for categorization
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
+
+# Enable search
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# Image handling
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true  # This allows HTML in markdown files, needed for complex image handling 

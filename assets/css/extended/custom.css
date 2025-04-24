@@ -1,0 +1,1073 @@
+/* Custom CSS migrated from Jekyll site */
+/* Add your custom styles here to match your previous design */
+
+/* Increase base font size for the entire site */
+:root {
+  --main-font-size: 16px;
+  --card-font-size: 1rem;
+  --heading-font-size: 2.3rem;
+  --subheading-font-size: 1.8rem;
+  --meta-font-size: 0.95rem;
+  --content-width: 900px;
+  --header-padding: 2rem;
+}
+
+body {
+  font-size: var(--main-font-size);
+  line-height: 1.6;
+}
+
+/* Make header wider and aligned with top navigation */
+.nav {
+  max-width: var(--content-width);
+  padding: 0 1rem;
+  margin: 0 auto; /* Center the nav */
+  display: flex;
+  flex-direction: row; /* Horizontal layout */
+  justify-content: space-between; /* Put logo on left, menu on right */
+  align-items: center;
+}
+
+/* Increase header size */
+.header {
+  max-width: 100%;
+  padding: var(--header-padding) 0;
+  margin-bottom: 3rem;
+  text-align: center; /* Center the header text */
+}
+
+.logo {
+  margin: 0; /* Remove margins to align properly */
+}
+
+.logo a {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.menu {
+  font-size: 1.1rem;
+  margin: 0; /* Remove margin to align properly */
+}
+
+/* Make sure the menu remains properly spaced */
+.menu .menu__inner {
+  display: flex;
+  gap: 2rem; /* Increase gap between menu items */
+}
+
+/* Project cards styling */
+.project-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.8rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 2rem;
+  font-size: var(--card-font-size);
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Dark mode styling for project cards and entries - more comprehensive */
+:root[data-theme="dark"] .post-entry {
+  background-color: var(--entry);
+  color: #ffffff !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+:root[data-theme="dark"] .post-entry:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+:root[data-theme="dark"] .post-entry h2,
+:root[data-theme="dark"] .post-entry h3,
+:root[data-theme="dark"] .post-entry p,
+:root[data-theme="dark"] .post-entry a,
+:root[data-theme="dark"] .post-entry span,
+:root[data-theme="dark"] .post-entry div {
+  color: #ffffff !important;
+}
+
+:root[data-theme="dark"] .post-entry .entry-content {
+  color: #eeeeee !important;
+}
+
+:root[data-theme="dark"] .post-entry time {
+  color: #bbbbbb !important;
+}
+
+/* Comprehensive dark mode styling for projects template */
+:root[data-theme="dark"] .theme-slide,
+body.dark .theme-slide,
+.dark .theme-slide {
+  background: linear-gradient(135deg, #e0e0e0 0%, #f5f5f5 100%) !important; /* Light grey background */
+}
+
+:root[data-theme="dark"] .theme-slide h2,
+body.dark .theme-slide h2,
+.dark .theme-slide h2 {
+  color: #000000 !important; /* Pure black heading color for maximum contrast */
+  font-weight: 700 !important; /* Make text bolder */
+  font-size: 2.5rem !important; /* Make text larger */
+  text-shadow: none !important; /* Remove shadow */
+}
+
+:root[data-theme="dark"] .theme-slide p,
+body.dark .theme-slide p,
+.dark .theme-slide p {
+  color: #000000 !important; /* Pure black paragraph text for maximum contrast */
+  font-weight: 500 !important; /* Added medium font weight for better readability */
+}
+
+/* Fix for "Read More" links in dark mode */
+:root[data-theme="dark"] .theme-slide a,
+body.dark .theme-slide a,
+.dark .theme-slide a {
+  color: #000000 !important;
+  font-weight: 500 !important;
+}
+
+/* Force all text elements in theme slides to be black in dark mode */
+.dark .theme-slide *,
+body.dark .theme-slide * {
+  color: #000000 !important;
+}
+
+:root[data-theme="dark"] .theme-nav button {
+  background: #4a5568; /* Darker grey for inactive dots */
+}
+
+:root[data-theme="dark"] .theme-nav button.active {
+  background: #ffffff; /* White for active dot */
+}
+
+:root[data-theme="dark"] .section-title {
+  color: #ffffff !important;
+}
+
+:root[data-theme="dark"] .section-subtitle {
+  color: #bbbbbb !important;
+}
+
+:root[data-theme="dark"] .project-card {
+  background-color: #2d2d2d !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2) !important;
+}
+
+:root[data-theme="dark"] .project-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25) !important;
+}
+
+:root[data-theme="dark"] .project-card h3,
+:root[data-theme="dark"] .project-card p,
+:root[data-theme="dark"] .project-title,
+:root[data-theme="dark"] .project-description,
+:root[data-theme="dark"] .project-meta {
+  color: #ffffff !important;
+}
+
+:root[data-theme="dark"] .project-card.featured,
+:root[data-theme="dark"] .work-card {
+  background: linear-gradient(to right bottom, #2d2d2d, #222222) !important;
+}
+
+:root[data-theme="dark"] .modal {
+  background: #2d2d2d !important;
+}
+
+:root[data-theme="dark"] .modal h2,
+:root[data-theme="dark"] .modal p,
+:root[data-theme="dark"] .modal-content,
+:root[data-theme="dark"] .modal-content * {
+  color: #ffffff !important;
+}
+
+:root[data-theme="dark"] .modal-close {
+  color: #ffffff !important;
+}
+
+/* Make projects use the same entry styling as posts */
+.projects {
+  padding: 0 0.5rem;
+}
+
+.projects .post-entry {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: var(--entry);
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projects .post-entry:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Travel styling */
+.country-header {
+  margin-top: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #eee;
+  color: #333;
+  font-size: var(--subheading-font-size);
+}
+
+:root[data-theme="dark"] .country-header {
+  color: var(--primary);
+  border-bottom: 2px solid var(--border);
+}
+
+/* Search styling */
+.search-result {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  font-size: var(--card-font-size);
+}
+
+:root[data-theme="dark"] .search-result {
+  background-color: var(--entry);
+  border-bottom: 1px solid var(--border);
+  color: var(--primary);
+}
+
+/* Custom styling for the homepage */
+.home-info {
+    text-align: center;
+    padding: 2rem 1rem 4rem;
+    max-width: var(--content-width);
+    margin: 0 auto 3rem;
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.home-info h1 {
+    font-size: var(--heading-font-size);
+    margin-bottom: 1.5rem;
+}
+
+.home-info .entry-content {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    padding: 0 1rem;
+}
+
+/* Style the plain email */
+.plain-email {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    text-decoration: none;
+    font-weight: inherit;
+}
+
+/* Style the social icons */
+.social-icons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #f8f8f8;
+    color: #333;
+    transition: all 0.3s ease;
+    border: 1px solid #eaeaea;
+}
+
+:root[data-theme="dark"] .social-icons a {
+    background-color: var(--entry);
+    color: var(--primary);
+    border: 1px solid var(--border);
+}
+
+.social-icons a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+:root[data-theme="dark"] .social-icons a:hover {
+    background-color: var(--entry);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.social-icons svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* Remove powered by text */
+.footer {
+    display: none;
+}
+
+/* Center the main content and increase width */
+.main {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    padding-bottom: 5rem; /* Add more padding at the bottom of the page */
+}
+
+/* Increase card text size and add more spacing */
+.post-preview, .post {
+    font-size: var(--card-font-size);
+    line-height: 1.6;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.post-preview h2, .post h2 {
+    font-size: var(--subheading-font-size);
+    margin-bottom: 1.25rem;
+}
+
+.post-preview .entry-content, .post .entry-content {
+    font-size: inherit;
+    line-height: 1.7;
+}
+
+.post-preview .post-meta, .post .post-meta {
+    font-size: var(--meta-font-size);
+    color: var(--secondary);
+    margin: 1.25rem 0;
+}
+
+/* First homepage entry should be full width to match other cards */
+.first-entry {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    font-size: var(--card-font-size);
+}
+
+.first-entry .entry-header h2 {
+    font-size: var(--subheading-font-size);
+}
+
+.entry-content {
+    font-size: var(--card-font-size);
+    line-height: 1.7;
+}
+
+/* Make all cards have consistent styling */
+.post-entry {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    font-size: var(--card-font-size);
+}
+
+.post-entry .entry-header h2 {
+    font-size: var(--subheading-font-size);
+}
+
+/* Global link styling */
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Add spacing for minimal, clean layout */
+.posts {
+    padding: 0 0.5rem;
+}
+
+/* Improved top navigation styling */
+.top-link {
+    margin-right: 1rem;
+}
+
+/* Additional spacing for content sections */
+.post-content {
+    padding: 1rem 0;
+}
+
+article {
+    margin-bottom: 3rem;
+}
+
+/* Featured rotating cards styling */
+.featured-cards {
+    margin-bottom: 4rem;
+}
+
+.featured-cards h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+}
+
+.featured-cards h2:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -10px;
+    left: 0;
+    background-color: #eaeaea;
+}
+
+.featured-cards .post-entry {
+    padding: 2.5rem;
+    font-size: 1.3rem;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    margin-bottom: 3rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featured-cards .post-entry:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.featured-cards .post-entry .entry-header h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.featured-cards .post-entry .entry-header h2:after {
+    display: none;
+}
+
+.featured-cards .post-entry .entry-content {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.featured-cards .post-entry .entry-footer .post-meta {
+    font-size: var(--meta-font-size);
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.featured-cards .post-entry .entry-footer a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+    margin-top: 0.5rem;
+}
+
+.featured-cards .post-entry .entry-footer a:hover {
+    background-color: #efefef;
+    text-decoration: none;
+}
+
+/* Add more space after pagination controls */
+.pagination, .page-footer {
+    margin-bottom: 5rem; /* Add additional space after pagination */
+}
+
+/* Improve post meta display in cards */
+.post-entry .entry-footer .post-meta {
+    font-size: var(--meta-font-size);
+    color: #666;
+    margin-bottom: 0.8rem;
+}
+
+.featured-cards .post-entry .entry-footer .post-meta {
+    font-size: var(--meta-font-size);
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+/* Make sure the read more link is separated from the meta info */
+.featured-cards .post-entry .entry-footer a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+    margin-top: 0.5rem;
+}
+
+/* Ensure post content matches other page types in size */
+.post-single {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  font-size: var(--card-font-size);
+}
+
+.post-single .post-content {
+  font-size: var(--card-font-size);
+  line-height: 1.6;
+}
+
+.post-single .post-content p,
+.post-single .post-content li,
+.post-single .post-content ul,
+.post-single .post-content ol {
+  font-size: var(--card-font-size);
+  margin-bottom: 1.25rem;
+}
+
+.post-single .post-content h1 {
+  font-size: calc(var(--heading-font-size) * 0.9);
+  margin: 2rem 0 1.5rem;
+}
+
+.post-single .post-content h2 {
+  font-size: var(--subheading-font-size);
+  margin: 1.75rem 0 1.25rem;
+}
+
+.post-single .post-content h3 {
+  font-size: calc(var(--subheading-font-size) * 0.85);
+  margin: 1.5rem 0 1rem;
+}
+
+.post-single .post-content h4,
+.post-single .post-content h5,
+.post-single .post-content h6 {
+  font-size: calc(var(--card-font-size) * 1.1);
+  margin: 1.25rem 0 0.75rem;
+}
+
+/* Adjust post title size to match other pages */
+.post-title {
+  font-size: var(--heading-font-size);
+  margin-bottom: 1rem;
+}
+
+/* Make post padding match other page types */
+.post-single {
+  padding: 1.5rem;
+}
+
+/* Archive page styling */
+.archive-year {
+    margin-bottom: 40px;
+}
+
+.archive-year-header {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    position: relative;
+}
+
+.archive-month {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.archive-month-header {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.archive-count {
+    font-size: 0.8em;
+    color: var(--secondary);
+}
+
+.archive-entry {
+    position: relative;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: var(--radius);
+    transition: transform 0.1s;
+    border: 1px solid var(--border);
+}
+
+.archive-entry:hover {
+    transform: translateY(-2px);
+    background-color: var(--entry);
+}
+
+.archive-entry-title {
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.archive-meta {
+    font-size: 0.9rem;
+    color: var(--secondary);
+}
+
+.archive-tag {
+    display: inline-block;
+    color: var(--secondary);
+}
+
+.archive-tag[data-tag="archived"] {
+    color: #e67e22;
+    font-weight: 500;
+}
+
+.archive-empty {
+    margin: 40px 0;
+    padding: 20px;
+    border: 1px dashed var(--border);
+    border-radius: var(--radius);
+    text-align: center;
+}
+
+.archive-empty p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.archive-empty ul {
+    display: inline-block;
+    text-align: left;
+    margin: 0 auto;
+    padding-left: 20px;
+}
+
+.archive-empty li {
+    margin-bottom: 10px;
+}
+
+.entry-link {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+/* Dark mode support */
+.dark .archive-entry:hover {
+    background-color: var(--entry);
+}
+
+.dark .archive-count {
+    color: var(--secondary);
+}
+
+.dark .archive-meta {
+    color: var(--secondary);
+}
+
+.dark .archive-empty {
+    border-color: var(--border);
+    color: var(--primary);
+}
+
+/* Style for the "find more posts" section */
+.find-more-posts {
+  text-align: center;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: var(--entry);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+.find-more-posts p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.find-more-posts a {
+  font-weight: bold;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.find-more-posts a:hover {
+  text-decoration: underline;
+}
+
+/* Make sure all featured cards are shown with enough space */
+.featured-cards .post-entry {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+}
+
+/* Dark mode styles for find-more-posts */
+:root[data-theme="dark"] .find-more-posts {
+  background: var(--entry);
+  border: 1px solid var(--border);
+}
+
+:root[data-theme="dark"] .find-more-posts a {
+  color: var(--primary);
+}
+
+/* Custom styling for archived section */
+.archive-list {
+  padding: 0;
+}
+
+.archive-list .post-entry {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: var(--entry);
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.archive-list .post-entry:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.archive-list .post-entry h2 {
+  font-size: var(--subheading-font-size);
+  margin-bottom: 1rem;
+}
+
+:root[data-theme="dark"] .archive-list .post-entry {
+  background-color: var(--entry);
+  color: #ffffff !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+:root[data-theme="dark"] .archive-list .post-entry:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.archive-list .post-entry .entry-content {
+  font-size: var(--card-font-size);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+/* Fix empty archive styling */
+.archive-empty {
+  text-align: center;
+  padding: 3rem 1.5rem;
+  background-color: var(--entry);
+  border-radius: 12px;
+  margin: 2rem 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+:root[data-theme="dark"] .archive-empty {
+  background-color: var(--entry);
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Email Subscription Form Styles */
+.subscribe-form {
+    margin: 2rem 0 1rem;
+    width: calc(100% + 1.5rem);
+    margin-left: -1rem;
+    margin-right: auto;
+}
+
+.subscribe-input-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.subscribe-form input[type="email"] {
+    flex: 1;
+    padding: 10px 15px;
+    border: 2px solid var(--border);
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.subscribe-form input[type="email"]:focus {
+    border-color: var(--primary);
+}
+
+.subscribe-form button {
+    padding: 10px 20px;
+    background: var(--primary);
+    color: var(--theme);
+    border: none;
+    border-radius: 0 4px 4px 0;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.subscribe-form button:hover {
+    opacity: 0.9;
+}
+
+.subscribe-form button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.form-message {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+    text-align: center;
+}
+
+.form-message.success {
+    display: block;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.form-message.error {
+    display: block;
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Dark mode support */
+:root[data-theme="dark"] .subscribe-form input[type="email"] {
+    background-color: var(--entry);
+    color: #fff;
+    border-color: var(--border);
+}
+
+:root[data-theme="dark"] .subscribe-form button {
+    background-color: var(--primary);
+    color: var(--entry);
+}
+
+:root[data-theme="dark"] .form-message.success {
+    background-color: #1e4620;
+    color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+:root[data-theme="dark"] .form-message.error {
+    background-color: #481a1d;
+    color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 600px) {
+    .subscribe-input-container {
+        flex-direction: column;
+    }
+    
+    .subscribe-form input[type="email"] {
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+    
+    .subscribe-form button {
+        border-radius: 4px;
+        width: 100%;
+    }
+}
+
+/* Dark mode specific improvements for themes content */
+:root[data-theme="dark"] .featured-cards .post-entry .entry-header h2 {
+    color: #ffffff; /* Make titles white instead of grey */
+}
+
+:root[data-theme="dark"] .featured-cards .post-entry .entry-content {
+    color: #e0e0e0; /* Lighter grey for better contrast on dark backgrounds */
+}
+
+/* Ensure main theme text is visible in dark mode */
+:root[data-theme="dark"] .post-entry .entry-content {
+    color: #e0e0e0; /* Lighter grey for better contrast */
+}
+
+/* Media queries for mobile */
+@media (max-width: 600px) {
+    .subscribe-input-container {
+        flex-direction: column;
+    }
+    
+    .subscribe-form input[type="email"] {
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+    
+    .subscribe-form button {
+        border-radius: 4px;
+        width: 100%;
+    }
+}
+
+/* Tags section on search page */
+.tags-section {
+  margin: 0.5rem 0 3rem;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.tag-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  background-color: var(--tertiary);
+  color: var(--primary);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.tag-badge:hover {
+  background-color: var(--secondary);
+  color: var(--theme);
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+.tag-count {
+  font-size: 0.8em;
+  opacity: 0.7;
+}
+
+/* Dark mode support */
+:root[data-theme="dark"] .tag-badge {
+  background-color: var(--tertiary);
+  color: var(--theme);
+}
+
+:root[data-theme="dark"] .tag-badge:hover {
+  background-color: var(--primary);
+  color: var(--theme);
+}
+
+/* Make sure search box appears below tags */
+#searchbox {
+  width: 100%;
+  max-width: var(--content-width);
+  margin: 0 auto 2rem;
+  padding: 0;
+}
+
+/* Align search input properly with the header */
+.page-header + #searchbox {
+  padding-left: 0;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 1.1rem;
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  background-color: var(--entry);
+  color: var(--primary);
+  transition: border-color 0.3s ease;
+}
+
+#searchInput:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+:root[data-theme="dark"] #searchInput {
+  background-color: var(--entry);
+  color: #fff;
+}
+
+#searchResults {
+  padding-left: 0;
+  list-style: none;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+#searchResults li {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: var(--entry);
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  transition: all 0.2s ease;
+}
+
+#searchResults li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#searchResults li a {
+  display: block;
+  color: var(--primary);
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+#searchResults li .search-item-content {
+  font-size: 0.95rem;
+  color: var(--secondary);
+}
+
+:root[data-theme="dark"] #searchResults li {
+  border-color: var(--border);
+}
+
+:root[data-theme="dark"] #searchResults li:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Image caption styling */
+figure {
+  text-align: center;
+  margin: 1.5em auto;
+}
+
+figcaption {
+  margin-top: 0.5em;
+  font-style: italic;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.image-with-caption {
+  text-align: center;
+  margin: 1.5em auto;
+}
+
+.caption {
+  margin-top: 0.5em;
+  font-style: italic;
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* Make sure captions are visible in dark mode */
+.dark figcaption,
+body.dark figcaption,
+.dark .caption,
+body.dark .caption {
+  color: #aaa !important;
+}

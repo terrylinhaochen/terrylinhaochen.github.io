@@ -1,0 +1,39 @@
+{{ define "main" }}
+    {{- if .Site.Params.profileMode.enabled }}
+        {{ partial "index_profile.html" . }}
+    {{- else }}
+        {{- if and .Site.Params.homeInfoParams (eq .Paginator.PageNumber 1) }}
+            {{- partial "home_info.html" . }}
+        {{- end }}
+
+        {{- $mainThemes := where site.RegularPages "Section" "main-themes" }}
+        
+        {{- if and $mainThemes (eq .Paginator.PageNumber 1) }}
+        <div class="featured-cards">
+            <h2>Themes</h2>
+            {{- range $mainThemes }}
+            <article class="post-entry">
+                <header class="entry-header">
+                    <h2>{{ .Title }}</h2>
+                </header>
+                <div class="entry-content">
+                    {{ .Summary | plainify | htmlUnescape }}
+                </div>
+                <footer class="entry-footer">
+                    <div class="post-meta">
+                        <time>{{ .Date.Format (default "January 2, 2006" .Site.Params.DateFormat) }}</time>
+                        {{- if (.Param "ShowReadingTime") }} • {{ i18n "read_time" .ReadingTime | default (printf "%d min read" .ReadingTime) }}{{- end }}
+                    </div>
+                    <a href="{{ .Permalink }}" title="{{ .Title }}">{{ i18n "read_more" | default "Read More →" }}</a>
+                </footer>
+            </article>
+            {{- end }}
+        </div>
+
+        <!-- Information about finding all posts -->
+        <div class="find-more-posts">
+            <p>To view all posts, please visit the <a href="/posts/">Posts</a> section.</p>
+        </div>
+        {{- end }}
+    {{- end }}
+{{ end }} 
