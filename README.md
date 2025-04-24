@@ -70,7 +70,6 @@ terrylinhaochen.github.io/          # Root directory of the project
 ├── create-post.sh                  # Script to create new posts
 ├── reset-github-pages.sh           # Script to reset and deploy to GitHub Pages
 ├── config.toml                     # Main Hugo configuration file
-├── hugo.yaml                       # Alternative Hugo configuration
 └── README.md                       # This file
 ```
 
@@ -337,7 +336,7 @@ cover:
 
 ## Site Configuration
 
-### Main Configuration: `hugo.yaml`
+### Main Configuration: `config.toml`
 
 Key settings you might want to modify:
 - `title`: Site title
@@ -349,32 +348,35 @@ Key settings you might want to modify:
 
 Example of updating the site description:
 
-```yaml
-params:
-  description: "Your new site description goes here"
+```toml
+[params]
+  description = "Your new site description goes here"
 ```
 
 Example of menu configuration:
 
-```yaml
-menu:
-  main:
-    - identifier: posts
-      name: Posts
-      url: /posts/
-      weight: 10
-    - identifier: projects
-      name: Projects
-      url: /projects/
-      weight: 20
-    - identifier: archived
-      name: Archived
-      url: /archived/
-      weight: 25
-    - identifier: search
-      name: Search
-      url: /search/
-      weight: 30
+```toml
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "projects"
+    name = "Projects"
+    url = "/projects/"
+    weight = 20
+  [[menu.main]]
+    identifier = "archived"
+    name = "Archived"
+    url = "/archived/"
+    weight = 25
+  [[menu.main]]
+    identifier = "search"
+    name = "Search"
+    url = "/search/"
+    weight = 30
 ```
 
 ### Custom CSS: `assets/css/extended/custom.css`
