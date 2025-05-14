@@ -24,7 +24,7 @@ ShowBreadCrumbs: false
 ## Experience {.section-title}
 
 ### Microsoft | Redmond, Washington {.experience-title}
-**Product Manager, Sentinel Graph | Current**
+**Product Manager Intern, Sentinel Graph | Current**
 
 Graph-based technologies.
 
