@@ -23,7 +23,7 @@ enableRobotsTXT = true
   
   # SEO-specific params
   images = ["/images/profile.jpg"] # Default social share image
-  keywords = ["AI", "Machine Learning", "Content Generation", "User Experience"]
+  keywords = ["AI", "Machine Learning", "Content Generation", "User Experience", "SEO Product Engineers", "AI Multipliers"]
   
   # Default OpenGraph and Twitter card settings
   [params.twitter]
@@ -46,7 +46,7 @@ enableRobotsTXT = true
   # Home page info
   [params.homeInfoParams]
     Title = "👋 Welcome to Terry's Blog"
-    Content = "Hi, this is Terry. I'm documenting my product ideas and learning notes in this blog. You can reach me at terrychen2026@u.northwestern.edu"
+    Content = "Hi, this is Terry. I work as an SEO Product Engineer focused on AI Multipliers to enhance content generation and insight extraction. I'm documenting my product ideas and learning notes in this blog. You can reach me at terrychen2026@u.northwestern.edu"
   
   # Enable searching
   [params.fuseOpts]
