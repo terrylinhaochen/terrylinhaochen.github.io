@@ -1,5 +1,5 @@
 ---
-title: "Our Ability to Ask Questions Has Become the New Bottleneck in Learning"
+title: "Questions as the New Bottleneck in Learning"
 date: 2025-05-14
 author: Terry Chen
 tags: ["Observations"]
