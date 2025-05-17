@@ -12,7 +12,14 @@
 </div>
 {{- end }}
 
-{{ range .Pages.GroupByDate "2006" }}
+<!-- Display posts directly from archived directory or posts with "Archived" tag -->
+{{ $archivedContent := .Pages }}
+{{ if eq (len $archivedContent) 0 }}
+  <!-- If no direct content, get posts tagged with "Archived" -->
+  {{ $archivedContent = where (where .Site.RegularPages "Type" "posts") "Params.tags" "intersect" (slice "Archived") }}
+{{ end }}
+
+{{ range $archivedContent.GroupByDate "2006" }}
 <div class="year-group">
   <h2 class="year-header">{{ .Key }}</h2>
   {{ range .Pages }}
@@ -33,12 +40,10 @@
 </div>
 {{ end }}
 
-<!-- Show quote ONLY on the archived section - this should be removed as it's now in layouts/archived/list.html -->
-{{ if eq .Section "archived" }}
+<!-- Add quote at the bottom of archived section only -->
 <div class="subtle-quote">
   <p>"Don't let something you are good at become who you are."</p>
 </div>
-{{ end }}
 
 <style>
   .year-header {
