@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
+# Only reference the new comprehensive sitemap
 Sitemap: https://chenterry.com/sitemap.xml 
