@@ -2,13 +2,14 @@
 <style>
   /* About page specific styles */
   body {
-    background-color: var(--theme);
+    background-color: #f8f9fa !important; /* Light gray background */
   }
   
   .about-container {
     max-width: 900px; /* Increased width to match other pages */
     margin: 0 auto;
     padding: 2rem 1rem 4rem;
+    background-color: transparent; /* Let the body background show through */
   }
 
   .section {
@@ -139,6 +140,12 @@
     .skills-grid {
       grid-template-columns: 1fr;
     }
+  }
+
+  /* In dark mode, use the theme's dark background */
+  body.dark,
+  .dark body {
+    background-color: var(--theme) !important;
   }
 </style>
 
