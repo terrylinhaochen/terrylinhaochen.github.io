@@ -1,5 +1,5 @@
 ---
-title: "Advice"
+title: "Advice I Found to be Interesting"
 date: 2024-09-01
 author: Patrick Collison, Paul Graham, etc
 tags: ["Observations"]
