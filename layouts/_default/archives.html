@@ -1,0 +1,63 @@
+{{ define "main" }}
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+  {{- if .Description }}
+  <div class="post-description">{{ .Description }}</div>
+  {{- end }}
+</header>
+
+{{- if .Content }}
+<div class="post-content">
+  {{ .Content }}
+</div>
+{{- end }}
+
+{{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+<div class="archives-list">
+  {{ range $pages.GroupByPublishDate "2006" }}
+  <div class="archives-year">
+    <h2 class="archives-year-header">{{ .Key }}</h2>
+    {{ range .Pages.GroupByDate "January" }}
+    <div class="archives-month">
+      <h3 class="archives-month-header">{{ .Key }}</h3>
+      <div class="archives-posts">
+        {{ range .Pages }}
+        <article class="archive-entry">
+          <div class="archive-meta">
+            <time>{{ .Date.Format "January 2" }}</time>
+          </div>
+          <h3 class="archive-entry-title">
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+          </h3>
+        </article>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+  </div>
+  {{ end }}
+</div>
+
+<!-- Quote added inside the main block -->
+<div class="subtle-quote">
+  <p>"Don't let something you are good at become who you are."</p>
+</div>
+
+<style>
+  .subtle-quote {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    font-style: italic;
+    color: var(--secondary);
+    opacity: 0.8;
+  }
+  
+  .subtle-quote p {
+    font-size: 0.95rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+</style>
+{{ end }} 

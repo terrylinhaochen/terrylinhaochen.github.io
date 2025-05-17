@@ -38,3 +38,8 @@ Every now and then I like to read about the advice of others who've succeeded in
 
 ## Paul Graham - How to do Great Work
 ![Great Work](/images/posts/advice/great_work.jpg)
+
+
+## Diego Berdakin 
+
+Resilience, Intense Curiosity, and Deep Customer Empathy

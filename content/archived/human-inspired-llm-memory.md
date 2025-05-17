@@ -4,8 +4,6 @@ date: 2025-03-10
 categories: research
 tags: ["Technology", "Research"]
 ---
-
-# A Human-Inspired Solution to LLM Memory Enhancement
 **Authors: Terry Chen, Kaiwen Che, Matthew Song**
 
 ## Abstract

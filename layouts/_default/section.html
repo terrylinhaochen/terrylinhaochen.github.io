@@ -1,0 +1,71 @@
+{{ define "main" }}
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+  {{- if .Description }}
+  <div class="post-description">{{ .Description }}</div>
+  {{- end }}
+</header>
+
+{{- if .Content }}
+<div class="post-content">
+  {{ .Content }}
+</div>
+{{- end }}
+
+{{ range .Pages.GroupByDate "2006" }}
+<div class="year-group">
+  <h2 class="year-header">{{ .Key }}</h2>
+  {{ range .Pages }}
+  <article class="post-entry">
+    <header class="entry-header">
+      <h2 class="entry-hint-parent">{{ .Title }}</h2>
+    </header>
+    <div class="entry-content">
+      <p>{{ .Summary | plainify }}</p>
+    </div>
+    <footer class="entry-footer">
+      Date: <span title='{{ .Date }}'>{{ .Date.Format "January 2, 2006" }}</span> 
+      {{ if .Params.author }} | Author: {{ .Params.author }}{{ end }}
+    </footer>
+    <a class="entry-link" aria-label="post link to {{ .Title }}" href="{{ .Permalink }}"></a>
+  </article>
+  {{ end }}
+</div>
+{{ end }}
+
+<!-- Quote added inside the main block -->
+<div class="subtle-quote">
+  <p>"Don't let something you are good at become who you are."</p>
+</div>
+
+<style>
+  .year-header {
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+  }
+  
+  .year-group:first-child .year-header {
+    margin-top: 1.5rem;
+  }
+  
+  .post-entry {
+    margin-bottom: 2rem;
+  }
+  
+  .subtle-quote {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    font-style: italic;
+    color: var(--secondary);
+    opacity: 0.8;
+  }
+  
+  .subtle-quote p {
+    font-size: 0.95rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+</style>
+{{ end }} 
