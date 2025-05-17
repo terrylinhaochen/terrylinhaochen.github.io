@@ -2,7 +2,7 @@
 <style>
   /* About page specific styles */
   body {
-    background-color: #f8f9fa;
+    background-color: var(--theme);
   }
   
   .about-container {
@@ -23,13 +23,14 @@
   .section-title {
     font-size: 2rem;
     font-weight: 700;
-    color: #333;
+    color: var(--primary);
     margin-bottom: 0.5rem;
   }
 
   .about-card {
-    background: white;
+    background: var(--entry);
     border-radius: 12px;
+    border: 1px solid var(--border);
     padding: 1.75rem; /* Increased padding to match other pages */
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -95,41 +96,6 @@
     color: var(--secondary);
   }
 
-  /* Debug info */
-  .debug-info {
-    background: #fff3cd;
-    border: 1px solid #ffeeba;
-    padding: 1rem;
-    margin-bottom: 2rem;
-    border-radius: 8px;
-    font-family: monospace;
-  }
-
-  /* Dark mode adjustments */
-  :root[data-theme="dark"] body {
-    background-color: #1a1a1d;
-  }
-
-  :root[data-theme="dark"] .about-card {
-    background: var(--entry);
-  }
-  
-  :root[data-theme="dark"] .bio-text {
-    color: #ddd;
-  }
-
-  /* Styles for clickable skill cards */
-  .skill-card {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
-  }
-
-  .skill-card:hover .skill-title {
-    color: var(--secondary);
-  }
-
   /* Skills grid layout */
   .skills-grid {
     display: grid;
@@ -139,7 +105,8 @@
 
   /* Skill card styling for grid layout */
   .skill-card {
-    background: white;
+    background: var(--entry);
+    border: 1px solid var(--border);
     border-radius: 12px;
     padding: 1.5rem;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
