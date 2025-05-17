@@ -36,4 +36,84 @@
         </div>
         {{- end }}
     {{- end }}
+
+    <style>
+    /* Ultra-specific selectors for homepage dark mode */
+    body.dark .featured-cards h2,
+    body.dark .post-entry header.entry-header h2,
+    .dark .featured-cards > h2,
+    .dark .post-entry > header > h2 {
+      color: white !important;
+    }
+
+    /* Target the exact Read More link structure */
+    body.dark .post-entry footer.entry-footer a,
+    body.dark .post-entry footer a,
+    body.dark a[href*="/main-themes/"],
+    .dark .post-entry footer.entry-footer a {
+      color: white !important;
+      font-weight: 600 !important;
+    }
+
+    /* Target entry content */
+    body.dark .post-entry div.entry-content,
+    .dark .post-entry > div.entry-content {
+      color: #dddddd !important;
+    }
+
+    /* Fix other specific elements */
+    body.dark .find-more-posts p,
+    body.dark .find-more-posts a,
+    .dark .find-more-posts p {
+      color: #dddddd !important;
+    }
+
+    .dark .find-more-posts a {
+      color: #93cdff !important;
+    }
+
+    /* More specific theme title selectors */
+    body.dark .featured-cards h2,
+    .dark .featured-cards > h2 {
+      color: white !important;
+      font-size: 2rem !important;
+      font-weight: 700 !important;
+    }
+
+    /* Fix theme cards - make text BLACK instead of white */
+    .featured-cards .post-entry .entry-header h2 {
+      color: #111 !important; /* Almost black */
+      font-weight: 700 !important;
+    }
+
+    /* Make content text black */
+    .featured-cards .post-entry .entry-content,
+    .post-entry .entry-content {
+      color: #111 !important; /* Dark text */
+      font-weight: normal !important;
+    }
+
+    /* Make "Read More" links black */
+    .featured-cards .post-entry footer.entry-footer a,
+    .post-entry footer.entry-footer a {
+      color: #111 !important; /* Almost black */
+      font-weight: 600 !important;
+    }
+
+    /* Override dark mode text colors for these specific elements */
+    body.dark .featured-cards .post-entry .entry-header h2,
+    .dark .featured-cards .post-entry .entry-header h2 {
+      color: #111 !important; /* Keep black in dark mode */
+    }
+
+    body.dark .featured-cards .post-entry .entry-content,
+    .dark .featured-cards .post-entry .entry-content {
+      color: #111 !important; /* Keep black in dark mode */
+    }
+
+    body.dark .featured-cards .post-entry footer.entry-footer a,
+    .dark .featured-cards .post-entry footer.entry-footer a {
+      color: #111 !important; /* Keep black in dark mode */
+    }
+    </style>
 {{ end }} 

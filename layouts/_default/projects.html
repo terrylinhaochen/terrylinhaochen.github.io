@@ -43,13 +43,13 @@
     height: 12px;
     border-radius: 50%;
     border: none;
-    background: #ddd;
+    background: #999;
     cursor: pointer;
     transition: background 0.3s ease;
   }
 
   .theme-nav button.active {
-    background: #333;
+    background: #222;
   }
 
   /* Project Sections */
@@ -137,6 +137,140 @@
 
   .modal-overlay.active {
     display: flex;
+  }
+
+  /* Ensure carousel text is always visible regardless of theme */
+  .theme-slide h2 {
+    color: #111 !important; /* Almost black */
+    font-weight: 700 !important; /* Bold */
+  }
+
+  .theme-slide p {
+    color: #333 !important; /* Dark gray */
+    font-weight: 500 !important; /* Medium weight */
+  }
+
+  /* Styles for light mode - make text black on white background */
+  .theme-carousel .theme-slide,
+  .theme-content {
+    color: #111 !important; 
+  }
+
+  /* Fix dark mode specific styles */
+  body.dark .section-title,
+  body.dark .projects-container .section-header h2.section-title,
+  .dark .section-title {
+    color: white !important;
+    font-weight: 700 !important;
+  }
+
+  /* Force all links in the theme slide to be dark */
+  .theme-slide a, 
+  .theme-content a {
+    color: #111 !important;
+    font-weight: 600 !important;
+  }
+
+  /* More specific selectors for "Read More" text */
+  a.read-more,
+  .read-more-link,
+  a.read-more-link,
+  .entry-link::after,
+  .post-entry .entry-footer::after,
+  a[aria-label="Read more"],
+  .read-more-icon,
+  .post-entry:hover .entry-footer::after,
+  .post-entry:focus .entry-footer::after,
+  .post-entry:active .entry-footer::after,
+  footer a,
+  .post-meta a,
+  .entry-content a,
+  [class*="read-more"] {
+    color: #111 !important; /* Almost black */
+    font-weight: 600 !important; /* Semi-bold */
+    opacity: 1 !important; /* Ensure full opacity */
+  }
+
+  /* Target arrow icons specifically */
+  .post-entry::after,
+  .entry-link::after,
+  [class*="read"]::after {
+    color: #111 !important;
+    opacity: 1 !important;
+  }
+
+  /* Make sure carousel dots are visible */
+  .theme-nav button {
+    background: #999; /* Darker gray for dots */
+  }
+
+  .theme-nav button.active {
+    background: #222; /* Almost black for active dot */
+  }
+
+  /* Comprehensive dark mode fixes for Projects page */
+  :root[data-theme="dark"] .section-title,
+  .dark .section-title {
+    color: #ffffff !important; /* White */
+  }
+
+  :root[data-theme="dark"] .section-subtitle,
+  .dark .section-subtitle {
+    color: #dddddd !important; /* Light gray */
+  }
+
+  /* Fix read more links with proper PaperMod classes */
+  :root[data-theme="dark"] .post-entry .entry-footer,
+  .dark .post-entry .entry-footer {
+    color: #ffffff !important;
+  }
+
+  :root[data-theme="dark"] .post-entry .entry-link,
+  .dark .post-entry .entry-link {
+    color: #ffffff !important;
+  }
+
+  /* Fix any post meta content */
+  :root[data-theme="dark"] .post-meta,
+  .dark .post-meta {
+    color: #dddddd !important;
+  }
+
+  /* Make sure project cards have proper backgrounds in dark mode */
+  :root[data-theme="dark"] .project-card,
+  .dark .project-card,
+  :root[data-theme="dark"] .post-entry,
+  .dark .post-entry {
+    background: var(--entry);
+    border: 1px solid var(--border);
+  }
+
+  /* Fix modal styles in dark mode */
+  :root[data-theme="dark"] .modal,
+  .dark .modal {
+    background: var(--entry);
+    color: var(--primary);
+    border: 1px solid var(--border);
+  }
+
+  /* Ultra specific dark mode selectors for projects page */
+  body.dark .section-title,
+  body.dark .projects-container .section-header h2.section-title,
+  .dark .section-title {
+    color: white !important;
+    font-weight: 700 !important;
+  }
+
+  body.dark .post-entry .entry-header h2,
+  .dark .post-entry .entry-header h2 {
+    color: white !important;
+  }
+
+  body.dark .entry-footer a,
+  body.dark a[href*="/projects/"],
+  .dark .post-entry .entry-footer a {
+    color: white !important;
+    font-weight: 600 !important;
   }
 </style>
 
