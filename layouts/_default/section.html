@@ -33,10 +33,12 @@
 </div>
 {{ end }}
 
-<!-- Quote added inside the main block -->
+<!-- Show quote only on the archived section -->
+{{ if eq .Section "archived" }}
 <div class="subtle-quote">
   <p>"Don't let something you are good at become who you are."</p>
 </div>
+{{ end }}
 
 <style>
   .year-header {

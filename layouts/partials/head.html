@@ -154,12 +154,16 @@
   {{ partial "analytics.html" . }}
 {{- end -}}
 
-{{- /* Remove or comment out this line if you're not ready for schema yet */ -}}
-{{- /* {{ partial "schema.html" . }} */ -}}
+{{- /* Schema markup for better search engine understanding */ -}}
+{{ partial "schema.html" . }}
 
 <style>
   /* Force favicon using CSS as a fallback method */
   link[rel="icon"] {
     content: url("data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>😜</text></svg>");
   }
-</style> 
+</style>
+
+<!-- Preload key assets -->
+<link rel="preload" href="/fonts/main-font.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/css/main.css" as="style"> 

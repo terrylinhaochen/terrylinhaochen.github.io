@@ -13,8 +13,8 @@ enableRobotsTXT = true
 
 [sitemap]
   changefreq = "weekly"
-  priority = 0.5
   filename = "sitemap.xml"
+  priority = 0.5
 
 [params]
   description = "Hi, this is Terry. I'm documenting my product ideas and learning notes in this blog. I'm interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction."
@@ -119,4 +119,4 @@ enableRobotsTXT = true
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
-      unsafe = true  # This allows HTML in markdown files, needed for complex image handling 
+      unsafe = true  # Make sure this is set to true to allow HTML in markdown 

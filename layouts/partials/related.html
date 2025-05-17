@@ -1,11 +1,103 @@
-{{ $related := .Site.RegularPages.Related . | first 3 }}
+{{ $related := (where (.Site.RegularPages.Related .) "Params.tags" "intersect" .Params.tags) | first 4 }}
+{{ if lt (len $related) 4 }}
+  {{ $related = .Site.RegularPages.Related . | first 4 }}
+{{ end }}
 {{ with $related }}
 <div class="related-posts">
   <h3>Related Articles</h3>
-  <ul>
+  <div class="related-posts-grid">
     {{ range . }}
-    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+    <a href="{{ .RelPermalink }}" class="related-post-card">
+      <div class="related-post-content">
+        <h4>{{ .Title }}</h4>
+        <div class="related-post-meta">
+          <span class="related-post-date">{{ .Date.Format "January 2, 2006" }}</span>
+          {{ with .Params.tags }}
+          <span class="related-post-tags">
+            {{ range first 1 . }}#{{ . }}{{ end }}
+          </span>
+          {{ end }}
+        </div>
+        <p class="related-post-excerpt">{{ .Summary | plainify | truncate 100 }}</p>
+      </div>
+    </a>
     {{ end }}
-  </ul>
+  </div>
 </div>
+
+<style>
+  .related-posts {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+    max-width: var(--content-width, 720px);
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding-left: var(--gap);
+    padding-right: var(--gap);
+  }
+  
+  .related-posts h3 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary);
+  }
+  
+  .related-posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .related-post-card {
+    display: block;
+    padding: 1.2rem;
+    border-radius: var(--radius);
+    background: var(--code-bg);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-decoration: none;
+  }
+  
+  .related-post-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  :root[data-theme="dark"] .related-post-card:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+  }
+  
+  .related-post-card h4 {
+    margin: 0 0 0.6rem 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--primary);
+    line-height: 1.3;
+  }
+  
+  .related-post-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.8rem;
+    font-size: 0.85rem;
+    color: var(--secondary);
+  }
+  
+  .related-post-excerpt {
+    font-size: 0.95rem;
+    color: var(--content);
+    line-height: 1.5;
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .related-posts-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
 {{ end }} 

@@ -1,7 +1,10 @@
 ---
 title: "The Craft of Miyazaki in an AI-Generated World"
+description: "Explore Hayao Miyazaki's meticulous animation process and its significance in today's AI-generated creative landscape. Learn about the value of craft in a world of automated content."
+keywords: ["Hayao Miyazaki", "animation", "AI art", "craftsmanship", "Studio Ghibli", "creative process"]
+image: "/images/posts/hayao-miyakazi/dust-balls.png"
 date: 2025-03-27
-author: Terry Chen
+author: "Terry Chen"
 tags: ["Observations", "Technology"]
 ---
 
@@ -13,7 +16,7 @@ To put this dedication in perspective: a single [4 second crowd scene](https://w
 
 Yet as technologies like [GPT-4o image generation](https://openai.com/index/introducing-4o-image-generation/) and and "Ghibli-style" AI art taking the internet by storm, I can't help wondering about the future. When anyone can transform an image into a Ghibli-esque cartoon nearly indistinguishable from Miyazaki's hand-drawn work, we must reconsider what constitutes true craftsmanship and whether we can appreciate his art in the same way.
 
-Miyazaki himself once expressed after viewing [AI generated animations](https://www.youtube.com/watch?v=Pi2rHOhPZZ4): “I am utterly disgusted. I would never wish to incorporate this technology into my work at all. I strongly feel this is an insult to life itself.” However, I hesitate to apply this statement too broadly, as it was made under different circumstances—specifically in response to Dwango AI Lab's demonstration of a 3D zombie animation of substantially lower quality than today's AI art. Objectively speaking, current AI-generated Ghibli-style images demonstrate impressive technical quality, yet for longtime fans, they lack the same emotional resonance.
+Miyazaki himself once expressed after viewing [AI generated animations](https://www.youtube.com/watch?v=Pi2rHOhPZZ4): "I am utterly disgusted. I would never wish to incorporate this technology into my work at all. I strongly feel this is an insult to life itself." However, I hesitate to apply this statement too broadly, as it was made under different circumstances—specifically in response to Dwango AI Lab's demonstration of a 3D zombie animation of substantially lower quality than today's AI art. Objectively speaking, current AI-generated Ghibli-style images demonstrate impressive technical quality, yet for longtime fans, they lack the same emotional resonance.
 
 ![Disgust](/images/posts/hayao-miyakazi/distgust.png)
 
