@@ -1,6 +1,6 @@
 ---
 title: "TikTok | San Jose, California"
-position: "Product Manager Intern, Creative GenAI - Insight | March 2024 - August 2024"
+position: "Product Manager Intern, Creative GenAI | March 2024 - August 2024"
 weight: 3
 ---
 

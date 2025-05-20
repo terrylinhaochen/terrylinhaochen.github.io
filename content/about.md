@@ -34,7 +34,7 @@ Graph-based technologies.
 Making lifelong learning engaging and accessible. Research agent ai and generation workflows. Designed and implemented an agentic LLM learning companion, working on search, recommendation, etc.
 
 ### TikTok | San Jose, California {.experience-title}
-**Product Manager Intern, Creative GenAI - Insight | March 2024 - August 2024**
+**Product Manager Intern, Creative GenAI | March 2024 - August 2024**
 
 Leveraging billion parameter data to provide actionable trends and insights for key agencies. Designed keyword clustering methods for insight extraction, worked on creative video ad creation.
 
