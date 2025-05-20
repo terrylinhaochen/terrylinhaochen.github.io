@@ -22,20 +22,28 @@
 {{ range $archivedContent.GroupByDate "2006" }}
 <div class="year-group">
   <h2 class="year-header">{{ .Key }}</h2>
-  {{ range .Pages }}
-  <article class="post-entry">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">{{ .Title }}</h2>
-    </header>
-    <div class="entry-content">
-      <p>{{ .Summary | plainify }}</p>
-    </div>
-    <footer class="entry-footer">
-      Date: <span title='{{ .Date }}'>{{ .Date.Format "January 2, 2006" }}</span> 
-      {{ if .Params.author }} | Author: {{ .Params.author }}{{ end }}
-    </footer>
-    <a class="entry-link" aria-label="post link to {{ .Title }}" href="{{ .Permalink }}"></a>
-  </article>
+  
+  <!-- Add month grouping here -->
+  {{ range .Pages.GroupByDate "January" }}
+  <div class="month-group">
+    <h3 class="month-header">{{ .Key }}</h3>
+    
+    {{ range .Pages }}
+    <article class="post-entry">
+      <header class="entry-header">
+        <h2 class="entry-hint-parent">{{ .Title }}</h2>
+      </header>
+      <div class="entry-content">
+        <p>{{ .Summary | plainify }}</p>
+      </div>
+      <footer class="entry-footer">
+        Date: <span title='{{ .Date }}'>{{ .Date.Format "January 2, 2006" }}</span> 
+        {{ if .Params.author }} | Author: {{ .Params.author }}{{ end }}
+      </footer>
+      <a class="entry-link" aria-label="post link to {{ .Title }}" href="{{ .Permalink }}"></a>
+    </article>
+    {{ end }}
+  </div>
   {{ end }}
 </div>
 {{ end }}
@@ -47,12 +55,22 @@
 
 <style>
   .year-header {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     margin-top: 3rem;
   }
   
   .year-group:first-child .year-header {
     margin-top: 1.5rem;
+  }
+  
+  /* Style for month headers */
+  .month-header {
+    margin-bottom: 1.2rem;
+    margin-top: 1.8rem;
+    font-size: 1.3rem;
+    color: var(--secondary);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.5rem;
   }
   
   .post-entry {
