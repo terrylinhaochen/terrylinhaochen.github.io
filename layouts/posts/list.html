@@ -1,0 +1,43 @@
+{{ define "main" }}
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+  {{- if .Description }}
+  <div class="post-description">{{ .Description }}</div>
+  {{- end }}
+</header>
+
+{{- if .Content }}
+<div class="post-content">
+  {{ .Content }}
+</div>
+{{- end }}
+
+<!-- Display all posts without year grouping -->
+<div class="posts-list">
+  {{ range .Pages }}
+  <article class="post-entry">
+    <header class="entry-header">
+      <h2 class="entry-hint-parent">{{ .Title }}</h2>
+    </header>
+    <div class="entry-content">
+      <p>{{ .Summary | plainify }}</p>
+    </div>
+    <footer class="entry-footer">
+      Date: <span title='{{ .Date }}'>{{ .Date.Format "January 2, 2006" }}</span> 
+      {{ if .Params.author }} | Author: {{ .Params.author }}{{ end }}
+    </footer>
+    <a class="entry-link" aria-label="post link to {{ .Title }}" href="{{ .Permalink }}"></a>
+  </article>
+  {{ end }}
+</div>
+
+<style>
+  .posts-list {
+    margin-top: 2rem;
+  }
+  
+  .post-entry {
+    margin-bottom: 2rem;
+  }
+</style>
+{{ end }} 

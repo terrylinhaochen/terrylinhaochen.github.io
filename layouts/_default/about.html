@@ -1,15 +1,10 @@
 {{ define "main" }}
 <style>
-  /* About page specific styles */
-  body {
-    background-color: #f8f9fa !important; /* Light gray background */
-  }
-  
+  /* All the styling from your original about page */
   .about-container {
-    max-width: 900px; /* Increased width to match other pages */
+    max-width: 900px;
     margin: 0 auto;
     padding: 2rem 1rem 4rem;
-    background-color: transparent; /* Let the body background show through */
   }
 
   .section {
@@ -32,10 +27,10 @@
     background: var(--entry);
     border-radius: 12px;
     border: 1px solid var(--border);
-    padding: 1.75rem; /* Increased padding to match other pages */
+    padding: 1.75rem;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-bottom: 2.25rem; /* Increased gap between cards */
+    margin-bottom: 2.25rem;
   }
 
   .about-card:hover {
@@ -44,7 +39,7 @@
   }
 
   .about-card h3 {
-    font-size: 1.3rem; /* Slightly larger headings */
+    font-size: 1.3rem;
     margin-bottom: 0.5rem;
     color: var(--primary);
   }
@@ -53,7 +48,7 @@
     display: block;
     font-weight: 600;
     color: var(--secondary);
-    font-size: 0.95rem; /* Slightly larger position text */
+    font-size: 0.95rem;
     margin-bottom: 1rem;
   }
 
@@ -61,23 +56,13 @@
     font-weight: 700;
     color: var(--primary);
     margin-bottom: 0.5rem;
-    font-size: 1.2rem; /* Slightly larger skill titles */
-  }
-
-  .skill-title a {
-    color: var(--primary);
-    text-decoration: none;
-    transition: color 0.2s ease;
-  }
-
-  .skill-title a:hover {
-    color: var(--secondary);
-    text-decoration: underline;
+    font-size: 1.2rem;
   }
 
   .skill-list {
     color: var(--content);
-    font-size: 1.05rem; /* Slightly larger skill list */
+    font-size: 1.05rem;
+    margin-bottom: 0;
   }
 
   .contact-card {
@@ -96,123 +81,90 @@
   .contact-card a:hover {
     color: var(--secondary);
   }
-
+  
   /* Skills grid layout */
   .skills-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
+    margin-bottom: 0;
   }
-
-  /* Skill card styling for grid layout */
-  .skill-card {
-    background: var(--entry);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 1.5rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: block;
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
-    height: 100%;
+  
+  /* Special styling for skill cards */
+  .skills-grid .about-card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    height: auto;
   }
-
-  .skill-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 4px 14px rgba(0,0,0,0.12);
-  }
-
-  .skill-card .skill-title {
-    font-weight: 700;
-    color: var(--primary);
-    margin-bottom: 0.5rem;
-    font-size: 1.2rem;
-  }
-
-  .skill-card:hover .skill-title {
-    color: var(--secondary);
-  }
-
-  /* Responsive layout */
+  
   @media (max-width: 768px) {
     .skills-grid {
       grid-template-columns: 1fr;
     }
   }
-
-  /* In dark mode, use the theme's dark background */
-  body.dark,
-  .dark body {
-    background-color: var(--theme) !important;
-  }
 </style>
 
 <div class="about-container">
-  <!-- About Me Section with title -->
+  <!-- Introduction -->
   <div class="section">
     <div class="section-header">
-      <h2 class="section-title">About Me</h2>
+      <h1 class="section-title">About Me</h1>
     </div>
-    <div class="about-card bio-card">
+    <div class="about-card">
       <p>CS & HCI @ Northwestern. Beijing, Toronto, Evanston. I'm experienced in product management and agent ai implementation. Right now I'm thinking about content understanding, scaling creative workflows, and social simulation. In my free time, I like to read and travel. Always happy to chat ;)</p>
     </div>
   </div>
 
-  <!-- Skills Section with 3-column layout -->
+  <!-- Skills Section -->
   <div class="section">
     <div class="section-header">
       <h2 class="section-title">Skills</h2>
     </div>
-    
     <div class="skills-grid">
-      <!-- Programming Skills Card -->
-      <a href="/tags/technology/" class="skill-card">
+      <div class="about-card">
         <h3 class="skill-title">Programming</h3>
         <p class="skill-list">Python, C/C++, Javascript, HTML/CSS, Git, React.js, Node, Tensorflow, PyTorch</p>
-      </a>
-      
-      <!-- Product Skills Card -->
-      <a href="/tags/product/" class="skill-card">
+      </div>
+      <div class="about-card">
         <h3 class="skill-title">Product</h3>
         <p class="skill-list">Prototyping, Roadmapping, Event Tracking, A/B Testing, SQL, Figma, JIRA</p>
-      </a>
-      
-      <!-- Marketing Skills Card -->
-      <a href="/tags/observations/" class="skill-card">
+      </div>
+      <div class="about-card">
         <h3 class="skill-title">Marketing</h3>
-        <p class="skill-list">SEO, Analytics, Social Media Marketing, Influencer Partnerships</p>
-      </a>
+        <p class="skill-list">SEO, Analytics, Social Media Marketing, Influencer Partnerships, Lead Generation</p>
+      </div>
     </div>
   </div>
 
-  <!-- Experience Section -->
+  <!-- Experience Section -->  
   <div class="section">
     <div class="section-header">
       <h2 class="section-title">Experience</h2>
     </div>
     
-    <!-- Hardcoded Experience Cards -->
+    <!-- Microsoft -->
     <div class="about-card">
       <h3>Microsoft | Redmond, Washington</h3>
       <span class="position">Product Manager Intern, Sentinel Graph | Current</span>
       <p>Graph-based technologies.</p>
     </div>
     
+    <!-- Ouraca -->
     <div class="about-card">
       <h3>Ouraca | Palo Alto, California</h3>
       <span class="position">Founding Team, Product & Engineering | November 2024 - Present</span>
       <p>Making lifelong learning engaging and accessible. Research agent ai and generation workflows. Designed and implemented an agentic LLM learning companion, working on search, recommendation, etc.</p>
     </div>
     
+    <!-- TikTok -->
     <div class="about-card">
       <h3>TikTok | San Jose, California</h3>
       <span class="position">Product Manager Intern, Creative GenAI | March 2024 - August 2024</span>
       <p>Leveraging billion parameter data to provide actionable trends and insights for key agencies. Designed keyword clustering methods for insight extraction, worked on creative video ad creation.</p>
     </div>
     
-    <!-- Projects Card (removed section header) -->
+    <!-- CrowdListening -->
     <div class="about-card">
       <h3>CrowdListening | Evanston, Illinois</h3>
       <span class="position">Founder and Head of Product | October 2024 - Present</span>
