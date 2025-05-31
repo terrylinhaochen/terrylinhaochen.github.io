@@ -1,5 +1,5 @@
 ---
-title: "How to Work on What you Love"
+title: "How to Work on What You Love"
 date: 2024-09-01
 author: Patrick Collison, Paul Graham, etc
 tags: ["Observations"]
