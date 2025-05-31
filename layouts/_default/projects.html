@@ -272,6 +272,28 @@
     color: white !important;
     font-weight: 600 !important;
   }
+
+  /* Quote styling */
+  .subtle-quote {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    font-style: italic;
+    color: var(--secondary);
+    opacity: 0.8;
+  }
+  
+  .subtle-quote p {
+    font-size: 0.95rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  /* Reduce spacing between last section and quote */
+  .section:last-child {
+    margin-bottom: 2rem;
+  }
 </style>
 
 <div class="projects-container">
@@ -412,6 +434,11 @@
       {{ end }}
     </div>
   </section>
+</div>
+
+<!-- Add quote at the bottom of projects section -->
+<div class="subtle-quote">
+  <p><em>"Make yourself a big target for luck"</em></p>
 </div>
 
 <!-- Modal Template -->

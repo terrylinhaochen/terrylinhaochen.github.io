@@ -31,6 +31,11 @@
   {{ end }}
 </div>
 
+<!-- Add quote at the bottom of posts section -->
+<div class="subtle-quote">
+  <p><em>"Resilience, Intense Curiosity, and Deep Customer Empathy"</em></p>
+</div>
+
 <style>
   .posts-list {
     margin-top: 2rem;
@@ -38,6 +43,22 @@
   
   .post-entry {
     margin-bottom: 2rem;
+  }
+
+  .subtle-quote {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    font-style: italic;
+    color: var(--secondary);
+    opacity: 0.8;
+  }
+  
+  .subtle-quote p {
+    font-size: 0.95rem;
+    max-width: 600px;
+    margin: 0 auto;
   }
 </style>
 {{ end }} 

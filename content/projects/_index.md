@@ -1,6 +1,5 @@
 ---
 title: "Projects"
-description: "A showcase of my work across startups, professional projects, research, and prototypes"
 layout: "projects"
 ---
 
