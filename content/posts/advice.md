@@ -1,5 +1,5 @@
 ---
-title: "Advice I Found to be Interesting"
+title: "How to Work on What you Love"
 date: 2024-09-01
 author: Patrick Collison, Paul Graham, etc
 tags: ["Observations"]
@@ -39,6 +39,29 @@ Every now and then I like to read about the advice of others who've succeeded in
 ## Paul Graham - How to do Great Work
 ![Great Work](/images/posts/advice/great_work.jpg)
 
+I found Paul Graham's "How to Do Great Work" compelling because it tackles something most career advice glosses over: how do you actually figure out what to work on when you're young and have no idea what's good?
+
+- "The way to figure out what to work on is by working. If you're not sure what to work on, guess. But pick something and get going." You learn by doing, not by endless planning.
+
+- The work needs three qualities: "it has to be something you have a natural aptitude for, that you have a deep interest in, and that offers scope to do great work." The tricky part is most people focus only on the first two and ignore scope entirely.
+
+- Don't get trapped by educational systems. "The educational systems in most countries pretend it's easy. They expect you to commit to a field long before you could know what it's really like." I see this constantly - people picking majors at 18 and feeling locked into paths they've barely explored.
+
+- Project-level procrastination is way more dangerous than daily procrastination. "You put off starting that ambitious project from year to year because the time isn't quite right." 
+
+- The "staying upwind" approach: "At each stage do whatever seems most interesting and gives you the best options for the future." This feels much more sustainable than trying to optimize for some distant goal you're not even sure you want.
+
+- Great work emerges through iteration, not grand planning. "Great things are almost always made in successive versions. You start with something small and evolve it, and the final version is both cleverer and more ambitious than anything you could have planned."
+
+- Consistency beats intensity. "People who do great things don't get a lot done every day. They get something done, rather than nothing." The key insight: "Great work usually entails spending what would seem to most people an unreasonable amount of time on a problem."
+
+- Questions are underrated. "Many discoveries have come from asking questions about things that everyone else took for granted." This connects to something I've noticed - the best conversations often start with someone asking an obvious question that nobody had bothered to ask.
+
+- Originality comes from genuine curiosity, not trying to be different. "Originality isn't a process, but a habit of mind. Original thinkers throw off new ideas about whatever they focus on, like an angle grinder throwing off sparks."
+
+- Be comfortable with intellectual confusion. "You have to be comfortable enough with the world being full of puzzles that you're willing to see them, but not so comfortable that you don't want to solve them."
+
+What struck me most was his point about broken models: "Broken models of the world leave a trail of clues where they bash against reality." The idea that you can find opportunities by being stricter about truth than other people is something I want to think about more. Be authentic and driven by truth. 
 
 ## Diego Berdakin 
 
