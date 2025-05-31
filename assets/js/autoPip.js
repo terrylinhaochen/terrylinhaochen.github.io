@@ -1,7 +1,3 @@
-// Find this line (around line 33)
-navigator.mediaSession.setActionHandler('enterpictureinpicture', function() {
-  // code here
-});
-
-// Change it to use a valid action like 'play' or remove it entirely:
-// Valid actions are: play, pause, seekbackward, seekforward, previoustrack, nexttrack 
+// MediaSession API - using valid actions only
+// Valid actions are: play, pause, seekbackward, seekforward, previoustrack, nexttrack
+// Removed 'enterpictureinpicture' as it's not a valid MediaSessionAction 

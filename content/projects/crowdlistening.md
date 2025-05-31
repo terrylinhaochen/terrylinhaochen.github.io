@@ -1,6 +1,9 @@
 ---
-title: "Crowdlistening"
-date: 2024-11-06
+title: "Crowdlistening Project"
+date: 2023-04-15
+description: "Transform large-scale social conversations into actionable insights. Understand crowd sentiment, track emerging opinions, and identify key narratives."
+keywords: ["social listening", "brand listening", "market analysis", "tiktok", "journalism","reporting", "user experience"]
+images: ["/projects/crowdlistening/featured.jpg"]
 categories: startup
 projectURL: crowdlistening.com
 tags: ["Technology", "Entrepreneurship", "Product"]
@@ -12,13 +15,13 @@ tags: ["Technology", "Entrepreneurship", "Product"]
 
 ## From Content Aggregation to Original Research
 
-Crowdlistening transforms large-scale social conversations into actionable insight by integrating llm reasoning with expanding model context protocol(MCP) capabilities. While extracting quantatitive patterns from realtime data is already an rewarding task, our focus is not just on analyzing content at scale, but rather conducting original research directly from raw social data, generating insights that haven't yet appeared in established reporting.
+Crowdlistening transforms large-scale social conversations into actionable insight by integrating llm reasoning with extensive model context protocol(MCP) capabilities. While being able to quantatively analyze large volumes of data is already an interesting task, our focus is not just on content analysis at scale, but rather conducting original research directly from raw social data, generating insights that haven't yet appeared in established reporting.
 
 Deep research features provide professional-looking research reports, yet the contents are far from original, as they're drawn from articles already indexable on the internet and paraphrased with LLMs. However, much of the internet's data exists in unstructured formats - TikTok videos, comments, and metadata, for example. Too much content is generated every day for there to be existing articles written about it all, and when such articles are published, they're often already outdated. When you consider multimodal data, metadata, and connections between data points, these are precisely the types of information that could yield genuinely interesting and useful insights.
 
-I've been thinking about this problem while working at TikTok, enabling better social listening through more fine-grained insights extracted using multi-modal/LLM-based approaches. In October 2024, I started developing early conceptions of Crowdlistening, focusing on multi-modal content understanding for TikTok videos. Although deep research features like GPT Researcher and Stanford Oval Storm existed, it wasn't intuitive to integrate unstructured data processing capabilities into their workflows. 
+I've been thinking about this problem while working at TikTok, enabling better social listening through more fine-grained insights extracted using multi-modal/LLM-based approaches. In October, I started developing early conceptions of Crowdlistening, focusing on multi-modal content understanding for TikTok videos. Although deep research features like GPT Researcher and Stanford Oval Storm existed, it wasn't intuitive to integrate unstructured data processing capabilities into their workflows. 
 
-I paused Crowdlistening in Winter Quarter due to other commitments, but during this time, Anthropic released the Model Context Protocol (MCP). I've just recently gotten back on track following progress in this field, and I believe this presents an interesting avenue for product innovation - deep research features are significantly enhanced by the growing ecosystem of MCP servers (the same agentic workflows perform much better given they rely on APIs, whose capabilities have improved over recent months).
+I paused Crowdlistening in Winter Quarter due to other commitments, but during this time, Anthropic released the Model Context Protocol (MCP). I've recently gotten back on track following progress in this field, and I believe this presents an interesting avenue for product innovation - deep research features are significantly enhanced by the growing ecosystem of MCP servers (the same agentic workflows perform much better given they rely on APIs, whose capabilities have improved over recent months).
 
 What I'm particularly interested in exploring and building with Crowdlistening is the ability to extract actionable insights from large volumes of unstructured or semi-structured data, forming linkages, and perhaps even testing hypotheses to enable effective research at scale. We started with TikTok data as a prototype ground given my familiarity with the medium, but I could quickly see this covering any type of unstructured data available on the web.
 
@@ -34,7 +37,9 @@ The rationale behind Crowdlistening's multi-modal technical architecture stems f
 
 ![Analysis Page](/images/posts/crowdlistening/analysis_page.png)
 
-Crowdlistening's design directly tackles this limitation by integrating embedding-based topic modeling and LLM deep research capabilities to process and understand this multi-faceted data. Embedding-based topic modeling efficiently identifies key themes across massive datasets, while the LLM's deep reasoning capabilities can then analyze these themes within the context of various modalities. This dual approach allows for a layered analysis, examining both the primary content and the subsequent engagement it generates. By processing video, audio, text, and engagement metrics in a unified system, Crowdlistening can generate insights that reflect not just what is being said, but how it's being said, the surrounding context, and the audience's multifaceted response. This comprehensive understanding is crucial for overcoming the "insight paradox" and delivering truly actionable intelligence that goes beyond surface-level sentiment or abstracted metrics. Ultimately, this multi-modal design is essential for achieving the core goal of Crowdlistening: to conduct original research directly from raw social data and uncover emerging trends and nuanced opinions that would be invisible to single-mode analysis systems.
+Crowdlistening's design directly tackles this limitation by integrating embedding-based topic modeling and LLM deep research capabilities to process and understand this multi-faceted data. Embedding-based topic modeling efficiently identifies key themes across massive datasets, while the LLM's deep reasoning capabilities can then analyze these themes within the context of various modalities. 
+
+This dual approach allows for a layered analysis, examining both the primary content and the subsequent engagement it generates. By processing video, audio, text, and engagement metrics in a unified system, Crowdlistening can generate insights that reflect not just what is being said, but how it's being said, the surrounding context, and the audience's multifaceted response. This comprehensive understanding is crucial for overcoming the "insight paradox" and delivering truly actionable intelligence that goes beyond surface-level sentiment or abstracted metrics. Ultimately, this multi-modal design is essential for achieving the core goal of Crowdlistening: to conduct original research directly from raw social data and uncover emerging trends and nuanced opinions that would be invisible to single-mode analysis systems.
 
 ## Detailed Analysis Capabilities
 
@@ -118,4 +123,4 @@ As noted in "Essence of Creativity," the real value in AI-powered tools comes no
 
 ---
 
-Credits: This project was developed in collaboration with Madison Bratley, whose expertise in journalism and social media analysis was instrumental in conceptualizing how this technology could transform research methodologies. Additional contributions from Violet Liu in providing valuable usability feedback for our early prototype. I would also like to acknowledge Zhengjin, Cathy, Roy, Ruiwan, Qiping, Tongming, and other members on the Creative team at TikTok, who I've discussed early conceptions of this idea with.
+Credits: This project was developed in collaboration with Madison Bratley, whose expertise in journalism and social media analysis was instrumental in conceptualizing how this technology could transform research methodologies. Additional contributions from Violet Liu in providing valuable usability feedback for our early prototype. I would also like to acknowledge Zhengjin, Cathy, Roy, Ruiwan, Qiping, Tongming and other members on the Creative team at TikTok, who I've discussed early conceptions of this idea with.

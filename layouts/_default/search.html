@@ -38,4 +38,144 @@
   </div>
 </div>
 
+<!-- Load Fuse.js for search functionality -->
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2/dist/fuse.min.js"></script>
+
+<!-- Search functionality script -->
+<script>
+let fuse; // holds our search engine
+let resList = document.getElementById('searchResults');
+let sInput = document.getElementById('searchInput');
+let resultsAvailable = false;
+
+// load our search index
+window.onload = function () {
+    let xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) {
+            if (xhr.status === 200) {
+                let data = JSON.parse(xhr.responseText);
+                if (data) {
+                    // More precise fuse.js options
+                    let options = {
+                        includeScore: true,      // Include match scores
+                        threshold: 0.2,          // Stricter matching (was 0.4)
+                        distance: 50,            // Closer matches (was 100)
+                        minMatchCharLength: 2,   // Minimum 2 characters to match
+                        ignoreLocation: false,   // Consider match position
+                        findAllMatches: false,   // Stop at first good match
+                        keys: [
+                            { name: 'title', weight: 0.7 },      // Title matches weighted higher
+                            { name: 'summary', weight: 0.2 },    // Summary matches medium weight
+                            { name: 'content', weight: 0.1 }     // Content matches lower weight
+                        ]
+                    };
+                    fuse = new Fuse(data, options); // build the index from the json file
+                    console.log('Search index loaded with', data.length, 'items');
+                }
+            } else {
+                console.log('Failed to load search index:', xhr.responseText);
+            }
+        }
+    };
+    xhr.open('GET', "../index.json");
+    xhr.send();
+}
+
+function reset() {
+    resultsAvailable = false;
+    resList.innerHTML = sInput.value = ''; // clear inputbox and searchResults
+    sInput.focus(); // shift focus to input box
+}
+
+// execute search as each character is typed
+sInput.onkeyup = function (e) {
+    // Only search if we have at least 2 characters
+    if (this.value.trim().length < 2) {
+        resList.innerHTML = '';
+        resultsAvailable = false;
+        return;
+    }
+    
+    // run a search query every time a letter is typed
+    if (fuse) {
+        let results = fuse.search(this.value.trim(), { limit: 8 }); // Limit to 8 results
+        
+        if (results.length !== 0) {
+            // Sort by score (lower score = better match)
+            results.sort((a, b) => a.score - b.score);
+            
+            // build our html if result exists
+            let resultSet = ''; // our results bucket
+
+            for (let i = 0; i < results.length; i++) {
+                let item = results[i].item;
+                let score = Math.round((1 - results[i].score) * 100); // Convert to percentage
+                
+                resultSet += `<li class="post-entry">
+                    <header class="entry-header">
+                        ${item.title}&nbsp;» 
+                        <span class="search-score">(${score}% match)</span>
+                    </header>
+                    <div class="entry-summary">${item.summary ? item.summary.substring(0, 100) + '...' : ''}</div>
+                    <a href="${item.permalink}" aria-label="${item.title}"></a>
+                </li>`
+            }
+
+            resList.innerHTML = resultSet;
+            resultsAvailable = true;
+        } else {
+            resultsAvailable = false;
+            resList.innerHTML = '<li class="no-results">No results found</li>';
+        }
+    }
+}
+
+sInput.addEventListener('search', function (e) {
+    // clicked on x
+    if (!this.value) reset()
+})
+
+// Escape key to reset
+document.onkeydown = function (e) {
+    if (e.key === "Escape") {
+        reset()
+    }
+}
+</script>
+
+<style>
+.search-score {
+    font-size: 0.8em;
+    color: var(--secondary);
+    font-weight: normal;
+}
+
+.entry-summary {
+    font-size: 0.9em;
+    color: var(--content);
+    margin: 0.5rem 0;
+    line-height: 1.4;
+}
+
+.no-results {
+    padding: 1rem;
+    color: var(--secondary);
+    font-style: italic;
+    list-style: none;
+}
+
+#searchResults .post-entry {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    position: relative;
+}
+
+#searchResults .post-entry:hover {
+    background: var(--code-bg);
+}
+</style>
+
 {{- end }}{{/* end main */}} 

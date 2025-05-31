@@ -1,5 +1,5 @@
 ---
-title: "Cogno: Multi-agent AI for sales automation"
+title: "Cogno: Multi-agent AI for Sales Automation"
 date: 2024-03-01
 categories: startup
 projectURL: https://cognogpt.com

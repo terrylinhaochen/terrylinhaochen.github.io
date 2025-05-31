@@ -239,14 +239,11 @@ EOF
 
 # Modify the config file to enable the search
 echo "Updating Hugo configuration..."
-cat >> "$HUGO_DIR/hugo.yaml" << EOF
+cat >> "$HUGO_DIR/config.toml" << EOF
 
-# Enable Fuse.js search
-outputs:
-  home:
-    - HTML
-    - RSS
-    - JSON
+# Enable search
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
 EOF
 
 # Create index page with your welcome message
