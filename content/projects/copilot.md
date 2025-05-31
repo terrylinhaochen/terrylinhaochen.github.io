@@ -1,7 +1,7 @@
 ---
-title: "Symphony Assistant"
+title: "TikTok Symphony Assistant"
 date: 2024-05-20
-categories: work
+categories: adtech-creative
 projectURL: https://ads.tiktok.com/business/copilot/standalone
 tags: ["Technology", "Product"]
 ---

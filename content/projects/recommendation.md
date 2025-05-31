@@ -1,7 +1,7 @@
 ---
-title: "Recommendation Systems & Surfaces"
-date: 2024-12-21
-categories: prototype
+title: "Recommendation Systems"
+date: 2024-07-10
+categories: social-intelligence
 tags: ["Technology", "Product"]
 ---
 # Building Intelligent Content Discovery: A Multi-Modal Recommendation System for Podcast Consumption

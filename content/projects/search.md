@@ -1,7 +1,7 @@
 ---
 title: "AI Enabled Search Experiences"
-date: 2024-12-21
-categories: prototype
+date: 2024-06-15
+categories: social-intelligence
 tags: ["Technology", "Product"]
 ---
 

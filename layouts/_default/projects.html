@@ -302,34 +302,33 @@
     <div class="theme-slides" id="themeSlides">
       <div class="theme-slide">
         <div class="theme-content">
-          <h2>Multi-agent LLM Systems</h2>
-          <p>Developing capable multi-agent systems for complex reasoning and human-AI collaboration.</p>
+          <h2>Social Intelligence & Content Discovery</h2>
+          <p>Enhancing personalization in content ecosystems and insights from large-scale social conversations.</p>
         </div>
       </div>
       <div class="theme-slide">
         <div class="theme-content">
-          <h2>Data Insights</h2>
-          <p>Extracting meaningful insights from unstructured multi-modal content.</p>
+          <h2>Learning & Knowledge Systems</h2>
+          <p>Enabling personalized learning and knowledge discovery through intelligent AI interfaces.</p>
         </div>
       </div>
       <div class="theme-slide">
         <div class="theme-content">
-          <h2>Content Generation</h2>
-          <p>Leveraging synthesized insights for enhanced content generation.</p>
+          <h2>Ad Tech & Creative AI Workflows</h2>
+          <p>Building tools for actionable insight and creative multi-modal advertisement content generation.</p>
         </div>
       </div>
     </div>
     <div class="theme-nav" id="themeNav"></div>
   </section>
 
-  <!-- Startup Projects -->
+  <!-- Social Intelligence & Content Discovery -->
   <section class="section">
     <div class="section-header">
-      <h2 class="section-title">Startup Projects</h2>
-      <p class="section-subtitle">Things keeping me busy on weekends</p>
+      <h2 class="section-title">Social Intelligence & Content Discovery</h2>
     </div>
     <div class="projects">
-      {{ range where (where .Site.RegularPages "Section" "projects") "Params.categories" "startup" }}
+      {{ range where (where .Site.RegularPages "Section" "projects") "Params.categories" "social-intelligence" }}
       <article class="post-entry">
         {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
         {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
@@ -351,13 +350,13 @@
     </div>
   </section>
 
-  <!-- Work Projects -->
+  <!-- Learning & Knowledge Systems -->
   <section class="section">
     <div class="section-header">
-      <h2 class="section-title">Work Projects</h2>
+      <h2 class="section-title">Learning & Knowledge Systems</h2>
     </div>
     <div class="projects">
-      {{ range where (where .Site.RegularPages "Section" "projects") "Params.categories" "work" }}
+      {{ range where (where .Site.RegularPages "Section" "projects") "Params.categories" "learning-knowledge" }}
       <article class="post-entry">
         {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
         {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
@@ -379,41 +378,13 @@
     </div>
   </section>
 
-  <!-- Research Projects -->
+  <!-- Ad Tech & Creative AI Workflows -->
   <section class="section">
     <div class="section-header">
-      <h2 class="section-title">Research</h2>
+      <h2 class="section-title">Ad Tech & Creative AI Workflows</h2>
     </div>
     <div class="projects">
-      {{ range where (where .Site.RegularPages "Section" "projects") "Params.categories" "research" }}
-      <article class="post-entry">
-        {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
-        {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
-        <header class="entry-header">
-          <h2>{{ .Title }}</h2>
-        </header>
-        <div class="entry-content">
-          {{ .Summary | plainify | htmlUnescape }}
-        </div>
-        <footer class="entry-footer">
-          <div class="post-meta">
-            <time>{{ .Date.Format (default "January 2, 2006" .Site.Params.DateFormat) }}</time>
-            {{- if (.Param "ShowReadingTime") }} • {{ i18n "read_time" .ReadingTime | default (printf "%d min read" .ReadingTime) }}{{- end }}
-          </div>
-        </footer>
-        <a class="entry-link" href="{{ .Permalink }}"></a>
-      </article>
-      {{ end }}
-    </div>
-  </section>
-
-  <!-- Prototype Projects -->
-  <section class="section">
-    <div class="section-header">
-      <h2 class="section-title">Prototypes</h2>
-    </div>
-    <div class="projects">
-      {{ range where (where .Site.RegularPages "Section" "projects") "Params.categories" "prototype" }}
+      {{ range where (where .Site.RegularPages "Section" "projects") "Params.categories" "adtech-creative" }}
       <article class="post-entry">
         {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
         {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}

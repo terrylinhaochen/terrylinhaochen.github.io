@@ -1,7 +1,7 @@
 ---
-title: "Insight Spotlight"
-date: 2024-08-20
-categories: work
+title: "TikTok Insights Spotlight"
+date: 2024-04-10
+categories: adtech-creative
 tags: ["Technology", "Product"]
 ---
 Analyze thousands of tiktoks to provide actionable trends & insights for key agencies. (Worked on multi-modal content understanding)

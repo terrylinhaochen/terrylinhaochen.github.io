@@ -1,7 +1,7 @@
 ---
-title: "Exploring Unknown Unknowns - Knowledge Interfaces"
-date: 2024-12-07
-categories: prototype
+title: "Exploring Unknown Unknowns"
+date: 2024-10-05
+categories: learning-knowledge
 tags: ["Technology", "Product"]
 ---
 # Exploring Unknown Unknowns: The Future of Knowledge Interfaces

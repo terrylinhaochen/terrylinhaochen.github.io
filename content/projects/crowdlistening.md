@@ -1,10 +1,10 @@
 ---
-title: "Crowdlistening Project"
+title: "Crowdlistening"
 date: 2023-04-15
 description: "Transform large-scale social conversations into actionable insights. Understand crowd sentiment, track emerging opinions, and identify key narratives."
 keywords: ["social listening", "brand listening", "market analysis", "tiktok", "journalism","reporting", "user experience"]
 images: ["/projects/crowdlistening/featured.jpg"]
-categories: startup
+categories: social-intelligence
 projectURL: crowdlistening.com
 tags: ["Technology", "Entrepreneurship", "Product"]
 ---
