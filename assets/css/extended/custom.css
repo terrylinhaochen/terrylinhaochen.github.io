@@ -1105,3 +1105,37 @@ body.dark figcaption,
 body.dark .caption {
   color: #aaa !important;
 }
+
+/* Reading time styling for all cards */
+.post-meta {
+  font-size: var(--meta-font-size);
+  color: var(--secondary);
+  margin-top: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.post-meta time {
+  color: var(--secondary);
+}
+
+.post-meta::after {
+  content: "";
+}
+
+/* Reading time icon styling */
+.post-meta .read-time::before {
+  content: "📖";
+  margin-right: 0.25rem;
+  font-size: 0.9em;
+}
+
+/* Dark mode adjustments for reading time */
+:root[data-theme="dark"] .post-meta {
+  color: var(--secondary);
+}
+
+:root[data-theme="dark"] .post-meta time {
+  color: var(--secondary);
+}

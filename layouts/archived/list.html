@@ -37,8 +37,9 @@
         <p>{{ .Summary | plainify }}</p>
       </div>
       <footer class="entry-footer">
-        Date: <span title='{{ .Date }}'>{{ .Date.Format "January 2, 2006" }}</span> 
-        {{ if .Params.author }} | Author: {{ .Params.author }}{{ end }}
+        <div class="post-meta">
+          {{- partial "post_meta.html" . -}}
+        </div>
       </footer>
       <a class="entry-link" aria-label="post link to {{ .Title }}" href="{{ .Permalink }}"></a>
     </article>

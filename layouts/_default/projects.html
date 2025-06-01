@@ -3,7 +3,7 @@
   .projects-container {
     max-width: var(--content-width);
     margin: 0 auto;
-    padding: 2rem 1rem;
+    padding: 2rem 0;
   }
 
   /* Theme Carousel */
@@ -340,8 +340,7 @@
         </div>
         <footer class="entry-footer">
           <div class="post-meta">
-            <time>{{ .Date.Format (default "January 2, 2006" .Site.Params.DateFormat) }}</time>
-            {{- if (.Param "ShowReadingTime") }} • {{ i18n "read_time" .ReadingTime | default (printf "%d min read" .ReadingTime) }}{{- end }}
+            {{- partial "post_meta.html" . -}}
           </div>
         </footer>
         <a class="entry-link" href="{{ .Permalink }}"></a>
@@ -368,8 +367,7 @@
         </div>
         <footer class="entry-footer">
           <div class="post-meta">
-            <time>{{ .Date.Format (default "January 2, 2006" .Site.Params.DateFormat) }}</time>
-            {{- if (.Param "ShowReadingTime") }} • {{ i18n "read_time" .ReadingTime | default (printf "%d min read" .ReadingTime) }}{{- end }}
+            {{- partial "post_meta.html" . -}}
           </div>
         </footer>
         <a class="entry-link" href="{{ .Permalink }}"></a>
@@ -396,8 +394,7 @@
         </div>
         <footer class="entry-footer">
           <div class="post-meta">
-            <time>{{ .Date.Format (default "January 2, 2006" .Site.Params.DateFormat) }}</time>
-            {{- if (.Param "ShowReadingTime") }} • {{ i18n "read_time" .ReadingTime | default (printf "%d min read" .ReadingTime) }}{{- end }}
+            {{- partial "post_meta.html" . -}}
           </div>
         </footer>
         <a class="entry-link" href="{{ .Permalink }}"></a>
