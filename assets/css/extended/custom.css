@@ -195,19 +195,6 @@ body.dark .theme-slide * {
   padding: 0 0.5rem;
 }
 
-.projects .post-entry {
-  margin-bottom: 2rem;
-  padding: 1.5rem;
-  background-color: var(--entry);
-  border-radius: 12px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.projects .post-entry:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
 /* Travel styling */
 .country-header {
   margin-top: 2rem;
@@ -368,15 +355,35 @@ body.dark .theme-slide * {
     line-height: 1.7;
 }
 
-/* Make all cards have consistent styling */
+/* Unified card styling for all post entries */
 .post-entry {
-    margin-bottom: 2rem;
-    padding: 1.5rem;
-    font-size: var(--card-font-size);
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  font-size: var(--card-font-size);
+  background-color: var(--entry);
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
-.post-entry .entry-header h2 {
-    font-size: var(--subheading-font-size);
+.post-entry:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.post-entry .entry-header h2,
+.post-entry .entry-header h4 {
+  font-size: var(--subheading-font-size);
+}
+
+/* Dark mode for all post entries */
+:root[data-theme="dark"] .post-entry {
+  background-color: var(--entry);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+:root[data-theme="dark"] .post-entry:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
 /* Global link styling */
@@ -716,57 +723,84 @@ article {
 /* Custom styling for archived section */
 .archive-list {
   padding: 0;
+  margin: 0;
 }
 
-.archive-list .post-entry {
-  margin-bottom: 2rem;
-  padding: 1.5rem;
-  background-color: var(--entry);
-  border-radius: 12px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+.year-group {
+  margin-bottom: 3rem;
 }
 
-.archive-list .post-entry:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-.archive-list .post-entry h2 {
+.year-header {
   font-size: var(--subheading-font-size);
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--border);
+}
+
+.month-group {
+  margin-bottom: 2rem;
+}
+
+.month-header {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--secondary);
   margin-bottom: 1rem;
+  margin-left: 0.5rem;
 }
 
-:root[data-theme="dark"] .archive-list .post-entry {
-  background-color: var(--entry);
-  color: #ffffff !important;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-}
-
-:root[data-theme="dark"] .archive-list .post-entry:hover {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+/* Remove the old archive-list specific styling that was different */
+.archive-list .post-entry .post-meta {
+  font-size: var(--meta-font-size);
+  color: var(--secondary);
+  margin-top: 0.75rem;
 }
 
 .archive-list .post-entry .entry-content {
   font-size: var(--card-font-size);
-  line-height: 1.7;
-  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  margin: 0.75rem 0;
+  color: var(--content);
 }
 
-/* Fix empty archive styling */
 .archive-empty {
   text-align: center;
   padding: 3rem 1.5rem;
   background-color: var(--entry);
   border-radius: 12px;
   margin: 2rem 0;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.archive-empty p {
+  font-size: var(--card-font-size);
+  color: var(--secondary);
+  margin: 0;
 }
 
 :root[data-theme="dark"] .archive-empty {
   background-color: var(--entry);
-  color: #ffffff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.subtle-quote {
+  text-align: center;
+  margin: 3rem 0 2rem;
+  padding: 2rem 1rem;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+.subtle-quote p {
+  font-size: 1rem;
+  color: var(--secondary);
+  font-style: italic;
+  margin: 0;
+}
+
+:root[data-theme="dark"] .year-header,
+:root[data-theme="dark"] .month-header {
+  color: var(--primary);
 }
 
 /* Email Subscription Form Styles */

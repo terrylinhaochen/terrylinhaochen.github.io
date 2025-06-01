@@ -1,64 +1,64 @@
 {{ define "main" }}
 <header class="page-header">
-  <h1>{{ .Title }}</h1>
+  <h1 class="post-title">
+    {{ .Title }}
+    {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
+  </h1>
   {{- if .Description }}
-  <div class="post-description">{{ .Description }}</div>
+  <div class="post-description">
+    {{ .Description }}
+  </div>
   {{- end }}
 </header>
 
 {{- if .Content }}
 <div class="post-content">
-  {{ .Content }}
+  {{- if not (.Param "disableAnchoredHeadings") }}
+  {{- partial "anchored_headings.html" .Content -}}
+  {{- else }}{{ .Content }}{{ end }}
 </div>
 {{- end }}
 
-<!-- Display all posts without year grouping -->
-<div class="posts-list">
-  {{ range .Pages }}
-  <article class="post-entry">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">{{ .Title }}</h2>
-    </header>
-    <div class="entry-content">
-      <p>{{ .Summary | plainify }}</p>
+{{- if .Pages }}
+<!-- Group posts by year and month -->
+<div class="archive-list">
+  {{ range .Pages.GroupByDate "2006" }}
+  <div class="year-group">
+    <h2 class="year-header">{{ .Key }}</h2>
+    {{ range .Pages.GroupByDate "January" }}
+    <div class="month-group">
+      <h3 class="month-header">{{ .Key }}</h3>
+      {{ range .Pages }}
+      <article class="post-entry">
+        <header class="entry-header">
+          <h4 class="entry-hint-parent">{{ .Title }}</h4>
+        </header>
+        <div class="entry-content">
+          {{ .Summary | plainify | htmlUnescape }}
+        </div>
+        <footer class="entry-footer">
+          <div class="post-meta">
+            <time>{{ .Date.Format (default "January 2, 2006" .Site.Params.DateFormat) }}</time>
+            {{- if (.Param "ShowReadingTime") }} • {{ i18n "read_time" .ReadingTime | default (printf "%d min read" .ReadingTime) }}{{- end }}
+            {{ if .Params.author }} • {{ .Params.author }}{{ end }}
+          </div>
+        </footer>
+        <a class="entry-link" aria-label="post link to {{ .Title }}" href="{{ .Permalink }}"></a>
+      </article>
+      {{ end }}
     </div>
-    <footer class="entry-footer">
-      Date: <span title='{{ .Date }}'>{{ .Date.Format "January 2, 2006" }}</span> 
-      {{ if .Params.author }} | Author: {{ .Params.author }}{{ end }}
-    </footer>
-    <a class="entry-link" aria-label="post link to {{ .Title }}" href="{{ .Permalink }}"></a>
-  </article>
+    {{ end }}
+  </div>
   {{ end }}
 </div>
+{{- else }}
+<div class="archive-empty">
+  <p>No posts yet. When you publish posts, they will appear here.</p>
+</div>
+{{- end }}
 
-<!-- Add quote at the bottom of posts section -->
+<!-- Add quote at the bottom -->
 <div class="subtle-quote">
   <p><em>"Resilience, Intense Curiosity, and Deep Customer Empathy"</em></p>
 </div>
-
-<style>
-  .posts-list {
-    margin-top: 2rem;
-  }
-  
-  .post-entry {
-    margin-bottom: 2rem;
-  }
-
-  .subtle-quote {
-    margin-top: 4rem;
-    padding-top: 2rem;
-    border-top: 1px solid var(--border);
-    text-align: center;
-    font-style: italic;
-    color: var(--secondary);
-    opacity: 0.8;
-  }
-  
-  .subtle-quote p {
-    font-size: 0.95rem;
-    max-width: 600px;
-    margin: 0 auto;
-  }
-</style>
 {{ end }} 
