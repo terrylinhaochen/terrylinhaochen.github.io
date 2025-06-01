@@ -1,6 +1,6 @@
 {{ define "main" }}
 <header class="page-header">
-  <h1>{{ .Title }}</h1>
+  <h1 class="post-title">{{ .Title }}</h1>
   {{- if .Description }}
   <div class="post-description">{{ .Description }}</div>
   {{- end }}
@@ -19,6 +19,7 @@
   {{ $archivedContent = where (where .Site.RegularPages "Type" "posts") "Params.tags" "intersect" (slice "Archived") }}
 {{ end }}
 
+<div class="archive-list">
 {{ range $archivedContent.GroupByDate "2006" }}
 <div class="year-group">
   <h2 class="year-header">{{ .Key }}</h2>
@@ -31,10 +32,10 @@
     {{ range .Pages }}
     <article class="post-entry">
       <header class="entry-header">
-        <h2 class="entry-hint-parent">{{ .Title }}</h2>
+        <h4 class="entry-hint-parent">{{ .Title }}</h4>
       </header>
       <div class="entry-content">
-        <p>{{ .Summary | plainify }}</p>
+        {{ .Summary | plainify | htmlUnescape }}
       </div>
       <footer class="entry-footer">
         <div class="post-meta">
@@ -48,50 +49,10 @@
   {{ end }}
 </div>
 {{ end }}
+</div>
 
 <!-- Add quote at the bottom of archived section only -->
 <div class="subtle-quote">
   <p>"Don't let something you are good at become who you are."</p>
 </div>
-
-<style>
-  .year-header {
-    margin-bottom: 1.5rem;
-    margin-top: 3rem;
-  }
-  
-  .year-group:first-child .year-header {
-    margin-top: 1.5rem;
-  }
-  
-  /* Style for month headers */
-  .month-header {
-    margin-bottom: 1.2rem;
-    margin-top: 1.8rem;
-    font-size: 1.3rem;
-    color: var(--secondary);
-    border-bottom: 1px solid var(--border);
-    padding-bottom: 0.5rem;
-  }
-  
-  .post-entry {
-    margin-bottom: 2rem;
-  }
-  
-  .subtle-quote {
-    margin-top: 4rem;
-    padding-top: 2rem;
-    border-top: 1px solid var(--border);
-    text-align: center;
-    font-style: italic;
-    color: var(--secondary);
-    opacity: 0.8;
-  }
-  
-  .subtle-quote p {
-    font-size: 0.95rem;
-    max-width: 600px;
-    margin: 0 auto;
-  }
-</style>
 {{ end }} 

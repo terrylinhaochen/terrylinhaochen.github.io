@@ -734,9 +734,15 @@ article {
   font-size: var(--subheading-font-size);
   font-weight: 600;
   color: var(--primary);
-  margin-bottom: 1.5rem;
+  margin-top: 40px; /* Match PaperMod archive-year */
+  margin-bottom: 0;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid var(--border);
+}
+
+/* First year header should have less top margin */
+.year-group:first-child .year-header {
+  margin-top: 0;
 }
 
 .month-group {
@@ -747,7 +753,7 @@ article {
   font-size: 1.1rem;
   font-weight: 500;
   color: var(--secondary);
-  margin-bottom: 1rem;
+  margin: 25px 0; /* Match PaperMod archive-month-header */
   margin-left: 0.5rem;
 }
 

@@ -1,59 +1,49 @@
 {{ define "main" }}
-<article class="post-single">
-  <header class="post-header">
-    <h1 class="post-title">
-      {{ .Title }}
-      {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
-    </h1>
-    {{- if .Description }}
-    <div class="post-description">
-      {{ .Description }}
-    </div>
-    {{- end }}
-  </header>
-
-  {{- if .Content }}
-  <div class="post-content">
-    {{- if not (.Param "disableAnchoredHeadings") }}
-    {{- partial "anchored_headings.html" .Content -}}
-    {{- else }}{{ .Content }}{{ end }}
+<header class="page-header">
+  <h1 class="post-title">
+    {{ .Title }}
+    {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
+  </h1>
+  {{- if .Description }}
+  <div class="post-description">
+    {{ .Description }}
   </div>
   {{- end }}
+</header>
 
-  {{- if .Pages }}
-  <!-- Group archived posts by year and month -->
-  <div class="archive-list">
-    {{ range .Pages.GroupByDate "2006" }}
-    <div class="year-group">
-      <h2 class="year-header">{{ .Key }}</h2>
-      {{ range .Pages.GroupByDate "January" }}
-      <div class="month-group">
-        <h3 class="month-header">{{ .Key }}</h3>
-        {{ range .Pages }}
-        <article class="post-entry">
-          <header class="entry-header">
-            <h4 class="entry-hint-parent">{{ .Title }}</h4>
-          </header>
-          <div class="entry-content">
-            {{ .Summary | plainify | htmlUnescape }}
+{{- if .Pages }}
+<!-- Group archived posts by year and month -->
+<div class="archive-list">
+  {{ range .Pages.GroupByDate "2006" }}
+  <div class="year-group">
+    <h2 class="year-header">{{ .Key }}</h2>
+    {{ range .Pages.GroupByDate "January" }}
+    <div class="month-group">
+      <h3 class="month-header">{{ .Key }}</h3>
+      {{ range .Pages }}
+      <article class="post-entry">
+        <header class="entry-header">
+          <h4 class="entry-hint-parent">{{ .Title }}</h4>
+        </header>
+        <div class="entry-content">
+          {{ .Summary | plainify | htmlUnescape }}
+        </div>
+        <footer class="entry-footer">
+          <div class="post-meta">
+            {{- partial "post_meta.html" . -}}
           </div>
-          <footer class="entry-footer">
-            <div class="post-meta">
-              {{- partial "post_meta.html" . -}}
-            </div>
-          </footer>
-          <a class="entry-link" aria-label="post link to {{ .Title }}" href="{{ .Permalink }}"></a>
-        </article>
-        {{ end }}
-      </div>
+        </footer>
+        <a class="entry-link" aria-label="post link to {{ .Title }}" href="{{ .Permalink }}"></a>
+      </article>
       {{ end }}
     </div>
     {{ end }}
   </div>
-  {{- else }}
-  <div class="archive-empty">
-    <p>No archived content yet. When you archive content, it will appear here.</p>
-  </div>
-  {{- end }}
-</article>
+  {{ end }}
+</div>
+{{- else }}
+<div class="archive-empty">
+  <p>No archived content yet. When you archive content, it will appear here.</p>
+</div>
+{{- end }}
 {{ end }} 
