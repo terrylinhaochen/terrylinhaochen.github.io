@@ -9,18 +9,18 @@ To be released on TikTok Creative Center (https://ads.tiktok.com/business/creati
 
 Credits: TikTok Creative Team
 
-## My Work Featured: TikTok Insight Spotlight Launches at Advertiser Summit
+## TikTok Insight Spotlight Launches at Advertiser Summit
 
 Jun 3 - Excited to share that TikTok Insight Spotlight, a product I worked on during my time at TikTok, was officially unveiled at the company's annual advertiser summit on June 3rd, 2025. [The Verge covered the launch extensively](https://www.theverge.com/news/678255/tiktok-advertiser-summit-ai-targeting-data-seo), highlighting the AI-driven capabilities I helped develop.
 
-![TikTok Insight Spotlight Interface](/docs/images/projects/insight/Insight%20Spotlight.jpeg)
+![TikTok Insight Spotlight Interface](/docs/images/projects/insight/insight_spotlight.jpeg)
 *TikTok's Insight Spotlight interface showing AI-generated analysis - a product I contributed to while at TikTok*
 
 As The Verge reported: "TikTok introduced a slew of new advertiser tools at the company's annual advertiser summit on June 3rd. The new products range from AI-powered ad tools to new features connecting creators and brands, but the overall picture is clear: advertiser content on TikTok is about to become much more tailored and specific."
 
 The article specifically highlighted the core functionality I worked on: "The company will give brands precise details about how their target audience is using the platform — including AI-generated suggestions on ads to run. Using a tool called Insight Spotlight, advertisers will be able to sort by user demographics and industry to see what videos users in the target group are watching and what keywords are associated with popular content."
 
-## Behind the Product: My Contribution to Insight Spotlight
+## Behind the Product: 
 
 During my time at TikTok, I worked specifically on the multi-modal content understanding capabilities that power Insight Spotlight's core functionality. Here's how the features I helped develop work in practice:
 
@@ -30,7 +30,6 @@ The Verge highlighted a key example of the system in action: "In an example prov
 ### Trend Prediction Through Content Analysis
 As The Verge noted: "Another feature in Insight Spotlight analyzes users' viewing history to identify types of content that are bubbling up." This capability stems from the advanced content understanding work I did, which enables the system to analyze both visual and audio elements of videos to predict emerging trends before they become mainstream.
 
-### The Technology Behind the Magic
 The article captures the significance of this shift: "TikTok rose in prominence partly because of its spin-the-wheel, seemingly random quality: anything or anyone could go viral overnight. Brands did their best to keep up by jumping on trends, using popular formats and songs, and partnered with influencers who seemed to be at the center. The new tools will give advertisers even more ways to specifically tailor their content toward what is already happening on the platform and what people are searching for and watching."
 
 My work on multi-modal content understanding was focused on making this transition from random virality to predictable, data-driven insights possible. By analyzing thousands of TikToks across visual, audio, and textual dimensions, we created a system that can identify patterns and provide actionable recommendations to advertisers.
