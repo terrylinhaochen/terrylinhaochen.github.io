@@ -1,5 +1,5 @@
 ---
-title: "Search & Discovery Systems"
+title: "Search Systems"
 date: 2025-05-15
 categories: social-intelligence
 tags: ["Technology", "Product"]

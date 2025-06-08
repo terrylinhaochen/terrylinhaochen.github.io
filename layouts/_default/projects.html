@@ -199,6 +199,41 @@
     opacity: 1 !important;
   }
 
+  /* Ensure archived content link is visible */
+  .archived-link {
+    margin-top: 1rem !important;
+    text-align: center !important;
+  }
+
+  .archived-link span {
+    color: #888 !important;
+    font-size: 0.85em !important;
+    display: block !important;
+  }
+
+  .archived-link a {
+    color: #666 !important;
+    text-decoration: underline !important;
+    font-weight: normal !important;
+  }
+
+  .archived-link a:hover {
+    color: #333 !important;
+  }
+
+  /* Dark mode styles for archived link */
+  body.dark .archived-link span {
+    color: #aaa !important;
+  }
+
+  body.dark .archived-link a {
+    color: #888 !important;
+  }
+
+  body.dark .archived-link a:hover {
+    color: #bbb !important;
+  }
+
   /* Make sure carousel dots are visible */
   .theme-nav button {
     background: #999; /* Darker gray for dots */
@@ -293,6 +328,38 @@
   /* Reduce spacing between last section and quote */
   .section:last-child {
     margin-bottom: 2rem;
+  }
+
+  /* Style for archived content link (matching homepage find-more-posts) */
+  .find-more-posts {
+    text-align: center;
+    margin: 2rem 0;
+    padding: 1rem;
+  }
+
+  .find-more-posts p {
+    color: #666;
+  }
+
+  .find-more-posts a {
+    color: #0066cc;
+    text-decoration: underline;
+    font-weight: 500;
+  }
+
+  .find-more-posts a:hover {
+    color: #0052a3;
+  }
+
+  /* Dark mode styles for find-more-posts */
+  body.dark .find-more-posts p,
+  .dark .find-more-posts p {
+    color: #dddddd !important;
+  }
+
+  body.dark .find-more-posts a,
+  .dark .find-more-posts a {
+    color: #93cdff !important;
   }
 </style>
 
@@ -404,9 +471,9 @@
   </section>
 </div>
 
-<!-- Add quote at the bottom of projects section -->
-<div class="subtle-quote">
-  <p><em>"Make yourself a big target for luck"</em></p>
+<!-- Information about finding archived content -->
+<div class="find-more-posts">
+  <p>To view archived content, <a href="/archived/">click here</a>.</p>
 </div>
 
 <!-- Modal Template -->
