@@ -19,3 +19,5 @@ Aside from being in geographical proximity with startups, another way of finding
 Finding the next big startup to work at is no different from investing, you are investing your time and opportunity cost forgone at working at another high paying job. Another way I see this to work is build up your own thesis of what could truly revoluntionize (sorry I'm using this word here) a particular industry or way of doing things. I personally really like the phrase "technology changes quickly, humans change slowly", instead of focusing on tech and media hype, I think focusing on evaluating the underlying needs met might be more effective. A product with PMF can scale much more easily than a product with good tech and money but no PMF. 
 
 WIP
+
+6.13 - Other leading indicators - Ramp Top Saas Vendors. 
