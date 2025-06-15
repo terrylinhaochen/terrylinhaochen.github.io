@@ -1,26 +1,29 @@
 {{ define "main" }}
+<!-- Add Leaflet CSS and JS in the head -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
 <style>
   /* All the styling from your original about page */
   .about-container {
     max-width: 900px;
     margin: 0 auto;
-    padding: 2rem 0 4rem;
+    padding: 1rem 0 4rem;
   }
 
   .section {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
   }
 
   .section-header {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     text-align: center;
   }
 
   .section-title {
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--primary);
-    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+    color: var(--heading-color);
+    margin-bottom: 1rem;
   }
 
   .about-card {
@@ -53,16 +56,14 @@
   }
 
   .skill-title {
-    font-weight: 700;
-    color: var(--primary);
-    margin-bottom: 0.5rem;
+    color: var(--heading-color);
+    margin-bottom: 1rem;
     font-size: 1.2rem;
   }
 
   .skill-list {
-    color: var(--content);
-    font-size: 1.05rem;
-    margin-bottom: 0;
+    color: var(--text-color);
+    line-height: 1.6;
   }
 
   .contact-card {
@@ -103,16 +104,315 @@
       grid-template-columns: 1fr;
     }
   }
+
+  /* Map styles */
+  #journey-map {
+    height: 500px;
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    border: 1px solid var(--border);
+  }
+
+  .location-popup {
+    font-family: var(--font-sans);
+  }
+
+  .location-popup h3 {
+    color: var(--primary);
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+  }
+
+  .location-popup p {
+    margin: 0.25rem 0;
+    color: var(--content);
+  }
+
+  .company-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+
+  /* Map card styles */
+  .map-card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 200px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    transform: translate(-50%, -100%);
+    margin-top: -10px;
+  }
+
+  .map-card:hover {
+    transform: translate(-50%, -100%) scale(1.05);
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  }
+
+  .map-card h4 {
+    color: var(--heading-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  .map-card p {
+    color: var(--text-color);
+    font-size: 0.9rem;
+    line-height: 1.4;
+    opacity: 0.9;
+  }
+
+  .map-marker {
+    background: none;
+    border: none;
+  }
+
+  .map-marker-container {
+    position: relative;
+  }
+
+  .map-marker-icon {
+    width: 160px;
+    height: auto;
+  }
+
+  /* Map container with relative positioning for controls */
+  .map-container {
+    position: relative;
+  }
+
+  /* Update location indicator to be more subtle */
+  .location-indicator {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--entry);
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    color: var(--primary);
+    font-size: 0.9rem;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+
+  .location-indicator.visible {
+    opacity: 0.8;
+  }
+
+  .map-section {
+    position: relative;
+    margin-top: 2rem;
+    height: 400px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  #journey-map {
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .map-navigation {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1000;
+  }
+
+  .nav-button {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background-color 0.2s ease;
+  }
+
+  .nav-button:hover {
+    background: var(--primary-dark);
+  }
+
+  /* Hide Leaflet attribution */
+  .leaflet-control-attribution {
+    display: none !important;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-content {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 95%;
+    max-height: 85vh;
+    overflow-y: auto;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-color);
+    padding: 1rem;
+    line-height: 1;
+  }
+
+  .modal-close:hover {
+    color: var(--primary);
+  }
+
+  .modal-title {
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+    color: #2d3748;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 1rem;
+  }
+
+  .company-details {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .company-details p:first-of-type {
+    margin-top: 1rem;
+  }
+
+  .company-details p {
+    margin-bottom: 1.5rem;
+  }
+
+  .company-details strong {
+    color: #4a5568;
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  .experience-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+
+  .card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+  }
+
+  .card-header {
+    padding: 1.5rem;
+    background: #f8f9fa;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .company-logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+
+  .card-body {
+    padding: 1.5rem;
+  }
+
+  .location {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .role {
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+
+  .description {
+    color: #555;
+    line-height: 1.6;
+  }
 </style>
 
 <div class="about-container">
-  <!-- Introduction -->
+  <!-- About Me Section -->
   <div class="section">
     <div class="section-header">
-      <h1 class="section-title">About Me</h1>
+      <h2 class="section-title">About Me</h2>
     </div>
     <div class="about-card">
       <p>CS & HCI @ Northwestern. Beijing, Toronto, Evanston. I'm experienced in product management and agent ai implementation. Right now I'm thinking about content understanding, scaling creative workflows, and social simulation. In my free time, I like to read and travel. Always happy to chat ;)</p>
+      
+      <div class="map-section">
+        <div id="journey-map"></div>
+        <div class="map-navigation">
+          <button id="next-location" class="nav-button">
+            Next <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for location details -->
+  <div id="location-modal" class="modal">
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <h2 id="modal-title"></h2>
+      <div id="modal-description"></div>
+      <div id="modal-details"></div>
     </div>
   </div>
 
@@ -123,52 +423,17 @@
     </div>
     <div class="skills-grid">
       <div class="about-card">
-        <h3 class="skill-title">Programming</h3>
-        <p class="skill-list">Python, C/C++, Javascript, HTML/CSS, Git, React.js, Node, Tensorflow, PyTorch</p>
-      </div>
-      <div class="about-card">
         <h3 class="skill-title">Product</h3>
         <p class="skill-list">Prototyping, Roadmapping, Event Tracking, A/B Testing, SQL, Figma, JIRA</p>
       </div>
       <div class="about-card">
-        <h3 class="skill-title">Marketing</h3>
+        <h3 class="skill-title">Programming</h3>
+        <p class="skill-list">Python, C/C++, Javascript, HTML/CSS, Git, React.js, Node, Tensorflow, PyTorch</p>
+      </div>
+      <div class="about-card">
+        <h3 class="skill-title">Growth</h3>
         <p class="skill-list">SEO, Analytics, Social Media Marketing, Influencer Partnerships, Lead Generation</p>
       </div>
-    </div>
-  </div>
-
-  <!-- Experience Section -->  
-  <div class="section">
-    <div class="section-header">
-      <h2 class="section-title">Experience</h2>
-    </div>
-    
-    <!-- Microsoft -->
-    <div class="about-card">
-      <h3>Microsoft | Redmond, Washington</h3>
-      <span class="position">Product Manager Intern, Sentinel Graph | Current</span>
-      <p>Agentic AI for security.</p>
-    </div>
-    
-    <!-- Ouraca -->
-    <div class="about-card">
-      <h3>Ouraca | Palo Alto, California</h3>
-      <span class="position">Founding Team, Product & Engineering | November 2024 - Present</span>
-      <p>Making lifelong learning engaging and accessible. Research agent ai and generation workflows. Designed and implemented an agentic LLM learning companion, working on search, recommendation, etc.</p>
-    </div>
-    
-    <!-- TikTok -->
-    <div class="about-card">
-      <h3>TikTok | San Jose, California</h3>
-      <span class="position">Product Manager Intern, Creative GenAI | March 2024 - August 2024</span>
-      <p>Leveraging billion parameter data to provide actionable trends and insights for key agencies. Designed keyword clustering methods for insight extraction, worked on creative video ad creation.</p>
-    </div>
-    
-    <!-- CrowdListening -->
-    <div class="about-card">
-      <h3>CrowdListening | Evanston, Illinois</h3>
-      <span class="position">Founder and Head of Product | October 2024 - Present</span>
-      <p>Extracting actionable insights from large-scale distributed online conversations. Engineered content optimization features that generate variations and simulate engagement through agentic crowds.</p>
     </div>
   </div>
 
@@ -177,9 +442,281 @@
     <div class="section-header">
       <h2 class="section-title">Contact</h2>
     </div>
-    <div class="about-card contact-card">
-      <p>Feel free to reach out to me at <a href="mailto:terrychen2026@u.northwestern.edu">terrychen2026@u.northwestern.edu</a> or connect with me on <a href="https://www.linkedin.com/in/terry-chen-3b44911a4/">LinkedIn</a>.</p>
+    <div class="about-card">
+      <p>Feel free to reach out to me at <a href="mailto:terrychen2026@u.northwestern.edu">terrychen2026@u.northwestern.edu</a> or connect with me on <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>.</p>
     </div>
   </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Define locations with their details and precise coordinates
+      const locations = [
+        {
+          name: "Chicago",
+          region: "chicago",
+          position: [42.0565, -87.6753],
+          companies: [
+            {
+              name: "CrowdListening",
+              role: "Extracting Crowd Insights",
+              position: [42.0455, -87.6603],
+              description: "Founder and Head of Product | October 2024 - Present\nExtracting actionable insights from large-scale distributed online conversations. Engineered content optimization features that generate variations and simulate engagement through agentic crowds."
+            },
+            {
+              name: "Cogno AI",
+              role: "AI Sales Automation",
+              position: [42.0465, -87.6853],
+              description: "Founder and Head of Product | October 2024 - Present\nBuilding AI-powered sales automation tools to help businesses grow and scale their operations efficiently."
+            },
+            {
+              name: "College (NU)",
+              role: "Student",
+              position: [42.0565, -87.6653],
+              description: "Computer Science BA"
+            }
+          ]
+        },
+        {
+          name: "Toronto",
+          region: "toronto",
+          position: [43.6532, -79.3832],
+          companies: [
+            {
+              name: "Toronto",
+              role: "Born & Raised",
+              position: [43.6532, -79.3832],
+              description: "Born & Raised"
+            }
+          ]
+        },
+        {
+          name: "Bay Area",
+          region: "bayarea",
+          position: [37.4519, -122.0930],
+          companies: [
+            {
+              name: "TikTok",
+              role: "GenAI for Ads",
+              position: [37.3382, -121.8863],
+              description: "Product Manager Intern, Creative GenAI | March 2024 - August 2024\nLeveraging billion parameter data to provide actionable trends and insights for key agencies. Designed keyword clustering methods for insight extraction, worked on creative video ad creation."
+            },
+            {
+              name: "Ouraca",
+              role: "AI for Lifelong Learning",
+              position: [37.4419, -122.1430],
+              description: "Founding Team, Product & Engineering | November 2024 - Present\nMaking lifelong learning engaging and accessible. Research agent AI and generation workflows. Designed and implemented an agentic LLM learning companion, working on search, recommendation, etc."
+            }
+          ]
+        },
+        {
+          name: "Seattle",
+          region: "seattle",
+          position: [47.6669, -122.1220],
+          companies: [
+            {
+              name: "Microsoft",
+              role: "Agent AI",
+              position: [47.6669, -122.1220],
+              description: "Product Manager Intern, Sentinel Graph | Current\nAgentic AI for security."
+            }
+          ]
+        },
+        {
+          name: "Beijing",
+          region: "beijing",
+          position: [39.9747, 116.3307],
+          companies: [
+            {
+              name: "ByteDance",
+              role: "AI Homework Solver",
+              position: [39.9747, 116.3307],
+              description: "Product Manager Intern | Summer 2023\nDeveloping AI solutions for educational content and homework assistance."
+            },
+            {
+              name: "High School (RDFZ)",
+              role: "IB Diploma",
+              position: [39.9647, 116.3407],
+              description: "IB Diploma"
+            }
+          ]
+        }
+      ];
+
+      // Define the sequence of regions
+      const regions = ['seattle', 'bayarea', 'chicago', 'beijing', 'toronto'];
+      let currentRegionIndex = 0;
+      const markers = [];
+      const modal = document.getElementById('location-modal');
+      const modalTitle = document.getElementById('modal-title');
+      const modalDescription = document.getElementById('modal-description');
+      const modalDetails = document.getElementById('modal-details');
+      const nextButton = document.getElementById('next-location');
+
+      // Define zoom levels for each region
+      const regionZooms = {
+        'chicago': 14,
+        'toronto': 12,
+        'bayarea': 10.5,
+        'seattle': 12,
+        'beijing': 14
+      };
+
+      function updateMapView(region) {
+        // Remove all existing markers
+        markers.forEach(marker => marker.remove());
+        markers.length = 0;
+
+        // Find the location for the current region
+        const location = locations.find(loc => loc.region === region);
+        if (!location) return;
+
+        // Set zoom level immediately without animation
+        map.setZoom(regionZooms[region], { animate: false });
+
+        // Add markers for the current region
+        location.companies.forEach(company => {
+          const cardIcon = L.divIcon({
+            html: `
+              <div class="map-card" data-company="${company.name}">
+                <h4>${company.name}</h4>
+                <p>${company.role}</p>
+              </div>
+            `,
+            className: 'map-marker',
+            iconSize: [200, 80]
+          });
+
+          const marker = L.marker(company.position, { 
+            icon: cardIcon,
+            zIndexOffset: 1000
+          }).addTo(map);
+
+          // Add click handler to the marker that prevents map movement
+          marker.on('click', function(e) {
+            e.originalEvent.stopPropagation();
+            e.originalEvent.preventDefault();
+            showLocationModal(location, company);
+            return false;
+          });
+
+          // Also add click handler to the card element
+          const card = marker.getElement().querySelector('.map-card');
+          if (card) {
+            card.onclick = function(e) {
+              e.stopPropagation();
+              e.preventDefault();
+              showLocationModal(location, company);
+              return false;
+            };
+          }
+
+          // Prevent marker from being dragged or moved
+          marker.options.draggable = false;
+          marker.options.riseOnHover = false;
+
+          markers.push(marker);
+        });
+
+        // Smooth pan to the region's center
+        smoothMove(location.position);
+      }
+
+      // Initialize map with Seattle view
+      const map = L.map('journey-map', {
+        center: locations.find(loc => loc.region === 'seattle').position,
+        zoom: regionZooms['seattle'],
+        zoomControl: false,
+        attributionControl: false,
+        scrollWheelZoom: false,
+        doubleClickZoom: false,
+        dragging: false
+      });
+
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: ''
+      }).addTo(map);
+
+      function smoothMove(targetPosition) {
+        const startPosition = map.getCenter();
+        const startTime = performance.now();
+        const duration = 1000; // 1 second transition
+
+        function animate(currentTime) {
+          const elapsed = currentTime - startTime;
+          const progress = Math.min(elapsed / duration, 1);
+          const easeProgress = easeInOutCubic(progress);
+
+          const currentLat = startPosition.lat + (targetPosition[0] - startPosition.lat) * easeProgress;
+          const currentLng = startPosition.lng + (targetPosition[1] - startPosition.lng) * easeProgress;
+
+          // Set view with current zoom level, explicitly disabling animation
+          map.setView([currentLat, currentLng], map.getZoom(), { 
+            animate: false,
+            noMoveStart: true,
+            noMoveEnd: true
+          });
+
+          if (progress < 1) {
+            requestAnimationFrame(animate);
+          }
+        }
+
+        requestAnimationFrame(animate);
+      }
+
+      function easeInOutCubic(t) {
+        return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+      }
+
+      function showLocationModal(location, company) {
+        modalTitle.textContent = company.name;
+        const descriptionLines = company.description.split('\n');
+        modalDescription.innerHTML = `
+          <div class="company-details">
+            ${descriptionLines.map((line, index) => 
+              index === 0 ? `<p><strong>${line}</strong></p>` : `<p>${line}</p>`
+            ).join('')}
+          </div>
+        `;
+        modalDetails.innerHTML = '';
+        modal.style.display = 'flex';
+      }
+
+      // Handle next button click
+      nextButton.addEventListener('click', function() {
+        currentRegionIndex = (currentRegionIndex + 1) % regions.length;
+        const nextRegion = regions[currentRegionIndex];
+        
+        // Update view with new region
+        updateMapView(nextRegion);
+
+        // Update button text for the last region
+        if (currentRegionIndex === regions.length - 1) {
+          nextButton.innerHTML = 'Back to Start <i class="fas fa-chevron-right"></i>';
+        } else {
+          nextButton.innerHTML = 'Next <i class="fas fa-chevron-right"></i>';
+        }
+      });
+
+      // Initial view
+      updateMapView('seattle');
+
+      // Add click handler to close modal when clicking outside
+      modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+          modal.style.display = 'none';
+          // Re-enable map dragging after modal is closed
+          map.dragging.enable();
+        }
+      });
+
+      // Add click handler to close button
+      document.querySelector('.modal-close').addEventListener('click', function() {
+        modal.style.display = 'none';
+        // Re-enable map dragging after modal is closed
+        map.dragging.enable();
+      });
+    });
+  </script>
 </div>
 {{ end }} 
