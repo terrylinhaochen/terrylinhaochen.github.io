@@ -38,6 +38,32 @@
   </div>
 </div>
 
+<!-- Themes section -->
+{{- $mainThemes := where site.RegularPages "Section" "main-themes" }}
+{{- if $mainThemes }}
+<div class="themes-section">
+    <div class="themes-container">
+        {{- range $mainThemes }}
+        <article class="post-entry">
+            <header class="entry-header">
+                <h2>{{ .Title }}</h2>
+            </header>
+            <div class="entry-content">
+                {{ .Summary | plainify | htmlUnescape }}
+            </div>
+            <footer class="entry-footer">
+                <div class="post-meta">
+                    <time>{{ .Date.Format (default "January 2, 2006" .Site.Params.DateFormat) }}</time>
+                    {{- if (.Param "ShowReadingTime") }} • {{ i18n "read_time" .ReadingTime | default (printf "%d min read" .ReadingTime) }}{{- end }}
+                </div>
+                <a href="{{ .Permalink }}" title="{{ .Title }}">{{ i18n "read_more" | default "Read More →" }}</a>
+            </footer>
+        </article>
+        {{- end }}
+    </div>
+</div>
+{{- end }}
+
 <!-- Load Fuse.js for search functionality -->
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2/dist/fuse.min.js"></script>
 
@@ -175,6 +201,84 @@ document.onkeydown = function (e) {
 
 #searchResults .post-entry:hover {
     background: var(--code-bg);
+}
+
+/* Themes section styles */
+.themes-section {
+    margin: 2rem 0;
+    padding: 1rem 0;
+}
+
+.themes-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary);
+}
+
+.themes-container {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.themes-container .post-entry {
+    background: var(--entry);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.themes-container .post-entry:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.themes-container .entry-header h2 {
+    font-size: 1.4rem;
+    margin: 0 0 1rem 0;
+    color: var(--primary);
+}
+
+.themes-container .entry-content {
+    color: var(--secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.themes-container .entry-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    color: var(--secondary);
+}
+
+.themes-container .entry-footer a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.themes-container .entry-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Dark mode adjustments */
+.dark .themes-container .post-entry {
+    background: var(--entry);
+    border-color: var(--border);
+}
+
+.dark .themes-container .entry-header h2,
+.dark .themes-container .entry-footer a {
+    color: var(--primary);
+}
+
+.dark .themes-container .entry-content,
+.dark .themes-container .entry-footer {
+    color: var(--secondary);
 }
 </style>
 

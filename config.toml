@@ -101,7 +101,7 @@ enableRobotsTXT = true
   # Archived section removed from main navigation
   [[menu.main]]
     identifier = "search"
-    name = "Search"
+    name = "Explore"
     url = "/search/"
     weight = 30
   [[menu.main]]

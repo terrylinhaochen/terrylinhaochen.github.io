@@ -6,38 +6,62 @@
             {{- partial "home_info.html" . }}
         {{- end }}
 
-        {{- $mainThemes := where site.RegularPages "Section" "main-themes" }}
-        
-        {{- if and $mainThemes (eq .Paginator.PageNumber 1) }}
-        <div class="featured-cards">
-            <h2>Themes</h2>
-            {{- range $mainThemes }}
-            <article class="post-entry">
-                <header class="entry-header">
-                    <h2>{{ .Title }}</h2>
-                </header>
-                <div class="entry-content">
-                    {{ .Summary | plainify | htmlUnescape }}
-                </div>
-                <footer class="entry-footer">
-                    <div class="post-meta">
-                        <time>{{ .Date.Format (default "January 2, 2006" .Site.Params.DateFormat) }}</time>
-                        {{- if (.Param "ShowReadingTime") }} • {{ i18n "read_time" .ReadingTime | default (printf "%d min read" .ReadingTime) }}{{- end }}
+        <!-- Recent Posts Section -->
+        <div class="recent-posts">
+            <h2>Recent Posts</h2>
+            <div class="posts-grid">
+                {{- $recentPosts := where site.RegularPages "Type" "posts" }}
+                {{- range first 3 $recentPosts }}
+                <article class="post-entry">
+                    <header class="entry-header">
+                        <h2>{{ .Title }}</h2>
+                    </header>
+                    <div class="entry-content">
+                        {{ .Summary | plainify | htmlUnescape }}
                     </div>
-                    <a href="{{ .Permalink }}" title="{{ .Title }}">{{ i18n "read_more" | default "Read More →" }}</a>
-                </footer>
-            </article>
-            {{- end }}
+                    <footer class="entry-footer">
+                        <div class="post-meta">
+                            <time>{{ .Date.Format (default "January 2, 2006" .Site.Params.DateFormat) }}</time>
+                            {{- if (.Param "ShowReadingTime") }} • {{ i18n "read_time" .ReadingTime | default (printf "%d min read" .ReadingTime) }}{{- end }}
+                        </div>
+                        <a href="{{ .Permalink }}" title="{{ .Title }}">{{ i18n "read_more" | default "Read More →" }}</a>
+                    </footer>
+                </article>
+                {{- end }}
+            </div>
         </div>
 
-        <!-- Information about finding all posts -->
+        <!-- View All Posts Section -->
         <div class="find-more-posts">
             <p>To view all posts, please visit the <a href="/posts/">Posts</a> section.</p>
         </div>
-        {{- end }}
     {{- end }}
 
     <style>
+    /* Recent Posts Section Styles */
+    .recent-posts {
+        margin: 3rem 0;
+        width: 100%;
+    }
+
+    .recent-posts h2 {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+        color: var(--primary);
+    }
+
+    .posts-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+    }
+
+    .posts-grid .post-entry {
+        width: 100%;
+        margin: 0;
+    }
+
     /* Ultra-specific selectors for homepage dark mode */
     body.dark .featured-cards h2,
     body.dark .post-entry header.entry-header h2,
