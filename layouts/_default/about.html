@@ -744,10 +744,10 @@
               description: "Founder and Head of Product | October 2024 - Present\nBuilding AI-powered sales automation tools to help businesses grow and scale their operations efficiently."
             },
             {
-              name: "College (NU)",
+              name: "College",
               role: "Student",
               position: [42.0565, -87.6653],
-              description: "Computer Science BA"
+              description: "CS @ Northwestern"
             }
           ]
         },
@@ -808,17 +808,30 @@
               description: "Product Manager Intern | Summer 2023\nDeveloping AI solutions for educational content and homework assistance."
             },
             {
-              name: "High School (RDFZ)",
+              name: "High School",
               role: "IB Diploma",
               position: [39.9647, 116.3407],
-              description: "IB Diploma"
+              description: "IB Diploma @ RDFZ"
+            }
+          ]
+        },
+        {
+          name: "New York City",
+          region: "nyc",
+          position: [40.7505, -73.9934],
+          companies: [
+            {
+              name: "Coming Soon",
+              role: "Work in Progress",
+              position: [40.7505, -73.9934],
+              description: ""
             }
           ]
         }
       ];
 
       // Define the sequence of regions
-      const regions = ['seattle', 'bayarea', 'chicago', 'beijing', 'toronto'];
+      const regions = ['seattle', 'bayarea', 'chicago', 'beijing', 'toronto', 'nyc'];
       let currentRegionIndex = 0;
       const markers = [];
       const modal = document.getElementById('location-modal');
@@ -833,7 +846,8 @@
         'toronto': 12,
         'bayarea': 10.5,
         'seattle': 12,
-        'beijing': 14
+        'beijing': 14,
+        'nyc': 11.5
       };
 
       function updateMapView(region) {
@@ -964,13 +978,6 @@
         
         // Update view with new region
         updateMapView(nextRegion);
-
-        // Update button text for the last region
-        if (currentRegionIndex === regions.length - 1) {
-          nextButton.innerHTML = 'Back to Start <i class="fas fa-chevron-right"></i>';
-        } else {
-          nextButton.innerHTML = 'Next <i class="fas fa-chevron-right"></i>';
-        }
       });
 
       // Initial view
