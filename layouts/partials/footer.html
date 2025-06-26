@@ -40,6 +40,34 @@
 {{- partial "extend_footer.html" . }}
 
 <script>
+    // Error handling and debugging
+    window.addEventListener('error', function(e) {
+        console.error('Page error:', e.error);
+        console.error('Error details:', {
+            message: e.message,
+            filename: e.filename,
+            lineno: e.lineno,
+            colno: e.colno
+        });
+    });
+
+    // Prevent automatic scrolling on page load
+    if (history.scrollRestoration) {
+        history.scrollRestoration = 'manual';
+    }
+    
+    // Ensure page starts at top when loaded
+    window.addEventListener('load', function() {
+        window.scrollTo(0, 0);
+    });
+    
+    // Also scroll to top on page show (for back/forward navigation)
+    window.addEventListener('pageshow', function(event) {
+        if (event.persisted) {
+            window.scrollTo(0, 0);
+        }
+    });
+
     let menu = document.getElementById('menu')
     if (menu) {
         menu.scrollLeft = localStorage.getItem("menu-scroll-position");
