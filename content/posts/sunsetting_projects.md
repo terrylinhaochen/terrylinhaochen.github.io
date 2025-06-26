@@ -1,0 +1,30 @@
+---
+title: "When do I sunset a product?"
+date: 2025-06-25
+author: Terry Chen
+tags: ["Observations", "Entrepreneurship"]
+---
+I've heard the phrase "Take more market risk when you are young, and more execution risk when you are older". From what I understand, the former states that for people early in their career, it's okay to bet on markets and opportunities, even if these could seem contrarian. I quote this because I've recently been thinking about how to best allocate my time and energy on the most promising projects. This is not a matter of spreading eggs in different baskets - I acknowledge I have a very limited attention span and doing everything simultaneously will lead to burn out and less than satisfactory results. Thus - why I'm writing this post, as an attempt to provide more clarity. 
+
+As AI tools mature, I've gotten a lot faster at shipping products. However, this does not necessarily mean everyone of them will work out. Over the past two years I've shipped a total of 5 products (Launched): Cogno (Cognogpt.com), Marrrket (Marrrket.com), Crowdlistening (Crowdlistening.com), A2A Catalog (a2acatalog.com). I also helped ship 3 0-1 products: Symphony Assistant (https://ads.tiktok.com/business/copilot/standalone), Insights Spotlight (https://ads.tiktok.com/business/en-US/blog/insights-spotlight-trends-tool), and Aibrary (aibrary.ai). Among these products, some worked, while some didn't. For disclosure purposes, I will only discuss about the ones I directly led. I expect this post to remain as some what of a ramble for the near term as I reason more about this and more data points appear. 
+
+Marketing matters (a lot). Yet for a product to succeed, one would need to find a way to actually convert this traffic into revenue. Amidst the AI hype, one way to stand out within undifferentiated products is via controversy and viral marketing (Cluely). While we await for the Cluely case to play out, crowdtest.ai is a case we can look in hindsight (https://www.crowdtest.ai/). Founded by a Freshman with a large twitter following, Crowdtest.ai boasted to have reached 30k in revenue within 24 hours of launch (with generous refund policies). It did have ~ 1500 MAU two months ago when I checked, however the stats have fallen since then. This was not a success. The value proposition was not clear - who is willing to pay $100 to optimize their twitter posts? Does AI actually do a better job at this? 
+
+![Crowdtest.ai](/images/posts/sunsetting_projects/crowdtest.png)
+*Crowdtest.ai - A case study in viral marketing*
+
+I note this because I replicated this for the predict feature of Crowdlistening (https://crowdlistening.com/predict), looking at a16z's social simulation investment thesis. Not my proudest feature ship, but a good experience none the less. Lesson: (1) get a large twitter following, (2) take all marketing with a grain of salt, the data speaks truths. 
+
+Another case I'd like to highlight is a2acatalog. The idea originated from a random spree for domain name browsing. I was looking for high value domain names related to MCPs - thinking they would be valuable if they were here to stay. It turned out that all the good mcp domain names were taken. What's the next best alternative? A2A Agents seemed promising. The intuition was that (1) .com domain names were still the most valuable (2) I know I could do decently well in compiling the largest list of A2A Agents on the web, and (3) It would be easier to add MCP Servers than it is to add A2A Agents, given Agent > Tool. As of writing this, these two hypothesis still hold to be true. However, I underestimated the scale and pace of competitors. There has been at least 5 catalog websites I've seen thus far, and although they don't have as nice of a domain name, I have to say they've also done a pretty good job at compiling the list. 
+
+This is still an ongoing project, but I'll still be completly transparent in my thought process for reasoning about competition. Addressing the three intuitions, I have to make certain additional notes: (1)Although the a2acatalog.com domain name is great, it alone is not enough to capture and retain users - a combination of aggressive SEO optimization and Blog writing is needed (I'm still improving in this area so I wouldn't say I have an edge yet) other channels - tiktok, reddit, twitter seemed less ideal (this wasn't going to be viral content), (2) It's true that I could easily compile lists of A2A Agents and MCP Servers, but so could competitors, if there's enough profit to be made here, I could easily see poeple crawling catalogs and moving the content to their pages. Differentiation should be either in the ease of use / automatic deployment side for less tech savy users, or hyper personalization for savy users, (3) Yes, I could add MCP servers too, but it's slightly too early to develop some sort of more lasting moat, connecting to the second point. 
+
+![MCP Server](/images/posts/sunsetting_projects/mcp_server.png)
+*MCP Server integration example*
+
+Two things I'm curious about, what differentiates existing catalog products. I've seen websites with more than 150k in web traffic, however the revenue model is likely not ideal. For my own product (a2acatalog.com) or any product that I ship, the hope is that they either reach the most amount of people possible, or are in a niche vertical that allows me to have absolute dominance and consistently procure small revenue streams from it. For the latter, I would need to go into a verticle with marketing potential - not as a general purpose platform, but serving concrete user needs. For the former, I'm still a ways to go. 
+
+![Geographic Distribution](/images/posts/sunsetting_projects/geo_distribution.png)
+*Geographic distribution of catalog users*
+
+Work in progress, thought in process. 
