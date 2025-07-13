@@ -3,7 +3,7 @@ title: "Wearable AI"
 date: 2025-07-13
 author: Terry Chen
 tags: ["Investing"]
-categories: ["Secondary Market"]
+categories: ["Consumer"]
 ---
 
 ## Understanding the Wearable AI Market
