@@ -1,0 +1,569 @@
+{{ define "main" }}
+<style>
+  .projects-container {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+
+  /* Theme Carousel */
+  .theme-carousel {
+    margin-bottom: 4rem;
+    position: relative;
+  }
+
+  .theme-slides {
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+  }
+
+  .theme-slide {
+    min-width: 100%;
+    padding: 2rem;
+    background: linear-gradient(135deg, #e8f0ff 0%, #ffffff 100%);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  }
+
+  .theme-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .theme-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .theme-nav button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    background: #999;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .theme-nav button.active {
+    background: #222;
+  }
+
+  /* Project Sections */
+  .section {
+    margin-bottom: 4rem;
+  }
+
+  .section-header {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+
+  .section-subtitle {
+    color: #666;
+    font-size: 1.1rem;
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .project-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+
+  .project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  .project-card.featured,
+  .work-card {
+    grid-column: span 2;
+    background: linear-gradient(to right bottom, #ffffff, #f8f9fa);
+  }
+
+  /* Modal styles */
+  .modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 800px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+  }
+
+  .modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  .modal-overlay.active {
+    display: flex;
+  }
+
+  /* Ensure carousel text is always visible regardless of theme */
+  .theme-slide h2 {
+    color: #111 !important; /* Almost black */
+    font-weight: 700 !important; /* Bold */
+  }
+
+  .theme-slide p {
+    color: #333 !important; /* Dark gray */
+    font-weight: 500 !important; /* Medium weight */
+  }
+
+  /* Styles for light mode - make text black on white background */
+  .theme-carousel .theme-slide,
+  .theme-content {
+    color: #111 !important; 
+  }
+
+  /* Fix dark mode specific styles */
+  body.dark .section-title,
+  body.dark .projects-container .section-header h2.section-title,
+  .dark .section-title {
+    color: white !important;
+    font-weight: 700 !important;
+  }
+
+  /* Force all links in the theme slide to be dark */
+  .theme-slide a, 
+  .theme-content a {
+    color: #111 !important;
+    font-weight: 600 !important;
+  }
+
+  /* More specific selectors for "Read More" text */
+  a.read-more,
+  .read-more-link,
+  a.read-more-link,
+  .entry-link::after,
+  .post-entry .entry-footer::after,
+  a[aria-label="Read more"],
+  .read-more-icon,
+  .post-entry:hover .entry-footer::after,
+  .post-entry:focus .entry-footer::after,
+  .post-entry:active .entry-footer::after,
+  footer a,
+  .post-meta a,
+  .entry-content a,
+  [class*="read-more"] {
+    color: #111 !important; /* Almost black */
+    font-weight: 600 !important; /* Semi-bold */
+    opacity: 1 !important; /* Ensure full opacity */
+  }
+
+  /* Target arrow icons specifically */
+  .post-entry::after,
+  .entry-link::after,
+  [class*="read"]::after {
+    color: #111 !important;
+    opacity: 1 !important;
+  }
+
+  /* Ensure archived content link is visible */
+  .archived-link {
+    margin-top: 1rem !important;
+    text-align: center !important;
+  }
+
+  .archived-link span {
+    color: #888 !important;
+    font-size: 0.85em !important;
+    display: block !important;
+  }
+
+  .archived-link a {
+    color: #666 !important;
+    text-decoration: underline !important;
+    font-weight: normal !important;
+  }
+
+  .archived-link a:hover {
+    color: #333 !important;
+  }
+
+  /* Dark mode styles for archived link */
+  body.dark .archived-link span {
+    color: #aaa !important;
+  }
+
+  body.dark .archived-link a {
+    color: #888 !important;
+  }
+
+  body.dark .archived-link a:hover {
+    color: #bbb !important;
+  }
+
+  /* Make sure carousel dots are visible */
+  .theme-nav button {
+    background: #999; /* Darker gray for dots */
+  }
+
+  .theme-nav button.active {
+    background: #222; /* Almost black for active dot */
+  }
+
+  /* Comprehensive dark mode fixes for Projects page */
+  :root[data-theme="dark"] .section-title,
+  .dark .section-title {
+    color: #ffffff !important; /* White */
+  }
+
+  :root[data-theme="dark"] .section-subtitle,
+  .dark .section-subtitle {
+    color: #dddddd !important; /* Light gray */
+  }
+
+  /* Fix read more links with proper PaperMod classes */
+  :root[data-theme="dark"] .post-entry .entry-footer,
+  .dark .post-entry .entry-footer {
+    color: #ffffff !important;
+  }
+
+  :root[data-theme="dark"] .post-entry .entry-link,
+  .dark .post-entry .entry-link {
+    color: #ffffff !important;
+  }
+
+  /* Fix any post meta content */
+  :root[data-theme="dark"] .post-meta,
+  .dark .post-meta {
+    color: #dddddd !important;
+  }
+
+  /* Make sure project cards have proper backgrounds in dark mode */
+  :root[data-theme="dark"] .project-card,
+  .dark .project-card,
+  :root[data-theme="dark"] .post-entry,
+  .dark .post-entry {
+    background: var(--entry);
+    border: 1px solid var(--border);
+  }
+
+  /* Fix modal styles in dark mode */
+  :root[data-theme="dark"] .modal,
+  .dark .modal {
+    background: var(--entry);
+    color: var(--primary);
+    border: 1px solid var(--border);
+  }
+
+  /* Ultra specific dark mode selectors for projects page */
+  body.dark .section-title,
+  body.dark .projects-container .section-header h2.section-title,
+  .dark .section-title {
+    color: white !important;
+    font-weight: 700 !important;
+  }
+
+  body.dark .post-entry .entry-header h2,
+  .dark .post-entry .entry-header h2 {
+    color: white !important;
+  }
+
+  body.dark .entry-footer a,
+  body.dark a[href*="/projects/"],
+  .dark .post-entry .entry-footer a {
+    color: white !important;
+    font-weight: 600 !important;
+  }
+
+  /* Quote styling */
+  .subtle-quote {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    font-style: italic;
+    color: var(--secondary);
+    opacity: 0.8;
+  }
+  
+  .subtle-quote p {
+    font-size: 0.95rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  /* Reduce spacing between last section and quote */
+  .section:last-child {
+    margin-bottom: 2rem;
+  }
+
+  /* Style for archived content link (matching homepage find-more-posts) */
+  .find-more-posts {
+    text-align: center;
+    margin: 2rem 0;
+    padding: 1rem;
+  }
+
+  .find-more-posts p {
+    color: #666;
+  }
+
+  .find-more-posts a {
+    color: #0066cc;
+    text-decoration: underline;
+    font-weight: 500;
+  }
+
+  .find-more-posts a:hover {
+    color: #0052a3;
+  }
+
+  /* Dark mode styles for find-more-posts */
+  body.dark .find-more-posts p,
+  .dark .find-more-posts p {
+    color: #dddddd !important;
+  }
+
+  body.dark .find-more-posts a,
+  .dark .find-more-posts a {
+    color: #93cdff !important;
+  }
+</style>
+
+<div class="projects-container">
+  <!-- Theme Carousel -->
+  <section class="theme-carousel">
+    <div class="theme-slides" id="themeSlides">
+      <div class="theme-slide">
+        <div class="theme-content">
+          <h2>Social Intelligence & Content Discovery</h2>
+          <p>Enhancing personalization in content ecosystems and insights from large-scale social conversations.</p>
+        </div>
+      </div>
+      <div class="theme-slide">
+        <div class="theme-content">
+          <h2>Learning & Knowledge Systems</h2>
+          <p>Enabling personalized learning and knowledge discovery through intelligent AI interfaces.</p>
+        </div>
+      </div>
+      <div class="theme-slide">
+        <div class="theme-content">
+          <h2>Ad Tech & Creative AI Workflows</h2>
+          <p>Building tools for actionable insight and creative multi-modal advertisement content generation.</p>
+        </div>
+      </div>
+    </div>
+    <div class="theme-nav" id="themeNav"></div>
+  </section>
+
+  <!-- Social Intelligence & Content Discovery -->
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title">Social Intelligence & Content Discovery</h2>
+    </div>
+    <div class="projects">
+      {{ range where (where .Site.RegularPages "Section" "product") "Params.categories" "social-intelligence" }}
+      <article class="post-entry">
+        {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
+        {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
+        <header class="entry-header">
+          <h2>{{ .Title }}</h2>
+        </header>
+        <div class="entry-content">
+          {{ .Summary | plainify | htmlUnescape }}
+        </div>
+        <footer class="entry-footer">
+          <div class="post-meta">
+            {{- partial "post_meta.html" . -}}
+          </div>
+        </footer>
+        <a class="entry-link" href="{{ .Permalink }}"></a>
+      </article>
+      {{ end }}
+    </div>
+  </section>
+
+  <!-- Learning & Knowledge Systems -->
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title">Learning & Knowledge Systems</h2>
+    </div>
+    <div class="projects">
+      {{ range where (where .Site.RegularPages "Section" "product") "Params.categories" "learning-knowledge" }}
+      <article class="post-entry">
+        {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
+        {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
+        <header class="entry-header">
+          <h2>{{ .Title }}</h2>
+        </header>
+        <div class="entry-content">
+          {{ .Summary | plainify | htmlUnescape }}
+        </div>
+        <footer class="entry-footer">
+          <div class="post-meta">
+            {{- partial "post_meta.html" . -}}
+          </div>
+        </footer>
+        <a class="entry-link" href="{{ .Permalink }}"></a>
+      </article>
+      {{ end }}
+    </div>
+  </section>
+
+  <!-- Ad Tech & Creative AI Workflows -->
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title">Ad Tech & Creative AI Workflows</h2>
+    </div>
+    <div class="projects">
+      {{ range where (where .Site.RegularPages "Section" "product") "Params.categories" "adtech-creative" }}
+      <article class="post-entry">
+        {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
+        {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
+        <header class="entry-header">
+          <h2>{{ .Title }}</h2>
+        </header>
+        <div class="entry-content">
+          {{ .Summary | plainify | htmlUnescape }}
+        </div>
+        <footer class="entry-footer">
+          <div class="post-meta">
+            {{- partial "post_meta.html" . -}}
+          </div>
+        </footer>
+        <a class="entry-link" href="{{ .Permalink }}"></a>
+      </article>
+      {{ end }}
+    </div>
+  </section>
+</div>
+
+<!-- Information about finding archived content -->
+<div class="find-more-posts">
+  <p>To view archived content, <a href="/archived/">click here</a>.</p>
+</div>
+
+<!-- Modal Template -->
+<div class="modal-container">
+  {{ range where .Site.RegularPages "Section" "product" }}
+  <div id="modal-{{ .Title | urlize }}" class="modal-overlay">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('{{ .Title | urlize }}')">&times;</button>
+      <h2>{{ .Title }}</h2>
+      <p class="project-meta">{{ if .Date }}{{ .Date.Format "January 2, 2006" }}{{ end }}</p>
+      <div class="modal-content">
+        {{ .Content }}
+      </div>
+    </div>
+  </div>
+  {{ end }}
+</div>
+
+<script>
+// Theme carousel functionality
+document.addEventListener('DOMContentLoaded', function() {
+  const slides = document.querySelectorAll('.theme-slide');
+  const nav = document.getElementById('themeNav');
+  let currentSlide = 0;
+
+  // Create navigation dots
+  slides.forEach((_, index) => {
+    const button = document.createElement('button');
+    button.onclick = () => goToSlide(index);
+    nav.appendChild(button);
+  });
+
+  function updateNav() {
+    const buttons = nav.querySelectorAll('button');
+    buttons.forEach((button, index) => {
+      button.classList.toggle('active', index === currentSlide);
+    });
+  }
+
+  function goToSlide(index) {
+    const slideWidth = slides[0].offsetWidth;
+    document.getElementById('themeSlides').scrollLeft = slideWidth * index;
+    currentSlide = index;
+    updateNav();
+  }
+
+  // Initialize
+  updateNav();
+
+  // Auto-advance slides every 5 seconds
+  setInterval(() => {
+    currentSlide = (currentSlide + 1) % slides.length;
+    goToSlide(currentSlide);
+  }, 5000);
+});
+
+// Modal functionality
+function openModal(projectId) {
+  const modal = document.getElementById(`modal-${projectId}`);
+  if (modal) {
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+}
+
+function closeModal(projectId) {
+  const modal = document.getElementById(`modal-${projectId}`);
+  if (modal) {
+    modal.classList.remove('active');
+    document.body.style.overflow = 'auto';
+  }
+}
+
+// Close modal when clicking outside
+document.addEventListener('click', function(event) {
+  if (event.target.classList.contains('modal-overlay')) {
+    event.target.classList.remove('active');
+    document.body.style.overflow = 'auto';
+  }
+});
+
+// Close modal on escape key
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'Escape') {
+    const activeModal = document.querySelector('.modal-overlay.active');
+    if (activeModal) {
+      activeModal.classList.remove('active');
+      document.body.style.overflow = 'auto';
+    }
+  }
+});
+</script>
+{{ end }} 

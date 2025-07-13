@@ -41,7 +41,7 @@ enableRobotsTXT = true
     card = "summary_large_image"
   
   # Main sections to include in lists and archives
-  mainSections = ["posts", "projects"]
+  mainSections = ["posts", "product", "investing"]
   
   # PaperMod specific parameters
   defaultTheme = "auto"
@@ -94,10 +94,15 @@ enableRobotsTXT = true
     url = "/posts/"
     weight = 10
   [[menu.main]]
-    identifier = "projects"
-    name = "Projects"
-    url = "/projects/"
+    identifier = "product"
+    name = "Product"
+    url = "/product/"
     weight = 20
+  [[menu.main]]
+    identifier = "investing"
+    name = "Investing"
+    url = "/investing/"
+    weight = 25
   # Archived section removed from main navigation
   [[menu.main]]
     identifier = "search"

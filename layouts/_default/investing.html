@@ -1,6 +1,6 @@
 {{ define "main" }}
 <style>
-  .projects-container {
+  .investing-container {
     max-width: var(--content-width);
     margin: 0 auto;
     padding: 2rem 0;
@@ -52,7 +52,7 @@
     background: #222;
   }
 
-  /* Project Sections */
+  /* Investment Sections */
   .section {
     margin-bottom: 4rem;
   }
@@ -74,13 +74,13 @@
     font-size: 1.1rem;
   }
 
-  .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  .investments-grid {
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
   }
 
-  .project-card {
+  .investment-card {
     background: white;
     border-radius: 12px;
     padding: 1.5rem;
@@ -89,17 +89,18 @@
     cursor: pointer;
   }
 
-  .project-card:hover {
+  .investment-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   }
 
-  .project-card.featured,
+  .investment-card.featured,
   .work-card {
     grid-column: span 2;
     background: linear-gradient(to right bottom, #ffffff, #f8f9fa);
   }
 
+  /* Modal styles */
   /* Modal styles */
   .modal-overlay {
     display: none;
@@ -139,39 +140,43 @@
     display: flex;
   }
 
-  /* Ensure carousel text is always visible regardless of theme */
+
+
+
+
+  /* Theme-aware carousel text */
   .theme-slide h2 {
-    color: #111 !important; /* Almost black */
-    font-weight: 700 !important; /* Bold */
+    color: var(--primary) !important;
+    font-weight: 700 !important;
   }
 
   .theme-slide p {
-    color: #333 !important; /* Dark gray */
-    font-weight: 500 !important; /* Medium weight */
+    color: var(--content) !important;
+    font-weight: 500 !important;
   }
 
-  /* Styles for light mode - make text black on white background */
+  /* Theme-aware carousel content */
   .theme-carousel .theme-slide,
   .theme-content {
-    color: #111 !important; 
+    color: var(--content) !important; 
   }
 
   /* Fix dark mode specific styles */
   body.dark .section-title,
-  body.dark .projects-container .section-header h2.section-title,
+  body.dark .investing-container .section-header h2.section-title,
   .dark .section-title {
     color: white !important;
     font-weight: 700 !important;
   }
 
-  /* Force all links in the theme slide to be dark */
+  /* Theme-aware links in the theme slide */
   .theme-slide a, 
   .theme-content a {
-    color: #111 !important;
+    color: var(--primary) !important;
     font-weight: 600 !important;
   }
 
-  /* More specific selectors for "Read More" text */
+  /* Theme-aware read more links */
   a.read-more,
   .read-more-link,
   a.read-more-link,
@@ -186,16 +191,16 @@
   .post-meta a,
   .entry-content a,
   [class*="read-more"] {
-    color: #111 !important; /* Almost black */
-    font-weight: 600 !important; /* Semi-bold */
-    opacity: 1 !important; /* Ensure full opacity */
+    color: var(--primary) !important;
+    font-weight: 600 !important;
+    opacity: 1 !important;
   }
 
-  /* Target arrow icons specifically */
+  /* Theme-aware arrow icons */
   .post-entry::after,
   .entry-link::after,
   [class*="read"]::after {
-    color: #111 !important;
+    color: var(--primary) !important;
     opacity: 1 !important;
   }
 
@@ -206,33 +211,23 @@
   }
 
   .archived-link span {
-    color: #888 !important;
+    color: var(--secondary) !important;
     font-size: 0.85em !important;
     display: block !important;
   }
 
   .archived-link a {
-    color: #666 !important;
+    color: var(--primary) !important;
     text-decoration: underline !important;
     font-weight: normal !important;
   }
 
   .archived-link a:hover {
-    color: #333 !important;
+    color: var(--primary) !important;
+    opacity: 0.8 !important;
   }
 
-  /* Dark mode styles for archived link */
-  body.dark .archived-link span {
-    color: #aaa !important;
-  }
 
-  body.dark .archived-link a {
-    color: #888 !important;
-  }
-
-  body.dark .archived-link a:hover {
-    color: #bbb !important;
-  }
 
   /* Make sure carousel dots are visible */
   .theme-nav button {
@@ -243,7 +238,7 @@
     background: #222; /* Almost black for active dot */
   }
 
-  /* Comprehensive dark mode fixes for Projects page */
+  /* Comprehensive dark mode fixes for Investing page */
   :root[data-theme="dark"] .section-title,
   .dark .section-title {
     color: #ffffff !important; /* White */
@@ -271,9 +266,9 @@
     color: #dddddd !important;
   }
 
-  /* Make sure project cards have proper backgrounds in dark mode */
-  :root[data-theme="dark"] .project-card,
-  .dark .project-card,
+  /* Make sure investment cards have proper backgrounds in dark mode */
+  :root[data-theme="dark"] .investment-card,
+  .dark .investment-card,
   :root[data-theme="dark"] .post-entry,
   .dark .post-entry {
     background: var(--entry);
@@ -288,9 +283,9 @@
     border: 1px solid var(--border);
   }
 
-  /* Ultra specific dark mode selectors for projects page */
+  /* Ultra specific dark mode selectors for investing page */
   body.dark .section-title,
-  body.dark .projects-container .section-header h2.section-title,
+  body.dark .investing-container .section-header h2.section-title,
   .dark .section-title {
     color: white !important;
     font-weight: 700 !important;
@@ -302,7 +297,7 @@
   }
 
   body.dark .entry-footer a,
-  body.dark a[href*="/projects/"],
+  body.dark a[href*="/investing/"],
   .dark .post-entry .entry-footer a {
     color: white !important;
     font-weight: 600 !important;
@@ -330,7 +325,7 @@
     margin-bottom: 2rem;
   }
 
-  /* Style for archived content link (matching homepage find-more-posts) */
+  /* Style for archived content link */
   .find-more-posts {
     text-align: center;
     margin: 2rem 0;
@@ -338,134 +333,130 @@
   }
 
   .find-more-posts p {
-    color: #666;
+    color: var(--content);
   }
 
   .find-more-posts a {
-    color: #0066cc;
+    color: var(--primary);
     text-decoration: underline;
     font-weight: 500;
   }
 
   .find-more-posts a:hover {
-    color: #0052a3;
-  }
-
-  /* Dark mode styles for find-more-posts */
-  body.dark .find-more-posts p,
-  .dark .find-more-posts p {
-    color: #dddddd !important;
-  }
-
-  body.dark .find-more-posts a,
-  .dark .find-more-posts a {
-    color: #93cdff !important;
+    color: var(--primary);
+    opacity: 0.8;
   }
 </style>
 
-<div class="projects-container">
+<div class="investing-container">
   <!-- Theme Carousel -->
   <section class="theme-carousel">
     <div class="theme-slides" id="themeSlides">
       <div class="theme-slide">
         <div class="theme-content">
-          <h2>Social Intelligence & Content Discovery</h2>
-          <p>Enhancing personalization in content ecosystems and insights from large-scale social conversations.</p>
+          <h2>Enterprise</h2>
+          <p>Security technology and search advertising investments, focusing on enterprise security solutions and digital advertising platforms.</p>
         </div>
       </div>
       <div class="theme-slide">
         <div class="theme-content">
-          <h2>Learning & Knowledge Systems</h2>
-          <p>Enabling personalized learning and knowledge discovery through intelligent AI interfaces.</p>
+          <h2>Consumer</h2>
+          <p>AI surfaces and next-generation computing interfaces, focusing on conversational AI and multimodal interactions.</p>
         </div>
       </div>
       <div class="theme-slide">
         <div class="theme-content">
-          <h2>Ad Tech & Creative AI Workflows</h2>
-          <p>Building tools for actionable insight and creative multi-modal advertisement content generation.</p>
+          <h2>Other</h2>
+          <p>Wearable AI and frontier technologies, including quantum computing, biotechnology, and advanced materials.</p>
         </div>
       </div>
     </div>
     <div class="theme-nav" id="themeNav"></div>
   </section>
 
-  <!-- Social Intelligence & Content Discovery -->
+  <!-- Enterprise Investments -->
   <section class="section">
     <div class="section-header">
-      <h2 class="section-title">Social Intelligence & Content Discovery</h2>
+      <h2 class="section-title">Enterprise</h2>
     </div>
-    <div class="projects">
-      {{ range where (where .Site.RegularPages "Section" "projects") "Params.categories" "social-intelligence" }}
-      <article class="post-entry">
-        {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
-        {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
-        <header class="entry-header">
-          <h2>{{ .Title }}</h2>
-        </header>
-        <div class="entry-content">
-          {{ .Summary | plainify | htmlUnescape }}
-        </div>
-        <footer class="entry-footer">
-          <div class="post-meta">
-            {{- partial "post_meta.html" . -}}
+    <div class="investments-grid">
+      {{ range where .Site.RegularPages "Section" "investing" }}
+        {{ if in .Params.categories "Enterprise" }}
+        <article class="post-entry investment-card">
+          {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
+          {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
+          <header class="entry-header">
+            <h2>{{ .Title }}</h2>
+          </header>
+          <div class="entry-content">
+            {{ .Summary | plainify | htmlUnescape }}
           </div>
-        </footer>
-        <a class="entry-link" href="{{ .Permalink }}"></a>
-      </article>
+          <footer class="entry-footer">
+            <div class="post-meta">
+              {{- partial "post_meta.html" . -}}
+            </div>
+          </footer>
+          <a class="entry-link" href="{{ .Permalink }}"></a>
+        </article>
+        {{ end }}
       {{ end }}
     </div>
   </section>
 
-  <!-- Learning & Knowledge Systems -->
+  <!-- Consumer Investments -->
   <section class="section">
     <div class="section-header">
-      <h2 class="section-title">Learning & Knowledge Systems</h2>
+      <h2 class="section-title">Consumer</h2>
     </div>
-    <div class="projects">
-      {{ range where (where .Site.RegularPages "Section" "projects") "Params.categories" "learning-knowledge" }}
-      <article class="post-entry">
-        {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
-        {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
-        <header class="entry-header">
-          <h2>{{ .Title }}</h2>
-        </header>
-        <div class="entry-content">
-          {{ .Summary | plainify | htmlUnescape }}
-        </div>
-        <footer class="entry-footer">
-          <div class="post-meta">
-            {{- partial "post_meta.html" . -}}
+    <div class="investments-grid">
+      {{ range where .Site.RegularPages "Section" "investing" }}
+        {{ if in .Params.categories "Consumer" }}
+        <article class="post-entry investment-card">
+          {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
+          {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
+          <header class="entry-header">
+            <h2>{{ .Title }}</h2>
+          </header>
+          <div class="entry-content">
+            {{ .Summary | plainify | htmlUnescape }}
           </div>
-        </footer>
-        <a class="entry-link" href="{{ .Permalink }}"></a>
-      </article>
+          <footer class="entry-footer">
+            <div class="post-meta">
+              {{- partial "post_meta.html" . -}}
+            </div>
+          </footer>
+          <a class="entry-link" href="{{ .Permalink }}"></a>
+        </article>
+        {{ end }}
       {{ end }}
     </div>
   </section>
 
-  <!-- Ad Tech & Creative AI Workflows -->
+  <!-- Other Opportunities -->
   <section class="section">
     <div class="section-header">
-      <h2 class="section-title">Ad Tech & Creative AI Workflows</h2>
+      <h2 class="section-title">Other</h2>
     </div>
-    <div class="projects">
-      {{ range where (where .Site.RegularPages "Section" "projects") "Params.categories" "adtech-creative" }}
-      <article class="post-entry">
-        {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
-        {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
-        <header class="entry-header">
-          <h2>{{ .Title }}</h2>
-        </header>
-        <div class="entry-content">
-          {{ .Summary | plainify | htmlUnescape }}
-        </div>
-        <footer class="entry-footer">
-          <div class="post-meta">
-            {{- partial "post_meta.html" . -}}
+    <div class="investments-grid">
+      {{ range where .Site.RegularPages "Section" "investing" }}
+        {{ if in .Params.categories "Other" }}
+        <article class="post-entry investment-card">
+          {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
+          {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
+          <header class="entry-header">
+            <h2>{{ .Title }}</h2>
+          </header>
+          <div class="entry-content">
+            {{ .Summary | plainify | htmlUnescape }}
           </div>
-        </footer>
-        <a class="entry-link" href="{{ .Permalink }}"></a>
-      </article>
+          <footer class="entry-footer">
+            <div class="post-meta">
+              {{- partial "post_meta.html" . -}}
+            </div>
+          </footer>
+          <a class="entry-link" href="{{ .Permalink }}"></a>
+        </article>
+        {{ end }}
       {{ end }}
     </div>
   </section>
@@ -478,7 +469,7 @@
 
 <!-- Modal Template -->
 <div class="modal-container">
-  {{ range where .Site.RegularPages "Section" "projects" }}
+  {{ range where .Site.RegularPages "Section" "investing" }}
   <div id="modal-{{ .Title | urlize }}" class="modal-overlay">
     <div class="modal">
       <button class="modal-close" onclick="closeModal('{{ .Title | urlize }}')">&times;</button>
@@ -531,16 +522,16 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Modal functionality
-function openModal(projectId) {
-  const modal = document.getElementById(`modal-${projectId}`);
+function openModal(investmentId) {
+  const modal = document.getElementById(`modal-${investmentId}`);
   if (modal) {
     modal.classList.add('active');
     document.body.style.overflow = 'hidden';
   }
 }
 
-function closeModal(projectId) {
-  const modal = document.getElementById(`modal-${projectId}`);
+function closeModal(investmentId) {
+  const modal = document.getElementById(`modal-${investmentId}`);
   if (modal) {
     modal.classList.remove('active');
     document.body.style.overflow = 'auto';
