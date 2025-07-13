@@ -1,7 +1,7 @@
 ---
 title: "Conversational Interfaces - Exploring Unknown Unknowns"
 date: 2024-10-05
-categories: learning-knowledge
+categories: personalized-learning
 tags: ["Technology", "Product"]
 ---
 # Exploring Unknown Unknowns: The Future of Knowledge Interfaces

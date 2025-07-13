@@ -1,6 +1,6 @@
 ---
 title: "When do I Sunset a Product?"
-date: 2025-06-25
+date: 2025-07-12
 author: Terry Chen
 tags: ["Observations", "Entrepreneurship"]
 ---

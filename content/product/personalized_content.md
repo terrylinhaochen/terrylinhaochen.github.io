@@ -1,7 +1,7 @@
 ---
 title: "From Generation to Synthesis"
 date: 2024-09-20
-categories: learning-knowledge
+categories: personalized-learning
 tags: ["Technology", "Product"]
 ---
 In the rapidly evolving landscape of artificial intelligence, we're witnessing a fundamental shift in how we consume and interact with knowledge. While early AI applications focused primarily on content summarization and modal conversion, the next generation of AI-native products promises something far more transformative: the ability to create truly personalized learning experiences that adapt to individual needs, interests, and cognitive patterns.

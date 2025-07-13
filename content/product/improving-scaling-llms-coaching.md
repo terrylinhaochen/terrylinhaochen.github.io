@@ -1,7 +1,7 @@
 ---
 title: "Improving & Scaling LLMs for Coaching"
 date: 2024-08-15
-categories: learning-knowledge
+categories: personalized-learning
 tags: ["Technology", "Research"]
 ---
 

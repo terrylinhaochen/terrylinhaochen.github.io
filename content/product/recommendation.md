@@ -1,7 +1,7 @@
 ---
 title: "Recommendation Systems"
 date: 2024-07-10
-categories: social-intelligence
+categories: discovery-surfaces
 tags: ["Technology", "Product"]
 ---
 # Building Intelligent Content Discovery: A Multi-Modal Recommendation System for Podcast Consumption

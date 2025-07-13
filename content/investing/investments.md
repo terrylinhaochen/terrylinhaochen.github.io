@@ -1,14 +1,14 @@
 ---
-title: "Wearable AI"
+title: "Alternative Investments"
 date: 2024-07-07
 author: Terry Chen
 tags: ["Investing"]
-categories: ["Other"]
+categories: ["Secondary Market"]
 ---
 
-## Understanding Wearable AI
+## Understanding Alternative Investments
 
-Work in progress for understanding wearable AI and ambient computing.
+Work in progress for understanding alternative investment opportunities and secondary market solutions.
 
 ### Defining the Business
 

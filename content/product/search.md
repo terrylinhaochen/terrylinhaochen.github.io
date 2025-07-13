@@ -1,7 +1,7 @@
 ---
 title: "Search Systems"
 date: 2025-05-15
-categories: social-intelligence
+categories: discovery-surfaces
 tags: ["Technology", "Product"]
 ---
 

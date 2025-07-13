@@ -361,13 +361,13 @@
       <div class="theme-slide">
         <div class="theme-content">
           <h2>Consumer</h2>
-          <p>AI surfaces and next-generation computing interfaces, focusing on conversational AI and multimodal interactions.</p>
+          <p>Education technology and productivity software solutions, focusing on learning enhancement and workflow optimization.</p>
         </div>
       </div>
       <div class="theme-slide">
         <div class="theme-content">
-          <h2>Other</h2>
-          <p>Wearable AI and frontier technologies, including quantum computing, biotechnology, and advanced materials.</p>
+          <h2>Secondary Market</h2>
+          <p>Secondary market opportunities and liquidity solutions for private company shares and alternative investments.</p>
         </div>
       </div>
     </div>
@@ -432,14 +432,14 @@
     </div>
   </section>
 
-  <!-- Other Opportunities -->
+  <!-- Secondary Market -->
   <section class="section">
     <div class="section-header">
-      <h2 class="section-title">Other</h2>
+      <h2 class="section-title">Secondary Market</h2>
     </div>
     <div class="investments-grid">
       {{ range where .Site.RegularPages "Section" "investing" }}
-        {{ if in .Params.categories "Other" }}
+        {{ if in .Params.categories "Secondary Market" }}
         <article class="post-entry investment-card">
           {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
           {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
