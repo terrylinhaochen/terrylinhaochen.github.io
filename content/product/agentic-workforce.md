@@ -3,7 +3,7 @@ title: "Agentic Workforce"
 date: 2025-07-13
 author: Terry Chen
 tags: ["Technology", "Product"]
-categories: ["Future of Work"]
+categories: future-of-work
 ---
 
 ## Agentic Workforce
