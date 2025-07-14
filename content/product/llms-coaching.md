@@ -1,5 +1,5 @@
 ---
-title: "Improving & Scaling LLMs for Regulation Skill Coaching"
+title: "Improving & Scaling LLMs - Regulation Skill Coaching"
 date: 2024-08-15
 categories: personalized-learning
 tags: ["Research"]
