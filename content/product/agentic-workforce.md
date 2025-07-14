@@ -1,5 +1,5 @@
 ---
-title: "Agentic Workforce: The Future of Human-Mediated AI Teams"
+title: "Agentic Workforce: Human-Mediated AI Teams"
 date: 2025-07-13
 author: Terry Chen
 tags: ["Product"]
