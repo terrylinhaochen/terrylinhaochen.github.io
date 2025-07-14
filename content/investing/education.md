@@ -1,5 +1,5 @@
 ---
-title: "AI in Education: Transforming Learning Through Intelligent Technology"
+title: "Gamifying Education"
 date: 2025-07-13
 author: Terry Chen
 tags: ["Investing", "AI", "Education", "EdTech", "Learning"]

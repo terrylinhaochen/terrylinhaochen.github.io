@@ -1,5 +1,5 @@
 ---
-title: "AI-Powered Search Advertising: The Future of Digital Marketing"
+title: "Search Advertisment"
 date: 2025-07-13
 author: Terry Chen
 tags: ["Investing", "AI", "Advertising", "Digital Marketing", "Search Ads"]
