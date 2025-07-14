@@ -26,8 +26,12 @@
 {{ end }}
 {{ end }}
 {{ if .Params.categories }}
+{{ if reflect.IsSlice .Params.categories }}
 {{ range .Params.categories }}
 <meta property="article:section" content="{{ . }}">
+{{ end }}
+{{ else }}
+<meta property="article:section" content="{{ .Params.categories }}">
 {{ end }}
 {{ end }}
 {{ end }}
@@ -89,7 +93,7 @@
     "@id": "{{ .Permalink }}"
   },
   "keywords": "{{ if .Params.keywords }}{{ delimit .Params.keywords ", " }}{{ else if .Params.tags }}{{ delimit .Params.tags ", " }}{{ end }}",
-  "articleSection": "{{ if .Params.categories }}{{ index .Params.categories 0 }}{{ else }}{{ .Section }}{{ end }}"
+  "articleSection": "{{ if .Params.categories }}{{ if reflect.IsSlice .Params.categories }}{{ index .Params.categories 0 }}{{ else }}{{ .Params.categories }}{{ end }}{{ else }}{{ .Section }}{{ end }}"
   {{ with .Params.cover }},
   "image": {
     "@type": "ImageObject",
