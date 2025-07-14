@@ -2,7 +2,7 @@
 title: "Essence of Creativity: AI-Generated Content and the Future of Creative Work"
 date: 2024-08-25
 author: Terry Chen
-tags: ["Observations", "Entrepreneurship", "Product", "AI", "Creativity"]
+tags: ["Observations", "Entrepreneurship", "Product"]
 description: "Exploring the intersection of AI-generated content and human creativity. Analysis of creative workflows, multimodal interactions, and the future of content creation in the AI era."
 keywords: ["AI creativity", "content generation", "creative workflows", "multimodal AI", "content understanding", "AI-generated content", "creative technology", "content creation"]
 ---

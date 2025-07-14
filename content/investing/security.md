@@ -2,7 +2,7 @@
 title: "Security Data Pipelines"
 date: 2025-07-13
 author: Terry Chen
-tags: ["Investing", "AI", "Security", "Cybersecurity", "Enterprise"]
+tags: ["Investing"]
 categories: ["Enterprise"]
 description: "Analysis of AI-powered security solutions, market trends, and investment opportunities in enterprise cybersecurity. Exploring how AI is transforming threat detection, response, and prevention in the $150B+ security market."
 keywords: ["AI security", "cybersecurity", "enterprise security", "threat detection", "AI defense", "security automation", "zero trust", "security AI market"]

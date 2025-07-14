@@ -2,7 +2,7 @@
 title: "Gamifying Education"
 date: 2025-07-13
 author: Terry Chen
-tags: ["Investing", "AI", "Education", "EdTech", "Learning"]
+tags: ["Investing"]
 categories: ["Consumer"]
 description: "Analysis of AI-powered education technology, personalized learning platforms, and investment opportunities in the $300B+ global education market. Exploring how AI is revolutionizing teaching, learning, and educational outcomes."
 keywords: ["AI education", "EdTech", "personalized learning", "adaptive learning", "education technology", "AI tutoring", "learning analytics", "education market"]
