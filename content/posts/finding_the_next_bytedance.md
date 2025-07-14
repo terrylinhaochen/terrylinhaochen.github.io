@@ -1,8 +1,8 @@
 ---
-title: "Finding the Next ByteDance: Identifying Early-Stage Tech Companies"
+title: "Finding the Next ByteDance"
 date: 2025-06-08
 author: Terry Chen
-tags: ["Observations", "Entrepreneurship", "Product", "Startups"]
+tags: ["Observations", "Entrepreneurship", "Product"]
 description: "Strategies for identifying and joining early-stage tech companies with massive growth potential. Analysis of talent hubs, investment theses, and indicators for finding the next billion-dollar startup."
 keywords: ["startup identification", "early-stage companies", "tech careers", "ByteDance", "startup hubs", "investment thesis", "product-market fit", "tech talent", "startup growth"]
 ---
