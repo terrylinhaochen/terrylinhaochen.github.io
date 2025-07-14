@@ -2,7 +2,7 @@
 title: "Search Advertisment"
 date: 2025-07-13
 author: Terry Chen
-tags: ["Investing", "AI", "Advertising", "Digital Marketing", "Search Ads"]
+tags: ["Investing"]
 categories: ["Enterprise"]
 description: "Comprehensive analysis of AI-driven search advertising, market dynamics, and investment opportunities. Exploring how AI is revolutionizing ad targeting, optimization, and performance in the $200B+ search advertising market."
 keywords: ["AI advertising", "search ads", "digital marketing", "ad targeting", "Google Ads", "AI marketing", "ad optimization", "search advertising market"]
