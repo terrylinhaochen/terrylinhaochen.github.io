@@ -1,9 +1,9 @@
 ---
-title: "Education Apps"
+title: "Education"
 date: 2025-07-13
 author: Terry Chen
 tags: ["Investing"]
-categories: ["Enterprise"]
+categories: ["Consumer"]
 ---
 
 ## Understanding the Business of Education Apps
@@ -62,9 +62,6 @@ Step-by-step guide:
 6. **Recursive Discretization**: Apply TRELLIS recursively on broad buckets until optimized.
 
 Core playbook: Channel open-endedness into workflows; pass novelty and utility tests; design for constrained expressiveness; ensure improvable, blameable systems; engineer repeatable magic.
-
-### Prototyping & Explorations
-Sensational products like TurboLearn and Coconotes build via iterative AI refinement, viral marketing, and user feedback loops. They border on "cheating" (e.g., instant answers) but promote learning through structured outputs, explanations, and habits, turning efficiency into unintended education.
 
 ### References:
 
