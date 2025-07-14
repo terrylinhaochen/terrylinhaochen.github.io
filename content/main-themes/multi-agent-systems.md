@@ -2,7 +2,7 @@
 title: "Multi-agent LLM Systems"
 date: 2023-08-20
 description: "Developing capable multi-agent systems for complex reasoning and human-AI collaboration."
-tags: ["Technology", "Entrepreneurship"]
+tags: ["Entrepreneurship"]
 categories: ["Research"]
 featured: true
 ---

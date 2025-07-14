@@ -2,7 +2,7 @@
 title: "Tech History"
 date: 2024-03-19
 description: "Exploring the evolution of technology and its impact on society."
-tags: ["Observations", "Technology"]
+tags: ["Observations"]
 categories: ["Research"]
 featured: true
 ---

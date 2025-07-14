@@ -3,7 +3,7 @@ title: "Cogno: Multi-agent AI for Sales Automation"
 date: 2024-03-01
 categories: startup
 projectURL: https://cognogpt.com
-tags: ["Technology", "Entrepreneurship", "Product"]
+tags: ["Entrepreneurship", "Product"]
 ---
 Multi-agent system for cross boarder e-commerce sales automation. Co-founder and head of product.
 https://cognogpt.com

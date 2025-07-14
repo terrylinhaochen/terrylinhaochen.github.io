@@ -2,7 +2,7 @@
 title: "LLM Memory Consolidation and Augmentation"
 date: 2025-03-10
 categories: research
-tags: ["Technology", "Research"]
+tags: ["Research"]
 ---
 **Authors: Terry Chen, Kaiwen Che, Matthew Song**
 

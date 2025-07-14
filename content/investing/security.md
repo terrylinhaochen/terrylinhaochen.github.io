@@ -1,9 +1,11 @@
 ---
-title: "Security"
+title: "AI Security: Enterprise Defense in the Age of Intelligent Threats"
 date: 2025-07-13
 author: Terry Chen
-tags: ["Investing"]
+tags: ["Investing", "AI", "Security", "Cybersecurity", "Enterprise"]
 categories: ["Enterprise"]
+description: "Analysis of AI-powered security solutions, market trends, and investment opportunities in enterprise cybersecurity. Exploring how AI is transforming threat detection, response, and prevention in the $150B+ security market."
+keywords: ["AI security", "cybersecurity", "enterprise security", "threat detection", "AI defense", "security automation", "zero trust", "security AI market"]
 ---
 
 ## Understanding the Security Data Lake and SIEM Business
@@ -34,14 +36,6 @@ Tech includes log aggregation, ML anomaly detection, and scalable lakes (e.g., S
 
 ### Finding the Edge
 Differentiation: Microsoft excels in ecosystem integration/AI (Copilot boosts hunting); Datadog unifies sec/ops with pipelines (50%+ savings, AI parsing); Databricks leverages lakehouses for AI analytics (serverless sec, threat products); Cribl leads SDPP with tiered storage/SIEM evo (migrations in weeks); Wiz enhances CNAPP post-acquisition (Google Cloud sec, multicloud risk). Edges from AI copilots (natural queries), agentic systems (auto-optimization), hybrid support. Field heads to AI-SOCs (MTTR minutes), fabrics, convergence.
-
-### Prototyping & Explorations
-Prototypes: SDPP-SIEM integrations (Cribl-Sentinel migrations, 68 days); AI filtering (70% reduction); lakehouses (Databricks queries 5-25x faster). Explorations: Agentic AI (self-healing pipelines), multi-agent orchestration, AI productivity ($4.4T gains).
-
-### Remaining Questions
-- How will open-source SDPPs disrupt proprietary SIEMs in enterprises?
-- Can AI fully automate detection amid threats?
-- What regulatory effects on lakes/pricing?
 
 ### References:
 

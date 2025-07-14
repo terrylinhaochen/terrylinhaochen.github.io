@@ -2,7 +2,7 @@
 title: "Rapid Prototyping of LLM Enabled Webapps"
 date: 2024-10-19
 categories: prototype
-tags: ["Technology", "Product"]
+tags: ["Product"]
 ---
 
 ### PepTalk: AI Journaling Tool

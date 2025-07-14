@@ -6,7 +6,7 @@ keywords: ["social listening", "brand listening", "market analysis", "tiktok", "
 images: ["/projects/crowdlistening/featured.jpg"]
 categories: future-of-work
 projectURL: crowdlistening.com
-tags: ["Technology", "Entrepreneurship", "Product"]
+tags: ["Entrepreneurship", "Product"]
 ---
 
 ## Inspiring insights, amplifying voices. (crowdlistening.com)

@@ -2,7 +2,7 @@
 title: "Interesting Reads"
 date: 2025-04-01
 author: Terry Chen
-tags: ["Entrepreneurship", "Technology", "Product"]
+tags: ["Entrepreneurship", "Product"]
 ---
 
 Here's a list of articles that I founding interesting. I've attached the original article / transcript for easy refernece as well.

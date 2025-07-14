@@ -6,10 +6,30 @@ publishDir = "public"
 googleAnalytics = "G-M6GS8Q702L"
 
 # Enhanced SEO description
-description = "AI research, multi-agent systems, and content understanding"
+description = "Terry Chen - AI Product Engineer & Investor. Exploring AI research, multi-agent systems, content understanding, and investment opportunities in emerging technologies."
 
 # Enable sitemap and robots.txt
 enableRobotsTXT = true
+
+# SEO-specific configuration
+[params.seo]
+  # Default meta description
+  defaultDescription = "Terry Chen - AI Product Engineer & Investor. Exploring AI research, multi-agent systems, content understanding, and investment opportunities in emerging technologies."
+  
+  # Default keywords
+  defaultKeywords = ["AI", "Machine Learning", "Product Engineering", "Investment Analysis", "Multi-Agent Systems", "Content Understanding", "Emerging Technologies", "Startup Analysis"]
+  
+  # Social media settings
+  [params.seo.social]
+    twitterSite = "@terrychen_ai"
+    twitterCreator = "@terrychen_ai"
+    facebookAppId = ""
+    
+  # Schema.org settings
+  [params.seo.schema]
+    organizationName = "Terry Chen"
+    organizationLogo = "https://chenterry.com/images/profile.jpg"
+    organizationUrl = "https://chenterry.com"
 
 [sitemap]
   changefreq = "weekly"
@@ -33,11 +53,12 @@ enableRobotsTXT = true
   
   # SEO-specific params
   images = ["/images/profile.jpg"] # Default social share image
-  keywords = ["AI", "Machine Learning", "Content Generation", "User Experience", "SEO Product Engineers", "AI Multipliers"]
+  keywords = ["AI", "Machine Learning", "Product Engineering", "Investment Analysis", "Multi-Agent Systems", "Content Understanding", "Emerging Technologies", "Startup Analysis", "AI Multipliers"]
   
   # Default OpenGraph and Twitter card settings
   [params.twitter]
-    site = "@YourTwitterHandle" # Replace with yours or remove if not needed
+    site = "@terrychen_ai"
+    creator = "@terrychen_ai"
     card = "summary_large_image"
   
   # Main sections to include in lists and archives

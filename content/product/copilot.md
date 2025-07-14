@@ -3,7 +3,9 @@ title: "TikTok Symphony Assistant"
 date: 2024-05-20
 categories: advertising-technology
 projectURL: https://ads.tiktok.com/business/copilot/standalone
-tags: ["Technology", "Product"]
+tags: ["Product", "AI", "Advertising", "Creative Generation", "TikTok"]
+description: "Development of TikTok Symphony Assistant - an AI-powered creative tool for generating ad scripts and video content. Agentic workflows and interface optimization for automated creative generation."
+keywords: ["TikTok Symphony", "AI advertising", "creative generation", "ad scripts", "video ads", "agentic workflows", "creative automation", "TikTok ads"]
 ---
 Leverage generative AI capabilities for creative script ideation and video ad creation. (Worked on agentic workflows and interface optimization)
 https://ads.tiktok.com/business/copilot/standalone?locale=en&deviceType=pc

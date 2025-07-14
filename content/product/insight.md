@@ -2,7 +2,9 @@
 title: "TikTok Insights Spotlight"
 date: 2024-04-10
 categories: advertising-technology
-tags: ["Technology", "Product"]
+tags: ["Product", "AI", "Content Analysis", "TikTok", "Advertising"]
+description: "Development of AI-powered content analysis tools for TikTok trend identification and agency insights. Multi-modal content understanding and actionable trend analysis for advertising agencies."
+keywords: ["content analysis", "TikTok trends", "AI insights", "advertising technology", "content understanding", "trend analysis", "multi-modal AI", "agency tools"]
 ---
 Analyze thousands of tiktoks to provide actionable trends & insights for key agencies. (Worked on multi-modal content understanding)
 To be released on TikTok Creative Center (https://ads.tiktok.com/business/creativecenter/pc/en)

@@ -2,7 +2,7 @@
 title: "Value Add of AI: Generation as Distribution"
 date: 2025-05-08
 author: Terry Chen
-tags: ["Observations", "Product", "Technology"]
+tags: ["Observations", "Product"]
 ---
 
 ## The Evolution of AI Value

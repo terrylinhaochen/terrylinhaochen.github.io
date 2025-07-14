@@ -3,7 +3,7 @@ title: "Marrrket: AI Listing Secondhand Marketplace"
 date: 2024-03-20
 categories: prototype
 projectURL: https://marrrket.com
-tags: ["Technology", "Product"]
+tags: ["Product"]
 ---
 
 Marrrket is an AI-powered second-hand marketplace platform targeting North American university students, initially focusing on Chinese international students. The platform aims to solve the inefficiency in the current second-hand market by simplifying the listing process through AI-generated product descriptions from images and minimal user input. By reducing friction in the listing process, Marrrket will increase the overall volume of second-hand items available in the market, creating a more efficient marketplace for both buyers and sellers. The platform's innovation centers on using artificial intelligence to dramatically lower the barrier to entry for sellers, which is hypothesized to be the primary constraint on market growth.

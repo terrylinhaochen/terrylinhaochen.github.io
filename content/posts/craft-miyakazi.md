@@ -5,7 +5,7 @@ keywords: ["Hayao Miyazaki", "animation", "AI art", "craftsmanship", "Studio Ghi
 image: "/images/posts/hayao-miyakazi/dust-balls.png"
 date: 2025-03-27
 author: "Terry Chen"
-tags: ["Observations", "Technology"]
+tags: ["Observations"]
 ---
 
 ![Dust Balls](/images/posts/hayao-miyakazi/dust-balls.png)

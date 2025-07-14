@@ -1,0 +1,38 @@
+{{ if not .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "{{ .Site.BaseURL }}"
+    }
+    {{ if .Section }}
+    ,{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "{{ .Section | title }}",
+      "item": "{{ .Site.BaseURL }}{{ .Section }}/"
+    }
+    {{ end }}
+    {{ if .Params.categories }}
+    ,{
+      "@type": "ListItem",
+      "position": {{ if .Section }}3{{ else }}2{{ end }},
+      "name": "{{ index .Params.categories 0 | title }}",
+      "item": "{{ .Site.BaseURL }}categories/{{ index .Params.categories 0 | urlize }}/"
+    }
+    {{ end }}
+    ,{
+      "@type": "ListItem",
+      "position": {{ if and .Section .Params.categories }}4{{ else if or .Section .Params.categories }}3{{ else }}2{{ end }},
+      "name": "{{ .Title }}",
+      "item": "{{ .Permalink }}"
+    }
+  ]
+}
+</script>
+{{ end }} 

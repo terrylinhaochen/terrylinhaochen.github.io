@@ -2,7 +2,7 @@
 title: "Data Insights"
 date: 2023-08-18
 description: "Extracting meaningful insights from unstructured multi-modal content."
-tags: ["Technology", "Product"]
+tags: ["Product"]
 categories: ["Research"]
 featured: true
 ---

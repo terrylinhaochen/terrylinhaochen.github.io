@@ -1,8 +1,10 @@
 ---
-title: "Finding the Next ByteDance"
+title: "Finding the Next ByteDance: Identifying Early-Stage Tech Companies"
 date: 2025-06-08
 author: Terry Chen
-tags: ["Observations", "Entrepreneurship", "Product"]
+tags: ["Observations", "Entrepreneurship", "Product", "Startups", "Career"]
+description: "Strategies for identifying and joining early-stage tech companies with massive growth potential. Analysis of talent hubs, investment theses, and indicators for finding the next billion-dollar startup."
+keywords: ["startup identification", "early-stage companies", "tech careers", "ByteDance", "startup hubs", "investment thesis", "product-market fit", "tech talent", "startup growth"]
 ---
 
 When you build a product with 10k or 100k users, it's a matter of skill. But when you are planning to build a product with 1 million or 10 million users, luck is a factor that one cannot neglect. During my short time of working at ByteDance (Gauth, TikTok), I caught glimpses of what the early days of the company looked like. However, as the company grew, the early product culture slowly diluted. What does it feel to have worked at such a company during the early days, and how does one go about finding such a company? This is the question that I've been repeatedly thinking about recently, and trying to figure out through writing this post. 
