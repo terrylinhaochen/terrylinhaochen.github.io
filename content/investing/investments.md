@@ -1,8 +1,8 @@
 ---
-title: "Alternative Investments: Secondary Markets and Market Psychology"
+title: "Alternative Investments"
 date: 2024-07-07
 author: Terry Chen
-tags: ["Investing", "Secondary Markets", "Market Psychology", "Behavioral Finance"]
+tags: ["Investing"]
 categories: ["Secondary Market"]
 description: "Analysis of alternative investment opportunities in secondary markets, exploring market psychology, herd behavior, and long-term investment trends. Understanding crowd behavior patterns in financial markets."
 keywords: ["alternative investments", "secondary markets", "market psychology", "behavioral finance", "herd behavior", "investment trends", "market analysis", "crowd behavior"]

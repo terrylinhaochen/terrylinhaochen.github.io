@@ -1,8 +1,8 @@
 ---
-title: "Intelligent Search: Building AI-Powered Content Discovery Systems"
+title: "Intelligent Search Systems: Zero to One"
 date: 2025-05-15
 categories: discovery-surfaces
-tags: ["Product", "AI", "Search", "Content Discovery", "Machine Learning"]
+tags: ["Product"]
 description: "Development of an intelligent search system using AI and machine learning for enhanced content discovery. Technical implementation, user experience design, and performance optimization for content recommendation platforms."
 keywords: ["AI search", "content discovery", "machine learning", "search algorithms", "content recommendation", "semantic search", "vector search", "search UX"]
 ---

@@ -1,5 +1,5 @@
 ---
-title: "From Generation to Synthesis"
+title: "AI Content Creation - From Generation to Synthesis"
 date: 2024-09-20
 categories: personalized-learning
 tags: ["Product"]

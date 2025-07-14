@@ -1,8 +1,8 @@
 ---
-title: "Building Intelligent Content Discovery: A Multi-Modal Recommendation System for Podcast Consumption"
+title: "Content Recommendation Systems: Zero to One"
 date: 2024-07-10
 categories: discovery-surfaces
-tags: ["Product", "AI", "Recommendation Systems", "Podcasts", "Content Discovery"]
+tags: ["Product"]
 description: "Development of a multi-modal recommendation system for podcast content using AI and machine learning. Technical architecture, user experience design, and performance analysis for intelligent content discovery."
 keywords: ["recommendation systems", "podcast discovery", "multi-modal AI", "content recommendation", "machine learning", "user experience", "content discovery", "AI recommendations"]
 ---

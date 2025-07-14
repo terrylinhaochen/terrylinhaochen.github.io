@@ -1,8 +1,8 @@
 ---
-title: "Wearable AI: The Next Frontier in Smart Technology"
+title: "Wearable AI"
 date: 2025-07-13
 author: Terry Chen
-tags: ["Investing", "AI", "Wearables", "Smart Glasses", "Consumer Tech"]
+tags: ["Investing"]
 categories: ["Consumer"]
 description: "Comprehensive analysis of the wearable AI market, including smart glasses, AI pins, and ambient computing devices. Market size, key players, technology trends, and investment opportunities in the $48.82B wearable AI industry."
 keywords: ["wearable AI", "smart glasses", "AI pins", "ambient computing", "consumer AI", "Meta Ray-Ban", "OpenAI hardware", "wearable technology", "AI wearables market"]

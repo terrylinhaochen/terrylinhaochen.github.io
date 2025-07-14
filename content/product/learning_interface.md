@@ -1,5 +1,5 @@
 ---
-title: "Conversational Interfaces - Exploring Unknown Unknowns"
+title: "Conversational Interfaces - Exploring Unknown Unknowns through Chat"
 date: 2024-10-05
 categories: personalized-learning
 tags: ["Product", "AI", "Learning", "Knowledge Management", "User Experience"]
