@@ -1,5 +1,5 @@
 ---
-title: "AI Security: Enterprise Defense in the Age of Intelligent Threats"
+title: "Security Data Pipelines"
 date: 2025-07-13
 author: Terry Chen
 tags: ["Investing", "AI", "Security", "Cybersecurity", "Enterprise"]
