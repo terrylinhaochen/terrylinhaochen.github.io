@@ -1,5 +1,5 @@
 ---
-title: "Content Recommendation Systems: Zero to One"
+title: "Content Recommendation Systems"
 date: 2024-07-10
 categories: discovery-surfaces
 tags: ["Product"]

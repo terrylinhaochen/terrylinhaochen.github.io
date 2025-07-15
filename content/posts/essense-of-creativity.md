@@ -1,5 +1,5 @@
 ---
-title: "Essence of Creativity: AI-Generated Content and the Future of Creative Work"
+title: "Essence of Creativity: Future of Creative Work"
 date: 2024-08-25
 author: Terry Chen
 tags: ["Observations", "Entrepreneurship", "Product"]

@@ -1,5 +1,5 @@
 ---
-title: "Intelligent Search Systems: Zero to One"
+title: "Search & Discovery Features"
 date: 2025-05-15
 categories: discovery-surfaces
 tags: ["Product"]

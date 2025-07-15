@@ -1,5 +1,5 @@
 ---
-title: "Agentic Workforce: Human-Mediated AI Teams"
+title: "A2A Catalog: A Human-Mediated Agentic Workforce"
 date: 2025-07-13
 author: Terry Chen
 tags: ["Product"]
