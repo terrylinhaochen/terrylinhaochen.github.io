@@ -1,8 +1,10 @@
 ---
 title: "Product Engineers and AI Multipliers"
+description: "How AI is transforming product engineering teams into smaller, more efficient units. Learn why product engineers are becoming more valuable than traditional product managers in AI-first organizations."
 date: 2025-04-19
 author: Terry Chen
 tags: ["Observations", "Entrepreneurship"]
+keywords: ["AI product engineer", "product engineering with AI", "AI multipliers", "small team productivity", "AI-first product development", "Shopify AI strategy"]
 ---
 ![Product Engineers](/images/posts/product_engineer/shopify_ai.png)
 *Tobi Lutke's Shopify internal memo*
@@ -83,6 +85,12 @@ While some companies are hiring for AI product managers nowadays, this might be 
 ## The Path Forward
 
 The future belongs to smaller, more nimble teams of highly capable individuals who leverage AI to achieve what previously required entire departments. This might be the new normal of work. For ICs, learning to effectively collaborate with AI tools is no longer optional—it's essential for remaining competitive. For organizations, the challenge is creating environments where these super ICs can thrive, with processes and cultures that maximize the human+AI partnership rather than treating them as separate domains. Most importantly, this shift will enable more creative exploration and novel problem-solving, as routine tasks become increasingly automated. The most exciting products and services of the coming years will likely emerge from these small, AI-augmented teams combining human taste with AI-powered execution.
+
+## Related Reading
+
+- [A2A Catalog: A Human-Mediated Agentic Workforce](/product/agentic-workforce/) - Deep dive into autonomous AI agents and workforce automation
+- [User Needs & Opportunities](/posts/user-needs/) - Identifying product opportunities in the AI-first world
+- [When do I Sunset a Product?](/posts/sunsetting_projects/) - Making strategic decisions in fast-moving AI product development
 
 ---
 Works Cited

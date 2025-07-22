@@ -1,8 +1,10 @@
 ---
 title: "Improving & Scaling LLMs - Regulation Skill Coaching"
+description: "LLM-enhanced coaching system for project-based learning that scales personalized mentorship through AI. Research on semantic matching, regulation gap identification, and automated coaching suggestions."
 date: 2024-08-15
 categories: personalized-learning
 tags: ["Research"]
+keywords: ["LLM coaching", "AI education", "personalized learning", "self-regulation skills", "project-based learning", "AI mentorship", "semantic matching"]
 ---
 
 # Situated Practice Systems: Improving and Scaling Coaching through LLMs

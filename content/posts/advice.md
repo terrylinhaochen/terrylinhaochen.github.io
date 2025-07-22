@@ -1,8 +1,10 @@
 ---
 title: "How to Work on What You Love"
+description: "Curated advice from successful entrepreneurs and thinkers on finding passion, going deep on interests, and building a meaningful career doing what you love."
 date: 2024-09-01
 author: Patrick Collison, Paul Graham, etc
 tags: ["Observations"]
+keywords: ["career advice", "entrepreneurship guidance", "passion projects", "deep work", "Patrick Collison", "Paul Graham advice"]
 ---
 Every now and then I like to read about the advice of others who've succeeded in their field. Here's a few that I personally found to be enlightening and practical. 
 

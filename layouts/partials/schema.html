@@ -11,7 +11,13 @@
     "name": "{{ .Site.Params.author }}"
   }
   {{ else if .IsPage }}
+  {{ if eq .Section "posts" }}
   "@type": "BlogPosting",
+  {{ else if eq .Section "product" }}
+  "@type": "TechArticle",
+  {{ else }}
+  "@type": "Article",
+  {{ end }}
   "headline": "{{ .Title }}",
   "image": "{{ if .Params.image }}{{ .Params.image | absURL }}{{ else }}{{ .Site.Params.og_image | absURL }}{{ end }}",
   "datePublished": "{{ .Date.Format "2006-01-02T15:04:05-07:00" }}",
@@ -28,11 +34,43 @@
       "url": "{{ .Site.Params.logo | absURL }}"
     }
   },
-  "description": "{{ if .Description }}{{ .Description }}{{ else }}{{ .Summary | plainify }}{{ end }}"
+  "description": "{{ if .Description }}{{ .Description }}{{ else }}{{ .Summary | plainify }}{{ end }}",
+  {{ if .Params.keywords }}
+  "keywords": [{{ range $i, $keyword := .Params.keywords }}{{ if $i }}, {{ end }}"{{ $keyword }}"{{ end }}],
+  {{ end }}
+  {{ if eq .Section "product" }}
+  "genre": "Technology",
+  "about": {
+    "@type": "Thing",
+    "name": "AI Product Engineering"
+  },
+  {{ end }}
+  "wordCount": "{{ .WordCount }}",
+  "timeRequired": "PT{{ div .WordCount 200 }}M"
   {{ else }}
   "@type": "WebPage",
   "name": "{{ .Title }}",
   "description": "{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}"
   {{ end }}
 }
-</script> 
+</script>
+
+{{/* Enhanced Schema for technical posts */}}
+{{ if and .IsPage (in .Params.tags "AI") }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is {{ .Title | lower }}?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "{{ .Summary | plainify | truncate 160 }}"
+      }
+    }
+  ]
+}
+</script>
+{{ end }} 

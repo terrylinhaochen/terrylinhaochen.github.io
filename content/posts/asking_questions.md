@@ -1,8 +1,10 @@
 ---
 title: "Questions as the New Bottleneck in Learning"
+description: "In an age of infinite information, asking the right questions has become more valuable than finding answers. Exploring how question formulation is transforming education and knowledge acquisition."
 date: 2025-05-14
 author: Terry Chen
 tags: ["Observations"]
+keywords: ["learning optimization", "question formulation", "AI education", "knowledge acquisition", "information overload", "learning strategies"]
 ---
 
 ## Introduction
