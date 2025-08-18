@@ -1,5 +1,5 @@
 ---
-title: "Gauth AI - Homework Helper for All Subjects"
+title: "LLM Enabled Homework Helper for All Subjects"
 date: 2023-08-20
 category: work
 tags: ["Product"]

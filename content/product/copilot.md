@@ -1,5 +1,5 @@
 ---
-title: "TikTok Symphony Assistant - AI Creative Ad Generation"
+title: "Multi-modal Creative Ad Generation"
 date: 2024-05-20
 categories: advertising-technology
 projectURL: https://ads.tiktok.com/business/copilot/standalone

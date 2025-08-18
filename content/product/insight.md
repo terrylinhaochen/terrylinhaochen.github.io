@@ -1,5 +1,5 @@
 ---
-title: "TikTok Insights Spotlight - Trend Insight Analysis for Ads"
+title: "Billion Parameter Trend Insight Analysis for Ads"
 date: 2024-04-10
 categories: advertising-technology
 tags: ["Product"]

@@ -1,5 +1,5 @@
 ---
-title: "A2A Catalog: A Human-Mediated Agentic Workforce"
+title: "Human-Mediated Agentic Workflows"
 date: 2025-07-13
 author: Terry Chen
 tags: ["Product"]
