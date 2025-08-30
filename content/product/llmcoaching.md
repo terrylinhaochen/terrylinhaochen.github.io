@@ -24,7 +24,7 @@ By utilizing LLMs throughout this system, this work advances AI-driven coaching 
 
 **[➤ Access the LLM Coaching System Prototype](https://llmcoaching.streamlit.app/)**
 
-Experience our peer-to-peer coaching system firsthand. Upload coaching conversations, explore regulation gap analysis, and see how our LLM-enhanced system facilitates meaningful peer connections for improved learning outcomes.
+Experience our LLM-enhanced coaching system firsthand through this interactive prototype.
 
 ---
 
