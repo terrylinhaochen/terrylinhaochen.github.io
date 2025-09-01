@@ -1,9 +1,11 @@
+---
 title: "Social Listening for Product Insight"
 description: "Using AI-powered social listening to extract authentic customer insights from online discourse. Moving from product-to-market to market-to-product development through systematic analysis of community discussions."
-date: 2024-08-29
+date: 2025-08-29
 author: Terry Chen
 tags: ["Product"]
 keywords: ["social listening", "customer insights", "product development", "AI analysis", "community research", "market validation", "customer discourse", "product-market fit", "embeddings", "customer research"]
+---
 
 Why We Need More Ways to Hear Customers
 As product teams scale, direct exposure to customers narrows. We drift into a product → market pattern: build for a vocal few, iterate with them, and accumulate complexity that alienates everyone else. With agentic tools and tighter loops, we can flip to market → product: still partner closely with a subset of customers, but also listen more broadly, form grounded hypotheses from authentic needs, then decide what to build.

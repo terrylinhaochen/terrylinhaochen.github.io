@@ -1,9 +1,11 @@
+---
 title: "Iterating at the Pace of AI"
 description: "Two approaches to building agentic experiences: platform-first vs scenario-first. How AI coding tools enable faster prototyping and cross-functional collaboration for agent product development."
-date: 2024-08-29
+date: 2025-08-29
 author: Terry Chen
 tags: ["Product"]
 keywords: ["AI agents", "product development", "prototyping", "AI coding tools", "agent frameworks", "product-market fit", "cross-functional collaboration", "scenario design"]
+---
 
 There are two credible paths to building agentic experiences. The first is platform-first: stand up a unified agent framework with the core capabilities—multi-turn conversation, a knowledge base, and memory—and then layer in signifiers and affordances that fit your environment. The second is scenario-first: begin with the thinnest viable surface and add only the features that demonstrably create value beyond what ChatGPT or Copilot already provide, bringing in memory and other “platform” features only once they have earned their keep. The platform-first approach yields a consistent engineering experience and lets teams reuse prior agent work, but it risks poor agent–scenario fit. The scenario-first approach can feel messier and demands more from product managers, yet it validates real-world use cases faster. I don’t claim one approach is universally better—startups and large companies face different constraints—but I do believe there is only one way to prototype: ship quickly, test explicit hypotheses, and iterate without delay.
 
