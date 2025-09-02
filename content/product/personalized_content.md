@@ -1,9 +1,10 @@
 ---
 title: "AI Content Creation - From Generation to Synthesis"
-description: "Moving beyond basic AI summarization to knowledge liquefaction - creating truly personalized learning experiences that adapt content to individual needs, contexts, and cognitive patterns."
 date: 2024-09-20
 categories: personalized-learning
 tags: ["Product"]
+company: "ouraca"
+description: "Moving beyond basic AI summarization to knowledge liquefaction - creating truly personalized learning experiences that adapt content to individual needs, contexts, and cognitive patterns."
 ---
 In the rapidly evolving landscape of artificial intelligence, we're witnessing a fundamental shift in how we consume and interact with knowledge. While early AI applications focused primarily on content summarization and modal conversion, the next generation of AI-native products promises something far more transformative: the ability to create truly personalized learning experiences that adapt to individual needs, interests, and cognitive patterns.
 

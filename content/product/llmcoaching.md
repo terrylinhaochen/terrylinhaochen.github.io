@@ -1,9 +1,10 @@
 ---
 title: "Improving and Scaling Coaching through LLMs"
-description: "LLM-enhanced coaching system for project-based learning that scales personalized mentorship through AI. Research on semantic matching, regulation gap identification, and automated coaching suggestions."
 date: 2024-08-15
 categories: personalized-learning
 tags: ["Research"]
+company: "ouraca"
+description: "LLM-enhanced coaching system for project-based learning that scales personalized mentorship through AI. Research on semantic matching, regulation gap identification, and automated coaching suggestions."
 keywords: ["LLM coaching", "AI education", "personalized learning", "self-regulation skills", "project-based learning", "AI mentorship", "semantic matching"]
 ---
 *Terry Chen, Allyson Lee*

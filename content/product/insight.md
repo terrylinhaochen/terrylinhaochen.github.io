@@ -3,6 +3,7 @@ title: "Billion Parameter Trend Insight Analysis for Ads"
 date: 2024-04-10
 categories: advertising-technology
 tags: ["Product"]
+company: "tiktok"
 description: "Development of AI-powered content analysis tools for TikTok trend identification and agency insights. Multi-modal content understanding and actionable trend analysis for advertising agencies."
 keywords: ["content analysis", "TikTok trends", "AI insights", "advertising technology", "content understanding", "trend analysis", "multi-modal AI", "agency tools"]
 ---

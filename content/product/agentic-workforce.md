@@ -4,6 +4,7 @@ date: 2025-07-13
 author: Terry Chen
 tags: ["Product"]
 categories: future-of-work
+company: "crowdlistening"
 description: "Explore the emerging landscape of agentic workforces - autonomous AI agents that reason, plan, act, and learn to handle complex tasks and workflows. Analysis of key players, technology strategies, and market opportunities."
 keywords: ["agentic AI", "autonomous agents", "workforce automation", "AI productivity", "multi-agent systems", "enterprise AI", "workflow automation"]
 ---

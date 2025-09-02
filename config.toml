@@ -130,11 +130,6 @@ enableRobotsTXT = true
     name = "Explore"
     url = "/search/"
     weight = 30
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 40
       
 # Taxonomies for categorization
 [taxonomies]

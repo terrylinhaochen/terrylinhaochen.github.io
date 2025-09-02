@@ -1,12 +1,13 @@
 ---
 title: "An Agentic Social Operating System"
 date: 2023-04-15
-description: "Transform large-scale social conversations into actionable insights. Understand crowd sentiment, track emerging opinions, and identify key narratives."
-keywords: ["social listening", "brand listening", "market analysis", "tiktok", "journalism","reporting", "user experience"]
-images: ["/projects/crowdlistening/featured.jpg"]
 categories: future-of-work
 projectURL: crowdlistening.com
 tags: ["Entrepreneurship", "Product"]
+company: "crowdlistening"
+description: "Transform large-scale social conversations into actionable insights. Understand crowd sentiment, track emerging opinions, and identify key narratives."
+keywords: ["social listening", "brand listening", "market analysis", "tiktok", "journalism","reporting", "user experience"]
+images: ["/projects/crowdlistening/featured.jpg"]
 ---
 
 ## Inspiring insights, amplifying voices. (crowdlistening.com)

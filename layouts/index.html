@@ -1,10 +1,57 @@
 {{ define "main" }}
+<!-- Add Leaflet CSS and JS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     {{- if .Site.Params.profileMode.enabled }}
         {{ partial "index_profile.html" . }}
     {{- else }}
         {{- if and .Site.Params.homeInfoParams (eq .Paginator.PageNumber 1) }}
             {{- partial "home_info.html" . }}
         {{- end }}
+
+        <!-- About Me Section -->
+        <h2>About Me</h2>
+        <div class="about-section">
+            <p>CS & HCI @ Northwestern. Prev product @ Microsoft, TikTok, ByteDance. Experienced in product management and agent implementation. Right now I'm thinking about agent ai for education, social listening, and creative workflows. In my free time, I like to read and travel. Always happy to chat ;)</p>
+            
+            <div class="map-section">
+                <div id="journey-map"></div>
+                <div class="map-navigation">
+                    <button id="next-location" class="nav-button">
+                        Next <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills Section -->
+        <h2>Skills</h2>
+        <div class="skills-section">
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Product</h4>
+                    <p>Prototyping, Roadmapping, Event Tracking, A/B Testing, SQL, Figma, JIRA</p>
+                </div>
+                <div class="skill-category">
+                    <h4>Programming</h4>
+                    <p>Python, C/C++, Javascript, HTML/CSS, Git, React.js, Node, Tensorflow, PyTorch</p>
+                </div>
+                <div class="skill-category">
+                    <h4>Growth</h4>
+                    <p>SEO, Analytics, Social Media Marketing, Influencer Partnerships, Lead Generation</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for location details -->
+        <div id="location-modal" class="modal">
+            <div class="modal-content">
+                <button class="modal-close">&times;</button>
+                <h2 id="modal-title"></h2>
+                <div id="modal-description"></div>
+                <div id="modal-details"></div>
+            </div>
+        </div>
 
         <!-- Recent Posts Section -->
         <div class="recent-posts">
@@ -38,6 +85,187 @@
     {{- end }}
 
     <style>
+    /* About Me Section Styles */
+    .about-section {
+        margin: 3rem 0;
+        padding: 2rem;
+        background: var(--entry);
+        border-radius: 12px;
+        border: 1px solid var(--border);
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+        color: var(--primary);
+    }
+
+    .about-section p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: var(--secondary);
+        margin-bottom: 2rem;
+    }
+
+    .skills-section {
+        background: var(--entry);
+        border-radius: 12px;
+        border: 1px solid var(--border);
+        padding: 2rem;
+        margin: 3rem 0;
+    }
+
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    @media (max-width: 768px) {
+        .skills-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    /* Map styles */
+    .map-section {
+        position: relative;
+        margin: 2rem 0;
+        height: 400px;
+        border-radius: 12px;
+        overflow: hidden;
+    }
+
+    #journey-map {
+        height: 100%;
+        width: 100%;
+        border-radius: 12px;
+        border: 1px solid var(--border);
+    }
+
+    .map-navigation {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        z-index: 1000;
+    }
+
+    .nav-button {
+        background: var(--entry);
+        color: var(--primary);
+        border: 1px solid var(--border);
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 0.9rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        transition: all 0.2s ease;
+    }
+
+    .nav-button:hover {
+        background: var(--border);
+    }
+
+    .map-card {
+        background: var(--entry);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 1rem;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        cursor: pointer;
+        transition: all 0.3s ease;
+        width: 180px;
+        transform: translate(-50%, -100%);
+        margin-top: -10px;
+    }
+
+    .map-card h4 {
+        color: var(--primary);
+        margin-bottom: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .map-card p {
+        color: var(--secondary);
+        font-size: 0.9rem;
+        margin: 0;
+    }
+
+    .map-card:hover {
+        transform: translate(-50%, -100%) scale(1.05);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(4px);
+        z-index: 1000;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal-content {
+        background: var(--entry);
+        padding: 2rem;
+        border-radius: 12px;
+        max-width: 600px;
+        width: 90%;
+        position: relative;
+        border: 1px solid var(--border);
+    }
+
+    .modal-close {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        color: var(--primary);
+        cursor: pointer;
+    }
+
+    .company-details {
+        color: var(--secondary);
+    }
+
+    .company-details strong {
+        color: var(--primary);
+    }
+
+    .leaflet-control-attribution {
+        display: none !important;
+    }
+
+    .skill-category {
+        padding: 1rem;
+        background: var(--theme);
+        border-radius: 8px;
+        border: 1px solid var(--border);
+    }
+
+    .skill-category h4 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        color: var(--primary);
+    }
+
+    .skill-category p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+        color: var(--secondary);
+        margin: 0;
+    }
+
     /* Recent Posts Section Styles */
     .recent-posts {
         margin: 3rem 0;
@@ -140,4 +368,266 @@
       color: #111 !important; /* Keep black in dark mode */
     }
     </style>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Define locations with their details and precise coordinates
+        const locations = [
+            {
+                name: "Chicago",
+                region: "chicago",
+                position: [42.0565, -87.6753],
+                companies: [
+                    {
+                        name: "CrowdListening",
+                        role: "Extracting Insights",
+                        position: [42.0455, -87.6603],
+                        description: "Founder and Head of Product | October 2024 - Present\nExtracting actionable insights from large-scale distributed online conversations. Engineered content optimization features that generate variations and simulate engagement through agentic crowds."
+                    },
+                    {
+                        name: "Cogno AI",
+                        role: "AI Sales Automation",
+                        position: [42.0465, -87.6853],
+                        description: "Founder and Head of Product | October 2024 - Present\nBuilding AI-powered sales automation tools to help businesses grow and scale their operations efficiently."
+                    },
+                    {
+                        name: "College",
+                        role: "Student",
+                        position: [42.0565, -87.6653],
+                        description: "CS @ Northwestern"
+                    }
+                ]
+            },
+            // {
+            //     name: "Toronto",
+            //     region: "toronto", 
+            //     position: [43.6532, -79.3832],
+            //     companies: [
+            //         {
+            //             name: "Toronto",
+            //             role: "Born & Raised",
+            //             position: [43.6532, -79.3832],
+            //             description: "Born & Raised"
+            //         }
+            //     ]
+            // },
+            {
+                name: "Bay Area",
+                region: "bayarea",
+                position: [37.4519, -122.0500],
+                companies: [
+                    {
+                        name: "TikTok",
+                        role: "GenAI for Ads",
+                        position: [37.3382, -121.8863],
+                        description: "Product Manager Intern, Creative GenAI | March 2024 - August 2024\nLeveraging billion parameter data to provide actionable trends and insights for key agencies. Designed keyword clustering methods for insight extraction, worked on creative video ad creation."
+                    },
+                    {
+                        name: "Ouraca",
+                        role: "AI for Lifelong Learning", 
+                        position: [37.4419, -122.1430],
+                        description: "Founding Team, Product & Engineering | November 2024 - Present\nMaking lifelong learning engaging and accessible. Research agent AI and generation workflows. Designed and implemented an agentic LLM learning companion, working on search, recommendation, etc."
+                    }
+                ]
+            },
+            {
+                name: "Seattle",
+                region: "seattle",
+                position: [47.6669, -122.1220],
+                companies: [
+                    {
+                        name: "Microsoft",
+                        role: "Agent AI",
+                        position: [47.6669, -122.1220],
+                        description: "Product Manager Intern, Sentinel Graph | Current\nAgentic AI for security."
+                    }
+                ]
+            },
+            {
+                name: "Beijing",
+                region: "beijing",
+                position: [39.9747, 116.3307],
+                companies: [
+                    {
+                        name: "ByteDance",
+                        role: "AI Homework Solver",
+                        position: [39.9747, 116.3307],
+                        description: "Product Manager Intern | Summer 2023\nDeveloping AI solutions for educational content and homework assistance."
+                    },
+                    {
+                        name: "High School",
+                        role: "IB Diploma",
+                        position: [39.9647, 116.3407],
+                        description: "IB Diploma @ RDFZ"
+                    },
+                    {
+                        name: "Family",
+                        role: "Home",
+                        position: [39.9747, 116.3507],
+                        description: "Home"
+                    }
+                ]
+            }
+            // {
+            //     name: "New York City",
+            //     region: "nyc",
+            //     position: [40.7505, -73.9934],
+            //     companies: [
+            //         {
+            //             name: "Family",
+            //             role: "Home",
+            //             position: [40.7505, -73.9934],
+            //             description: ""
+            //         }
+            //     ]
+            // }
+        ];
+
+        // Define the sequence of regions
+        const regions = ['seattle', 'bayarea', 'chicago', 'beijing'];
+        let currentRegionIndex = 0;
+        const markers = [];
+        const modal = document.getElementById('location-modal');
+        const modalTitle = document.getElementById('modal-title');
+        const modalDescription = document.getElementById('modal-description');
+        const modalDetails = document.getElementById('modal-details');
+        const nextButton = document.getElementById('next-location');
+
+        // Define zoom levels for each region
+        const regionZooms = {
+            'chicago': 14,
+            'toronto': 12,
+            'bayarea': 10.5,
+            'seattle': 12,
+            'beijing': 14,
+            'nyc': 11.5
+        };
+
+        function updateMapView(region) {
+            // Remove all existing markers
+            markers.forEach(marker => marker.remove());
+            markers.length = 0;
+
+            // Find the location for the current region
+            const location = locations.find(loc => loc.region === region);
+            if (!location) return;
+
+            // Set zoom level immediately without animation
+            map.setZoom(regionZooms[region], { animate: false });
+
+            // Add markers for the current region
+            location.companies.forEach(company => {
+                const cardIcon = L.divIcon({
+                    html: `
+                        <div class="map-card" data-company="${company.name}">
+                            <h4>${company.name}</h4>
+                            <p>${company.role}</p>
+                        </div>
+                    `,
+                    className: 'map-marker',
+                    iconSize: [200, 80]
+                });
+
+                const marker = L.marker(company.position, { 
+                    icon: cardIcon,
+                    zIndexOffset: 1000
+                }).addTo(map);
+
+                // Add click handler
+                marker.on('click', function(e) {
+                    e.originalEvent.stopPropagation();
+                    e.originalEvent.preventDefault();
+                    showLocationModal(location, company);
+                    return false;
+                });
+
+                markers.push(marker);
+            });
+
+            // Smooth pan to the region's center
+            smoothMove(location.position);
+        }
+
+        // Initialize map with Seattle view
+        const map = L.map('journey-map', {
+            center: locations.find(loc => loc.region === 'seattle').position,
+            zoom: regionZooms['seattle'],
+            zoomControl: false,
+            attributionControl: false,
+            scrollWheelZoom: false,
+            doubleClickZoom: false,
+            dragging: false
+        });
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: ''
+        }).addTo(map);
+
+        function smoothMove(targetPosition) {
+            const startPosition = map.getCenter();
+            const startTime = performance.now();
+            const duration = 1000;
+
+            function animate(currentTime) {
+                const elapsed = currentTime - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                const easeProgress = easeInOutCubic(progress);
+
+                const currentLat = startPosition.lat + (targetPosition[0] - startPosition.lat) * easeProgress;
+                const currentLng = startPosition.lng + (targetPosition[1] - startPosition.lng) * easeProgress;
+
+                map.setView([currentLat, currentLng], map.getZoom(), { 
+                    animate: false,
+                    noMoveStart: true,
+                    noMoveEnd: true
+                });
+
+                if (progress < 1) {
+                    requestAnimationFrame(animate);
+                }
+            }
+
+            requestAnimationFrame(animate);
+        }
+
+        function easeInOutCubic(t) {
+            return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+        }
+
+        function showLocationModal(location, company) {
+            modalTitle.textContent = company.name;
+            const descriptionLines = company.description.split('\n');
+            modalDescription.innerHTML = `
+                <div class="company-details">
+                    ${descriptionLines.map((line, index) => 
+                        index === 0 ? `<p><strong>${line}</strong></p>` : `<p>${line}</p>`
+                    ).join('')}
+                </div>
+            `;
+            modalDetails.innerHTML = '';
+            modal.style.display = 'flex';
+        }
+
+        // Handle next button click
+        nextButton.addEventListener('click', function() {
+            currentRegionIndex = (currentRegionIndex + 1) % regions.length;
+            const nextRegion = regions[currentRegionIndex];
+            updateMapView(nextRegion);
+        });
+
+        // Initial view
+        updateMapView('seattle');
+
+        // Modal close handlers
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+
+        document.querySelector('.modal-close').addEventListener('click', function() {
+            modal.style.display = 'none';
+        });
+    });
+    </script>
 {{ end }} 
