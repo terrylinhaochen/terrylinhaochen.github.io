@@ -9,31 +9,31 @@ keywords: ["AI agents", "product development", "prototyping", "AI coding tools",
 
 There are two credible paths to building agentic experiences. The first is platform-first: stand up a unified agent framework with the core capabilities—multi-turn conversation, a knowledge base, and memory—and then layer in signifiers and affordances that fit your environment. The second is scenario-first: begin with the thinnest viable surface and add only the features that demonstrably create value beyond what ChatGPT or Copilot already provide, bringing in memory and other “platform” features only once they have earned their keep. The platform-first approach yields a consistent engineering experience and lets teams reuse prior agent work, but it risks poor agent–scenario fit. The scenario-first approach can feel messier and demands more from product managers, yet it validates real-world use cases faster. I don’t claim one approach is universally better—startups and large companies face different constraints—but I do believe there is only one way to prototype: ship quickly, test explicit hypotheses, and iterate without delay.
 
-Figure 1 Cost Estimator Agent Prototype
+![Figure 1: Cost Estimator Agent Prototype](/images/posts/agent_prototyping/figure1.png)
 Github: https://github.com/daniha_microsoft/cost-estimator-agent
 A clarifying question keeps this cadence honest: what is the minimum version of the product that lets us learn whether the solution can find product–market fit? Counterintuitively, you often do not need a working prototype to answer that. Walking through end-to-end customer scenarios frequently reveals whether a proposed feature fits existing workflows and where it will break. That said, some questions hinge on new engineering—experiences that are hard to reason about in the abstract. In those cases, the objective is not to “build the demo,” but to surface and test the assumptions that matter. Each design choice should map to the outcome it seeks and to the user challenge it addresses. The simpler the stack, the more learning cycles you can run with less effort, which is the real engine of progress.
 
 
-Figure 2 Value adds of "vibe coding" tools
+![Figure 2: Value adds of "vibe coding" tools](/images/posts/agent_prototyping/figure2.png)
 Modern AI coding tools make this possible. Cursor, GitHub Copilot, and Claude Code compress build time by generating boilerplate, suggesting common patterns, and helping troubleshoot. A single engineer can now produce a functional MVP in a fraction of the time that used to require a small team. Much like Figma tightened the collaboration loop in design, these tools narrow the gap between product intent and implementation. The result is not merely faster engineering; it is broader participation. Product managers, designers, even sales and customer success teams can test ideas more directly, while engineers concentrate on production-grade systems and reliability concerns that truly benefit from their specialization.
 Involving Cross-Functional Stakeholders
 An agentic experience is only as good as our understanding of the underlying problem. This is especially true for expert workflows—consumption-based cost estimation or SOC investigation, for example—where product and engineering teams are rarely the domain experts. Involving architects, sales engineers, and analysts only at the prompt-iteration stage is not enough. To build agent behaviors that actually fit, we have to internalize existing workflows and best practices, then design signifiers and affordances that match practitioner expectations. Language, steps, intermediate outputs, and handoffs should mirror how experts already think and work. When the agent speaks their dialect and respects their process, adoption follows because the experience feels native rather than novel for novelty’s sake.
 
-Figure 3 Collaboration workflows enabled by Figma, Credit to Kevin Kwok
+![Figure 3: Collaboration workflows enabled by Figma, Credit to Kevin Kwok](/images/posts/agent_prototyping/figure3.png)
 
 This is exactly where the Figma analogy—Kevin Kwok’s point about non-linear returns from tighter collaboration loops—becomes operational. Figma did not just make drawing easier; it made critique, alignment, and decision-making happen in the same place, by the right people, at the right time. AI coding assistants catalyze a similar shift for agentic products: they collapse the distance between a domain expert’s intent and a working prototype, making assumptions explicit, turning tacit heuristics into checkable rules, and surfacing disagreements while they are still cheap to resolve. When prototypes function as shared canvases—co-edited by PMs, engineers, and subject-matter experts—the loop tightens further: experts shape the signifiers and workflows, product sharpens the hypotheses, and engineering focuses on robustness and safety. The compounding return comes not from adding more features, but from aligning agent behavior with the realities of the domain.
 
 Learnings from the Cost Estimator Agent
 To ground these principles, let’s look at an agentic implementation of a cost estimation scenario I’ve worked on this summer (Full presentation at: Cost Estimator Agent.pptx)
 
-Figure 4 Integrated web UX with agent workflows
+![Figure 4: Integrated web UX with agent workflows](/images/posts/agent_prototyping/figure4.png)
 Project Context
 Customers need accurate cost estimates for budget planning and solution comparison, yet consumption-based pricing is notoriously hard to predict. We heard repeatedly from the field that this uncertainty stalls decisions and, in competitive deals, can tilt outcomes against us. Existing tools do not help enough. Web calculators feel like black boxes with coarse, inflexible inputs and little transparency. Spreadsheet models are opaque and fragile, with assumptions scattered across cells. Both often ask for inputs customers do not understand or cannot provide without heavy translation. 
 
 In other words, this is not a known unknowns problem where a general-purpose copilot can retrieve an answer upon request. Nor is it an unknown knowns problem where the customer already has a tried-and-true estimation method and we simply need to automate it. It is often an unknown unknowns problem: customers do not know what to ask, and they do not have the raw data in the needed form. The result is planning paralysis and, ultimately, stalled or lost deals.
 
 
-Figure 5 The Knowledge Quadrant mapping agent scenarios
+![Figure 5: The Knowledge Quadrant mapping agent scenarios](/images/posts/agent_prototyping/figure5.png)
 
 Design Rationale
 Designing for “unknown unknowns” required optimizing along three intertwined dimensions. First, we focused on transparency and control so that users could see the reasoning behind estimates—the assumptions, intermediate calculations, and trade-offs—and adjust inputs with confidence. Numbers without narrative do not build trust, and trust is the currency of estimation. Second, we embedded domain expertise directly in the experience. Instead of pushing the knowledge gap back to the user, the system translated familiar facts—industry patterns, ingestion profiles, retention policies—into the metrics the pricing model requires, pre-populating where possible and teaching as it went. Third, we treated estimation as a process rather than a form, and we designed for iterative refinement. The goal was not a one-shot answer but a guided conversation that converges on confidence.
@@ -42,9 +42,16 @@ At a basic level, we began with an agent side-panel, similar to a Copilot, to un
 
 
 
-Figure 6 The default pricing panel
-
-Figure 7 Adding an agent side bar
+<div style="display: flex; gap: 20px; margin: 20px 0;">
+  <div style="flex: 1;">
+    <img src="/images/posts/agent_prototyping/figure6.png" alt="Figure 6: The default pricing panel" style="width: 100%;" />
+    <p style="text-align: center; font-style: italic; margin-top: 10px;">Figure 6: The default pricing panel</p>
+  </div>
+  <div style="flex: 1;">
+    <img src="/images/posts/agent_prototyping/figure7.png" alt="Figure 7: Adding an agent side bar" style="width: 100%;" />
+    <p style="text-align: center; font-style: italic; margin-top: 10px;">Figure 7: Adding an agent side bar</p>
+  </div>
+</div>
 
 
 These insights shaped a prototype with two synchronized surfaces: a pricing panel and an agent panel kept in bidirectional sync. Edits in the graphical interface updated the conversation’s context, and the agent’s reasoning flowed back as explanation cards anchored beside the fields they affected.
@@ -55,9 +62,16 @@ When hard numbers were missing—say, daily ingestion in gigabytes—the agent a
 
 
 
-Figure 8 Bi-directional Sync, Agent Cards
-
-Figure 9 Explanation Cards
+<div style="display: flex; gap: 20px; margin: 20px 0;">
+  <div style="flex: 1;">
+    <img src="/images/posts/agent_prototyping/figure8.png" alt="Figure 8: Bi-directional Sync, Agent Cards" style="width: 100%;" />
+    <p style="text-align: center; font-style: italic; margin-top: 10px;">Figure 8: Bi-directional Sync, Agent Cards</p>
+  </div>
+  <div style="flex: 1;">
+    <img src="/images/posts/agent_prototyping/figure9.png" alt="Figure 9: Explanation Cards" style="width: 100%;" />
+    <p style="text-align: center; font-style: italic; margin-top: 10px;">Figure 9: Explanation Cards</p>
+  </div>
+</div>
 
 Evaluation and Benchmarking
 Agent platforms encourage generality, but effectiveness must be demonstrated on concrete tasks. We evaluate the experience by asking whether it completes representative estimation scenarios end to end, how its outputs compare to human-expert baselines, and how quickly it converges to a result stakeholders trust. Accuracy matters, but so do user effort and confidence. When building agentic experiences, we should track time to an acceptable estimate, the number of clarifying turns, and whether users report understanding and accepting the assumptions they carry forward. Scenario coverage also matters: behavior needs to hold not only in the “happy path,” but across brownfield and greenfield cases, high-volume and bursty workloads, and strict-retention and cost-optimized policies. When behavior degrades, it should degrade gracefully with clear explanations, ranges, or a handoff to a human expert.

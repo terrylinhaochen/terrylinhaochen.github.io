@@ -10,8 +10,8 @@ keywords: ["social listening", "customer insights", "product development", "AI a
 Why We Need More Ways to Hear Customers
 As product teams scale, direct exposure to customers narrows. We drift into a product → market pattern: build for a vocal few, iterate with them, and accumulate complexity that alienates everyone else. With agentic tools and tighter loops, we can flip to market → product: still partner closely with a subset of customers, but also listen more broadly, form grounded hypotheses from authentic needs, then decide what to build.
 
-
 ![Figure 1: What people think of Microsoft Sentinel (Based on web sources)](/images/posts/need_validation/sentinel_sentiment.png)
+
 
 The AI Way to Do It
 Traditional social listening tracks competitors and brand chatter. We extend it to enterprise product building. Beyond internal testers and formal channels, the internet already hosts rich, first-party signals about how products—ours and others—land in the wild: community forums, Q&A sites, GitHub issues, Reddit/HN threads, and support communities. If we capture, filter, and reason over that discourse responsibly, we get a truer view of pain points, expectations, and the language users actually use.
@@ -21,7 +21,6 @@ Practical workflow
 2.Open-ended exploration (for fuzzy spaces): generate sentence/thread embeddings, cluster semantically, and label themes with short, evidence-linked summaries.
 
 Every theme flows into a decision scaffold—theme → testable hypothesis → bet → telemetry → refinement—to prevent “insight theater.” Longer-term, run an always-on Customer Insight Radar that ingests external communities plus internal notes (with privacy filters), tracks theme velocity, and attaches representative quotes so PMs and engineers can feel the evidence behind the numbers. 
-
 
 ![Figure 2: Audience sentiment concerning Microsoft Sentinel](/images/posts/need_validation/audience_sentiment.png)
 
@@ -46,11 +45,6 @@ Seeing It in Action
 Example 1: The Cost Experience
 From ~700 candidate threads, we curated ~100 high-signal discussions (Reddit, HN, Quora, vendor/community forums), normalized text, embedded at sentence/thread level, clustered themes, and linked each to example quotes. One dominant signal emerged: billing complexity and transparency drive most cost-related UX pain. Users struggle to reconcile invoices to usage, discover overruns after month-end, and use calculators that ignore dynamic workloads—leading to surprise spikes. Strategically, users prefer predictable costs over merely lower costs. The advantage is cost-experience design (real-time transparency, proactive controls, behavior-aware forecasting) rather than discounts alone. Platform “flavors” vary (e.g., BigQuery pricing confusion, Snowflake credit visibility, Databricks cluster trade-offs, Splunk ingestion spikes, Redshift monitoring blind spots), but the design response is consistent: plain-English cost impact at point of action, pre-threshold alerts, safe throttles, and workload-aware forecasting.
 
-Document Link: Cost Estimation – Customer Need Analysis OnePager.docx
-
-![Figure 4: Cost Experience Analysis](/images/posts/need_validation/cost_experience_analysis.png)
-
-![Figure 5: Cost Transparency Insights](/images/posts/need_validation/cost_transparency_insights.png)
 
 Example 2: Tier-2 SOC Analyst Friction
 Across tools, five universal barriers appear:
@@ -62,12 +56,8 @@ Across tools, five universal barriers appear:
 
 Design mandate: lower technical barriers, suppress noise, preserve investigative context, and streamline common paths so analysts spend time on threats—not tool mechanics. Agentic experiences and stronger defaults move the needle fastest.
 
-Document Link: Tier 2 SOC Analyst Pain Point Analysis OnePager.docx
 
-![Figure 6: SOC Analyst Workflow Analysis](/images/posts/need_validation/soc_analyst_workflow.png)
-
-![Figure 7: Analyst Friction Points](/images/posts/need_validation/analyst_friction_points.png)
-
+![Figure 4: Crowdlistening Overview](/images/posts/need_validation/crowdlistening_overview.png)
 Crowdlistening
 
 
@@ -76,25 +66,24 @@ As shown in the cost-estimation agent presentation, Crowdlistening is a tool I b
 
 Crowdlistening's goal isn't forced consensus; it's to surface authentic needs, native customer language, and edge cases that formal channels miss. At Microsoft scale—where the user base is large and diverse—listening broadly helps us prioritize what's real over what's merely loud. (More background at Crowdlistening.com.)
 
-![Figure 8: Crowdlistening Methodology](/images/posts/need_validation/crowdlistening_methodology.png)
 
-![Figure 9: Social Listening Pipeline](/images/posts/need_validation/social_listening_pipeline.png)
 
 Since the launch of MCPs, I've experimented with exposing Crowdlistening capabilities as MCP servers—directly accessible in clients like Copilot or Claude. Features remain similar (with some visualization limits), but inputs become more nuanced and multi-turn, making the experience far more intuitive for non-technical users.
 
-Building This at Microsoft
-A Feature Proposal
+## Building This at Microsoft
+
+### A Feature Proposal
 To enable the market → product workflow (listen broadly → form grounded hypotheses → decide what to build), we can ship a Copilot MCP integration as a conversational guide for early spec writing. It would:
-Ingest customer meeting transcripts and selected online discussions,
-Run evidence-linked synthesis with clear citations to primary sources,
-Produce theme → hypothesis → bet → telemetry → refinement scaffolds that slot directly into specs.
+- Ingest customer meeting transcripts and selected online discussions,
+- Run evidence-linked synthesis with clear citations to primary sources,
+- Produce theme → hypothesis → bet → telemetry → refinement scaffolds that slot directly into specs.
 
-Governance and Guardrails
+### Governance and Guardrails
 Social data is messy and sensitive. We will:
-Apply strict sourcing, deduplication, and consent practices; avoid PII capture.
-Measure representativeness to reduce sampling bias.
-Link every synthesized claim to auditable evidence (“show your work”).
-Use MCP-based connectors so data plumbing remains inspectable and secure.
+- Apply strict sourcing, deduplication, and consent practices; avoid PII capture.
+- Measure representativeness to reduce sampling bias.
+- Link every synthesized claim to auditable evidence ("show your work").
+- Use MCP-based connectors so data plumbing remains inspectable and secure.
 
-Closing Thought
+## Closing Thought
 AI-enabled social listening doesn’t replace customer calls, design research, or telemetry; it enriches them—especially at the fuzzy front end. Used well, it helps us choose better problems, write crisper specs, and ship experiences that feel obvious in hindsight.
