@@ -65,13 +65,13 @@ Design mandate: lower technical barriers, suppress noise, preserve investigative
 
 As shown in the cost-estimation agent presentation, Crowdlistening is a tool I built to extract patterns from collective discourse without flattening individual voices. It pairs LLM reasoning with a larger-context pipeline to ingest public discussions, structure them, and tie findings back to evidence. At its core, Crowdlistening treats raw discourse as primary data, emphasizes traceability (“show your work”), and optimizes for original insight over derivative summaries.
 
-Crowdlistening's goal isn't forced consensus; it's to surface authentic needs, native customer language, and edge cases that formal channels miss. At Microsoft scale—where the user base is large and diverse—listening broadly helps us prioritize what's real over what's merely loud. (More background at Crowdlistening.com.)
+Crowdlistening's goal isn't forced consensus; it's to surface authentic needs, native customer language, and edge cases that formal channels miss. At enterprise scale—where the user base is large and diverse—listening broadly helps us prioritize what's real over what's merely loud. (More background at Crowdlistening.com.)
 
 
 
 Since the launch of MCPs, I've experimented with exposing Crowdlistening capabilities as MCP servers—directly accessible in clients like Copilot or Claude. Features remain similar (with some visualization limits), but inputs become more nuanced and multi-turn, making the experience far more intuitive for non-technical users.
 
-## Building This at Microsoft
+## Building This at Large Organizations
 
 ### A Feature Proposal
 To enable the market → product workflow (listen broadly → form grounded hypotheses → decide what to build), we can ship a Copilot MCP integration as a conversational guide for early spec writing. It would:
