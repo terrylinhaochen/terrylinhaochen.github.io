@@ -389,7 +389,7 @@
             <h2>{{ .Title }}</h2>
           </header>
           <div class="entry-content">
-            {{ .Summary | plainify | htmlUnescape }}
+            {{ if .Description }}{{ .Description | plainify | htmlUnescape | truncate 250 }}{{ if gt (len .Description) 250 }}...{{ end }}{{ else }}{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}{{ end }}
           </div>
           <footer class="entry-footer">
             <div class="post-meta">
@@ -418,7 +418,7 @@
             <h2>{{ .Title }}</h2>
           </header>
           <div class="entry-content">
-            {{ .Summary | plainify | htmlUnescape }}
+            {{ if .Description }}{{ .Description | plainify | htmlUnescape | truncate 250 }}{{ if gt (len .Description) 250 }}...{{ end }}{{ else }}{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}{{ end }}
           </div>
           <footer class="entry-footer">
             <div class="post-meta">
@@ -447,7 +447,7 @@
             <h2>{{ .Title }}</h2>
           </header>
           <div class="entry-content">
-            {{ .Summary | plainify | htmlUnescape }}
+            {{ if .Description }}{{ .Description | plainify | htmlUnescape | truncate 250 }}{{ if gt (len .Description) 250 }}...{{ end }}{{ else }}{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}{{ end }}
           </div>
           <footer class="entry-footer">
             <div class="post-meta">

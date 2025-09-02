@@ -1,5 +1,6 @@
 ---
 title: "AI Content Creation - From Generation to Synthesis"
+description: "Moving beyond basic AI summarization to knowledge liquefaction - creating truly personalized learning experiences that adapt content to individual needs, contexts, and cognitive patterns."
 date: 2024-09-20
 categories: personalized-learning
 tags: ["Product"]

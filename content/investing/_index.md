@@ -1,5 +1,6 @@
 ---
 title: "Investing"
+description: "Investment analysis and market insights covering enterprise, consumer, and alternative investment opportunities. Market psychology, behavioral finance, and long-term trend analysis."
 layout: "investing"
 ---
 

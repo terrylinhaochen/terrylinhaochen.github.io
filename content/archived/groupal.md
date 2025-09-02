@@ -1,5 +1,6 @@
 ---
 title: "Realtime Conversational Learning Aid"
+description: "AI-powered study group assistant that analyzes real-time conversations, detects misconceptions, and facilitates deeper learning through Socratic questioning and contextual knowledge retrieval."
 date: 2024-11-10
 categories: research
 tags: ["Research"]

@@ -1,5 +1,6 @@
 ---
 title: "A Practical Guide to SEO with Claude"
+description: "Comprehensive SEO implementation guide covering technical foundations, on-page optimization, modern approaches, and practical tools for improving search engine visibility."
 date: 2025-05-07
 author: Terry Chen
 tags: ["Product"]

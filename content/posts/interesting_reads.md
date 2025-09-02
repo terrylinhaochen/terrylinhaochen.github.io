@@ -1,5 +1,6 @@
 ---
 title: "Interesting Reads"
+description: "Curated collection of compelling articles and insights on AI agents, entrepreneurship, and product development. Features analysis of breakthrough AI tools and emerging trends."
 date: 2025-04-01
 author: Terry Chen
 tags: ["Entrepreneurship", "Product"]

@@ -1,5 +1,6 @@
 ---
 title: "Using LLMs as a Cover up for Poor Thinking"
+description: "How the ease of LLM-generated content masks poor reasoning and why developing domain expertise remains crucial for meaningful innovation beyond automated productivity gains."
 date: 2025-06-16
 author: Terry Chen
 tags: ["Observations"]

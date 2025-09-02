@@ -26,7 +26,7 @@
       <form id="subscribe-form">
         <div class="subscribe-input-container">
           <input type="email" id="subscriber-email" name="email" placeholder="Your email address" required>
-          <button type="submit">Subscribe</button>
+          <button type="submit">Get updates now</button>
         </div>
         <div id="form-message" class="form-message"></div>
       </form>
@@ -80,7 +80,7 @@
           .finally(function() {
             // Re-enable the button
             submitButton.disabled = false;
-            submitButton.textContent = 'Subscribe';
+            submitButton.textContent = 'Get updates now';
           });
           
           return false;
