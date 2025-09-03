@@ -1,5 +1,5 @@
 ---
-title: "The Power of Crowds: Why People Care What Others Think"
+title: "Why People Care What Others Think"
 description: "Understanding collective intelligence and social dynamics. Why crowd psychology matters for product builders and how human need for belonging drives engagement patterns."
 date: 2025-05-12
 author: Terry Chen

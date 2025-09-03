@@ -68,11 +68,3 @@ Unlike recommendation systems that rely on sparse signals, the Advocate builds a
 The most significant impact of AI lies not in replacing content creators but in transforming how knowledge flows to individuals. As the internet solved information scarcity, generative AI now solves the problem of relevance through "fluid knowledge" (知识液化) that adapts perfectly to each person's context.
 
 In this emerging paradigm, content becomes transformable across formats, users experience the feeling of being truly understood, and exploration replaces search as the primary discovery model. The User Advocate becomes a critical interface between vast information spaces and human understanding, fundamentally changing our relationship with knowledge acquisition.
-
-## Product Prototyping
-
-You notice a card about recent advancements in your industry. As you engage with this content, your User Advocate (an AI persona named Alex that you've configured to match your learning style) notices your particular interest in one aspect and suggests a tangential topic you hadn't considered - an "unknown unknown" that connects surprisingly well with a project you mentioned in a previous conversation.
-
-When you switch devices during your commute, the same content transforms seamlessly into an audio format, picking up exactly where you left off but adapting to the new context. Later, when discussing the topic with colleagues, KnowledgeStream generates a shareable summary that maintains the personalized framing that made it valuable to you, while adapting select elements to resonate with your team's shared context.
-
-The system's economics work because it's not generating everything from scratch. The core industry data, fundamental concepts, and base analysis remain consistent, while personalization happens strategically where it adds the most value. The result is information that feels bespoke without requiring the computational resources of complete regeneration.
