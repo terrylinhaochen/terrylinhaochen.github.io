@@ -75,9 +75,10 @@
   }
 
   .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
+    margin-top: 2rem;
   }
 
   .project-card {
@@ -92,6 +93,72 @@
   .project-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  /* Thesis Card Styles */
+  .thesis-card {
+    cursor: default;
+  }
+
+  .thesis-header {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .thesis-header h2 {
+    color: var(--primary);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  .thesis-description {
+    color: var(--secondary);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .thesis-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .thesis-content .post-entry {
+    background: rgba(0,0,0,0.02);
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 0;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+
+  .thesis-content .post-entry:hover {
+    background: rgba(0,0,0,0.05);
+    transform: none;
+    box-shadow: none;
+  }
+
+  .thesis-content .entry-header h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+  }
+
+  .thesis-content .entry-content {
+    font-size: 0.9rem;
+    color: var(--content);
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 2.8rem; /* 2 lines * 1.4 line-height */
   }
 
   .project-card.featured,
@@ -361,6 +428,22 @@
   .dark .find-more-posts a {
     color: #93cdff !important;
   }
+
+  /* Dark mode thesis card styles */
+  :root[data-theme="dark"] .thesis-header,
+  .dark .thesis-header {
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+  :root[data-theme="dark"] .thesis-content .post-entry,
+  .dark .thesis-content .post-entry {
+    background: rgba(255,255,255,0.05);
+  }
+
+  :root[data-theme="dark"] .thesis-content .post-entry:hover,
+  .dark .thesis-content .post-entry:hover {
+    background: rgba(255,255,255,0.1);
+  }
 </style>
 
 <div class="projects-container">
@@ -369,139 +452,180 @@
     <div class="theme-slides" id="themeSlides">
       <div class="theme-slide">
         <div class="theme-content">
-          <h2>Discovery Surfaces</h2>
-          <p>Enhancing personalization in content ecosystems and insights from large-scale social conversations.</p>
+          <h2>Crowdlisten</h2>
+          <p>Accelerating primary market research by analyzing crowd discussions.</p>
         </div>
       </div>
       <div class="theme-slide">
         <div class="theme-content">
-          <h2>Personalized Learning</h2>
-          <p>Enabling personalized learning and knowledge discovery through intelligent AI interfaces.</p>
+          <h2>Microsoft</h2>
+          <p>Understanding what types of problems demand agentic solutions, how to build them, and pitfalls to avoid.</p>
         </div>
       </div>
       <div class="theme-slide">
         <div class="theme-content">
-          <h2>Advertising Technology</h2>
-          <p>Building tools for actionable insight and creative multi-modal advertisement content generation.</p>
+          <h2>Northwestern (Design, Technology, Research)</h2>
+          <p>Improving and scaling self-regulation skill coaching through AI agent systems.</p>
         </div>
       </div>
       <div class="theme-slide">
         <div class="theme-content">
-          <h2>Future of Work</h2>
-          <p>Enabling agentic workforces and automated workflows for everyday productivity and efficiency.</p>
+          <h2>Aibrary</h2>
+          <p>Exploring knowledge representation and agentic AI for lifelong learning.</p>
+        </div>
+      </div>
+      <div class="theme-slide">
+        <div class="theme-content">
+          <h2>TikTok</h2>
+          <p>Exploring what it means to be creative amidst the wave of AI generated content.</p>
         </div>
       </div>
     </div>
     <div class="theme-nav" id="themeNav"></div>
   </section>
 
-  <!-- Discovery Surfaces -->
-  <section class="section">
-    <div class="section-header">
-      <h2 class="section-title">Discovery Surfaces</h2>
-    </div>
-    <div class="projects">
-      {{ range where (where .Site.RegularPages "Section" "product") "Params.categories" "discovery-surfaces" }}
-      <article class="post-entry">
-        {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
-        {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
-        <header class="entry-header">
-          <h2>{{ .Title }}</h2>
-        </header>
-        <div class="entry-content">
-          {{ if .Description }}{{ .Description | plainify | htmlUnescape | truncate 250 }}{{ if gt (len .Description) 250 }}...{{ end }}{{ else }}{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}{{ end }}
-        </div>
-        <footer class="entry-footer">
-          <div class="post-meta">
-            {{- partial "post_meta.html" . -}}
+  <!-- Thesis Cards Grid -->
+  <div class="projects-grid">
+    <!-- Crowdlisten Card -->
+    <div class="project-card thesis-card">
+      <div class="thesis-header">
+        <h2>Crowdlisten</h2>
+        <p class="thesis-description">Accelerating primary market research by analyzing crowd discussions.</p>
+      </div>
+      <div class="thesis-content">
+        {{ range where (where .Site.RegularPages "Section" "product") "Params.categories" "crowdlisten" }}
+        <article class="post-entry">
+          {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
+          {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
+          <header class="entry-header">
+            <h3>{{ .Title }}</h3>
+          </header>
+          <div class="entry-content">
+            {{ if .Description }}{{ .Description | plainify | htmlUnescape }}{{ else }}{{ .Summary | plainify | htmlUnescape }}{{ end }}
           </div>
-        </footer>
-        <a class="entry-link" href="{{ .Permalink }}"></a>
-      </article>
-      {{ end }}
+          <footer class="entry-footer">
+            <div class="post-meta">
+              {{- partial "post_meta.html" . -}}
+            </div>
+          </footer>
+          <a class="entry-link" href="{{ .Permalink }}"></a>
+        </article>
+        {{ end }}
+      </div>
     </div>
-  </section>
 
-  <!-- Personalized Learning -->
-  <section class="section">
-    <div class="section-header">
-      <h2 class="section-title">Personalized Learning</h2>
-    </div>
-    <div class="projects">
-      {{ range where (where .Site.RegularPages "Section" "product") "Params.categories" "personalized-learning" }}
-      <article class="post-entry">
-        {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
-        {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
-        <header class="entry-header">
-          <h2>{{ .Title }}</h2>
-        </header>
-        <div class="entry-content">
-          {{ if .Description }}{{ .Description | plainify | htmlUnescape | truncate 250 }}{{ if gt (len .Description) 250 }}...{{ end }}{{ else }}{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}{{ end }}
-        </div>
-        <footer class="entry-footer">
-          <div class="post-meta">
-            {{- partial "post_meta.html" . -}}
+    <!-- Microsoft Card -->
+    <div class="project-card thesis-card">
+      <div class="thesis-header">
+        <h2>Microsoft</h2>
+        <p class="thesis-description">Understanding what types of problems demand agentic solutions, how to build them, and pitfalls to avoid.</p>
+      </div>
+      <div class="thesis-content">
+        {{ range where (where .Site.RegularPages "Section" "product") "Params.categories" "microsoft" }}
+        <article class="post-entry">
+          {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
+          {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
+          <header class="entry-header">
+            <h3>{{ .Title }}</h3>
+          </header>
+          <div class="entry-content">
+            {{ if .Description }}{{ .Description | plainify | htmlUnescape }}{{ else }}{{ .Summary | plainify | htmlUnescape }}{{ end }}
           </div>
-        </footer>
-        <a class="entry-link" href="{{ .Permalink }}"></a>
-      </article>
-      {{ end }}
+          <footer class="entry-footer">
+            <div class="post-meta">
+              {{- partial "post_meta.html" . -}}
+            </div>
+          </footer>
+          <a class="entry-link" href="{{ .Permalink }}"></a>
+        </article>
+        {{ end }}
+      </div>
     </div>
-  </section>
 
-  <!-- Advertising Technology -->
-  <section class="section">
-    <div class="section-header">
-      <h2 class="section-title">Advertising Technology</h2>
-    </div>
-    <div class="projects">
-      {{ range where (where .Site.RegularPages "Section" "product") "Params.categories" "advertising-technology" }}
-      <article class="post-entry">
-        {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
-        {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
-        <header class="entry-header">
-          <h2>{{ .Title }}</h2>
-        </header>
-        <div class="entry-content">
-          {{ if .Description }}{{ .Description | plainify | htmlUnescape | truncate 250 }}{{ if gt (len .Description) 250 }}...{{ end }}{{ else }}{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}{{ end }}
-        </div>
-        <footer class="entry-footer">
-          <div class="post-meta">
-            {{- partial "post_meta.html" . -}}
+    <!-- Northwestern Card -->
+    <div class="project-card thesis-card">
+      <div class="thesis-header">
+        <h2>Northwestern (Design, Technology, Research)</h2>
+        <p class="thesis-description">Improving and scaling self-regulation skill coaching through AI agent systems.</p>
+      </div>
+      <div class="thesis-content">
+        {{ range where (where .Site.RegularPages "Section" "product") "Params.categories" "northwestern" }}
+        <article class="post-entry">
+          {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
+          {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
+          <header class="entry-header">
+            <h3>{{ .Title }}</h3>
+          </header>
+          <div class="entry-content">
+            {{ if .Description }}{{ .Description | plainify | htmlUnescape }}{{ else }}{{ .Summary | plainify | htmlUnescape }}{{ end }}
           </div>
-        </footer>
-        <a class="entry-link" href="{{ .Permalink }}"></a>
-      </article>
-      {{ end }}
+          <footer class="entry-footer">
+            <div class="post-meta">
+              {{- partial "post_meta.html" . -}}
+            </div>
+          </footer>
+          <a class="entry-link" href="{{ .Permalink }}"></a>
+        </article>
+        {{ end }}
+      </div>
     </div>
-  </section>
 
-  <!-- Future of Work -->
-  <section class="section">
-    <div class="section-header">
-      <h2 class="section-title">Future of Work</h2>
-    </div>
-    <div class="projects">
-      {{ range where (where .Site.RegularPages "Section" "product") "Params.categories" "future-of-work" }}
-      <article class="post-entry">
-        {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
-        {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
-        <header class="entry-header">
-          <h2>{{ .Title }}</h2>
-        </header>
-        <div class="entry-content">
-          {{ if .Description }}{{ .Description | plainify | htmlUnescape | truncate 250 }}{{ if gt (len .Description) 250 }}...{{ end }}{{ else }}{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}{{ end }}
-        </div>
-        <footer class="entry-footer">
-          <div class="post-meta">
-            {{- partial "post_meta.html" . -}}
+    <!-- Aibrary Card -->
+    <div class="project-card thesis-card">
+      <div class="thesis-header">
+        <h2>Aibrary</h2>
+        <p class="thesis-description">Exploring knowledge representation and agentic AI for lifelong learning.</p>
+      </div>
+      <div class="thesis-content">
+        {{ range where (where .Site.RegularPages "Section" "product") "Params.categories" "aibrary" }}
+        <article class="post-entry">
+          {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
+          {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
+          <header class="entry-header">
+            <h3>{{ .Title }}</h3>
+          </header>
+          <div class="entry-content">
+            {{ if .Description }}{{ .Description | plainify | htmlUnescape }}{{ else }}{{ .Summary | plainify | htmlUnescape }}{{ end }}
           </div>
-        </footer>
-        <a class="entry-link" href="{{ .Permalink }}"></a>
-      </article>
-      {{ end }}
+          <footer class="entry-footer">
+            <div class="post-meta">
+              {{- partial "post_meta.html" . -}}
+            </div>
+          </footer>
+          <a class="entry-link" href="{{ .Permalink }}"></a>
+        </article>
+        {{ end }}
+      </div>
     </div>
-  </section>
+
+    <!-- TikTok Card -->
+    <div class="project-card thesis-card">
+      <div class="thesis-header">
+        <h2>TikTok</h2>
+        <p class="thesis-description">Exploring what it means to be creative amidst the wave of AI generated content.</p>
+      </div>
+      <div class="thesis-content">
+        {{ range where (where .Site.RegularPages "Section" "product") "Params.categories" "tiktok" }}
+        <article class="post-entry">
+          {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
+          {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
+          <header class="entry-header">
+            <h3>{{ .Title }}</h3>
+          </header>
+          <div class="entry-content">
+            {{ if .Description }}{{ .Description | plainify | htmlUnescape }}{{ else }}{{ .Summary | plainify | htmlUnescape }}{{ end }}
+          </div>
+          <footer class="entry-footer">
+            <div class="post-meta">
+              {{- partial "post_meta.html" . -}}
+            </div>
+          </footer>
+          <a class="entry-link" href="{{ .Permalink }}"></a>
+        </article>
+        {{ end }}
+      </div>
+    </div>
+  </div>
 </div>
 
 <!-- Information about finding archived content -->

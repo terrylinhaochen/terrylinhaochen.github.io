@@ -1,7 +1,7 @@
 ---
 title: "Multi-modal Creative Ad Generation"
 date: 2024-05-20
-categories: advertising-technology
+categories: tiktok
 projectURL: https://ads.tiktok.com/business/copilot/standalone
 tags: ["Product"]
 company: "tiktok"

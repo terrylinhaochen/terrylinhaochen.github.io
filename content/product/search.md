@@ -1,7 +1,7 @@
 ---
 title: "Search & Discovery Features"
 date: 2025-05-15
-categories: discovery-surfaces
+categories: aibrary
 tags: ["Product"]
 company: "ouraca"
 description: "Development of an intelligent search system using AI and machine learning for enhanced content discovery. Technical implementation, user experience design, and performance optimization for content recommendation platforms."

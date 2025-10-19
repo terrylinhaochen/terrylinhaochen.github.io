@@ -1,7 +1,7 @@
 ---
 title: "Exploring Unknown Unknowns"
 date: 2024-10-05
-categories: personalized-learning
+categories: aibrary
 tags: ["Product"]
 description: "Development of intelligent knowledge interfaces that help users discover unknown unknowns. Technical implementation of AI-powered learning systems and knowledge discovery platforms."
 keywords: ["knowledge interfaces", "learning systems", "AI education", "knowledge discovery", "unknown unknowns", "learning technology", "knowledge management", "AI learning"]

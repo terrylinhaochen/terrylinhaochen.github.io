@@ -1,7 +1,7 @@
 ---
 title: "An Agentic Social Operating System"
 date: 2023-04-15
-categories: future-of-work
+categories: crowdlisten
 projectURL: crowdlistening.com
 tags: ["Entrepreneurship", "Product"]
 company: "crowdlistening"

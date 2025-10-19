@@ -1,7 +1,7 @@
 ---
 title: "Content Recommendation Systems"
 date: 2024-07-10
-categories: discovery-surfaces
+categories: aibrary
 tags: ["Product"]
 company: "ouraca"
 description: "Development of a multi-modal recommendation system for podcast content using AI and machine learning. Technical architecture, user experience design, and performance analysis for intelligent content discovery."

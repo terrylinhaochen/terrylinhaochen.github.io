@@ -78,6 +78,7 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    margin-top: 2rem;
   }
 
   .investment-card {
@@ -92,6 +93,72 @@
   .investment-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  /* Thesis Card Styles */
+  .thesis-card {
+    cursor: default;
+  }
+
+  .thesis-header {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .thesis-header h2 {
+    color: var(--primary);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  .thesis-description {
+    color: var(--secondary);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .thesis-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .thesis-content .post-entry {
+    background: rgba(0,0,0,0.02);
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 0;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+
+  .thesis-content .post-entry:hover {
+    background: rgba(0,0,0,0.05);
+    transform: none;
+    box-shadow: none;
+  }
+
+  .thesis-content .entry-header h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+  }
+
+  .thesis-content .entry-content {
+    font-size: 0.9rem;
+    color: var(--content);
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 2.8rem; /* 2 lines * 1.4 line-height */
   }
 
   .investment-card.featured,
@@ -346,6 +413,51 @@
     color: var(--primary);
     opacity: 0.8;
   }
+
+  /* Ticker styling */
+  .thesis-tickers {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    background: rgba(0,0,0,0.02);
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+
+  .thesis-tickers p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: var(--secondary);
+    font-style: italic;
+  }
+
+  .tickers {
+    font-weight: 600;
+    color: var(--primary);
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  }
+
+  /* Dark mode ticker styling */
+  :root[data-theme="dark"] .thesis-tickers,
+  .dark .thesis-tickers {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+
+  /* Dark mode thesis card styles */
+  :root[data-theme="dark"] .thesis-header,
+  .dark .thesis-header {
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+  :root[data-theme="dark"] .thesis-content .post-entry,
+  .dark .thesis-content .post-entry {
+    background: rgba(255,255,255,0.05);
+  }
+
+  :root[data-theme="dark"] .thesis-content .post-entry:hover,
+  .dark .thesis-content .post-entry:hover {
+    background: rgba(255,255,255,0.1);
+  }
 </style>
 
 <div class="investing-container">
@@ -354,112 +466,205 @@
     <div class="theme-slides" id="themeSlides">
       <div class="theme-slide">
         <div class="theme-content">
-          <h2>Enterprise</h2>
-          <p>Security technology and search advertising investments, focusing on enterprise security solutions and digital advertising platforms.</p>
+          <h2>AI Application</h2>
+          <p>Investment opportunities in AI application companies building on foundation model infrastructure (GOOGL, META, FIG, RDDT).</p>
         </div>
       </div>
       <div class="theme-slide">
         <div class="theme-content">
-          <h2>Consumer</h2>
-          <p>Education technology and productivity software solutions, focusing on learning enhancement and workflow optimization.</p>
+          <h2>Security, Data Pipelines</h2>
+          <p>Enterprise security solutions, data infrastructure, and AI-powered security operations centers (CRWD, DDOG).</p>
         </div>
       </div>
       <div class="theme-slide">
         <div class="theme-content">
-          <h2>Secondary Market</h2>
-          <p>Secondary market opportunities and liquidity solutions for private company shares and alternative investments.</p>
+          <h2>Asia Tech</h2>
+          <p>Value opportunities in structurally mispriced Asian technology companies (BABA, TCEHY, PDD, YAHOY).</p>
+        </div>
+      </div>
+      <div class="theme-slide">
+        <div class="theme-content">
+          <h2>Mobility</h2>
+          <p>Transportation, energy transition, and infrastructure transformation investments (TSLA).</p>
+        </div>
+      </div>
+      <div class="theme-slide">
+        <div class="theme-content">
+          <h2>Aesthetic Economy</h2>
+          <p>Consumer brands focused on experience, aesthetics, and lifestyle enhancement (SY, LULU).</p>
         </div>
       </div>
     </div>
     <div class="theme-nav" id="themeNav"></div>
   </section>
 
-  <!-- Enterprise Investments -->
-  <section class="section">
-    <div class="section-header">
-      <h2 class="section-title">Enterprise</h2>
-    </div>
-    <div class="investments-grid">
-      {{ range where .Site.RegularPages "Section" "investing" }}
-        {{ if in .Params.categories "Enterprise" }}
-        <article class="post-entry investment-card">
-          {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
-          {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
-          <header class="entry-header">
-            <h2>{{ .Title }}</h2>
-          </header>
-          <div class="entry-content">
-            {{ if .Description }}{{ .Description | plainify | htmlUnescape | truncate 250 }}{{ if gt (len .Description) 250 }}...{{ end }}{{ else }}{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}{{ end }}
-          </div>
-          <footer class="entry-footer">
-            <div class="post-meta">
-              {{- partial "post_meta.html" . -}}
+  <!-- Investment Thesis Cards Grid -->
+  <div class="investments-grid">
+    <!-- AI Application & Value Creation Layer Card -->
+    <div class="investment-card thesis-card">
+      <div class="thesis-header">
+        <h2>AI Application</h2>
+        <p class="thesis-description">Investment opportunities in AI application companies building on foundation model infrastructure.</p>
+        <div class="thesis-tickers">
+          <p>Representative companies: <span class="tickers">GOOGL, META, FIG, RDDT</span></p>
+        </div>
+      </div>
+      <div class="thesis-content">
+        {{ range where .Site.RegularPages "Section" "investing" }}
+          {{ if in .Params.categories "AI Application & Value Creation Layer" }}
+          <article class="post-entry">
+            {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
+            {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
+            <header class="entry-header">
+              <h3>{{ .Title }}</h3>
+            </header>
+            <div class="entry-content">
+              {{ if .Description }}{{ .Description | plainify | htmlUnescape }}{{ else }}{{ .Summary | plainify | htmlUnescape }}{{ end }}
             </div>
-          </footer>
-          <a class="entry-link" href="{{ .Permalink }}"></a>
-        </article>
+            <footer class="entry-footer">
+              <div class="post-meta">
+                {{- partial "post_meta.html" . -}}
+              </div>
+            </footer>
+            <a class="entry-link" href="{{ .Permalink }}"></a>
+          </article>
+          {{ end }}
         {{ end }}
-      {{ end }}
+      </div>
     </div>
-  </section>
 
-  <!-- Consumer Investments -->
-  <section class="section">
-    <div class="section-header">
-      <h2 class="section-title">Consumer</h2>
-    </div>
-    <div class="investments-grid">
-      {{ range where .Site.RegularPages "Section" "investing" }}
-        {{ if in .Params.categories "Consumer" }}
-        <article class="post-entry investment-card">
-          {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
-          {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
-          <header class="entry-header">
-            <h2>{{ .Title }}</h2>
-          </header>
-          <div class="entry-content">
-            {{ if .Description }}{{ .Description | plainify | htmlUnescape | truncate 250 }}{{ if gt (len .Description) 250 }}...{{ end }}{{ else }}{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}{{ end }}
-          </div>
-          <footer class="entry-footer">
-            <div class="post-meta">
-              {{- partial "post_meta.html" . -}}
+    <!-- Security, Data Pipelines & Agentic SOC Card -->
+    <div class="investment-card thesis-card">
+      <div class="thesis-header">
+        <h2>Security, Data Pipelines</h2>
+        <p class="thesis-description">Enterprise security solutions, data infrastructure, and AI-powered security operations centers.</p>
+        <div class="thesis-tickers">
+          <p>Representative companies: <span class="tickers">CRWD, DDOG</span></p>
+        </div>
+      </div>
+      <div class="thesis-content">
+        {{ range where .Site.RegularPages "Section" "investing" }}
+          {{ if in .Params.categories "Security, Data Pipelines & Agentic SOC" }}
+          <article class="post-entry">
+            {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
+            {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
+            <header class="entry-header">
+              <h3>{{ .Title }}</h3>
+            </header>
+            <div class="entry-content">
+              {{ if .Description }}{{ .Description | plainify | htmlUnescape }}{{ else }}{{ .Summary | plainify | htmlUnescape }}{{ end }}
             </div>
-          </footer>
-          <a class="entry-link" href="{{ .Permalink }}"></a>
-        </article>
+            <footer class="entry-footer">
+              <div class="post-meta">
+                {{- partial "post_meta.html" . -}}
+              </div>
+            </footer>
+            <a class="entry-link" href="{{ .Permalink }}"></a>
+          </article>
+          {{ end }}
         {{ end }}
-      {{ end }}
+      </div>
     </div>
-  </section>
 
-  <!-- Secondary Market -->
-  <section class="section">
-    <div class="section-header">
-      <h2 class="section-title">Secondary Market</h2>
-    </div>
-    <div class="investments-grid">
-      {{ range where .Site.RegularPages "Section" "investing" }}
-        {{ if in .Params.categories "Secondary Market" }}
-        <article class="post-entry investment-card">
-          {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
-          {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
-          <header class="entry-header">
-            <h2>{{ .Title }}</h2>
-          </header>
-          <div class="entry-content">
-            {{ if .Description }}{{ .Description | plainify | htmlUnescape | truncate 250 }}{{ if gt (len .Description) 250 }}...{{ end }}{{ else }}{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}{{ end }}
-          </div>
-          <footer class="entry-footer">
-            <div class="post-meta">
-              {{- partial "post_meta.html" . -}}
+    <!-- Structural Repricing of Asia Tech Card -->
+    <div class="investment-card thesis-card">
+      <div class="thesis-header">
+        <h2>Asia Tech</h2>
+        <p class="thesis-description">Value opportunities in structurally mispriced Asian technology companies.</p>
+        <div class="thesis-tickers">
+          <p>Representative companies: <span class="tickers">BABA, TCEHY, PDD, YAHOY</span></p>
+        </div>
+      </div>
+      <div class="thesis-content">
+        {{ range where .Site.RegularPages "Section" "investing" }}
+          {{ if in .Params.categories "Structural Repricing of Asia Tech" }}
+          <article class="post-entry">
+            {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
+            {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
+            <header class="entry-header">
+              <h3>{{ .Title }}</h3>
+            </header>
+            <div class="entry-content">
+              {{ if .Description }}{{ .Description | plainify | htmlUnescape }}{{ else }}{{ .Summary | plainify | htmlUnescape }}{{ end }}
             </div>
-          </footer>
-          <a class="entry-link" href="{{ .Permalink }}"></a>
-        </article>
+            <footer class="entry-footer">
+              <div class="post-meta">
+                {{- partial "post_meta.html" . -}}
+              </div>
+            </footer>
+            <a class="entry-link" href="{{ .Permalink }}"></a>
+          </article>
+          {{ end }}
         {{ end }}
-      {{ end }}
+      </div>
     </div>
-  </section>
+
+    <!-- Mobility, Energy, and New Infrastructure Card -->
+    <div class="investment-card thesis-card">
+      <div class="thesis-header">
+        <h2>Mobility</h2>
+        <p class="thesis-description">Transportation, energy transition, and infrastructure transformation investments.</p>
+        <div class="thesis-tickers">
+          <p>Representative companies: <span class="tickers">TSLA</span></p>
+        </div>
+      </div>
+      <div class="thesis-content">
+        {{ range where .Site.RegularPages "Section" "investing" }}
+          {{ if in .Params.categories "Mobility, Energy, and New Infrastructure" }}
+          <article class="post-entry">
+            {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
+            {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
+            <header class="entry-header">
+              <h3>{{ .Title }}</h3>
+            </header>
+            <div class="entry-content">
+              {{ if .Description }}{{ .Description | plainify | htmlUnescape }}{{ else }}{{ .Summary | plainify | htmlUnescape }}{{ end }}
+            </div>
+            <footer class="entry-footer">
+              <div class="post-meta">
+                {{- partial "post_meta.html" . -}}
+              </div>
+            </footer>
+            <a class="entry-link" href="{{ .Permalink }}"></a>
+          </article>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+
+    <!-- Consumer Experience & Aesthetic Economy Card -->
+    <div class="investment-card thesis-card">
+      <div class="thesis-header">
+        <h2>Aesthetic Economy</h2>
+        <p class="thesis-description">Consumer brands focused on experience, aesthetics, and lifestyle enhancement.</p>
+        <div class="thesis-tickers">
+          <p>Representative companies: <span class="tickers">SY, LULU</span></p>
+        </div>
+      </div>
+      <div class="thesis-content">
+        {{ range where .Site.RegularPages "Section" "investing" }}
+          {{ if in .Params.categories "Consumer Experience & Aesthetic Economy" }}
+          <article class="post-entry">
+            {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
+            {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
+            <header class="entry-header">
+              <h3>{{ .Title }}</h3>
+            </header>
+            <div class="entry-content">
+              {{ if .Description }}{{ .Description | plainify | htmlUnescape }}{{ else }}{{ .Summary | plainify | htmlUnescape }}{{ end }}
+            </div>
+            <footer class="entry-footer">
+              <div class="post-meta">
+                {{- partial "post_meta.html" . -}}
+              </div>
+            </footer>
+            <a class="entry-link" href="{{ .Permalink }}"></a>
+          </article>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </div>
 </div>
 
 <!-- Information about finding archived content -->

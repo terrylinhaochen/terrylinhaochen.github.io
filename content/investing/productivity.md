@@ -3,7 +3,7 @@ title: "Foundational Models"
 date: 2025-07-13
 author: Terry Chen
 tags: ["Investing"]
-categories: ["Consumer"]
+categories: ["AI Application & Value Creation Layer"]
 description: "Analysis of AI-powered productivity tools, workflow automation, and investment opportunities in the productivity software market. Exploring how AI is transforming personal and professional efficiency through intelligent automation."
 keywords: ["AI productivity", "workflow automation", "productivity tools", "AI assistants", "work automation", "productivity software", "AI efficiency", "productivity market"]
 ---
