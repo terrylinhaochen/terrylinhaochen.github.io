@@ -494,6 +494,12 @@
           <p>Consumer brands focused on experience, aesthetics, and lifestyle enhancement (SY, LULU).</p>
         </div>
       </div>
+      <div class="theme-slide">
+        <div class="theme-content">
+          <h2>Crypto</h2>
+          <p>Decentralized finance protocols, digital assets, and the infrastructure powering the crypto economy (BMNR, COIN, BTC, ETH).</p>
+        </div>
+      </div>
     </div>
     <div class="theme-nav" id="themeNav"></div>
   </section>
@@ -644,6 +650,39 @@
       <div class="thesis-content">
         {{ range where .Site.RegularPages "Section" "investing" }}
           {{ if in .Params.categories "Consumer Experience & Aesthetic Economy" }}
+          <article class="post-entry">
+            {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
+            {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
+            <header class="entry-header">
+              <h3>{{ .Title }}</h3>
+            </header>
+            <div class="entry-content">
+              {{ if .Description }}{{ .Description | plainify | htmlUnescape }}{{ else }}{{ .Summary | plainify | htmlUnescape }}{{ end }}
+            </div>
+            <footer class="entry-footer">
+              <div class="post-meta">
+                {{- partial "post_meta.html" . -}}
+              </div>
+            </footer>
+            <a class="entry-link" href="{{ .Permalink }}"></a>
+          </article>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+
+    <!-- Crypto Card -->
+    <div class="investment-card thesis-card">
+      <div class="thesis-header">
+        <h2>Crypto</h2>
+        <p class="thesis-description">Decentralized finance protocols, digital assets, and the infrastructure powering the crypto economy.</p>
+        <div class="thesis-tickers">
+          <p>Representative companies: <span class="tickers">BMNR, COIN, BTC, ETH</span></p>
+        </div>
+      </div>
+      <div class="thesis-content">
+        {{ range where .Site.RegularPages "Section" "investing" }}
+          {{ if in .Params.categories "Crypto" }}
           <article class="post-entry">
             {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
             {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
