@@ -125,7 +125,7 @@
 {{ end }}
 
 {{/* FAQ Schema for posts that contain questions */}}
-{{ if and .IsPage (or (in .Content "?") (in .Tags "FAQ")) }}
+{{ if and .IsPage (or (in .Content "?") (and .Params.tags (in .Params.tags "FAQ"))) }}
 {{ $questions := findRE "#+\\s*(.+\\?)" .Content }}
 {{ if gt (len $questions) 0 }}
 <script type="application/ld+json">
