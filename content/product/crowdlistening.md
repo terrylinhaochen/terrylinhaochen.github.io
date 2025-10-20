@@ -1,6 +1,6 @@
 ---
 title: "An Agentic Social Operating System"
-date: 2023-04-15
+date: 2025-09-15
 categories: crowdlisten
 projectURL: crowdlistening.com
 tags: ["Entrepreneurship", "Product"]

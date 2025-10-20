@@ -429,6 +429,35 @@
     color: #93cdff !important;
   }
 
+  /* Work component styling */
+  .thesis-work {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    background: rgba(0,0,0,0.02);
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+
+  .thesis-work p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: var(--secondary);
+    font-style: italic;
+  }
+
+  .work-items {
+    font-weight: 600;
+    color: var(--primary);
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  }
+
+  /* Dark mode work component styling */
+  :root[data-theme="dark"] .thesis-work,
+  .dark .thesis-work {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+
   /* Dark mode thesis card styles */
   :root[data-theme="dark"] .thesis-header,
   .dark .thesis-header {
@@ -464,7 +493,7 @@
       </div>
       <div class="theme-slide">
         <div class="theme-content">
-          <h2>Northwestern (Design, Technology, Research)</h2>
+          <h2>Northwestern (DTR)</h2>
           <p>Improving and scaling self-regulation skill coaching through AI agent systems.</p>
         </div>
       </div>
@@ -491,6 +520,9 @@
       <div class="thesis-header">
         <h2>Crowdlisten</h2>
         <p class="thesis-description">Accelerating primary market research by analyzing crowd discussions.</p>
+        <div class="thesis-work">
+          <p>Work focus: <span class="work-items">Topic modeling with weighted clustering algorithm on multimodal data</span></p>
+        </div>
       </div>
       <div class="thesis-content">
         {{ range where (where .Site.RegularPages "Section" "product") "Params.categories" "crowdlisten" }}
@@ -519,6 +551,9 @@
       <div class="thesis-header">
         <h2>Microsoft</h2>
         <p class="thesis-description">Understanding what types of problems demand agentic solutions, how to build them, and pitfalls to avoid.</p>
+        <div class="thesis-work">
+          <p>Work focus: <span class="work-items">Agent system for estimating cost with consumption based pricing</span></p>
+        </div>
       </div>
       <div class="thesis-content">
         {{ range where (where .Site.RegularPages "Section" "product") "Params.categories" "microsoft" }}
@@ -545,8 +580,11 @@
     <!-- Northwestern Card -->
     <div class="project-card thesis-card">
       <div class="thesis-header">
-        <h2>Northwestern (Design, Technology, Research)</h2>
+        <h2>Northwestern (DTR)</h2>
         <p class="thesis-description">Improving and scaling self-regulation skill coaching through AI agent systems.</p>
+        <div class="thesis-work">
+          <p>Work focus: <span class="work-items">Regulation informed learning, developing codebook enabled diagnosis and intervention system</span></p>
+        </div>
       </div>
       <div class="thesis-content">
         {{ range where (where .Site.RegularPages "Section" "product") "Params.categories" "northwestern" }}
@@ -575,6 +613,9 @@
       <div class="thesis-header">
         <h2>Aibrary</h2>
         <p class="thesis-description">Exploring knowledge representation and agentic AI for lifelong learning.</p>
+        <div class="thesis-work">
+          <p>Work focus: <span class="work-items">Search, Recommendation, and Agentic interfaces for knowledge distillation and communication</span></p>
+        </div>
       </div>
       <div class="thesis-content">
         {{ range where (where .Site.RegularPages "Section" "product") "Params.categories" "aibrary" }}
@@ -603,6 +644,9 @@
       <div class="thesis-header">
         <h2>TikTok</h2>
         <p class="thesis-description">Exploring what it means to be creative amidst the wave of AI generated content.</p>
+        <div class="thesis-work">
+          <p>Work focus: <span class="work-items">TikTok Symphony Assistant, TikTok Insight Spotlight, GenAI For Ads, AI Content Understanding</span></p>
+        </div>
       </div>
       <div class="thesis-content">
         {{ range where (where .Site.RegularPages "Section" "product") "Params.categories" "tiktok" }}
