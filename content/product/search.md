@@ -6,6 +6,7 @@ tags: ["Product"]
 company: "ouraca"
 description: "Development of an intelligent search system using AI and machine learning for enhanced content discovery. Technical implementation, user experience design, and performance optimization for content recommendation platforms."
 keywords: ["AI search", "content discovery", "machine learning", "search algorithms", "content recommendation", "semantic search", "vector search", "search UX"]
+aliases: ["/projects/search/"]
 ---
 
 An analysis of traditional search paradigms and a framework for integrating AI capabilities into content discovery platforms.

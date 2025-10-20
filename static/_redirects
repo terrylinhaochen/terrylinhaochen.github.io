@@ -1,0 +1,20 @@
+# Netlify redirects file
+# Handle www vs non-www redirects to improve SEO and prevent duplicate content issues
+
+# Redirect www to non-www (301 permanent redirect)
+https://www.chenterry.com/* https://chenterry.com/:splat 301!
+http://www.chenterry.com/* https://chenterry.com/:splat 301!
+
+# Redirect HTTP to HTTPS
+http://chenterry.com/* https://chenterry.com/:splat 301!
+
+# Handle legacy URLs and aliases
+/projects/* /product/:splat 301
+/blog/* /posts/:splat 301
+
+# 404 page fallback
+/* /404.html 404
+
+# Additional redirects for common misspellings or legacy paths
+/portfolio/* /product/:splat 301
+/work/* /product/:splat 301

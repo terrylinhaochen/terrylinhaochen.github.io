@@ -1,0 +1,63 @@
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+        
+{{- range .Data.Pages }}
+  {{- if .Permalink }}
+  <url>
+    <loc>{{ .Permalink }}</loc>
+    {{- if not .Date.IsZero }}
+    <lastmod>{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}</lastmod>
+    {{- end }}
+    {{- $changefreq := "weekly" }}
+    {{- if .IsHome }}
+      {{- $changefreq = "daily" }}
+    {{- else if eq .Section "posts" }}
+      {{- $changefreq = "monthly" }}
+    {{- else if or (eq .Section "product") (eq .Section "investing") }}
+      {{- $changefreq = "weekly" }}
+    {{- end }}
+    <changefreq>{{ $changefreq }}</changefreq>
+    
+    {{- $priority := 0.5 }}
+    {{- if .IsHome }}
+      {{- $priority = 1.0 }}
+    {{- else if eq .Section "posts" }}
+      {{- $priority = 0.8 }}
+    {{- else if or (eq .Section "product") (eq .Section "investing") }}
+      {{- $priority = 0.9 }}
+    {{- else if .IsSection }}
+      {{- $priority = 0.7 }}
+    {{- end }}
+    <priority>{{ $priority }}</priority>
+    
+    {{- with .Params.cover }}
+    <image:image>
+      <image:loc>{{ .image | absURL }}</image:loc>
+      <image:title>{{ .alt | default $.Title }}</image:title>
+    </image:image>
+    {{- end }}
+    
+    {{- if .IsPage }}
+    <news:news>
+      <news:publication>
+        <news:name>{{ $.Site.Title }}</news:name>
+        <news:language>{{ $.Site.Language.LanguageCode | default "en" }}</news:language>
+      </news:publication>
+      <news:publication_date>{{ .Date.Format "2006-01-02" }}</news:publication_date>
+      <news:title>{{ .Title }}</news:title>
+      {{- if .Params.keywords }}
+      <news:keywords>{{ delimit .Params.keywords ", " }}</news:keywords>
+      {{- else if .Params.tags }}
+      <news:keywords>{{ delimit .Params.tags ", " }}</news:keywords>
+      {{- end }}
+    </news:news>
+    {{- end }}
+  </url>
+  {{- end }}
+{{- end }}
+</urlset>

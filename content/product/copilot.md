@@ -7,6 +7,7 @@ tags: ["Product"]
 company: "tiktok"
 description: "Development of TikTok Symphony Assistant - an AI-powered creative tool for generating ad scripts and video content. Agentic workflows and interface optimization for automated creative generation."
 keywords: ["TikTok Symphony", "AI advertising", "creative generation", "ad scripts", "video ads", "agentic workflows", "creative automation", "TikTok ads"]
+aliases: ["/projects/copilot/"]
 ---
 Leverage generative AI capabilities for creative script ideation and video ad creation. (Worked on agentic workflows and interface optimization)
 https://ads.tiktok.com/business/copilot/standalone?locale=en&deviceType=pc
