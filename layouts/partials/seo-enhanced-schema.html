@@ -1,0 +1,234 @@
+{{/* Enhanced Schema.org structured data for different content types */}}
+
+{{/* Person/Author Schema for all pages */}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "{{ .Site.Params.author }}",
+  "url": "{{ .Site.BaseURL }}",
+  "sameAs": [
+    "https://www.linkedin.com/in/terry-chen-3b44911a4/",
+    "https://github.com/terrylinhaochen"
+  ],
+  "jobTitle": "AI Product Engineer",
+  "description": "AI Product Engineer and Investor exploring multi-agent systems, content understanding, and emerging technology investments",
+  "knowsAbout": [
+    "Artificial Intelligence",
+    "Product Engineering", 
+    "Investment Analysis",
+    "Multi-Agent Systems",
+    "Machine Learning",
+    "Technology Strategy"
+  ],
+  "alumniOf": "Northwestern University"
+}
+</script>
+
+{{/* Website Schema for homepage */}}
+{{ if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "{{ .Site.Title }}",
+  "url": "{{ .Site.BaseURL }}",
+  "description": "{{ .Site.Params.description }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ .Site.Params.author }}"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "{{ .Site.Params.author }}"
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "{{ .Site.BaseURL }}search/?q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "name": "Main Sections",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "CollectionPage",
+          "name": "Posts",
+          "url": "{{ .Site.BaseURL }}posts/"
+        }
+      },
+      {
+        "@type": "ListItem", 
+        "position": 2,
+        "item": {
+          "@type": "CollectionPage",
+          "name": "Product",
+          "url": "{{ .Site.BaseURL }}product/"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "CollectionPage", 
+          "name": "Investing",
+          "url": "{{ .Site.BaseURL }}investing/"
+        }
+      }
+    ]
+  }
+}
+</script>
+{{ end }}
+
+{{/* Collection Page Schema for section pages */}}
+{{ if and .IsSection (in (slice "posts" "product" "investing") .Section) }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "{{ .Title }}",
+  "url": "{{ .Permalink }}",
+  "description": "{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}",
+  "mainEntity": {
+    "@type": "ItemList",
+    "numberOfItems": {{ len .RegularPages }},
+    "itemListElement": [
+      {{ range $index, $page := .RegularPages }}
+      {{ if lt $index 10 }}{{/* Limit to first 10 items for performance */}}
+      {
+        "@type": "ListItem",
+        "position": {{ add $index 1 }},
+        "item": {
+          "@type": "{{ if eq $.Section "posts" }}BlogPosting{{ else }}Article{{ end }}",
+          "headline": "{{ $page.Title }}",
+          "url": "{{ $page.Permalink }}",
+          "datePublished": "{{ $page.Date.Format "2006-01-02T15:04:05Z07:00" }}",
+          "author": {
+            "@type": "Person",
+            "name": "{{ if $page.Params.author }}{{ $page.Params.author }}{{ else }}{{ $.Site.Params.author }}{{ end }}"
+          }
+        }
+      }{{ if not (eq $index (sub (len $.RegularPages) 1)) }},{{ end }}
+      {{ end }}
+      {{ end }}
+    ]
+  }
+}
+</script>
+{{ end }}
+
+{{/* FAQ Schema for posts that contain questions */}}
+{{ if and .IsPage (or (in .Content "?") (in .Tags "FAQ")) }}
+{{ $questions := findRE "#+\\s*(.+\\?)" .Content }}
+{{ if gt (len $questions) 0 }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {{ range $index, $question := $questions }}
+    {
+      "@type": "Question",
+      "name": "{{ $question | replaceRE "#+\\s*" "" }}",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Detailed answer available in the full article."
+      }
+    }{{ if not (eq $index (sub (len $questions) 1)) }},{{ end }}
+    {{ end }}
+  ]
+}
+</script>
+{{ end }}
+{{ end }}
+
+{{/* TechArticle Schema for product/technical posts */}}
+{{ if and .IsPage (eq .Section "product") }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "{{ .Title }}",
+  "description": "{{ if .Description }}{{ .Description }}{{ else }}{{ .Summary | plainify }}{{ end }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ if .Params.author }}{{ .Params.author }}{{ else }}{{ .Site.Params.author }}{{ end }}",
+    "url": "{{ .Site.BaseURL }}"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "{{ .Site.Params.author }}"
+  },
+  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+  "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+  "url": "{{ .Permalink }}",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ .Permalink }}"
+  },
+  "about": [
+    {{ if .Params.tags }}
+    {{ range $index, $tag := .Params.tags }}
+    {
+      "@type": "Thing",
+      "name": "{{ $tag }}"
+    }{{ if not (eq $index (sub (len $.Params.tags) 1)) }},{{ end }}
+    {{ end }}
+    {{ end }}
+  ]
+}
+</script>
+{{ end }}
+
+{{/* AnalysisNewsArticle Schema for investing posts */}}
+{{ if and .IsPage (eq .Section "investing") }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AnalysisNewsArticle",
+  "headline": "{{ .Title }}",
+  "description": "{{ if .Description }}{{ .Description }}{{ else }}{{ .Summary | plainify }}{{ end }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ if .Params.author }}{{ .Params.author }}{{ else }}{{ .Site.Params.author }}{{ end }}",
+    "url": "{{ .Site.BaseURL }}"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "{{ .Site.Params.author }}"
+  },
+  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+  "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+  "url": "{{ .Permalink }}",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ .Permalink }}"
+  },
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "Investment Analysis"
+    },
+    {
+      "@type": "Thing", 
+      "name": "Financial Markets"
+    }
+    {{ if .Params.tags }},
+    {{ range $index, $tag := .Params.tags }}
+    {
+      "@type": "Thing",
+      "name": "{{ $tag }}"
+    }{{ if not (eq $index (sub (len $.Params.tags) 1)) }},{{ end }}
+    {{ end }}
+    {{ end }}
+  ]
+}
+</script>
+{{ end }}

@@ -1,17 +1,43 @@
 {{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   {{ range .Data.Pages }}
+  {{ if not .Params.robotsNoIndex }}
   <url>
     <loc>{{ .Permalink }}</loc>
     {{ if not .Lastmod.IsZero }}
     <lastmod>{{ safeHTML ( .Lastmod.Format "2006-01-02T15:04:05-07:00" ) }}</lastmod>
+    {{ else }}
+    <lastmod>{{ safeHTML ( .Date.Format "2006-01-02T15:04:05-07:00" ) }}</lastmod>
     {{ end }}
     {{ with .Sitemap.ChangeFreq }}
     <changefreq>{{ . }}</changefreq>
+    {{ else }}
+    {{ if .IsHome }}
+    <changefreq>daily</changefreq>
+    {{ else if .IsSection }}
+    <changefreq>weekly</changefreq>
+    {{ else if .IsPage }}
+    <changefreq>monthly</changefreq>
+    {{ end }}
     {{ end }}
     {{ if ge .Sitemap.Priority 0.0 }}
     <priority>{{ .Sitemap.Priority }}</priority>
+    {{ else }}
+    {{ if .IsHome }}
+    <priority>1.0</priority>
+    {{ else if .IsSection }}
+    <priority>0.8</priority>
+    {{ else if eq .Section "posts" }}
+    <priority>0.7</priority>
+    {{ else if eq .Section "product" }}
+    <priority>0.8</priority>
+    {{ else if eq .Section "investing" }}
+    <priority>0.8</priority>
+    {{ else }}
+    <priority>0.5</priority>
+    {{ end }}
     {{ end }}
     {{ if .IsTranslated }}
       {{ range .Translations }}
@@ -27,6 +53,24 @@
                 href="{{ .Permalink }}"
                 />
     {{ end }}
+    {{/* Add image information for pages with images */}}
+    {{ with .Params.cover }}
+    <image:image>
+      <image:loc>{{ .image | absURL }}</image:loc>
+      <image:caption>{{ .alt | default $.Title }}</image:caption>
+      <image:title>{{ .alt | default $.Title }}</image:title>
+    </image:image>
+    {{ end }}
+    {{ with .Site.Params.images }}
+    {{ if $.IsHome }}
+    <image:image>
+      <image:loc>{{ index . 0 | absURL }}</image:loc>
+      <image:caption>{{ $.Site.Title }}</image:caption>
+      <image:title>{{ $.Site.Title }}</image:title>
+    </image:image>
+    {{ end }}
+    {{ end }}
   </url>
+  {{ end }}
   {{ end }}
 </urlset>

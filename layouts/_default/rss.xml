@@ -1,0 +1,65 @@
+{{- $pctx := . -}}
+{{- if .IsHome -}}{{ $pctx = .Site }}{{- end -}}
+{{- $pages := slice -}}
+{{- if or $.IsHome $.IsSection -}}
+{{- $pages = $pctx.RegularPages -}}
+{{- else -}}
+{{- $pages = $pctx.Pages -}}
+{{- end -}}
+{{- $limit := .Site.Config.Services.RSS.Limit -}}
+{{- if ge $limit 1 -}}
+{{- $pages = $pages | first $limit -}}
+{{- end -}}
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>{{ if eq  .Title  .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{.}} - {{ end }}{{ .Site.Title }}{{ end }}</title>
+    <link>{{ .Permalink }}</link>
+    <description>{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Description | default .Summary | default .Site.Params.description }}{{ end }}</description>
+    <language>{{ .Site.Language.LanguageCode | default "en-us" }}</language>
+    <managingEditor>{{ .Site.Params.author }} ({{ .Site.Params.author }})</managingEditor>
+    <webMaster>{{ .Site.Params.author }} ({{ .Site.Params.author }})</webMaster>
+    <copyright>© {{ now.Format "2006" }} {{ .Site.Params.author }}. All rights reserved.</copyright>
+    <lastBuildDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>
+    {{ with .OutputFormats.Get "RSS" }}
+        {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
+    {{ end }}
+    <generator>Hugo {{ hugo.Version }}</generator>
+    <category>Technology</category>
+    <category>AI</category>
+    <category>Product Engineering</category>
+    <category>Investment Analysis</category>
+    <image>
+      <url>{{ .Site.BaseURL }}images/profile.jpg</url>
+      <title>{{ .Site.Title }}</title>
+      <link>{{ .Site.BaseURL }}</link>
+      <description>{{ .Site.Params.description }}</description>
+      <width>144</width>
+      <height>144</height>
+    </image>
+    {{ range $pages }}
+    <item>
+      <title>{{ .Title }}</title>
+      <link>{{ .Permalink }}</link>
+      <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
+      <author>{{ if .Params.author }}{{ .Params.author }}{{ else }}{{ .Site.Params.author }}{{ end }} ({{ if .Params.author }}{{ .Params.author }}{{ else }}{{ .Site.Params.author }}{{ end }})</author>
+      <guid>{{ .Permalink }}</guid>
+      <description>{{ if .Description }}{{ .Description | html }}{{ else }}{{ .Summary | html }}{{ end }}</description>
+      {{ if .Site.Params.ShowFullTextinRSS }}
+      <content:encoded><![CDATA[{{ .Content }}]]></content:encoded>
+      {{ end }}
+      {{ range .Params.categories }}
+      <category>{{ . }}</category>
+      {{ end }}
+      {{ range .Params.tags }}
+      <category>{{ . }}</category>
+      {{ end }}
+      {{ with .Params.cover }}
+      <enclosure url="{{ .image | absURL }}" type="image/jpeg" />
+      {{ end }}
+      <dc:creator>{{ if .Params.author }}{{ .Params.author }}{{ else }}{{ .Site.Params.author }}{{ end }}</dc:creator>
+      <dc:date>{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}</dc:date>
+    </item>
+    {{ end }}
+  </channel>
+</rss>
