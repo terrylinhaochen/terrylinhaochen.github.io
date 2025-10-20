@@ -48,11 +48,23 @@
       {{ if .Site.Params.ShowFullTextinRSS }}
       <content:encoded><![CDATA[{{ .Content }}]]></content:encoded>
       {{ end }}
-      {{ range .Params.categories }}
-      <category>{{ . }}</category>
+      {{ if .Params.categories }}
+        {{ if reflect.IsSlice .Params.categories }}
+          {{ range .Params.categories }}
+          <category>{{ . }}</category>
+          {{ end }}
+        {{ else }}
+          <category>{{ .Params.categories }}</category>
+        {{ end }}
       {{ end }}
-      {{ range .Params.tags }}
-      <category>{{ . }}</category>
+      {{ if .Params.tags }}
+        {{ if reflect.IsSlice .Params.tags }}
+          {{ range .Params.tags }}
+          <category>{{ . }}</category>
+          {{ end }}
+        {{ else }}
+          <category>{{ .Params.tags }}</category>
+        {{ end }}
       {{ end }}
       {{ with .Params.cover }}
       <enclosure url="{{ .image | absURL }}" type="image/jpeg" />
