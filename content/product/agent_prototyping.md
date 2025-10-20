@@ -10,7 +10,6 @@ keywords: ["AI agents", "product development", "prototyping", "AI coding tools",
 
 There are two credible paths to building agentic experiences. The first is platform-first: stand up a unified agent framework with the core capabilities—multi-turn conversation, a knowledge base, and memory—and then layer in signifiers and affordances that fit your environment. The second is scenario-first: begin with the thinnest viable surface and add only the features that demonstrably create value beyond what ChatGPT or Copilot already provide, bringing in memory and other "platform" features only once they have earned their keep. The platform-first approach yields a consistent engineering experience and lets teams reuse prior agent work, but it risks poor agent–scenario fit. The scenario-first approach can feel messier and demands more from product managers, yet it validates real-world use cases faster. I don't claim one approach is universally better—startups and large companies face different constraints—but I do believe there is only one way to prototype: ship quickly, test explicit hypotheses, and iterate without delay.
 
-![Figure 1: Cost Estimator Agent Prototype](/images/posts/agent_prototyping/figure1.png)
 A clarifying question keeps this cadence honest: what is the minimum version of the product that lets us learn whether the solution can find product–market fit? Counterintuitively, you often do not need a working prototype to answer that. Walking through end-to-end customer scenarios frequently reveals whether a proposed feature fits existing workflows and where it will break. That said, some questions hinge on new engineering—experiences that are hard to reason about in the abstract. In those cases, the objective is not to "build the demo," but to surface and test the assumptions that matter. Each design choice should map to the outcome it seeks and to the user challenge it addresses. The simpler the stack, the more learning cycles you can run with less effort, which is the real engine of progress.
 
 
@@ -40,38 +39,11 @@ Designing for "unknown unknowns" required optimizing along three intertwined dim
 
 At a basic level, we began with an agent side-panel, similar to a Copilot, to unify product documentation, pricing schemas, and frequently asked questions. This supported conversational guidance throughout the estimation process, but it also exposed three frictions we had to solve in order to achieve fit. First, use-case discovery was weak: without strong signifiers, users did not know what to ask and often ventured beyond the agent's scope. Second, chat lacked context: humans are economical with effort, so expecting users to restate all the fields they had filled and the stage they were in created unnecessary friction. Third, people don't know what they don't know: there is a structural gap between what customers know about their business (for example, number of users, typical event patterns) and what we require to estimate costs (for example, daily gigabytes ingested). Simply asking, "How many gigabytes per day?" does not bridge that gap.
 
-
-
-<div style="display: flex; gap: 20px; margin: 20px 0;">
-  <div style="flex: 1;">
-    <img src="/images/posts/agent_prototyping/figure6.png" alt="Figure 6: The default pricing panel" style="width: 100%;" />
-    <p style="text-align: center; font-style: italic; margin-top: 10px;">Figure 6: The default pricing panel</p>
-  </div>
-  <div style="flex: 1;">
-    <img src="/images/posts/agent_prototyping/figure7.png" alt="Figure 7: Adding an agent side bar" style="width: 100%;" />
-    <p style="text-align: center; font-style: italic; margin-top: 10px;">Figure 7: Adding an agent side bar</p>
-  </div>
-</div>
-
-
 These insights shaped a prototype with two synchronized surfaces: a pricing panel and an agent panel kept in bidirectional sync. Edits in the graphical interface updated the conversation's context, and the agent's reasoning flowed back as explanation cards anchored beside the fields they affected.
 
 In brownfield scenarios, the agent could pull relevant account signals to prefill inputs and explain each value's provenance. In greenfield scenarios, the experience offered size recommendations—small, medium, large, enterprise—that users could apply with one click, each accompanied by clear rationales and editable assumptions. 
 
 When hard numbers were missing—say, daily ingestion in gigabytes—the agent asked questions users could answer about environment size, event rates, and retention needs, then converted those responses into derived estimates, showing the math and inviting adjustments. Under the hood, a focused knowledge base provided product and pricing facts, while three structured workflows—volume estimation, pricing estimation, and design recommendations—gave the conversation shape and kept it oriented toward decisions rather than dialogue for its own sake.
-
-
-
-<div style="display: flex; gap: 20px; margin: 20px 0;">
-  <div style="flex: 1;">
-    <img src="/images/posts/agent_prototyping/figure8.png" alt="Figure 8: Bi-directional Sync, Agent Cards" style="width: 100%;" />
-    <p style="text-align: center; font-style: italic; margin-top: 10px;">Figure 8: Bi-directional Sync, Agent Cards</p>
-  </div>
-  <div style="flex: 1;">
-    <img src="/images/posts/agent_prototyping/figure9.png" alt="Figure 9: Explanation Cards" style="width: 100%;" />
-    <p style="text-align: center; font-style: italic; margin-top: 10px;">Figure 9: Explanation Cards</p>
-  </div>
-</div>
 
 ## Evaluation and Benchmarking
 Agent platforms encourage generality, but effectiveness must be demonstrated on concrete tasks. We evaluate the experience by asking whether it completes representative estimation scenarios end to end, how its outputs compare to human-expert baselines, and how quickly it converges to a result stakeholders trust. Accuracy matters, but so do user effort and confidence. When building agentic experiences, we should track time to an acceptable estimate, the number of clarifying turns, and whether users report understanding and accepting the assumptions they carry forward. Scenario coverage also matters: behavior needs to hold not only in the "happy path," but across brownfield and greenfield cases, high-volume and bursty workloads, and strict-retention and cost-optimized policies. When behavior degrades, it should degrade gracefully with clear explanations, ranges, or a handoff to a human expert.
