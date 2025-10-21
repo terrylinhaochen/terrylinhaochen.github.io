@@ -97,6 +97,12 @@ enableRobotsTXT = true
     name = "github"
     url = "https://github.com/terrylinhaochen"
   [[params.socialIcons]]
+    name = "threads"
+    url = "https://www.threads.com/@terry_clh?igshid=NTc4MTIwNjQ2YQ=="
+  [[params.socialIcons]]
+    name = "twitter"
+    url = "https://x.com/227terry?s=21"
+  [[params.socialIcons]]
     name = "email"
     url = "mailto:terrychen2026@u.northwestern.edu"
 
