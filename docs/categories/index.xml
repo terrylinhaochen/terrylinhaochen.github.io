@@ -1,1 +1,240 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Categories on Terry Chen</title><link>https://chenterry.com/categories/</link><description>Recent content in Categories on Terry Chen</description><image><title>Terry Chen</title><url>https://chenterry.com/images/profile.jpg</url><link>https://chenterry.com/images/profile.jpg</link></image><generator>Hugo -- 0.136.2</generator><language>en-us</language><lastBuildDate>Fri, 21 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://chenterry.com/categories/index.xml" rel="self" type="application/rss+xml"/><item><title>Prototype</title><link>https://chenterry.com/categories/prototype/</link><pubDate>Fri, 21 Mar 2025 00:00:00 +0000</pubDate><guid>https://chenterry.com/categories/prototype/</guid><description/></item><item><title>Research</title><link>https://chenterry.com/categories/research/</link><pubDate>Sun, 10 Nov 2024 00:00:00 +0000</pubDate><guid>https://chenterry.com/categories/research/</guid><description/></item><item><title>Startup</title><link>https://chenterry.com/categories/startup/</link><pubDate>Wed, 06 Nov 2024 00:00:00 +0000</pubDate><guid>https://chenterry.com/categories/startup/</guid><description/></item><item><title>Work</title><link>https://chenterry.com/categories/work/</link><pubDate>Tue, 20 Aug 2024 00:00:00 +0000</pubDate><guid>https://chenterry.com/categories/work/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Categories - Terry Chen</title>
+    <link>https://chenterry.com/categories/</link>
+    <description>Hi, this is Terry. I&#39;m documenting my product ideas and learning notes in this blog. I&#39;m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description>
+    <language>en-us</language>
+    <managingEditor>Terry Chen (Terry Chen)</managingEditor>
+    <webMaster>Terry Chen (Terry Chen)</webMaster>
+    <copyright>© 2025 Terry Chen. All rights reserved.</copyright>
+    <lastBuildDate>Mon, 20 Oct 2025 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://chenterry.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    <generator>Hugo 0.136.2</generator>
+    <category>Technology</category>
+    <category>AI</category>
+    <category>Product Engineering</category>
+    <category>Investment Analysis</category>
+    <image>
+      <url>https://chenterry.com/images/profile.jpg</url>
+      <title>Terry Chen</title>
+      <link>https://chenterry.com/</link>
+      <description>Hi, this is Terry. I&#39;m documenting my product ideas and learning notes in this blog. I&#39;m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description>
+      <width>144</width>
+      <height>144</height>
+    </image>
+    
+    <item>
+      <title>AI Application &amp; Value Creation Layer</title>
+      <link>https://chenterry.com/categories/ai-application--value-creation-layer/</link>
+      <pubDate>Mon, 20 Oct 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/categories/ai-application--value-creation-layer/</guid>
+      <description></description>
+      
+      
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-10-20T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Crowdlisten</title>
+      <link>https://chenterry.com/categories/crowdlisten/</link>
+      <pubDate>Mon, 15 Sep 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/categories/crowdlisten/</guid>
+      <description></description>
+      
+      
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-09-15T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Microsoft</title>
+      <link>https://chenterry.com/categories/microsoft/</link>
+      <pubDate>Fri, 29 Aug 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/categories/microsoft/</guid>
+      <description></description>
+      
+      
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-08-29T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Security, Data Pipelines &amp; Agentic SOC</title>
+      <link>https://chenterry.com/categories/security-data-pipelines--agentic-soc/</link>
+      <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/categories/security-data-pipelines--agentic-soc/</guid>
+      <description></description>
+      
+      
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-07-13T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Tiktok</title>
+      <link>https://chenterry.com/categories/tiktok/</link>
+      <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/categories/tiktok/</guid>
+      <description></description>
+      
+      
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-07-13T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Aibrary</title>
+      <link>https://chenterry.com/categories/aibrary/</link>
+      <pubDate>Thu, 15 May 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/categories/aibrary/</guid>
+      <description></description>
+      
+      
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-05-15T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Prototype</title>
+      <link>https://chenterry.com/categories/prototype/</link>
+      <pubDate>Fri, 21 Mar 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/categories/prototype/</guid>
+      <description></description>
+      
+      
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-03-21T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Research</title>
+      <link>https://chenterry.com/categories/research/</link>
+      <pubDate>Mon, 10 Mar 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/categories/research/</guid>
+      <description></description>
+      
+      
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-03-10T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Consumer Experience &amp; Aesthetic Economy</title>
+      <link>https://chenterry.com/categories/consumer-experience--aesthetic-economy/</link>
+      <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/categories/consumer-experience--aesthetic-economy/</guid>
+      <description></description>
+      
+      
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-01-15T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Crypto</title>
+      <link>https://chenterry.com/categories/crypto/</link>
+      <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/categories/crypto/</guid>
+      <description></description>
+      
+      
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-01-15T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Mobility, Energy, and New Infrastructure</title>
+      <link>https://chenterry.com/categories/mobility-energy-and-new-infrastructure/</link>
+      <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/categories/mobility-energy-and-new-infrastructure/</guid>
+      <description></description>
+      
+      
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-01-15T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Structural Repricing of Asia Tech</title>
+      <link>https://chenterry.com/categories/structural-repricing-of-asia-tech/</link>
+      <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/categories/structural-repricing-of-asia-tech/</guid>
+      <description></description>
+      
+      
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-01-15T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Northwestern</title>
+      <link>https://chenterry.com/categories/northwestern/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/categories/northwestern/</guid>
+      <description></description>
+      
+      
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2024-08-15T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Startup</title>
+      <link>https://chenterry.com/categories/startup/</link>
+      <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/categories/startup/</guid>
+      <description></description>
+      
+      
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2024-03-01T00:00:00Z</dc:date>
+    </item>
+    
+  </channel>
+</rss>

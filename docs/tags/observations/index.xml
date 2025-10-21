@@ -1,11 +1,358 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Observations on Terry Chen</title><link>https://chenterry.com/tags/observations/</link><description>Recent content in Observations on Terry Chen</description><image><title>Terry Chen</title><url>https://chenterry.com/images/profile.jpg</url><link>https://chenterry.com/images/profile.jpg</link></image><generator>Hugo -- 0.136.2</generator><language>en-us</language><lastBuildDate>Sat, 19 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://chenterry.com/tags/observations/index.xml" rel="self" type="application/rss+xml"/><item><title>Product Engineers and AI Multipliers</title><link>https://chenterry.com/posts/product_engineers/</link><pubDate>Sat, 19 Apr 2025 00:00:00 +0000</pubDate><guid>https://chenterry.com/posts/product_engineers/</guid><description>&lt;p>&lt;img alt="Product Engineers" loading="lazy" src="https://chenterry.com/images/posts/product_engineer/shopify_ai.png">
-&lt;em>Tobi Lutke&amp;rsquo;s Shopify internal memo&lt;/em>&lt;/p>
-&lt;h2 id="smaller-and-more-efficient-teams">Smaller and More Efficient Teams&lt;/h2>
-&lt;p>When should we hire a person versus delegating to AI? Recently I&amp;rsquo;ve been more reluctant towards hiring people as an attempt to build mid sized projects. Yes, the codebases would get pretty big, and there&amp;rsquo;s also tasks involved that I wouldn&amp;rsquo;t say are my forte exactly. Yet, when I think about the meetings I have to sit through communicating what I want to build and just time spent doing filler work, I get more and more inclined towards just doing it myself. It&amp;rsquo;s not to say that teamwork isn&amp;rsquo;t good work, some of the most creative product ideas I&amp;rsquo;ve worked on stemmed from chats, during lunch breaks, exploring tangents, with engineers, journalists. The value of connecting the dots during these conversations is something that is difficult to replace. However, is the assumption that delegating work means higher productivity still valid? After all, the cost of execution is continually decreasing (as long as we have a clear idea of what to build).&lt;/p></description></item><item><title>The Craft of Miyazaki in an AI-Generated World</title><link>https://chenterry.com/posts/craft-miyakazi/</link><pubDate>Thu, 27 Mar 2025 00:00:00 +0000</pubDate><guid>https://chenterry.com/posts/craft-miyakazi/</guid><description>&lt;p>&lt;img alt="Dust Balls" loading="lazy" src="https://chenterry.com/images/posts/hayao-miyakazi/dust-balls.png">&lt;/p>
-&lt;p>Hayao Miyazaki is my favorite artist and director. Though I haven&amp;rsquo;t watched his entire filmography, every moment of the films I have seen captivates me. In &amp;ldquo;Spirited Away,&amp;rdquo; the dust ball creatures exemplify his artistic prowess—his ability to infuse life into the mundane through his drawings. His work is truly a labor of love. Every scene in his animated films is hand-drawn and painted with watercolor.&lt;/p>
-&lt;p>To put this dedication in perspective: a single &lt;a href="https://www.reddit.com/r/nextfuckinglevel/comments/1egdzja/this_4_second_crowd_scene_from_studio_ghiblis/">4 second crowd scene&lt;/a> from Studio Ghibli required 1 year and 3 months to complete. At 24 frames per second, that&amp;rsquo;s 96 images—roughly 6.4 images per month or one-third of an image in an eight-hour workday. At this rate, animators would spend a decade creating just 28.8 seconds of footage. This extraordinary commitment to craft has established Miyazaki&amp;rsquo;s work as iconic for decades.&lt;/p></description></item><item><title>User Needs &amp; Opportunities</title><link>https://chenterry.com/posts/user-needs/</link><pubDate>Tue, 25 Mar 2025 00:00:00 +0000</pubDate><guid>https://chenterry.com/posts/user-needs/</guid><description>&lt;p>When you want to look for user pain points, go to a bar in the middle of the week, look for the most desparate looking person and buy them a beer. They&amp;rsquo;d probably have something substantial to talk about. While I don&amp;rsquo;t usually go to bars during weekdays, I&amp;rsquo;ve found some similar ways of identifying user needs, mostly through conversations or online forums. This is a running document of the user needs or pain points that I&amp;rsquo;ve found to be interesting. Perhaps some of them will turn out to be viable business oppportunities.&lt;/p></description></item><item><title>2024 in Review</title><link>https://chenterry.com/posts/year-in-review/</link><pubDate>Tue, 31 Dec 2024 00:00:00 +0000</pubDate><guid>https://chenterry.com/posts/year-in-review/</guid><description>&lt;h2 id="year-in-review">Year in Review&lt;/h2>
-&lt;p>2024 felt to have passed by very quickly, in part because I had interesting work to occupy my time. Early in the year, after expanding Cogno and gaining some traction, work slowly stalled: though we did code and talk to customers, the cycles were far and wide in between. The focus on multi-agent systems was (as of writing this) in the right direction, yet we did not find the niche to tackle sales conversion improvement.&lt;/p></description></item><item><title>Human Quirks</title><link>https://chenterry.com/main-themes/human-quirks/</link><pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate><guid>https://chenterry.com/main-themes/human-quirks/</guid><description>Observing and understanding the strange quirks of individuals and crowds</description></item><item><title>Advice</title><link>https://chenterry.com/posts/advice/</link><pubDate>Sun, 01 Sep 2024 00:00:00 +0000</pubDate><guid>https://chenterry.com/posts/advice/</guid><description>&lt;p>Every now and then I like to read about the advice of others who&amp;rsquo;ve succeeded in their field. Here&amp;rsquo;s a few that I personally found to be enlightening and practical.&lt;/p>
-&lt;h2 id="patrick-collison">Patrick Collison:&lt;/h2>
-&lt;ul>
-&lt;li>
-&lt;p>Go deep on things. Become an expert. In particular, try to go deep on multiple things. (To varying degrees, I tried to go deep on languages, programming, writing, physics, math. Some of those stuck more than others.) One of the main things you should try to achieve by age 20 is some sense for which kinds of things you enjoy doing. This probably won&amp;rsquo;t change a lot throughout your life and so you should try to discover the shape of that space as quickly as you can.&lt;/p></description></item><item><title>Essence of Creativity</title><link>https://chenterry.com/posts/essense-of-creativity/</link><pubDate>Sun, 25 Aug 2024 00:00:00 +0000</pubDate><guid>https://chenterry.com/posts/essense-of-creativity/</guid><description>&lt;p>This week, I wanted to organize my thoughts about AI-generated content (AIGC) and creativity-related products from the past few months. Rather than focusing solely on my own projects, I&amp;rsquo;d like to explore the foundational aspects of AI product design, interspersing examples from my recent work. First, I want to emphasize that technology is merely a tool intended to better serve business needs. If it doesn&amp;rsquo;t significantly improve efficiency, traditional methods may be more appropriate. Second, despite the many imaginative possibilities of current technology, applications should ultimately be guided by user needs. Finally, AI technologies and markets evolve rapidly, making predictions difficult to validate, but exploring content understanding and generation remains an intriguing challenge.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Observations - Terry Chen</title>
+    <link>https://chenterry.com/tags/observations/</link>
+    <description>Hi, this is Terry. I&#39;m documenting my product ideas and learning notes in this blog. I&#39;m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description>
+    <language>en-us</language>
+    <managingEditor>Terry Chen (Terry Chen)</managingEditor>
+    <webMaster>Terry Chen (Terry Chen)</webMaster>
+    <copyright>© 2025 Terry Chen. All rights reserved.</copyright>
+    <lastBuildDate>Sun, 19 Oct 2025 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://chenterry.com/tags/observations/index.xml" rel="self" type="application/rss+xml" />
+    
+    <generator>Hugo 0.136.2</generator>
+    <category>Technology</category>
+    <category>AI</category>
+    <category>Product Engineering</category>
+    <category>Investment Analysis</category>
+    <image>
+      <url>https://chenterry.com/images/profile.jpg</url>
+      <title>Terry Chen</title>
+      <link>https://chenterry.com/</link>
+      <description>Hi, this is Terry. I&#39;m documenting my product ideas and learning notes in this blog. I&#39;m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description>
+      <width>144</width>
+      <height>144</height>
+    </image>
+    
+    <item>
+      <title>Built to last</title>
+      <link>https://chenterry.com/posts/built_to_last/</link>
+      <pubDate>Sun, 19 Oct 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/posts/built_to_last/</guid>
+      <description>Competitive differentiation in the age of AI - observations on building sustainable advantages when technology commoditizes quickly.</description>
+      
+      
+      
+        
+          
+          <category>Product</category>
+          
+          <category>Entrepreneurship</category>
+          
+          <category>Observations</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-10-19T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>When do I Sunset a Product?</title>
+      <link>https://chenterry.com/posts/sunsetting_projects/</link>
+      <pubDate>Sat, 12 Jul 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/posts/sunsetting_projects/</guid>
+      <description>A framework for deciding when to sunset products and projects. Understanding opportunity costs, sunk cost fallacy, and making difficult decisions about failing ventures.</description>
+      
+      
+      
+        
+          
+          <category>Observations</category>
+          
+          <category>Entrepreneurship</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-07-12T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Using LLMs as a Cover up for Poor Thinking</title>
+      <link>https://chenterry.com/posts/poor_thinking/</link>
+      <pubDate>Mon, 16 Jun 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/posts/poor_thinking/</guid>
+      <description>How the ease of LLM-generated content masks poor reasoning and why developing domain expertise remains crucial for meaningful innovation beyond automated productivity gains.</description>
+      
+      
+      
+        
+          
+          <category>Observations</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-06-16T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Questions as the New Bottleneck in Learning</title>
+      <link>https://chenterry.com/posts/asking_questions/</link>
+      <pubDate>Wed, 14 May 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/posts/asking_questions/</guid>
+      <description>In an age of infinite information, asking the right questions has become more valuable than finding answers. Exploring how question formulation is transforming education and knowledge acquisition.</description>
+      
+      
+      
+        
+          
+          <category>Observations</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-05-14T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Why People Care What Others Think</title>
+      <link>https://chenterry.com/posts/crowd_thesis/</link>
+      <pubDate>Mon, 12 May 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/posts/crowd_thesis/</guid>
+      <description>Understanding collective intelligence and social dynamics. Why crowd psychology matters for product builders and how human need for belonging drives engagement patterns.</description>
+      
+      
+      
+        
+          
+          <category>Observations</category>
+          
+          <category>Entrepreneurship</category>
+          
+          <category>Product</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-05-12T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Value Add of AI: Generation as Distribution</title>
+      <link>https://chenterry.com/posts/generation_distribution/</link>
+      <pubDate>Thu, 08 May 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/posts/generation_distribution/</guid>
+      <description>Exploring how AI&#39;s greatest value shifts from content creation to personalized distribution and synthesis. From RSS feeds to knowledge liquefaction and the future of adaptive content experiences.</description>
+      
+      
+      
+        
+          
+          <category>Observations</category>
+          
+          <category>Product</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-05-08T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Product Engineers and AI Multipliers</title>
+      <link>https://chenterry.com/posts/product_engineers/</link>
+      <pubDate>Sat, 19 Apr 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/posts/product_engineers/</guid>
+      <description>How AI is transforming product engineering teams into smaller, more efficient units. Learn why product engineers are becoming more valuable than traditional product managers in AI-first organizations.</description>
+      
+      
+      
+        
+          
+          <category>Observations</category>
+          
+          <category>Entrepreneurship</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-04-19T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>The Craft of Miyazaki in an AI-Generated World</title>
+      <link>https://chenterry.com/posts/craft_miyakazi/</link>
+      <pubDate>Thu, 27 Mar 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/posts/craft_miyakazi/</guid>
+      <description>Explore Hayao Miyazaki&#39;s meticulous animation process and its significance in today&#39;s AI-generated creative landscape. Learn about the value of craft in a world of automated content.</description>
+      
+      
+      
+        
+          
+          <category>Observations</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-03-27T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>User Needs &amp; Opportunities</title>
+      <link>https://chenterry.com/posts/user-needs/</link>
+      <pubDate>Tue, 25 Mar 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/posts/user-needs/</guid>
+      <description>Identifying real user pain points and business opportunities through conversations and online research. A collection of validated user needs that could become viable startups.</description>
+      
+      
+      
+        
+          
+          <category>Observations</category>
+          
+          <category>Entrepreneurship</category>
+          
+          <category>Product</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-03-25T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>2024 in Review</title>
+      <link>https://chenterry.com/posts/year_in_review/</link>
+      <pubDate>Tue, 31 Dec 2024 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/posts/year_in_review/</guid>
+      <description>Reflecting on 2024: lessons from founding Cogno, the importance of hands-on product development, choosing college over dropping out, and key insights for first-time founders.</description>
+      
+      
+      
+        
+          
+          <category>Observations</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2024-12-31T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Human Quirks</title>
+      <link>https://chenterry.com/main-themes/human-quirks/</link>
+      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/main-themes/human-quirks/</guid>
+      <description>Observing and understanding the strange quirks of individuals and crowds</description>
+      
+      
+        
+          
+          <category>Research</category>
+          
+        
+      
+      
+        
+          
+          <category>Observations</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2024-10-01T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>How to Work on What You Love</title>
+      <link>https://chenterry.com/posts/advice/</link>
+      <pubDate>Sun, 01 Sep 2024 00:00:00 +0000</pubDate>
+      <author>Patrick Collison, Paul Graham, etc (Patrick Collison, Paul Graham, etc)</author>
+      <guid>https://chenterry.com/posts/advice/</guid>
+      <description>Curated advice from successful entrepreneurs and thinkers on finding passion, going deep on interests, and building a meaningful career doing what you love.</description>
+      
+      
+      
+        
+          
+          <category>Observations</category>
+          
+        
+      
+      
+      <dc:creator>Patrick Collison, Paul Graham, etc</dc:creator>
+      <dc:date>2024-09-01T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Essence of Creativity: Future of Creative Work</title>
+      <link>https://chenterry.com/posts/essense_of_creativity/</link>
+      <pubDate>Sun, 25 Aug 2024 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/posts/essense_of_creativity/</guid>
+      <description>Exploring the intersection of AI-generated content and human creativity. Analysis of creative workflows, multimodal interactions, and the future of content creation in the AI era.</description>
+      
+      
+      
+        
+          
+          <category>Observations</category>
+          
+          <category>Entrepreneurship</category>
+          
+          <category>Product</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2024-08-25T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Tech History</title>
+      <link>https://chenterry.com/main-themes/tech-history/</link>
+      <pubDate>Tue, 19 Mar 2024 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/main-themes/tech-history/</guid>
+      <description>Exploring the evolution of technology and its impact on society.</description>
+      
+      
+        
+          
+          <category>Research</category>
+          
+        
+      
+      
+        
+          
+          <category>Observations</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2024-03-19T00:00:00Z</dc:date>
+    </item>
+    
+  </channel>
+</rss>

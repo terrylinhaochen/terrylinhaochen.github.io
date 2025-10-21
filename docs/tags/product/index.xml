@@ -1,30 +1,612 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Product on Terry Chen</title><link>https://chenterry.com/tags/product/</link><description>Recent content in Product on Terry Chen</description><image><title>Terry Chen</title><url>https://chenterry.com/images/profile.jpg</url><link>https://chenterry.com/images/profile.jpg</link></image><generator>Hugo -- 0.136.2</generator><language>en-us</language><lastBuildDate>Tue, 01 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://chenterry.com/tags/product/index.xml" rel="self" type="application/rss+xml"/><item><title>The Craft of Miyazaki in an AI-Generated World</title><link>https://chenterry.com/posts/interesting_reads/</link><pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate><guid>https://chenterry.com/posts/interesting_reads/</guid><description>&lt;p>Here&amp;rsquo;s a list of articles / videos / podcasts that I founding interesting. I&amp;rsquo;ve attached the original article / transcript for easy refernece as well.&lt;/p>
-&lt;h1 id="gary-tan-on-manus-the-new-general-purpose-ai-agent">Gary Tan on Manus: The New General-Purpose AI Agent&lt;/h1>
-&lt;p>Usable AI agents are finally here from deep research platforms out of OpenAI and Google to similar tools from XAI and DeepSeek. Joining the competition now is Manus, a brand new agentic AI platform that has taken the world by storm.&lt;/p></description></item><item><title>User Needs &amp; Opportunities</title><link>https://chenterry.com/posts/user-needs/</link><pubDate>Tue, 25 Mar 2025 00:00:00 +0000</pubDate><guid>https://chenterry.com/posts/user-needs/</guid><description>&lt;p>When you want to look for user pain points, go to a bar in the middle of the week, look for the most desparate looking person and buy them a beer. They&amp;rsquo;d probably have something substantial to talk about. While I don&amp;rsquo;t usually go to bars during weekdays, I&amp;rsquo;ve found some similar ways of identifying user needs, mostly through conversations or online forums. This is a running document of the user needs or pain points that I&amp;rsquo;ve found to be interesting. Perhaps some of them will turn out to be viable business oppportunities.&lt;/p></description></item><item><title>Smart Expense Tracker</title><link>https://chenterry.com/archived/smart-expense-tracker/</link><pubDate>Fri, 21 Mar 2025 00:00:00 +0000</pubDate><guid>https://chenterry.com/archived/smart-expense-tracker/</guid><description>&lt;p>The Smart Expense Tracker with Auto-Categorization is a cloud-native application built on AWS serverless architecture. The system automates the tedious process of expense tracking by leveraging AWS services to process receipts, categorize transactions, and provide financial insights. The application offers several key features including receipt scanning and data extraction using AWS Textract, automatic expense categorization with AI (using AWS Bedrock), comprehensive expense tracking, budget setting with automated alerts via SNS, and financial report generation in CSV or PDF formats.&lt;/p></description></item><item><title>Towards Differentiable Quality - Content Synthesis</title><link>https://chenterry.com/projects/personalized_content/</link><pubDate>Sat, 28 Dec 2024 00:00:00 +0000</pubDate><guid>https://chenterry.com/projects/personalized_content/</guid><description>&lt;p>Interactive chat interface with multiple AI agents, enabling dynamic conversation flows and specialized problem-solving capabilities.&lt;/p></description></item><item><title>LLM Enhanced Recommendation and Search</title><link>https://chenterry.com/projects/recommendation_searh/</link><pubDate>Sat, 21 Dec 2024 00:00:00 +0000</pubDate><guid>https://chenterry.com/projects/recommendation_searh/</guid><description>&lt;p>Content recommendation system leveraging embedding similarity for personalized content recommendation (based on profile).&lt;/p></description></item><item><title>Exploring Unknown Unknowns - Textbook Interface</title><link>https://chenterry.com/projects/learning_interface/</link><pubDate>Sat, 07 Dec 2024 00:00:00 +0000</pubDate><guid>https://chenterry.com/projects/learning_interface/</guid><description>&lt;p>Interactive learning aids for reading comprehension and engagement.&lt;/p></description></item><item><title>Crowdlistening</title><link>https://chenterry.com/projects/crowdlistening/</link><pubDate>Wed, 06 Nov 2024 00:00:00 +0000</pubDate><guid>https://chenterry.com/projects/crowdlistening/</guid><description>&lt;h2 id="inspiring-insights-amplifying-voices-crowdlisteningcom">Inspiring insights, amplifying voices. (crowdlistening.com)&lt;/h2>
-&lt;p>&lt;img alt="Webpage" loading="lazy" src="https://chenterry.com/images/posts/crowdlistening/webpage.png">&lt;/p>
-&lt;h2 id="from-content-aggregation-to-original-research">From Content Aggregation to Original Research&lt;/h2>
-&lt;p>Crowdlistening transforms large-scale social conversations into actionable insight by integrating llm reasoning with extensive model context protocol(MCP) capabilities. Our focus is not just on analyzing content at scale, but rather conducting original research directly from raw social data, generating insights that haven&amp;rsquo;t yet appeared in established reporting.&lt;/p>
-&lt;p>Deep research features provide professional-looking research reports, yet the contents are far from original, as they&amp;rsquo;re drawn from articles already indexable on the internet and paraphrased with LLMs. However, much of the internet&amp;rsquo;s data exists in unstructured formats - TikTok videos, comments, and metadata, for example. Too much content is generated every day for there to be existing articles written about it all, and when such articles are published, they&amp;rsquo;re often already outdated. When you consider multimodal data, metadata, and connections between data points, these are precisely the types of information that could yield genuinely interesting and useful insights.&lt;/p></description></item><item><title>Rapid Prototyping of LLM Enabled Webapps</title><link>https://chenterry.com/archived/prototyping/</link><pubDate>Sat, 19 Oct 2024 00:00:00 +0000</pubDate><guid>https://chenterry.com/archived/prototyping/</guid><description>&lt;h3 id="peptalk-ai-journaling-tool">PepTalk: AI Journaling Tool&lt;/h3>
-&lt;p>Realtime conversation with aI companion to help you note down feelings and journals for the day.
-(Prototype: &lt;a href="https://peptalk-navy.web.app/">https://peptalk-navy.web.app/&lt;/a>)&lt;/p>
-&lt;h3 id="what2do-ai-trip-planning-tool">What2Do: AI Trip Planning Tool&lt;/h3>
-&lt;p>A trip planning tool for generating itinearies based on article url input and content extraction.
-(Prototype: what2do-51224.web.app)&lt;/p>
-&lt;h3 id="ohours-office-hour-scheduling-tool">OHours: Office Hour Scheduling Tool&lt;/h3>
-&lt;p>An office hour queuing system to improve student experience and help TAs manage questions more efficiently.
-(Prototype: ohours.web.app/)&lt;/p>
-&lt;p>Credits: Lian Zhang, Janna Lee, Soham Shah, Jonny Kong&lt;/p></description></item><item><title>Essence of Creativity</title><link>https://chenterry.com/posts/essense-of-creativity/</link><pubDate>Sun, 25 Aug 2024 00:00:00 +0000</pubDate><guid>https://chenterry.com/posts/essense-of-creativity/</guid><description>&lt;p>This week, I wanted to organize my thoughts about AI-generated content (AIGC) and creativity-related products from the past few months. Rather than focusing solely on my own projects, I&amp;rsquo;d like to explore the foundational aspects of AI product design, interspersing examples from my recent work. First, I want to emphasize that technology is merely a tool intended to better serve business needs. If it doesn&amp;rsquo;t significantly improve efficiency, traditional methods may be more appropriate. Second, despite the many imaginative possibilities of current technology, applications should ultimately be guided by user needs. Finally, AI technologies and markets evolve rapidly, making predictions difficult to validate, but exploring content understanding and generation remains an intriguing challenge.&lt;/p></description></item><item><title>Insight Spotlight</title><link>https://chenterry.com/projects/insight/</link><pubDate>Tue, 20 Aug 2024 00:00:00 +0000</pubDate><guid>https://chenterry.com/projects/insight/</guid><description>&lt;p>Analyze thousands of tiktoks to provide actionable trends &amp;amp; insights for key agencies. (Worked on multi-modal content understanding)
-To be released on TikTok Creative Center (&lt;a href="https://ads.tiktok.com/business/creativecenter/pc/en">https://ads.tiktok.com/business/creativecenter/pc/en&lt;/a>)&lt;/p>
-&lt;p>Credits: TikTok Creative Team&lt;/p>
-&lt;h1 id="beyond-data-the-evolution-of-ai-driven-insight-products-for-content-creation">Beyond Data: The Evolution of AI-Driven Insight Products for Content Creation&lt;/h1>
-&lt;h2 id="introduction-the-shifting-landscape-of-creative-ai-tools">Introduction: The Shifting Landscape of Creative AI Tools&lt;/h2>
-&lt;p>In the rapidly evolving space of AI-driven creative tools, we&amp;rsquo;re witnessing a significant transition from general-purpose large language models to specialized, task-specific agent systems. This shift represents a fundamental change in how AI approaches creative work, particularly in advertising and marketing.&lt;/p></description></item><item><title>Symphony Assistant</title><link>https://chenterry.com/projects/copilot/</link><pubDate>Mon, 20 May 2024 00:00:00 +0000</pubDate><guid>https://chenterry.com/projects/copilot/</guid><description>&lt;p>Leverage generative AI capabilities for creative script ideation and video ad creation. (Worked on agentic workflows and interface optimization)
-&lt;a href="https://ads.tiktok.com/business/copilot/standalone?locale=en&amp;amp;deviceType=pc">https://ads.tiktok.com/business/copilot/standalone?locale=en&amp;amp;deviceType=pc&lt;/a>&lt;/p>
-&lt;p>Credits: TikTok Creative Team&lt;/p>
-&lt;h1 id="building-agentic-workflows">Building Agentic Workflows&lt;/h1>
-&lt;h2 id="from-llms-to-agents">From LLMs to Agents&lt;/h2>
-&lt;p>The transition from LLMs to Agents has become a consensus in the AI community, representing an improvement in complex task execution capabilities. However, helping users fully utilize Agent capabilities to achieve tenfold efficiency gains requires careful workflow design. These workflows aren&amp;rsquo;t merely a presentation of parallel capabilities, but seamless integrations with human-in-the-loop quality assurance. This document uses Typeface as a reference to explain why a clear primary workflow is necessary, as well as design approaches for functional extensions.&lt;/p></description></item><item><title>Marrrket: AI Listing Secondhand Marketplace</title><link>https://chenterry.com/archived/marrrket/</link><pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate><guid>https://chenterry.com/archived/marrrket/</guid><description>&lt;p>Marrrket is an AI-powered second-hand marketplace platform targeting North American university students, initially focusing on Chinese international students. The platform aims to solve the inefficiency in the current second-hand market by simplifying the listing process through AI-generated product descriptions from images and minimal user input. By reducing friction in the listing process, Marrrket will increase the overall volume of second-hand items available in the market, creating a more efficient marketplace for both buyers and sellers. The platform&amp;rsquo;s innovation centers on using artificial intelligence to dramatically lower the barrier to entry for sellers, which is hypothesized to be the primary constraint on market growth.&lt;/p></description></item><item><title>Cogno: Multi-agent AI for sales automation</title><link>https://chenterry.com/archived/cogno/</link><pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate><guid>https://chenterry.com/archived/cogno/</guid><description>&lt;p>Multi-agent system for cross boarder e-commerce sales automation. Co-founder and head of product.
-&lt;a href="https://cognogpt.com">https://cognogpt.com&lt;/a>&lt;/p>
-&lt;p>Cogno+ is dedicated to revolutionizing global e-commerce by empowering brands with AI-driven assistance that offers seamless, personalized customer experiences. Our mission is to serve as the digital bridge between brands and customers, enhancing interactions and transactions across international markets, and allowing the brand to increase conversion and upsell while reducing time and money spent on manual customer service.&lt;/p></description></item><item><title>Gauth AI</title><link>https://chenterry.com/projects/gauth/</link><pubDate>Sun, 20 Aug 2023 00:00:00 +0000</pubDate><guid>https://chenterry.com/projects/gauth/</guid><description>&lt;p>AI Homework helper with advanced reasoning and visualization for all school subjects. (Worked on LLM Reasoning)
-&lt;a href="https://www.gauthmath.com/">https://www.gauthmath.com/&lt;/a>&lt;/p>
-&lt;p>Credits: Lexi Ling, Gauth Team&lt;/p></description></item><item><title>Data Insights</title><link>https://chenterry.com/main-themes/data-insights/</link><pubDate>Fri, 18 Aug 2023 00:00:00 +0000</pubDate><guid>https://chenterry.com/main-themes/data-insights/</guid><description>Extracting meaningful insights from unstructured multi-modal content.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Product - Terry Chen</title>
+    <link>https://chenterry.com/tags/product/</link>
+    <description>Hi, this is Terry. I&#39;m documenting my product ideas and learning notes in this blog. I&#39;m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description>
+    <language>en-us</language>
+    <managingEditor>Terry Chen (Terry Chen)</managingEditor>
+    <webMaster>Terry Chen (Terry Chen)</webMaster>
+    <copyright>© 2025 Terry Chen. All rights reserved.</copyright>
+    <lastBuildDate>Sun, 19 Oct 2025 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://chenterry.com/tags/product/index.xml" rel="self" type="application/rss+xml" />
+    
+    <generator>Hugo 0.136.2</generator>
+    <category>Technology</category>
+    <category>AI</category>
+    <category>Product Engineering</category>
+    <category>Investment Analysis</category>
+    <image>
+      <url>https://chenterry.com/images/profile.jpg</url>
+      <title>Terry Chen</title>
+      <link>https://chenterry.com/</link>
+      <description>Hi, this is Terry. I&#39;m documenting my product ideas and learning notes in this blog. I&#39;m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description>
+      <width>144</width>
+      <height>144</height>
+    </image>
+    
+    <item>
+      <title>Built to last</title>
+      <link>https://chenterry.com/posts/built_to_last/</link>
+      <pubDate>Sun, 19 Oct 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/posts/built_to_last/</guid>
+      <description>Competitive differentiation in the age of AI - observations on building sustainable advantages when technology commoditizes quickly.</description>
+      
+      
+      
+        
+          
+          <category>Product</category>
+          
+          <category>Entrepreneurship</category>
+          
+          <category>Observations</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-10-19T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>An Agentic Social Operating System</title>
+      <link>https://chenterry.com/product/crowdlistening/</link>
+      <pubDate>Mon, 15 Sep 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/product/crowdlistening/</guid>
+      <description>Transform large-scale social conversations into actionable insights. Understand crowd sentiment, track emerging opinions, and identify key narratives.</description>
+      
+      
+        
+          <category>crowdlisten</category>
+        
+      
+      
+        
+          
+          <category>Entrepreneurship</category>
+          
+          <category>Product</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-09-15T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Iterating at the Pace of AI</title>
+      <link>https://chenterry.com/product/agent_prototyping/</link>
+      <pubDate>Fri, 29 Aug 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/product/agent_prototyping/</guid>
+      <description>Two approaches to building agentic experiences: platform-first vs scenario-first. How AI coding tools enable faster prototyping and cross-functional collaboration for agent product development.</description>
+      
+      
+        
+          <category>microsoft</category>
+        
+      
+      
+        
+          
+          <category>Product</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-08-29T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Social Listening for Product Insight</title>
+      <link>https://chenterry.com/posts/need_validation/</link>
+      <pubDate>Fri, 29 Aug 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/posts/need_validation/</guid>
+      <description>Using AI-powered social listening to extract authentic customer insights from online discourse. Moving from product-to-market to market-to-product development through systematic analysis of community discussions.</description>
+      
+      
+      
+        
+          
+          <category>Product</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-08-29T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Human-Mediated Agentic Workflows</title>
+      <link>https://chenterry.com/product/agentic_workforce/</link>
+      <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/product/agentic_workforce/</guid>
+      <description>Explore the emerging landscape of agentic workforces - autonomous AI agents that reason, plan, act, and learn to handle complex tasks and workflows. Analysis of key players, technology strategies, and market opportunities.</description>
+      
+      
+        
+          <category>crowdlisten</category>
+        
+      
+      
+        
+          
+          <category>Product</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-07-13T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Search Advertisement</title>
+      <link>https://chenterry.com/product/search_advertising/</link>
+      <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/product/search_advertising/</guid>
+      <description>Comprehensive analysis of AI-driven search advertising, market dynamics, and investment opportunities. Exploring how AI is revolutionizing ad targeting, optimization, and performance in the $200B+ search advertising market.</description>
+      
+      
+        
+          <category>tiktok</category>
+        
+      
+      
+        
+          
+          <category>Product</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-07-13T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Search &amp; Discovery Features</title>
+      <link>https://chenterry.com/product/search/</link>
+      <pubDate>Thu, 15 May 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/product/search/</guid>
+      <description>Development of an intelligent search system using AI and machine learning for enhanced content discovery. Technical implementation, user experience design, and performance optimization for content recommendation platforms.</description>
+      
+      
+        
+          <category>aibrary</category>
+        
+      
+      
+        
+          
+          <category>Product</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-05-15T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Why People Care What Others Think</title>
+      <link>https://chenterry.com/posts/crowd_thesis/</link>
+      <pubDate>Mon, 12 May 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/posts/crowd_thesis/</guid>
+      <description>Understanding collective intelligence and social dynamics. Why crowd psychology matters for product builders and how human need for belonging drives engagement patterns.</description>
+      
+      
+      
+        
+          
+          <category>Observations</category>
+          
+          <category>Entrepreneurship</category>
+          
+          <category>Product</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-05-12T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Value Add of AI: Generation as Distribution</title>
+      <link>https://chenterry.com/posts/generation_distribution/</link>
+      <pubDate>Thu, 08 May 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/posts/generation_distribution/</guid>
+      <description>Exploring how AI&#39;s greatest value shifts from content creation to personalized distribution and synthesis. From RSS feeds to knowledge liquefaction and the future of adaptive content experiences.</description>
+      
+      
+      
+        
+          
+          <category>Observations</category>
+          
+          <category>Product</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-05-08T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>A Practical Guide to SEO with Claude</title>
+      <link>https://chenterry.com/archived/guide_seo/</link>
+      <pubDate>Wed, 07 May 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/archived/guide_seo/</guid>
+      <description>Comprehensive SEO implementation guide covering technical foundations, on-page optimization, modern approaches, and practical tools for improving search engine visibility.</description>
+      
+      
+      
+        
+          
+          <category>Product</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-05-07T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Interesting Reads</title>
+      <link>https://chenterry.com/posts/interesting_reads/</link>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/posts/interesting_reads/</guid>
+      <description>Curated collection of compelling articles and insights on AI agents, entrepreneurship, and product development. Features analysis of breakthrough AI tools and emerging trends.</description>
+      
+      
+      
+        
+          
+          <category>Entrepreneurship</category>
+          
+          <category>Product</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-04-01T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>User Needs &amp; Opportunities</title>
+      <link>https://chenterry.com/posts/user-needs/</link>
+      <pubDate>Tue, 25 Mar 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/posts/user-needs/</guid>
+      <description>Identifying real user pain points and business opportunities through conversations and online research. A collection of validated user needs that could become viable startups.</description>
+      
+      
+      
+        
+          
+          <category>Observations</category>
+          
+          <category>Entrepreneurship</category>
+          
+          <category>Product</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-03-25T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Smart Expense Tracker</title>
+      <link>https://chenterry.com/archived/smart-expense-tracker/</link>
+      <pubDate>Fri, 21 Mar 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/archived/smart-expense-tracker/</guid>
+      <description>&lt;p&gt;The Smart Expense Tracker with Auto-Categorization is a cloud-native application built on AWS serverless architecture. The system automates the tedious process of expense tracking by leveraging AWS services to process receipts, categorize transactions, and provide financial insights. The application offers several key features including receipt scanning and data extraction using AWS Textract, automatic expense categorization with AI (using AWS Bedrock), comprehensive expense tracking, budget setting with automated alerts via SNS, and financial report generation in CSV or PDF formats.&lt;/p&gt;</description>
+      
+      
+        
+          
+          <category>prototype</category>
+          
+        
+      
+      
+        
+          
+          <category>Product</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-03-21T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Rapid Prototyping of LLM Enabled Webapps</title>
+      <link>https://chenterry.com/archived/prototyping/</link>
+      <pubDate>Sat, 19 Oct 2024 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/archived/prototyping/</guid>
+      <description>&lt;h3 id=&#34;peptalk-ai-journaling-tool&#34;&gt;PepTalk: AI Journaling Tool&lt;/h3&gt;
+&lt;p&gt;Realtime conversation with aI companion to help you note down feelings and journals for the day.
+(Prototype: &lt;a href=&#34;https://peptalk-navy.web.app/&#34;&gt;https://peptalk-navy.web.app/&lt;/a&gt;)&lt;/p&gt;
+&lt;h3 id=&#34;what2do-ai-trip-planning-tool&#34;&gt;What2Do: AI Trip Planning Tool&lt;/h3&gt;
+&lt;p&gt;A trip planning tool for generating itinearies based on article url input and content extraction.
+(Prototype: what2do-51224.web.app)&lt;/p&gt;
+&lt;h3 id=&#34;ohours-office-hour-scheduling-tool&#34;&gt;OHours: Office Hour Scheduling Tool&lt;/h3&gt;
+&lt;p&gt;An office hour queuing system to improve student experience and help TAs manage questions more efficiently.
+(Prototype: ohours.web.app/)&lt;/p&gt;
+&lt;p&gt;Credits: Lian Zhang, Janna Lee, Soham Shah, Jonny Kong&lt;/p&gt;</description>
+      
+      
+        
+          <category>prototype</category>
+        
+      
+      
+        
+          
+          <category>Product</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2024-10-19T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Exploring Unknown Unknowns</title>
+      <link>https://chenterry.com/product/learning_interface/</link>
+      <pubDate>Sat, 05 Oct 2024 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/product/learning_interface/</guid>
+      <description>Development of intelligent knowledge interfaces that help users discover unknown unknowns. Technical implementation of AI-powered learning systems and knowledge discovery platforms.</description>
+      
+      
+        
+          <category>aibrary</category>
+        
+      
+      
+        
+          
+          <category>Product</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2024-10-05T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>AI Content Creation - From Generation to Synthesis</title>
+      <link>https://chenterry.com/product/personalized_content/</link>
+      <pubDate>Fri, 20 Sep 2024 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/product/personalized_content/</guid>
+      <description>Moving beyond basic AI summarization to knowledge liquefaction - creating truly personalized learning experiences that adapt content to individual needs, contexts, and cognitive patterns.</description>
+      
+      
+        
+          <category>tiktok</category>
+        
+      
+      
+        
+          
+          <category>Product</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2024-09-20T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Essence of Creativity: Future of Creative Work</title>
+      <link>https://chenterry.com/posts/essense_of_creativity/</link>
+      <pubDate>Sun, 25 Aug 2024 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/posts/essense_of_creativity/</guid>
+      <description>Exploring the intersection of AI-generated content and human creativity. Analysis of creative workflows, multimodal interactions, and the future of content creation in the AI era.</description>
+      
+      
+      
+        
+          
+          <category>Observations</category>
+          
+          <category>Entrepreneurship</category>
+          
+          <category>Product</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2024-08-25T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Content Recommendation Systems</title>
+      <link>https://chenterry.com/product/recommendation/</link>
+      <pubDate>Wed, 10 Jul 2024 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/product/recommendation/</guid>
+      <description>Development of a multi-modal recommendation system for podcast content using AI and machine learning. Technical architecture, user experience design, and performance analysis for intelligent content discovery.</description>
+      
+      
+        
+          <category>aibrary</category>
+        
+      
+      
+        
+          
+          <category>Product</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2024-07-10T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Multi-modal Creative Ad Generation</title>
+      <link>https://chenterry.com/product/copilot/</link>
+      <pubDate>Mon, 20 May 2024 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/product/copilot/</guid>
+      <description>Development of TikTok Symphony Assistant - an AI-powered creative tool for generating ad scripts and video content. Agentic workflows and interface optimization for automated creative generation.</description>
+      
+      
+        
+          <category>tiktok</category>
+        
+      
+      
+        
+          
+          <category>Product</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2024-05-20T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Billion Parameter Trend Insight Analysis for Ads</title>
+      <link>https://chenterry.com/product/insight/</link>
+      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/product/insight/</guid>
+      <description>Development of AI-powered content analysis tools for TikTok trend identification and agency insights. Multi-modal content understanding and actionable trend analysis for advertising agencies.</description>
+      
+      
+        
+          <category>tiktok</category>
+        
+      
+      
+        
+          
+          <category>Product</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2024-04-10T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Marrrket: AI Listing Secondhand Marketplace</title>
+      <link>https://chenterry.com/archived/marrrket/</link>
+      <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/archived/marrrket/</guid>
+      <description>&lt;p&gt;Marrrket is an AI-powered second-hand marketplace platform targeting North American university students, initially focusing on Chinese international students. The platform aims to solve the inefficiency in the current second-hand market by simplifying the listing process through AI-generated product descriptions from images and minimal user input. By reducing friction in the listing process, Marrrket will increase the overall volume of second-hand items available in the market, creating a more efficient marketplace for both buyers and sellers. The platform&amp;rsquo;s innovation centers on using artificial intelligence to dramatically lower the barrier to entry for sellers, which is hypothesized to be the primary constraint on market growth.&lt;/p&gt;</description>
+      
+      
+        
+          <category>prototype</category>
+        
+      
+      
+        
+          
+          <category>Product</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2024-03-20T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Cogno: Multi-agent AI for Sales Automation</title>
+      <link>https://chenterry.com/archived/cogno/</link>
+      <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/archived/cogno/</guid>
+      <description>&lt;p&gt;Multi-agent system for cross boarder e-commerce sales automation. Co-founder and head of product.
+&lt;a href=&#34;https://cognogpt.com&#34;&gt;https://cognogpt.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Cogno+ is dedicated to revolutionizing global e-commerce by empowering brands with AI-driven assistance that offers seamless, personalized customer experiences. Our mission is to serve as the digital bridge between brands and customers, enhancing interactions and transactions across international markets, and allowing the brand to increase conversion and upsell while reducing time and money spent on manual customer service.&lt;/p&gt;</description>
+      
+      
+        
+          <category>startup</category>
+        
+      
+      
+        
+          
+          <category>Entrepreneurship</category>
+          
+          <category>Product</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2024-03-01T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Data Insights</title>
+      <link>https://chenterry.com/main-themes/data-insights/</link>
+      <pubDate>Fri, 18 Aug 2023 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/main-themes/data-insights/</guid>
+      <description>Extracting meaningful insights from unstructured multi-modal content.</description>
+      
+      
+        
+          
+          <category>Research</category>
+          
+        
+      
+      
+        
+          
+          <category>Product</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2023-08-18T00:00:00Z</dc:date>
+    </item>
+    
+  </channel>
+</rss>

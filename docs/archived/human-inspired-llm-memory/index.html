@@ -1,30 +1,971 @@
-<!doctype html><html lang=en dir=auto><head><meta name=description content="A Human-Inspired Solution to LLM Memory Enhancement Authors: Terry Chen, Kaiwen Che, Matthew Song
-Abstract Despite advances in large language model (LLM) …"><link rel=canonical href=https://chenterry.com/archived/human-inspired-llm-memory/><meta property="og:title" content="LLM Memory Consolidation and Augmentation | Terry Chen"><meta property="og:description" content="A Human-Inspired Solution to LLM Memory Enhancement Authors: Terry Chen, Kaiwen Che, Matthew Song
-Abstract Despite advances in large language model (LLM) …"><meta property="og:type" content="article"><meta property="og:url" content="https://chenterry.com/archived/human-inspired-llm-memory/"><meta property="og:image" content="https://chenterry.com/images/profile.jpg"><meta property="og:site_name" content="Terry Chen"><meta name=twitter:card content="summary_large_image"><meta name=twitter:site content="@YourTwitterHandle"><meta name=twitter:title content="LLM Memory Consolidation and Augmentation | Terry Chen"><meta name=twitter:description content="A Human-Inspired Solution to LLM Memory Enhancement Authors: Terry Chen, Kaiwen Che, Matthew Song
-Abstract Despite advances in large language model (LLM) …"><meta name=twitter:image content="https://chenterry.com/images/profile.jpg"><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>LLM Memory Consolidation and Augmentation | Terry Chen</title>
-<meta name=keywords content="Technology,Research"><meta name=author content="Terry Chen"><link rel=canonical href=https://chenterry.com/archived/human-inspired-llm-memory/><script async src="https://www.googletagmanager.com/gtag/js?id=G-M6GS8Q702L"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-M6GS8Q702L")}</script><meta property="og:url" content="https://chenterry.com/archived/human-inspired-llm-memory/"><meta property="og:site_name" content="Terry Chen"><meta property="og:title" content="LLM Memory Consolidation and Augmentation"><meta property="og:description" content="A Human-Inspired Solution to LLM Memory Enhancement Authors: Terry Chen, Kaiwen Che, Matthew Song
-Abstract Despite advances in large language model (LLM) capability, their fundamental limitation of not being able to store context over long-lived interactions persists. In this paper, a novel human-inspired three-tiered memory architecture is presented that addresses these limitations through biomimetic design principles rooted in cognitive science. Our approach aligns the human working memory with the LLM context window, episodic memory with vector stores of experience-based knowledge, and semantic memory with structured knowledge triplets."><meta property="og:locale" content="en-us"><meta property="og:type" content="article"><meta property="article:section" content="archived"><meta property="article:published_time" content="2023-08-10T00:00:00+00:00"><meta property="article:modified_time" content="2023-08-10T00:00:00+00:00"><meta property="article:tag" content="Technology"><meta property="article:tag" content="Research"><meta property="og:image" content="https://chenterry.com/images/profile.jpg"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://chenterry.com/images/profile.jpg"><meta name=twitter:title content="LLM Memory Consolidation and Augmentation"><meta name=twitter:description content="A Human-Inspired Solution to LLM Memory Enhancement
-Authors: Terry Chen, Kaiwen Che, Matthew Song
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head>
+<meta name="description" content="Authors: Terry Chen, Kaiwen Che, Matthew Song
+Abstract Despite advances in large language model (LLM) capability, their fundamental limitation of not being able …">
+<meta name="keywords" content="Research">
+<meta name="author" content="Terry Chen">
+<meta name="robots" content="index, follow">
+<meta name="language" content="en-us">
+<meta name="revisit-after" content="7 days">
+<meta name="distribution" content="global">
+<meta name="rating" content="general">
+<link rel="canonical" href="https://chenterry.com/archived/human-inspired-llm-memory/">
+
+
+<meta property="og:title" content="LLM Memory Consolidation and Augmentation | Terry Chen">
+<meta property="og:description" content="Authors: Terry Chen, Kaiwen Che, Matthew Song
+Abstract Despite advances in large language model (LLM) capability, their fundamental limitation of not being able …">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://chenterry.com/archived/human-inspired-llm-memory/">
+<meta property="og:site_name" content="Terry Chen">
+<meta property="og:locale" content="en-us">
+
+<meta property="article:published_time" content="2025-03-10T00:00:00Z">
+<meta property="article:modified_time" content="2025-03-10T00:00:00Z">
+<meta property="article:author" content="Terry Chen">
+
+
+<meta property="article:tag" content="Research">
+
+
+
+
+<meta property="article:section" content="research">
+
+
+
+
+
+<meta property="og:image" content="https://chenterry.com/images/profile.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Terry Chen">
+
+
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@terrychen_ai">
+<meta name="twitter:creator" content="@terrychen_ai">
+<meta name="twitter:title" content="LLM Memory Consolidation and Augmentation | Terry Chen">
+<meta name="twitter:description" content="Authors: Terry Chen, Kaiwen Che, Matthew Song
+Abstract Despite advances in large language model (LLM) capability, their fundamental limitation of not being able …">
+
+
+<meta name="twitter:image" content="https://chenterry.com/images/profile.jpg">
+<meta name="twitter:image:alt" content="Terry Chen">
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "LLM Memory Consolidation and Augmentation",
+  "description": "Hi, this is Terry. I\u0027m documenting my product ideas and learning notes in this blog. I\u0027m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.",
+  "url": "https:\/\/chenterry.com\/archived\/human-inspired-llm-memory\/",
+  "author": {
+    "@type": "Person",
+    "name": "Terry Chen"
+  }
+}
+</script>
+
+
+
+
+<meta name="article:published_time" content="2025-03-10T00:00:00Z">
+<meta name="article:modified_time" content="2025-03-10T00:00:00Z">
+
+
+
+<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="bingbot" content="index, follow">
+<meta name="slurp" content="index, follow">
+<meta name="duckduckbot" content="index, follow">
+
+
+
+<meta name="section" content="archived">
+
+
+<meta name="content-type" content="archived">
+
+
+
+<meta name="geo.region" content="US">
+<meta name="geo.placename" content="United States">
+<meta name="language" content="en-us">
+<meta http-equiv="content-language" content="en-us">
+
+
+
+
+
+<meta property="og:determiner" content="the">
+<meta property="og:rich_attachment" content="true">
+
+<meta property="og:updated_time" content="2025-03-10T00:00:00Z">
+
+
+
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Terry Chen">
+
+
+<meta http-equiv="Cache-Control" content="public, max-age=31536000">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https:\/\/chenterry.com\/"
+    }
+    ,
+    {
+      "@type": "ListItem", 
+      "position": 2,
+      "name": "Archived",
+      "item": "https:\/\/chenterry.com\/archived/"
+    }
+    
+    ,
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "LLM Memory Consolidation and Augmentation",
+      "item": "https:\/\/chenterry.com\/archived\/human-inspired-llm-memory\/"
+    }
+    
+  ]
+}
+</script>
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="dns-prefetch" href="//www.google-analytics.com">
+<link rel="dns-prefetch" href="//www.googletagmanager.com">
+
+
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="application-name" content="Terry Chen">
+
+
+
+<meta name="DC.type" content="Text">
+<meta name="DC.format" content="text/html">
+<meta name="DC.identifier" content="https://chenterry.com/archived/human-inspired-llm-memory/">
+<meta name="DC.date" content="2025-03-10">
+<meta name="DC.creator" content="Terry Chen">
+<meta name="DC.publisher" content="Terry Chen">
+<meta name="DC.rights" content="© 2025 Terry Chen. All rights reserved.">
+ <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow"><title>LLM Memory Consolidation and Augmentation | Terry Chen</title>
+<meta name="keywords" content="Research">
+<meta name="author" content="Terry Chen">
+<link rel="canonical" href="https://chenterry.com/archived/human-inspired-llm-memory/">
+    <link crossorigin="anonymous" href="/assets/css/stylesheet.f495fe1dedb119b2969e64d021ab84ebb9f24a5086308bd0222ece1b182e151e.css" integrity="sha256-9JX&#43;He2xGbKWnmTQIauE67nySlCGMIvQIi7OGxguFR4=" rel="preload stylesheet" as="style"><link rel="icon" href="https://chenterry.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://chenterry.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://chenterry.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://chenterry.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://chenterry.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="manifest" href="https://chenterry.com/manifest.json"><link rel="alternate" hreflang="en" href="https://chenterry.com/archived/human-inspired-llm-memory/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>😜</text></svg>" type="image/svg+xml">
+
+<link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>😜</text></svg>"> 
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-M6GS8Q702L"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-M6GS8Q702L');
+        }
+      </script><meta property="og:url" content="https://chenterry.com/archived/human-inspired-llm-memory/">
+  <meta property="og:site_name" content="Terry Chen">
+  <meta property="og:title" content="LLM Memory Consolidation and Augmentation">
+  <meta property="og:description" content="Authors: Terry Chen, Kaiwen Che, Matthew Song
+Abstract Despite advances in large language model (LLM) capability, their fundamental limitation of not being able to store context over long-lived interactions persists. In this paper, a novel human-inspired three-tiered memory architecture is presented that addresses these limitations through biomimetic design principles rooted in cognitive science. Our approach aligns the human working memory with the LLM context window, episodic memory with vector stores of experience-based knowledge, and semantic memory with structured knowledge triplets.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="archived">
+    <meta property="article:published_time" content="2025-03-10T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-03-10T00:00:00+00:00">
+    <meta property="article:tag" content="Research">
+      <meta property="og:image" content="https://chenterry.com/images/profile.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://chenterry.com/images/profile.jpg">
+<meta name="twitter:title" content="LLM Memory Consolidation and Augmentation">
+<meta name="twitter:description" content="Authors: Terry Chen, Kaiwen Che, Matthew Song
 Abstract
-Despite advances in large language model (LLM) capability, their fundamental limitation of not being able to store context over long-lived interactions persists. In this paper, a novel human-inspired three-tiered memory architecture is presented that addresses these limitations through biomimetic design principles rooted in cognitive science. Our approach aligns the human working memory with the LLM context window, episodic memory with vector stores of experience-based knowledge, and semantic memory with structured knowledge triplets."><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Archived","item":"https://chenterry.com/archived/"},{"@type":"ListItem","position":2,"name":"LLM Memory Consolidation and Augmentation","item":"https://chenterry.com/archived/human-inspired-llm-memory/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"LLM Memory Consolidation and Augmentation","name":"LLM Memory Consolidation and Augmentation","description":"A Human-Inspired Solution to LLM Memory Enhancement Authors: Terry Chen, Kaiwen Che, Matthew Song\nAbstract Despite advances in large language model (LLM) capability, their fundamental limitation of not being able to store context over long-lived interactions persists. In this paper, a novel human-inspired three-tiered memory architecture is presented that addresses these limitations through biomimetic design principles rooted in cognitive science. Our approach aligns the human working memory with the LLM context window, episodic memory with vector stores of experience-based knowledge, and semantic memory with structured knowledge triplets.\n","keywords":["Technology","Research"],"articleBody":"A Human-Inspired Solution to LLM Memory Enhancement Authors: Terry Chen, Kaiwen Che, Matthew Song\nAbstract Despite advances in large language model (LLM) capability, their fundamental limitation of not being able to store context over long-lived interactions persists. In this paper, a novel human-inspired three-tiered memory architecture is presented that addresses these limitations through biomimetic design principles rooted in cognitive science. Our approach aligns the human working memory with the LLM context window, episodic memory with vector stores of experience-based knowledge, and semantic memory with structured knowledge triplets.\nIn comparison to traditional retrieval-augmented generation (RAG) techniques that store verbatim conversation segments, our system employs strategic memory consolidation procedures, abstracting key information into structured forms. Performance testing on the GoodAI Long-Term Memory benchmark demonstrates significant improvements in performance, with our memory-augmented GPT-4o achieving scores of up to 6.9/11 over the baseline 4.6/11. Additional testing across multi-agent domains demonstrates enhanced persistence and updating capacity of information.\nIntroduction State-of-the-art large language models (LLMs) possess remarkable natural language comprehension and generation. However, their architecture imposes tight constraints on memory retention and contextual comprehension during long-term interaction. Most existing LLMs operate within fixed context windows, typically ranging from 32,000 to 128,000 tokens, which impose inherent constraints on long-term conversation and complex reasoning tasks that span multiple turns.\nThe Baddeley and Hitch (1974, 2000) model of working memory provides a robust theoretical account of human information processing. The model presents memory as a multi-component system with central executive control of information flow, an episodic buffer of assembling memories into temporary experiences, a phonological loop of controlling verbal content, and a visuospatial sketchpad of controlling visual and spatial information.\nCurrent approaches to increasing LLM memory capacity heavily rely on embedding-based retrieval-augmented generation (RAG). While the approach can deliver rapid access to previous data, it suffers greatly from issues like vector explosion, the unsustainable proliferation of embeddings as conversation history grows, lack of semantic structure in stored shreds, and difficulties in maintaining relations among relevant facts.\nThis work introduces a novel biomimetic approach to LLM memory extension that more accurately models the cognitive architecture of humans, with a three-tiered memory system distinguishing between immediate context, episodic memories, and semantic facts.\nSystem Architecture Our memory improvement system utilizes a three-layer architecture inspired by human cognition:\nWorking Memory (LLM Context Window) We divide the context window into two distinct segments:\nMulti-Round Conversation History (MCH): Stores current conversation context, maintaining flow up to a defined token limit. Retrieval Memory Buffer (RMB): Provides dedicated space for injecting remembered memories from long-term storage, maintaining a balance of short-term and long-term remembered data. Long-Term Memory Store Implemented as a vector database storing two forms of memory:\nSemantic Memory: Stores factual knowledge gained from conversations as subject-predicate-object triples with optional contextual referencing. Episodic Memory: Stores complete interaction episodes by a formal schema with contextual initialization, reasoning operations, actions taken, and outcomes observed. Memory Processes There are specialized components for:\nMemory Consolidation: Operations for capturing and formalizing memories when conversation history reaches token thresholds. Retrieval Mechanisms: Multi-step operations that determine context adequacy before retrieving from external memory stores. Memory Schema Implementation Semantic Memory Triple We implemented the semantic memory schema as a structured class:\nclass SematicMemory(BaseModel): \"\"\"Store all new facts, preferences, and relationships as triples.\"\"\" subject: str predicate: str object: str context: str | None = None Episodic Memory Schema Our episodic memory implementation stores experiential information with temporal context:\nclass EpisodicMemory(BaseModel): \"\"\"Write the episode from the perspective of the agent within it.\"\"\" observation: str = Field(..., description=\"The context and setup - what happened\") thoughts: str = Field( ..., description=\"Internal reasoning process and observations of the agent\" ) action: str = Field( ..., description=\"What was done, how, and in what format.\" ) result: str = Field( ..., description=\"Outcome and retrospective.\" ) Memory Consolidation Process The foundation of our strategy lies in sophisticated memory consolidation mechanisms that convert raw conversational information into structured memory representations:\nSemantic Memory Extraction Our semantic memory schema makes use of subject-predicate-object triples that eliminate episodic detail without sacrificing core relationships. Implementation follows several guiding principles:\nPrioritization of high-frequency accessed information Merging of redundant knowledge into a single representation Upgrading existing triples whenever new contradicting data exist Adding contextual linking to render situationally responsive retrieval Episodic Memory Extraction Episodic memory stores full interactions in an ordered schema consisting of four main components:\nObservation: Stores contextual setup and what transpired Thoughts: Stores internal reasoning processes and deliberations Action: Stores particular interventions and methodologies used Result: Stores outcome and subsequent analysis Evaluation Results GoodAI LTM benchmark results indicated radically better performance with our memory augmentation approach:\nConfiguration Score Performance Baseline GPT-4o 4.6/11 41.8% GPT-4o + Semantic Memory 6.8/11 61.8% GPT-4o + Episodic Memory 6.9/11 62.7% GPT-4o + Semantic \u0026 Episodic Memory 6.0/11 54.5% These results reflect a general 20-percentage-point improvement in memory performance by our augmentation method. The differential performance aligns with the corresponding functional roles these types of memory serve in human cognition, wherein semantic memory enables fact recall and episodic memory enables experiential reasoning.\nDiscussion and Future Work Our research provides empirical evidence for cognitive-inspired LLM memory enhancement methods. The witnessed performance improvements with three-tier memory architecture show that human memory systems offer valuable design concepts for overcoming inherent limitations in current AI designs.\nThe unexpected finding was the slightly worse performance of integrated memory systems compared to single implementations. This suggests complex interaction effects, which may mirror interference phenomena observed in human memory systems, where various forms of memory sometimes vie for mental resources.\nFuture research directions include:\nMulti-agent Memory Dynamics: How memory transfers between agents and how social dynamics influence memory consolidation Advanced Retrieval Strategies: Exploring spatially organized memory architectures and hierarchical memory organization Optimization of Consolidation Thresholds: Investigating dynamic thresholds that adapt based on conversation characteristics Conclusion This paper presents a novel biomimetic approach to enhancing LLM memory that addresses intrinsic limitations in current architectures. By embracing a three-level memory structure inspired by human cognitive processes, we demonstrate significant improvements in information retention, update, and context recall.\nAs LLMs advance towards more general intelligence capabilities, structured memory systems will play a larger role in enabling coherent long-term interactions, homogeneous knowledge states, and contextually appropriate information access. Our research contributes both pragmatic approaches for deploying this aspect of AI progress and theoretical frameworks to continue advancing this critical component of AI work.\n","wordCount":"1050","inLanguage":"en","image":"https://chenterry.com/images/profile.jpg","datePublished":"2023-08-10T00:00:00Z","dateModified":"2023-08-10T00:00:00Z","author":{"@type":"Person","name":"Terry Chen"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://chenterry.com/archived/human-inspired-llm-memory/"},"publisher":{"@type":"Organization","name":"Terry Chen","logo":{"@type":"ImageObject","url":"https://chenterry.com/favicon.ico"}}}</script></head><body id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://chenterry.com/ accesskey=h title="Terry Chen (Alt + H)">Terry Chen</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme"><svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=/posts/ title=Posts><span>Posts</span></a></li><li><a href=/projects/ title=Projects><span>Projects</span></a></li><li><a href=/archived/ title=Archived><span class=active>Archived</span></a></li><li><a href=/search/ title=Search accesskey=/><span>Search</span></a></li><li><a href=/about/ title=About><span>About</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><h1 class="post-title entry-hint-parent">LLM Memory Consolidation and Augmentation</h1><div class=post-meta>Date: <span title='2023-08-10 00:00:00 +0000 UTC'>August 10, 2023</span> | Author: Terry Chen</div></header><div class=post-content><h1 id=a-human-inspired-solution-to-llm-memory-enhancement>A Human-Inspired Solution to LLM Memory Enhancement<a hidden class=anchor aria-hidden=true href=#a-human-inspired-solution-to-llm-memory-enhancement>#</a></h1><p><strong>Authors: Terry Chen, Kaiwen Che, Matthew Song</strong></p><h2 id=abstract>Abstract<a hidden class=anchor aria-hidden=true href=#abstract>#</a></h2><p>Despite advances in large language model (LLM) capability, their fundamental limitation of not being able to store context over long-lived interactions persists. In this paper, a novel human-inspired three-tiered memory architecture is presented that addresses these limitations through biomimetic design principles rooted in cognitive science. Our approach aligns the human working memory with the LLM context window, episodic memory with vector stores of experience-based knowledge, and semantic memory with structured knowledge triplets.</p><p>In comparison to traditional retrieval-augmented generation (RAG) techniques that store verbatim conversation segments, our system employs strategic memory consolidation procedures, abstracting key information into structured forms. Performance testing on the GoodAI Long-Term Memory benchmark demonstrates significant improvements in performance, with our memory-augmented GPT-4o achieving scores of up to 6.9/11 over the baseline 4.6/11. Additional testing across multi-agent domains demonstrates enhanced persistence and updating capacity of information.</p><h2 id=introduction>Introduction<a hidden class=anchor aria-hidden=true href=#introduction>#</a></h2><p>State-of-the-art large language models (LLMs) possess remarkable natural language comprehension and generation. However, their architecture imposes tight constraints on memory retention and contextual comprehension during long-term interaction. Most existing LLMs operate within fixed context windows, typically ranging from 32,000 to 128,000 tokens, which impose inherent constraints on long-term conversation and complex reasoning tasks that span multiple turns.</p><p>The Baddeley and Hitch (1974, 2000) model of working memory provides a robust theoretical account of human information processing. The model presents memory as a multi-component system with central executive control of information flow, an episodic buffer of assembling memories into temporary experiences, a phonological loop of controlling verbal content, and a visuospatial sketchpad of controlling visual and spatial information.</p><p>Current approaches to increasing LLM memory capacity heavily rely on embedding-based retrieval-augmented generation (RAG). While the approach can deliver rapid access to previous data, it suffers greatly from issues like vector explosion, the unsustainable proliferation of embeddings as conversation history grows, lack of semantic structure in stored shreds, and difficulties in maintaining relations among relevant facts.</p><p>This work introduces a novel biomimetic approach to LLM memory extension that more accurately models the cognitive architecture of humans, with a three-tiered memory system distinguishing between immediate context, episodic memories, and semantic facts.</p><h2 id=system-architecture>System Architecture<a hidden class=anchor aria-hidden=true href=#system-architecture>#</a></h2><p>Our memory improvement system utilizes a three-layer architecture inspired by human cognition:</p><p><img alt="Three-Tiered Memory Architecture" loading=lazy src=/images/projects/human-inspired-llm-memory/memory-architecture.png></p><h3 id=working-memory-llm-context-window>Working Memory (LLM Context Window)<a hidden class=anchor aria-hidden=true href=#working-memory-llm-context-window>#</a></h3><p>We divide the context window into two distinct segments:</p><ul><li><strong>Multi-Round Conversation History (MCH)</strong>: Stores current conversation context, maintaining flow up to a defined token limit.</li><li><strong>Retrieval Memory Buffer (RMB)</strong>: Provides dedicated space for injecting remembered memories from long-term storage, maintaining a balance of short-term and long-term remembered data.</li></ul><h3 id=long-term-memory-store>Long-Term Memory Store<a hidden class=anchor aria-hidden=true href=#long-term-memory-store>#</a></h3><p>Implemented as a vector database storing two forms of memory:</p><ul><li><strong>Semantic Memory</strong>: Stores factual knowledge gained from conversations as subject-predicate-object triples with optional contextual referencing.</li><li><strong>Episodic Memory</strong>: Stores complete interaction episodes by a formal schema with contextual initialization, reasoning operations, actions taken, and outcomes observed.</li></ul><h3 id=memory-processes>Memory Processes<a hidden class=anchor aria-hidden=true href=#memory-processes>#</a></h3><p>There are specialized components for:</p><ul><li><strong>Memory Consolidation</strong>: Operations for capturing and formalizing memories when conversation history reaches token thresholds.</li><li><strong>Retrieval Mechanisms</strong>: Multi-step operations that determine context adequacy before retrieving from external memory stores.</li></ul><h2 id=memory-schema-implementation>Memory Schema Implementation<a hidden class=anchor aria-hidden=true href=#memory-schema-implementation>#</a></h2><h3 id=semantic-memory-triple>Semantic Memory Triple<a hidden class=anchor aria-hidden=true href=#semantic-memory-triple>#</a></h3><p>We implemented the semantic memory schema as a structured class:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>SematicMemory</span>(BaseModel):
-</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;&#34;&#34;Store all new facts, preferences, and relationships as triples.&#34;&#34;&#34;</span>
-</span></span><span style=display:flex><span>    subject: str
-</span></span><span style=display:flex><span>    predicate: str
-</span></span><span style=display:flex><span>    object: str
-</span></span><span style=display:flex><span>    context: str <span style=color:#f92672>|</span> <span style=color:#66d9ef>None</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>None</span>
-</span></span></code></pre></div><h3 id=episodic-memory-schema>Episodic Memory Schema<a hidden class=anchor aria-hidden=true href=#episodic-memory-schema>#</a></h3><p>Our episodic memory implementation stores experiential information with temporal context:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>EpisodicMemory</span>(BaseModel):
-</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;&#34;&#34;Write the episode from the perspective of the agent within it.&#34;&#34;&#34;</span>
-</span></span><span style=display:flex><span>    observation: str <span style=color:#f92672>=</span> Field(<span style=color:#f92672>...</span>, description<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;The context and setup - what happened&#34;</span>)
-</span></span><span style=display:flex><span>    thoughts: str <span style=color:#f92672>=</span> Field(
-</span></span><span style=display:flex><span>        <span style=color:#f92672>...</span>,
-</span></span><span style=display:flex><span>        description<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;Internal reasoning process and observations of the agent&#34;</span>
-</span></span><span style=display:flex><span>    )
-</span></span><span style=display:flex><span>    action: str <span style=color:#f92672>=</span> Field(
-</span></span><span style=display:flex><span>        <span style=color:#f92672>...</span>,
-</span></span><span style=display:flex><span>        description<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;What was done, how, and in what format.&#34;</span>
-</span></span><span style=display:flex><span>    )
-</span></span><span style=display:flex><span>    result: str <span style=color:#f92672>=</span> Field(
-</span></span><span style=display:flex><span>        <span style=color:#f92672>...</span>,
-</span></span><span style=display:flex><span>        description<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;Outcome and retrospective.&#34;</span>
-</span></span><span style=display:flex><span>    )
-</span></span></code></pre></div><h2 id=memory-consolidation-process>Memory Consolidation Process<a hidden class=anchor aria-hidden=true href=#memory-consolidation-process>#</a></h2><p>The foundation of our strategy lies in sophisticated memory consolidation mechanisms that convert raw conversational information into structured memory representations:</p><h3 id=semantic-memory-extraction>Semantic Memory Extraction<a hidden class=anchor aria-hidden=true href=#semantic-memory-extraction>#</a></h3><p>Our semantic memory schema makes use of subject-predicate-object triples that eliminate episodic detail without sacrificing core relationships. Implementation follows several guiding principles:</p><ul><li>Prioritization of high-frequency accessed information</li><li>Merging of redundant knowledge into a single representation</li><li>Upgrading existing triples whenever new contradicting data exist</li><li>Adding contextual linking to render situationally responsive retrieval</li></ul><h3 id=episodic-memory-extraction>Episodic Memory Extraction<a hidden class=anchor aria-hidden=true href=#episodic-memory-extraction>#</a></h3><p>Episodic memory stores full interactions in an ordered schema consisting of four main components:</p><ul><li><strong>Observation</strong>: Stores contextual setup and what transpired</li><li><strong>Thoughts</strong>: Stores internal reasoning processes and deliberations</li><li><strong>Action</strong>: Stores particular interventions and methodologies used</li><li><strong>Result</strong>: Stores outcome and subsequent analysis</li></ul><h2 id=evaluation-results>Evaluation Results<a hidden class=anchor aria-hidden=true href=#evaluation-results>#</a></h2><p>GoodAI LTM benchmark results indicated radically better performance with our memory augmentation approach:</p><table><thead><tr><th>Configuration</th><th>Score</th><th>Performance</th></tr></thead><tbody><tr><td>Baseline GPT-4o</td><td>4.6/11</td><td>41.8%</td></tr><tr><td>GPT-4o + Semantic Memory</td><td>6.8/11</td><td>61.8%</td></tr><tr><td>GPT-4o + Episodic Memory</td><td>6.9/11</td><td>62.7%</td></tr><tr><td>GPT-4o + Semantic & Episodic Memory</td><td>6.0/11</td><td>54.5%</td></tr></tbody></table><p>These results reflect a general 20-percentage-point improvement in memory performance by our augmentation method. The differential performance aligns with the corresponding functional roles these types of memory serve in human cognition, wherein semantic memory enables fact recall and episodic memory enables experiential reasoning.</p><h2 id=discussion-and-future-work>Discussion and Future Work<a hidden class=anchor aria-hidden=true href=#discussion-and-future-work>#</a></h2><p>Our research provides empirical evidence for cognitive-inspired LLM memory enhancement methods. The witnessed performance improvements with three-tier memory architecture show that human memory systems offer valuable design concepts for overcoming inherent limitations in current AI designs.</p><p>The unexpected finding was the slightly worse performance of integrated memory systems compared to single implementations. This suggests complex interaction effects, which may mirror interference phenomena observed in human memory systems, where various forms of memory sometimes vie for mental resources.</p><p>Future research directions include:</p><ul><li><strong>Multi-agent Memory Dynamics</strong>: How memory transfers between agents and how social dynamics influence memory consolidation</li><li><strong>Advanced Retrieval Strategies</strong>: Exploring spatially organized memory architectures and hierarchical memory organization</li><li><strong>Optimization of Consolidation Thresholds</strong>: Investigating dynamic thresholds that adapt based on conversation characteristics</li></ul><h2 id=conclusion>Conclusion<a hidden class=anchor aria-hidden=true href=#conclusion>#</a></h2><p>This paper presents a novel biomimetic approach to enhancing LLM memory that addresses intrinsic limitations in current architectures. By embracing a three-level memory structure inspired by human cognitive processes, we demonstrate significant improvements in information retention, update, and context recall.</p><p>As LLMs advance towards more general intelligence capabilities, structured memory systems will play a larger role in enabling coherent long-term interactions, homogeneous knowledge states, and contextually appropriate information access. Our research contributes both pragmatic approaches for deploying this aspect of AI progress and theoretical frameworks to continue advancing this critical component of AI work.</p></div><footer class=post-footer><ul class=post-tags><li><a href=https://chenterry.com/tags/technology/>Technology</a></li><li><a href=https://chenterry.com/tags/research/>Research</a></li></ul></footer></article></main><footer class=footer><span>&copy; 2025 <a href=https://chenterry.com/>Terry Chen</a></span></footer></body></html>
+Despite advances in large language model (LLM) capability, their fundamental limitation of not being able to store context over long-lived interactions persists. In this paper, a novel human-inspired three-tiered memory architecture is presented that addresses these limitations through biomimetic design principles rooted in cognitive science. Our approach aligns the human working memory with the LLM context window, episodic memory with vector stores of experience-based knowledge, and semantic memory with structured knowledge triplets.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Archived",
+      "item": "https://chenterry.com/archived/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "LLM Memory Consolidation and Augmentation",
+      "item": "https://chenterry.com/archived/human-inspired-llm-memory/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "LLM Memory Consolidation and Augmentation",
+  "name": "LLM Memory Consolidation and Augmentation",
+  "description": "Authors: Terry Chen, Kaiwen Che, Matthew Song\nAbstract Despite advances in large language model (LLM) capability, their fundamental limitation of not being able to store context over long-lived interactions persists. In this paper, a novel human-inspired three-tiered memory architecture is presented that addresses these limitations through biomimetic design principles rooted in cognitive science. Our approach aligns the human working memory with the LLM context window, episodic memory with vector stores of experience-based knowledge, and semantic memory with structured knowledge triplets.\n",
+  "keywords": [
+    "Research"
+  ],
+  "articleBody": "Authors: Terry Chen, Kaiwen Che, Matthew Song\nAbstract Despite advances in large language model (LLM) capability, their fundamental limitation of not being able to store context over long-lived interactions persists. In this paper, a novel human-inspired three-tiered memory architecture is presented that addresses these limitations through biomimetic design principles rooted in cognitive science. Our approach aligns the human working memory with the LLM context window, episodic memory with vector stores of experience-based knowledge, and semantic memory with structured knowledge triplets.\nIn comparison to traditional retrieval-augmented generation (RAG) techniques that store verbatim conversation segments, our system employs strategic memory consolidation procedures, abstracting key information into structured forms. Performance testing on the GoodAI Long-Term Memory benchmark demonstrates significant improvements in performance, with our memory-augmented GPT-4o achieving scores of up to 6.9/11 over the baseline 4.6/11. Additional testing across multi-agent domains demonstrates enhanced persistence and updating capacity of information.\nIntroduction State-of-the-art large language models (LLMs) possess remarkable natural language comprehension and generation. However, their architecture imposes tight constraints on memory retention and contextual comprehension during long-term interaction. Most existing LLMs operate within fixed context windows, typically ranging from 32,000 to 128,000 tokens, which impose inherent constraints on long-term conversation and complex reasoning tasks that span multiple turns.\nThe Baddeley and Hitch (1974, 2000) model of working memory provides a robust theoretical account of human information processing. The model presents memory as a multi-component system with central executive control of information flow, an episodic buffer of assembling memories into temporary experiences, a phonological loop of controlling verbal content, and a visuospatial sketchpad of controlling visual and spatial information.\nCurrent approaches to increasing LLM memory capacity heavily rely on embedding-based retrieval-augmented generation (RAG). While the approach can deliver rapid access to previous data, it suffers greatly from issues like vector explosion, the unsustainable proliferation of embeddings as conversation history grows, lack of semantic structure in stored shreds, and difficulties in maintaining relations among relevant facts.\nThis work introduces a novel biomimetic approach to LLM memory extension that more accurately models the cognitive architecture of humans, with a three-tiered memory system distinguishing between immediate context, episodic memories, and semantic facts.\nSystem Architecture Our memory improvement system utilizes a three-layer architecture inspired by human cognition:\nWorking Memory (LLM Context Window) We divide the context window into two distinct segments:\nMulti-Round Conversation History (MCH): Stores current conversation context, maintaining flow up to a defined token limit. Retrieval Memory Buffer (RMB): Provides dedicated space for injecting remembered memories from long-term storage, maintaining a balance of short-term and long-term remembered data. Long-Term Memory Store Implemented as a vector database storing two forms of memory:\nSemantic Memory: Stores factual knowledge gained from conversations as subject-predicate-object triples with optional contextual referencing. Episodic Memory: Stores complete interaction episodes by a formal schema with contextual initialization, reasoning operations, actions taken, and outcomes observed. Memory Processes There are specialized components for:\nMemory Consolidation: Operations for capturing and formalizing memories when conversation history reaches token thresholds. Retrieval Mechanisms: Multi-step operations that determine context adequacy before retrieving from external memory stores. Memory Schema Implementation Semantic Memory Triple We implemented the semantic memory schema as a structured class:\nclass SematicMemory(BaseModel): \"\"\"Store all new facts, preferences, and relationships as triples.\"\"\" subject: str predicate: str object: str context: str | None = None Episodic Memory Schema Our episodic memory implementation stores experiential information with temporal context:\nclass EpisodicMemory(BaseModel): \"\"\"Write the episode from the perspective of the agent within it.\"\"\" observation: str = Field(..., description=\"The context and setup - what happened\") thoughts: str = Field( ..., description=\"Internal reasoning process and observations of the agent\" ) action: str = Field( ..., description=\"What was done, how, and in what format.\" ) result: str = Field( ..., description=\"Outcome and retrospective.\" ) Memory Consolidation Process The foundation of our strategy lies in sophisticated memory consolidation mechanisms that convert raw conversational information into structured memory representations:\nSemantic Memory Extraction Our semantic memory schema makes use of subject-predicate-object triples that eliminate episodic detail without sacrificing core relationships. Implementation follows several guiding principles:\nPrioritization of high-frequency accessed information Merging of redundant knowledge into a single representation Upgrading existing triples whenever new contradicting data exist Adding contextual linking to render situationally responsive retrieval Episodic Memory Extraction Episodic memory stores full interactions in an ordered schema consisting of four main components:\nObservation: Stores contextual setup and what transpired Thoughts: Stores internal reasoning processes and deliberations Action: Stores particular interventions and methodologies used Result: Stores outcome and subsequent analysis Evaluation Results GoodAI LTM benchmark results indicated radically better performance with our memory augmentation approach:\nConfiguration Score Performance Baseline GPT-4o 4.6/11 41.8% GPT-4o + Semantic Memory 6.8/11 61.8% GPT-4o + Episodic Memory 6.9/11 62.7% GPT-4o + Semantic \u0026 Episodic Memory 6.0/11 54.5% These results reflect a general 20-percentage-point improvement in memory performance by our augmentation method. The differential performance aligns with the corresponding functional roles these types of memory serve in human cognition, wherein semantic memory enables fact recall and episodic memory enables experiential reasoning.\nDiscussion and Future Work Our research provides empirical evidence for cognitive-inspired LLM memory enhancement methods. The witnessed performance improvements with three-tier memory architecture show that human memory systems offer valuable design concepts for overcoming inherent limitations in current AI designs.\nThe unexpected finding was the slightly worse performance of integrated memory systems compared to single implementations. This suggests complex interaction effects, which may mirror interference phenomena observed in human memory systems, where various forms of memory sometimes vie for mental resources.\nFuture research directions include:\nMulti-agent Memory Dynamics: How memory transfers between agents and how social dynamics influence memory consolidation Advanced Retrieval Strategies: Exploring spatially organized memory architectures and hierarchical memory organization Optimization of Consolidation Thresholds: Investigating dynamic thresholds that adapt based on conversation characteristics Conclusion This paper presents a novel biomimetic approach to enhancing LLM memory that addresses intrinsic limitations in current architectures. By embracing a three-level memory structure inspired by human cognitive processes, we demonstrate significant improvements in information retention, update, and context recall.\nAs LLMs advance towards more general intelligence capabilities, structured memory systems will play a larger role in enabling coherent long-term interactions, homogeneous knowledge states, and contextually appropriate information access. Our research contributes both pragmatic approaches for deploying this aspect of AI progress and theoretical frameworks to continue advancing this critical component of AI work.\n",
+  "wordCount" : "1043",
+  "inLanguage": "en",
+  "image": "https://chenterry.com/images/profile.jpg","datePublished": "2025-03-10T00:00:00Z",
+  "dateModified": "2025-03-10T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Terry Chen"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://chenterry.com/archived/human-inspired-llm-memory/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Terry Chen",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://chenterry.com/favicon.ico"
+    }
+  }
+}
+</script>
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M6GS8Q702L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'MEASUREMENT_ID');
+</script><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  
+  
+  "@type": "Article",
+  
+  "headline": "LLM Memory Consolidation and Augmentation",
+  "image": "https:\/\/chenterry.com\/",
+  "datePublished": "2025-03-10T00:00:00\u002b00:00",
+  "dateModified": "2025-03-10T00:00:00\u002b00:00",
+  "author": {
+    "@type": "Person",
+    "name": "Terry Chen"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Terry Chen",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https:\/\/chenterry.com\/"
+    }
+  },
+  "description": "Authors: Terry Chen, Kaiwen Che, Matthew Song\nAbstract Despite advances in large language model (LLM) capability, their fundamental limitation of not being able to store context over long-lived interactions persists. In this paper, a novel human-inspired three-tiered memory architecture is presented that addresses these limitations through biomimetic design principles rooted in cognitive science. Our approach aligns the human working memory with the LLM context window, episodic memory with vector stores of experience-based knowledge, and semantic memory with structured knowledge triplets.\n",
+  
+  
+  "wordCount": "1043",
+  "timeRequired": "PT5M"
+  
+}
+</script>
+
+
+ 
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https:\/\/chenterry.com\/"
+    }
+    
+    ,{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Archived",
+      "item": "https:\/\/chenterry.com\/archived/"
+    }
+    
+    
+    ,{
+      "@type": "ListItem",
+      "position": 3,
+      "name": "114",
+      "item": "https:\/\/chenterry.com\/categories/114/"
+    }
+    
+    ,{
+      "@type": "ListItem",
+      "position": 4,
+      "name": "LLM Memory Consolidation and Augmentation",
+      "item": "https:\/\/chenterry.com\/archived\/human-inspired-llm-memory\/"
+    }
+  ]
+}
+</script>
+ 
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Terry Chen",
+  "url": "https:\/\/chenterry.com\/",
+  "sameAs": [
+    "https://www.linkedin.com/in/terry-chen-3b44911a4/",
+    "https://github.com/terrylinhaochen"
+  ],
+  "jobTitle": "AI Product Engineer",
+  "description": "AI Product Engineer and Investor exploring multi-agent systems, content understanding, and emerging technology investments",
+  "knowsAbout": [
+    "Artificial Intelligence",
+    "Product Engineering", 
+    "Investment Analysis",
+    "Multi-Agent Systems",
+    "Machine Learning",
+    "Technology Strategy"
+  ],
+  "alumniOf": "Northwestern University"
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+   
+  link[rel="icon"] {
+    content: url("data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>😜</text></svg>");
+  }
+</style> 
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://chenterry.com/" accesskey="h" title="Terry Chen (Alt + H)">Terry Chen</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            
+            <li>
+                <a href="/posts/" title="Posts">
+                    <span>
+                        Posts
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="/product/" title="Product">
+                    <span>
+                        Product
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="/investing/" title="Investing">
+                    <span>
+                        Investing
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="/search/" title="Explore" accesskey="/">
+                    <span>
+                        Explore
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="/about/" title="About">
+                    <span>
+                        About
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header> <main class="main">
+<article class="post-single">
+  <header class="post-header">
+    <h1 class="post-title">LLM Memory Consolidation and Augmentation</h1>
+    
+    
+    <div class="post-meta">
+      
+      <time>March 10, 2025</time>
+    </div>
+  </header>
+  
+  
+  <div class="post-content">
+    <p><strong>Authors: Terry Chen, Kaiwen Che, Matthew Song</strong></p>
+<h2 id="abstract">Abstract</h2>
+<p>Despite advances in large language model (LLM) capability, their fundamental limitation of not being able to store context over long-lived interactions persists. In this paper, a novel human-inspired three-tiered memory architecture is presented that addresses these limitations through biomimetic design principles rooted in cognitive science. Our approach aligns the human working memory with the LLM context window, episodic memory with vector stores of experience-based knowledge, and semantic memory with structured knowledge triplets.</p>
+<p>In comparison to traditional retrieval-augmented generation (RAG) techniques that store verbatim conversation segments, our system employs strategic memory consolidation procedures, abstracting key information into structured forms. Performance testing on the GoodAI Long-Term Memory benchmark demonstrates significant improvements in performance, with our memory-augmented GPT-4o achieving scores of up to 6.9/11 over the baseline 4.6/11. Additional testing across multi-agent domains demonstrates enhanced persistence and updating capacity of information.</p>
+<h2 id="introduction">Introduction</h2>
+<p>State-of-the-art large language models (LLMs) possess remarkable natural language comprehension and generation. However, their architecture imposes tight constraints on memory retention and contextual comprehension during long-term interaction. Most existing LLMs operate within fixed context windows, typically ranging from 32,000 to 128,000 tokens, which impose inherent constraints on long-term conversation and complex reasoning tasks that span multiple turns.</p>
+<p>The Baddeley and Hitch (1974, 2000) model of working memory provides a robust theoretical account of human information processing. The model presents memory as a multi-component system with central executive control of information flow, an episodic buffer of assembling memories into temporary experiences, a phonological loop of controlling verbal content, and a visuospatial sketchpad of controlling visual and spatial information.</p>
+<p>Current approaches to increasing LLM memory capacity heavily rely on embedding-based retrieval-augmented generation (RAG). While the approach can deliver rapid access to previous data, it suffers greatly from issues like vector explosion, the unsustainable proliferation of embeddings as conversation history grows, lack of semantic structure in stored shreds, and difficulties in maintaining relations among relevant facts.</p>
+<p>This work introduces a novel biomimetic approach to LLM memory extension that more accurately models the cognitive architecture of humans, with a three-tiered memory system distinguishing between immediate context, episodic memories, and semantic facts.</p>
+<h2 id="system-architecture">System Architecture</h2>
+<p>Our memory improvement system utilizes a three-layer architecture inspired by human cognition:</p>
+<p>
+
+  <img src="/images/projects/human-inspired-llm-memory/memory-architecture.png" alt="Three-Tiered Memory Architecture" loading="lazy">
+ </p>
+<h3 id="working-memory-llm-context-window">Working Memory (LLM Context Window)</h3>
+<p>We divide the context window into two distinct segments:</p>
+<ul>
+<li><strong>Multi-Round Conversation History (MCH)</strong>: Stores current conversation context, maintaining flow up to a defined token limit.</li>
+<li><strong>Retrieval Memory Buffer (RMB)</strong>: Provides dedicated space for injecting remembered memories from long-term storage, maintaining a balance of short-term and long-term remembered data.</li>
+</ul>
+<h3 id="long-term-memory-store">Long-Term Memory Store</h3>
+<p>Implemented as a vector database storing two forms of memory:</p>
+<ul>
+<li><strong>Semantic Memory</strong>: Stores factual knowledge gained from conversations as subject-predicate-object triples with optional contextual referencing.</li>
+<li><strong>Episodic Memory</strong>: Stores complete interaction episodes by a formal schema with contextual initialization, reasoning operations, actions taken, and outcomes observed.</li>
+</ul>
+<h3 id="memory-processes">Memory Processes</h3>
+<p>There are specialized components for:</p>
+<ul>
+<li><strong>Memory Consolidation</strong>: Operations for capturing and formalizing memories when conversation history reaches token thresholds.</li>
+<li><strong>Retrieval Mechanisms</strong>: Multi-step operations that determine context adequacy before retrieving from external memory stores.</li>
+</ul>
+<h2 id="memory-schema-implementation">Memory Schema Implementation</h2>
+<h3 id="semantic-memory-triple">Semantic Memory Triple</h3>
+<p>We implemented the semantic memory schema as a structured class:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">SematicMemory</span>(BaseModel):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Store all new facts, preferences, and relationships as triples.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    subject: str
+</span></span><span style="display:flex;"><span>    predicate: str
+</span></span><span style="display:flex;"><span>    object: str
+</span></span><span style="display:flex;"><span>    context: str <span style="color:#f92672">|</span> <span style="color:#66d9ef">None</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
+</span></span></code></pre></div><h3 id="episodic-memory-schema">Episodic Memory Schema</h3>
+<p>Our episodic memory implementation stores experiential information with temporal context:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">EpisodicMemory</span>(BaseModel):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Write the episode from the perspective of the agent within it.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    observation: str <span style="color:#f92672">=</span> Field(<span style="color:#f92672">...</span>, description<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;The context and setup - what happened&#34;</span>)
+</span></span><span style="display:flex;"><span>    thoughts: str <span style="color:#f92672">=</span> Field(
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">...</span>,
+</span></span><span style="display:flex;"><span>        description<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Internal reasoning process and observations of the agent&#34;</span>
+</span></span><span style="display:flex;"><span>    )
+</span></span><span style="display:flex;"><span>    action: str <span style="color:#f92672">=</span> Field(
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">...</span>,
+</span></span><span style="display:flex;"><span>        description<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;What was done, how, and in what format.&#34;</span>
+</span></span><span style="display:flex;"><span>    )
+</span></span><span style="display:flex;"><span>    result: str <span style="color:#f92672">=</span> Field(
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">...</span>,
+</span></span><span style="display:flex;"><span>        description<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Outcome and retrospective.&#34;</span>
+</span></span><span style="display:flex;"><span>    )
+</span></span></code></pre></div><h2 id="memory-consolidation-process">Memory Consolidation Process</h2>
+<p>The foundation of our strategy lies in sophisticated memory consolidation mechanisms that convert raw conversational information into structured memory representations:</p>
+<h3 id="semantic-memory-extraction">Semantic Memory Extraction</h3>
+<p>Our semantic memory schema makes use of subject-predicate-object triples that eliminate episodic detail without sacrificing core relationships. Implementation follows several guiding principles:</p>
+<ul>
+<li>Prioritization of high-frequency accessed information</li>
+<li>Merging of redundant knowledge into a single representation</li>
+<li>Upgrading existing triples whenever new contradicting data exist</li>
+<li>Adding contextual linking to render situationally responsive retrieval</li>
+</ul>
+<h3 id="episodic-memory-extraction">Episodic Memory Extraction</h3>
+<p>Episodic memory stores full interactions in an ordered schema consisting of four main components:</p>
+<ul>
+<li><strong>Observation</strong>: Stores contextual setup and what transpired</li>
+<li><strong>Thoughts</strong>: Stores internal reasoning processes and deliberations</li>
+<li><strong>Action</strong>: Stores particular interventions and methodologies used</li>
+<li><strong>Result</strong>: Stores outcome and subsequent analysis</li>
+</ul>
+<h2 id="evaluation-results">Evaluation Results</h2>
+<p>GoodAI LTM benchmark results indicated radically better performance with our memory augmentation approach:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Configuration</th>
+          <th>Score</th>
+          <th>Performance</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Baseline GPT-4o</td>
+          <td>4.6/11</td>
+          <td>41.8%</td>
+      </tr>
+      <tr>
+          <td>GPT-4o + Semantic Memory</td>
+          <td>6.8/11</td>
+          <td>61.8%</td>
+      </tr>
+      <tr>
+          <td>GPT-4o + Episodic Memory</td>
+          <td>6.9/11</td>
+          <td>62.7%</td>
+      </tr>
+      <tr>
+          <td>GPT-4o + Semantic &amp; Episodic Memory</td>
+          <td>6.0/11</td>
+          <td>54.5%</td>
+      </tr>
+  </tbody>
+</table>
+<p>These results reflect a general 20-percentage-point improvement in memory performance by our augmentation method. The differential performance aligns with the corresponding functional roles these types of memory serve in human cognition, wherein semantic memory enables fact recall and episodic memory enables experiential reasoning.</p>
+<h2 id="discussion-and-future-work">Discussion and Future Work</h2>
+<p>Our research provides empirical evidence for cognitive-inspired LLM memory enhancement methods. The witnessed performance improvements with three-tier memory architecture show that human memory systems offer valuable design concepts for overcoming inherent limitations in current AI designs.</p>
+<p>The unexpected finding was the slightly worse performance of integrated memory systems compared to single implementations. This suggests complex interaction effects, which may mirror interference phenomena observed in human memory systems, where various forms of memory sometimes vie for mental resources.</p>
+<p>Future research directions include:</p>
+<ul>
+<li><strong>Multi-agent Memory Dynamics</strong>: How memory transfers between agents and how social dynamics influence memory consolidation</li>
+<li><strong>Advanced Retrieval Strategies</strong>: Exploring spatially organized memory architectures and hierarchical memory organization</li>
+<li><strong>Optimization of Consolidation Thresholds</strong>: Investigating dynamic thresholds that adapt based on conversation characteristics</li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>This paper presents a novel biomimetic approach to enhancing LLM memory that addresses intrinsic limitations in current architectures. By embracing a three-level memory structure inspired by human cognitive processes, we demonstrate significant improvements in information retention, update, and context recall.</p>
+<p>As LLMs advance towards more general intelligence capabilities, structured memory systems will play a larger role in enabling coherent long-term interactions, homogeneous knowledge states, and contextually appropriate information access. Our research contributes both pragmatic approaches for deploying this aspect of AI progress and theoretical frameworks to continue advancing this critical component of AI work.</p>
+
+  </div>
+  
+  
+  
+  <footer class="post-footer">
+    <div class="post-tags">
+      
+      <a href="/tags/research">Research</a>
+      
+    </div>
+  </footer>
+  
+</article>
+
+
+
+  
+
+
+<div class="related-posts">
+  <h3>Related Articles</h3>
+  <div class="related-posts-grid">
+    
+    <a href="/archived/groupal/" class="related-post-card">
+      <div class="related-post-content">
+        <h4>Realtime Conversational Learning Aid</h4>
+        <div class="related-post-meta">
+          <span class="related-post-date">November 10, 2024</span>
+          
+          <span class="related-post-tags">
+            #Research
+          </span>
+          
+        </div>
+        <p class="related-post-excerpt">Advised by Prof. Kristian Hammond. Developed LLM product that analyzes real-time audio …</p>
+      </div>
+    </a>
+    
+    <a href="/posts/year_in_review/" class="related-post-card">
+      <div class="related-post-content">
+        <h4>2024 in Review</h4>
+        <div class="related-post-meta">
+          <span class="related-post-date">December 31, 2024</span>
+          
+          <span class="related-post-tags">
+            #Observations
+          </span>
+          
+        </div>
+        <p class="related-post-excerpt">2024 passed quickly, anchored by work that was equal parts challenging and rewarding. Early in the …</p>
+      </div>
+    </a>
+    
+    <a href="/archived/prototyping/" class="related-post-card">
+      <div class="related-post-content">
+        <h4>Rapid Prototyping of LLM Enabled Webapps</h4>
+        <div class="related-post-meta">
+          <span class="related-post-date">October 19, 2024</span>
+          
+          <span class="related-post-tags">
+            #Product
+          </span>
+          
+        </div>
+        <p class="related-post-excerpt">PepTalk: AI Journaling Tool Realtime conversation with aI companion to help you note down feelings …</p>
+      </div>
+    </a>
+    
+    <a href="/main-themes/human-quirks/" class="related-post-card">
+      <div class="related-post-content">
+        <h4>Human Quirks</h4>
+        <div class="related-post-meta">
+          <span class="related-post-date">October 1, 2024</span>
+          
+          <span class="related-post-tags">
+            #Observations
+          </span>
+          
+        </div>
+        <p class="related-post-excerpt">Observing and understanding the strange quirks of individuals and crowds What makes humans truly …</p>
+      </div>
+    </a>
+    
+  </div>
+</div>
+
+<style>
+  .related-posts {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+    max-width: var(--content-width, 720px);
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding-left: var(--gap);
+    padding-right: var(--gap);
+  }
+  
+  .related-posts h3 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary);
+  }
+  
+  .related-posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .related-post-card {
+    display: block;
+    padding: 1.2rem;
+    border-radius: var(--radius);
+    background: var(--code-bg);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-decoration: none;
+  }
+  
+  .related-post-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  :root[data-theme="dark"] .related-post-card:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+  }
+  
+  .related-post-card h4 {
+    margin: 0 0 0.6rem 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--primary);
+    line-height: 1.3;
+  }
+  
+  .related-post-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.8rem;
+    font-size: 0.85rem;
+    color: var(--secondary);
+  }
+  
+  .related-post-excerpt {
+    font-size: 0.95rem;
+    color: var(--content);
+    line-height: 1.5;
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .related-posts-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+ 
+
+<style>
+   
+  body {
+    background-color: var(--theme);
+  }
+  
+  .post-single {
+    background-color: var(--entry);
+    border-radius: var(--radius);
+     
+    max-width: var(--content-width, 720px);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: var(--gap);
+    margin-bottom: var(--gap);
+    box-shadow: var(--shadow);
+  }
+  
+  .post-content {
+    margin-top: var(--content-gap);
+    color: var(--content);
+  }
+  
+  .post-content h1,
+  .post-content h2,
+  .post-content h3,
+  .post-content h4 {
+    margin: 1.5em 0 0.5em;
+    color: var(--primary);
+  }
+</style>
+
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://chenterry.com/">Terry Chen</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+    
+    
+    <div class="archived-link">
+        <span style="font-size: 0.85em; color: #888; margin-top: 8px; display: block;">
+            To view archived content, <a href="/archived/" style="color: #666; text-decoration: underline;">click here</a>
+        </span>
+    </div>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    
+    window.addEventListener('error', function(e) {
+        console.error('Page error:', e.error);
+        console.error('Error details:', {
+            message: e.message,
+            filename: e.filename,
+            lineno: e.lineno,
+            colno: e.colno
+        });
+    });
+
+    
+    if (history.scrollRestoration) {
+        history.scrollRestoration = 'manual';
+    }
+    
+    
+    window.addEventListener('load', function() {
+        window.scrollTo(0, 0);
+    });
+    
+    
+    window.addEventListener('pageshow', function(event) {
+        if (event.persisted) {
+            window.scrollTo(0, 0);
+        }
+    });
+
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script> </body>
+
+</html>

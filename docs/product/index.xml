@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Product - Terry Chen</title>
+    <link>https://chenterry.com/product/</link>
+    <description>Product ideas, implementations, and case studies from startups, professional work, research projects, and prototypes. Covering AI applications, user experience, and product strategy.</description>
+    <language>en-us</language>
+    <managingEditor>Terry Chen (Terry Chen)</managingEditor>
+    <webMaster>Terry Chen (Terry Chen)</webMaster>
+    <copyright>© 2025 Terry Chen. All rights reserved.</copyright>
+    <lastBuildDate>Mon, 15 Sep 2025 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://chenterry.com/product/index.xml" rel="self" type="application/rss+xml" />
+    
+    <generator>Hugo 0.136.2</generator>
+    <category>Technology</category>
+    <category>AI</category>
+    <category>Product Engineering</category>
+    <category>Investment Analysis</category>
+    <image>
+      <url>https://chenterry.com/images/profile.jpg</url>
+      <title>Terry Chen</title>
+      <link>https://chenterry.com/</link>
+      <description>Hi, this is Terry. I&#39;m documenting my product ideas and learning notes in this blog. I&#39;m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description>
+      <width>144</width>
+      <height>144</height>
+    </image>
+    
+    <item>
+      <title>An Agentic Social Operating System</title>
+      <link>https://chenterry.com/product/crowdlistening/</link>
+      <pubDate>Mon, 15 Sep 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/product/crowdlistening/</guid>
+      <description>Transform large-scale social conversations into actionable insights. Understand crowd sentiment, track emerging opinions, and identify key narratives.</description>
+      
+      
+        
+          <category>crowdlisten</category>
+        
+      
+      
+        
+          
+          <category>Entrepreneurship</category>
+          
+          <category>Product</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-09-15T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Iterating at the Pace of AI</title>
+      <link>https://chenterry.com/product/agent_prototyping/</link>
+      <pubDate>Fri, 29 Aug 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/product/agent_prototyping/</guid>
+      <description>Two approaches to building agentic experiences: platform-first vs scenario-first. How AI coding tools enable faster prototyping and cross-functional collaboration for agent product development.</description>
+      
+      
+        
+          <category>microsoft</category>
+        
+      
+      
+        
+          
+          <category>Product</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-08-29T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Human-Mediated Agentic Workflows</title>
+      <link>https://chenterry.com/product/agentic_workforce/</link>
+      <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/product/agentic_workforce/</guid>
+      <description>Explore the emerging landscape of agentic workforces - autonomous AI agents that reason, plan, act, and learn to handle complex tasks and workflows. Analysis of key players, technology strategies, and market opportunities.</description>
+      
+      
+        
+          <category>crowdlisten</category>
+        
+      
+      
+        
+          
+          <category>Product</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-07-13T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Search Advertisement</title>
+      <link>https://chenterry.com/product/search_advertising/</link>
+      <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/product/search_advertising/</guid>
+      <description>Comprehensive analysis of AI-driven search advertising, market dynamics, and investment opportunities. Exploring how AI is revolutionizing ad targeting, optimization, and performance in the $200B+ search advertising market.</description>
+      
+      
+        
+          <category>tiktok</category>
+        
+      
+      
+        
+          
+          <category>Product</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-07-13T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Search &amp; Discovery Features</title>
+      <link>https://chenterry.com/product/search/</link>
+      <pubDate>Thu, 15 May 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/product/search/</guid>
+      <description>Development of an intelligent search system using AI and machine learning for enhanced content discovery. Technical implementation, user experience design, and performance optimization for content recommendation platforms.</description>
+      
+      
+        
+          <category>aibrary</category>
+        
+      
+      
+        
+          
+          <category>Product</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-05-15T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Exploring Unknown Unknowns</title>
+      <link>https://chenterry.com/product/learning_interface/</link>
+      <pubDate>Sat, 05 Oct 2024 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/product/learning_interface/</guid>
+      <description>Development of intelligent knowledge interfaces that help users discover unknown unknowns. Technical implementation of AI-powered learning systems and knowledge discovery platforms.</description>
+      
+      
+        
+          <category>aibrary</category>
+        
+      
+      
+        
+          
+          <category>Product</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2024-10-05T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>AI Content Creation - From Generation to Synthesis</title>
+      <link>https://chenterry.com/product/personalized_content/</link>
+      <pubDate>Fri, 20 Sep 2024 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/product/personalized_content/</guid>
+      <description>Moving beyond basic AI summarization to knowledge liquefaction - creating truly personalized learning experiences that adapt content to individual needs, contexts, and cognitive patterns.</description>
+      
+      
+        
+          <category>tiktok</category>
+        
+      
+      
+        
+          
+          <category>Product</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2024-09-20T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Improving and Scaling Coaching through LLMs</title>
+      <link>https://chenterry.com/product/llmcoaching/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/product/llmcoaching/</guid>
+      <description>LLM-enhanced coaching system for project-based learning that scales personalized mentorship through AI. Research on semantic matching, regulation gap identification, and automated coaching suggestions.</description>
+      
+      
+        
+          <category>northwestern</category>
+        
+      
+      
+        
+          
+          <category>Research</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2024-08-15T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Content Recommendation Systems</title>
+      <link>https://chenterry.com/product/recommendation/</link>
+      <pubDate>Wed, 10 Jul 2024 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/product/recommendation/</guid>
+      <description>Development of a multi-modal recommendation system for podcast content using AI and machine learning. Technical architecture, user experience design, and performance analysis for intelligent content discovery.</description>
+      
+      
+        
+          <category>aibrary</category>
+        
+      
+      
+        
+          
+          <category>Product</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2024-07-10T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Multi-modal Creative Ad Generation</title>
+      <link>https://chenterry.com/product/copilot/</link>
+      <pubDate>Mon, 20 May 2024 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/product/copilot/</guid>
+      <description>Development of TikTok Symphony Assistant - an AI-powered creative tool for generating ad scripts and video content. Agentic workflows and interface optimization for automated creative generation.</description>
+      
+      
+        
+          <category>tiktok</category>
+        
+      
+      
+        
+          
+          <category>Product</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2024-05-20T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Billion Parameter Trend Insight Analysis for Ads</title>
+      <link>https://chenterry.com/product/insight/</link>
+      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/product/insight/</guid>
+      <description>Development of AI-powered content analysis tools for TikTok trend identification and agency insights. Multi-modal content understanding and actionable trend analysis for advertising agencies.</description>
+      
+      
+        
+          <category>tiktok</category>
+        
+      
+      
+        
+          
+          <category>Product</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2024-04-10T00:00:00Z</dc:date>
+    </item>
+    
+  </channel>
+</rss>

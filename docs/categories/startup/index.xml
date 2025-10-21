@@ -1,7 +1,59 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Startup on Terry Chen</title><link>https://chenterry.com/categories/startup/</link><description>Recent content in Startup on Terry Chen</description><image><title>Terry Chen</title><url>https://chenterry.com/images/profile.jpg</url><link>https://chenterry.com/images/profile.jpg</link></image><generator>Hugo -- 0.136.2</generator><language>en-us</language><lastBuildDate>Wed, 06 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://chenterry.com/categories/startup/index.xml" rel="self" type="application/rss+xml"/><item><title>Crowdlistening</title><link>https://chenterry.com/projects/crowdlistening/</link><pubDate>Wed, 06 Nov 2024 00:00:00 +0000</pubDate><guid>https://chenterry.com/projects/crowdlistening/</guid><description>&lt;h2 id="inspiring-insights-amplifying-voices-crowdlisteningcom">Inspiring insights, amplifying voices. (crowdlistening.com)&lt;/h2>
-&lt;p>&lt;img alt="Webpage" loading="lazy" src="https://chenterry.com/images/posts/crowdlistening/webpage.png">&lt;/p>
-&lt;h2 id="from-content-aggregation-to-original-research">From Content Aggregation to Original Research&lt;/h2>
-&lt;p>Crowdlistening transforms large-scale social conversations into actionable insight by integrating llm reasoning with extensive model context protocol(MCP) capabilities. Our focus is not just on analyzing content at scale, but rather conducting original research directly from raw social data, generating insights that haven&amp;rsquo;t yet appeared in established reporting.&lt;/p>
-&lt;p>Deep research features provide professional-looking research reports, yet the contents are far from original, as they&amp;rsquo;re drawn from articles already indexable on the internet and paraphrased with LLMs. However, much of the internet&amp;rsquo;s data exists in unstructured formats - TikTok videos, comments, and metadata, for example. Too much content is generated every day for there to be existing articles written about it all, and when such articles are published, they&amp;rsquo;re often already outdated. When you consider multimodal data, metadata, and connections between data points, these are precisely the types of information that could yield genuinely interesting and useful insights.&lt;/p></description></item><item><title>Cogno: Multi-agent AI for sales automation</title><link>https://chenterry.com/archived/cogno/</link><pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate><guid>https://chenterry.com/archived/cogno/</guid><description>&lt;p>Multi-agent system for cross boarder e-commerce sales automation. Co-founder and head of product.
-&lt;a href="https://cognogpt.com">https://cognogpt.com&lt;/a>&lt;/p>
-&lt;p>Cogno+ is dedicated to revolutionizing global e-commerce by empowering brands with AI-driven assistance that offers seamless, personalized customer experiences. Our mission is to serve as the digital bridge between brands and customers, enhancing interactions and transactions across international markets, and allowing the brand to increase conversion and upsell while reducing time and money spent on manual customer service.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Startup - Terry Chen</title>
+    <link>https://chenterry.com/categories/startup/</link>
+    <description>Hi, this is Terry. I&#39;m documenting my product ideas and learning notes in this blog. I&#39;m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description>
+    <language>en-us</language>
+    <managingEditor>Terry Chen (Terry Chen)</managingEditor>
+    <webMaster>Terry Chen (Terry Chen)</webMaster>
+    <copyright>© 2025 Terry Chen. All rights reserved.</copyright>
+    <lastBuildDate>Fri, 01 Mar 2024 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://chenterry.com/categories/startup/index.xml" rel="self" type="application/rss+xml" />
+    
+    <generator>Hugo 0.136.2</generator>
+    <category>Technology</category>
+    <category>AI</category>
+    <category>Product Engineering</category>
+    <category>Investment Analysis</category>
+    <image>
+      <url>https://chenterry.com/images/profile.jpg</url>
+      <title>Terry Chen</title>
+      <link>https://chenterry.com/</link>
+      <description>Hi, this is Terry. I&#39;m documenting my product ideas and learning notes in this blog. I&#39;m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description>
+      <width>144</width>
+      <height>144</height>
+    </image>
+    
+    <item>
+      <title>Cogno: Multi-agent AI for Sales Automation</title>
+      <link>https://chenterry.com/archived/cogno/</link>
+      <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/archived/cogno/</guid>
+      <description>&lt;p&gt;Multi-agent system for cross boarder e-commerce sales automation. Co-founder and head of product.
+&lt;a href=&#34;https://cognogpt.com&#34;&gt;https://cognogpt.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Cogno+ is dedicated to revolutionizing global e-commerce by empowering brands with AI-driven assistance that offers seamless, personalized customer experiences. Our mission is to serve as the digital bridge between brands and customers, enhancing interactions and transactions across international markets, and allowing the brand to increase conversion and upsell while reducing time and money spent on manual customer service.&lt;/p&gt;</description>
+      
+      
+        
+          <category>startup</category>
+        
+      
+      
+        
+          
+          <category>Entrepreneurship</category>
+          
+          <category>Product</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2024-03-01T00:00:00Z</dc:date>
+    </item>
+    
+  </channel>
+</rss>
