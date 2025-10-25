@@ -1,463 +1,343 @@
 # Terry Chen's Personal Website
 
-This is my personal website built with Hugo and the PaperMod theme, automatically deployed to GitHub Pages.
+This is my personal website built with Hugo and the PaperMod theme, automatically deployed to GitHub Pages. The site includes a powerful version history system for tracking article changes over time.
 
 ## Table of Contents
 
-- [File Structure Overview](#file-structure-overview)
-- [Basic Commands](#basic-commands)
-- [Creating Content](#creating-content)
-  - [Creating Posts](#creating-posts)
-  - [Creating Projects](#creating-projects)
-  - [Creating Travel Pages](#creating-travel-pages)
-- [Editing Content](#editing-content)
-- [Archiving Content](#archiving-content)
-- [Working with Images](#working-with-images)
+- [Website Structure](#website-structure)
+- [Quick Start](#quick-start)
+- [Content Management](#content-management)
+  - [Creating New Content](#creating-new-content)
+  - [Editing Content](#editing-content)
+  - [Version History System](#version-history-system)
+  - [Archiving Content](#archiving-content)
+- [Content Organization](#content-organization)
+- [Images and Media](#images-and-media)
 - [Site Configuration](#site-configuration)
 - [Deployment](#deployment)
 - [Troubleshooting](#troubleshooting)
 
-## File Structure Overview
+## Website Structure
+
+Your website is organized into several main sections:
 
 ```
-terrylinhaochen.github.io/          # Root directory of the project
-├── .github/                        # GitHub configuration
-│   └── workflows/                  # GitHub Actions workflows
-│       └── hugo.yml                # Configuration for automated deployment
-├── archetypes/                     # Template files for new content
-│   └── default.md                  # Default template for new content
-├── assets/                         # CSS, JS, and other assets that need processing
-│   └── css/
-│       └── extended/
-│           └── custom.css          # Custom CSS overrides
-├── content/                        # Where all your content lives
-│   ├── _index.md                   # Homepage content
-│   ├── about.md                    # About page
-│   ├── archived/                   # Archived content
-│   │   ├── _index.md               # Archived section landing page
-│   │   └── *.md                    # Individual archived files
-│   ├── posts/                      # Blog posts
-│   │   └── *.md                    # Individual post files
-│   ├── projects/                   # Project pages
-│   │   ├── _index.md               # Projects section landing page
-│   │   └── *.md                    # Individual project files
-│   ├── search.md                   # Search page
-│   └── travel/                     # Travel posts
-│       ├── _index.md               # Travel section landing page
-│       └── *.md                    # Individual travel posts
-├── layouts/                        # Custom templates that override theme defaults
-│   ├── _default/                   # Default layouts
-│   │   ├── list/                   # List page layouts
-│   │   └── section/                # Section page layouts
-│   ├── partials/                   # Partial templates (header, footer, etc.)
-│   │   ├── footer.html             # Custom footer
-│   │   ├── home_info.html          # Home page info section
-│   │   └── post_meta.html          # Post metadata display
-│   ├── shortcodes/                 # Custom shortcodes
-│   │   └── gallery.html            # Gallery shortcode
-│   └── index.html                  # Homepage template
-├── static/                         # Static files (images, downloads, etc.)
-│   └── images/                     # Images organized by content type
-│       ├── posts/                  # Images for blog posts
-│       ├── projects/               # Images for projects
-│       └── travel/                 # Images for travel posts
-├── themes/                         # Hugo themes
-│   └── PaperMod/                   # PaperMod theme
-├── .gitignore                      # Files to ignore in Git
-├── archive.sh                      # Main archiving script with menu options
-├── archive-note.sh                 # Script to move content to archived section
-├── tag-as-archived.sh              # Script to tag content as archived
-├── create-post.sh                  # Script to create new posts
-├── reset-github-pages.sh           # Script to reset and deploy to GitHub Pages
-├── config.toml                     # Main Hugo configuration file
-└── README.md                       # This file
+terrylinhaochen.github.io/
+├── content/
+│   ├── posts/           # Blog posts and articles
+│   ├── main-themes/     # Main thematic content areas
+│   ├── investing/       # Investment analysis and insights
+│   ├── about/          # About pages and experience
+│   │   ├── experience/ # Work experience pages
+│   │   ├── research/   # Research projects
+│   │   └── projects/   # Academic/research projects
+│   ├── product/        # Product development content
+│   └── archived/       # Archived content
+├── scripts/            # Automation scripts
+│   ├── v.sh           # Simple version creation
+│   ├── version.sh     # Full version management
+│   ├── create-post.sh # Content creation
+│   └── archive.sh     # Content archiving
+├── layouts/           # Custom templates
+├── static/           # Images and static files
+├── assets/           # CSS and processed assets
+└── config.toml       # Site configuration
 ```
 
-## Basic Commands
+## Quick Start
 
+### One-Time Setup
 ```bash
-# Start local development server (with drafts enabled)
-cd /Users/terry/Desktop/terrylinhaochen.github.io && hugo server -D
+# Setup the simplified version command (optional)
+./scripts/setup-version-alias.sh
+source ~/.zshrc  # or restart terminal
 
-# Build site for production (this is automatically done by GitHub Actions)
-hugo --minify
+# Start local development server
+hugo server -D
+```
 
-# Create a new post using the script
+### Daily Workflow
+```bash
+# 1. Edit any content file and save
+# 2. Create a new version (if you want version tracking)
+version "1.1" "Updated examples and analysis"
+
+# 3. View changes locally
+hugo server -D
+```
+
+## Content Management
+
+### Creating New Content
+
+#### Blog Posts
+```bash
+# Quick creation
 ./create-post.sh "Your Post Title"
 
-# Create a new project using the script
-./create-post.sh "Your Project Title" projects
+# Manual creation: create content/posts/your-post.md
+```
 
-# Create a new travel post using the script
-./create-post.sh "Your Travel Title" travel
+#### Other Content Types
+- **Main Themes**: Add to `content/main-themes/`
+- **Investing**: Add to `content/investing/` 
+- **Product**: Add to `content/product/`
+- **About/Experience**: Add to `content/about/experience/`
 
-# Archive a post using the interactive menu
+### Editing Content
+
+All content is written in Markdown with YAML frontmatter:
+
+```yaml
+---
+title: "Your Content Title"
+description: "SEO description"
+date: 2025-01-25
+author: Terry Chen
+tags: ["tag1", "tag2"]
+keywords: ["keyword1", "keyword2"]
+---
+
+# Your Content
+
+Write your content here using Markdown...
+```
+
+### Version History System
+
+This site includes an automated version history system that tracks changes to your content over time.
+
+#### How It Works
+- **Git-based**: Leverages Git commits for version tracking
+- **Automatic**: Script handles all the technical details
+- **Reader-friendly**: Shows version history at bottom of posts
+- **GitHub integration**: Readers can view exact changes via GitHub
+
+#### Creating Versions
+
+**Simple Method (Recommended):**
+```bash
+# Edit your content file and save
+# Then run:
+version "1.1" "Description of what you changed"
+```
+
+**Advanced Method:**
+```bash
+./scripts/version.sh content/posts/your-post.md "1.1" "Description of changes"
+```
+
+#### What Readers See
+At the bottom of posts with version history:
+```
+📋 Version History
+
+v1.1 (Jan 25, 2025) [🔗 View changes]
+     Updated examples and improved analysis
+
+v1.0 (Jan 15, 2025) [🔗 View changes]  
+     Initial publication
+
+💡 Click "View changes" to see exactly what changed between versions
+```
+
+#### Version History Features
+- **No file duplication** - one file per post
+- **Complete change tracking** - see exactly what changed
+- **Professional presentation** - clean, accessible interface
+- **GitHub integration** - leverage GitHub's diff viewer
+- **SEO friendly** - only current versions indexed
+
+### Archiving Content
+
+Move older content to the archived section:
+
+```bash
+# Interactive archiving
 ./archive.sh
 
-# Archive a post by moving it to the archived section
-./archive-note.sh content/posts/post-to-archive.md
+# Direct archiving
+./archive-note.sh content/posts/old-post.md
 
-# Archive a post by tagging it without moving
-./tag-as-archived.sh content/posts/post-to-archive.md
-
-# Deploy to GitHub Pages
-./reset-github-pages.sh
+# Tag-based archiving (keeps file in place)
+./tag-as-archived.sh content/posts/old-post.md
 ```
 
-## Creating Content
+## Content Organization
 
-### Creating Posts
+### Main Sections
 
-#### Using the script:
+**Posts** (`/posts/`): Blog posts and articles
+- General thoughts and analysis
+- Current and relevant content
 
-```bash
-./create-post.sh "My New Blog Post"
-```
+**Main Themes** (`/main-themes/`): Core thematic areas
+- Multi-agent systems
+- Data insights  
+- Tech history
+- Human quirks
 
-This will:
-- Create a new markdown file in `content/posts/YYYY-MM-DD-my-new-blog-post.md`
-- Create an image directory at `static/images/posts/my-new-blog-post/`
+**Investing** (`/investing/`): Investment analysis
+- Market analysis
+- Technology trends
+- Economic insights
 
-#### Manually:
+**Product** (`/product/`): Product development
+- Product strategy
+- Development insights
+- User experience
 
-Create a file in `content/posts/` with this frontmatter:
+**About** (`/about/`): Personal and professional information
+- Experience at companies
+- Research projects  
+- Academic work
 
+**Archived** (`/archived/`): Historical content
+- Older posts and projects
+- Superseded content
+- Historical reference
+
+### Content Categories and Tags
+
+Use tags and categories to organize content:
 ```yaml
----
-title: "My New Blog Post"
-date: 2024-03-24
-description: "A brief description of your post"
-tags: ["tag1", "tag2"]
-categories: ["category"]
-# Optional: mark as featured to display on homepage
-featured: true
-# Optional: add a cover image
-cover:
-    image: "/images/posts/my-post/cover.jpg"
-    alt: "Cover Image"
-    caption: "Image Caption"
-draft: false  # Set to true if not ready to publish
----
-
-Your content here...
+tags: ["AI", "Product", "Analysis"]
+categories: ["Technology"]
 ```
 
-### Creating Projects
+## Images and Media
 
-#### Using the script:
-
-```bash
-./create-post.sh "My New Project" projects
+### Image Organization
 ```
-
-#### Manually:
-
-Create a file in `content/projects/` with this frontmatter:
-
-```yaml
----
-title: "My New Project"
-date: 2024-03-24
-description: "Project description"
-categories: ["work"]  # or ["prototype"], etc.
-projectURL: "https://example.com"  # Optional
-cover:
-    image: "/images/projects/my-project/cover.jpg"
-    alt: "Project Cover Image"
-draft: false
----
-
-Project details here...
+static/images/
+├── posts/          # Blog post images
+├── main-themes/    # Thematic content images  
+├── investing/      # Investment content images
+├── about/          # About section images
+├── product/        # Product content images
+└── archived/       # Archived content images
 ```
-
-### Creating Travel Pages
-
-#### Using the script:
-
-```bash
-./create-post.sh "My Travel Destination" travel
-```
-
-#### Manually:
-
-Create a file in `content/travel/` with this frontmatter:
-
-```yaml
----
-title: "Travel Destination"
-date: 2024-03-24
-location: "City, Country"
-categories: ["Country"] # Used for grouping
-description: "Brief description"
----
-
-Travel details and experiences here...
-```
-
-## Editing Content
-
-1. All content is written in Markdown (.md files) located in the `content/` directory.
-2. To edit existing content, open the corresponding `.md` file.
-3. The content between the `---` markers at the top is called "frontmatter" and contains metadata about the page.
-4. The rest of the file is your content, written in Markdown.
-
-### Markdown Basics
-
-```markdown
-# Heading 1
-## Heading 2
-### Heading 3
-
-Regular paragraph text
-
-**Bold text**
-*Italic text*
-
-[Link text](https://example.com)
-
-![Image alt text](/images/path-to-image.jpg)
-
-- Bullet point 1
-- Bullet point 2
-
-1. Numbered item 1
-2. Numbered item 2
-
-> Blockquote text
-
-```
-
-### Deleting Content
-
-Simply delete the markdown file from the appropriate directory:
-- Posts: `content/posts/your-post.md`
-- Projects: `content/projects/your-project.md`
-- Travel: `content/travel/your-travel-post.md`
-
-## Archiving Content
-
-Instead of deleting old content, you can archive it to keep it accessible but separate from your current content.
-
-### Method 1: Using the Archive Script (Recommended)
-
-The easiest way to archive content is to use the provided script:
-
-```bash
-# Navigate to your site directory
-cd /Users/terry/Desktop/terrylinhaochen.github.io
-
-# Run the archive script
-./archive-note.sh content/posts/post-to-archive.md
-```
-
-This will move the specified file to the archived section and offer to commit the change.
-
-### Method 2: Manual Move
-
-You can also manually move files:
-
-1. Find the file you want to archive in `content/posts/` or `content/projects/`
-2. Move it to `content/archived/`
-3. The content will automatically appear in the Archived section
-
-### Method 3: Using the "archived" Tag
-
-If you don't want to move the file but still want it to appear in archives:
-
-1. Open the markdown file you want to archive
-2. Add `tags: ["archived"]` to the frontmatter
-3. The content will remain in its original location but also appear as archived
-
-Example:
-```yaml
----
-title: "My Old Project"
-date: 2022-01-15
-categories: ["projects"]
-tags: ["archived", "other-tags"]
----
-```
-
-### After Archiving
-
-After archiving content, you should:
-
-1. Run `hugo server -D` to preview the changes locally
-2. Commit and push your changes to update the live site:
-   ```bash
-   git add .
-   git commit -m "Archive old content"
-   git push
-   ```
-
-3. Visit [/archived/](https://terrylinhaochen.github.io/archived/) to see your archived content
-
-## Working with Images
 
 ### Adding Images
+```markdown
+# Basic image
+![Description](/images/posts/post-name/image.jpg)
 
-1. **Store images** in the appropriate directory:
-   - For posts: `static/images/posts/post-name/`
-   - For projects: `static/images/projects/project-name/`
-   - For travel: `static/images/travel/destination-name/`
-   - For general use: `static/images/`
+# Figure with caption
+{{< figure src="/images/posts/post-name/image.jpg" alt="Description" caption="Caption" >}}
 
-2. **Reference images** in your markdown:
-   ```markdown
-   ![Image Description](/images/posts/post-name/image.jpg)
-   ```
-
-3. **Using the Figure shortcode** for more control:
-   ```markdown
-   {{< figure src="/images/posts/post-name/image.jpg" alt="Description" caption="Caption" >}}
-   ```
-
-4. **Creating a gallery**:
-   ```markdown
-   {{< gallery >}}
-   {{< figure src="/images/gallery1.jpg" alt="Gallery Image 1" >}}
-   {{< figure src="/images/gallery2.jpg" alt="Gallery Image 2" >}}
-   {{< figure src="/images/gallery3.jpg" alt="Gallery Image 3" >}}
-   {{< /gallery >}}
-   ```
-
-### Cover Images
-
-Add a cover image to any content by including in the frontmatter:
-```yaml
+# Cover image (in frontmatter)
 cover:
     image: "/images/posts/post-name/cover.jpg"
     alt: "Cover Image"
-    caption: "Optional caption"
-    relative: false  # Use false for /static directory
-    hidden: false    # Display on post page
-    hiddenInList: false  # Display in post lists
+    caption: "Caption"
+```
+
+### Image Galleries
+```markdown
+{{< gallery >}}
+{{< figure src="/images/gallery1.jpg" alt="Image 1" >}}
+{{< figure src="/images/gallery2.jpg" alt="Image 2" >}}
+{{< /gallery >}}
 ```
 
 ## Site Configuration
 
-### Main Configuration: `config.toml`
+### Main Settings (`config.toml`)
 
-Key settings you might want to modify:
-- `title`: Site title
-- `params.description`: Site description
-- `params.homeInfoParams`: Welcome section content
-- `params.socialIcons`: Social media links
-- `menu.main`: Navigation menu items (posts, projects, archived, search, about)
-- `params.mainSections`: Content types to include in archives and listings (posts, projects, archived)
+Key configuration areas:
+- **Site identity**: Title, description, author
+- **Navigation**: Menu structure and links
+- **Social media**: Links and icons
+- **Content sections**: What appears in lists and archives
+- **Search**: Search functionality settings
 
-Example of updating the site description:
+### Custom Styling (`assets/css/extended/custom.css`)
 
-```toml
-[params]
-  description = "Your new site description goes here"
-```
-
-Example of menu configuration:
-
-```toml
-[menu]
-  [[menu.main]]
-    identifier = "posts"
-    name = "Posts"
-    url = "/posts/"
-    weight = 10
-  [[menu.main]]
-    identifier = "projects"
-    name = "Projects"
-    url = "/projects/"
-    weight = 20
-  [[menu.main]]
-    identifier = "archived"
-    name = "Archived"
-    url = "/archived/"
-    weight = 25
-  [[menu.main]]
-    identifier = "search"
-    name = "Search"
-    url = "/search/"
-    weight = 30
-```
-
-### Custom CSS: `assets/css/extended/custom.css`
-
-Edit this file to customize the site's appearance. For example:
-
+Customize appearance:
 ```css
-/* Increase font size for better readability */
+/* Example customizations */
 body {
   font-size: 18px;
 }
 
-/* Change colors for links */
-a {
-  color: #0077cc;
+.post-title {
+  color: #333;
 }
+```
 
-a:hover {
-  color: #005599;
-}
+### Menu Configuration
+Add or modify navigation items:
+```toml
+[[menu.main]]
+  identifier = "posts"
+  name = "Posts"
+  url = "/posts/"
+  weight = 10
 ```
 
 ## Deployment
 
-Your site is configured to deploy to GitHub Pages from the `gh-pages` branch:
+### Automatic Deployment
+Your site deploys automatically via GitHub Actions when you push to the main branch.
 
-1. Any changes you make to your site content should be made in the `main` branch
-2. After making changes, you need to build and deploy using the reset script:
-
+### Manual Deployment
 ```bash
-# Make your content changes
-# Then run the deployment script
+# Build and deploy
 ./reset-github-pages.sh
+
+# Or manually:
+hugo --minify
+# Then commit and push the generated files
 ```
 
-3. The script will:
-   - Clean the public directory
-   - Build your site using Hugo
-   - Push the generated content to the `gh-pages` branch
-   - GitHub Pages will then serve your site from the `gh-pages` branch
-
-### Important Settings
-Make sure your GitHub Pages settings are configured to deploy from the `gh-pages` branch, not from GitHub Actions.
-
-### Troubleshooting Deployment Issues
-If your site is not updating or showing 404 errors for some pages:
-1. Check that GitHub Pages is set to deploy from the `gh-pages` branch (not "GitHub Actions")
-2. Run the `reset-github-pages.sh` script again to force a clean build and push
-3. Wait a few minutes for GitHub's cache to update
-4. Check browser cache by doing a hard refresh (Ctrl+F5 or Cmd+Shift+R)
+### GitHub Pages Settings
+- **Source**: Deploy from `gh-pages` branch
+- **Custom domain**: terrylinhaochen.github.io
+- **HTTPS**: Enabled
 
 ## Troubleshooting
 
 ### Common Issues
 
-1. **Changes not showing up locally:**
-   - Make sure the Hugo server is running with `-D` to show draft posts
-   - Check for syntax errors in your markdown files
-   - Try restarting the Hugo server (`Ctrl+C` to stop, then run `hugo server -D` again)
+**Content not showing up:**
+- Check frontmatter syntax
+- Ensure `draft: false` (or omit draft field)
+- Verify file is in correct directory
 
-2. **Image not displaying:**
-   - Verify the path is correct (starts with `/images/`)
-   - Check that the image exists in the right directory in `static/`
-   - Ensure proper file permissions
+**Images not displaying:**
+- Verify path starts with `/images/`
+- Check file exists in `static/images/`
+- Ensure correct file permissions
 
-3. **Theme changes not applying:**
-   - Ensure you're modifying the correct file in `assets/css/extended/custom.css`
-   - Check that your CSS selectors are specific enough to override theme defaults
+**Version history not working:**
+- Ensure script has execute permissions: `chmod +x scripts/v.sh`
+- Check Git repository is properly initialized
+- Verify frontmatter formatting
 
-4. **Archived content not showing up:**
-   - Make sure `archived` is included in the `mainSections` parameter in your config file
-   - Check that the `archived` menu item is properly configured in the menu section
-   - Verify the page has the right frontmatter (if using tags for archiving)
+**Local development issues:**
+- Restart Hugo server: `Ctrl+C` then `hugo server -D`
+- Clear browser cache: `Cmd+Shift+R` (Mac) or `Ctrl+F5` (PC)
+- Check for syntax errors in markdown files
 
-5. **Deployment failures:**
-   - Check the GitHub Actions logs for errors
-   - Ensure your Hugo version in `.github/workflows/hugo.yml` matches your local version
-   - Verify there are no invalid front matter or syntax issues in your markdown files
+**Deployment issues:**
+- Check GitHub Actions logs
+- Verify `gh-pages` branch settings
+- Run `./reset-github-pages.sh` to force rebuild
 
-### Local Development Tips
+### Getting Help
 
-- Use `hugo server -D --navigateToChanged` to automatically navigate to changed pages
-- Enable drafts with `-D` to preview content that's not ready for publishing
-- Add `draft: true` to frontmatter for content you don't want published yet
+1. **Local testing**: Always test with `hugo server -D` before pushing
+2. **Version control**: Use version history system to track changes
+3. **GitHub integration**: Leverage GitHub's tools for collaboration and history
+4. **Incremental changes**: Make small, focused changes to isolate issues
+
+### Development Workflow
+
+1. **Start development server**: `hugo server -D`
+2. **Create/edit content**: Use scripts or edit files directly
+3. **Test changes locally**: Preview at `http://localhost:1313`
+4. **Create version**: `version "1.1" "Description"`
+5. **Commit and push**: Git will handle deployment automatically
+
+This setup provides a professional, maintainable blog with powerful version tracking and easy content management.

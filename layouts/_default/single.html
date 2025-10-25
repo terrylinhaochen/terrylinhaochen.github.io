@@ -25,6 +25,43 @@
     </div>
   </footer>
   {{ end }}
+
+  <!-- Version History -->
+  {{ if .Params.changelog }}
+  <div class="version-history">
+    <h3>📋 Version History</h3>
+    <div class="version-list">
+      {{ range .Params.changelog }}
+      <div class="version-item">
+        <div class="version-header">
+          <span class="version-number">v{{ .version }}</span>
+          <time class="version-date">{{ dateFormat "Jan 2, 2006" .date }}</time>
+          <a href="https://github.com/terrylinhaochen/terrylinhaochen.github.io/commits/main/{{ $.File.Path }}" 
+             target="_blank" class="view-commits" title="View changes on GitHub">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+            </svg>
+            View changes
+          </a>
+        </div>
+        {{ if .changes }}
+        <div class="version-changes">{{ .changes }}</div>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+    <div class="git-info">
+      <small>💡 Click "View changes" to see exactly what changed between versions</small>
+    </div>
+  </div>
+  {{ end }}
+
+  <!-- Last Updated Info -->
+  {{ if .Params.last_updated }}
+  <div class="update-info">
+    <small>Last updated: {{ dateFormat "January 2, 2006" .Params.last_updated }}</small>
+  </div>
+  {{ end }}
 </article>
 
 {{ partial "related.html" . }}
@@ -59,6 +96,110 @@
   .post-content h4 {
     margin: 1.5em 0 0.5em;
     color: var(--primary);
+  }
+
+  /* Version History Styling */
+  .version-history {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: var(--code-bg);
+    border-radius: var(--radius);
+    border-left: 4px solid var(--primary);
+  }
+
+  .version-history h3 {
+    margin: 0 0 1rem 0;
+    color: var(--primary);
+    font-size: 1.1rem;
+  }
+
+  .version-item {
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .version-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+
+  .version-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.25rem;
+    flex-wrap: wrap;
+  }
+
+  .version-number {
+    font-weight: bold;
+    color: var(--primary);
+    font-family: var(--font-mono, monospace);
+  }
+
+  .version-date {
+    color: var(--secondary);
+    font-size: 0.9rem;
+  }
+
+  .current-badge {
+    background-color: var(--primary);
+    color: var(--theme);
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+
+  .view-commits {
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 0.2rem 0.5rem;
+    border: 1px solid var(--primary);
+    border-radius: 0.25rem;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  .view-commits:hover {
+    background-color: var(--primary);
+    color: var(--theme);
+  }
+
+  .view-commits svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .git-info {
+    margin-top: 1rem;
+    text-align: center;
+    color: var(--secondary);
+    font-style: italic;
+  }
+
+  .version-changes {
+    color: var(--content);
+    font-style: italic;
+    margin-bottom: 0.25rem;
+    font-size: 0.95rem;
+  }
+
+  .version-summary {
+    color: var(--secondary);
+    font-size: 0.9rem;
+  }
+
+  .update-info {
+    margin-top: 1rem;
+    text-align: center;
+    color: var(--secondary);
+    border-top: 1px solid var(--border);
+    padding-top: 1rem;
   }
 </style>
 {{ end }} 
