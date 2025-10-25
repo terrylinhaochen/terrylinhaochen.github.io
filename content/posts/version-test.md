@@ -7,6 +7,9 @@ tags: ["Test"]
 version: "1.0"
 changelog:
   - version: "1.0"
+    date: "2025-10-25"
+    changes: "Initial test publication"
+  - version: "1.0"
     date: "2025-01-25"
     changes: "Initial test publication"
 ---
