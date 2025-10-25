@@ -16,11 +16,13 @@ changelog:
 
 # Version History Test
 
-This is the initial version of a test post to demonstrate the version history system.
+This is an updated version of the test post. I've added more content and examples.
 
 ## Key Points
 
-- This is version 1.0
+- This is now version 1.1  
+- Added more detailed examples
+- Improved explanations
 - When I update this post, the version history will appear below
 - Readers can click to see exactly what changed
 
