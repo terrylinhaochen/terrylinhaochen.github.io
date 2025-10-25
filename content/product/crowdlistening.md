@@ -1,17 +1,17 @@
 ---
-title: "An Agentic Social Operating System"
+title: "From Raw Social Data to Real Research"
 date: 2025-09-15
 categories: crowdlisten
-projectURL: crowdlistening.com
+projectURL: crowdlisten.com
 tags: ["Entrepreneurship", "Product"]
-company: "crowdlistening"
+company: "crowdlisten"
 description: "Transform large-scale social conversations into actionable insights. Understand crowd sentiment, track emerging opinions, and identify key narratives."
 keywords: ["social listening", "brand listening", "market analysis", "tiktok", "journalism","reporting", "user experience"]
-images: ["/projects/crowdlistening/featured.jpg"]
-aliases: ["/projects/crowdlistening/"]
+images: ["/projects/crowdlisten/featured.jpg"]
+aliases: ["/projects/crowdlisten/"]
 ---
 
-## Inspiring insights, amplifying voices. (crowdlistening.com)
+## Inspiring insights, amplifying voices. (crowdlisten.com)
 
 ![Webpage](/images/posts/crowdlistening/webpage.png)
 
