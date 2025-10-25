@@ -9,6 +9,11 @@ description: "Transform large-scale social conversations into actionable insight
 keywords: ["social listening", "brand listening", "market analysis", "tiktok", "journalism","reporting", "user experience"]
 images: ["/projects/crowdlisten/featured.jpg"]
 aliases: ["/projects/crowdlisten/"]
+version: "1.1"
+changelog:
+  - version: "1.1"
+    date: "2025-10-25"
+    changes: "Updated Title"
 ---
 
 ## Inspiring insights, amplifying voices. (crowdlisten.com)
