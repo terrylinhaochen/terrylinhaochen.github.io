@@ -4,8 +4,11 @@ description: "Testing the git-based version history system"
 date: 2025-01-25
 author: Terry Chen
 tags: ["Test"]
-version: "1.0"
+version: "1.1"
 changelog:
+  - version: "1.1"
+    date: "2025-10-25"
+    changes: "Added more detailed examples and improved explanations"
   - version: "1.0"
     date: "2025-10-25"
     changes: "Initial test publication"
