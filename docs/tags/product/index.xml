@@ -2,15 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     <title>Product - Terry Chen</title>
-    <link>https://chenterry.com/tags/product/</link>
+    <link>http://localhost:1313/tags/product/</link>
     <description>Hi, this is Terry. I&#39;m documenting my product ideas and learning notes in this blog. I&#39;m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description>
     <language>en-us</language>
     <managingEditor>Terry Chen (Terry Chen)</managingEditor>
     <webMaster>Terry Chen (Terry Chen)</webMaster>
     <copyright>© 2025 Terry Chen. All rights reserved.</copyright>
-    <lastBuildDate>Sun, 19 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 26 Oct 2025 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="https://chenterry.com/tags/product/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/tags/product/index.xml" rel="self" type="application/rss+xml" />
     
     <generator>Hugo 0.136.2</generator>
     <category>Technology</category>
@@ -18,20 +18,82 @@
     <category>Product Engineering</category>
     <category>Investment Analysis</category>
     <image>
-      <url>https://chenterry.com/images/profile.jpg</url>
+      <url>http://localhost:1313/images/profile.jpg</url>
       <title>Terry Chen</title>
-      <link>https://chenterry.com/</link>
+      <link>http://localhost:1313/</link>
       <description>Hi, this is Terry. I&#39;m documenting my product ideas and learning notes in this blog. I&#39;m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description>
       <width>144</width>
       <height>144</height>
     </image>
     
     <item>
+      <title>From Indexing to Understanding Intent in Discovery Systems</title>
+      <link>http://localhost:1313/posts/intent-driven-discovery/</link>
+      <pubDate>Sun, 26 Oct 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>http://localhost:1313/posts/intent-driven-discovery/</guid>
+      <description>Discovery is moving from static data retrieval toward systems that understand why a user is searching, not just what they type. The next generation of search experiences must merge precise recall with adaptive reasoning.</description>
+      
+      
+        
+          <category>aibrary</category>
+        
+      
+      
+        
+          
+          <category>Product</category>
+          
+          <category>AI</category>
+          
+          <category>Search</category>
+          
+          <category>Discovery</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-10-26T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>When Knowledge Becomes Fluid</title>
+      <link>http://localhost:1313/posts/fluid-knowledge/</link>
+      <pubDate>Sun, 26 Oct 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>http://localhost:1313/posts/fluid-knowledge/</guid>
+      <description>For most of history, knowledge has been bound — fixed in books, trapped in formats, and constrained by how it could be consumed. With generative models, that boundary begins to dissolve. Knowledge itself becomes fluid.</description>
+      
+      
+        
+          <category>aibrary</category>
+        
+      
+      
+        
+          
+          <category>Product</category>
+          
+          <category>AI</category>
+          
+          <category>Knowledge</category>
+          
+          <category>Learning</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-10-26T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
       <title>Built to last</title>
-      <link>https://chenterry.com/posts/built_to_last/</link>
+      <link>http://localhost:1313/posts/built_to_last/</link>
       <pubDate>Sun, 19 Oct 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/posts/built_to_last/</guid>
+      <guid>http://localhost:1313/posts/built_to_last/</guid>
       <description>Competitive differentiation in the age of AI - observations on building sustainable advantages when technology commoditizes quickly.</description>
       
       
@@ -52,11 +114,11 @@
     </item>
     
     <item>
-      <title>An Agentic Social Operating System</title>
-      <link>https://chenterry.com/product/crowdlistening/</link>
+      <title>From Raw Social Data to Real Research</title>
+      <link>http://localhost:1313/posts/crowdlistening/</link>
       <pubDate>Mon, 15 Sep 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/product/crowdlistening/</guid>
+      <guid>http://localhost:1313/posts/crowdlistening/</guid>
       <description>Transform large-scale social conversations into actionable insights. Understand crowd sentiment, track emerging opinions, and identify key narratives.</description>
       
       
@@ -80,10 +142,10 @@
     
     <item>
       <title>Iterating at the Pace of AI</title>
-      <link>https://chenterry.com/product/agent_prototyping/</link>
+      <link>http://localhost:1313/posts/agent_prototyping/</link>
       <pubDate>Fri, 29 Aug 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/product/agent_prototyping/</guid>
+      <guid>http://localhost:1313/posts/agent_prototyping/</guid>
       <description>Two approaches to building agentic experiences: platform-first vs scenario-first. How AI coding tools enable faster prototyping and cross-functional collaboration for agent product development.</description>
       
       
@@ -105,10 +167,10 @@
     
     <item>
       <title>Social Listening for Product Insight</title>
-      <link>https://chenterry.com/posts/need_validation/</link>
+      <link>http://localhost:1313/posts/need_validation/</link>
       <pubDate>Fri, 29 Aug 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/posts/need_validation/</guid>
+      <guid>http://localhost:1313/posts/need_validation/</guid>
       <description>Using AI-powered social listening to extract authentic customer insights from online discourse. Moving from product-to-market to market-to-product development through systematic analysis of community discussions.</description>
       
       
@@ -126,10 +188,10 @@
     
     <item>
       <title>Human-Mediated Agentic Workflows</title>
-      <link>https://chenterry.com/product/agentic_workforce/</link>
+      <link>http://localhost:1313/archived/agentic_workforce/</link>
       <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/product/agentic_workforce/</guid>
+      <guid>http://localhost:1313/archived/agentic_workforce/</guid>
       <description>Explore the emerging landscape of agentic workforces - autonomous AI agents that reason, plan, act, and learn to handle complex tasks and workflows. Analysis of key players, technology strategies, and market opportunities.</description>
       
       
@@ -142,6 +204,8 @@
           
           <category>Product</category>
           
+          <category>Archived</category>
+          
         
       
       
@@ -151,10 +215,10 @@
     
     <item>
       <title>Search Advertisement</title>
-      <link>https://chenterry.com/product/search_advertising/</link>
+      <link>http://localhost:1313/archived/search_advertising/</link>
       <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/product/search_advertising/</guid>
+      <guid>http://localhost:1313/archived/search_advertising/</guid>
       <description>Comprehensive analysis of AI-driven search advertising, market dynamics, and investment opportunities. Exploring how AI is revolutionizing ad targeting, optimization, and performance in the $200B+ search advertising market.</description>
       
       
@@ -167,6 +231,8 @@
           
           <category>Product</category>
           
+          <category>Archived</category>
+          
         
       
       
@@ -175,36 +241,11 @@
     </item>
     
     <item>
-      <title>Search &amp; Discovery Features</title>
-      <link>https://chenterry.com/product/search/</link>
-      <pubDate>Thu, 15 May 2025 00:00:00 +0000</pubDate>
-      <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/product/search/</guid>
-      <description>Development of an intelligent search system using AI and machine learning for enhanced content discovery. Technical implementation, user experience design, and performance optimization for content recommendation platforms.</description>
-      
-      
-        
-          <category>aibrary</category>
-        
-      
-      
-        
-          
-          <category>Product</category>
-          
-        
-      
-      
-      <dc:creator>Terry Chen</dc:creator>
-      <dc:date>2025-05-15T00:00:00Z</dc:date>
-    </item>
-    
-    <item>
       <title>Why People Care What Others Think</title>
-      <link>https://chenterry.com/posts/crowd_thesis/</link>
+      <link>http://localhost:1313/posts/crowd_thesis/</link>
       <pubDate>Mon, 12 May 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/posts/crowd_thesis/</guid>
+      <guid>http://localhost:1313/posts/crowd_thesis/</guid>
       <description>Understanding collective intelligence and social dynamics. Why crowd psychology matters for product builders and how human need for belonging drives engagement patterns.</description>
       
       
@@ -226,10 +267,10 @@
     
     <item>
       <title>Value Add of AI: Generation as Distribution</title>
-      <link>https://chenterry.com/posts/generation_distribution/</link>
+      <link>http://localhost:1313/posts/generation_distribution/</link>
       <pubDate>Thu, 08 May 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/posts/generation_distribution/</guid>
+      <guid>http://localhost:1313/posts/generation_distribution/</guid>
       <description>Exploring how AI&#39;s greatest value shifts from content creation to personalized distribution and synthesis. From RSS feeds to knowledge liquefaction and the future of adaptive content experiences.</description>
       
       
@@ -249,10 +290,10 @@
     
     <item>
       <title>A Practical Guide to SEO with Claude</title>
-      <link>https://chenterry.com/archived/guide_seo/</link>
+      <link>http://localhost:1313/archived/guide_seo/</link>
       <pubDate>Wed, 07 May 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/archived/guide_seo/</guid>
+      <guid>http://localhost:1313/archived/guide_seo/</guid>
       <description>Comprehensive SEO implementation guide covering technical foundations, on-page optimization, modern approaches, and practical tools for improving search engine visibility.</description>
       
       
@@ -270,10 +311,10 @@
     
     <item>
       <title>Interesting Reads</title>
-      <link>https://chenterry.com/posts/interesting_reads/</link>
+      <link>http://localhost:1313/posts/interesting_reads/</link>
       <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/posts/interesting_reads/</guid>
+      <guid>http://localhost:1313/posts/interesting_reads/</guid>
       <description>Curated collection of compelling articles and insights on AI agents, entrepreneurship, and product development. Features analysis of breakthrough AI tools and emerging trends.</description>
       
       
@@ -293,10 +334,10 @@
     
     <item>
       <title>User Needs &amp; Opportunities</title>
-      <link>https://chenterry.com/posts/user-needs/</link>
+      <link>http://localhost:1313/posts/user-needs/</link>
       <pubDate>Tue, 25 Mar 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/posts/user-needs/</guid>
+      <guid>http://localhost:1313/posts/user-needs/</guid>
       <description>Identifying real user pain points and business opportunities through conversations and online research. A collection of validated user needs that could become viable startups.</description>
       
       
@@ -318,10 +359,10 @@
     
     <item>
       <title>Smart Expense Tracker</title>
-      <link>https://chenterry.com/archived/smart-expense-tracker/</link>
+      <link>http://localhost:1313/archived/smart-expense-tracker/</link>
       <pubDate>Fri, 21 Mar 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/archived/smart-expense-tracker/</guid>
+      <guid>http://localhost:1313/archived/smart-expense-tracker/</guid>
       <description>&lt;p&gt;The Smart Expense Tracker with Auto-Categorization is a cloud-native application built on AWS serverless architecture. The system automates the tedious process of expense tracking by leveraging AWS services to process receipts, categorize transactions, and provide financial insights. The application offers several key features including receipt scanning and data extraction using AWS Textract, automatic expense categorization with AI (using AWS Bedrock), comprehensive expense tracking, budget setting with automated alerts via SNS, and financial report generation in CSV or PDF formats.&lt;/p&gt;</description>
       
       
@@ -345,10 +386,10 @@
     
     <item>
       <title>Rapid Prototyping of LLM Enabled Webapps</title>
-      <link>https://chenterry.com/archived/prototyping/</link>
+      <link>http://localhost:1313/archived/prototyping/</link>
       <pubDate>Sat, 19 Oct 2024 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/archived/prototyping/</guid>
+      <guid>http://localhost:1313/archived/prototyping/</guid>
       <description>&lt;h3 id=&#34;peptalk-ai-journaling-tool&#34;&gt;PepTalk: AI Journaling Tool&lt;/h3&gt;
 &lt;p&gt;Realtime conversation with aI companion to help you note down feelings and journals for the day.
 (Prototype: &lt;a href=&#34;https://peptalk-navy.web.app/&#34;&gt;https://peptalk-navy.web.app/&lt;/a&gt;)&lt;/p&gt;
@@ -379,10 +420,10 @@
     
     <item>
       <title>Exploring Unknown Unknowns</title>
-      <link>https://chenterry.com/product/learning_interface/</link>
+      <link>http://localhost:1313/posts/learning_interface/</link>
       <pubDate>Sat, 05 Oct 2024 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/product/learning_interface/</guid>
+      <guid>http://localhost:1313/posts/learning_interface/</guid>
       <description>Development of intelligent knowledge interfaces that help users discover unknown unknowns. Technical implementation of AI-powered learning systems and knowledge discovery platforms.</description>
       
       
@@ -404,10 +445,10 @@
     
     <item>
       <title>AI Content Creation - From Generation to Synthesis</title>
-      <link>https://chenterry.com/product/personalized_content/</link>
+      <link>http://localhost:1313/posts/personalized_content/</link>
       <pubDate>Fri, 20 Sep 2024 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/product/personalized_content/</guid>
+      <guid>http://localhost:1313/posts/personalized_content/</guid>
       <description>Moving beyond basic AI summarization to knowledge liquefaction - creating truly personalized learning experiences that adapt content to individual needs, contexts, and cognitive patterns.</description>
       
       
@@ -429,10 +470,10 @@
     
     <item>
       <title>Essence of Creativity: Future of Creative Work</title>
-      <link>https://chenterry.com/posts/essense_of_creativity/</link>
+      <link>http://localhost:1313/posts/essense_of_creativity/</link>
       <pubDate>Sun, 25 Aug 2024 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/posts/essense_of_creativity/</guid>
+      <guid>http://localhost:1313/posts/essense_of_creativity/</guid>
       <description>Exploring the intersection of AI-generated content and human creativity. Analysis of creative workflows, multimodal interactions, and the future of content creation in the AI era.</description>
       
       
@@ -453,16 +494,16 @@
     </item>
     
     <item>
-      <title>Content Recommendation Systems</title>
-      <link>https://chenterry.com/product/recommendation/</link>
-      <pubDate>Wed, 10 Jul 2024 00:00:00 +0000</pubDate>
+      <title>Improving and Scaling Coaching through LLMs</title>
+      <link>http://localhost:1313/posts/llmcoaching/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/product/recommendation/</guid>
-      <description>Development of a multi-modal recommendation system for podcast content using AI and machine learning. Technical architecture, user experience design, and performance analysis for intelligent content discovery.</description>
+      <guid>http://localhost:1313/posts/llmcoaching/</guid>
+      <description>LLM-enhanced coaching system for project-based learning that scales personalized mentorship through AI. Research on semantic matching, regulation gap identification, and automated coaching suggestions.</description>
       
       
         
-          <category>aibrary</category>
+          <category>northwestern</category>
         
       
       
@@ -470,19 +511,21 @@
           
           <category>Product</category>
           
+          <category>Research</category>
+          
         
       
       
       <dc:creator>Terry Chen</dc:creator>
-      <dc:date>2024-07-10T00:00:00Z</dc:date>
+      <dc:date>2024-08-15T00:00:00Z</dc:date>
     </item>
     
     <item>
       <title>Multi-modal Creative Ad Generation</title>
-      <link>https://chenterry.com/product/copilot/</link>
+      <link>http://localhost:1313/posts/copilot/</link>
       <pubDate>Mon, 20 May 2024 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/product/copilot/</guid>
+      <guid>http://localhost:1313/posts/copilot/</guid>
       <description>Development of TikTok Symphony Assistant - an AI-powered creative tool for generating ad scripts and video content. Agentic workflows and interface optimization for automated creative generation.</description>
       
       
@@ -504,10 +547,10 @@
     
     <item>
       <title>Billion Parameter Trend Insight Analysis for Ads</title>
-      <link>https://chenterry.com/product/insight/</link>
+      <link>http://localhost:1313/posts/insight/</link>
       <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/product/insight/</guid>
+      <guid>http://localhost:1313/posts/insight/</guid>
       <description>Development of AI-powered content analysis tools for TikTok trend identification and agency insights. Multi-modal content understanding and actionable trend analysis for advertising agencies.</description>
       
       
@@ -529,10 +572,10 @@
     
     <item>
       <title>Marrrket: AI Listing Secondhand Marketplace</title>
-      <link>https://chenterry.com/archived/marrrket/</link>
+      <link>http://localhost:1313/archived/marrrket/</link>
       <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/archived/marrrket/</guid>
+      <guid>http://localhost:1313/archived/marrrket/</guid>
       <description>&lt;p&gt;Marrrket is an AI-powered second-hand marketplace platform targeting North American university students, initially focusing on Chinese international students. The platform aims to solve the inefficiency in the current second-hand market by simplifying the listing process through AI-generated product descriptions from images and minimal user input. By reducing friction in the listing process, Marrrket will increase the overall volume of second-hand items available in the market, creating a more efficient marketplace for both buyers and sellers. The platform&amp;rsquo;s innovation centers on using artificial intelligence to dramatically lower the barrier to entry for sellers, which is hypothesized to be the primary constraint on market growth.&lt;/p&gt;</description>
       
       
@@ -554,10 +597,10 @@
     
     <item>
       <title>Cogno: Multi-agent AI for Sales Automation</title>
-      <link>https://chenterry.com/archived/cogno/</link>
+      <link>http://localhost:1313/archived/cogno/</link>
       <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/archived/cogno/</guid>
+      <guid>http://localhost:1313/archived/cogno/</guid>
       <description>&lt;p&gt;Multi-agent system for cross boarder e-commerce sales automation. Co-founder and head of product.
 &lt;a href=&#34;https://cognogpt.com&#34;&gt;https://cognogpt.com&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Cogno+ is dedicated to revolutionizing global e-commerce by empowering brands with AI-driven assistance that offers seamless, personalized customer experiences. Our mission is to serve as the digital bridge between brands and customers, enhancing interactions and transactions across international markets, and allowing the brand to increase conversion and upsell while reducing time and money spent on manual customer service.&lt;/p&gt;</description>
@@ -583,10 +626,10 @@
     
     <item>
       <title>Data Insights</title>
-      <link>https://chenterry.com/main-themes/data-insights/</link>
+      <link>http://localhost:1313/main-themes/data-insights/</link>
       <pubDate>Fri, 18 Aug 2023 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/main-themes/data-insights/</guid>
+      <guid>http://localhost:1313/main-themes/data-insights/</guid>
       <description>Extracting meaningful insights from unstructured multi-modal content.</description>
       
       

@@ -2,10 +2,12 @@
 title: "Wearable AI"
 date: 2025-07-13
 author: Terry Chen
-tags: ["Investing"]
+tags: ["Investing", "Archived"]
 categories: ["AI Application & Value Creation Layer"]
 description: "Comprehensive analysis of the wearable AI market, including smart glasses, AI pins, and ambient computing devices. Market size, key players, technology trends, and investment opportunities in the $48.82B wearable AI industry."
 keywords: ["wearable AI", "smart glasses", "AI pins", "ambient computing", "consumer AI", "Meta Ray-Ban", "OpenAI hardware", "wearable technology", "AI wearables market"]
+archived: true
+archived_date: 2025-10-26
 ---
 
 ## Understanding the Wearable AI Market

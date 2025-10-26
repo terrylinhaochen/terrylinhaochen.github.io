@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://chenterry.com/archived/</loc>
-    <lastmod>2025-05-07T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/archived/</loc>
+    <lastmod>2025-07-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>

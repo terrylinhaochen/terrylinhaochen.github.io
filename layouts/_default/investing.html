@@ -516,7 +516,7 @@
         </div>
       </div>
       <div class="thesis-content">
-        {{ range where .Site.RegularPages "Section" "investing" }}
+        {{ range where (where .Site.RegularPages "Section" "posts") ".Params.tags" "intersect" (slice "Investing") }}
           {{ if in .Params.categories "AI Application & Value Creation Layer" }}
           <article class="post-entry">
             {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
@@ -549,7 +549,7 @@
         </div>
       </div>
       <div class="thesis-content">
-        {{ range where .Site.RegularPages "Section" "investing" }}
+        {{ range where (where .Site.RegularPages "Section" "posts") ".Params.tags" "intersect" (slice "Investing") }}
           {{ if in .Params.categories "Security, Data Pipelines & Agentic SOC" }}
           <article class="post-entry">
             {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
@@ -582,7 +582,7 @@
         </div>
       </div>
       <div class="thesis-content">
-        {{ range where .Site.RegularPages "Section" "investing" }}
+        {{ range where (where .Site.RegularPages "Section" "posts") ".Params.tags" "intersect" (slice "Investing") }}
           {{ if in .Params.categories "Structural Repricing of Asia Tech" }}
           <article class="post-entry">
             {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
@@ -615,7 +615,7 @@
         </div>
       </div>
       <div class="thesis-content">
-        {{ range where .Site.RegularPages "Section" "investing" }}
+        {{ range where (where .Site.RegularPages "Section" "posts") ".Params.tags" "intersect" (slice "Investing") }}
           {{ if in .Params.categories "Mobility, Energy, and New Infrastructure" }}
           <article class="post-entry">
             {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
@@ -648,7 +648,7 @@
         </div>
       </div>
       <div class="thesis-content">
-        {{ range where .Site.RegularPages "Section" "investing" }}
+        {{ range where (where .Site.RegularPages "Section" "posts") ".Params.tags" "intersect" (slice "Investing") }}
           {{ if in .Params.categories "Consumer Experience & Aesthetic Economy" }}
           <article class="post-entry">
             {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
@@ -681,7 +681,7 @@
         </div>
       </div>
       <div class="thesis-content">
-        {{ range where .Site.RegularPages "Section" "investing" }}
+        {{ range where (where .Site.RegularPages "Section" "posts") ".Params.tags" "intersect" (slice "Investing") }}
           {{ if in .Params.categories "Crypto" }}
           <article class="post-entry">
             {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
@@ -713,7 +713,7 @@
 
 <!-- Modal Template -->
 <div class="modal-container">
-  {{ range where .Site.RegularPages "Section" "investing" }}
+  {{ range where (where .Site.RegularPages "Section" "posts") ".Params.tags" "intersect" (slice "Investing") }}
   <div id="modal-{{ .Title | urlize }}" class="modal-overlay">
     <div class="modal">
       <button class="modal-close" onclick="closeModal('{{ .Title | urlize }}')">&times;</button>

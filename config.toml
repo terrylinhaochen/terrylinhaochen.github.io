@@ -62,7 +62,7 @@ enableRobotsTXT = true
     card = "summary_large_image"
   
   # Main sections to include in lists and archives
-  mainSections = ["posts", "product", "investing"]
+  mainSections = ["posts"]
   
   # PaperMod specific parameters
   defaultTheme = "auto"

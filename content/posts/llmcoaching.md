@@ -2,7 +2,7 @@
 title: "Improving and Scaling Coaching through LLMs"
 date: 2024-08-15
 categories: northwestern
-tags: ["Research"]
+tags: ["Product", "Research"]
 company: "ouraca"
 description: "LLM-enhanced coaching system for project-based learning that scales personalized mentorship through AI. Research on semantic matching, regulation gap identification, and automated coaching suggestions."
 keywords: ["LLM coaching", "AI education", "personalized learning", "self-regulation skills", "project-based learning", "AI mentorship", "semantic matching"]

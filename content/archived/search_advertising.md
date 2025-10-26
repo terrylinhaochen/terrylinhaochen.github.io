@@ -2,10 +2,12 @@
 title: "Search Advertisement"
 date: 2025-07-13
 author: Terry Chen
-tags: ["Product"]
+tags: ["Product", "Archived"]
 categories: tiktok
 description: "Comprehensive analysis of AI-driven search advertising, market dynamics, and investment opportunities. Exploring how AI is revolutionizing ad targeting, optimization, and performance in the $200B+ search advertising market."
 keywords: ["AI advertising", "search ads", "digital marketing", "ad targeting", "Google Ads", "AI marketing", "ad optimization", "search advertising market"]
+archived: true
+archived_date: 2025-10-26
 ---
 
 ## Understanding the Business of Search Ads
