@@ -3,7 +3,7 @@ title: "Using LLMs as a Cover up for Poor Thinking"
 description: "How the ease of LLM-generated content masks poor reasoning and why developing domain expertise remains crucial for meaningful innovation beyond automated productivity gains."
 date: 2025-06-16
 author: Terry Chen
-tags: ["Observations"]
+tags: ["Posts", "Observations"]
 ---
 Every now and then I come across some article or discussion that just feels plain and mundane. All the words seem to make sense, yet at the same time, they feel almost predictable. Despite how well articulated these ideas were - be it in carefully formatted slide decks or confidently delivered proses - they fail to amaze. Ever since November of 2022, the ability to articulate words cohesively (I'm purposefully not using the word coherently) has become table stakes. In a society where frankly most work is evaluated on completion and length, LLMs have led to a rapid advancement of productivity. Yet I think we should make certain clarifications here - productivity gain is in automating repetitive and redundant tasks, this does not apply to all tasks, in fact, using GPT for sophisticated reasoning is almost guarenteed to produce mediocore results. 
 

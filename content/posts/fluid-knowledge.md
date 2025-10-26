@@ -3,7 +3,7 @@ title: "When Knowledge Becomes Fluid"
 date: 2025-10-26
 author: Terry Chen
 categories: aibrary
-tags: ["Product", "AI", "Knowledge", "Learning"]
+tags: ["Product"]
 company: "ouraca"
 description: "For most of history, knowledge has been bound — fixed in books, trapped in formats, and constrained by how it could be consumed. With generative models, that boundary begins to dissolve. Knowledge itself becomes fluid."
 keywords: ["fluid knowledge", "generative AI", "adaptive learning", "knowledge synthesis", "learning systems", "AI education", "dynamic content", "interactive learning"]

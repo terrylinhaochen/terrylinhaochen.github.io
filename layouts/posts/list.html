@@ -19,10 +19,11 @@
 </div>
 {{- end }}
 
-{{- if .Pages }}
+{{- $postsPages := where .Pages ".Params.tags" "intersect" (slice "Posts") }}
+{{- if $postsPages }}
 <!-- Group posts by year and month -->
 <div class="archive-list">
-  {{ range .Pages.GroupByDate "2006" }}
+  {{ range $postsPages.GroupByDate "2006" }}
   <div class="year-group">
     <h2 class="year-header">{{ .Key }}</h2>
     {{ range .Pages.GroupByDate "January" }}

@@ -3,7 +3,7 @@ title: "2024 in Review"
 description: "Reflecting on 2024: lessons from founding Cogno, the importance of hands-on product development, choosing college over dropping out, and key insights for first-time founders."
 date: 2024-12-31
 author: Terry Chen
-tags: ["Observations"]
+tags: ["Posts", "Observations"]
 ---
 
 2024 passed quickly, anchored by work that was equal parts challenging and rewarding. Early in the year, after Cogno gained some traction, momentum slowed. We continued to code and talk with customers, but progress came in uneven cycles. Our focus on multi-agent systems felt directionally right, yet we never found a defensible niche in sales conversion.

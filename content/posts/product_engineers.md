@@ -3,7 +3,7 @@ title: "Product Engineers and AI Multipliers"
 description: "How AI is transforming product engineering teams into smaller, more efficient units. Learn why product engineers are becoming more valuable than traditional product managers in AI-first organizations."
 date: 2025-04-19
 author: Terry Chen
-tags: ["Observations", "Entrepreneurship"]
+tags: ["Posts", "Observations", "Entrepreneurship"]
 keywords: ["AI product engineer", "product engineering with AI", "AI multipliers", "small team productivity", "AI-first product development", "Shopify AI strategy"]
 ---
 ![Product Engineers](/images/posts/product_engineer/shopify_ai.png)
