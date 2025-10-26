@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: https://chenterry.com/sitemap.xml
+Sitemap: http://localhost:1314/sitemap.xml

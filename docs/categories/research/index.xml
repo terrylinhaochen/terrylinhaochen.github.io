@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     <title>Research - Terry Chen</title>
-    <link>https://chenterry.com/categories/research/</link>
+    <link>http://localhost:1314/categories/research/</link>
     <description>Hi, this is Terry. I&#39;m documenting my product ideas and learning notes in this blog. I&#39;m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description>
     <language>en-us</language>
     <managingEditor>Terry Chen (Terry Chen)</managingEditor>
@@ -10,7 +10,7 @@
     <copyright>© 2025 Terry Chen. All rights reserved.</copyright>
     <lastBuildDate>Mon, 10 Mar 2025 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="https://chenterry.com/categories/research/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1314/categories/research/index.xml" rel="self" type="application/rss+xml" />
     
     <generator>Hugo 0.136.2</generator>
     <category>Technology</category>
@@ -18,9 +18,9 @@
     <category>Product Engineering</category>
     <category>Investment Analysis</category>
     <image>
-      <url>https://chenterry.com/images/profile.jpg</url>
+      <url>http://localhost:1314/images/profile.jpg</url>
       <title>Terry Chen</title>
-      <link>https://chenterry.com/</link>
+      <link>http://localhost:1314/</link>
       <description>Hi, this is Terry. I&#39;m documenting my product ideas and learning notes in this blog. I&#39;m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description>
       <width>144</width>
       <height>144</height>
@@ -28,10 +28,10 @@
     
     <item>
       <title>LLM Memory Consolidation and Augmentation</title>
-      <link>https://chenterry.com/archived/human-inspired-llm-memory/</link>
+      <link>http://localhost:1314/archived/human-inspired-llm-memory/</link>
       <pubDate>Mon, 10 Mar 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/archived/human-inspired-llm-memory/</guid>
+      <guid>http://localhost:1314/archived/human-inspired-llm-memory/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Authors: Terry Chen, Kaiwen Che, Matthew Song&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
 &lt;p&gt;Despite advances in large language model (LLM) capability, their fundamental limitation of not being able to store context over long-lived interactions persists. In this paper, a novel human-inspired three-tiered memory architecture is presented that addresses these limitations through biomimetic design principles rooted in cognitive science. Our approach aligns the human working memory with the LLM context window, episodic memory with vector stores of experience-based knowledge, and semantic memory with structured knowledge triplets.&lt;/p&gt;</description>
@@ -55,10 +55,10 @@
     
     <item>
       <title>Realtime Conversational Learning Aid</title>
-      <link>https://chenterry.com/archived/groupal/</link>
+      <link>http://localhost:1314/archived/groupal/</link>
       <pubDate>Sun, 10 Nov 2024 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/archived/groupal/</guid>
+      <guid>http://localhost:1314/archived/groupal/</guid>
       <description>AI-powered study group assistant that analyzes real-time conversations, detects misconceptions, and facilitates deeper learning through Socratic questioning and contextual knowledge retrieval.</description>
       
       
@@ -80,10 +80,10 @@
     
     <item>
       <title>Human Quirks</title>
-      <link>https://chenterry.com/main-themes/human-quirks/</link>
+      <link>http://localhost:1314/main-themes/human-quirks/</link>
       <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/main-themes/human-quirks/</guid>
+      <guid>http://localhost:1314/main-themes/human-quirks/</guid>
       <description>Observing and understanding the strange quirks of individuals and crowds</description>
       
       
@@ -107,10 +107,10 @@
     
     <item>
       <title>Tech History</title>
-      <link>https://chenterry.com/main-themes/tech-history/</link>
+      <link>http://localhost:1314/main-themes/tech-history/</link>
       <pubDate>Tue, 19 Mar 2024 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/main-themes/tech-history/</guid>
+      <guid>http://localhost:1314/main-themes/tech-history/</guid>
       <description>Exploring the evolution of technology and its impact on society.</description>
       
       
@@ -134,10 +134,10 @@
     
     <item>
       <title>Multi-agent LLM Systems</title>
-      <link>https://chenterry.com/main-themes/multi-agent-systems/</link>
+      <link>http://localhost:1314/main-themes/multi-agent-systems/</link>
       <pubDate>Sun, 20 Aug 2023 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/main-themes/multi-agent-systems/</guid>
+      <guid>http://localhost:1314/main-themes/multi-agent-systems/</guid>
       <description>Developing capable multi-agent systems for complex reasoning and human-AI collaboration.</description>
       
       
@@ -161,10 +161,10 @@
     
     <item>
       <title>Data Insights</title>
-      <link>https://chenterry.com/main-themes/data-insights/</link>
+      <link>http://localhost:1314/main-themes/data-insights/</link>
       <pubDate>Fri, 18 Aug 2023 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/main-themes/data-insights/</guid>
+      <guid>http://localhost:1314/main-themes/data-insights/</guid>
       <description>Extracting meaningful insights from unstructured multi-modal content.</description>
       
       

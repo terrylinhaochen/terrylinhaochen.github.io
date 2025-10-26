@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     <title>Categories - Terry Chen</title>
-    <link>https://chenterry.com/categories/</link>
+    <link>http://localhost:1314/categories/</link>
     <description>Hi, this is Terry. I&#39;m documenting my product ideas and learning notes in this blog. I&#39;m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description>
     <language>en-us</language>
     <managingEditor>Terry Chen (Terry Chen)</managingEditor>
@@ -10,7 +10,7 @@
     <copyright>© 2025 Terry Chen. All rights reserved.</copyright>
     <lastBuildDate>Sun, 26 Oct 2025 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="https://chenterry.com/categories/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1314/categories/index.xml" rel="self" type="application/rss+xml" />
     
     <generator>Hugo 0.136.2</generator>
     <category>Technology</category>
@@ -18,9 +18,9 @@
     <category>Product Engineering</category>
     <category>Investment Analysis</category>
     <image>
-      <url>https://chenterry.com/images/profile.jpg</url>
+      <url>http://localhost:1314/images/profile.jpg</url>
       <title>Terry Chen</title>
-      <link>https://chenterry.com/</link>
+      <link>http://localhost:1314/</link>
       <description>Hi, this is Terry. I&#39;m documenting my product ideas and learning notes in this blog. I&#39;m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description>
       <width>144</width>
       <height>144</height>
@@ -28,10 +28,10 @@
     
     <item>
       <title>Aibrary</title>
-      <link>https://chenterry.com/categories/aibrary/</link>
+      <link>http://localhost:1314/categories/aibrary/</link>
       <pubDate>Sun, 26 Oct 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/categories/aibrary/</guid>
+      <guid>http://localhost:1314/categories/aibrary/</guid>
       <description></description>
       
       
@@ -43,10 +43,10 @@
     
     <item>
       <title>AI Application &amp; Value Creation Layer</title>
-      <link>https://chenterry.com/categories/ai-application--value-creation-layer/</link>
+      <link>http://localhost:1314/categories/ai-application--value-creation-layer/</link>
       <pubDate>Mon, 20 Oct 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/categories/ai-application--value-creation-layer/</guid>
+      <guid>http://localhost:1314/categories/ai-application--value-creation-layer/</guid>
       <description></description>
       
       
@@ -58,10 +58,10 @@
     
     <item>
       <title>Crowdlisten</title>
-      <link>https://chenterry.com/categories/crowdlisten/</link>
+      <link>http://localhost:1314/categories/crowdlisten/</link>
       <pubDate>Mon, 15 Sep 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/categories/crowdlisten/</guid>
+      <guid>http://localhost:1314/categories/crowdlisten/</guid>
       <description></description>
       
       
@@ -73,10 +73,10 @@
     
     <item>
       <title>Microsoft</title>
-      <link>https://chenterry.com/categories/microsoft/</link>
+      <link>http://localhost:1314/categories/microsoft/</link>
       <pubDate>Fri, 29 Aug 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/categories/microsoft/</guid>
+      <guid>http://localhost:1314/categories/microsoft/</guid>
       <description></description>
       
       
@@ -88,10 +88,10 @@
     
     <item>
       <title>Security, Data Pipelines &amp; Agentic SOC</title>
-      <link>https://chenterry.com/categories/security-data-pipelines--agentic-soc/</link>
+      <link>http://localhost:1314/categories/security-data-pipelines--agentic-soc/</link>
       <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/categories/security-data-pipelines--agentic-soc/</guid>
+      <guid>http://localhost:1314/categories/security-data-pipelines--agentic-soc/</guid>
       <description></description>
       
       
@@ -103,10 +103,10 @@
     
     <item>
       <title>Tiktok</title>
-      <link>https://chenterry.com/categories/tiktok/</link>
+      <link>http://localhost:1314/categories/tiktok/</link>
       <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/categories/tiktok/</guid>
+      <guid>http://localhost:1314/categories/tiktok/</guid>
       <description></description>
       
       
@@ -118,10 +118,10 @@
     
     <item>
       <title>Prototype</title>
-      <link>https://chenterry.com/categories/prototype/</link>
+      <link>http://localhost:1314/categories/prototype/</link>
       <pubDate>Fri, 21 Mar 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/categories/prototype/</guid>
+      <guid>http://localhost:1314/categories/prototype/</guid>
       <description></description>
       
       
@@ -133,10 +133,10 @@
     
     <item>
       <title>Research</title>
-      <link>https://chenterry.com/categories/research/</link>
+      <link>http://localhost:1314/categories/research/</link>
       <pubDate>Mon, 10 Mar 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/categories/research/</guid>
+      <guid>http://localhost:1314/categories/research/</guid>
       <description></description>
       
       
@@ -148,10 +148,10 @@
     
     <item>
       <title>Consumer Experience &amp; Aesthetic Economy</title>
-      <link>https://chenterry.com/categories/consumer-experience--aesthetic-economy/</link>
+      <link>http://localhost:1314/categories/consumer-experience--aesthetic-economy/</link>
       <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/categories/consumer-experience--aesthetic-economy/</guid>
+      <guid>http://localhost:1314/categories/consumer-experience--aesthetic-economy/</guid>
       <description></description>
       
       
@@ -163,10 +163,10 @@
     
     <item>
       <title>Crypto</title>
-      <link>https://chenterry.com/categories/crypto/</link>
+      <link>http://localhost:1314/categories/crypto/</link>
       <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/categories/crypto/</guid>
+      <guid>http://localhost:1314/categories/crypto/</guid>
       <description></description>
       
       
@@ -178,10 +178,10 @@
     
     <item>
       <title>Mobility, Energy, and New Infrastructure</title>
-      <link>https://chenterry.com/categories/mobility-energy-and-new-infrastructure/</link>
+      <link>http://localhost:1314/categories/mobility-energy-and-new-infrastructure/</link>
       <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/categories/mobility-energy-and-new-infrastructure/</guid>
+      <guid>http://localhost:1314/categories/mobility-energy-and-new-infrastructure/</guid>
       <description></description>
       
       
@@ -193,10 +193,10 @@
     
     <item>
       <title>Structural Repricing of Asia Tech</title>
-      <link>https://chenterry.com/categories/structural-repricing-of-asia-tech/</link>
+      <link>http://localhost:1314/categories/structural-repricing-of-asia-tech/</link>
       <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/categories/structural-repricing-of-asia-tech/</guid>
+      <guid>http://localhost:1314/categories/structural-repricing-of-asia-tech/</guid>
       <description></description>
       
       
@@ -208,10 +208,10 @@
     
     <item>
       <title>Northwestern</title>
-      <link>https://chenterry.com/categories/northwestern/</link>
+      <link>http://localhost:1314/categories/northwestern/</link>
       <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/categories/northwestern/</guid>
+      <guid>http://localhost:1314/categories/northwestern/</guid>
       <description></description>
       
       
@@ -223,10 +223,10 @@
     
     <item>
       <title>Startup</title>
-      <link>https://chenterry.com/categories/startup/</link>
+      <link>http://localhost:1314/categories/startup/</link>
       <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/categories/startup/</guid>
+      <guid>http://localhost:1314/categories/startup/</guid>
       <description></description>
       
       

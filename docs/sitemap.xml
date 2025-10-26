@@ -3,12 +3,12 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://chenterry.com/</loc>
+    <loc>http://localhost:1314/</loc>
     <lastmod>2025-10-26T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://chenterry.com/images/profile.jpg</image:loc>
+      <image:loc>http://localhost:1314/images/profile.jpg</image:loc>
       <image:title>Terry Chen</image:title>
     </image:image>
   </url>
