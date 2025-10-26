@@ -122,12 +122,12 @@ This approach is likely to become standard in LLM application development given 
 
 For social media analysis specifically, this approach creates a fascinating dynamic where AI-driven insights can actually lead structured reporting in terms of timeliness and depth. By processing and analyzing unstructured social data at scale, we can identify emerging trends and public sentiment shifts before they're covered in traditional reporting.
 
+## Credits
+
+This project was developed in collaboration with Madison Bratley, whose expertise in journalism and social media analysis was instrumental in conceptualizing how this technology could transform research methodologies. Additional contributions from Violet Liu in providing valuable usability feedback for our early prototype. I would also like to acknowledge Zhengjin, Cathy, Roy, Ruiwan, Qiping, Tongming and other members on the Creative team at TikTok, who I've discussed early conceptions of this idea with.
+
 ## On Social Intelligence
 
 Crowdlistening represents the next evolution in social listening tools - moving beyond counting mentions to truly understanding conversations at scale. By transforming social media chatter into structured insights, we're helping brands make more informed decisions faster than ever before.
 
 As noted in "Essence of Creativity," the real value in AI-powered tools comes not just from generating content, but from helping users find new perspectives and insights. Our platform serves as both an inspiration acquisition tool (accelerating original content production) and a content understanding tool (helping brands better comprehend their audience). By connecting insight data with generation capabilities, we're creating the kind of breakthrough product that bridges the gap between understanding and action.
-
----
-
-Credits: This project was developed in collaboration with Madison Bratley, whose expertise in journalism and social media analysis was instrumental in conceptualizing how this technology could transform research methodologies. Additional contributions from Violet Liu in providing valuable usability feedback for our early prototype. I would also like to acknowledge Zhengjin, Cathy, Roy, Ruiwan, Qiping, Tongming and other members on the Creative team at TikTok, who I've discussed early conceptions of this idea with.
