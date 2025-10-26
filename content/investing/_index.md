@@ -1,0 +1,4 @@
+---
+title: "Investing"
+layout: "investing"
+---

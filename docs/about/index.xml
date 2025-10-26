@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     <title>About Me - Terry Chen</title>
-    <link>http://localhost:1314/about/</link>
+    <link>https://chenterry.com/about/</link>
     <description>CS @ Northwestern, thinking about product. My focus areas include multi-agent systems, content understanding, and scaling creative workflows through AI multipliers. In my free time, I like to go hiking and travelling.</description>
     <language>en-us</language>
     <managingEditor>Terry Chen (Terry Chen)</managingEditor>
@@ -10,7 +10,7 @@
     <copyright>© 2025 Terry Chen. All rights reserved.</copyright>
     <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="http://localhost:1314/about/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://chenterry.com/about/index.xml" rel="self" type="application/rss+xml" />
     
     <generator>Hugo 0.136.2</generator>
     <category>Technology</category>
@@ -18,9 +18,9 @@
     <category>Product Engineering</category>
     <category>Investment Analysis</category>
     <image>
-      <url>http://localhost:1314/images/profile.jpg</url>
+      <url>https://chenterry.com/images/profile.jpg</url>
       <title>Terry Chen</title>
-      <link>http://localhost:1314/</link>
+      <link>https://chenterry.com/</link>
       <description>Hi, this is Terry. I&#39;m documenting my product ideas and learning notes in this blog. I&#39;m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description>
       <width>144</width>
       <height>144</height>
@@ -28,10 +28,10 @@
     
     <item>
       <title>CrowdListening | Evanston, Illinois</title>
-      <link>http://localhost:1314/about/projects/crowdlistening/</link>
+      <link>https://chenterry.com/about/projects/crowdlistening/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1314/about/projects/crowdlistening/</guid>
+      <guid>https://chenterry.com/about/projects/crowdlistening/</guid>
       <description>&lt;p&gt;Extracting actionable insights from large-scale distributed online conversations. Engineered content optimization features that generate variations and simulate engagement through agentic crowds.&lt;/p&gt;</description>
       
       
@@ -43,10 +43,10 @@
     
     <item>
       <title>Microsoft | Redmond, Washington</title>
-      <link>http://localhost:1314/about/experience/microsoft/</link>
+      <link>https://chenterry.com/about/experience/microsoft/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1314/about/experience/microsoft/</guid>
+      <guid>https://chenterry.com/about/experience/microsoft/</guid>
       <description>&lt;p&gt;Agent AI for security.&lt;/p&gt;</description>
       
       
@@ -58,10 +58,10 @@
     
     <item>
       <title>Northwestern C3 Lab | Evanston, Illinois</title>
-      <link>http://localhost:1314/about/research/c3lab/</link>
+      <link>https://chenterry.com/about/research/c3lab/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1314/about/research/c3lab/</guid>
+      <guid>https://chenterry.com/about/research/c3lab/</guid>
       <description>&lt;p&gt;Built LLM system that performs real-time conversation processing and detects conceptual misconceptions. Facilitated Socratic learning through synchronous voice interactions.&lt;/p&gt;</description>
       
       
@@ -73,10 +73,10 @@
     
     <item>
       <title>Northwestern Delta Lab | Evanston, Illinois</title>
-      <link>http://localhost:1314/about/research/deltalab/</link>
+      <link>https://chenterry.com/about/research/deltalab/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1314/about/research/deltalab/</guid>
+      <guid>https://chenterry.com/about/research/deltalab/</guid>
       <description>&lt;p&gt;Developed LLM system that identifies and connects students with similar regulation gaps, achieving 88% precision and 89% recall in categorization.&lt;/p&gt;</description>
       
       
@@ -88,10 +88,10 @@
     
     <item>
       <title>Ouraca | Palo Alto, California</title>
-      <link>http://localhost:1314/about/experience/ouraca/</link>
+      <link>https://chenterry.com/about/experience/ouraca/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1314/about/experience/ouraca/</guid>
+      <guid>https://chenterry.com/about/experience/ouraca/</guid>
       <description>&lt;p&gt;Making lifelong learning engaging and accessible. Research agent ai and generation workflows. Designed and implemented an agentic LLM learning companion, working on search, recommendation, etc.&lt;/p&gt;</description>
       
       
@@ -103,10 +103,10 @@
     
     <item>
       <title>TikTok | San Jose, California</title>
-      <link>http://localhost:1314/about/experience/tiktok/</link>
+      <link>https://chenterry.com/about/experience/tiktok/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1314/about/experience/tiktok/</guid>
+      <guid>https://chenterry.com/about/experience/tiktok/</guid>
       <description>&lt;p&gt;Leveraging billion parameter data to provide actionable trends and insights for key agencies. Designed keyword clustering methods for insight extraction, worked on creative video ad creation.&lt;/p&gt;</description>
       
       

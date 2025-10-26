@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     <title>AI Application &amp; Value Creation Layer - Terry Chen</title>
-    <link>http://localhost:1314/categories/ai-application--value-creation-layer/</link>
+    <link>https://chenterry.com/categories/ai-application--value-creation-layer/</link>
     <description>Hi, this is Terry. I&#39;m documenting my product ideas and learning notes in this blog. I&#39;m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description>
     <language>en-us</language>
     <managingEditor>Terry Chen (Terry Chen)</managingEditor>
@@ -10,7 +10,7 @@
     <copyright>© 2025 Terry Chen. All rights reserved.</copyright>
     <lastBuildDate>Mon, 20 Oct 2025 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="http://localhost:1314/categories/ai-application--value-creation-layer/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://chenterry.com/categories/ai-application--value-creation-layer/index.xml" rel="self" type="application/rss+xml" />
     
     <generator>Hugo 0.136.2</generator>
     <category>Technology</category>
@@ -18,9 +18,9 @@
     <category>Product Engineering</category>
     <category>Investment Analysis</category>
     <image>
-      <url>http://localhost:1314/images/profile.jpg</url>
+      <url>https://chenterry.com/images/profile.jpg</url>
       <title>Terry Chen</title>
-      <link>http://localhost:1314/</link>
+      <link>https://chenterry.com/</link>
       <description>Hi, this is Terry. I&#39;m documenting my product ideas and learning notes in this blog. I&#39;m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description>
       <width>144</width>
       <height>144</height>
@@ -28,10 +28,10 @@
     
     <item>
       <title>Understanding Google: A Primer</title>
-      <link>http://localhost:1314/posts/google-primer/</link>
+      <link>https://chenterry.com/posts/google-primer/</link>
       <pubDate>Mon, 20 Oct 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1314/posts/google-primer/</guid>
+      <guid>https://chenterry.com/posts/google-primer/</guid>
       <description>Understanding the key products that made Google the tech giant today, with a deepdive on new AI features. Exploring Google&#39;s evolution from search to AI-powered ecosystem and investment implications.</description>
       
       
@@ -51,33 +51,6 @@
       
       <dc:creator>Terry Chen</dc:creator>
       <dc:date>2025-10-20T00:00:00Z</dc:date>
-    </item>
-    
-    <item>
-      <title>Wearable AI</title>
-      <link>http://localhost:1314/archived/wearables/</link>
-      <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
-      <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1314/archived/wearables/</guid>
-      <description>Comprehensive analysis of the wearable AI market, including smart glasses, AI pins, and ambient computing devices. Market size, key players, technology trends, and investment opportunities in the $48.82B wearable AI industry.</description>
-      
-      
-        
-          
-          <category>AI Application &amp; Value Creation Layer</category>
-          
-        
-      
-      
-        
-          
-          <category>Archived</category>
-          
-        
-      
-      
-      <dc:creator>Terry Chen</dc:creator>
-      <dc:date>2025-07-13T00:00:00Z</dc:date>
     </item>
     
   </channel>
