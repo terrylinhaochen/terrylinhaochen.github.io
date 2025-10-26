@@ -69,29 +69,33 @@ else
     mv "$TEMP_FILE" "$FILE_PATH"
 fi
 
-# Add or update changelog
-if grep -q "^changelog:" "$FILE_PATH"; then
-    # Insert new changelog entry at the beginning of changelog array
-    awk -v version="$NEW_VERSION" -v date="$DATE" -v changes="$CHANGES" '
-    /^changelog:/ {
+# Update or create condensed version history section
+REPO_URL="https://github.com/terrylinhaochen/terrylinhaochen.github.io"
+FORMATTED_DATE=$(date +"%b %d, %Y")
+VERSION_ENTRY="**v$NEW_VERSION** • $FORMATTED_DATE • [View changes]($REPO_URL/commits/main/$FILE_PATH) • $CHANGES"
+
+if grep -q "^## 📋 Version History" "$FILE_PATH"; then
+    # Insert new version entry after the Version History header
+    awk -v entry="$VERSION_ENTRY" '
+    /^## 📋 Version History/ {
         print $0
-        print "  - version: \"" version "\""
-        print "    date: \"" date "\""
-        print "    changes: \"" changes "\""
-        while ((getline next_line) > 0) {
-            if (next_line ~ /^  - version:/) {
+        print ""
+        print entry
+        print ""
+        # Skip the next line if it exists and continue
+        if ((getline next_line) > 0) {
+            if (next_line ~ /^\*\*v/) {
+                # Found existing version entry, print it and continue
                 print next_line
                 while ((getline following_line) > 0) {
                     print following_line
                 }
-                break
-            } else if (next_line ~ /^[a-zA-Z]/) {
-                # Hit next frontmatter field, backtrack
+            } else {
+                # Not a version entry, print as is
                 print next_line
                 while ((getline following_line) > 0) {
                     print following_line
                 }
-                break
             }
         }
         next
@@ -100,36 +104,23 @@ if grep -q "^changelog:" "$FILE_PATH"; then
     ' "$FILE_PATH" > "$TEMP_FILE"
     mv "$TEMP_FILE" "$FILE_PATH"
 else
-    # Add changelog section
-    awk -v version="$NEW_VERSION" -v date="$DATE" -v changes="$CHANGES" '
-    BEGIN { in_frontmatter = 0; changelog_added = 0 }
-    /^---$/ { 
-        if (in_frontmatter == 0) {
-            in_frontmatter = 1
-            print $0
-        } else if (in_frontmatter == 1 && changelog_added == 0) {
-            print "changelog:"
-            print "  - version: \"" version "\""
-            print "    date: \"" date "\""
-            print "    changes: \"" changes "\""
-            print $0
-            changelog_added = 1
-        } else {
-            print $0
-        }
-        next
-    }
-    { print $0 }
-    ' "$FILE_PATH" > "$TEMP_FILE"
-    mv "$TEMP_FILE" "$FILE_PATH"
+    # Add version history section at the end
+    echo "" >> "$FILE_PATH"
+    echo "---" >> "$FILE_PATH"
+    echo "" >> "$FILE_PATH"
+    echo "## 📋 Version History" >> "$FILE_PATH"
+    echo "" >> "$FILE_PATH"
+    echo "$VERSION_ENTRY" >> "$FILE_PATH"
+    echo "" >> "$FILE_PATH"
+    echo "💡 *Click \"View changes\" to see exactly what changed between versions*" >> "$FILE_PATH"
 fi
 
-# 4. Final commit with updated frontmatter
-echo "💾 Committing frontmatter updates..."
+# 4. Final commit with updated frontmatter and version history
+echo "💾 Committing frontmatter and version history updates..."
 git add "$FILE_PATH"
-git commit -m "Update frontmatter for version $NEW_VERSION
+git commit -m "Update frontmatter and version history for v$NEW_VERSION
 
-Added changelog entry for version $NEW_VERSION"
+Added condensed version entry for v$NEW_VERSION"
 
 echo "✅ Version $NEW_VERSION created successfully!"
 echo "🔗 View changes: https://github.com/terrylinhaochen/terrylinhaochen.github.io/commits/main/$FILE_PATH"

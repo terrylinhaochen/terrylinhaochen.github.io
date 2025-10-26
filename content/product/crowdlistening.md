@@ -131,3 +131,11 @@ This project was developed in collaboration with Madison Bratley, whose expertis
 Crowdlistening represents the next evolution in social listening tools - moving beyond counting mentions to truly understanding conversations at scale. By transforming social media chatter into structured insights, we're helping brands make more informed decisions faster than ever before.
 
 As noted in "Essence of Creativity," the real value in AI-powered tools comes not just from generating content, but from helping users find new perspectives and insights. Our platform serves as both an inspiration acquisition tool (accelerating original content production) and a content understanding tool (helping brands better comprehend their audience). By connecting insight data with generation capabilities, we're creating the kind of breakthrough product that bridges the gap between understanding and action.
+
+---
+
+## 📋 Version History
+
+**v1.1** • Oct 25, 2025 • [View changes](https://github.com/terrylinhaochen/terrylinhaochen.github.io/commits/main/content/product/crowdlistening.md) • Updated Title
+
+💡 *Click "View changes" to see exactly what changed between versions*
