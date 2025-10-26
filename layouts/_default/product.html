@@ -525,7 +525,7 @@
         </div>
       </div>
       <div class="thesis-content">
-        {{ range where (where (where .Site.RegularPages "Section" "posts") ".Params.tags" "intersect" (slice "Product")) "Params.categories" "crowdlisten" }}
+        {{ range where (where (where (where .Site.RegularPages "Section" "posts") ".Params.tags" "intersect" (slice "Product")) ".Params.archived" "!=" true) "Params.categories" "crowdlisten" }}
         <article class="post-entry">
           {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
           {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
@@ -556,7 +556,7 @@
         </div>
       </div>
       <div class="thesis-content">
-        {{ range where (where (where .Site.RegularPages "Section" "posts") ".Params.tags" "intersect" (slice "Product")) "Params.categories" "microsoft" }}
+        {{ range where (where (where (where .Site.RegularPages "Section" "posts") ".Params.tags" "intersect" (slice "Product")) ".Params.archived" "!=" true) "Params.categories" "microsoft" }}
         <article class="post-entry">
           {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
           {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
@@ -587,7 +587,7 @@
         </div>
       </div>
       <div class="thesis-content">
-        {{ range where (where (where .Site.RegularPages "Section" "posts") ".Params.tags" "intersect" (slice "Product")) "Params.categories" "northwestern" }}
+        {{ range where (where (where (where .Site.RegularPages "Section" "posts") ".Params.tags" "intersect" (slice "Product")) ".Params.archived" "!=" true) "Params.categories" "northwestern" }}
         <article class="post-entry">
           {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
           {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
@@ -618,7 +618,7 @@
         </div>
       </div>
       <div class="thesis-content">
-        {{ range where (where (where .Site.RegularPages "Section" "posts") ".Params.tags" "intersect" (slice "Product")) "Params.categories" "aibrary" }}
+        {{ range where (where (where (where .Site.RegularPages "Section" "posts") ".Params.tags" "intersect" (slice "Product")) ".Params.archived" "!=" true) "Params.categories" "aibrary" }}
         <article class="post-entry">
           {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
           {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
@@ -649,7 +649,7 @@
         </div>
       </div>
       <div class="thesis-content">
-        {{ range where (where (where .Site.RegularPages "Section" "posts") ".Params.tags" "intersect" (slice "Product")) "Params.categories" "tiktok" }}
+        {{ range where (where (where (where .Site.RegularPages "Section" "posts") ".Params.tags" "intersect" (slice "Product")) ".Params.archived" "!=" true) "Params.categories" "tiktok" }}
         <article class="post-entry">
           {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
           {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
