@@ -92,10 +92,15 @@ OpenAI's trajectory signals a decisive end to the era of thin AI wrappers. The c
 
 OpenAI's expansion marks the normalization of AI as infrastructure. By controlling how people write, search, and learn, it's setting behavioral defaults that future builders will either align with or challenge. The blast radius isn't destruction—it's redefinition. The companies that survive will be those that understand where OpenAI's platform stops and differentiated value begins.
 
-## Credits
-
-Thanks to Livia and Richard for keeping me company amid rambling, ChatGPT for helping with the visualizations, and Gemini for the synthesis.
-
 ## Appendix: Analytical Methodology and Limitations
 
 This analysis synthesizes over one hundred OpenAI product releases and four hundred job postings using automated web crawling and strategic content synthesis. It favors breadth over depth—identifying cross-layer patterns in OpenAI's expansion rather than case-level detail. While this reveals the company's overarching trajectory, it should be complemented with vertical-specific research for actionable insight.
+
+### The Missing Layer of Collective Semantics
+
+Current assistants compress vast human discourse into atomic answers, overlooking the higher-order structures of collective meaning—clusters of opinion, degrees of conviction, and the evolution of public narratives. The Reddit partnership brings social data into OpenAI's responses but stops short of indexing group intelligence. This gap defines a white space: translating collective semantics into measurable indicators for decision-making in investing, branding, or governance. Whoever builds that interface between crowd cognition and AI reasoning will occupy the next layer beyond OpenAI's platform.
+
+
+## Credits
+
+Thanks to Livia and Richard for keeping me company amid rambling, ChatGPT for helping with the visualizations, and Gemini for the synthesis.
