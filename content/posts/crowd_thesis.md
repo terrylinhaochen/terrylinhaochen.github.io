@@ -3,6 +3,7 @@ title: "Why People Care What Others Think"
 description: "Understanding collective intelligence and social dynamics. Why crowd psychology matters for product builders and how human need for belonging drives engagement patterns."
 date: 2025-05-12
 author: Terry Chen
+categories: crowdlisten
 tags: ["Observations", "Entrepreneurship", "Product"]
 keywords: ["crowd psychology", "collective intelligence", "social behavior", "product psychology", "human behavior patterns", "social dynamics"]
 ---
