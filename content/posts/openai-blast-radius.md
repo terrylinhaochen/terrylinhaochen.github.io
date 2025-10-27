@@ -1,7 +1,7 @@
 ---
 title: "Understanding OpenAI's Blast Radius"
 date: 2025-10-27
-author: Terry Chen
+author: Terry Chen, Livia Li
 tags: ["Investing"]
 categories: ["AI Application & Value Creation Layer"]
 description: "How OpenAI's rapid product development affects the startup ecosystem. Strategic frameworks for building defensible AI applications in the shadow of foundation model giants."
