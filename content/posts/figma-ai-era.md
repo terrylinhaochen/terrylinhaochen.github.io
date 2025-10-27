@@ -10,21 +10,17 @@ keywords: ["Figma", "AI design tools", "Lovable", "design collaboration", "AI ap
 
 OpenAI's announcement that developers can build apps and tools directly inside ChatGPT isn't just another feature drop; it's a distribution shift. When AI becomes a canvas, the winners are the coordination layers that turn ideas into shipped product. The market's immediate reaction—Figma jumping nearly fifteen percent—signals that investors increasingly view design collaboration platforms as the natural aggregation points for AI-generated work.
 
-Figma and Lovable illustrate two paths to that future. Lovable compresses ideation into working UI quickly; Figma converts individual creativity into team progress at enterprise scale. The question isn't which tool "has more AI," but who best translates AI's raw generation into reliable, multi-stakeholder workflows.
+![ChatGPT-Figma Integration](/images/investing/figma-ai-era/chatgpt-figma-integration.png)
 
-![Figma's AI Announcement](/images/investing/figma-ai-era/figma-ai-announcement.png)
+Figma and Lovable illustrate two paths to that future. Lovable compresses ideation into working UI quickly; Figma converts individual creativity into team progress at enterprise scale. The question isn't which tool "has more AI," but who best translates AI's raw generation into reliable, multi-stakeholder workflows.
 
 ## Wedge vs. Workflow: The Lovable Challenge
 
 Lovable is a terrific wedge: it transforms ambiguous PRDs into working UI and code with startling speed. But wedges must graduate into workflows to hold value in teams. High-fidelity nuance still benefits from direct manipulation; complex data flows still require versioned review, access control, and code governance. Until AI-first generators own those moments of accountability, they amplify Figma's role as the coordination substrate rather than displace it.
 
-![Lovable's AI-First Interface](/images/investing/figma-ai-era/lovable-interface.png)
-
 ## Sequencing Loops → Platform Gravity
 
 Figma's early loop—real-time, browser-first collaboration—pulled in designers. The second loop—shared libraries, specs, and comments—pulled in PMs and engineers. The next loop is AI actions embedded in those same surfaces: generate variants, auto-redline, bind to live data, and export code with guardrails. Each loop recruits a new cohort, increases retention for the previous cohort, and raises switching costs. AI doesn't replace these loops; it accelerates them.
-
-![Figma Make Interface](/images/investing/figma-ai-era/figma-make-interface.png)
 
 As [others have argued about Figma's 'browser-first' bet](https://kwokchain.com/2020/06/19/why-figma-wins/) and cross-side effects, the platform advantage becomes clear when considering the full design lifecycle. Figma doesn't just enable individual creativity; it orchestrates the entire collaborative process that turns ideas into shipped products. This includes design system maintenance, component libraries, developer handoff specifications, and stakeholder review processes.
 

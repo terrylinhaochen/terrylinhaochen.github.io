@@ -9,6 +9,10 @@ ShowBreadCrumbs: false
 layout: "about"
 ---
 
+## About {.section-title}
+
+CS & HCI @ Northwestern [Resume](https://drive.google.com/file/d/17jaSujjHz8XCGOTPwsHBOtqubgMAKmut/view?usp=drive_link). Beijing, Toronto, Evanston. I'm experienced in product management and agent ai implementation. Right now I'm thinking about content understanding, scaling creative workflows, and social simulation. In my free time, I like to read and travel. Always happy to chat ;)
+
 ## Skills {.section-title}
 
 <div class="skills-container">
