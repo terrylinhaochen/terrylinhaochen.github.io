@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     <title>Startup - Terry Chen</title>
-    <link>https://chenterry.com/categories/startup/</link>
+    <link>http://localhost:1313/categories/startup/</link>
     <description>Hi, this is Terry. I&#39;m documenting my product ideas and learning notes in this blog. I&#39;m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description>
     <language>en-us</language>
     <managingEditor>Terry Chen (Terry Chen)</managingEditor>
@@ -10,7 +10,7 @@
     <copyright>© 2025 Terry Chen. All rights reserved.</copyright>
     <lastBuildDate>Fri, 01 Mar 2024 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="https://chenterry.com/categories/startup/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/categories/startup/index.xml" rel="self" type="application/rss+xml" />
     
     <generator>Hugo 0.136.2</generator>
     <category>Technology</category>
@@ -18,9 +18,9 @@
     <category>Product Engineering</category>
     <category>Investment Analysis</category>
     <image>
-      <url>https://chenterry.com/images/profile.jpg</url>
+      <url>http://localhost:1313/images/profile.jpg</url>
       <title>Terry Chen</title>
-      <link>https://chenterry.com/</link>
+      <link>http://localhost:1313/</link>
       <description>Hi, this is Terry. I&#39;m documenting my product ideas and learning notes in this blog. I&#39;m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description>
       <width>144</width>
       <height>144</height>
@@ -28,10 +28,10 @@
     
     <item>
       <title>Cogno: Multi-agent AI for Sales Automation</title>
-      <link>https://chenterry.com/archived/cogno/</link>
+      <link>http://localhost:1313/archived/cogno/</link>
       <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/archived/cogno/</guid>
+      <guid>http://localhost:1313/archived/cogno/</guid>
       <description>&lt;p&gt;Multi-agent system for cross boarder e-commerce sales automation. Co-founder and head of product.
 &lt;a href=&#34;https://cognogpt.com&#34;&gt;https://cognogpt.com&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Cogno+ is dedicated to revolutionizing global e-commerce by empowering brands with AI-driven assistance that offers seamless, personalized customer experiences. Our mission is to serve as the digital bridge between brands and customers, enhancing interactions and transactions across international markets, and allowing the brand to increase conversion and upsell while reducing time and money spent on manual customer service.&lt;/p&gt;</description>

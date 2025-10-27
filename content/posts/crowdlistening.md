@@ -7,7 +7,7 @@ tags: ["Entrepreneurship", "Product"]
 company: "crowdlisten"
 description: "Transform large-scale social conversations into actionable insights. Understand crowd sentiment, track emerging opinions, and identify key narratives."
 keywords: ["social listening", "brand listening", "market analysis", "tiktok", "journalism","reporting", "user experience"]
-images: ["/projects/crowdlisten/featured.jpg"]
+images: ["/images/projects/crowdlistening/webpage.png"]
 aliases: ["/projects/crowdlisten/"]
 version: "1.1"
 changelog:

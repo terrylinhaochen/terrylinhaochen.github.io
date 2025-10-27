@@ -2,15 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     <title>Investing - Terry Chen</title>
-    <link>https://chenterry.com/tags/investing/</link>
+    <link>http://localhost:1313/tags/investing/</link>
     <description>Hi, this is Terry. I&#39;m documenting my product ideas and learning notes in this blog. I&#39;m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description>
     <language>en-us</language>
     <managingEditor>Terry Chen (Terry Chen)</managingEditor>
     <webMaster>Terry Chen (Terry Chen)</webMaster>
     <copyright>© 2025 Terry Chen. All rights reserved.</copyright>
-    <lastBuildDate>Mon, 20 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 Oct 2025 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="https://chenterry.com/tags/investing/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/tags/investing/index.xml" rel="self" type="application/rss+xml" />
     
     <generator>Hugo 0.136.2</generator>
     <category>Technology</category>
@@ -18,20 +18,47 @@
     <category>Product Engineering</category>
     <category>Investment Analysis</category>
     <image>
-      <url>https://chenterry.com/images/profile.jpg</url>
+      <url>http://localhost:1313/images/profile.jpg</url>
       <title>Terry Chen</title>
-      <link>https://chenterry.com/</link>
+      <link>http://localhost:1313/</link>
       <description>Hi, this is Terry. I&#39;m documenting my product ideas and learning notes in this blog. I&#39;m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description>
       <width>144</width>
       <height>144</height>
     </image>
     
     <item>
+      <title>Understanding OpenAI&#39;s Blast Radius - A Guide to Survival for Startups</title>
+      <link>http://localhost:1313/posts/openai-blast-radius/</link>
+      <pubDate>Mon, 27 Oct 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>http://localhost:1313/posts/openai-blast-radius/</guid>
+      <description>How OpenAI&#39;s rapid product development affects the startup ecosystem. Strategic frameworks for building defensible AI applications in the shadow of foundation model giants.</description>
+      
+      
+        
+          
+          <category>AI Application &amp; Value Creation Layer</category>
+          
+        
+      
+      
+        
+          
+          <category>Investing</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-10-27T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
       <title>Understanding Google: A Primer</title>
-      <link>https://chenterry.com/posts/google-primer/</link>
+      <link>http://localhost:1313/posts/google-primer/</link>
       <pubDate>Mon, 20 Oct 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/posts/google-primer/</guid>
+      <guid>http://localhost:1313/posts/google-primer/</guid>
       <description>Understanding the key products that made Google the tech giant today, with a deepdive on new AI features. Exploring Google&#39;s evolution from search to AI-powered ecosystem and investment implications.</description>
       
       
@@ -55,10 +82,10 @@
     
     <item>
       <title>Security Data Pipelines</title>
-      <link>https://chenterry.com/posts/security/</link>
+      <link>http://localhost:1313/posts/security/</link>
       <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/posts/security/</guid>
+      <guid>http://localhost:1313/posts/security/</guid>
       <description>Analysis of AI-powered security solutions, market trends, and investment opportunities in enterprise cybersecurity. Exploring how AI is transforming threat detection, response, and prevention in the $150B+ security market.</description>
       
       
@@ -82,10 +109,10 @@
     
     <item>
       <title>Decentralized Finance</title>
-      <link>https://chenterry.com/posts/crypto/</link>
+      <link>http://localhost:1313/posts/crypto/</link>
       <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/posts/crypto/</guid>
+      <guid>http://localhost:1313/posts/crypto/</guid>
       <description>Thesis in progress - exploring decentralized finance protocols, digital assets, and the infrastructure powering the crypto economy.</description>
       
       
@@ -109,10 +136,10 @@
     
     <item>
       <title>The AI of the East</title>
-      <link>https://chenterry.com/posts/asia_tech/</link>
+      <link>http://localhost:1313/posts/asia_tech/</link>
       <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/posts/asia_tech/</guid>
+      <guid>http://localhost:1313/posts/asia_tech/</guid>
       <description>Thesis in progress - exploring AI development, innovation patterns, and investment opportunities in Asian technology markets.</description>
       
       
@@ -136,10 +163,10 @@
     
     <item>
       <title>The future Tsla paints</title>
-      <link>https://chenterry.com/posts/mobility_future/</link>
+      <link>http://localhost:1313/posts/mobility_future/</link>
       <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/posts/mobility_future/</guid>
+      <guid>http://localhost:1313/posts/mobility_future/</guid>
       <description>Thesis in progress - examining Tesla&#39;s vision for transportation, energy transition, and infrastructure transformation.</description>
       
       
@@ -163,10 +190,10 @@
     
     <item>
       <title>What experiences do consumers pay for?</title>
-      <link>https://chenterry.com/posts/aesthetic_economy/</link>
+      <link>http://localhost:1313/posts/aesthetic_economy/</link>
       <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/posts/aesthetic_economy/</guid>
+      <guid>http://localhost:1313/posts/aesthetic_economy/</guid>
       <description>Thesis in progress - analyzing consumer spending patterns on experiences, aesthetics, and lifestyle enhancement.</description>
       
       
