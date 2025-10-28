@@ -36,17 +36,17 @@ Google Search leads with nearly 5 billion global users conducting 8.5 billion se
 
 ![Google Search Features](/images/google-primer/google-search-features.png)
 
-Google Search has undergone significant transformation with the integration of AI capabilities, moving beyond traditional text-based queries to multimodal interactions. The Circle to Search feature allows users to search anything on their Android device through simple gestures like circling, highlighting, or tapping, demonstrating Google's push toward more intuitive search interfaces. AI Mode provides conversational search experiences where users can ask questions and receive AI-powered responses with follow-up suggestions and web links, bridging the gap between traditional search and modern AI assistants.
+Google Search has transformed into a multimodal AI platform. Circle to Search enables gesture-based queries on Android devices, while AI Mode provides conversational search with follow-up suggestions. Google Lens extends visual search beyond object recognition to complex tasks like solving handwritten math problems and real-time translation, demonstrating Google's push toward intuitive, context-aware interfaces.
 
-Google Lens represents another evolution in search technology, enabling users to search using their camera, images, or whatever appears on their screen. This visual search capability extends beyond simple object recognition to include complex tasks like solving math problems from handwritten equations, translating text in real-time, and identifying products or landmarks. The integration of Lens across Google's ecosystem demonstrates the company's commitment to making search more accessible and context-aware.
+![Reddit-Google Partnership](/images/google-primer/reddit-google-partnership.png)
+
+This strategic partnership with Reddit exemplifies Google's approach to expanding content access while maintaining search dominance.
 
 ## Gemini: Google's AI Assistant Platform
 
 ![Gemini Assistant](/images/google-primer/gemini-assistant.png)
 
-Gemini represents Google's flagship AI assistant, positioned as a personal AI companion that leverages the latest language models to provide conversational interactions across multiple platforms. Unlike traditional chatbots, Gemini is designed to be a comprehensive thinking partner that can handle complex reasoning tasks, creative projects, and analytical work. The platform integrates with Google's broader ecosystem, accessing user data and preferences to provide personalized responses and recommendations.
-
-The positioning of Gemini as a "personal AI assistant" reflects Google's strategy to compete directly with OpenAI's ChatGPT and other conversational AI platforms. However, Gemini's integration with Google's existing services provides unique advantages, including access to real-time information through Google Search, integration with Google Workspace applications, and the ability to leverage user's historical data for more contextual responses. This ecosystem approach differentiates Gemini from standalone AI assistants.
+Gemini serves as Google's flagship AI assistant and comprehensive thinking partner for complex reasoning, creative projects, and analytical work. Unlike standalone AI platforms, Gemini's integration with Google's ecosystem provides unique advantages: real-time Search access, Google Workspace integration, and personalized responses based on user data. This ecosystem approach positions Gemini as a direct competitor to ChatGPT while leveraging Google's existing platform advantages.
 
 ## NotebookLM: Research and Analysis Platform
 
@@ -60,13 +60,15 @@ The "Understand Anything" tagline reflects NotebookLM's capability to process an
 
 ![Google Labs](/images/google-primer/google-labs.png)
 
-[Google Labs](https://labs.google.com) serves as Google's experimental platform for testing cutting-edge AI features and technologies before they reach mainstream products. The platform provides users with early access to innovative tools and demonstrates Google's commitment to rapid AI development and iteration. Labs represents a crucial component of Google's AI strategy, allowing the company to gather user feedback and refine technologies before broader deployment.
+[Google Labs](https://labs.google.com) serves as Google's experimental platform for testing cutting-edge AI features before mainstream deployment. The platform enables rapid iteration and user feedback collection for emerging technologies.
 
 ![Flow with Veo](/images/google-primer/flow-veo.png)
 
-One of the featured experiments in Google Labs is Flow, an AI filmmaking tool that enables users to seamlessly create cinematic clips, scenes, and stories with consistency using Google's most advanced AI models, including Veo for video generation. Flow represents the next wave of storytelling technology, allowing creators to generate professional-quality video content through AI assistance. The integration with Veo, Google's video generation model, demonstrates the company's capabilities in multimodal AI and its potential applications in creative industries.
+Flow represents a breakthrough in AI filmmaking, using Veo for video generation to create cinematic clips with visual consistency. This tool democratizes professional video production through intelligent automation.
 
-Flow's positioning as a storytelling platform reflects broader trends in AI-powered content creation, where traditional production barriers are being lowered through intelligent automation. The tool's ability to maintain visual consistency across scenes and enable iterative refinement suggests sophisticated underlying technology that could revolutionize video production workflows for both amateur and professional creators.
+![Daily Listen Demo](/images/google-primer/daily-listen-demo.png)
+
+Daily Listen showcases another experimental direction: AI-generated personalized audio content that curates topics from across the web, demonstrating Google's exploration of audio-first AI experiences.
 
 ## Google's Position in the AI Search Era
 
