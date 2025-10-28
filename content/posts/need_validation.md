@@ -3,7 +3,8 @@ title: "Social Listening for Product Insight"
 description: "Using AI-powered social listening to extract authentic customer insights from online discourse. Moving from product-to-market to market-to-product development through systematic analysis of community discussions."
 date: 2025-08-29
 author: Terry Chen
-tags: ["Product"]
+tags: ["Product", "Posts"]
+categories: microsoft
 keywords: ["social listening", "customer insights", "product development", "AI analysis", "community research", "market validation", "customer discourse", "product-market fit", "embeddings", "customer research"]
 ---
 

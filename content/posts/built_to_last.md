@@ -3,7 +3,7 @@ title: "Built to last"
 description: "Competitive differentiation in the age of AI - observations on building sustainable advantages when technology commoditizes quickly."
 date: 2025-10-19
 author: Terry Chen
-tags: ["Product", "Entrepreneurship", "Observations"]
+tags: ["Product", "Entrepreneurship", "Observations", "Posts"]
 keywords: ["competitive differentiation", "sustainable advantage", "AI", "technology", "product strategy", "entrepreneurship", "business moats"]
 ---
 

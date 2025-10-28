@@ -3,7 +3,8 @@ title: "Value Add of AI: Generation as Distribution"
 description: "Exploring how AI's greatest value shifts from content creation to personalized distribution and synthesis. From RSS feeds to knowledge liquefaction and the future of adaptive content experiences."
 date: 2025-05-08
 author: Terry Chen
-tags: ["Observations", "Product"]
+tags: ["Observations", "Product", "Posts"]
+categories: aibrary
 ---
 
 ## The Evolution of AI Value

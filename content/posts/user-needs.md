@@ -3,7 +3,7 @@ title: "User Needs & Opportunities"
 description: "Identifying real user pain points and business opportunities through conversations and online research. A collection of validated user needs that could become viable startups."
 date: 2025-03-25
 author: Terry Chen
-tags: ["Observations", "Entrepreneurship", "Product"]
+tags: ["Observations", "Entrepreneurship", "Product", "Posts"]
 keywords: ["user needs identification", "startup opportunities", "product market fit", "user pain points", "business opportunity validation"]
 ---
 

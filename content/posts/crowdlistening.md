@@ -69,9 +69,37 @@ As shown above, when a user submits a research question, the system dynamically 
 
 This MCP-driven approach creates a dramatic efficiency improvement, reducing complex social media analysis from weeks to minutes while maintaining remarkable analytical depth.
 
+## Case Study: Microsoft Sentinel Product Analysis
+
+![Microsoft Sentinel Overview](/images/projects/crowdlistening/microsoft-sentinel-overview.png)
+
+To demonstrate Crowdlistening's capabilities in B2B product analysis, we conducted a comprehensive sentiment analysis of Microsoft Sentinel. This enterprise security product showcases our platform's ability to extract nuanced insights from complex technical discussions.
+
+### Sentiment Breakdown and Key Findings
+
+![Audience Sentiment Analysis](/images/projects/crowdlistening/sentiment-breakdown.png)
+
+Our analysis reveals a mixed sentiment landscape: 35% positive, 50% negative, and 15% neutral opinions. The positive sentiment centers on Microsoft ecosystem integration benefits, while negative feedback focuses on pricing complexity and setup challenges.
+
+### Detailed Theme Analysis
+
+![Key Themes Analysis](/images/projects/crowdlistening/detailed-analysis.png)
+
+The platform identifies three major discussion themes:
+- **Integration Benefits** (40% of mentions): Tight Microsoft ecosystem integration simplifies deployment
+- **Pricing Concerns** (32% of mentions): Complex consumption-based pricing creates cost management difficulties  
+- **Configuration Complexity** (17% of mentions): Initial setup requires specialized expertise
+- **Feature Maturity** (10% of mentions): Perceived as less mature than competitors like Splunk
+
+### Actionable Business Insights
+
+![Product Insights Dashboard](/images/projects/crowdlistening/product-insights.png)
+
+The analysis generates specific business recommendations: pricing complexity creates budget allocation challenges and negatively impacts competitive positioning in price-sensitive scenarios. This demonstrates how our platform transforms social listening into strategic product intelligence.
+
 ## Case Study - Trump Tariffs
 
-To demonstrate Crowdlistening's capabilities, we conducted a comprehensive analysis of public sentiment regarding Trump's tariff policies. This serves as an excellent test case due to its complexity, polarizing nature, and economic impact.
+To demonstrate Crowdlistening's capabilities in political sentiment analysis, we conducted a comprehensive analysis of public sentiment regarding Trump's tariff policies. This serves as an excellent test case due to its complexity, polarizing nature, and economic impact.
 
 When a user inputs the query about Trump's tariff policies, our system activates the appropriate MCP tools in sequence. First, it gathers factual background information on the policies themselves, as shown below:
 
@@ -81,7 +109,7 @@ This background research provides context on what the current tariff policies ar
 Next, the system analyzes public opinion on these policies by examining social media content. The analysis reveals highly polarized reactions, categorized into three main perspectives:
 
 
-The sentiment analysis dashboard shows that opinions on Trump's tariff policies are distributed as 38% supportive, 42% critical, and 20% neutral or mixed. This visualization helps brands and researchers quickly understand the overall public response landscape.
+The sentiment analysis dashboard shows that opinions on Trump's tariff policies are distributed as 38% supportive, 42% critical, and 20% neutral or mixed. This visualization helps brands and researchers quickly understand the overall public response landscape, similar to our Microsoft Sentinel analysis but applied to political and economic topics.
 
 
 One of the most valuable outputs is our projected economic impact analysis. This data visualization clearly presents the concrete financial implications of these policies across multiple domains:

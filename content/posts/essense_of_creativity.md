@@ -2,7 +2,8 @@
 title: "Essence of Creativity: Future of Creative Work"
 date: 2024-08-25
 author: Terry Chen
-tags: ["Observations", "Entrepreneurship", "Product"]
+tags: ["Observations", "Entrepreneurship", "Product", "Posts"]
+categories: tiktok
 description: "Exploring the intersection of AI-generated content and human creativity. Analysis of creative workflows, multimodal interactions, and the future of content creation in the AI era."
 keywords: ["AI creativity", "content generation", "creative workflows", "multimodal AI", "content understanding", "AI-generated content", "creative technology", "content creation"]
 ---
@@ -24,6 +25,15 @@ As for AI's value in this process, generative AI as a probabilistic model strugg
 
 How can we make language models produce outputs that meet our expectations? This challenging question can be further divided into: (1) we don't know what our ideal output looks like, and (2) we know what we want, but the language model doesn't understand us. Most people are trying to solve the latter problem (through model alignment, prompting, few-shot learning, RAG, fine-tuning, memory and caching methods). However, the approaches in this space are increasingly similar, with many solutions being open-sourced, which is why many generative products deliver roughly comparable results. The real differentiation lies in how to adapt engineering and data processing to specific business scenarios.
 
+### Brand Understanding and AI Integration
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 20px 0;">
+  <img src="/images/projects/tiktok/tiktok-video-6.png" alt="Brand Intelligence Platform" style="width: 100%; border-radius: 8px;">
+  <img src="/images/projects/tiktok/tiktok-video-8.png" alt="AI Brand Training Interface" style="width: 100%; border-radius: 8px;">
+</div>
+
+Modern content generation tools are beginning to incorporate brand understanding through multimodal brand kits that train AI to understand brand voice, visual style, and content guidelines. This represents a shift from generic content generation to brand-specific, contextually aware creation.
+
 Returning to the first problem - "I don't know what output I want" - this stems more from a lack of content understanding. Good script writing requires more than just hooks, USPs, and CTAs; it needs a clear angle: content that resonates with the audience, is appropriate for the context, and achieves its purpose. Some products are creating brand kits or audience profiles to guide more specific content generation through manually defined style rules or user personas. While these types of configurations will likely become common, finding ways to connect insight data with generation without manual setup could be a breakthrough.
 
 ## Understanding User Needs
@@ -44,11 +54,26 @@ I previously had a misconception that simply connecting capabilities constitutes
 
 Finally, let's discuss modality. Given the characteristics of different modalities (text - easily editable, images - non-linear, video - linear), different scenarios should use different modalities. The same user may need different interactions in different contexts.
 
+### Understanding Content Through Data Visualization
+
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px; margin: 20px 0;">
+  <img src="/images/projects/tiktok/tiktok-video-3.png" alt="Content Analytics Dashboard" style="width: 100%; border-radius: 8px;">
+  <img src="/images/projects/tiktok/tiktok-video-4.png" alt="Vector Visualization Analysis" style="width: 100%; border-radius: 8px;">
+  <img src="/images/projects/tiktok/tiktok-video-5.png" alt="Content Performance Metrics" style="width: 100%; border-radius: 8px;">
+</div>
+
+Multimodal content understanding requires sophisticated analysis of how different content types perform across platforms. These data visualizations show the complexity of content analysis - from vector embeddings that reveal semantic relationships to performance metrics that track engagement patterns.
+
 Switching between modal forms (long/short/mixed) and modal types (text/image/audio/video) will become easier, essentially providing the same content with applicability across different scenarios. Users aren't just people; they're collections of needs. For instance, I might read text at the office due to setting constraints, watch videos while waiting in line with nothing to do, and listen to audio while driving or commuting. The same content may need three modalities (text/video/audio) connected based on the scenario. This could be further refined - people accelerate reading or listening for higher information intake. Finding ways to adapt the same content to different scenarios without increasing creation costs is another interesting challenge.
 
 ## Case Study: Voice Synthesis
 
 Take voice synthesis as an example. From a technical perspective, this technology is already quite mature, yet the first application that comes to mind might be phone scams. Other applications include David Attenborough's wildlife narration in open-source projects or OpenAI's GPT-4o launch event simulating Samantha's voice (originally Scarlett Johansson) from the movie "Her." However, I believe short video creators are truly making the best use of this technology.
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 20px 0;">
+  <img src="/images/projects/tiktok/tiktok-video-1.png" alt="TikTok Video Interface" style="width: 100%; border-radius: 8px;">
+  <img src="/images/projects/tiktok/tiktok-video-2.png" alt="TikTok Comment Analysis" style="width: 100%; border-radius: 8px;">
+</div>
 
 I recently saw a high-quality derivative work based on "In the Name of the People" (a 2017 Chinese TV drama). The creator (called "Yi Tou Jue Lv") made remarkably deep portrayals of character psychology and inner monologues. Only after reading the comments did I learn that the creator used voice synthesis combined with their understanding of the characters to create this derivative work. Looking through this creator's content, I found they cleverly used the original footage but replaced the narration with autobiographical scripts using AI-synthesized voices, making their work deeper and satisfying more viewer perspectives than their peers – essentially creating a new creative genre.
 
