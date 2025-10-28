@@ -1,5 +1,5 @@
 ---
-title: "Understanding OpenAI's Blast Radius"
+title: "OpenAI's Blast Radius"
 date: 2025-10-27
 author: Terry Chen, Livia Li
 tags: ["Investing"]
