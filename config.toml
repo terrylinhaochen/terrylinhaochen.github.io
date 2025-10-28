@@ -35,16 +35,6 @@ enableRobotsTXT = true
   changefreq = "weekly"
   priority = 0.5
   filename = "sitemap.xml"
-  sitemapindex = false
-
-[outputFormats]
-  [outputFormats.Sitemap]
-    mediaType = "application/xml"
-    baseName = "sitemap"
-    isHTML = false
-    isPlainText = true
-    noUgly = true
-    rel = "sitemap"
 
 [params]
   description = "Hi, this is Terry. I'm documenting my product ideas and learning notes in this blog. I'm interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction."
@@ -145,10 +135,10 @@ enableRobotsTXT = true
 
 # Enable search
 [outputs]
-  home = ["HTML", "RSS", "JSON", "Sitemap"]
-  section = ["HTML", "RSS", "Sitemap"]
-  taxonomy = ["HTML", "RSS", "Sitemap"]
-  term = ["HTML", "RSS", "Sitemap"]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+  term = ["HTML", "RSS"]
 
 # Image handling
 [markup]

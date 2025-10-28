@@ -1,10 +1,12 @@
 ---
-title: "How to Work on What You Love"
-description: "Curated advice from successful entrepreneurs and thinkers on finding passion, going deep on interests, and building a meaningful career doing what you love."
+title: "How to Work on What You Love: Career Advice from Top Entrepreneurs"
+description: "Curated advice from successful entrepreneurs and thinkers on finding passion, going deep on interests, and building a meaningful career doing what you love. Insights from Patrick Collison, Paul Graham, and other successful founders."
 date: 2024-09-01
 author: Patrick Collison, Paul Graham, etc
 tags: ["Posts", "Observations"]
-keywords: ["career advice", "entrepreneurship guidance", "passion projects", "deep work", "Patrick Collison", "Paul Graham advice"]
+keywords: ["career advice", "entrepreneurship guidance", "passion projects", "deep work", "Patrick Collison", "Paul Graham advice", "startup career", "following passion", "career development", "entrepreneurial mindset", "finding purpose", "career success"]
+slug: "how-to-work-on-what-you-love"
+canonical: "https://terrylinhaochen.github.io/posts/how-to-work-on-what-you-love/"
 ---
 Every now and then I like to read about the advice of others who've succeeded in their field. Here's a few that I personally found to be enlightening and practical. 
 

@@ -1,11 +1,13 @@
 ---
-title: "Billion Parameter Trend Insight Analysis for Ads"
+title: "AI-Powered TikTok Trend Analysis: Billion Parameter Insights for Advertising"
 date: 2024-04-10
 categories: tiktok
 tags: ["Product"]
 company: "tiktok"
-description: "Development of AI-powered content analysis tools for TikTok trend identification and agency insights. Multi-modal content understanding and actionable trend analysis for advertising agencies."
-keywords: ["content analysis", "TikTok trends", "AI insights", "advertising technology", "content understanding", "trend analysis", "multi-modal AI", "agency tools"]
+description: "Development of AI-powered content analysis tools for TikTok trend identification and agency insights. Multi-modal content understanding and actionable trend analysis for advertising agencies using billion-parameter models."
+keywords: ["content analysis", "TikTok trends", "AI insights", "advertising technology", "content understanding", "trend analysis", "multi-modal AI", "agency tools", "billion parameter models", "TikTok Creative Center", "AI-powered advertising", "video content analysis"]
+slug: "ai-powered-tiktok-trend-analysis"
+canonical: "https://terrylinhaochen.github.io/posts/ai-powered-tiktok-trend-analysis/"
 ---
 Analyze thousands of tiktoks to provide actionable trends & insights for key agencies. (Worked on multi-modal content understanding)
 To be released on TikTok Creative Center (https://ads.tiktok.com/business/creativecenter/pc/en)

@@ -1,10 +1,12 @@
 ---
-title: "When do I Sunset a Product?"
-description: "A framework for deciding when to sunset products and projects. Understanding opportunity costs, sunk cost fallacy, and making difficult decisions about failing ventures."
+title: "When to Sunset a Product: A Decision Framework for Entrepreneurs"
+description: "A framework for deciding when to sunset products and projects. Understanding opportunity costs, sunk cost fallacy, and making difficult decisions about failing ventures. Essential guidance for startup founders and product managers."
 date: 2025-07-12
 author: Terry Chen
 tags: ["Posts", "Observations", "Entrepreneurship"]
-keywords: ["product sunsetting", "startup failure", "opportunity cost", "product lifecycle", "when to quit startup", "sunk cost fallacy"]
+keywords: ["product sunsetting", "startup failure", "opportunity cost", "product lifecycle", "when to quit startup", "sunk cost fallacy", "product management decisions", "startup pivoting", "resource allocation", "entrepreneurial decision making", "failing fast", "product strategy"]
+slug: "when-to-sunset-a-product"
+canonical: "https://terrylinhaochen.github.io/posts/when-to-sunset-a-product/"
 ---
 
 ## Opportunity Costs

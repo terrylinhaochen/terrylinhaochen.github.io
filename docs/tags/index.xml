@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     <title>Tags - Terry Chen</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://chenterry.com/tags/</link>
     <description>Hi, this is Terry. I&#39;m documenting my product ideas and learning notes in this blog. I&#39;m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description>
     <language>en-us</language>
     <managingEditor>Terry Chen (Terry Chen)</managingEditor>
@@ -10,7 +10,7 @@
     <copyright>© 2025 Terry Chen. All rights reserved.</copyright>
     <lastBuildDate>Mon, 27 Oct 2025 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://chenterry.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     <generator>Hugo 0.136.2</generator>
     <category>Technology</category>
@@ -18,9 +18,9 @@
     <category>Product Engineering</category>
     <category>Investment Analysis</category>
     <image>
-      <url>http://localhost:1313/images/profile.jpg</url>
+      <url>https://chenterry.com/images/profile.jpg</url>
       <title>Terry Chen</title>
-      <link>http://localhost:1313/</link>
+      <link>https://chenterry.com/</link>
       <description>Hi, this is Terry. I&#39;m documenting my product ideas and learning notes in this blog. I&#39;m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description>
       <width>144</width>
       <height>144</height>
@@ -28,10 +28,10 @@
     
     <item>
       <title>Investing</title>
-      <link>http://localhost:1313/tags/investing/</link>
+      <link>https://chenterry.com/tags/investing/</link>
       <pubDate>Mon, 27 Oct 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/tags/investing/</guid>
+      <guid>https://chenterry.com/tags/investing/</guid>
       <description></description>
       
       
@@ -43,10 +43,10 @@
     
     <item>
       <title>Product</title>
-      <link>http://localhost:1313/tags/product/</link>
+      <link>https://chenterry.com/tags/product/</link>
       <pubDate>Sun, 26 Oct 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/tags/product/</guid>
+      <guid>https://chenterry.com/tags/product/</guid>
       <description></description>
       
       
@@ -58,10 +58,10 @@
     
     <item>
       <title>Entrepreneurship</title>
-      <link>http://localhost:1313/tags/entrepreneurship/</link>
+      <link>https://chenterry.com/tags/entrepreneurship/</link>
       <pubDate>Sun, 19 Oct 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/tags/entrepreneurship/</guid>
+      <guid>https://chenterry.com/tags/entrepreneurship/</guid>
       <description></description>
       
       
@@ -73,10 +73,10 @@
     
     <item>
       <title>Observations</title>
-      <link>http://localhost:1313/tags/observations/</link>
+      <link>https://chenterry.com/tags/observations/</link>
       <pubDate>Sun, 19 Oct 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/tags/observations/</guid>
+      <guid>https://chenterry.com/tags/observations/</guid>
       <description></description>
       
       
@@ -88,10 +88,10 @@
     
     <item>
       <title>Archived</title>
-      <link>http://localhost:1313/tags/archived/</link>
+      <link>https://chenterry.com/tags/archived/</link>
       <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/tags/archived/</guid>
+      <guid>https://chenterry.com/tags/archived/</guid>
       <description></description>
       
       
@@ -103,10 +103,10 @@
     
     <item>
       <title>Posts</title>
-      <link>http://localhost:1313/tags/posts/</link>
+      <link>https://chenterry.com/tags/posts/</link>
       <pubDate>Sat, 12 Jul 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/tags/posts/</guid>
+      <guid>https://chenterry.com/tags/posts/</guid>
       <description></description>
       
       
@@ -118,10 +118,10 @@
     
     <item>
       <title>Research</title>
-      <link>http://localhost:1313/tags/research/</link>
+      <link>https://chenterry.com/tags/research/</link>
       <pubDate>Mon, 10 Mar 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/tags/research/</guid>
+      <guid>https://chenterry.com/tags/research/</guid>
       <description></description>
       
       

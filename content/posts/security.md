@@ -1,11 +1,13 @@
 ---
-title: "Security Data Pipelines"
+title: "AI-Powered Security Data Pipelines: The Future of Enterprise Cybersecurity"
 date: 2025-07-13
 author: Terry Chen
 tags: ["Investing"]
 categories: ["Security, Data Pipelines & Agentic SOC"]
-description: "Analysis of AI-powered security solutions, market trends, and investment opportunities in enterprise cybersecurity. Exploring how AI is transforming threat detection, response, and prevention in the $150B+ security market."
-keywords: ["AI security", "cybersecurity", "enterprise security", "threat detection", "AI defense", "security automation", "zero trust", "security AI market"]
+description: "Analysis of AI-powered security solutions, market trends, and investment opportunities in enterprise cybersecurity. Exploring how AI is transforming threat detection, response, and prevention in the $150B+ security market through advanced data pipelines and agentic SOC operations."
+keywords: ["AI security", "cybersecurity", "enterprise security", "threat detection", "AI defense", "security automation", "zero trust", "security AI market", "SIEM", "security data lakes", "agentic SOC", "security analytics", "threat intelligence", "security orchestration"]
+slug: "ai-powered-security-data-pipelines"
+canonical: "https://terrylinhaochen.github.io/posts/ai-powered-security-data-pipelines/"
 ---
 
 ## Understanding the Security Data Lake and SIEM Business

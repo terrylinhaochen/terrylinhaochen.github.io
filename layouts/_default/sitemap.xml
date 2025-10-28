@@ -6,7 +6,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
         
-{{- range .Data.Pages }}
+{{- range .Site.AllPages }}
   {{- if .Permalink }}
   <url>
     <loc>{{ .Permalink }}</loc>
