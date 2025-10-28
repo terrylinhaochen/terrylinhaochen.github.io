@@ -1,17 +1,16 @@
 {{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml"
-        xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
         
 {{- range .Site.AllPages }}
   {{- if .Permalink }}
   <url>
     <loc>{{ .Permalink }}</loc>
-    {{- if not .Date.IsZero }}
+    {{- if and .Date (gt .Date.Year 1900) }}
     <lastmod>{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}</lastmod>
+    {{- else }}
+    <lastmod>2025-10-28T00:00:00+00:00</lastmod>
     {{- end }}
     {{- $changefreq := "weekly" }}
     {{- if .IsHome }}
@@ -40,22 +39,6 @@
       <image:loc>{{ .image | absURL }}</image:loc>
       <image:title>{{ .alt | default $.Title }}</image:title>
     </image:image>
-    {{- end }}
-    
-    {{- if .IsPage }}
-    <news:news>
-      <news:publication>
-        <news:name>{{ $.Site.Title }}</news:name>
-        <news:language>{{ $.Site.Language.LanguageCode | default "en" }}</news:language>
-      </news:publication>
-      <news:publication_date>{{ .Date.Format "2006-01-02" }}</news:publication_date>
-      <news:title>{{ .Title }}</news:title>
-      {{- if .Params.keywords }}
-      <news:keywords>{{ delimit .Params.keywords ", " }}</news:keywords>
-      {{- else if .Params.tags }}
-      <news:keywords>{{ delimit .Params.tags ", " }}</news:keywords>
-      {{- end }}
-    </news:news>
     {{- end }}
   </url>
   {{- end }}

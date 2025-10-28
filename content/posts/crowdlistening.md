@@ -7,7 +7,6 @@ tags: ["Entrepreneurship", "Product"]
 company: "crowdlisten"
 description: "Transform large-scale social conversations into actionable insights. Understand crowd sentiment, track emerging opinions, and identify key narratives."
 keywords: ["social listening", "brand listening", "market analysis", "tiktok", "journalism","reporting", "user experience"]
-images: ["/images/projects/crowdlistening/webpage.png"]
 aliases: ["/projects/crowdlisten/"]
 version: "1.1"
 changelog:
@@ -18,7 +17,7 @@ changelog:
 
 ## Inspiring insights, amplifying voices. (crowdlisten.com)
 
-![Webpage](/images/projects/crowdlistening/webpage.png)
+![CrowdListen Homepage](/images/projects/crowdlistening/crowdlisten-homepage.png)
 
 ## From Content Aggregation to Original Research
 
@@ -34,7 +33,6 @@ What I'm particularly interested in exploring and building with Crowdlistening i
 
 ## The Insight Paradox
 
-![Insight Paradox](/images/projects/crowdlistening/insight_paradox.png)
 
 Brands today face a fundamental paradox: they need broad insights from vast amounts of social data, yet require the detailed understanding typically only available through limited case studies. Current solutions offer either abstracted metrics that require tedious manual interpretation, expensive and limited content screening that can't scale, or surface-level sentiment analysis that misses nuanced opinions. Crowdlistening bridges this gap by combining the scale of algorithmic analysis with the depth of human-like comprehension. This addresses the first challenge identified in "Essence of Creativity" - helping users understand massive amounts of information and generate meaningful insights when they "don't know what output they want."
 
@@ -42,7 +40,6 @@ Brands today face a fundamental paradox: they need broad insights from vast amou
 
 The rationale behind Crowdlistening's multi-modal technical architecture stems from the fundamental challenge of extracting truly valuable insights from the vast and varied landscape of online conversations. Traditional methods often fall short because they either focus on structured data or analyze individual modalities (text, video, audio) in isolation. This approach misses the rich context and nuanced understanding that arises from the interplay between different forms of content and engagement. For example, a viral TikTok video's impact is not solely determined by its visual content but also by its accompanying audio, captions, user comments, and engagement metrics like likes and shares.
 
-![Analysis Page](/images/projects/crowdlistening/analysis_page.png)
 
 Crowdlistening's design directly tackles this limitation by integrating embedding-based topic modeling and LLM deep research capabilities to process and understand this multi-faceted data. Embedding-based topic modeling efficiently identifies key themes across massive datasets, while the LLM's deep reasoning capabilities can then analyze these themes within the context of various modalities. 
 
@@ -50,23 +47,20 @@ This dual approach allows for a layered analysis, examining both the primary con
 
 ## Detailed Analysis Capabilities
 
-The platform provides granular breakdowns of content performance and audience reactions. As shown in our analysis results page, users can explore specific themes, track sentiment over time, and identify the most engaging content types. This helps brands understand not just what is being said, but why certain content resonates with their audience.
+The platform provides granular breakdowns of content performance and audience reactions. Users can explore specific themes, track sentiment over time, and identify the most engaging content types across different categories and industries. This helps brands understand not just what is being said, but why certain content resonates with their audience.
 
-![Analysis Results](/images/projects/crowdlistening/analysis_results.png)
+![Category Analysis](/images/projects/crowdlistening/category-analysis.png)
 
 The opinion analysis feature goes beyond simple positive/negative sentiment to categorize specific viewpoints and concerns. This allows brands to understand the nuanced perspectives their audience holds, helping them craft more targeted and effective messaging.
 
-![Opinion Analysis](/images/projects/crowdlistening/opinion_analysis.png)
 
 ## The MCP Advantage: Accessible Functional Calls
 
-![Claude MCP Entrance](/images/projects/crowdlistening/claude_client.png)
+![Analyze Interface](/images/projects/crowdlistening/analyze-interface.png)
 
 We have integrated Model Context Protocols (MCPs) - an emerging standard that simplifies how LLMs interact with specialized tools and data sources. Rather than simple API calls, MCPs provide structured interfaces for LLMs to access specialized capabilities while maintaining context awareness throughout the analysis process.
 
-![Claude MCP Process](/images/projects/crowdlistening/claude_mcp_process.png)
-
-As shown here, when a user submits a research question, the system dynamically determines which analytical capabilities to deploy. The Claude interface serves as the orchestration layer, identifying relevant MCP tools to activate and calling them sequentially:
+As shown above, when a user submits a research question, the system dynamically determines which analytical capabilities to deploy. The Claude interface serves as the orchestration layer, identifying relevant MCP tools to activate and calling them sequentially:
 
 1. First gathering baseline information through web search
 2. Then performing targeted data collection via specialized TikTok MCP tools
@@ -81,27 +75,22 @@ To demonstrate Crowdlistening's capabilities, we conducted a comprehensive analy
 
 When a user inputs the query about Trump's tariff policies, our system activates the appropriate MCP tools in sequence. First, it gathers factual background information on the policies themselves, as shown below:
 
-![Research Background](/images/projects/crowdlistening/trump_background.png)
 
 This background research provides context on what the current tariff policies are, including the 10% baseline tariff on all imports that took effect in April 2025, plus the higher "reciprocal" tariffs on countries with which the US has trade deficits (34% for China, 20% for the EU, and 24% for Japan).
 
 Next, the system analyzes public opinion on these policies by examining social media content. The analysis reveals highly polarized reactions, categorized into three main perspectives:
 
-![Public Opinion](/images/projects/crowdlistening/public_opinion.png)
 
 The sentiment analysis dashboard shows that opinions on Trump's tariff policies are distributed as 38% supportive, 42% critical, and 20% neutral or mixed. This visualization helps brands and researchers quickly understand the overall public response landscape.
 
-![Trump Sentiment](/images/projects/crowdlistening/trump_sentiment.png)
 
 One of the most valuable outputs is our projected economic impact analysis. This data visualization clearly presents the concrete financial implications of these policies across multiple domains:
 
-![Economic Impact](/images/projects/crowdlistening/economic_impact.png)
 
 The analysis shows an estimated $1,300 annual cost increase per US household, a projected 0.8% reduction in long-run US GDP, significant auto price increases ($3,000 for US vehicles, $6,000 for imports), and warnings about market volatility.
 
 Beyond simple pro/con sentiment, our opinion analysis feature categorizes specific viewpoints with remarkable granularity. For instance, when examining comments on related content, we can identify nuanced perspectives and their prevalence:
 
-![Trump Comments](/images/projects/crowdlistening/comment_analysis.png)
 
 This example shows how our system can identify several different comment themes, including positive views of content creators (37.5%), appreciation for intelligent discussion (25%), and concerns about media echo chambers (12.5%). This level of nuanced understanding would be impossible through traditional keyword or basic sentiment analysis.
 
