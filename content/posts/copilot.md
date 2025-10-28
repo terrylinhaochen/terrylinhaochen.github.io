@@ -9,8 +9,9 @@ description: "Development of TikTok Symphony Assistant - an AI-powered creative 
 keywords: ["TikTok Symphony", "AI advertising", "creative generation", "ad scripts", "video ads", "agentic workflows", "creative automation", "TikTok ads"]
 aliases: ["/projects/copilot/"]
 ---
-Leverage generative AI capabilities for creative script ideation and video ad creation. (Worked on agentic workflows and interface optimization)
-https://ads.tiktok.com/business/copilot/standalone?locale=en&deviceType=pc
+During my internship at TikTok, I contributed to the development of TikTok Symphony Assistant, an AI-powered creative tool designed to revolutionize how advertisers generate ad scripts and video content. My work focused specifically on agentic workflows and interface optimization, helping to create a more intuitive and efficient creative process for advertisers and content creators.
+
+The TikTok Symphony Assistant represents a significant advancement in AI-driven advertising technology, leveraging sophisticated generative AI capabilities to streamline creative script ideation and video ad creation. The platform is accessible at https://ads.tiktok.com/business/copilot/standalone and demonstrates the potential of AI to transform traditional advertising workflows.
 
 Credits: TikTok Creative Team
 
@@ -19,29 +20,33 @@ Credits: TikTok Creative Team
 
 ## From LLMs to Agents
 
-The transition from LLMs to Agents has become a consensus in the AI community, representing an improvement in complex task execution capabilities. However, helping users fully utilize Agent capabilities to achieve tenfold efficiency gains requires careful workflow design. These workflows aren't merely a presentation of parallel capabilities, but seamless integrations with human-in-the-loop quality assurance. This document uses Typeface as a reference to explain why a clear primary workflow is necessary, as well as design approaches for functional extensions.
+The transition from large language models to agent-based systems has become a consensus in the AI community, representing a fundamental improvement in complex task execution capabilities. This evolution addresses the limitations of traditional LLMs by introducing sophisticated reasoning, planning, and tool-use capabilities that can handle multi-step creative processes more effectively.
 
-## From Google Next to Baidu Create
+However, helping users fully utilize agent capabilities to achieve tenfold efficiency gains requires careful workflow design that goes beyond simple feature aggregation. These workflows aren't merely a presentation of parallel capabilities running in isolation, but rather seamless integrations with human-in-the-loop quality assurance mechanisms. The challenge lies in creating systems that can maintain the creative control and quality standards that professional creators demand while leveraging AI's ability to accelerate and enhance the creative process.
 
-Google held its Google Cloud Next conference from April 9-11, announcing products like Google Vids, Gemini, Vertex AI, and related updates.
+This analysis uses Typeface as a reference case study to explain why a clear primary workflow is necessary for agent-based creative tools, as well as design approaches for functional extensions that enhance rather than complicate the user experience.
 
-From a consumer product perspective, despite Google releasing many products, they were relatively superficial (Google Vids, Workspace AI, etc.). Examples like their Sales Agent demonstration were awkward in workflow, similar to Amazon Rufus. However, the enhanced data insight capabilities enabled by long context windows are becoming a confirmed trend.
+## From Google Next to Baidu Create: Lessons in AI Product Development
 
-From a business product perspective, while Google showcased many Agent applications built on Gemini and Vertex AI and emphasized their powerful functionality, they glossed over the difficulties of actual deployment. Currently, both large tech companies and traditional businesses face challenges in implementing truly effective workflows.
+Google's Cloud Next conference from April 9-11 provided valuable insights into the current state of AI product development, with announcements including Google Vids, enhanced Gemini capabilities, Vertex AI updates, and various productivity integrations. The conference highlighted both the promise and the challenges facing AI-powered creative tools in the current market.
 
-LLMs deliver not just tools, but work results at specific stages of a process. Application deployment can be viewed as providing models with specific contexts and clear behavioral standards. The understanding and reasoning capabilities of LLMs can be applied to various scenarios; packaging general capabilities as abilities needed for specific positions or processes involves overlaying domain expertise with general intelligence.
+From a consumer product perspective, despite Google's extensive product announcements, many offerings appeared relatively superficial in their implementation. Products like Google Vids and Workspace AI integrations, while technically impressive, often fell short of delivering truly transformative user experiences. Examples like their Sales Agent demonstrations revealed awkward workflow integrations similar to Amazon's Rufus, suggesting that the industry still struggles with creating natural, efficient AI-human collaboration patterns.
 
-We should look beyond ChatBot and Agent dimensions to view applications from a Workflow perspective. What parts of daily workflows can be taken over by LLMs? If large models need to process certain enterprise data, what value does this data provide in the business? Where does it sit in the value chain? In the current operational model, which links could be replaced with large models?
+From a business product perspective, Google showcased numerous agent applications built on Gemini and Vertex AI, emphasizing their powerful functionality and technical capabilities. However, the presentations glossed over the practical difficulties of actual deployment and adoption. Currently, both large technology companies and traditional businesses face significant challenges in implementing truly effective workflows that deliver on AI's promise of dramatically improved productivity and creative output.
 
-## 1.1 Consensus: Task Specific, MoE, Agents, Routing
+The fundamental insight driving our work at TikTok was that large language models deliver not just tools, but actual work results at specific stages of creative processes. Application deployment becomes a matter of providing models with specific contexts and clear behavioral standards that align with professional creative workflows. The understanding and reasoning capabilities of LLMs can be applied to various creative scenarios, but success requires packaging general capabilities as abilities needed for specific positions or processes, overlaying domain expertise with general intelligence.
 
-Content that has reached consensus:
+Rather than viewing AI applications through the traditional lens of chatbots or isolated agents, we should adopt a workflow perspective that considers the entire creative process. The key questions become: What parts of daily creative workflows can be effectively taken over by LLMs? If large models need to process enterprise creative data, what value does this data provide in the creative business? Where does it sit in the creative value chain? In current creative operational models, which links could be most effectively replaced or enhanced with large models? These questions guided our approach to developing Symphony Assistant's agentic workflows.
 
-Most companies (A12Labs, Anthropic, etc.) are now developing Task Specific models and Mixture of Experts architectures. The MoE architecture has been widely applied in natural language processing, computer vision, speech recognition, and other fields. It can improve model flexibility and scalability while reducing parameters and computational requirements, thereby enhancing model efficiency and generalization ability (Mixture of Experts Explained).
+## Industry Consensus: Task-Specific Models and Architecture Evolution
 
-The MoE (Mixture of Experts) architecture is a deep learning model structure composed of multiple expert networks, each responsible for handling specific tasks or datasets. In an MoE architecture, input data is assigned to different expert networks for processing, each returning an output structure, with the final output being a weighted sum of all expert network outputs.
+The AI industry has reached consensus on several key architectural approaches that directly informed our work on TikTok Symphony Assistant. Most leading companies, including Anthropic, A12Labs, and others, are now developing task-specific models and Mixture of Experts (MoE) architectures that represent a significant evolution from general-purpose language models.
 
-The core idea of MoE architecture is to break down a large, complex task into multiple smaller, simpler tasks, with different expert networks handling different tasks. This improves model flexibility and scalability while reducing parameters and computational requirements, enhancing efficiency and generalization capability.
+The MoE architecture has been widely applied across natural language processing, computer vision, speech recognition, and other fields relevant to creative content generation. This approach improves model flexibility and scalability while reducing parameters and computational requirements, thereby enhancing both efficiency and generalization ability. For creative applications like Symphony Assistant, this means the system can specialize in different aspects of content creation while maintaining overall coherence and quality.
+
+The Mixture of Experts architecture represents a sophisticated deep learning model structure composed of multiple specialized expert networks, each responsible for handling specific creative tasks or content datasets. In our implementation for Symphony Assistant, input creative data is intelligently assigned to different expert networks for processing, with each expert returning specialized output structures. The final creative output emerges as a weighted combination of all expert network outputs, ensuring both specialization and coherence.
+
+The core innovation of MoE architecture lies in its ability to break down large, complex creative tasks into multiple smaller, more manageable subtasks, with different expert networks handling different aspects of content creation. For advertising creative generation, this might mean separate experts for script writing, visual concept development, audience targeting, and brand voice consistency. This approach dramatically improves model flexibility and scalability while reducing overall parameters and computational requirements, enhancing both efficiency and creative output quality.
 
 Implementing an MoE architecture typically requires the following steps:
 
@@ -55,15 +60,13 @@ Implementing an MoE architecture typically requires the following steps:
 
 5. Train the model: Use labeled training data to train the entire MoE architecture to obtain final model weights and parameters.
 
-### Longer Context Window -> LLM Routing
+### Long Context Windows Enable Sophisticated Routing
 
-At the Gemini 1.5 Hackathon at AGI House, Jeff Dean noted the significant aspects of Gemini 1.5: 1 Million context window, which opens up new capabilities with in-context learning, and the MoE (Mixture of Experts) architecture.
+The development of longer context windows, exemplified by Gemini 1.5's one million token capacity, has opened up new possibilities for creative AI applications. Jeff Dean's presentation at the Gemini 1.5 Hackathon at AGI House highlighted how these extended context windows enable more sophisticated in-context learning and more effective Mixture of Experts architectures. For creative applications like Symphony Assistant, this means the system can maintain awareness of entire creative briefs, brand guidelines, and campaign contexts throughout the generation process.
 
-### AI Routing Uses
+### Practical Implementation of AI Routing Systems
 
-Writesonic (https://writesonic.com) uses GPT Router for LLM Routing during AI Model Selection.
-
-GPT Router (https://github.com/Writesonic/GPTRouter) allows smooth management of multiple LLMs (OpenAI, Anthropic, Azure) and Image Models (Dall-E, SDXL), speeds up responses, and ensures non-stop reliability.
+Real-world implementations of these concepts can be seen in platforms like Writesonic, which uses GPT Router for intelligent LLM routing during AI model selection. The GPT Router system demonstrates how smooth management of multiple LLMs (including OpenAI, Anthropic, and Azure) and image models (such as DALL-E and SDXL) can speed up responses while ensuring reliability and consistency. This approach directly influenced our architecture decisions for Symphony Assistant, where different creative tasks benefit from different specialized models.
 
 ```python
 from gpt_router.client import GPTRouterClient

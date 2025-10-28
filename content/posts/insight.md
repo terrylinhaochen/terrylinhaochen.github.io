@@ -18,7 +18,7 @@ Credits: TikTok Creative Team
 
 Jun 3 - Excited to share that TikTok Insight Spotlight, a product I worked on during my time at TikTok, was officially unveiled at the company's annual advertiser summit on June 3rd, 2025. [The Verge covered the launch extensively](https://www.theverge.com/news/678255/tiktok-advertiser-summit-ai-targeting-data-seo), highlighting the AI-driven capabilities I helped develop.
 
-![TikTok Insight Spotlight Interface](/docs/images/projects/insight/insight_spotlight.jpeg)
+![TikTok Insight Spotlight Interface](/images/projects/tiktok/tiktok-video-1.png)
 *TikTok's Insight Spotlight interface showing AI-generated analysis - a product I contributed to while at TikTok*
 
 As The Verge reported: "TikTok introduced a slew of new advertiser tools at the company's annual advertiser summit on June 3rd. The new products range from AI-powered ad tools to new features connecting creators and brands, but the overall picture is clear: advertiser content on TikTok is about to become much more tailored and specific."
@@ -30,7 +30,13 @@ The article specifically highlighted the core functionality I worked on: "The co
 During my time at TikTok, I worked specifically on the multi-modal content understanding capabilities that power Insight Spotlight's core functionality. Here's how the features I helped develop work in practice:
 
 ### AI-Generated Content Recommendations
-The Verge highlighted a key example of the system in action: "In an example provided by TikTok, an AI-generated suggestion recommends that a brand 'produce video content focused on 'hormonal health' for female, English-speaking users' and to include a specific keyword." This type of precise, data-driven recommendation is made possible by the multi-modal analysis systems I contributed to.
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 20px 0; align-items: start;">
+  <img src="/images/projects/tiktok/tiktok-video-4.png" alt="Vector Analysis and Content Understanding" style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px;">
+  <img src="/images/projects/tiktok/tiktok-video-5.png" alt="Content Performance Analytics" style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px;">
+</div>
+
+The Verge highlighted a key example of the system in action: "In an example provided by TikTok, an AI-generated suggestion recommends that a brand 'produce video content focused on 'hormonal health' for female, English-speaking users' and to include a specific keyword." This type of precise, data-driven recommendation is made possible by the multi-modal analysis systems I contributed to, which process both visual embeddings and performance data to understand content patterns.
 
 ### Trend Prediction Through Content Analysis
 As The Verge noted: "Another feature in Insight Spotlight analyzes users' viewing history to identify types of content that are bubbling up." This capability stems from the advanced content understanding work I did, which enables the system to analyze both visual and audio elements of videos to predict emerging trends before they become mainstream.
@@ -40,9 +46,15 @@ The article captures the significance of this shift: "TikTok rose in prominence 
 My work on multi-modal content understanding was focused on making this transition from random virality to predictable, data-driven insights possible. By analyzing thousands of TikToks across visual, audio, and textual dimensions, we created a system that can identify patterns and provide actionable recommendations to advertisers.
 
 ### Platform-as-Search-Engine Vision
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 20px 0; align-items: start;">
+  <img src="/images/projects/tiktok/tiktok-video-8.png" alt="Brand Intelligence and AI Training" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+  <img src="/images/projects/tiktok/tiktok-video-9.png" alt="Content Intelligence Dashboard" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+</div>
+
 The Verge perfectly captured the broader vision: "In this way, advertiser tools are TikTok's equivalent of search engine optimization (SEO) — flooding the zone with content that attempts to capture organic user behaviors. The idea that TikTok can be used as a search engine has been around for several years, and the company says that one in four users search for something within 30 seconds of opening the app."
 
-This transformation from entertainment platform to search-driven insights tool represents our team's work - using AI to understand not just what content performs, but why it performs and how brands can leverage those insights.
+This transformation from entertainment platform to search-driven insights tool represents our team's work - using AI to understand not just what content performs, but why it performs and how brands can leverage those insights. The brand intelligence tools enable personalized content creation while maintaining brand consistency across campaigns.
 
 # Beyond Data: The Evolution of AI-Driven Insight Products for Content Creation
 

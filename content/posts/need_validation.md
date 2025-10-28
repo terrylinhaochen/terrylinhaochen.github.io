@@ -11,7 +11,7 @@ keywords: ["social listening", "customer insights", "product development", "AI a
 ## Why We Need More Ways to Hear Customers
 As product teams scale, direct exposure to customers narrows. We drift into a product → market pattern: build for a vocal few, iterate with them, and accumulate complexity that alienates everyone else. With agentic tools and tighter loops, we can flip to market → product: still partner closely with a subset of customers, but also listen more broadly, form grounded hypotheses from authentic needs, then decide what to build.
 
-![Figure 1: What people think of Microsoft Sentinel (Based on web sources)](/images/posts/need_validation/sentinel_sentiment.png)
+![Microsoft Sentinel Analysis Overview](/images/projects/crowdlistening/microsoft-sentinel-overview.png)
 
 
 ## The AI Way to Do It
@@ -23,7 +23,7 @@ Traditional social listening tracks competitors and brand chatter. We extend it 
 
 Every theme flows into a decision scaffold—theme → testable hypothesis → bet → telemetry → refinement—to prevent “insight theater.” Longer-term, run an always-on Customer Insight Radar that ingests external communities plus internal notes (with privacy filters), tracks theme velocity, and attaches representative quotes so PMs and engineers can feel the evidence behind the numbers. 
 
-![Figure 2: Audience sentiment concerning Microsoft Sentinel](/images/posts/need_validation/audience_sentiment.png)
+![Audience Sentiment Analysis](/images/projects/crowdlistening/sentiment-breakdown.png)
 
 ### Primary vs. secondary sources
 Treat raw online discourse (posts, threads, issue comments) as primary research and polished content (blogs, vendor write-ups, SEO pages) as secondary. “Deep research” tools often paraphrase what’s indexed. We optimize for original insight, not summaries of summaries: go to the source, weight firsthand accounts more heavily, and use secondary material only for background or triangulation.
@@ -36,7 +36,10 @@ For social listening, sentence/document embeddings are the workhorse: they enabl
 ## Reasoning Models and Visualizations
 With smaller datasets, we can directly provide the extracted raw text to a large-context, strong-reasoning model. This goes beyond coarse sentiment categories or word clouds, enabling richer context and actionable insights. Curated prompts let an LLM (or agent) read the semantic neighborhoods, surface key themes, note counter-signals, and propose testable hypotheses.
 
-![Figure 3: Visualization of key themes in Sentinel Feedback](/images/posts/need_validation/key_themes_visualization.png)
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 20px 0; align-items: start;">
+  <img src="/images/projects/crowdlistening/detailed-analysis.png" alt="Key Themes Analysis" style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px;">
+  <img src="/images/projects/crowdlistening/product-insights.png" alt="Product Insights Dashboard" style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px;">
+</div>
 
 ### What the output is—and isn't
 The output isn’t a slide; it’s a decision input. Each synthesized theme should map to a testable product hypothesis, an opportunity-size signal, and an instrumentation plan—the same scaffold above that keeps the loop tight.
@@ -58,7 +61,10 @@ Across tools, five universal barriers appear:
 Design mandate: lower technical barriers, suppress noise, preserve investigative context, and streamline common paths so analysts spend time on threats—not tool mechanics. Agentic experiences and stronger defaults move the needle fastest.
 
 
-![Figure 4: Crowdlistening Overview](/images/posts/need_validation/crowdlistening_overview.png)
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 20px 0; align-items: start;">
+  <img src="/images/projects/crowdlistening/crowdlisten-homepage.png" alt="CrowdListening Platform" style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px;">
+  <img src="/images/projects/crowdlistening/analyze-interface.png" alt="Analysis Interface" style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px;">
+</div>
 
 ## Crowdlistening
 
