@@ -38,10 +38,6 @@ Google Search leads with nearly 5 billion global users conducting 8.5 billion se
 
 Google Search has transformed into a multimodal AI platform. Circle to Search enables gesture-based queries on Android devices, while AI Mode provides conversational search with follow-up suggestions. Google Lens extends visual search beyond object recognition to complex tasks like solving handwritten math problems and real-time translation, demonstrating Google's push toward intuitive, context-aware interfaces.
 
-![Reddit-Google Partnership](/images/google-primer/reddit-google-partnership.png)
-
-This strategic partnership with Reddit exemplifies Google's approach to expanding content access while maintaining search dominance.
-
 ## Gemini: Google's AI Assistant Platform
 
 ![Gemini Assistant](/images/google-primer/gemini-assistant.png)
@@ -73,6 +69,10 @@ Daily Listen showcases another experimental direction: AI-generated personalized
 ## Google's Position in the AI Search Era
 
 The transition to AI-powered search represents perhaps the most significant shift in Google's business model since its founding. Recent changes to Google's search infrastructure reveal a strategic repositioning that has profound implications for both the company's competitive moat and the broader internet ecosystem. Last month, Google quietly removed the num=100 search parameter — the small flag that let users view up to 100 results at once. The maximum is now ten. It sounds trivial, but it's a massive shift in how the web works. By collapsing access to the "long tail" of search, Google just reduced the visible internet by 90 percent.
+
+![Reddit-Google Partnership](/images/google-primer/reddit-google-partnership.png)
+
+This strategic partnership with Reddit exemplifies Google's approach to expanding content access while maintaining search dominance.
 
 That long tail has always mattered. It's where niche knowledge lives — community posts, independent blogs, GitHub issues, Reddit threads. It's also the layer most large language models rely on, directly or indirectly, through Google's indexed ranking of relevance. Even when OpenAI, Perplexity, or Anthropic crawl the web themselves, Google's structure guides what they find and prioritize. Removing access to deep results means those models — and the startups that depend on them — now see a much smaller portion of the web.
 
