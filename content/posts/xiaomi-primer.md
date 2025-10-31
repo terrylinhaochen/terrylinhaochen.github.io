@@ -1,5 +1,5 @@
 ---
-title: "Understanding Xiaomi: A Primer"
+title: "Understanding Xiaomi: A 500$ Lesson"
 date: 2025-10-31
 author: Terry Chen
 tags: ["Investing"]
