@@ -2,7 +2,7 @@
 title: "Dealing with ambiguity: Asking can only get you so far"
 date: 2025-10-31
 author: Terry Chen
-tags: ["Leadership", "Product Management"]
+tags: ["Posts"]
 description: "Exploring the limits of asking questions when dealing with ambiguous situations and alternative strategies for navigating uncertainty in complex environments."
 keywords: ["ambiguity", "leadership", "decision making", "uncertainty", "product management", "problem solving"]
 draft: false
