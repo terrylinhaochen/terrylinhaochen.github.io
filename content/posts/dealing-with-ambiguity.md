@@ -97,4 +97,4 @@ Maybe the goal isn't to get better at navigating ambiguity, but to get more comf
 
 ---
 
-If you've managed to read till here, it's probably worth checking out [Design Technology Research (DTR)](https://dtr.northwestern.edu/) if you go to Northwestern. It's a great class, I'd  recommend you apply.
+If you've managed to read till here, it's probably worth checking out [Design Technology Research (DTR)](https://dtr.northwestern.edu/). DTR is a research and learning community where students design and study technologies that support how people learn, collaborate, and create. If you go to Northwestern, I'd  recommend you apply.
