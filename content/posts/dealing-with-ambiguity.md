@@ -1,5 +1,5 @@
 ---
-title: "Dealing with ambiguity: Asking can only get you so far"
+title: "Dealing With Ambiguity: Questions Have Limits"
 date: 2025-10-31
 author: Terry Chen
 tags: ["Posts"]

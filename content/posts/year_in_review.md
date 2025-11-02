@@ -1,5 +1,5 @@
 ---
-title: "2024 in Review: Lessons from Founding Cogno and Building at TikTok"
+title: "The First Stage: A Reflection"
 description: "Reflecting on 2024: lessons from founding Cogno, the importance of hands-on product development, choosing college over dropping out, and key insights for first-time founders building AI products."
 date: 2024-12-31
 author: Terry Chen

@@ -1,0 +1,10 @@
+# Notes Directory
+
+This directory contains various types of notes organized by category:
+
+- **project-ideas/**: Ideas for new projects or features
+- **research/**: Research findings and analysis
+- **drafts/**: Work-in-progress content and drafts
+- **meeting-notes/**: Meeting minutes and decisions
+
+Use the templates in `/templates/notes/` for consistent formatting.
