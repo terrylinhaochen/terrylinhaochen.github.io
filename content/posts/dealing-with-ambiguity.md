@@ -11,7 +11,7 @@ draft: false
 
 Every methodology has its breaking point. 
 
-![Mountain landscape with layered terrain](/images/posts/dealing-with-ambiguity/mountain-landscape.png)
+![Mountain landscape](static/images/posts/dealing-with-ambiguity/ambiguity.png)
 
 The problem-solving frameworks that get you into a top school, the pattern recognition that earns you a job at a big tech company, the "best practices" that make you a star student—all of these become systematic liabilities the moment you encounter genuinely ill-defined problems. Which, unfortunately for ambitious people, is exactly where the most important work happens.
 
@@ -97,4 +97,4 @@ Maybe the goal isn't to get better at navigating ambiguity, but to get more comf
 
 ---
 
-If you've managed to read till here, it's probably worth checking out [DTR](https://dtr.northwestern.edu/) if you go to Northwestern. It's a great class, I'd  recommend you apply.
+If you've managed to read till here, it's probably worth checking out [Design Technology Research (DTR)](https://dtr.northwestern.edu/) if you go to Northwestern. It's a great class, I'd  recommend you apply.
