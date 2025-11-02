@@ -13,7 +13,8 @@ asset-library/
 └── instructions/
     ├── CLAUDE_WORKFLOWS.md    # Claude usage guidelines
     ├── templates/      # Templates for posts and notes
-    └── content_kit/    # Content guidelines, style guides, reference materials
+    ├── content_kit/    # Content guidelines, style guides, reference materials
+    └── agents/         # AI agent prompts and configurations
 ```
 
 ## Quick Start

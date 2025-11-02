@@ -25,10 +25,10 @@ Most modern learning apps do a good job of compressing information, but they sti
 
 But compression itself has evolved beyond simple summarization. Knowledge can now be compressed across multiple dimensions simultaneously: comprehensive for breadth, engaging for attention, stylistic for voice, or contextual for specific audiences. The same complex text can become a technical analysis, a conversational explanation, or an irreverent commentary — each compression preserving different aspects of the original while serving different cognitive needs.
 
-![Language Model Compression Process](/images/compression-process-diagram.png)
+![Language Model Compression Process](/images/posts/fluid-knowledge/compression-process-diagram.png)
 *Source: Dan Shipper, Every*
 
-![Attention vs Compression Types](/images/attention-compression-types.png)
+![Attention vs Compression Types](/images/posts/fluid-knowledge/attention-compression-types.png)
 *Source: Dan Shipper, Every*
 
 This multi-dimensional transformation means that accessibility is no longer just about reading level or length. Knowledge can adapt its entire presentation — its tone, complexity, cultural references, and emotional register — to match not just what you need to know, but how you need to encounter it. The scale of knowledge expands not by adding editors, but by giving knowledge itself the ability to self-express across infinite dimensions of human understanding.
