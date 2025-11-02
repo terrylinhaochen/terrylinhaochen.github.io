@@ -1,0 +1,73 @@
+{{- define "main" }}
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs">
+      <a href="{{ "/" | relURL }}">Home</a>&nbsp;»&nbsp;<span>{{ .Title }}</span>
+    </div>
+    <h1 class="post-title">
+      {{ .Title }}
+    </h1>
+    {{- if .Params.description }}
+    <div class="post-description">
+      {{ .Params.description }}
+    </div>
+    {{- end }}
+  </header>
+  
+  {{- if .Content }}
+  <div class="post-content">
+    {{ .Content }}
+  </div>
+  {{- end }}
+  
+  {{- if .Params.iframe_url }}
+  <div class="iframe-container" style="margin-top: 2rem;">
+    <iframe 
+      src="{{ .Params.iframe_url }}" 
+      width="100%" 
+      height="{{ .Params.iframe_height | default "600px" }}"
+      frameborder="0"
+      scrolling="auto"
+      style="border: 1px solid #e1e5e9; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"
+      allowfullscreen>
+      <p>Your browser does not support iframes. <a href="{{ .Params.iframe_url }}" target="_blank">Visit the app directly</a>.</p>
+    </iframe>
+  </div>
+  
+  <div style="margin-top: 1rem; text-align: center; color: #666; font-size: 0.9rem;">
+    <p>
+      Having trouble with the embedded view? 
+      <a href="{{ .Params.iframe_url }}" target="_blank" style="color: #007acc; text-decoration: none;">
+        Open in new tab ↗
+      </a>
+    </p>
+  </div>
+  {{- end }}
+</article>
+
+<style>
+.iframe-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.iframe-container iframe {
+  transition: opacity 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .iframe-container iframe {
+    height: 500px;
+  }
+}
+
+.post-description {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+</style>
+
+{{- end }}
