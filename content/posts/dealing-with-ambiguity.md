@@ -15,7 +15,7 @@ Every methodology has its breaking point.
 
 The problem-solving frameworks that get you into a top school, the pattern recognition that earns you a job at a big tech company, the "best practices" that make you a star student—all of these become systematic liabilities the moment you encounter genuinely ill-defined problems. Which, unfortunately for ambitious people, is exactly where the most important work happens.
 
-As I explore what I want to do with my life, and reflect on the decisions I've made in the past, I realize: we've been trained to excel at the wrong things.
+As I explore what I want to do with my life, and reflect past decision, I realize: we've been trained to excel at the wrong things.
 
 As much as I take pride in my ability to "ask the right questions," identify effective methods, and "navigate ambiguity" by finding answers others overlook, I'm starting to realize how much I've been playing in a safe zone. Having a job lined up while wanting to pursue startups part-time in college isn't exactly what I'd call "navigating ambiguity." When it comes to genuinely not knowing what I'll be doing or where I'll end up six months from now, I panic at the idea.
 
