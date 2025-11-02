@@ -11,7 +11,7 @@ draft: false
 
 Every methodology has its breaking point. 
 
-![Mountain landscape](static/images/posts/dealing-with-ambiguity/ambiguity.png)
+![Mountain landscape](/images/posts/dealing-with-ambiguity/ambiguity.png)
 
 The problem-solving frameworks that get you into a top school, the pattern recognition that earns you a job at a big tech company, the "best practices" that make you a star student—all of these become systematic liabilities the moment you encounter genuinely ill-defined problems. Which, unfortunately for ambitious people, is exactly where the most important work happens.
 

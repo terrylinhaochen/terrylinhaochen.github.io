@@ -12,9 +12,6 @@ When Dan Shipper reveals in a recent podcast that Every's engineers write virtua
 
 This isn't just efficiency optimization—it's a complete reimagining of how companies operate when AI becomes your primary workforce multiplier. Every represents the most radical example of AI-first operations in practice, and the lessons extend far beyond media companies to anyone building in the AI era.
 
-![Every's Homepage showing AI-native content operations](/images/posts/every/every-homepage.png)
-*Every's homepage showcasing their AI-native approach to content and thought leadership*
-
 ## The AI-Native Operating Model
 
 Every's success stems from what Shipper calls the "allocation economy"—a future where humans manage AI capabilities rather than execute tasks directly. Their team orchestrates an ensemble of specialized AI agents: Claude for complex analysis, Codex for implementation, "Friday" for automation, and "Charlie" for content generation. Each AI agent functions like a specialist team member with distinct strengths.
@@ -32,9 +29,6 @@ Shipper calls this "compounding engineering"—the ability to combine existing A
 This shift favors broad fluency over deep expertise in any single area. The engineer of the future looks more like a conductor than a craftsperson, coordinating specialized AI agents rather than writing every line of code. When AI can generate functional code from natural language descriptions, the bottleneck shifts from implementation speed to problem identification and solution design.
 
 Every's anti-code approach has enabled them to ship products at remarkable speed while maintaining small team size. Their consulting frameworks, educational products, and operational tools all leverage existing AI capabilities rather than requiring months of traditional development cycles.
-
-![Every's AI-powered product suite](/images/posts/every/every-ai-products.png)
-*Every's AI-powered products: Monologue (voice dictation), Sparkle (file organization), Cora (email assistant), and Spiral (writing assistant)*
 
 ## Content as the Core Engine
 
