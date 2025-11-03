@@ -1186,6 +1186,26 @@
 
 <div id="subscribe-system">
   
+  <div id="subscription-modal" class="subscription-modal hidden">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+      <button id="modal-close" class="modal-close" title="Close">×</button>
+      <div class="modal-body">
+        <h2>Stay close to the frontier</h2>
+        <p>Get updates when I publish new insights about design, technology, and human interaction patterns.</p>
+        <form id="subscription-form" class="centered-subscribe-form">
+          <input type="email" id="subscription-email" placeholder="your@email.com" required>
+          <button type="submit" class="submit-btn">Subscribe</button>
+        </form>
+        <div id="subscription-message" class="form-message"></div>
+        <div class="modal-footer">
+          <button id="modal-no-thanks" class="no-thanks-btn">No thanks</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
   <div id="user-reminder" class="returning-reminder hidden">
     
     <div id="reminder-collapsed" class="reminder-collapsed clickable">
@@ -1208,13 +1228,25 @@
         </button>
       </div>
       <p>Get updates when I publish new insights about design, technology, and human interaction patterns.</p>
-      <form id="user-form" class="subscribe-form">
-        <input type="email" id="user-email" placeholder="your@email.com" required>
-        <button type="submit" class="submit-btn">Subscribe</button>
-      </form>
-      <div id="user-message" class="form-message"></div>
-      <div class="reminder-actions">
-        <button id="reminder-no-thanks" class="no-thanks-btn">No thanks</button>
+      
+      <div class="action-options">
+        <a href="/posts/" class="action-item">
+          <div class="action-icon">📖</div>
+          <span class="action-text">Read an article</span>
+          <div class="action-arrow">›</div>
+        </a>
+        
+        <a href="https://crowdlisten.com" target="_blank" class="action-item">
+          <div class="action-icon">👥</div>
+          <span class="action-text">Understand users with Crowdlisten</span>
+          <div class="action-arrow">›</div>
+        </a>
+        
+        <div class="action-item subscribe-item">
+          <div class="action-icon">✉️</div>
+          <span class="action-text">Subscribe for updates</span>
+          <div class="action-arrow">›</div>
+        </div>
       </div>
     </div>
   </div>
@@ -1271,6 +1303,16 @@ class SimplifiedSubscribe {
   }
 
   
+  showCenteredModal() {
+    document.getElementById('subscription-modal').classList.remove('hidden');
+  }
+
+  
+  hideCenteredModal() {
+    document.getElementById('subscription-modal').classList.add('hidden');
+  }
+
+  
   async submitSubscription(email, source) {
     try {
       const pageUrl = window.location.href;
@@ -1292,13 +1334,24 @@ class SimplifiedSubscribe {
       localStorage.setItem('newsletter-subscribed', 'true');
       
       
-      this.hideUserReminder();
+      setTimeout(() => {
+        this.resetToActionOptions();
+      }, 2000);
 
       return true;
     } catch (error) {
       console.error('Subscription error:', error);
       return false;
     }
+  }
+
+  
+  resetToActionOptions() {
+    this.hideCenteredModal();
+    
+    document.getElementById('subscription-email').value = '';
+    document.getElementById('subscription-message').textContent = '';
+    document.getElementById('subscription-message').classList.remove('success', 'error');
   }
 
   
@@ -1310,6 +1363,11 @@ class SimplifiedSubscribe {
 
     document.getElementById('reminder-close')?.addEventListener('click', () => {
       this.collapseReminder();
+    });
+
+    
+    document.querySelector('.subscribe-item')?.addEventListener('click', () => {
+      this.showCenteredModal();
     });
 
     document.getElementById('user-form')?.addEventListener('submit', async (e) => {
@@ -1336,8 +1394,42 @@ class SimplifiedSubscribe {
       submitBtn.textContent = 'Subscribe';
     });
 
-    document.getElementById('reminder-no-thanks')?.addEventListener('click', () => {
-      this.collapseReminder();
+
+    
+    document.getElementById('modal-close')?.addEventListener('click', () => {
+      this.hideCenteredModal();
+    });
+
+    document.querySelector('.modal-overlay')?.addEventListener('click', () => {
+      this.hideCenteredModal();
+    });
+
+    document.getElementById('subscription-form')?.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const email = document.getElementById('subscription-email').value;
+      const messageEl = document.getElementById('subscription-message');
+      const submitBtn = e.target.querySelector('button[type="submit"]');
+      
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Subscribing...';
+      
+      const success = await this.submitSubscription(email, 'centered-modal');
+      
+      if (success) {
+        messageEl.textContent = 'Thanks for subscribing!';
+        messageEl.classList.add('success');
+        setTimeout(() => this.hideCenteredModal(), 2000);
+      } else {
+        messageEl.textContent = 'Something went wrong. Please try again.';
+        messageEl.classList.add('error');
+      }
+      
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Subscribe';
+    });
+
+    document.getElementById('modal-no-thanks')?.addEventListener('click', () => {
+      this.hideCenteredModal();
     });
   }
 }
@@ -1355,6 +1447,152 @@ document.addEventListener('DOMContentLoaded', () => {
 }
 
  
+.subscription-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.4s ease-out;
+}
+
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.8);
+  backdrop-filter: blur(4px);
+}
+
+.subscription-modal .modal-content {
+  position: relative;
+  background: var(--entry);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  max-width: 680px;
+  width: 95%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: var(--shadow);
+  animation: modalSlideIn 0.5s ease-out;
+  font-family: inherit;
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--secondary);
+  padding: 8px;
+  border-radius: var(--radius);
+  transition: all 0.2s ease;
+  opacity: 0.6;
+}
+
+.modal-close:hover {
+  opacity: 1;
+  background: var(--theme);
+  color: var(--primary);
+}
+
+.modal-body {
+  padding: calc(var(--gap) * 2);
+  text-align: center;
+}
+
+.modal-body h2 {
+  margin: 0 0 24px 0;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--primary);
+  font-family: inherit;
+  line-height: 1.2;
+}
+
+.modal-body p {
+  margin: 0 0 32px 0;
+  color: var(--secondary);
+  line-height: 1.6;
+  font-size: 16px;
+  font-family: inherit;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ 
+.centered-subscribe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.centered-subscribe-form input {
+  padding: 16px 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 16px;
+  background: var(--theme);
+  color: var(--primary);
+  font-family: inherit;
+  transition: border-color 0.2s ease;
+  text-align: center;
+}
+
+.centered-subscribe-form input::placeholder {
+  color: var(--secondary);
+  opacity: 0.7;
+}
+
+.centered-subscribe-form input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.centered-subscribe-form .submit-btn {
+  background: var(--primary);
+  color: var(--theme);
+  border: none;
+  padding: 16px 24px;
+  border-radius: var(--radius);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.centered-subscribe-form .submit-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.centered-subscribe-form .submit-btn:disabled {
+  opacity: 0.6;
+  transform: none;
+  cursor: not-allowed;
+}
+
+.modal-footer {
+  text-align: center;
+  margin-top: 16px;
+}
+
+ 
 
  
 .subscribe-form {
@@ -1366,7 +1604,7 @@ document.addEventListener('DOMContentLoaded', () => {
 }
 
 .subscribe-form input {
-  padding: 14px 0;
+  padding: 14px 16px;
   border: 1px solid var(--border);
   border-radius: var(--radius);
   font-size: 14px;
@@ -1375,10 +1613,13 @@ document.addEventListener('DOMContentLoaded', () => {
   font-family: inherit;
   transition: border-color 0.2s ease;
   box-sizing: border-box;
-  width: 94%;
+  width: 100%;
   text-align: left;
-  text-indent: 12px;
-  margin: 0 auto;
+}
+
+.subscribe-form input::placeholder {
+  color: var(--secondary);
+  opacity: 0.7;
 }
 
 .subscribe-form input:focus {
@@ -1390,7 +1631,7 @@ document.addEventListener('DOMContentLoaded', () => {
   background: var(--primary);
   color: var(--theme);
   border: none;
-  padding: 14px 0;
+  padding: 14px 16px;
   border-radius: var(--radius);
   font-size: 14px;
   font-weight: 600;
@@ -1398,19 +1639,7 @@ document.addEventListener('DOMContentLoaded', () => {
   transition: all 0.2s ease;
   font-family: inherit;
   box-sizing: border-box;
-  width: 94%;
-  margin: 0 auto;
-}
-
-.submit-btn:hover {
-  opacity: 0.9;
-  transform: translateY(-1px);
-}
-
-.submit-btn:disabled {
-  opacity: 0.6;
-  transform: none;
-  cursor: not-allowed;
+  width: 100%;
 }
 
 .no-thanks-btn {
@@ -1542,6 +1771,54 @@ document.addEventListener('DOMContentLoaded', () => {
   color: var(--secondary);
   line-height: 1.6;
   font-family: inherit;
+}
+
+ 
+.action-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.action-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--theme);
+  color: var(--primary);
+  text-decoration: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.action-item:hover {
+  background: var(--code-bg);
+  border-color: var(--primary);
+}
+
+.action-icon {
+  font-size: 16px;
+  margin-right: 12px;
+  min-width: 20px;
+}
+
+.action-text {
+  flex: 1;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.action-arrow {
+  font-size: 18px;
+  color: var(--secondary);
+  margin-left: 8px;
+}
+
+.action-item:hover .action-arrow {
+  color: var(--primary);
 }
 
 .reminder-actions {
