@@ -10,6 +10,8 @@ keywords: ["AI-native startup", "Every", "AI-first operations", "startup operati
 
 When Dan Shipper reveals in a recent podcast that Every's engineers write virtually zero code, the claim sounds almost impossible. Then he breaks down their numbers: 15 people, daily AI newsletter, multiple shipped products, and a million-dollar consulting arm. No traditional coding. No massive engineering team. Just humans orchestrating AI agents like conductors leading a symphony.
 
+![Every Homepage](/images/posts/every/every-homepage.png)
+
 This isn't just efficiency optimization—it's a complete reimagining of how companies operate when AI becomes your primary workforce multiplier. Every represents the most radical example of AI-first operations in practice, and the lessons extend far beyond media companies to anyone building in the AI era.
 
 ## The AI-Native Operating Model
@@ -17,6 +19,8 @@ This isn't just efficiency optimization—it's a complete reimagining of how com
 Every's success stems from what Shipper calls the "allocation economy"—a future where humans manage AI capabilities rather than execute tasks directly. Their team orchestrates an ensemble of specialized AI agents: Claude for complex analysis, Codex for implementation, "Friday" for automation, and "Charlie" for content generation. Each AI agent functions like a specialist team member with distinct strengths.
 
 This approach treats AI agents as workforce multipliers rather than simple tools. When Every needs market research, they don't assign someone to spend weeks gathering data. Instead, they deploy Claude for analysis, Friday for automation of data collection, and Charlie for synthesizing insights into readable formats. The human provides strategic direction and quality control while AI handles specialized execution.
+
+![Every AI Products](/images/posts/every/every-ai-products.png)
 
 The result? Every achieves enterprise-level output with startup-level resources. Their content creation process leverages AI research assistants that gather information from dozens of sources, AI editors that refine voice and tone, and AI distribution systems that optimize content across platforms—all coordinated by humans who focus on creative connections and strategic thinking.
 

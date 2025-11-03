@@ -17,79 +17,41 @@
                 {{ else if eq .name "twitter" }}
                     <img src="https://cdn.simpleicons.org/x/currentColor" width="24" height="24" alt="X" style="filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%);" />
                 {{ else if eq .name "email" }}
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                 {{ else }}
                     {{ .name }}
                 {{ end }}
             </a>
         {{- end }}
     </div>
-    
-    <!-- Email Subscription Form -->
-    <div class="subscribe-form">
-      <form id="subscribe-form">
-        <div class="subscribe-input-container">
-          <input type="email" id="subscriber-email" name="email" placeholder="Your email address" required>
-          <button type="submit">Get updates now</button>
-        </div>
-        <div id="form-message" class="form-message"></div>
-      </form>
-
-      <script>
-        document.getElementById('subscribe-form').addEventListener('submit', function(e) {
-          e.preventDefault();
-          
-          const form = this;
-          const email = document.getElementById('subscriber-email').value;
-          const messageEl = document.getElementById('form-message');
-          const submitButton = form.querySelector('button[type="submit"]');
-          
-          // Disable the button during submission
-          submitButton.disabled = true;
-          submitButton.textContent = 'Subscribing...';
-          
-          // Clear any previous messages
-          messageEl.textContent = '';
-          messageEl.className = 'form-message';
-          
-          // Get current page URL
-          const pageUrl = window.location.href;
-          
-          // Send data to Google Sheets
-          fetch('https://script.google.com/macros/s/AKfycbxF7czbmo2JEeATzFoMnHIfGASoSTzogbjJcuQm30sjBXFqmDOqISWkIHBr64GdmURS/exec', {
-            method: 'POST',
-            mode: 'no-cors', // Important for cross-domain requests
-            headers: {
-              'Content-Type': 'application/x-www-form-urlencoded',
-            },
-            body: new URLSearchParams({
-              'email': email,
-              'pageUrl': pageUrl
-            })
-          })
-          .then(function() {
-            // Show success message
-            messageEl.textContent = 'Thank you for subscribing!';
-            messageEl.classList.add('success');
-            
-            // Reset form
-            form.reset();
-          })
-          .catch(function(error) {
-            // Show error message
-            messageEl.textContent = 'Something went wrong. Please try again.';
-            messageEl.classList.add('error');
-            console.error('Error:', error);
-          })
-          .finally(function() {
-            // Re-enable the button
-            submitButton.disabled = false;
-            submitButton.textContent = 'Get updates now';
-          });
-          
-          return false;
-        });
-      </script>
-    </div>
 </div>
+
+<style>
+.home-info {
+    text-align: left !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.home-info h1 {
+    text-align: left !important;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+
+.home-info .entry-content {
+    text-align: left !important;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+
+.home-info .social-icons {
+    text-align: left !important;
+    margin-top: 20px;
+    margin-bottom: 3rem;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    padding-bottom: 2rem;
+}
+</style>
 {{- end }} 

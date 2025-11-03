@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     <title>Crowdlisten - Terry Chen</title>
-    <link>https://chenterry.com/categories/crowdlisten/</link>
+    <link>http://localhost:1313/categories/crowdlisten/</link>
     <description>Hi, this is Terry. I&#39;m documenting my product ideas and learning notes in this blog. I&#39;m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description>
     <language>en-us</language>
     <managingEditor>Terry Chen (Terry Chen)</managingEditor>
@@ -10,7 +10,7 @@
     <copyright>© 2025 Terry Chen. All rights reserved.</copyright>
     <lastBuildDate>Mon, 15 Sep 2025 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="https://chenterry.com/categories/crowdlisten/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/categories/crowdlisten/index.xml" rel="self" type="application/rss+xml" />
     
     <generator>Hugo 0.136.2</generator>
     <category>Technology</category>
@@ -18,9 +18,9 @@
     <category>Product Engineering</category>
     <category>Investment Analysis</category>
     <image>
-      <url>https://chenterry.com/images/profile.jpg</url>
+      <url>http://localhost:1313/images/profile.jpg</url>
       <title>Terry Chen</title>
-      <link>https://chenterry.com/</link>
+      <link>http://localhost:1313/</link>
       <description>Hi, this is Terry. I&#39;m documenting my product ideas and learning notes in this blog. I&#39;m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description>
       <width>144</width>
       <height>144</height>
@@ -28,10 +28,10 @@
     
     <item>
       <title>From Raw Social Data to Real Research</title>
-      <link>https://chenterry.com/posts/crowdlistening/</link>
+      <link>http://localhost:1313/posts/crowdlistening/</link>
       <pubDate>Mon, 15 Sep 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/posts/crowdlistening/</guid>
+      <guid>http://localhost:1313/posts/crowdlistening/</guid>
       <description>Transform large-scale social conversations into actionable insights. Understand crowd sentiment, track emerging opinions, and identify key narratives.</description>
       
       
@@ -55,10 +55,10 @@
     
     <item>
       <title>Human-Mediated Agentic Workflows</title>
-      <link>https://chenterry.com/archived/agentic_workforce/</link>
+      <link>http://localhost:1313/archived/agentic_workforce/</link>
       <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/archived/agentic_workforce/</guid>
+      <guid>http://localhost:1313/archived/agentic_workforce/</guid>
       <description>Explore the emerging landscape of agentic workforces - autonomous AI agents that reason, plan, act, and learn to handle complex tasks and workflows. Analysis of key players, technology strategies, and market opportunities.</description>
       
       
@@ -82,10 +82,10 @@
     
     <item>
       <title>Why People Care What Others Think</title>
-      <link>https://chenterry.com/posts/crowd_thesis/</link>
+      <link>http://localhost:1313/posts/crowd_thesis/</link>
       <pubDate>Mon, 12 May 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/posts/crowd_thesis/</guid>
+      <guid>http://localhost:1313/posts/crowd_thesis/</guid>
       <description>Understanding collective intelligence and social dynamics. Why crowd psychology matters for product builders and how human need for belonging drives engagement patterns.</description>
       
       

@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     <title>Tiktok - Terry Chen</title>
-    <link>https://chenterry.com/categories/tiktok/</link>
+    <link>http://localhost:1313/categories/tiktok/</link>
     <description>Hi, this is Terry. I&#39;m documenting my product ideas and learning notes in this blog. I&#39;m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description>
     <language>en-us</language>
     <managingEditor>Terry Chen (Terry Chen)</managingEditor>
@@ -10,7 +10,7 @@
     <copyright>© 2025 Terry Chen. All rights reserved.</copyright>
     <lastBuildDate>Sun, 13 Jul 2025 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="https://chenterry.com/categories/tiktok/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/categories/tiktok/index.xml" rel="self" type="application/rss+xml" />
     
     <generator>Hugo 0.136.2</generator>
     <category>Technology</category>
@@ -18,9 +18,9 @@
     <category>Product Engineering</category>
     <category>Investment Analysis</category>
     <image>
-      <url>https://chenterry.com/images/profile.jpg</url>
+      <url>http://localhost:1313/images/profile.jpg</url>
       <title>Terry Chen</title>
-      <link>https://chenterry.com/</link>
+      <link>http://localhost:1313/</link>
       <description>Hi, this is Terry. I&#39;m documenting my product ideas and learning notes in this blog. I&#39;m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description>
       <width>144</width>
       <height>144</height>
@@ -28,10 +28,10 @@
     
     <item>
       <title>Search Advertisement</title>
-      <link>https://chenterry.com/archived/search_advertising/</link>
+      <link>http://localhost:1313/archived/search_advertising/</link>
       <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/archived/search_advertising/</guid>
+      <guid>http://localhost:1313/archived/search_advertising/</guid>
       <description>Comprehensive analysis of AI-driven search advertising, market dynamics, and investment opportunities. Exploring how AI is revolutionizing ad targeting, optimization, and performance in the $200B+ search advertising market.</description>
       
       
@@ -55,10 +55,10 @@
     
     <item>
       <title>Why Context is Everything in AI Content Generation</title>
-      <link>https://chenterry.com/posts/personalized_content/</link>
+      <link>http://localhost:1313/posts/personalized_content/</link>
       <pubDate>Fri, 20 Sep 2024 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/posts/personalized_content/</guid>
+      <guid>http://localhost:1313/posts/personalized_content/</guid>
       <description>Why context is the critical factor in AI content quality - moving beyond single-prompt expectations to rich, contextual content generation that adapts to individual needs and cognitive patterns.</description>
       
       
@@ -79,11 +79,42 @@
     </item>
     
     <item>
+      <title>Essence of Creativity: Future of Creative Work</title>
+      <link>http://localhost:1313/posts/essense_of_creativity/</link>
+      <pubDate>Sun, 25 Aug 2024 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>http://localhost:1313/posts/essense_of_creativity/</guid>
+      <description>Exploring the intersection of AI-generated content and human creativity. Analysis of creative workflows, multimodal interactions, and the future of content creation in the AI era.</description>
+      
+      
+        
+          <category>tiktok</category>
+        
+      
+      
+        
+          
+          <category>Observations</category>
+          
+          <category>Entrepreneurship</category>
+          
+          <category>Product</category>
+          
+          <category>Posts</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2024-08-25T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
       <title>Multi-modal Creative Ad Generation</title>
-      <link>https://chenterry.com/posts/copilot/</link>
+      <link>http://localhost:1313/posts/copilot/</link>
       <pubDate>Mon, 20 May 2024 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/posts/copilot/</guid>
+      <guid>http://localhost:1313/posts/copilot/</guid>
       <description>Development of TikTok Symphony Assistant - an AI-powered creative tool for generating ad scripts and video content. Agentic workflows and interface optimization for automated creative generation.</description>
       
       
@@ -105,10 +136,10 @@
     
     <item>
       <title>AI-Powered TikTok Trend Analysis: Billion Parameter Insights for Advertising</title>
-      <link>https://chenterry.com/posts/ai-powered-tiktok-trend-analysis/</link>
+      <link>http://localhost:1313/posts/ai-powered-tiktok-trend-analysis/</link>
       <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/posts/ai-powered-tiktok-trend-analysis/</guid>
+      <guid>http://localhost:1313/posts/ai-powered-tiktok-trend-analysis/</guid>
       <description>Development of AI-powered content analysis tools for TikTok trend identification and agency insights. Multi-modal content understanding and actionable trend analysis for advertising agencies using billion-parameter models.</description>
       
       
