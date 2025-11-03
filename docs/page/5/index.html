@@ -48,14 +48,34 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "WebSite",
+  "@type": ["WebSite", "Person"],
   "name": "Terry Chen",
   "url": "http:\/\/localhost:1313\/",
   "description": "Hi, this is Terry. I\u0027m documenting my product ideas and learning notes in this blog. I\u0027m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.",
   "author": {
     "@type": "Person",
     "name": "Terry Chen",
-    "url": "http:\/\/localhost:1313\/"
+    "url": "http:\/\/localhost:1313\/",
+    "jobTitle": "AI Product Engineer & Investor",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Independent"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/terry-chen-3b44911a4/",
+      "https://github.com/terrylinhaochen",
+      "https://x.com/227terry",
+      "https://www.threads.com/@terry_clh"
+    ],
+    "knowsAbout": [
+      "Artificial Intelligence",
+      "Machine Learning", 
+      "Product Engineering",
+      "Investment Analysis",
+      "Multi-Agent Systems",
+      "Content Understanding",
+      "Emerging Technologies"
+    ]
   },
   "publisher": {
     "@type": "Organization",
@@ -69,6 +89,15 @@
     "@type": "SearchAction",
     "target": "http:\/\/localhost:1313\/search/?q={search_term_string}",
     "query-input": "required name=search_term_string"
+  },
+  "mainEntity": {
+    "@type": "Blog",
+    "name": "Terry Chen Blog",
+    "description": "Insights on AI research, product engineering, and investment opportunities",
+    "author": {
+      "@type": "Person",
+      "name": "Terry Chen"
+    }
   }
 }
 </script>

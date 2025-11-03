@@ -199,14 +199,34 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "WebSite",
+  "@type": ["WebSite", "Person"],
   "name": "{{ .Site.Title }}",
   "url": "{{ .Site.BaseURL }}",
   "description": "{{ .Site.Params.description }}",
   "author": {
     "@type": "Person",
     "name": "{{ .Site.Params.author }}",
-    "url": "{{ .Site.BaseURL }}"
+    "url": "{{ .Site.BaseURL }}",
+    "jobTitle": "AI Product Engineer & Investor",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Independent"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/terry-chen-3b44911a4/",
+      "https://github.com/terrylinhaochen",
+      "https://x.com/227terry",
+      "https://www.threads.com/@terry_clh"
+    ],
+    "knowsAbout": [
+      "Artificial Intelligence",
+      "Machine Learning", 
+      "Product Engineering",
+      "Investment Analysis",
+      "Multi-Agent Systems",
+      "Content Understanding",
+      "Emerging Technologies"
+    ]
   },
   "publisher": {
     "@type": "Organization",
@@ -220,6 +240,15 @@
     "@type": "SearchAction",
     "target": "{{ .Site.BaseURL }}search/?q={search_term_string}",
     "query-input": "required name=search_term_string"
+  },
+  "mainEntity": {
+    "@type": "Blog",
+    "name": "{{ .Site.Title }} Blog",
+    "description": "Insights on AI research, product engineering, and investment opportunities",
+    "author": {
+      "@type": "Person",
+      "name": "{{ .Site.Params.author }}"
+    }
   }
 }
 </script>
