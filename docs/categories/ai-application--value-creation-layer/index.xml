@@ -1,1 +1,111 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>AI Application &amp; Value Creation Layer - Terry Chen</title><link>https://chenterry.com/categories/ai-application--value-creation-layer/</link><description>Hi, this is Terry. I'm documenting my product ideas and learning notes in this blog. I'm interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description><language>en-us</language><managingEditor>Terry Chen (Terry Chen)</managingEditor><webMaster>Terry Chen (Terry Chen)</webMaster><copyright>© 2025 Terry Chen. All rights reserved.</copyright><lastBuildDate>Mon, 27 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://chenterry.com/categories/ai-application--value-creation-layer/index.xml" rel="self" type="application/rss+xml"/><generator>Hugo 0.136.2</generator><category>Technology</category><category>AI</category><category>Product Engineering</category><category>Investment Analysis</category><image><url>https://chenterry.com/images/profile.jpg</url><title>Terry Chen</title><link>https://chenterry.com/</link><description>Hi, this is Terry. I'm documenting my product ideas and learning notes in this blog. I'm interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description><width>144</width><height>144</height></image><item><title>OpenAI's Blast Radius</title><link>https://chenterry.com/posts/openai-blast-radius/</link><pubDate>Mon, 27 Oct 2025 00:00:00 +0000</pubDate><author>Terry Chen, Livia Li (Terry Chen, Livia Li)</author><guid>https://chenterry.com/posts/openai-blast-radius/</guid><description>How OpenAI's rapid product development affects the startup ecosystem. Strategic frameworks for building defensible AI applications in the shadow of foundation model giants.</description><category>AI Application &amp; Value Creation Layer</category><category>Investing</category><dc:creator>Terry Chen, Livia Li</dc:creator><dc:date>2025-10-27T00:00:00Z</dc:date></item><item><title>Understanding Google: A Primer</title><link>https://chenterry.com/posts/google-primer/</link><pubDate>Mon, 20 Oct 2025 00:00:00 +0000</pubDate><author>Terry Chen (Terry Chen)</author><guid>https://chenterry.com/posts/google-primer/</guid><description>Understanding the key products that made Google the tech giant today, with a deepdive on new AI features. Exploring Google's evolution from search to AI-powered ecosystem and investment implications.</description><category>AI Application &amp; Value Creation Layer</category><category>Investing</category><dc:creator>Terry Chen</dc:creator><dc:date>2025-10-20T00:00:00Z</dc:date></item><item><title>Why Figma Wins (In the AI Era Too)</title><link>https://chenterry.com/posts/figma-ai-era/</link><pubDate>Mon, 06 Oct 2025 00:00:00 +0000</pubDate><author>Terry Chen (Terry Chen)</author><guid>https://chenterry.com/posts/figma-ai-era/</guid><description>How Figma's platform advantages position it to dominate AI-native design workflows, despite emerging competition from AI-first tools like Lovable.</description><category>AI Application &amp; Value Creation Layer</category><category>Investing</category><dc:creator>Terry Chen</dc:creator><dc:date>2025-10-06T00:00:00Z</dc:date></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>AI Application &amp; Value Creation Layer - Terry Chen</title>
+    <link>http://localhost:1313/categories/ai-application--value-creation-layer/</link>
+    <description>Hi, this is Terry. I&#39;m documenting my product ideas and learning notes in this blog. I&#39;m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description>
+    <language>en-us</language>
+    <managingEditor>Terry Chen (Terry Chen)</managingEditor>
+    <webMaster>Terry Chen (Terry Chen)</webMaster>
+    <copyright>© 2025 Terry Chen. All rights reserved.</copyright>
+    <lastBuildDate>Mon, 27 Oct 2025 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="http://localhost:1313/categories/ai-application--value-creation-layer/index.xml" rel="self" type="application/rss+xml" />
+    
+    <generator>Hugo 0.136.2</generator>
+    <category>Technology</category>
+    <category>AI</category>
+    <category>Product Engineering</category>
+    <category>Investment Analysis</category>
+    <image>
+      <url>http://localhost:1313/images/profile.jpg</url>
+      <title>Terry Chen</title>
+      <link>http://localhost:1313/</link>
+      <description>Hi, this is Terry. I&#39;m documenting my product ideas and learning notes in this blog. I&#39;m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description>
+      <width>144</width>
+      <height>144</height>
+    </image>
+    
+    <item>
+      <title>OpenAI&#39;s Blast Radius</title>
+      <link>http://localhost:1313/posts/openai-blast-radius/</link>
+      <pubDate>Mon, 27 Oct 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen, Livia Li (Terry Chen, Livia Li)</author>
+      <guid>http://localhost:1313/posts/openai-blast-radius/</guid>
+      <description>How OpenAI&#39;s rapid product development affects the startup ecosystem. Strategic frameworks for building defensible AI applications in the shadow of foundation model giants.</description>
+      
+      
+        
+          
+          <category>AI Application &amp; Value Creation Layer</category>
+          
+        
+      
+      
+        
+          
+          <category>Investing</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen, Livia Li</dc:creator>
+      <dc:date>2025-10-27T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Understanding Google: A Primer</title>
+      <link>http://localhost:1313/posts/google-primer/</link>
+      <pubDate>Mon, 20 Oct 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>http://localhost:1313/posts/google-primer/</guid>
+      <description>Understanding the key products that made Google the tech giant today, with a deepdive on new AI features. Exploring Google&#39;s evolution from search to AI-powered ecosystem and investment implications.</description>
+      
+      
+        
+          
+          <category>AI Application &amp; Value Creation Layer</category>
+          
+        
+      
+      
+        
+          
+          <category>Investing</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-10-20T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Why Figma Wins (In the AI Era Too)</title>
+      <link>http://localhost:1313/posts/figma-ai-era/</link>
+      <pubDate>Mon, 06 Oct 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>http://localhost:1313/posts/figma-ai-era/</guid>
+      <description>How Figma&#39;s platform advantages position it to dominate AI-native design workflows, despite emerging competition from AI-first tools like Lovable.</description>
+      
+      
+        
+          
+          <category>AI Application &amp; Value Creation Layer</category>
+          
+        
+      
+      
+        
+          
+          <category>Investing</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-10-06T00:00:00Z</dc:date>
+    </item>
+    
+  </channel>
+</rss>

@@ -506,12 +506,8 @@
 <div class="tags-section">
   <div class="tags-container">
     
-    <a href="/tags/archived">
-      <span class="tag-badge">#archived <span class="tag-count">(1)</span></span>
-    </a>
-    
     <a href="/tags/entrepreneurship">
-      <span class="tag-badge">#entrepreneurship <span class="tag-count">(10)</span></span>
+      <span class="tag-badge">#entrepreneurship <span class="tag-count">(9)</span></span>
     </a>
     
     <a href="/tags/investing">
@@ -519,15 +515,15 @@
     </a>
     
     <a href="/tags/observations">
-      <span class="tag-badge">#observations <span class="tag-count">(14)</span></span>
+      <span class="tag-badge">#observations <span class="tag-count">(13)</span></span>
     </a>
     
     <a href="/tags/posts">
-      <span class="tag-badge">#posts <span class="tag-count">(15)</span></span>
+      <span class="tag-badge">#posts <span class="tag-count">(14)</span></span>
     </a>
     
     <a href="/tags/product">
-      <span class="tag-badge">#product <span class="tag-count">(25)</span></span>
+      <span class="tag-badge">#product <span class="tag-count">(24)</span></span>
     </a>
     
     <a href="/tags/research">
@@ -921,9 +917,25 @@ class SimplifiedSubscribe {
   }
 
   init() {
-    
     this.setupEventListeners();
+    
+    
+    if (this.isNewVisitor()) {
+      setTimeout(() => this.showCenteredModal(), 1000); 
+    }
+    
+    
     this.showUserReminder();
+  }
+
+  
+  isNewVisitor() {
+    const hasVisited = localStorage.getItem('has-visited');
+    if (!hasVisited && !this.hasSubscribed()) {
+      localStorage.setItem('has-visited', 'true');
+      return true;
+    }
+    return false;
   }
 
   
@@ -1343,7 +1355,7 @@ document.addEventListener('DOMContentLoaded', () => {
   cursor: pointer;
   transition: all 0.3s ease;
   user-select: none;
-  width: 399px;
+  width: 360px;
   margin: 0;
 }
 
@@ -1388,7 +1400,7 @@ document.addEventListener('DOMContentLoaded', () => {
   border-radius: var(--radius) var(--radius) 0 0;
   padding: 24px;
   box-shadow: var(--shadow);
-  width: 399px;
+  width: 360px;
   animation: expandVertical 0.3s ease-out;
   margin: 0;
   box-sizing: border-box;
@@ -1579,14 +1591,14 @@ document.addEventListener('DOMContentLoaded', () => {
   
   .reminder-expanded {
     width: 100vw;
-    max-width: 399px;
+    max-width: 360px;
     padding: 16px;
   }
   
   .reminder-collapsed {
     padding: 10px 16px;
     width: 100vw;
-    max-width: 399px;
+    max-width: 360px;
   }
   
   .reminder-text {

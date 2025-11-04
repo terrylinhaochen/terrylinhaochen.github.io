@@ -89,9 +89,25 @@ class SimplifiedSubscribe {
   }
 
   init() {
-    // Show for ALL users as requested
     this.setupEventListeners();
+    
+    // Show centralized modal for new visitors
+    if (this.isNewVisitor()) {
+      setTimeout(() => this.showCenteredModal(), 1000); // Show after 1 second
+    }
+    
+    // Show reminder for all users
     this.showUserReminder();
+  }
+
+  // Check if this is a new visitor
+  isNewVisitor() {
+    const hasVisited = localStorage.getItem('has-visited');
+    if (!hasVisited && !this.hasSubscribed()) {
+      localStorage.setItem('has-visited', 'true');
+      return true;
+    }
+    return false;
   }
 
   // Storage methods
@@ -511,7 +527,7 @@ document.addEventListener('DOMContentLoaded', () => {
   cursor: pointer;
   transition: all 0.3s ease;
   user-select: none;
-  width: 399px;
+  width: 360px;
   margin: 0;
 }
 
@@ -556,7 +572,7 @@ document.addEventListener('DOMContentLoaded', () => {
   border-radius: var(--radius) var(--radius) 0 0;
   padding: 24px;
   box-shadow: var(--shadow);
-  width: 399px;
+  width: 360px;
   animation: expandVertical 0.3s ease-out;
   margin: 0;
   box-sizing: border-box;
@@ -747,14 +763,14 @@ document.addEventListener('DOMContentLoaded', () => {
   
   .reminder-expanded {
     width: 100vw;
-    max-width: 399px;
+    max-width: 360px;
     padding: 16px;
   }
   
   .reminder-collapsed {
     padding: 10px 16px;
     width: 100vw;
-    max-width: 399px;
+    max-width: 360px;
   }
   
   .reminder-text {

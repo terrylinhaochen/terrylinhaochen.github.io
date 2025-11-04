@@ -1,1 +1,57 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Mobility, Energy, and New Infrastructure - Terry Chen</title><link>https://chenterry.com/categories/mobility-energy-and-new-infrastructure/</link><description>Hi, this is Terry. I'm documenting my product ideas and learning notes in this blog. I'm interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description><language>en-us</language><managingEditor>Terry Chen (Terry Chen)</managingEditor><webMaster>Terry Chen (Terry Chen)</webMaster><copyright>© 2025 Terry Chen. All rights reserved.</copyright><lastBuildDate>Fri, 31 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://chenterry.com/categories/mobility-energy-and-new-infrastructure/index.xml" rel="self" type="application/rss+xml"/><generator>Hugo 0.136.2</generator><category>Technology</category><category>AI</category><category>Product Engineering</category><category>Investment Analysis</category><image><url>https://chenterry.com/images/profile.jpg</url><title>Terry Chen</title><link>https://chenterry.com/</link><description>Hi, this is Terry. I'm documenting my product ideas and learning notes in this blog. I'm interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description><width>144</width><height>144</height></image><item><title>Understanding Xiaomi: IP Risk &amp; Starting Again</title><link>https://chenterry.com/posts/xiaomi-primer/</link><pubDate>Fri, 31 Oct 2025 00:00:00 +0000</pubDate><author>Terry Chen (Terry Chen)</author><guid>https://chenterry.com/posts/xiaomi-primer/</guid><description>Understanding Xiaomi's evolution from smartphone maker to comprehensive technology ecosystem, with focus on electric vehicle ambitions and IoT infrastructure. Investment analysis of Xiaomi's diversification strategy.</description><category>Mobility, Energy, and New Infrastructure</category><category>Investing</category><dc:creator>Terry Chen</dc:creator><dc:date>2025-10-31T00:00:00Z</dc:date></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Mobility, Energy, and New Infrastructure - Terry Chen</title>
+    <link>http://localhost:1313/categories/mobility-energy-and-new-infrastructure/</link>
+    <description>Hi, this is Terry. I&#39;m documenting my product ideas and learning notes in this blog. I&#39;m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description>
+    <language>en-us</language>
+    <managingEditor>Terry Chen (Terry Chen)</managingEditor>
+    <webMaster>Terry Chen (Terry Chen)</webMaster>
+    <copyright>© 2025 Terry Chen. All rights reserved.</copyright>
+    <lastBuildDate>Fri, 31 Oct 2025 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="http://localhost:1313/categories/mobility-energy-and-new-infrastructure/index.xml" rel="self" type="application/rss+xml" />
+    
+    <generator>Hugo 0.136.2</generator>
+    <category>Technology</category>
+    <category>AI</category>
+    <category>Product Engineering</category>
+    <category>Investment Analysis</category>
+    <image>
+      <url>http://localhost:1313/images/profile.jpg</url>
+      <title>Terry Chen</title>
+      <link>http://localhost:1313/</link>
+      <description>Hi, this is Terry. I&#39;m documenting my product ideas and learning notes in this blog. I&#39;m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description>
+      <width>144</width>
+      <height>144</height>
+    </image>
+    
+    <item>
+      <title>Understanding Xiaomi: IP Risk &amp; Starting Again</title>
+      <link>http://localhost:1313/posts/xiaomi-primer/</link>
+      <pubDate>Fri, 31 Oct 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>http://localhost:1313/posts/xiaomi-primer/</guid>
+      <description>Understanding Xiaomi&#39;s evolution from smartphone maker to comprehensive technology ecosystem, with focus on electric vehicle ambitions and IoT infrastructure. Investment analysis of Xiaomi&#39;s diversification strategy.</description>
+      
+      
+        
+          
+          <category>Mobility, Energy, and New Infrastructure</category>
+          
+        
+      
+      
+        
+          
+          <category>Investing</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-10-31T00:00:00Z</dc:date>
+    </item>
+    
+  </channel>
+</rss>
