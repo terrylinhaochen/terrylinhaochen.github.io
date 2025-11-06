@@ -1,0 +1,79 @@
+{{/* CSS Gradient Cover Banner - 4:1 Format */}}
+<div class="post-cover-banner" data-category="{{ if .Params.categories }}{{ if reflect.IsSlice .Params.categories }}{{ index .Params.categories 0 }}{{ else }}{{ .Params.categories }}{{ end }}{{ else }}{{ .Section }}{{ end }}">
+</div>
+
+<style>
+/* CSS Gradient Cover Banner System */
+.post-cover-banner {
+  width: 100%;
+  aspect-ratio: 4 / 1;
+  margin: 1.5rem 0;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post-cover-banner:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Category-based gradient themes */
+.post-cover-banner[data-category*="Investment"] {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.post-cover-banner[data-category*="AI"] {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.post-cover-banner[data-category*="Product"] {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.post-cover-banner[data-category*="Entrepreneurship"] {
+  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+}
+
+.post-cover-banner[data-category*="northwestern"] {
+  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+}
+
+.post-cover-banner[data-category*="aibrary"] {
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+}
+
+.post-cover-banner[data-category*="Security"] {
+  background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+}
+
+.post-cover-banner[data-category*="Mobility"] {
+  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+}
+
+/* Default gradient for uncategorized posts */
+.post-cover-banner:not([data-category*="Investment"]):not([data-category*="AI"]):not([data-category*="Product"]):not([data-category*="Entrepreneurship"]):not([data-category*="northwestern"]):not([data-category*="aibrary"]):not([data-category*="Security"]):not([data-category*="Mobility"]) {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .post-cover-banner {
+    margin: 1rem 0;
+    border-radius: 8px;
+  }
+}
+
+/* Dark mode adjustments */
+@media (prefers-color-scheme: dark) {
+  .post-cover-banner {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .post-cover-banner:hover {
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+  }
+}
+</style>
