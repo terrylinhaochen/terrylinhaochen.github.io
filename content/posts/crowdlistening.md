@@ -17,17 +17,17 @@ changelog:
 
 ![CrowdListen Homepage](/images/projects/crowdlistening/homepage-new.png)
 
-## From Content Aggregation to Original Research (crowdlisten.com)
+## From Content Aggregation to Original Research
 
-Crowdlistening transforms large-scale social conversations into actionable insight by integrating llm reasoning with extensive model context protocol(MCP) capabilities. While being able to quantatively analyze large volumes of data is already an interesting task, our focus is not just on content analysis at scale, but rather conducting original research directly from raw social data, generating insights that haven't yet appeared in established reporting.
+[Crowdlisten](https://crowdlisten.com) transforms large-scale social conversations into actionable insight by integrating LLM reasoning with extensive model context protocol (MCP) capabilities. While being able to quantitatively analyze large volumes of data is already an interesting task, our focus is not just on content analysis at scale, but rather conducting original research directly from raw social data, generating insights that haven't yet appeared in established reporting.
 
 Deep research features provide professional-looking research reports, yet the contents are far from original, as they're drawn from articles already indexable on the internet and paraphrased with LLMs. However, much of the internet's data exists in unstructured formats - TikTok videos, comments, and metadata, for example. Too much content is generated every day for there to be existing articles written about it all, and when such articles are published, they're often already outdated. When you consider multimodal data, metadata, and connections between data points, these are precisely the types of information that could yield genuinely interesting and useful insights.
 
-I've been thinking about this problem while working at TikTok, enabling better social listening through more fine-grained insights extracted using multi-modal/LLM-based approaches. In October, I started developing early conceptions of Crowdlistening, focusing on multi-modal content understanding for TikTok videos. Although deep research features like GPT Researcher and Stanford Oval Storm existed, it wasn't intuitive to integrate unstructured data processing capabilities into their workflows. 
+I've been thinking about this problem while working at TikTok, enabling better social listening through more fine-grained insights extracted using multi-modal/LLM-based approaches. In October, I started developing early conceptions of Crowdlisten, focusing on multi-modal content understanding for TikTok videos. Although deep research features like GPT Researcher and Stanford Oval Storm existed, it wasn't intuitive to integrate unstructured data processing capabilities into their workflows. 
 
-I paused Crowdlistening in Winter Quarter due to other commitments, but during this time, Anthropic released the Model Context Protocol (MCP). I've recently gotten back on track following progress in this field, and I believe this presents an interesting avenue for product innovation - deep research features are significantly enhanced by the growing ecosystem of MCP servers (the same agentic workflows perform much better given they rely on APIs, whose capabilities have improved over recent months).
+I paused Crowdlisten in Winter Quarter due to other commitments, but during this time, Anthropic released the Model Context Protocol (MCP). I've recently gotten back on track following progress in this field, and I believe this presents an interesting avenue for product innovation - deep research features are significantly enhanced by the growing ecosystem of MCP servers (the same agentic workflows perform much better given they rely on APIs, whose capabilities have improved over recent months).
 
-What I'm particularly interested in exploring and building with Crowdlistening is the ability to extract actionable insights from large volumes of unstructured or semi-structured data, forming linkages, and perhaps even testing hypotheses to enable effective research at scale. We started with TikTok data as a prototype ground given my familiarity with the medium, but I could quickly see this covering any type of unstructured data available on the web.
+What I'm particularly interested in exploring and building with Crowdlisten is the ability to extract actionable insights from large volumes of unstructured or semi-structured data, forming linkages, and perhaps even testing hypotheses to enable effective research at scale. We started with TikTok data as a prototype ground given my familiarity with the medium, but I could quickly see this covering any type of unstructured data available on the web.
 
 ## Product Suite Overview
 
@@ -35,7 +35,7 @@ What I'm particularly interested in exploring and building with Crowdlistening i
 
 CrowdListen has evolved into a comprehensive suite of AI-powered products designed to address different aspects of social intelligence and content strategy. The Analyze product serves as our core offering, enabling users to discover what people really think about any topic through sophisticated AI-powered sentiment analysis and opinion mining capabilities. This goes beyond simple positive/negative categorization to understand nuanced perspectives, emotional context, and the underlying reasons behind audience reactions.
 
-Our Research product focuses on real-time social media sentiment analysis and trend detection, particularly across Chinese platforms where traditional Western tools often fall short. This capability is crucial for brands and researchers who need to understand global conversations and cultural nuances that might be missed by region-specific tools.
+Our Research product delivers an agentic research experience that systematically analyzes large volumes of social media content at scale. This comprehensive approach takes longer to run but provides significantly more thorough coverage across platforms, enabling researchers to uncover deeper insights and emerging patterns that automated dashboards typically miss.
 
 The Predict product represents our foray into predictive analytics, allowing users to test content variations and predict audience engagement before publishing. Using AI simulation technology, teams can experiment with different messaging approaches and understand likely audience reactions without the risk and cost of live testing.
 
@@ -43,19 +43,19 @@ Finally, our Insights+ product caters to enterprise users and power analysts who
 
 ## The Insight Paradox
 
-![Insight Paradox](/images/projects/crowdlistening/insight-paradox-new.png)
+![Insight Paradox](/images/projects/crowdlistening/detailed-analysis.png)
 
-Brands today face a fundamental paradox: they need broad insights from vast amounts of social data, yet require the detailed understanding typically only available through limited case studies. Current solutions offer either abstracted metrics that require tedious manual interpretation, expensive and limited content screening that can't scale, or surface-level sentiment analysis that misses nuanced opinions. Crowdlistening bridges this gap by combining the scale of algorithmic analysis with the depth of human-like comprehension. This addresses the first challenge identified in "Essence of Creativity" - helping users understand massive amounts of information and generate meaningful insights when they "don't know what output they want."
+Brands today face a fundamental paradox: they need broad insights from vast amounts of social data, yet require the detailed understanding typically only available through limited case studies. Current solutions offer either abstracted metrics that require tedious manual interpretation, expensive and limited content screening that can't scale, or surface-level sentiment analysis that misses nuanced opinions. Crowdlisten bridges this gap by combining the scale of algorithmic analysis with the depth of human-like comprehension. This addresses the first challenge identified in ["Essence of Creativity"](/posts/essense_of_creativity/) - helping users understand massive amounts of information and generate meaningful insights when they "don't know what output they want."
 
 ## Technical Architecture: Multi-Modal by Design
 
-The rationale behind Crowdlistening's multi-modal technical architecture stems from the fundamental challenge of extracting truly valuable insights from the vast and varied landscape of online conversations. Traditional methods often fall short because they either focus on structured data or analyze individual modalities (text, video, audio) in isolation. This approach misses the rich context and nuanced understanding that arises from the interplay between different forms of content and engagement. For example, a viral TikTok video's impact is not solely determined by its visual content but also by its accompanying audio, captions, user comments, and engagement metrics like likes and shares.
+The rationale behind Crowdlisten's multi-modal technical architecture stems from the fundamental challenge of extracting truly valuable insights from the vast and varied landscape of online conversations. Traditional methods often fall short because they either focus on structured data or analyze individual modalities (text, video, audio) in isolation. This approach misses the rich context and nuanced understanding that arises from the interplay between different forms of content and engagement. For example, a viral TikTok video's impact is not solely determined by its visual content but also by its accompanying audio, captions, user comments, and engagement metrics like likes and shares.
 
 ![Analysis Interface](/images/projects/crowdlistening/analyze-interface.png)
 
-Crowdlistening's design directly tackles this limitation by integrating embedding-based topic modeling and LLM deep research capabilities to process and understand this multi-faceted data. Embedding-based topic modeling efficiently identifies key themes across massive datasets, while the LLM's deep reasoning capabilities can then analyze these themes within the context of various modalities. 
+Crowdlisten's design directly tackles this limitation by integrating embedding-based topic modeling and LLM deep research capabilities to process and understand this multi-faceted data. Embedding-based topic modeling efficiently identifies key themes across massive datasets, while the LLM's deep reasoning capabilities can then analyze these themes within the context of various modalities. 
 
-This dual approach allows for a layered analysis, examining both the primary content and the subsequent engagement it generates. By processing video, audio, text, and engagement metrics in a unified system, Crowdlistening can generate insights that reflect not just what is being said, but how it's being said, the surrounding context, and the audience's multifaceted response. This comprehensive understanding is crucial for overcoming the "insight paradox" and delivering truly actionable intelligence that goes beyond surface-level sentiment or abstracted metrics. Ultimately, this multi-modal design is essential for achieving the core goal of Crowdlistening: to conduct original research directly from raw social data and uncover emerging trends and nuanced opinions that would be invisible to single-mode analysis systems.
+This dual approach allows for a layered analysis, examining both the primary content and the subsequent engagement it generates. By processing video, audio, text, and engagement metrics in a unified system, Crowdlisten can generate insights that reflect not just what is being said, but how it's being said, the surrounding context, and the audience's multifaceted response. This comprehensive understanding is crucial for overcoming the "insight paradox" and delivering truly actionable intelligence that goes beyond surface-level sentiment or abstracted metrics. Ultimately, this multi-modal design is essential for achieving the core goal of Crowdlisten: to conduct original research directly from raw social data and uncover emerging trends and nuanced opinions that would be invisible to single-mode analysis systems.
 
 ## Detailed Analysis Capabilities
 
@@ -71,7 +71,7 @@ The opinion analysis feature goes beyond simple positive/negative sentiment to c
 
 CrowdListen's research infrastructure is built around a sophisticated orchestration system that coordinates multiple specialized AI engines. The Research Command Center provides users with a unified interface to launch complex analysis workflows while monitoring the progress of different analytical engines in real-time.
 
-Our system utilizes the BettaFish Control Surface, which orchestrates various AI engines including the Insight Engine for sentiment analysis, Media Engine for multimodal content processing, Query Engine for information retrieval, and Report Engine for generating executive-ready reports. This modular architecture allows for scalable analysis that can adapt to different research requirements.
+Our system utilizes the Research Engine, which orchestrates various AI engines including the Insight Engine for sentiment analysis, Media Engine for multimodal content processing, Query Engine for information retrieval, and Report Engine for generating executive-ready reports. This modular architecture allows for scalable analysis that can adapt to different research requirements.
 
 ![Research Interface](/images/projects/crowdlistening/research-interface-new.png)
 
@@ -81,7 +81,7 @@ This integrated approach represents a significant advancement over traditional s
 
 ## Case Study: Google NotebookLM Analysis
 
-To demonstrate Crowdlistening's capabilities in product intelligence, we conducted a comprehensive analysis of user sentiment regarding Google's NotebookLM tool. This case study showcases our platform's ability to extract nuanced insights about emerging AI tools and understand user adoption patterns.
+To demonstrate Crowdlisten's capabilities in product intelligence, we conducted a comprehensive analysis of user sentiment regarding Google's NotebookLM tool. This case study showcases our platform's ability to extract nuanced insights about emerging AI tools and understand user adoption patterns.
 
 ![NotebookLM Analysis](/images/projects/crowdlistening/notebooklm-analysis-new.png)
 
@@ -115,7 +115,7 @@ The Content Predictor exemplifies our broader mission of transforming social med
 
 ## Validation and Impact
 
-Our solution has been validated through interviews with major brands like L'Oreal, confirming we drastically cut the time and cost of social media analysis. Crowdlistening enables:
+Our solution has been validated through interviews with major brands like L'Oreal, confirming we drastically cut the time and cost of social media analysis. Crowdlisten enables:
 
 - Rapid response to emerging trends
 - Deep understanding of consumer sentiment across demographics
@@ -136,9 +136,9 @@ This project was developed in collaboration with Madison Bratley, whose expertis
 
 ## On Social Intelligence
 
-Crowdlistening represents the next evolution in social listening tools - moving beyond counting mentions to truly understanding conversations at scale. By transforming social media chatter into structured insights, we're helping brands make more informed decisions faster than ever before.
+Crowdlisten represents the next evolution in social listening tools - moving beyond counting mentions to truly understanding conversations at scale. By transforming social media chatter into structured insights, we're helping brands make more informed decisions faster than ever before.
 
-As noted in "Essence of Creativity," the real value in AI-powered tools comes not just from generating content, but from helping users find new perspectives and insights. Our platform serves as both an inspiration acquisition tool (accelerating original content production) and a content understanding tool (helping brands better comprehend their audience). By connecting insight data with generation capabilities, we're creating the kind of breakthrough product that bridges the gap between understanding and action.
+As noted in ["Essence of Creativity"](/posts/essense_of_creativity/), the real value in AI-powered tools comes not just from generating content, but from helping users find new perspectives and insights. Our platform serves as both an inspiration acquisition tool (accelerating original content production) and a content understanding tool (helping brands better comprehend their audience). By connecting insight data with generation capabilities, we're creating the kind of breakthrough product that bridges the gap between understanding and action.
 
 ---
 
