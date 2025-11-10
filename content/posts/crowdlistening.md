@@ -43,8 +43,6 @@ Finally, our Insights+ product caters to enterprise users and power analysts who
 
 ## The Insight Paradox
 
-![Insight Paradox](/images/projects/crowdlistening/detailed-analysis.png)
-
 Brands today face a fundamental paradox: they need broad insights from vast amounts of social data, yet require the detailed understanding typically only available through limited case studies. Current solutions offer either abstracted metrics that require tedious manual interpretation, expensive and limited content screening that can't scale, or surface-level sentiment analysis that misses nuanced opinions. Crowdlisten bridges this gap by combining the scale of algorithmic analysis with the depth of human-like comprehension. This addresses the first challenge identified in ["Essence of Creativity"](/posts/essense_of_creativity/) - helping users understand massive amounts of information and generate meaningful insights when they "don't know what output they want."
 
 ## Technical Architecture: Multi-Modal by Design
