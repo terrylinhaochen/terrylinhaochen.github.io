@@ -15,7 +15,7 @@ changelog:
     changes: "Updated Title"
 ---
 
-![CrowdListen Homepage](/images/projects/crowdlistening/crowdlisten-homepage.png)
+![CrowdListen Homepage](/images/projects/crowdlistening/homepage-new.png)
 
 ## From Content Aggregation to Original Research (crowdlisten.com)
 
@@ -31,7 +31,7 @@ What I'm particularly interested in exploring and building with Crowdlistening i
 
 ## Product Suite Overview
 
-![Product Suite](/images/projects/crowdlistening/product-suite.png)
+![Product Suite](/images/projects/crowdlistening/product-suite-new.png)
 
 CrowdListen has evolved into a comprehensive suite of AI-powered products designed to address different aspects of social intelligence and content strategy. The Analyze product serves as our core offering, enabling users to discover what people really think about any topic through sophisticated AI-powered sentiment analysis and opinion mining capabilities. This goes beyond simple positive/negative categorization to understand nuanced perspectives, emotional context, and the underlying reasons behind audience reactions.
 
@@ -43,7 +43,7 @@ Finally, our Insights+ product caters to enterprise users and power analysts who
 
 ## The Insight Paradox
 
-![Insight Paradox](/images/projects/crowdlistening/insight_paradox.png)
+![Insight Paradox](/images/projects/crowdlistening/insight-paradox-new.png)
 
 Brands today face a fundamental paradox: they need broad insights from vast amounts of social data, yet require the detailed understanding typically only available through limited case studies. Current solutions offer either abstracted metrics that require tedious manual interpretation, expensive and limited content screening that can't scale, or surface-level sentiment analysis that misses nuanced opinions. Crowdlistening bridges this gap by combining the scale of algorithmic analysis with the depth of human-like comprehension. This addresses the first challenge identified in "Essence of Creativity" - helping users understand massive amounts of information and generate meaningful insights when they "don't know what output they want."
 
@@ -67,13 +67,13 @@ The opinion analysis feature goes beyond simple positive/negative sentiment to c
 
 ## Advanced Research Infrastructure
 
-![Research Command Center](/images/projects/crowdlistening/research-command-center.png)
+![Research Command Center](/images/projects/crowdlistening/research-command-center-new.png)
 
 CrowdListen's research infrastructure is built around a sophisticated orchestration system that coordinates multiple specialized AI engines. The Research Command Center provides users with a unified interface to launch complex analysis workflows while monitoring the progress of different analytical engines in real-time.
 
 Our system utilizes the BettaFish Control Surface, which orchestrates various AI engines including the Insight Engine for sentiment analysis, Media Engine for multimodal content processing, Query Engine for information retrieval, and Report Engine for generating executive-ready reports. This modular architecture allows for scalable analysis that can adapt to different research requirements.
 
-![Research Interface](/images/projects/crowdlistening/research-interface.png)
+![Research Interface](/images/projects/crowdlistening/research-interface-new.png)
 
 The research interface enables users to input complex queries and optionally upload analysis templates to guide the investigation. The system then automatically determines which analytical capabilities to deploy, processing everything from web search and specialized platform data collection to multi-layered content analysis and synthesis.
 
@@ -83,27 +83,27 @@ This integrated approach represents a significant advancement over traditional s
 
 To demonstrate Crowdlistening's capabilities in product intelligence, we conducted a comprehensive analysis of user sentiment regarding Google's NotebookLM tool. This case study showcases our platform's ability to extract nuanced insights about emerging AI tools and understand user adoption patterns.
 
-![NotebookLM Analysis](/images/projects/crowdlistening/notebooklm-analysis.png)
+![NotebookLM Analysis](/images/projects/crowdlistening/notebooklm-analysis-new.png)
 
 When analyzing user sentiment around NotebookLM, our system provided a comprehensive overview showing that customer feedback indicates NotebookLM is effective for information synthesis and content generation, particularly in educational settings. However, users express concerns about the lack of persistent chat history, word count limits, and potential biases in the auto-generated podcast feature. Approximately 56% of users have a positive sentiment, praising its summarization capabilities and educational applications, while 34% express negative sentiment due to usability issues and accuracy concerns.
 
-![Theme Analysis](/images/projects/crowdlistening/notebooklm-themes.png)
+![Theme Analysis](/images/projects/crowdlistening/notebooklm-themes-new.png)
 
 Our thematic analysis reveals that Information Synthesis and Summarization is the most discussed topic, with 100 mentions representing 33.39% of all conversations. The sentiment breakdown shows overwhelmingly positive feedback for this core functionality, with users particularly appreciating the tool's ability to synthesize information from uploaded documents and aid in quick comprehension and analysis.
 
 The detailed sentiment analysis shows specific user opinions, including praise for NotebookLM's effectiveness in summarizing and synthesizing information from uploaded documents, its utility for creating study guides and educational materials, and its ability to provide citations for generated information to help users verify accuracy and build trust in the tool's output.
 
-![Source Analysis](/images/projects/crowdlistening/notebooklm-sources.png)
+![Source Analysis](/images/projects/crowdlistening/notebooklm-sources-new.png)
 
 Our analysis draws from 31 sources across 25 unique domains, indicating a moderate level of source diversity at 81%. The sources encompass various types including blogs, news outlets, and other platforms, offering a mix of perspectives. This comprehensive source analysis helps validate the reliability and breadth of our insights.
 
-![Related Topics](/images/projects/crowdlistening/notebooklm-related.png)
+![Related Topics](/images/projects/crowdlistening/notebooklm-related-new.png)
 
 The platform also identifies related research opportunities, suggesting additional analysis areas such as specific research or writing challenges that NotebookLM helps users overcome, how effectively it addresses information overload, the biggest frustrations users encounter, and whether it has improved research workflows. This demonstrates our system's ability to not only analyze current sentiment but also identify strategic research directions.
 
 ## Content Predictor: AI-Powered Engagement Forecasting
 
-![Content Predictor](/images/projects/crowdlistening/content-predictor.png)
+![Content Predictor](/images/projects/crowdlistening/content-predictor-new.png)
 
 One of our most innovative features is the Content Predictor, which allows users to test content variations and predict audience engagement before publishing. This tool represents a significant advancement in social media strategy, enabling teams to experiment with different messaging approaches without the traditional risks and costs associated with live testing.
 
