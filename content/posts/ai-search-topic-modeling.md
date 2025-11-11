@@ -18,39 +18,3 @@ keywords: ["AI search", "topic modeling", "semantic retrieval", "embeddings", "w
 
 ![Crawler Restrictions and Challenges](/images/posts/ai-search-topic-modeling/crawler-restrictions-challenges.png)
 *The evolving landscape of web access restrictions: Modern platforms like Reddit, Xueqiu, and others implement sophisticated barriers to automated crawling, fundamentally changing how AI systems can access and index web content.*
-
-## Technical Architecture
-
-[Placeholder content - detailed analysis of semantic search architectures coming soon]
-
-## Embedding Spaces and Vector Similarity
-
-[Placeholder for exploration of how modern AI search systems use embeddings to capture semantic meaning]
-
-## Topic Modeling Approaches
-
-[Placeholder for discussion of LDA, BERT-based topic modeling, and neural topic models]
-
-## Retrieval-Augmented Generation (RAG)
-
-[Placeholder for analysis of how search and topic modeling integrate with generative AI systems]
-
-## Challenges and Limitations
-
-[Placeholder for discussion of current technical challenges in AI search and topic modeling]
-
-## Performance Metrics and Evaluation
-
-[Placeholder for exploration of how to measure effectiveness in semantic search systems]
-
-## Future Directions
-
-[Placeholder for discussion of emerging trends in AI search and information retrieval]
-
-## Implementation Considerations
-
-[Placeholder for technical implementation guidance and best practices]
-
-## Conclusion
-
-[Placeholder for synthesis of key technical insights and implications for AI search evolution]
