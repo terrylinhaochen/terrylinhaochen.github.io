@@ -55,6 +55,14 @@ For social listening, sentence and document embeddings are the workhorses that e
 ## Reasoning Models and Visualizations
 With smaller datasets, we can directly provide the extracted raw text to a large-context, strong-reasoning model. This goes beyond coarse sentiment categories or word clouds, enabling richer context and actionable insights. Curated prompts let an LLM (or agent) read the semantic neighborhoods, surface key themes, note counter-signals, and propose testable hypotheses.
 
+### Harvesting Customer Testimonials at Scale
+
+One particularly powerful application involves extracting authentic customer impact stories from large collections of interview transcripts and recorded conversations. Rather than manually combing through dozens of hours of customer calls, modern AI tools can systematically identify and structure testimonial content in minutes rather than days.
+
+The workflow is surprisingly straightforward: First, transcribe customer interviews, podcast episodes, or recorded calls using automated transcription services. Next, upload these transcripts to large-context reasoning models like NotebookLM or Claude. Then ask the AI to identify every quote describing specific product impact, organizing results into structured tables with columns for quote, customer name, company, and use case. Finally, use AI-powered copywriting tools to convert raw testimonials into polished, punchy customer quotes suitable for marketing materials.
+
+This approach transforms 1-2 days of manual testimonial extraction into under an hour of guided AI work. More importantly, it ensures comprehensive coverage—human reviewers naturally miss valuable quotes buried in lengthy conversations, while AI can systematically process every statement for relevant content. The result is a richer, more complete picture of how customers actually describe your product's value in their own language.
+
 ![Key Themes Analysis](/images/projects/crowdlistening/detailed-analysis.png)
 *Detailed thematic analysis reveals customer pain points through AI-powered clustering and sentiment analysis, enabling product teams to identify high-impact opportunities from authentic user discourse.*
 
