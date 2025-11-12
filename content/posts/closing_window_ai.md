@@ -3,7 +3,7 @@ title: "The Closing Window Frame of AI Applications"
 description: "Reflections on timing, momentum, and the urgency of positioning in the rapidly evolving AI landscape. From early optimism to the reality of commercialization challenges."
 date: 2025-01-15
 author: Terry Chen
-tags: ["Product"]
+tags: ["Posts"]
 categories: ["AI Application & Value Creation Layer"]
 keywords: ["AI applications", "startup timing", "ChatGPT", "AI commercialization", "funding winter", "momentum", "market positioning", "technical depth"]
 ---
