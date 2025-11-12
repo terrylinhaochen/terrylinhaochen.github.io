@@ -5,6 +5,7 @@ date: 2025-03-25
 author: Terry Chen
 tags: ["Observations", "Entrepreneurship", "Product", "Posts"]
 keywords: ["user needs identification", "startup opportunities", "product market fit", "user pain points", "business opportunity validation"]
+categories: microsoft
 ---
 
 When you want to look for user pain points, go to a bar in the middle of the week, look for the most desparate looking person and buy them a beer. They'd probably have something substantial to talk about. While I don't usually go to bars during weekdays, I've found some similar ways of identifying user needs, mostly through conversations or online forums. This is a running document of the user needs or pain points that I've found to be interesting. Perhaps some of them will turn out to be viable business oppportunities. 
