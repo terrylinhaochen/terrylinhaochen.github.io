@@ -4,7 +4,7 @@ description: "Using AI-powered social listening to extract authentic customer in
 date: 2025-08-29
 author: Terry Chen
 categories: microsoft
-tags: ["Product", "Crowdlisten"]
+tags: ["Product"]
 categories: ["AI Application & Value Creation Layer"]
 keywords: ["social listening", "customer insights", "product development", "AI analysis", "community research", "market validation", "customer discourse", "product-market fit", "embeddings", "customer research"]
 ---
