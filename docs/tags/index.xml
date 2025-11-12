@@ -8,7 +8,7 @@
     <managingEditor>Terry Chen (Terry Chen)</managingEditor>
     <webMaster>Terry Chen (Terry Chen)</webMaster>
     <copyright>© 2025 Terry Chen. All rights reserved.</copyright>
-    <lastBuildDate>Sat, 01 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 11 Nov 2025 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -25,6 +25,36 @@
       <width>144</width>
       <height>144</height>
     </image>
+    
+    <item>
+      <title>Crowdlisten</title>
+      <link>http://localhost:1313/tags/crowdlisten/</link>
+      <pubDate>Tue, 11 Nov 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>http://localhost:1313/tags/crowdlisten/</guid>
+      <description></description>
+      
+      
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-11-11T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Product</title>
+      <link>http://localhost:1313/tags/product/</link>
+      <pubDate>Tue, 11 Nov 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>http://localhost:1313/tags/product/</guid>
+      <description></description>
+      
+      
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-11-11T00:00:00Z</dc:date>
+    </item>
     
     <item>
       <title>Posts</title>
@@ -47,21 +77,6 @@
       <pubDate>Fri, 31 Oct 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
       <guid>http://localhost:1313/tags/investing/</guid>
-      <description></description>
-      
-      
-      
-      
-      <dc:creator>Terry Chen</dc:creator>
-      <dc:date>2025-10-31T00:00:00Z</dc:date>
-    </item>
-    
-    <item>
-      <title>Product</title>
-      <link>http://localhost:1313/tags/product/</link>
-      <pubDate>Fri, 31 Oct 2025 00:00:00 +0000</pubDate>
-      <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/tags/product/</guid>
       <description></description>
       
       

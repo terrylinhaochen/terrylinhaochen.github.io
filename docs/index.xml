@@ -8,7 +8,7 @@
     <managingEditor>Terry Chen (Terry Chen)</managingEditor>
     <webMaster>Terry Chen (Terry Chen)</webMaster>
     <copyright>© 2025 Terry Chen. All rights reserved.</copyright>
-    <lastBuildDate>Sat, 01 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 12 Nov 2025 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
@@ -124,11 +124,142 @@
     </item>
     
     <item>
+      <title>The Closing Window Frame of AI Applications</title>
+      <link>http://localhost:1313/posts/closing_window_ai/</link>
+      <pubDate>Wed, 12 Nov 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>http://localhost:1313/posts/closing_window_ai/</guid>
+      <description>Reflections on timing, momentum, and the urgency of positioning in the rapidly evolving AI landscape. From early optimism to the reality of commercialization challenges.</description>
+      
+      
+      
+        
+          
+          <category>Posts</category>
+          
+          <category>Observations</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-11-12T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>AI Search and Topic Modeling - Technical Deep Dive</title>
+      <link>http://localhost:1313/posts/search_topic/</link>
+      <pubDate>Tue, 11 Nov 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>http://localhost:1313/posts/search_topic/</guid>
+      <description>Technical analysis of AI-powered search systems and topic modeling approaches, exploring semantic retrieval, embedding spaces, and the challenges of modern web crawling.</description>
+      
+      
+        
+          <category>crowdlisten</category>
+        
+      
+      
+        
+          
+          <category>Product</category>
+          
+          <category>Crowdlisten</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-11-11T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Google Learn About - Interest Directed, AI Aided Learning</title>
+      <link>http://localhost:1313/posts/google_learn_about/</link>
+      <pubDate>Tue, 11 Nov 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>http://localhost:1313/posts/google_learn_about/</guid>
+      <description>Google&#39;s Learn About reframes both search and chat as an explore-first learning loop, lowering the cost of asking good questions while managing cognitive load with structured, clickable cards.</description>
+      
+      
+        
+          
+          <category>AI Application &amp; Value Creation Layer</category>
+          
+        
+      
+      
+        
+          
+          <category>Product</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-11-11T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Google NotebookLM - Long Context Windows and Multimodality</title>
+      <link>http://localhost:1313/posts/google_notebooklm/</link>
+      <pubDate>Tue, 11 Nov 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>http://localhost:1313/posts/google_notebooklm/</guid>
+      <description>Exploring Google NotebookLM&#39;s approach to long context windows and multimodal AI interactions for research and knowledge management.</description>
+      
+      
+        
+          <category>crowdlisten</category>
+        
+      
+      
+        
+          
+          <category>Product</category>
+          
+          <category>Crowdlisten</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-11-11T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>The Monetization Paradox of AI</title>
+      <link>http://localhost:1313/posts/monetizing_ai/</link>
+      <pubDate>Tue, 11 Nov 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>http://localhost:1313/posts/monetizing_ai/</guid>
+      <description>Despite heavy investment in AI, a core challenge remains: turning its outsized promise into tangible, monetizable value for users.</description>
+      
+      
+        
+          
+          <category>TikTok</category>
+          
+        
+      
+      
+        
+          
+          <category>Product</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-11-11T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
       <title>Learnings from Every on Building an AI-Native Startup</title>
-      <link>http://localhost:1313/posts/being-ai-native/</link>
+      <link>http://localhost:1313/posts/ai_native/</link>
       <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/posts/being-ai-native/</guid>
+      <guid>http://localhost:1313/posts/ai_native/</guid>
       <description>How Every built a million-dollar AI business with just 15 people by embracing AI-first operations. Their engineers write virtually zero code while publishing daily newsletters, shipping products, and running consulting—the most radical example of AI-native operations.</description>
       
       
@@ -150,10 +281,10 @@
     
     <item>
       <title>The Best Practices Lie: On Dealing with Ambiguity</title>
-      <link>http://localhost:1313/posts/dealing-with-ambiguity/</link>
+      <link>http://localhost:1313/posts/ambiguity/</link>
       <pubDate>Fri, 31 Oct 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/posts/dealing-with-ambiguity/</guid>
+      <guid>http://localhost:1313/posts/ambiguity/</guid>
       <description>The methodologies that get you into elite institutions—optimized for speed and pattern recognition—become liabilities when facing the genuine ambiguity of startups and real-world problems.</description>
       
       
@@ -204,10 +335,10 @@
     
     <item>
       <title>OpenAI&#39;s Blast Radius</title>
-      <link>http://localhost:1313/posts/openai-blast-radius/</link>
+      <link>http://localhost:1313/archived/openai-blast-radius/</link>
       <pubDate>Mon, 27 Oct 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen, Livia Li (Terry Chen, Livia Li)</author>
-      <guid>http://localhost:1313/posts/openai-blast-radius/</guid>
+      <guid>http://localhost:1313/archived/openai-blast-radius/</guid>
       <description>How OpenAI&#39;s rapid product development affects the startup ecosystem. Strategic frameworks for building defensible AI applications in the shadow of foundation model giants.</description>
       
       
@@ -231,10 +362,10 @@
     
     <item>
       <title>From Indexing to Understanding Intent in Discovery Systems</title>
-      <link>http://localhost:1313/posts/intent-driven-discovery/</link>
+      <link>http://localhost:1313/posts/intent_driven_discovery/</link>
       <pubDate>Sun, 26 Oct 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/posts/intent-driven-discovery/</guid>
+      <guid>http://localhost:1313/posts/intent_driven_discovery/</guid>
       <description>Discovery is moving from static data retrieval toward systems that understand why a user is searching, not just what they type. The next generation of search experiences must merge precise recall with adaptive reasoning.</description>
       
       
@@ -281,10 +412,10 @@
     
     <item>
       <title>Understanding Google: A Primer</title>
-      <link>http://localhost:1313/posts/google-primer/</link>
+      <link>http://localhost:1313/posts/google_primer/</link>
       <pubDate>Mon, 20 Oct 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/posts/google-primer/</guid>
+      <guid>http://localhost:1313/posts/google_primer/</guid>
       <description>Understanding the key products that made Google the tech giant today, with a deepdive on new AI features. Exploring Google&#39;s evolution from search to AI-powered ecosystem and investment implications.</description>
       
       
@@ -308,10 +439,10 @@
     
     <item>
       <title>Why Figma Wins (In the AI Era Too)</title>
-      <link>http://localhost:1313/posts/figma-ai-era/</link>
+      <link>http://localhost:1313/posts/figma_ai/</link>
       <pubDate>Mon, 06 Oct 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/posts/figma-ai-era/</guid>
+      <guid>http://localhost:1313/posts/figma_ai/</guid>
       <description>How Figma&#39;s platform advantages position it to dominate AI-native design workflows, despite emerging competition from AI-first tools like Lovable.</description>
       
       
@@ -335,10 +466,10 @@
     
     <item>
       <title>From Raw Social Data to Real Research</title>
-      <link>http://localhost:1313/posts/crowdlistening/</link>
+      <link>http://localhost:1313/posts/crowdlisten/</link>
       <pubDate>Mon, 15 Sep 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/posts/crowdlistening/</guid>
+      <guid>http://localhost:1313/posts/crowdlisten/</guid>
       <description>Transform large-scale social conversations into actionable insights. Understand crowd sentiment, track emerging opinions, and identify key narratives.</description>
       
       
@@ -395,15 +526,15 @@
       
       
         
-          <category>microsoft</category>
+          
+          <category>AI Application &amp; Value Creation Layer</category>
+          
         
       
       
         
           
           <category>Product</category>
-          
-          <category>Posts</category>
           
         
       
@@ -643,10 +774,14 @@
       <title>Product Engineers and AI Multipliers</title>
       <link>http://localhost:1313/posts/product_engineers/</link>
       <pubDate>Sat, 19 Apr 2025 00:00:00 +0000</pubDate>
-      <author>Terry Chen (Terry Chen)</author>
+      <author>Terry Chen&#39; (Terry Chen&#39;)</author>
       <guid>http://localhost:1313/posts/product_engineers/</guid>
       <description>How AI is transforming product engineering teams into smaller, more efficient units. Learn why product engineers are becoming more valuable than traditional product managers in AI-first organizations.</description>
       
+      
+        
+          <category>microsoft</category>
+        
       
       
         
@@ -660,7 +795,7 @@
         
       
       
-      <dc:creator>Terry Chen</dc:creator>
+      <dc:creator>Terry Chen&#39;</dc:creator>
       <dc:date>2025-04-19T00:00:00Z</dc:date>
     </item>
     
@@ -1056,31 +1191,6 @@
       
       <dc:creator>Terry Chen</dc:creator>
       <dc:date>2024-05-20T00:00:00Z</dc:date>
-    </item>
-    
-    <item>
-      <title>AI-Powered TikTok Trend Analysis: Billion Parameter Insights for Advertising</title>
-      <link>http://localhost:1313/posts/ai-powered-tiktok-trend-analysis/</link>
-      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
-      <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/posts/ai-powered-tiktok-trend-analysis/</guid>
-      <description>Development of AI-powered content analysis tools for TikTok trend identification and agency insights. Multi-modal content understanding and actionable trend analysis for advertising agencies using billion-parameter models.</description>
-      
-      
-        
-          <category>tiktok</category>
-        
-      
-      
-        
-          
-          <category>Product</category>
-          
-        
-      
-      
-      <dc:creator>Terry Chen</dc:creator>
-      <dc:date>2024-04-10T00:00:00Z</dc:date>
     </item>
     
     <item>

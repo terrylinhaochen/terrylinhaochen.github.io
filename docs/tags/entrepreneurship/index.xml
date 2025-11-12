@@ -28,10 +28,10 @@
     
     <item>
       <title>From Raw Social Data to Real Research</title>
-      <link>http://localhost:1313/posts/crowdlistening/</link>
+      <link>http://localhost:1313/posts/crowdlisten/</link>
       <pubDate>Mon, 15 Sep 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/posts/crowdlistening/</guid>
+      <guid>http://localhost:1313/posts/crowdlisten/</guid>
       <description>Transform large-scale social conversations into actionable insights. Understand crowd sentiment, track emerging opinions, and identify key narratives.</description>
       
       
@@ -111,10 +111,14 @@
       <title>Product Engineers and AI Multipliers</title>
       <link>http://localhost:1313/posts/product_engineers/</link>
       <pubDate>Sat, 19 Apr 2025 00:00:00 +0000</pubDate>
-      <author>Terry Chen (Terry Chen)</author>
+      <author>Terry Chen&#39; (Terry Chen&#39;)</author>
       <guid>http://localhost:1313/posts/product_engineers/</guid>
       <description>How AI is transforming product engineering teams into smaller, more efficient units. Learn why product engineers are becoming more valuable than traditional product managers in AI-first organizations.</description>
       
+      
+        
+          <category>microsoft</category>
+        
       
       
         
@@ -128,7 +132,7 @@
         
       
       
-      <dc:creator>Terry Chen</dc:creator>
+      <dc:creator>Terry Chen&#39;</dc:creator>
       <dc:date>2025-04-19T00:00:00Z</dc:date>
     </item>
     

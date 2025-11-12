@@ -28,10 +28,10 @@
     
     <item>
       <title>Learnings from Every on Building an AI-Native Startup</title>
-      <link>http://localhost:1313/posts/being-ai-native/</link>
+      <link>http://localhost:1313/posts/ai_native/</link>
       <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/posts/being-ai-native/</guid>
+      <guid>http://localhost:1313/posts/ai_native/</guid>
       <description>How Every built a million-dollar AI business with just 15 people by embracing AI-first operations. Their engineers write virtually zero code while publishing daily newsletters, shipping products, and running consulting—the most radical example of AI-native operations.</description>
       
       
@@ -53,10 +53,10 @@
     
     <item>
       <title>The Best Practices Lie: On Dealing with Ambiguity</title>
-      <link>http://localhost:1313/posts/dealing-with-ambiguity/</link>
+      <link>http://localhost:1313/posts/ambiguity/</link>
       <pubDate>Fri, 31 Oct 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/posts/dealing-with-ambiguity/</guid>
+      <guid>http://localhost:1313/posts/ambiguity/</guid>
       <description>The methodologies that get you into elite institutions—optimized for speed and pattern recognition—become liabilities when facing the genuine ambiguity of startups and real-world problems.</description>
       
       
@@ -76,33 +76,6 @@
       
       <dc:creator>Terry Chen</dc:creator>
       <dc:date>2025-10-31T00:00:00Z</dc:date>
-    </item>
-    
-    <item>
-      <title>Social Listening for Product Insight</title>
-      <link>http://localhost:1313/posts/need_validation/</link>
-      <pubDate>Fri, 29 Aug 2025 00:00:00 +0000</pubDate>
-      <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/posts/need_validation/</guid>
-      <description>Using AI-powered social listening to extract authentic customer insights from online discourse. Moving from product-to-market to market-to-product development through systematic analysis of community discussions.</description>
-      
-      
-        
-          <category>microsoft</category>
-        
-      
-      
-        
-          
-          <category>Product</category>
-          
-          <category>Posts</category>
-          
-        
-      
-      
-      <dc:creator>Terry Chen</dc:creator>
-      <dc:date>2025-08-29T00:00:00Z</dc:date>
     </item>
     
     <item>
@@ -209,10 +182,14 @@
       <title>Product Engineers and AI Multipliers</title>
       <link>http://localhost:1313/posts/product_engineers/</link>
       <pubDate>Sat, 19 Apr 2025 00:00:00 +0000</pubDate>
-      <author>Terry Chen (Terry Chen)</author>
+      <author>Terry Chen&#39; (Terry Chen&#39;)</author>
       <guid>http://localhost:1313/posts/product_engineers/</guid>
       <description>How AI is transforming product engineering teams into smaller, more efficient units. Learn why product engineers are becoming more valuable than traditional product managers in AI-first organizations.</description>
       
+      
+        
+          <category>microsoft</category>
+        
       
       
         
@@ -226,7 +203,7 @@
         
       
       
-      <dc:creator>Terry Chen</dc:creator>
+      <dc:creator>Terry Chen&#39;</dc:creator>
       <dc:date>2025-04-19T00:00:00Z</dc:date>
     </item>
     
@@ -303,6 +280,29 @@
       
       <dc:creator>Terry Chen</dc:creator>
       <dc:date>2025-03-25T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>The Closing Window Frame of AI Applications</title>
+      <link>http://localhost:1313/posts/closing_window_ai/</link>
+      <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>http://localhost:1313/posts/closing_window_ai/</guid>
+      <description>Reflections on timing, momentum, and the urgency of positioning in the rapidly evolving AI landscape. From early optimism to the reality of commercialization challenges.</description>
+      
+      
+      
+        
+          
+          <category>Posts</category>
+          
+          <category>Observations</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-01-15T00:00:00Z</dc:date>
     </item>
     
     <item>

@@ -8,7 +8,7 @@
     <managingEditor>Terry Chen (Terry Chen)</managingEditor>
     <webMaster>Terry Chen (Terry Chen)</webMaster>
     <copyright>© 2025 Terry Chen. All rights reserved.</copyright>
-    <lastBuildDate>Sat, 01 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 11 Nov 2025 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -25,6 +25,51 @@
       <width>144</width>
       <height>144</height>
     </image>
+    
+    <item>
+      <title>AI Application &amp; Value Creation Layer</title>
+      <link>http://localhost:1313/categories/ai-application--value-creation-layer/</link>
+      <pubDate>Tue, 11 Nov 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>http://localhost:1313/categories/ai-application--value-creation-layer/</guid>
+      <description></description>
+      
+      
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-11-11T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Crowdlisten</title>
+      <link>http://localhost:1313/categories/crowdlisten/</link>
+      <pubDate>Tue, 11 Nov 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>http://localhost:1313/categories/crowdlisten/</guid>
+      <description></description>
+      
+      
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-11-11T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Tiktok</title>
+      <link>http://localhost:1313/categories/tiktok/</link>
+      <pubDate>Tue, 11 Nov 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>http://localhost:1313/categories/tiktok/</guid>
+      <description></description>
+      
+      
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-11-11T00:00:00Z</dc:date>
+    </item>
     
     <item>
       <title>Ai-Native</title>
@@ -72,21 +117,6 @@
     </item>
     
     <item>
-      <title>AI Application &amp; Value Creation Layer</title>
-      <link>http://localhost:1313/categories/ai-application--value-creation-layer/</link>
-      <pubDate>Mon, 27 Oct 2025 00:00:00 +0000</pubDate>
-      <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/categories/ai-application--value-creation-layer/</guid>
-      <description></description>
-      
-      
-      
-      
-      <dc:creator>Terry Chen</dc:creator>
-      <dc:date>2025-10-27T00:00:00Z</dc:date>
-    </item>
-    
-    <item>
       <title>Aibrary</title>
       <link>http://localhost:1313/categories/aibrary/</link>
       <pubDate>Sun, 26 Oct 2025 00:00:00 +0000</pubDate>
@@ -99,21 +129,6 @@
       
       <dc:creator>Terry Chen</dc:creator>
       <dc:date>2025-10-26T00:00:00Z</dc:date>
-    </item>
-    
-    <item>
-      <title>Crowdlisten</title>
-      <link>http://localhost:1313/categories/crowdlisten/</link>
-      <pubDate>Mon, 15 Sep 2025 00:00:00 +0000</pubDate>
-      <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/categories/crowdlisten/</guid>
-      <description></description>
-      
-      
-      
-      
-      <dc:creator>Terry Chen</dc:creator>
-      <dc:date>2025-09-15T00:00:00Z</dc:date>
     </item>
     
     <item>
@@ -137,21 +152,6 @@
       <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
       <guid>http://localhost:1313/categories/security-data-pipelines--agentic-soc/</guid>
-      <description></description>
-      
-      
-      
-      
-      <dc:creator>Terry Chen</dc:creator>
-      <dc:date>2025-07-13T00:00:00Z</dc:date>
-    </item>
-    
-    <item>
-      <title>Tiktok</title>
-      <link>http://localhost:1313/categories/tiktok/</link>
-      <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
-      <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/categories/tiktok/</guid>
       <description></description>
       
       

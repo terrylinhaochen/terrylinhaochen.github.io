@@ -8,7 +8,7 @@
     <managingEditor>Terry Chen (Terry Chen)</managingEditor>
     <webMaster>Terry Chen (Terry Chen)</webMaster>
     <copyright>© 2025 Terry Chen. All rights reserved.</copyright>
-    <lastBuildDate>Sun, 13 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 Oct 2025 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="http://localhost:1313/archived/index.xml" rel="self" type="application/rss+xml" />
     
@@ -25,6 +25,33 @@
       <width>144</width>
       <height>144</height>
     </image>
+    
+    <item>
+      <title>OpenAI&#39;s Blast Radius</title>
+      <link>http://localhost:1313/archived/openai-blast-radius/</link>
+      <pubDate>Mon, 27 Oct 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen, Livia Li (Terry Chen, Livia Li)</author>
+      <guid>http://localhost:1313/archived/openai-blast-radius/</guid>
+      <description>How OpenAI&#39;s rapid product development affects the startup ecosystem. Strategic frameworks for building defensible AI applications in the shadow of foundation model giants.</description>
+      
+      
+        
+          
+          <category>AI Application &amp; Value Creation Layer</category>
+          
+        
+      
+      
+        
+          
+          <category>Investing</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen, Livia Li</dc:creator>
+      <dc:date>2025-10-27T00:00:00Z</dc:date>
+    </item>
     
     <item>
       <title>Human-Mediated Agentic Workflows</title>

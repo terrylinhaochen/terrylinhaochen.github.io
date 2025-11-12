@@ -8,7 +8,7 @@
     <managingEditor>Terry Chen (Terry Chen)</managingEditor>
     <webMaster>Terry Chen (Terry Chen)</webMaster>
     <copyright>© 2025 Terry Chen. All rights reserved.</copyright>
-    <lastBuildDate>Sun, 13 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 11 Nov 2025 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="http://localhost:1313/categories/tiktok/index.xml" rel="self" type="application/rss+xml" />
     
@@ -25,6 +25,33 @@
       <width>144</width>
       <height>144</height>
     </image>
+    
+    <item>
+      <title>The Monetization Paradox of AI</title>
+      <link>http://localhost:1313/posts/monetizing_ai/</link>
+      <pubDate>Tue, 11 Nov 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>http://localhost:1313/posts/monetizing_ai/</guid>
+      <description>Despite heavy investment in AI, a core challenge remains: turning its outsized promise into tangible, monetizable value for users.</description>
+      
+      
+        
+          
+          <category>TikTok</category>
+          
+        
+      
+      
+        
+          
+          <category>Product</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-11-11T00:00:00Z</dc:date>
+    </item>
     
     <item>
       <title>Search Advertisement</title>
@@ -130,31 +157,6 @@
       
       <dc:creator>Terry Chen</dc:creator>
       <dc:date>2024-05-20T00:00:00Z</dc:date>
-    </item>
-    
-    <item>
-      <title>AI-Powered TikTok Trend Analysis: Billion Parameter Insights for Advertising</title>
-      <link>http://localhost:1313/posts/ai-powered-tiktok-trend-analysis/</link>
-      <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
-      <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/posts/ai-powered-tiktok-trend-analysis/</guid>
-      <description>Development of AI-powered content analysis tools for TikTok trend identification and agency insights. Multi-modal content understanding and actionable trend analysis for advertising agencies using billion-parameter models.</description>
-      
-      
-        
-          <category>tiktok</category>
-        
-      
-      
-        
-          
-          <category>Product</category>
-          
-        
-      
-      
-      <dc:creator>Terry Chen</dc:creator>
-      <dc:date>2024-04-10T00:00:00Z</dc:date>
     </item>
     
   </channel>
