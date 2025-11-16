@@ -47,6 +47,12 @@ But as the technology matures and market dynamics clarify, the window frame star
 
 I believe we're watching this transition happen in real-time with AI applications. The experimental phase is ending. The consolidation phase is beginning.
 
+## The Agentic Opportunity
+
+A generation of agentic startups is taking shape. Werdelin believes we're still in the earliest days of figuring out what "agentic businesses"—companies built around AI agents—will actually look like. He compares it to the early 2000s when he was building an internet video startup before YouTube came around. Back then no one knew how to answer simple questions like: Should videos autoplay when you open a link, or require a click? Should the next one start automatically? As he builds Audos, Werdelin is realizing that many of these basic features simply don't exist yet for generative AI.
+
+This observation reinforces the urgency I feel about timing. We're not just in the early days of AI adoption—we're in the early days of understanding what AI-native experiences should even look like. The fundamental interaction patterns, the basic UX conventions, the core product assumptions are all still being established. This represents both massive opportunity and massive risk, depending on how quickly you can move and how well you can read the emerging patterns.
+
 ## The Urgency I Feel
 
 There's a specific urgency I feel watching this unfold. It's not FOMO exactly—it's more like watching the last few seats at a table fill up, knowing that the conversation happening at that table will determine the next decade of technological progress.
