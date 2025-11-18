@@ -1,9 +1,10 @@
 ---
-title: "AI Search and Topic Modeling - Technical Deep Dive"
+title: "Weighing Social Interactions: Reconstructing Meaning from Large Multi-modal Datasets"
 date: 2025-11-11
 author: Terry Chen
 tags: ["Product", "Crowdlisten"]
 categories: crowdlisten
+
 company: "crowdlisten"
 description: "Technical analysis of AI-powered search systems and topic modeling approaches, exploring semantic retrieval, embedding spaces, and the challenges of modern web crawling."
 keywords: ["AI search", "topic modeling", "semantic retrieval", "embeddings", "web crawling", "information retrieval", "machine learning", "natural language processing"]
