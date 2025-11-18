@@ -1403,6 +1403,53 @@ The good news is that hiring managers aren't looking for perfect answers to thes
 3. **Use benchmarks** - Upper/lower bounds, personal anecdotes for educated estimates
 4. **Sanity check** - Does your answer make sense?
 
+#### Quick Reference for Estimation Questions
+
+For PM estimation questions, it's useful to develop intuition about numbers and memorize a few key ones. This fact sheet is NOT meant to be memorized completely. Use this guide to get a general sense of numbers and sizes. Figures are updated as of Q2 2025.
+
+**Demographics & Population**
+- US population: 341M
+- California population: 40M
+- NYC population: 8.5M
+- World population: 8.2B
+- US households: 130M
+- Average people per household in the US: 3
+- Life expectancy: 72
+- Median household income: $81,000
+
+**Geographic & Physical**
+- Size of continental US: 3M square miles
+- Weight of an average car: 4,000 lbs
+
+**Technical**
+- Amazon S3 Standard cost: $0.023 / GB / month
+- Average file size for a 90-min 720p movie: roughly 1.5GB
+- Average file size for smartphone camera picture: roughly 3-9 MB
+- Average CTR for Google search ad: 5%
+- Average landing page conversion rate: 4%
+- Average WiFi bandwidth: 280 Mbps
+- Cost of iPhone 17 Pro: $1,099
+- Cost of Google Pixel 9: $799
+
+**Company Revenues (2024)**
+- Amazon: $867B
+- Apple: $538B
+- Google: $350B
+- Meta: $164B
+- Netflix: $53B
+- Airbnb: $15B
+- Dropbox: $2.5B
+- Google (Alphabet) net income: $100B
+- Apple R&D expenditure: $31B
+
+**User Populations (2025)**
+- Netflix subscribers: 300M
+- Google G Suite monthly active users: 2.5B
+- Uber drivers worldwide: ~8.8M
+- Twitter daily active users: 250M
+- Americans that own a smart speaker: 35% of adults
+- Amazon products (excluding marketplace): 12M+ (total with marketplace: 400M)
+
 ### 6. Technical Questions
 
 Technical interview questions are no longer common in PM interviews. Still, they may pop up, depending on the company. Your recruiter will tell you whether you can expect one, so if you're unsure, ask your recruiter.
