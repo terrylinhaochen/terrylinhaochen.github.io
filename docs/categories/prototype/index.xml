@@ -2,15 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     <title>Prototype - Terry Chen</title>
-    <link>http://localhost:1313/categories/prototype/</link>
+    <link>https://chenterry.com/categories/prototype/</link>
     <description>Hi, this is Terry. I&#39;m documenting my product ideas and learning notes in this blog. I&#39;m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description>
     <language>en-us</language>
     <managingEditor>Terry Chen (Terry Chen)</managingEditor>
     <webMaster>Terry Chen (Terry Chen)</webMaster>
-    <copyright>© 2025 Terry Chen. All rights reserved.</copyright>
+    <copyright>© 2026 Terry Chen. All rights reserved.</copyright>
     <lastBuildDate>Fri, 21 Mar 2025 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="http://localhost:1313/categories/prototype/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://chenterry.com/categories/prototype/index.xml" rel="self" type="application/rss+xml" />
     
     <generator>Hugo 0.136.2</generator>
     <category>Technology</category>
@@ -18,9 +18,9 @@
     <category>Product Engineering</category>
     <category>Investment Analysis</category>
     <image>
-      <url>http://localhost:1313/images/profile.jpg</url>
+      <url>https://chenterry.com/images/profile.jpg</url>
       <title>Terry Chen</title>
-      <link>http://localhost:1313/</link>
+      <link>https://chenterry.com/</link>
       <description>Hi, this is Terry. I&#39;m documenting my product ideas and learning notes in this blog. I&#39;m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description>
       <width>144</width>
       <height>144</height>
@@ -28,10 +28,10 @@
     
     <item>
       <title>Smart Expense Tracker</title>
-      <link>http://localhost:1313/archived/smart-expense-tracker/</link>
+      <link>https://chenterry.com/archived/smart-expense-tracker/</link>
       <pubDate>Fri, 21 Mar 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/archived/smart-expense-tracker/</guid>
+      <guid>https://chenterry.com/archived/smart-expense-tracker/</guid>
       <description>&lt;p&gt;The Smart Expense Tracker with Auto-Categorization is a cloud-native application built on AWS serverless architecture. The system automates the tedious process of expense tracking by leveraging AWS services to process receipts, categorize transactions, and provide financial insights. The application offers several key features including receipt scanning and data extraction using AWS Textract, automatic expense categorization with AI (using AWS Bedrock), comprehensive expense tracking, budget setting with automated alerts via SNS, and financial report generation in CSV or PDF formats.&lt;/p&gt;</description>
       
       
@@ -55,10 +55,10 @@
     
     <item>
       <title>Rapid Prototyping of LLM Enabled Webapps</title>
-      <link>http://localhost:1313/archived/prototyping/</link>
+      <link>https://chenterry.com/archived/prototyping/</link>
       <pubDate>Sat, 19 Oct 2024 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/archived/prototyping/</guid>
+      <guid>https://chenterry.com/archived/prototyping/</guid>
       <description>&lt;h3 id=&#34;peptalk-ai-journaling-tool&#34;&gt;PepTalk: AI Journaling Tool&lt;/h3&gt;
 &lt;p&gt;Realtime conversation with aI companion to help you note down feelings and journals for the day.
 (Prototype: &lt;a href=&#34;https://peptalk-navy.web.app/&#34;&gt;https://peptalk-navy.web.app/&lt;/a&gt;)&lt;/p&gt;
@@ -89,10 +89,10 @@
     
     <item>
       <title>Marrrket: AI Listing Secondhand Marketplace</title>
-      <link>http://localhost:1313/archived/marrrket/</link>
+      <link>https://chenterry.com/archived/marrrket/</link>
       <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/archived/marrrket/</guid>
+      <guid>https://chenterry.com/archived/marrrket/</guid>
       <description>&lt;p&gt;Marrrket is an AI-powered second-hand marketplace platform targeting North American university students, initially focusing on Chinese international students. The platform aims to solve the inefficiency in the current second-hand market by simplifying the listing process through AI-generated product descriptions from images and minimal user input. By reducing friction in the listing process, Marrrket will increase the overall volume of second-hand items available in the market, creating a more efficient marketplace for both buyers and sellers. The platform&amp;rsquo;s innovation centers on using artificial intelligence to dramatically lower the barrier to entry for sellers, which is hypothesized to be the primary constraint on market growth.&lt;/p&gt;</description>
       
       

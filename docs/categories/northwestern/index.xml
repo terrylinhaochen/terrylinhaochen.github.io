@@ -2,15 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     <title>Northwestern - Terry Chen</title>
-    <link>http://localhost:1313/categories/northwestern/</link>
+    <link>https://chenterry.com/categories/northwestern/</link>
     <description>Hi, this is Terry. I&#39;m documenting my product ideas and learning notes in this blog. I&#39;m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description>
     <language>en-us</language>
     <managingEditor>Terry Chen (Terry Chen)</managingEditor>
     <webMaster>Terry Chen (Terry Chen)</webMaster>
-    <copyright>© 2025 Terry Chen. All rights reserved.</copyright>
+    <copyright>© 2026 Terry Chen. All rights reserved.</copyright>
     <lastBuildDate>Fri, 31 Oct 2025 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="http://localhost:1313/categories/northwestern/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://chenterry.com/categories/northwestern/index.xml" rel="self" type="application/rss+xml" />
     
     <generator>Hugo 0.136.2</generator>
     <category>Technology</category>
@@ -18,9 +18,9 @@
     <category>Product Engineering</category>
     <category>Investment Analysis</category>
     <image>
-      <url>http://localhost:1313/images/profile.jpg</url>
+      <url>https://chenterry.com/images/profile.jpg</url>
       <title>Terry Chen</title>
-      <link>http://localhost:1313/</link>
+      <link>https://chenterry.com/</link>
       <description>Hi, this is Terry. I&#39;m documenting my product ideas and learning notes in this blog. I&#39;m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description>
       <width>144</width>
       <height>144</height>
@@ -28,10 +28,10 @@
     
     <item>
       <title>The Best Practices Lie: On Dealing with Ambiguity</title>
-      <link>http://localhost:1313/posts/ambiguity/</link>
+      <link>https://chenterry.com/posts/ambiguity/</link>
       <pubDate>Fri, 31 Oct 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/posts/ambiguity/</guid>
+      <guid>https://chenterry.com/posts/ambiguity/</guid>
       <description>The methodologies that get you into elite institutions—optimized for speed and pattern recognition—become liabilities when facing the genuine ambiguity of startups and real-world problems.</description>
       
       
@@ -55,10 +55,10 @@
     
     <item>
       <title>Building AI That Actually Understands How Students Learn</title>
-      <link>http://localhost:1313/posts/llmcoaching/</link>
+      <link>https://chenterry.com/posts/llmcoaching/</link>
       <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/posts/llmcoaching/</guid>
+      <guid>https://chenterry.com/posts/llmcoaching/</guid>
       <description>How we built an LLM system that identifies student learning gaps and connects them with peers who&#39;ve solved similar problems—scaling personalized mentorship through AI that understands the nuances of how people actually learn.</description>
       
       

@@ -2,15 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     <title>Categories - Terry Chen</title>
-    <link>http://localhost:1313/categories/</link>
+    <link>https://chenterry.com/categories/</link>
     <description>Hi, this is Terry. I&#39;m documenting my product ideas and learning notes in this blog. I&#39;m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description>
     <language>en-us</language>
     <managingEditor>Terry Chen (Terry Chen)</managingEditor>
     <webMaster>Terry Chen (Terry Chen)</webMaster>
-    <copyright>© 2025 Terry Chen. All rights reserved.</copyright>
-    <lastBuildDate>Tue, 11 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <copyright>© 2026 Terry Chen. All rights reserved.</copyright>
+    <lastBuildDate>Sun, 22 Feb 2026 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://chenterry.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     <generator>Hugo 0.136.2</generator>
     <category>Technology</category>
@@ -18,9 +18,9 @@
     <category>Product Engineering</category>
     <category>Investment Analysis</category>
     <image>
-      <url>http://localhost:1313/images/profile.jpg</url>
+      <url>https://chenterry.com/images/profile.jpg</url>
       <title>Terry Chen</title>
-      <link>http://localhost:1313/</link>
+      <link>https://chenterry.com/</link>
       <description>Hi, this is Terry. I&#39;m documenting my product ideas and learning notes in this blog. I&#39;m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description>
       <width>144</width>
       <height>144</height>
@@ -28,25 +28,25 @@
     
     <item>
       <title>AI Application &amp; Value Creation Layer</title>
-      <link>http://localhost:1313/categories/ai-application--value-creation-layer/</link>
-      <pubDate>Tue, 11 Nov 2025 00:00:00 +0000</pubDate>
+      <link>https://chenterry.com/categories/ai-application--value-creation-layer/</link>
+      <pubDate>Sun, 22 Feb 2026 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/categories/ai-application--value-creation-layer/</guid>
+      <guid>https://chenterry.com/categories/ai-application--value-creation-layer/</guid>
       <description></description>
       
       
       
       
       <dc:creator>Terry Chen</dc:creator>
-      <dc:date>2025-11-11T00:00:00Z</dc:date>
+      <dc:date>2026-02-22T00:00:00Z</dc:date>
     </item>
     
     <item>
       <title>Crowdlisten</title>
-      <link>http://localhost:1313/categories/crowdlisten/</link>
+      <link>https://chenterry.com/categories/crowdlisten/</link>
       <pubDate>Tue, 11 Nov 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/categories/crowdlisten/</guid>
+      <guid>https://chenterry.com/categories/crowdlisten/</guid>
       <description></description>
       
       
@@ -58,10 +58,10 @@
     
     <item>
       <title>Tiktok</title>
-      <link>http://localhost:1313/categories/tiktok/</link>
+      <link>https://chenterry.com/categories/tiktok/</link>
       <pubDate>Tue, 11 Nov 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/categories/tiktok/</guid>
+      <guid>https://chenterry.com/categories/tiktok/</guid>
       <description></description>
       
       
@@ -73,10 +73,10 @@
     
     <item>
       <title>Ai-Native</title>
-      <link>http://localhost:1313/categories/ai-native/</link>
+      <link>https://chenterry.com/categories/ai-native/</link>
       <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/categories/ai-native/</guid>
+      <guid>https://chenterry.com/categories/ai-native/</guid>
       <description></description>
       
       
@@ -88,10 +88,10 @@
     
     <item>
       <title>Mobility, Energy, and New Infrastructure</title>
-      <link>http://localhost:1313/categories/mobility-energy-and-new-infrastructure/</link>
+      <link>https://chenterry.com/categories/mobility-energy-and-new-infrastructure/</link>
       <pubDate>Fri, 31 Oct 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/categories/mobility-energy-and-new-infrastructure/</guid>
+      <guid>https://chenterry.com/categories/mobility-energy-and-new-infrastructure/</guid>
       <description></description>
       
       
@@ -103,10 +103,10 @@
     
     <item>
       <title>Northwestern</title>
-      <link>http://localhost:1313/categories/northwestern/</link>
+      <link>https://chenterry.com/categories/northwestern/</link>
       <pubDate>Fri, 31 Oct 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/categories/northwestern/</guid>
+      <guid>https://chenterry.com/categories/northwestern/</guid>
       <description></description>
       
       
@@ -118,10 +118,10 @@
     
     <item>
       <title>Aibrary</title>
-      <link>http://localhost:1313/categories/aibrary/</link>
+      <link>https://chenterry.com/categories/aibrary/</link>
       <pubDate>Sun, 26 Oct 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/categories/aibrary/</guid>
+      <guid>https://chenterry.com/categories/aibrary/</guid>
       <description></description>
       
       
@@ -133,10 +133,10 @@
     
     <item>
       <title>Microsoft</title>
-      <link>http://localhost:1313/categories/microsoft/</link>
+      <link>https://chenterry.com/categories/microsoft/</link>
       <pubDate>Fri, 29 Aug 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/categories/microsoft/</guid>
+      <guid>https://chenterry.com/categories/microsoft/</guid>
       <description></description>
       
       
@@ -148,10 +148,10 @@
     
     <item>
       <title>Security, Data Pipelines &amp; Agentic SOC</title>
-      <link>http://localhost:1313/categories/security-data-pipelines--agentic-soc/</link>
+      <link>https://chenterry.com/categories/security-data-pipelines--agentic-soc/</link>
       <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/categories/security-data-pipelines--agentic-soc/</guid>
+      <guid>https://chenterry.com/categories/security-data-pipelines--agentic-soc/</guid>
       <description></description>
       
       
@@ -163,10 +163,10 @@
     
     <item>
       <title>Prototype</title>
-      <link>http://localhost:1313/categories/prototype/</link>
+      <link>https://chenterry.com/categories/prototype/</link>
       <pubDate>Fri, 21 Mar 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/categories/prototype/</guid>
+      <guid>https://chenterry.com/categories/prototype/</guid>
       <description></description>
       
       
@@ -178,10 +178,10 @@
     
     <item>
       <title>Research</title>
-      <link>http://localhost:1313/categories/research/</link>
+      <link>https://chenterry.com/categories/research/</link>
       <pubDate>Mon, 10 Mar 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/categories/research/</guid>
+      <guid>https://chenterry.com/categories/research/</guid>
       <description></description>
       
       
@@ -193,10 +193,10 @@
     
     <item>
       <title>Startup</title>
-      <link>http://localhost:1313/categories/startup/</link>
+      <link>https://chenterry.com/categories/startup/</link>
       <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/categories/startup/</guid>
+      <guid>https://chenterry.com/categories/startup/</guid>
       <description></description>
       
       

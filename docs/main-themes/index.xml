@@ -2,15 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     <title>Themes - Terry Chen</title>
-    <link>http://localhost:1313/main-themes/</link>
+    <link>https://chenterry.com/main-themes/</link>
     <description><p>Areas of Interest</p></description>
     <language>en-us</language>
     <managingEditor>Terry Chen (Terry Chen)</managingEditor>
     <webMaster>Terry Chen (Terry Chen)</webMaster>
-    <copyright>© 2025 Terry Chen. All rights reserved.</copyright>
+    <copyright>© 2026 Terry Chen. All rights reserved.</copyright>
     <lastBuildDate>Tue, 01 Oct 2024 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="http://localhost:1313/main-themes/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://chenterry.com/main-themes/index.xml" rel="self" type="application/rss+xml" />
     
     <generator>Hugo 0.136.2</generator>
     <category>Technology</category>
@@ -18,9 +18,9 @@
     <category>Product Engineering</category>
     <category>Investment Analysis</category>
     <image>
-      <url>http://localhost:1313/images/profile.jpg</url>
+      <url>https://chenterry.com/images/profile.jpg</url>
       <title>Terry Chen</title>
-      <link>http://localhost:1313/</link>
+      <link>https://chenterry.com/</link>
       <description>Hi, this is Terry. I&#39;m documenting my product ideas and learning notes in this blog. I&#39;m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description>
       <width>144</width>
       <height>144</height>
@@ -28,10 +28,10 @@
     
     <item>
       <title>Human Quirks</title>
-      <link>http://localhost:1313/main-themes/human-quirks/</link>
+      <link>https://chenterry.com/main-themes/human-quirks/</link>
       <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/main-themes/human-quirks/</guid>
+      <guid>https://chenterry.com/main-themes/human-quirks/</guid>
       <description>Observing and understanding the strange quirks of individuals and crowds</description>
       
       
@@ -55,10 +55,10 @@
     
     <item>
       <title>Tech History</title>
-      <link>http://localhost:1313/main-themes/tech-history/</link>
+      <link>https://chenterry.com/main-themes/tech-history/</link>
       <pubDate>Tue, 19 Mar 2024 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/main-themes/tech-history/</guid>
+      <guid>https://chenterry.com/main-themes/tech-history/</guid>
       <description>Exploring the evolution of technology and its impact on society.</description>
       
       
@@ -82,10 +82,10 @@
     
     <item>
       <title>Multi-agent LLM Systems</title>
-      <link>http://localhost:1313/main-themes/multi-agent-systems/</link>
+      <link>https://chenterry.com/main-themes/multi-agent-systems/</link>
       <pubDate>Sun, 20 Aug 2023 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/main-themes/multi-agent-systems/</guid>
+      <guid>https://chenterry.com/main-themes/multi-agent-systems/</guid>
       <description>Developing capable multi-agent systems for complex reasoning and human-AI collaboration.</description>
       
       
@@ -109,10 +109,10 @@
     
     <item>
       <title>Data Insights</title>
-      <link>http://localhost:1313/main-themes/data-insights/</link>
+      <link>https://chenterry.com/main-themes/data-insights/</link>
       <pubDate>Fri, 18 Aug 2023 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/main-themes/data-insights/</guid>
+      <guid>https://chenterry.com/main-themes/data-insights/</guid>
       <description>Extracting meaningful insights from unstructured multi-modal content.</description>
       
       

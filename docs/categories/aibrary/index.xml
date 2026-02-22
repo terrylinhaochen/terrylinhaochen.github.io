@@ -2,15 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     <title>Aibrary - Terry Chen</title>
-    <link>http://localhost:1313/categories/aibrary/</link>
+    <link>https://chenterry.com/categories/aibrary/</link>
     <description>Hi, this is Terry. I&#39;m documenting my product ideas and learning notes in this blog. I&#39;m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description>
     <language>en-us</language>
     <managingEditor>Terry Chen (Terry Chen)</managingEditor>
     <webMaster>Terry Chen (Terry Chen)</webMaster>
-    <copyright>© 2025 Terry Chen. All rights reserved.</copyright>
+    <copyright>© 2026 Terry Chen. All rights reserved.</copyright>
     <lastBuildDate>Sun, 26 Oct 2025 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="http://localhost:1313/categories/aibrary/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://chenterry.com/categories/aibrary/index.xml" rel="self" type="application/rss+xml" />
     
     <generator>Hugo 0.136.2</generator>
     <category>Technology</category>
@@ -18,9 +18,9 @@
     <category>Product Engineering</category>
     <category>Investment Analysis</category>
     <image>
-      <url>http://localhost:1313/images/profile.jpg</url>
+      <url>https://chenterry.com/images/profile.jpg</url>
       <title>Terry Chen</title>
-      <link>http://localhost:1313/</link>
+      <link>https://chenterry.com/</link>
       <description>Hi, this is Terry. I&#39;m documenting my product ideas and learning notes in this blog. I&#39;m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description>
       <width>144</width>
       <height>144</height>
@@ -28,10 +28,10 @@
     
     <item>
       <title>From Indexing to Understanding Intent in Discovery Systems</title>
-      <link>http://localhost:1313/posts/intent_driven_discovery/</link>
+      <link>https://chenterry.com/posts/intent_driven_discovery/</link>
       <pubDate>Sun, 26 Oct 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/posts/intent_driven_discovery/</guid>
+      <guid>https://chenterry.com/posts/intent_driven_discovery/</guid>
       <description>Discovery is moving from static data retrieval toward systems that understand why a user is searching, not just what they type. The next generation of search experiences must merge precise recall with adaptive reasoning.</description>
       
       
@@ -53,10 +53,10 @@
     
     <item>
       <title>When Knowledge Becomes Fluid: How AI Transforms Learning</title>
-      <link>http://localhost:1313/posts/fluid-knowledge-ai-transforms-learning/</link>
+      <link>https://chenterry.com/posts/fluid-knowledge-ai-transforms-learning/</link>
       <pubDate>Sun, 26 Oct 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/posts/fluid-knowledge-ai-transforms-learning/</guid>
+      <guid>https://chenterry.com/posts/fluid-knowledge-ai-transforms-learning/</guid>
       <description>Exploring how generative AI transforms static knowledge into dynamic, adaptive learning experiences. From fixed formats to fluid, contextual understanding that reshapes education and content consumption.</description>
       
       
@@ -78,10 +78,10 @@
     
     <item>
       <title>Value Add of AI: Generation as Distribution</title>
-      <link>http://localhost:1313/posts/generation_distribution/</link>
+      <link>https://chenterry.com/posts/generation_distribution/</link>
       <pubDate>Thu, 08 May 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/posts/generation_distribution/</guid>
+      <guid>https://chenterry.com/posts/generation_distribution/</guid>
       <description>Exploring how AI&#39;s greatest value shifts from content creation to personalized distribution and synthesis. From RSS feeds to knowledge liquefaction and the future of adaptive content experiences.</description>
       
       
@@ -107,10 +107,10 @@
     
     <item>
       <title>Exploring Unknown Unknowns</title>
-      <link>http://localhost:1313/posts/learning_interface/</link>
+      <link>https://chenterry.com/posts/learning_interface/</link>
       <pubDate>Sat, 05 Oct 2024 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/posts/learning_interface/</guid>
+      <guid>https://chenterry.com/posts/learning_interface/</guid>
       <description>Development of intelligent knowledge interfaces that help users discover unknown unknowns. Technical implementation of AI-powered learning systems and knowledge discovery platforms.</description>
       
       

@@ -2,15 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     <title>Posts - Terry Chen</title>
-    <link>http://localhost:1313/tags/posts/</link>
+    <link>https://chenterry.com/tags/posts/</link>
     <description>Hi, this is Terry. I&#39;m documenting my product ideas and learning notes in this blog. I&#39;m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description>
     <language>en-us</language>
     <managingEditor>Terry Chen (Terry Chen)</managingEditor>
     <webMaster>Terry Chen (Terry Chen)</webMaster>
-    <copyright>© 2025 Terry Chen. All rights reserved.</copyright>
-    <lastBuildDate>Sat, 01 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <copyright>© 2026 Terry Chen. All rights reserved.</copyright>
+    <lastBuildDate>Sun, 22 Feb 2026 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="http://localhost:1313/tags/posts/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://chenterry.com/tags/posts/index.xml" rel="self" type="application/rss+xml" />
     
     <generator>Hugo 0.136.2</generator>
     <category>Technology</category>
@@ -18,20 +18,76 @@
     <category>Product Engineering</category>
     <category>Investment Analysis</category>
     <image>
-      <url>http://localhost:1313/images/profile.jpg</url>
+      <url>https://chenterry.com/images/profile.jpg</url>
       <title>Terry Chen</title>
-      <link>http://localhost:1313/</link>
+      <link>https://chenterry.com/</link>
       <description>Hi, this is Terry. I&#39;m documenting my product ideas and learning notes in this blog. I&#39;m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description>
       <width>144</width>
       <height>144</height>
     </image>
     
     <item>
+      <title>Running a 1-Person Billion Dollar Company: The AI Stack That Makes It Possible</title>
+      <link>https://chenterry.com/posts/one-person-billion/</link>
+      <pubDate>Sun, 22 Feb 2026 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/posts/one-person-billion/</guid>
+      <description>The complete toolkit for building a billion-dollar company with a team of one. How AI agents handle research, coding, operations, and marketing while you focus on vision.</description>
+      
+      
+        
+          
+          <category>AI Application &amp; Value Creation Layer</category>
+          
+        
+      
+      
+        
+          
+          <category>Posts</category>
+          
+          <category>Entrepreneurship</category>
+          
+          <category>AI</category>
+          
+          <category>Product</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2026-02-22T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>The Closing Window Frame of AI Applications</title>
+      <link>https://chenterry.com/posts/closing_window_ai/</link>
+      <pubDate>Wed, 12 Nov 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/posts/closing_window_ai/</guid>
+      <description>Reflections on timing, momentum, and the urgency of positioning in the rapidly evolving AI landscape. From early optimism to the reality of commercialization challenges.</description>
+      
+      
+      
+        
+          
+          <category>Posts</category>
+          
+          <category>Observations</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-11-12T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
       <title>Learnings from Every on Building an AI-Native Startup</title>
-      <link>http://localhost:1313/posts/ai_native/</link>
+      <link>https://chenterry.com/posts/ai_native/</link>
       <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/posts/ai_native/</guid>
+      <guid>https://chenterry.com/posts/ai_native/</guid>
       <description>How Every built a million-dollar AI business with just 15 people by embracing AI-first operations. Their engineers write virtually zero code while publishing daily newsletters, shipping products, and running consulting—the most radical example of AI-native operations.</description>
       
       
@@ -52,11 +108,32 @@
     </item>
     
     <item>
+      <title>Preparing for Associate Product Manager Interviews: A Comprehensive Guide</title>
+      <link>https://chenterry.com/posts/apm-interview-preparation-guide/</link>
+      <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/posts/apm-interview-preparation-guide/</guid>
+      <description>Everything you need to know to ace your APM interviews at top tech companies. Covers behavioral questions, product sense, technical skills, and strategic thinking frameworks.</description>
+      
+      
+      
+        
+          
+          <category>Posts</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-11-01T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
       <title>The Best Practices Lie: On Dealing with Ambiguity</title>
-      <link>http://localhost:1313/posts/ambiguity/</link>
+      <link>https://chenterry.com/posts/ambiguity/</link>
       <pubDate>Fri, 31 Oct 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/posts/ambiguity/</guid>
+      <guid>https://chenterry.com/posts/ambiguity/</guid>
       <description>The methodologies that get you into elite institutions—optimized for speed and pattern recognition—become liabilities when facing the genuine ambiguity of startups and real-world problems.</description>
       
       
@@ -80,10 +157,10 @@
     
     <item>
       <title>When to Sunset a Product: A Decision Framework for Entrepreneurs</title>
-      <link>http://localhost:1313/posts/when-to-sunset-a-product/</link>
+      <link>https://chenterry.com/posts/when-to-sunset-a-product/</link>
       <pubDate>Sat, 12 Jul 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/posts/when-to-sunset-a-product/</guid>
+      <guid>https://chenterry.com/posts/when-to-sunset-a-product/</guid>
       <description>A framework for deciding when to sunset products and projects. Understanding opportunity costs, sunk cost fallacy, and making difficult decisions about failing ventures. Essential guidance for startup founders and product managers.</description>
       
       
@@ -105,10 +182,10 @@
     
     <item>
       <title>Using LLMs as a Cover up for Poor Thinking</title>
-      <link>http://localhost:1313/posts/poor_thinking/</link>
+      <link>https://chenterry.com/posts/poor_thinking/</link>
       <pubDate>Mon, 16 Jun 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/posts/poor_thinking/</guid>
+      <guid>https://chenterry.com/posts/poor_thinking/</guid>
       <description>How the ease of LLM-generated content masks poor reasoning and why developing domain expertise remains crucial for meaningful innovation beyond automated productivity gains.</description>
       
       
@@ -128,10 +205,10 @@
     
     <item>
       <title>Questions as the New Bottleneck in Learning</title>
-      <link>http://localhost:1313/posts/questions-new-bottleneck-learning/</link>
+      <link>https://chenterry.com/posts/questions-new-bottleneck-learning/</link>
       <pubDate>Wed, 14 May 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/posts/questions-new-bottleneck-learning/</guid>
+      <guid>https://chenterry.com/posts/questions-new-bottleneck-learning/</guid>
       <description>In an age of infinite information, asking the right questions has become more valuable than finding answers. Exploring how question formulation is transforming education and knowledge acquisition in the AI era.</description>
       
       
@@ -151,10 +228,10 @@
     
     <item>
       <title>Value Add of AI: Generation as Distribution</title>
-      <link>http://localhost:1313/posts/generation_distribution/</link>
+      <link>https://chenterry.com/posts/generation_distribution/</link>
       <pubDate>Thu, 08 May 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/posts/generation_distribution/</guid>
+      <guid>https://chenterry.com/posts/generation_distribution/</guid>
       <description>Exploring how AI&#39;s greatest value shifts from content creation to personalized distribution and synthesis. From RSS feeds to knowledge liquefaction and the future of adaptive content experiences.</description>
       
       
@@ -180,10 +257,10 @@
     
     <item>
       <title>Product Engineers and AI Multipliers</title>
-      <link>http://localhost:1313/posts/product_engineers/</link>
+      <link>https://chenterry.com/posts/product_engineers/</link>
       <pubDate>Sat, 19 Apr 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen&#39; (Terry Chen&#39;)</author>
-      <guid>http://localhost:1313/posts/product_engineers/</guid>
+      <guid>https://chenterry.com/posts/product_engineers/</guid>
       <description>How AI is transforming product engineering teams into smaller, more efficient units. Learn why product engineers are becoming more valuable than traditional product managers in AI-first organizations.</description>
       
       
@@ -209,10 +286,10 @@
     
     <item>
       <title>Interesting Reads</title>
-      <link>http://localhost:1313/posts/interesting_reads/</link>
+      <link>https://chenterry.com/posts/interesting_reads/</link>
       <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/posts/interesting_reads/</guid>
+      <guid>https://chenterry.com/posts/interesting_reads/</guid>
       <description>Curated collection of compelling articles and insights on AI agents, entrepreneurship, and product development. Features analysis of breakthrough AI tools and emerging trends.</description>
       
       
@@ -234,10 +311,10 @@
     
     <item>
       <title>The Craft of Miyazaki in an AI-Generated World</title>
-      <link>http://localhost:1313/posts/craft_miyakazi/</link>
+      <link>https://chenterry.com/posts/craft_miyakazi/</link>
       <pubDate>Thu, 27 Mar 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/posts/craft_miyakazi/</guid>
+      <guid>https://chenterry.com/posts/craft_miyakazi/</guid>
       <description>Explore Hayao Miyazaki&#39;s meticulous animation process and its significance in today&#39;s AI-generated creative landscape. Learn about the value of craft in a world of automated content.</description>
       
       
@@ -257,10 +334,10 @@
     
     <item>
       <title>User Needs &amp; Opportunities</title>
-      <link>http://localhost:1313/posts/user-needs/</link>
+      <link>https://chenterry.com/posts/user-needs/</link>
       <pubDate>Tue, 25 Mar 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/posts/user-needs/</guid>
+      <guid>https://chenterry.com/posts/user-needs/</guid>
       <description>Identifying real user pain points and business opportunities through conversations and online research. A collection of validated user needs that could become viable startups.</description>
       
       
@@ -283,34 +360,11 @@
     </item>
     
     <item>
-      <title>The Closing Window Frame of AI Applications</title>
-      <link>http://localhost:1313/posts/closing_window_ai/</link>
-      <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
-      <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/posts/closing_window_ai/</guid>
-      <description>Reflections on timing, momentum, and the urgency of positioning in the rapidly evolving AI landscape. From early optimism to the reality of commercialization challenges.</description>
-      
-      
-      
-        
-          
-          <category>Posts</category>
-          
-          <category>Observations</category>
-          
-        
-      
-      
-      <dc:creator>Terry Chen</dc:creator>
-      <dc:date>2025-01-15T00:00:00Z</dc:date>
-    </item>
-    
-    <item>
       <title>The First Stage: A Reflection</title>
-      <link>http://localhost:1313/posts/2024-year-review-startup-lessons/</link>
+      <link>https://chenterry.com/posts/2024-year-review-startup-lessons/</link>
       <pubDate>Tue, 31 Dec 2024 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/posts/2024-year-review-startup-lessons/</guid>
+      <guid>https://chenterry.com/posts/2024-year-review-startup-lessons/</guid>
       <description>Reflecting on 2024: lessons from founding Cogno, the importance of hands-on product development, choosing college over dropping out, and key insights for first-time founders building AI products.</description>
       
       
@@ -330,10 +384,10 @@
     
     <item>
       <title>How to Work on What You Love: Career Advice from Top Entrepreneurs</title>
-      <link>http://localhost:1313/posts/how-to-work-on-what-you-love/</link>
+      <link>https://chenterry.com/posts/how-to-work-on-what-you-love/</link>
       <pubDate>Sun, 01 Sep 2024 00:00:00 +0000</pubDate>
-      <author>Patrick Collison, Paul Graham, etc (Patrick Collison, Paul Graham, etc)</author>
-      <guid>http://localhost:1313/posts/how-to-work-on-what-you-love/</guid>
+      <author>Patrick Collison, Paul Graham, Sam Altman, etc (Patrick Collison, Paul Graham, Sam Altman, etc)</author>
+      <guid>https://chenterry.com/posts/how-to-work-on-what-you-love/</guid>
       <description>Curated advice from successful entrepreneurs and thinkers on finding passion, going deep on interests, and building a meaningful career doing what you love. Insights from Patrick Collison, Paul Graham, and other successful founders.</description>
       
       
@@ -347,16 +401,16 @@
         
       
       
-      <dc:creator>Patrick Collison, Paul Graham, etc</dc:creator>
+      <dc:creator>Patrick Collison, Paul Graham, Sam Altman, etc</dc:creator>
       <dc:date>2024-09-01T00:00:00Z</dc:date>
     </item>
     
     <item>
       <title>Essence of Creativity: Future of Creative Work</title>
-      <link>http://localhost:1313/posts/essense_of_creativity/</link>
+      <link>https://chenterry.com/posts/essense_of_creativity/</link>
       <pubDate>Sun, 25 Aug 2024 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/posts/essense_of_creativity/</guid>
+      <guid>https://chenterry.com/posts/essense_of_creativity/</guid>
       <description>Exploring the intersection of AI-generated content and human creativity. Analysis of creative workflows, multimodal interactions, and the future of content creation in the AI era.</description>
       
       
