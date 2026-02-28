@@ -109,6 +109,77 @@ The result: community contributors submit PRs written with Claude Code. His land
 
 His `CLAUDE.md`, by the way, is 9 bytes. It just contains `AGENTS.md`. Claude Code reads `CLAUDE.md` by convention; it redirects to the full instruction set. Tool-agnostic by design.
 
+<details>
+<summary><strong>📄 openclaw/openclaw AGENTS.md — selected excerpts (click to expand)</strong></summary>
+
+The sections most relevant to how the multi-agent workflow actually operates:
+
+**Commit conventions — the `scripts/committer` tool:**
+```
+Create commits with `scripts/committer "<msg>" <file...>`; avoid manual
+`git add`/`git commit` so staging stays scoped.
+Follow concise, action-oriented commit messages (e.g., `CLI: add verbose flag to send`).
+Group related changes; avoid bundling unrelated refactors.
+```
+
+**The `sync` shorthand:**
+```
+sync: if working tree is dirty, commit all changes (pick a sensible Conventional
+Commit message), then git pull --rebase; if rebase conflicts and cannot resolve,
+stop; otherwise git push.
+```
+
+**Multi-agent safety rules:**
+```
+- Do not create/apply/drop git stash entries unless explicitly requested
+  (this includes git pull --rebase --autostash). Assume other agents may be
+  working; keep unrelated WIP untouched and avoid cross-cutting state changes.
+
+- When the user says "push", you may git pull --rebase to integrate latest
+  changes (never discard other agents' work).
+
+- When the user says "commit", scope to your changes only.
+  When the user says "commit all", commit everything in grouped chunks.
+
+- Do not create/remove/modify git worktree checkouts unless explicitly requested.
+
+- Do not switch branches unless explicitly requested.
+
+- Running multiple agents is OK as long as each agent has its own session.
+
+- When you see unrecognized files, keep going; focus on your changes and commit
+  only those.
+```
+
+**Lint/format churn — keeps agents from creating noise commits:**
+```
+- If staged+unstaged diffs are formatting-only, auto-resolve without asking.
+- If commit/push already requested, auto-stage and include formatting-only
+  follow-ups in the same commit (or a tiny follow-up), no extra confirmation.
+- Only ask when changes are semantic (logic/data/behavior).
+```
+
+**Security guardrails:**
+```
+- Never commit or publish real phone numbers, videos, or live configuration values.
+- Never send streaming/partial replies to external messaging surfaces (WhatsApp,
+  Telegram); only final replies should be delivered there.
+- Never edit node_modules.
+- Never update the Carbon dependency.
+```
+
+**PR workflow:**
+```
+Full maintainer PR workflow (optional): If you want the repo's end-to-end
+maintainer workflow (triage order, quality bar, rebase rules, commit/changelog
+conventions, co-contributor policy, and the review-pr > prepare-pr > merge-pr
+pipeline), see .agents/skills/PR_WORKFLOW.md.
+```
+
+<p><a href="https://github.com/openclaw/openclaw/blob/main/AGENTS.md" target="_blank" rel="noopener">→ View the full 23.5KB AGENTS.md on GitHub</a></p>
+
+</details>
+
 ---
 
 ## Blast Radius
