@@ -39,12 +39,7 @@ Software Engineers should become "Product Engineers" as LLMs have commoditized r
 
 As AI handles more of the routine implementation work, the traits we look for in product engineers should also evolve. The most valuable skills now center around workflow generation and new idea creation rather than implementation details. The ability to conceptualize solutions, design effective workflows, and identify the right problems to solve becomes paramount.
 
-Product engineers who excel in this new environment should demonstrate:
-- Strong systems thinking across the entire product lifecycle
-- The ability to rapidly iterate and test hypotheses 
-- Comfort with ambiguity and exploration over rigid planning
-- Skill in designing human-AI collaboration workflows
-- An understanding of when to leverage AI and when to apply human judgment
+The traits that matter are harder to enumerate but easier to recognize. It's strong systems thinking across the full lifecycle. It's comfort with ambiguity over rigid planning, and a willingness to iterate before you fully understand the problem. It's knowing when to reach for AI and when to apply your own judgment — and being honest about the difference. And increasingly, it's the ability to design human-AI workflows, not just human workflows.
 
 This shift means that strong ICs with AI fluency can now accomplish what previously required teams of specialists. For early-stage startups, this dramatically changes the calculus around hiring, especially for traditional product management roles.
 
@@ -61,12 +56,7 @@ Lütke emphasizes that "reflexive AI usage is now a baseline expectation at Shop
 As AI handles more of the execution, the differentiating factor for product engineers becomes "taste" - the ability to discern what makes for excellent product design, user experience, and strategic direction. Product taste is what separates adequate solutions from exceptional ones. In a world where AI can generate competent designs and functional code, the human with superior taste becomes indispensable. "Just like how the constraints on design at companies is often not a problem of pixels, but of people" (Kwok, 2020). As technical constraints dissolve through AI assistance, the human factors around judgment, taste, and strategic direction become the primary differentiators.
 
 
-Taste involves the ability to:
-- Identify which problems are worth solving
-- Determine the appropriate level of complexity for solutions
-- Recognize when simplicity serves users better than feature-richness
-- Balance aesthetic appeal with functional needs
-- Anticipate user needs before they're explicitly requested
+Taste is mostly about knowing what not to build, and knowing when to stop. When to add complexity and when simplicity serves the user better. How to anticipate what someone will want before they ask for it. These are judgment calls that require understanding users as people rather than as metrics, and they don't get automated.
 
 These skills can't be easily replicated by AI systems. While AI can execute with increasing competence, it still lacks the intuitive understanding of human needs and experiences that informs good taste.
 

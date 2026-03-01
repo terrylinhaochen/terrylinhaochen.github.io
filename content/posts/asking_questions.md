@@ -9,47 +9,20 @@ slug: "questions-new-bottleneck-learning"
 canonical: "https://terrylinhaochen.github.io/posts/questions-new-bottleneck-learning/"
 ---
 
-## Introduction
+Sometime last year I was trying to understand how transformer attention actually works — not the hand-wavy explanation, but the math behind why scaled dot-product attention is scaled. I spent an hour on YouTube and came away more confused than when I started. Then I asked Claude to explain it, and I still didn't get it. The problem wasn't the model. The problem was that I didn't know enough to ask the right question.
 
-We live in an era of unprecedented access to information. The web contains almost all the knowledge needed to complete virtually any task, yet many of us still struggle to learn effectively. Our ability to ask the right questions has become the limiting factor in unlocking knowledge acquisition. This fundamental shift is transforming how we learn, build expertise, and might revolutionize education itself.
+That experience pointed at something I keep running into. The web has basically all the knowledge I could ever need. Language models can synthesize it on demand. And yet learning still bottlenecks in the same place it always has: knowing what to ask. Not whether answers exist, but whether you can formulate a question precise enough to get the answer you actually need.
 
-## The Traditional Knowledge Landscape
+What makes this weird is that the question-formulation problem used to be hidden by good teachers. A good teacher's actual value isn't the information they carry — it's their ability to diagnose what you don't understand from the way you talk about it, and then address the gap you didn't know to name. I've had professors who could tell from one sentence that I was confused about notation versus concept, and redirect accordingly. That's not information transfer. That's interpretive work on the question I failed to ask.
 
-Historically, human conversations have been the default method of acquiring knowledge. We seek out doctors for medical advice, mechanics for car problems, and teachers for academic subjects. These experts are valuable not just for their knowledge, but for their ability to understand questions we may not be able to formulate ourselves.
+Language models are getting surprisingly good at this too, but only if you give them something to work with. The limiting factor shifts to you: can you describe your confusion in enough detail that the system can respond to where you actually are, not where you think you are?
 
-What makes human-to-human teaching so effective is an expert's ability to address our "unknown unknowns." A good teacher has seen countless students facing similar challenges and can explain concepts at the appropriate level of understanding. They can conceptualize and respond to gaps in knowledge that students themselves might not recognize.
+I don't think this makes good questions more important in some abstract sense. I think it makes them important in a concrete, immediately practical way — because the gap between a vague question and a precise one now has measurable consequences. With a vague question, you get a generic answer you already knew. With a precise one, you get exactly what you needed.
 
-## The Changing Nature of Expertise
+The skill isn't really about asking questions. It's about being honest about what you don't understand. These feel related but they're different. Asking questions is a conversational behavior. Being honest about confusion requires you to first notice that you're confused, which is harder than it sounds. Most people feel a general fog and stop there. The ones who learn faster tend to be the ones who can locate exactly where the fog is — "I understand why attention weights are normalized, but I don't understand what query/key/value are actually doing geometrically" — and then ask about that specific thing.
 
-The traditional path to expertise has been structured and comprehensive. School builds foundational knowledge across multiple disciplines—calculus, linear algebra, and other fundamentals that eventually lead to specialized topics like machine learning or language models.
+I'm not sure whether this skill is teachable in the traditional sense. You kind of have to develop it through failure — through realizing that the answer you got was useless because your question was bad. But that feedback loop is faster now than it's ever been, which might matter. If every bad question is answered in seconds, you get more opportunities to notice the pattern.
 
-However, a new paradigm is emerging. With language models (and the theoretical ability to ask perfect questions), one could develop targeted slices of knowledge directly related to specific tasks—whether building an electric boat, a rocket, or any other complex project. This approach enables a more direct path to practical knowledge.
+What this probably changes about education is harder to say. I don't think it means less school — school does things that don't have much to do with information transfer, and those things still matter. But I think it shifts what the valuable part of school is. The most useful thing a teacher can do now might not be explaining things, but modeling how to ask. Showing what it looks like when someone notices they're confused and converts that into a question precise enough to resolve.
 
-School still offers invaluable benefits beyond the curriculum itself. It creates structure, provides community, and compels us to explore topics we might otherwise avoid. It exposes us to applications we wouldn't have discovered independently. But the rigid structure has limitations in an age of personalized learning.
-
-## Historical Barriers to Self-Directed Learning
-
-What has prevented us from simply learning everything we need from the web? Several key barriers have existed:
-
-1. **Institutional confinement**: Knowledge was traditionally locked within institutions, requiring physical presence to access resources and expertise.
-
-2. **Content variability**: Even with open courseware, YouTube, and similar platforms, not every lecture or video guarantees the information you specifically need.
-
-3. **Difficulty calibration**: Content creators don't know your expertise level. When material underestimates your knowledge, it becomes boring. When it overestimates your background, you risk getting lost and losing motivation.
-
-The fundamental question becomes: Can we design systems that meet learners where they are?
-
-## The Potential of Question-Driven Learning
-
-Language models have compiled vast amounts of knowledge (excluding proprietary company data). However, this knowledge isn't truly at our fingertips because:
-
-1. We don't always know what to ask
-2. Systems aren't familiar enough with us as individuals to present information in easily digestible ways
-
-Theoretically, driven by precisely calibrated questions with adequate depth and breadth, we could achieve the quickest mastery of the minimal knowledge needed to complete any task. The ability to integrate this capability into our learning process will differentiate those who can ride this wave of knowledge transformation.
-
-## Conclusion
-
-This transformation creates tremendous opportunities for both individuals and companies. For learners, developing the skill to ask excellent questions becomes as valuable as the knowledge itself. For companies, there's an opportunity to build products that facilitate this question-driven, personalized learning approach.
-
-As we move forward, the limiting factor in knowledge acquisition will increasingly be our ability to ask the right questions rather than access to information itself. Those who master the art of asking will unlock potential beyond what traditional educational systems could provide.
+That's something I'm still trying to get better at myself. The attention mechanism thing: I eventually got there. But it took me asking six different variations of the same question before I understood why I kept getting answers that didn't help me.

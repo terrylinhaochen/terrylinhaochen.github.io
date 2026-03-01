@@ -7,65 +7,20 @@ tags: ["Observations", "Product", "Posts"]
 categories: aibrary
 ---
 
-## The Evolution of AI Value
+I spent a summer interning at China Impact Investing Network, a few blocks from Huangzhuang, earning 100 RMB a day doing translation and RSS aggregation. It was mostly tedious. Someone would point me at a feed, I'd scan through items, pull anything that seemed relevant to impact investing in China, and write a short summary. Three months of that. Now GPT does it in seconds.
 
-The first wave of generative AI focused primarily on content creation - ChatGPT writing articles, Midjourney generating images, essentially replacing traditional production roles. However, as these technologies mature, their greatest value might well shift towards distribution and personalization rather than raw production.
+That's the part of the AI story that doesn't get told enough: the first wave of value wasn't replacing creative professionals, it was replacing the clerical work that used to sit between information and understanding. Aggregation, summarization, format conversion, translation — tasks that were expensive enough to require humans but not interesting enough for humans to do well.
 
-## From RSS to Recommender Systems
+The thing I've been thinking about more recently is what comes after that. Once generation is cheap, what's the new bottleneck?
 
-The evolution of content distribution reveals how technology repeatedly transforms information access. RSS (Really Simple Syndication) represented an early attempt to solve content discovery, providing a pull-based system where users subscribed to feeds they cared about.
+My guess is distribution — but not in the simple "getting content to people" sense. In the sense of: getting the right version of something to the right person. The broadcast model assumed one piece of content, many readers. The recommendation model tried to route existing content to the people most likely to engage with it. Neither is the same as saying: take this idea, and instantiate it in whatever form actually fits this specific person right now.
 
-> *Personal Note: I interned at China Impact Investing Network (CINN), down the road from Huangzhuang, earning 100 RMB daily for translation and RSS-related tasks - work that would now be largely automated by GPT.*
+That last thing is what "generation as distribution" means to me. It's not creating content and then distributing it. It's creating content in the act of distributing it — generating the specific version that serves this person in this context, rather than finding the existing version that comes closest.
 
-As content volume exploded, the focus shifted to algorithmic distribution through recommender systems. These attempted to match existing content to user preferences through increasingly sophisticated methods, but still fundamentally operated on a "create once, distribute many times" model.
+This is a real difference. A business book written for general audiences misses 80% of the readers who might have benefited from it, because the framing doesn't match their background or the examples don't map to their industry or the pace is wrong. If you can generate personalized versions — same core ideas, different surface — you're not making a distribution problem go away. You're transforming a distribution problem into a generation problem, which is now cheap.
 
-## Content Creation vs. Distribution Costs
+The limitation is context. To generate the right version, the system needs to know enough about the person to make the right choices. That's still hard. Most "personalization" is shallow — it adjusts reading level or inserts your name. The meaningful personalization requires understanding not just what you know but how you think, what analogies will land, what framing will be legible versus opaque. That's a different kind of modeling than recommendation engines typically do.
 
-The economics of content have always been defined by the balance between creation and distribution costs, as illustrated in our visualization. Traditional models rely on two fundamentally different approaches:
+I don't think this entirely displaces human content creation. Something is lost in pure generation — the particular perspective, the idiosyncratic observation, the detail that makes you feel like you're inside someone's mind. That has value that personalization can't substitute. But for a certain class of knowledge transfer — the kind where the goal is just understanding, not the pleasure of the text itself — generated and personalized is probably going to beat broadcast and optimized.
 
-### Professional vs. User-Generated Content Economics
-
-Traditional PGC platforms invest heavily in upfront content creation ($200-500 per article) while optimizing distribution costs ($0.001 per user). This creates an economic model where high-quality, centrally produced content must reach massive scale to be sustainable. Users remain passive consumers with minimal influence on content direction.
-
-UGC platforms invert this model by outsourcing creation costs to users while investing primarily in discovery infrastructure. This creates greater diversity but inconsistent quality. Both approaches increasingly allocate resources to distribution rather than creation as competition for attention intensifies.
-
-The discovery paradox emerges: as content volume increases, the marginal value of new content approaches zero without effective discovery mechanisms. Users face decision fatigue from too many choices, and the market naturally shifts investment toward discovery rather than production.
-
-## Generation as Distribution: Personalized Content at Scale
-
-AI fundamentally changes this paradigm by collapsing the distinction between production and distribution. When content can be generated at the moment of consumption, personalized for each user, the model shifts from:
-
-Traditional: Create once → Distribute to millions  
-Generative: Create parameters → Generate millions of variations
-
-The dual-axis economics chart reveals this transformation. Traditional content scales efficiently after high initial investment but delivers mediocre value. Generative approaches provide dramatically higher user value but face linearly increasing costs that become prohibitive at scale.
-
-The optimal approach emerges through content modularity - recognizing that not everything needs regeneration. By identifying which components provide the most personalization value, hybrid approaches can maintain 80% of personalization benefits at 30% of the cost.
-
-## The 60/20/20 Rule: Strategic Content Modularity
-
-Most knowledge domains contain substantial core material that remains consistent across users. The 60/20/20 rule maximizes efficiency by segmenting content into:
-
-- 60% static core content (foundational principles, established facts)
-- 20% cohort-level content (industry examples, cultural contexts)
-- 20% individual personalization (connections to personal experience, learning pace)
-
-This approach creates a fundamentally different economic curve that scales more efficiently than traditional content while maintaining most personalization benefits. For a business book distributed to 50,000 professionals, this approach can deliver twice the relevance at the same cost as traditional publishing.
-
-## Multi-modal Personalization: Beyond Text
-
-The personalization paradigm extends beyond text to encompass multiple modalities. Content can dynamically transform between formats - text summaries becoming virtual presenter videos, complex topics converting to interactive explanations, news transforming into personalized audio briefings. This multi-modal capability increases generation costs but dramatically enhances engagement and information retention.
-
-These cross-modal transformations add approximately 30-40% to generation costs but can increase engagement by 200-300%, creating compelling economics despite the higher production expense. Each user's preferred learning style becomes another dimension for personalization.
-
-## The User Advocate: Beyond Algorithmic Recommendation
-
-The most powerful personalization emerges not from content formatting but from deeper user understanding. The User Advocate concept represents an AI persona that truly comprehends the user's interests, knowledge level, and perspective, then guides content creation accordingly.
-
-Unlike recommendation systems that rely on sparse signals, the Advocate builds a comprehensive user model through conversation and observation. This enables exploration of "unknown unknowns" - valuable topics users didn't know to search for. The approach fundamentally changes platform economics by aligning incentives with actual user satisfaction rather than engagement metrics.
-
-## Fluid Knowledge and the Future
-
-The most significant impact of AI lies not in replacing content creators but in transforming how knowledge flows to individuals. As the internet solved information scarcity, generative AI now solves the problem of relevance through "fluid knowledge" (知识液化) that adapts perfectly to each person's context.
-
-In this emerging paradigm, content becomes transformable across formats, users experience the feeling of being truly understood, and exploration replaces search as the primary discovery model. The User Advocate becomes a critical interface between vast information spaces and human understanding, fundamentally changing our relationship with knowledge acquisition.
+I'm still uncertain about the economics of this. If every user gets a different version, what does "ownership" of the content even mean? Who captures the value — the model provider, the system designer, the person who wrote the original text that the generation is drawing from? These aren't solved problems. But they're interesting ones, and I think they're the real questions in the AI content space right now, not "can AI write."
