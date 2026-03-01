@@ -8,7 +8,7 @@ description: "I spent a day researching how Peter Steinberger ships hundreds of 
 keywords: ["agentic engineering", "Peter Steinberger", "OpenClaw", "Claude Code", "Codex CLI", "AI agents", "developer workflow", "agent economy", "vibe coding", "spec-driven development", "Two-Context Technique", "CrowdListen"]
 ---
 
-I've been spending hundreds of dollars a month on OpenClaw — the AI agent platform — and wondering if I was getting the most out of it. That question led me down a rabbit hole: how does Peter Steinberger, the person who *built* OpenClaw, actually work?
+I've been spending hundreds of dollars a month on OpenClaw and wondering if I was getting the most out of it. That question led me down a rabbit hole: how does Peter Steinberger, the person who *built* OpenClaw, actually work?
 
 What I found was 8,471 commits across 48 repositories in 72 days. Alone. Not with a team. Not with contractors. With agents.
 
@@ -20,11 +20,11 @@ The answer was simpler and more uncomfortable than I expected.
 
 ## The Three Stages
 
-**Three years ago** I was managing a team of twelve engineers. I wrote zero code. My job was to think about the product, write the specs, and hand them to people who would figure out how. Good engineers resolve ambiguity — they read the spec, find the gaps, push back on the parts that don't make sense. What got built was almost always better than what I wrote down.
+**Three years ago** I was managing a team of twelve engineers. I wrote zero code. My job was to think about the product, write the specs, and hand them to people who would figure out how. Engineers resolved the ambiguity — they read the spec, find the gaps, push back on the parts that don't make sense.
 
-**Two years ago** I went back to building by myself. Writing specs and code — the whole stack. The bottleneck became my own implementation capacity. I could only move as fast as I could type.
+**Two years ago** I went back to building by myself. Writing specs and code — the whole stack. The bottleneck became my own implementation capacity. I could only move as fast as I could type. This also allowed me to experiment with early coding agents and get an early sense of where agents are goig.
 
-Then AI coding assistants got good enough to matter. I started using Claude and Codex constantly. For a long time I told myself I was working at a higher level. But when I looked honestly at how I was using these tools, I realized: **I was still in Stage 2. Just with faster autocomplete.**
+Then AI coding assistants got good enough to matter. I started using Claude and Codex constantly. I shipped 10-20 commits a day, doing what required weeks in hours. For a long time I told myself I was working at a higher level. But when I looked honestly at how I was using these tools, I realized: **I was still in Stage 2. Just with faster autocomplete.**
 
 Database migration I knew the shape of → asked Claude for the syntax.  
 React component I knew the structure of → asked Claude to type it.  
@@ -109,77 +109,6 @@ The result: community contributors submit PRs written with Claude Code. His land
 
 His `CLAUDE.md`, by the way, is 9 bytes. It just contains `AGENTS.md`. Claude Code reads `CLAUDE.md` by convention; it redirects to the full instruction set. Tool-agnostic by design.
 
-<details>
-<summary><strong>📄 openclaw/openclaw AGENTS.md — selected excerpts (click to expand)</strong></summary>
-
-The sections most relevant to how the multi-agent workflow actually operates:
-
-**Commit conventions — the `scripts/committer` tool:**
-```
-Create commits with `scripts/committer "<msg>" <file...>`; avoid manual
-`git add`/`git commit` so staging stays scoped.
-Follow concise, action-oriented commit messages (e.g., `CLI: add verbose flag to send`).
-Group related changes; avoid bundling unrelated refactors.
-```
-
-**The `sync` shorthand:**
-```
-sync: if working tree is dirty, commit all changes (pick a sensible Conventional
-Commit message), then git pull --rebase; if rebase conflicts and cannot resolve,
-stop; otherwise git push.
-```
-
-**Multi-agent safety rules:**
-```
-- Do not create/apply/drop git stash entries unless explicitly requested
-  (this includes git pull --rebase --autostash). Assume other agents may be
-  working; keep unrelated WIP untouched and avoid cross-cutting state changes.
-
-- When the user says "push", you may git pull --rebase to integrate latest
-  changes (never discard other agents' work).
-
-- When the user says "commit", scope to your changes only.
-  When the user says "commit all", commit everything in grouped chunks.
-
-- Do not create/remove/modify git worktree checkouts unless explicitly requested.
-
-- Do not switch branches unless explicitly requested.
-
-- Running multiple agents is OK as long as each agent has its own session.
-
-- When you see unrecognized files, keep going; focus on your changes and commit
-  only those.
-```
-
-**Lint/format churn — keeps agents from creating noise commits:**
-```
-- If staged+unstaged diffs are formatting-only, auto-resolve without asking.
-- If commit/push already requested, auto-stage and include formatting-only
-  follow-ups in the same commit (or a tiny follow-up), no extra confirmation.
-- Only ask when changes are semantic (logic/data/behavior).
-```
-
-**Security guardrails:**
-```
-- Never commit or publish real phone numbers, videos, or live configuration values.
-- Never send streaming/partial replies to external messaging surfaces (WhatsApp,
-  Telegram); only final replies should be delivered there.
-- Never edit node_modules.
-- Never update the Carbon dependency.
-```
-
-**PR workflow:**
-```
-Full maintainer PR workflow (optional): If you want the repo's end-to-end
-maintainer workflow (triage order, quality bar, rebase rules, commit/changelog
-conventions, co-contributor policy, and the review-pr > prepare-pr > merge-pr
-pipeline), see .agents/skills/PR_WORKFLOW.md.
-```
-
-<p><a href="https://github.com/openclaw/openclaw/blob/main/AGENTS.md" target="_blank" rel="noopener">→ View the full 23.5KB AGENTS.md on GitHub</a></p>
-
-</details>
-
 ---
 
 ## Blast Radius
@@ -202,7 +131,7 @@ This is product management skill, not engineering skill. Which changes run in pa
 
 ## The Realization
 
-The skills I built managing twelve engineers are exactly the skills I need to manage twelve agents.
+The skills I built managing an engineering team are exactly the skills I need to manage agents.
 
 Write clear specs. Assess blast radius. Notice when something is drifting and correct before it compounds. Review output, catch the subtle issues, make the architectural calls.
 
