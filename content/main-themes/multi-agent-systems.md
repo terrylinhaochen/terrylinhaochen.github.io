@@ -1,12 +1,12 @@
 ---
-title: "Multi-agent LLM Systems"
+title: "Agentic Workforce"
 date: 2023-08-20
-description: "Developing capable multi-agent systems for complex reasoning and human-AI collaboration."
+description: "What does an organization look like when a meaningful portion of the workforce is non-human?"
 tags: ["Entrepreneurship"]
 categories: ["Research"]
 featured: true
 ---
 
-## Developing capable multi-agent systems for complex reasoning and human-AI collaboration
+## What does an organization look like when a meaningful portion of the workforce is non-human?
 
-Single-agent AI systems have limitations in handling complex tasks that require diverse perspectives and specialized knowledge. Multi-agent architectures can enable more sophisticated reasoning, problem-solving, and collaboration capabilities.
+The interesting question isn't how to use AI agents as tools — it's how to structure work when agents can hold context, make decisions, and execute across long horizons without human intervention at every step. The org chart changes. The spec-writing changes. The definition of a "team" changes.
