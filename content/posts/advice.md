@@ -6,7 +6,7 @@ author: Patrick Collison, Paul Graham, Sam Altman, etc
 tags: ["Posts", "Observations"]
 keywords: ["career advice", "entrepreneurship guidance", "passion projects", "deep work", "Patrick Collison", "Paul Graham advice", "startup career", "following passion", "career development", "entrepreneurial mindset", "finding purpose", "career success"]
 slug: "how-to-work-on-what-you-love"
-canonical: "https://terrylinhaochen.github.io/posts/how-to-work-on-what-you-love/"
+
 ---
 Every now and then I like to read about the advice of others who've succeeded in their field. Here's a few that I personally found to be enlightening and practical. 
 

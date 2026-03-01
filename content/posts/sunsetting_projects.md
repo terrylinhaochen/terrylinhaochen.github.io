@@ -6,7 +6,7 @@ author: Terry Chen
 tags: ["Posts", "Observations", "Entrepreneurship"]
 keywords: ["product sunsetting", "startup failure", "opportunity cost", "product lifecycle", "when to quit startup", "sunk cost fallacy", "product management decisions", "startup pivoting", "resource allocation", "entrepreneurial decision making", "failing fast", "product strategy"]
 slug: "when-to-sunset-a-product"
-canonical: "https://terrylinhaochen.github.io/posts/when-to-sunset-a-product/"
+
 ---
 
 ## Opportunity Costs

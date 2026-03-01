@@ -12,9 +12,25 @@ http://chenterry.com/* https://chenterry.com/:splat 301!
 /projects/* /product/:splat 301
 /blog/* /posts/:splat 301
 
-# 404 page fallback
-/* /404.html 404
+# Fix 404s reported by Google Search Console
+/posts/ai-search-topic-modeling/ /posts/search_topic/ 301
+/posts/essense-of-creativity/ /posts/essense_of_creativity/ 301
+/posts/google-learn-about/ /posts/google_learn_about/ 301
+/posts/google-notebooklm/ /posts/google_notebooklm/ 301
+/posts/being-ai-native/ /posts/ai_native/ 301
+/posts/built_to_last/ /posts/ 301
+/posts/year-in-review/ /posts/2024-year-review-startup-lessons/ 301
+/product/learning_interface/ /posts/learning_interface/ 301
+/product/crowdlistening/ /posts/crowdlisten/ 301
+/product/search/ /search/ 301
+/investing/security/ /posts/ai-powered-security-data-pipelines/ 301
+/archived/case_studies/ /posts/ 301
+/categories/discovery-surfaces/ /categories/ 301
+/categories/enterprise/ /categories/ 301
 
 # Additional redirects for common misspellings or legacy paths
 /portfolio/* /product/:splat 301
 /work/* /product/:splat 301
+
+# 404 page fallback (must be last)
+/* /404.html 404

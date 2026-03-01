@@ -6,7 +6,7 @@ author: Terry Chen
 tags: ["Posts", "Observations"]
 keywords: ["learning optimization", "question formulation", "AI education", "knowledge acquisition", "information overload", "learning strategies", "critical thinking", "educational transformation", "inquiry-based learning", "AI learning tools", "knowledge bottlenecks", "learning efficiency"]
 slug: "questions-new-bottleneck-learning"
-canonical: "https://terrylinhaochen.github.io/posts/questions-new-bottleneck-learning/"
+
 ---
 
 Sometime last year I was trying to understand how transformer attention actually works — not the hand-wavy explanation, but the math behind why scaled dot-product attention is scaled. I spent an hour on YouTube and came away more confused than when I started. Then I asked Claude to explain it, and I still didn't get it. The problem wasn't the model. The problem was that I didn't know enough to ask the right question.

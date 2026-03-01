@@ -36,7 +36,7 @@ In every case I had done the thinking. I handed the agents certainty and kept th
 
 ## What Steinberger Actually Does
 
-When I dug into his workflow — six blog posts in full, GitHub commit history via API, his 23.5KB AGENTS.md file, podcast transcripts, public gists — the picture that emerged was nothing like what I expected.
+When I dug into his workflow — six blog posts in full, GitHub commit history via API, his 23.5KB [AGENTS.MD](https://github.com/steipete/agent-scripts/blob/main/AGENTS.MD) file, podcast transcripts, public gists — the picture that emerged was nothing like what I expected.
 
 The commits aren't from Steinberger typing. They're from agents executing against specs so complete they don't need to ask clarifying questions.
 
@@ -101,7 +101,7 @@ Specific advantages he cites: ~230k usable context vs Claude's 156k, message que
 
 ## The AGENTS.md Is the Product
 
-His AGENTS.md is 23.5KB. That's not a quick-start note. It's an operating manual.
+His [AGENTS.MD](https://github.com/steipete/agent-scripts/blob/main/AGENTS.MD) is 23.5KB. That's not a quick-start note. It's an operating manual.
 
 It includes a custom `scripts/committer` tool that scopes git staging precisely — agents commit only the files they actually touched. A `sync` shorthand: one word = commit + pull rebase + push. Explicit multi-agent safety rules (never use `git reset --hard` on another agent's work, never delete files to silence type errors, always `git status` before committing). A dedicated `.agents/skills/PR_WORKFLOW.md` that defines the full PR triage → review → rebase → merge pipeline.
 

@@ -6,7 +6,7 @@ author: Terry Chen
 tags: ["Posts", "Observations"]
 keywords: ["startup founder experience", "product development lessons", "hands-on coding", "college vs dropping out", "TikTok internship", "Cogno startup", "AI product development", "first-time founder advice", "2024 startup lessons", "product engineering"]
 slug: "2024-year-review-startup-lessons"
-canonical: "https://terrylinhaochen.github.io/posts/2024-year-review-startup-lessons/"
+
 ---
 
 2024 passed quickly, anchored by work that was equal parts challenging and rewarding. Early in the year, after Cogno gained some traction, momentum slowed. We continued to code and talk with customers, but progress came in uneven cycles. Our focus on multi-agent systems felt directionally right, yet we never found a defensible niche in sales conversion.

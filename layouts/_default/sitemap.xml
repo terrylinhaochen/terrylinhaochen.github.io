@@ -4,13 +4,11 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
         
 {{- range .Site.AllPages }}
-  {{- if .Permalink }}
+  {{- if and .Permalink (ne .Section "archived") }}
   <url>
     <loc>{{ .Permalink }}</loc>
     {{- if and .Date (gt .Date.Year 1900) }}
     <lastmod>{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}</lastmod>
-    {{- else }}
-    <lastmod>2025-10-28T00:00:00+00:00</lastmod>
     {{- end }}
     {{- $changefreq := "weekly" }}
     {{- if .IsHome }}

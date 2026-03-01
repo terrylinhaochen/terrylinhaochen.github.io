@@ -6,7 +6,7 @@ author: Terry Chen
 tags: ["Posts"]
 keywords: ["APM interviews", "associate product manager", "product management", "tech interviews", "behavioral questions", "product sense", "case studies", "interview prep", "tech careers", "product strategy"]
 slug: "apm-interview-preparation-guide"
-canonical: "https://terrylinhaochen.github.io/posts/apm-interview-preparation-guide/"
+
 ---
 
 Most APM advice focuses on how to sound like a product manager. But sounding right has never built a great product. What matters is developing the ability to be directionally right about the future — and proving it with metrics.

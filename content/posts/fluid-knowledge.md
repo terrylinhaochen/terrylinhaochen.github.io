@@ -8,7 +8,7 @@ company: "ouraca"
 description: "Exploring how generative AI transforms static knowledge into dynamic, adaptive learning experiences. From fixed formats to fluid, contextual understanding that reshapes education and content consumption."
 keywords: ["fluid knowledge", "generative AI", "adaptive learning", "knowledge synthesis", "learning systems", "AI education", "dynamic content", "interactive learning", "personalized education", "knowledge transformation", "AI learning tools", "educational technology"]
 slug: "fluid-knowledge-ai-transforms-learning"
-canonical: "https://terrylinhaochen.github.io/posts/fluid-knowledge-ai-transforms-learning/"
+
 ---
 
 There's a concept Dan Shipper wrote about — he called it "free energy for text" — that's been sitting with me for a while. The idea is that language models let you transform any piece of knowledge through compression, expansion, or translation at basically zero cost. The same thing that used to take an editor days now takes seconds.

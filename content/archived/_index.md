@@ -1,3 +1,4 @@
 ---
 title: "Archived"
+robotsNoIndex: true
 ---
