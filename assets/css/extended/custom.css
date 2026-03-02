@@ -1145,3 +1145,233 @@ body.dark .caption {
 :root[data-theme="dark"] .post-meta time {
   color: var(--secondary);
 }
+
+/* ===== Content Gate Styles ===== */
+
+/* Fade gradient overlaying the preview content */
+.content-fade {
+  height: 160px;
+  margin-top: -160px;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    var(--entry) 85%
+  );
+  pointer-events: none;
+}
+
+/* Gate card container */
+.content-gate {
+  position: relative;
+  z-index: 2;
+  margin-top: 0;
+}
+
+/* Inner card with form */
+.gate-inner {
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 3rem 2.5rem;
+  text-align: center;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Lock label at top */
+.gate-lock-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  color: var(--secondary);
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px dashed var(--border);
+  width: 100%;
+  justify-content: center;
+}
+
+.gate-lock-label svg {
+  flex-shrink: 0;
+}
+
+/* Main headline */
+.gate-headline {
+  margin: 0 0 0.75rem !important;
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  color: var(--primary) !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.02em;
+}
+
+/* Subtext */
+.gate-subtext {
+  margin: 0 0 1.5rem !important;
+  color: var(--secondary) !important;
+  font-size: 1.05rem !important;
+  line-height: 1.5 !important;
+}
+
+/* Social proof line */
+.gate-social-proof {
+  margin: 0 0 2rem !important;
+  color: var(--primary) !important;
+  font-size: 0.95rem !important;
+  font-weight: 600 !important;
+}
+
+/* Gate email form */
+.gate-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.gate-email-label {
+  text-align: left;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: -2px;
+}
+
+.gate-form input[type="email"] {
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 1rem;
+  background: var(--theme);
+  color: var(--primary);
+  font-family: inherit;
+  text-align: left;
+  transition: border-color 0.2s ease;
+}
+
+.gate-form input[type="email"]::placeholder {
+  color: var(--secondary);
+  opacity: 0.6;
+}
+
+.gate-form input[type="email"]:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.gate-submit-btn {
+  background: var(--primary);
+  color: var(--theme);
+  border: none;
+  padding: 16px 24px;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.gate-submit-btn svg {
+  flex-shrink: 0;
+}
+
+.gate-submit-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.gate-submit-btn:disabled {
+  opacity: 0.6;
+  transform: none;
+  cursor: not-allowed;
+}
+
+/* Disclaimer text */
+.gate-disclaimer {
+  margin: 1.25rem 0 0 !important;
+  font-size: 0.8rem !important;
+  color: var(--secondary) !important;
+  opacity: 0.6;
+}
+
+/* Gate message feedback */
+.gate-message {
+  margin-top: 0.75rem;
+  padding: 10px 14px;
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.gate-message:empty {
+  display: none;
+}
+
+.gate-message.success {
+  background: var(--code-bg);
+  color: var(--primary);
+  border: 1px solid var(--border);
+}
+
+.gate-message.error {
+  background: var(--code-bg);
+  color: var(--primary);
+  border: 1px solid var(--border);
+}
+
+/* Gate unlock animation */
+.gate-unlocking {
+  animation: gateSlideOut 0.5s ease-in forwards;
+}
+
+@keyframes gateSlideOut {
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+/* Revealed content animation */
+.gate-content-reveal {
+  animation: gateContentReveal 0.6s ease-out both;
+}
+
+@keyframes gateContentReveal {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+  .gate-inner {
+    padding: 2rem 1.25rem;
+  }
+
+  .content-fade {
+    height: 100px;
+    margin-top: -100px;
+  }
+
+  .gate-headline {
+    font-size: 1.5rem !important;
+  }
+
+  .gate-subtext {
+    font-size: 0.95rem !important;
+  }
+}

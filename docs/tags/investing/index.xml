@@ -1,1 +1,217 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Investing - Terry Chen</title><link>https://chenterry.com/tags/investing/</link><description>Hi, this is Terry. I'm documenting my product ideas and learning notes in this blog. I'm interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description><language>en-us</language><managingEditor>Terry Chen (Terry Chen)</managingEditor><webMaster>Terry Chen (Terry Chen)</webMaster><copyright>© 2026 Terry Chen. All rights reserved.</copyright><lastBuildDate>Sat, 28 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://chenterry.com/tags/investing/index.xml" rel="self" type="application/rss+xml"/><generator>Hugo 0.136.2</generator><category>Technology</category><category>AI</category><category>Product Engineering</category><category>Investment Analysis</category><image><url>https://chenterry.com/images/profile.jpg</url><title>Terry Chen</title><link>https://chenterry.com/</link><description>Hi, this is Terry. I'm documenting my product ideas and learning notes in this blog. I'm interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description><width>144</width><height>144</height></image><item><title>I Don't Understand How Crypto Is Valued. Period.</title><link>https://chenterry.com/posts/crypto_valuation/</link><pubDate>Sat, 28 Feb 2026 00:00:00 +0000</pubDate><author>Terry Chen (Terry Chen)</author><guid>https://chenterry.com/posts/crypto_valuation/</guid><description>Lost money. Still don't understand how it's priced. That's the whole post.</description><category>Crypto</category><category>Investing</category><dc:creator>Terry Chen</dc:creator><dc:date>2026-02-28T00:00:00Z</dc:date></item><item><title>The Battle for Search: Defining the 10x Infrastructure Layer for an Agentic Future</title><link>https://chenterry.com/posts/battle_for_search/</link><pubDate>Tue, 18 Nov 2025 00:00:00 +0000</pubDate><author>Terry Chen (Terry Chen)</author><guid>https://chenterry.com/posts/battle_for_search/</guid><description>Analyzing the competitive landscape and market opportunity for AI-native search infrastructure as we transition from human-centric to agent-centric web consumption.</description><category>AI Application &amp; Value Creation Layer</category><category>Investing</category><dc:creator>Terry Chen</dc:creator><dc:date>2025-11-18T00:00:00Z</dc:date></item><item><title>Understanding Xiaomi: IP Risk &amp; Starting Again</title><link>https://chenterry.com/posts/xiaomi-primer/</link><pubDate>Fri, 31 Oct 2025 00:00:00 +0000</pubDate><author>Terry Chen (Terry Chen)</author><guid>https://chenterry.com/posts/xiaomi-primer/</guid><description>Understanding Xiaomi's evolution from smartphone maker to comprehensive technology ecosystem, with focus on electric vehicle ambitions and IoT infrastructure. Investment analysis of Xiaomi's diversification strategy.</description><category>Mobility, Energy, and New Infrastructure</category><category>Investing</category><dc:creator>Terry Chen</dc:creator><dc:date>2025-10-31T00:00:00Z</dc:date></item><item><title>OpenAI's Blast Radius</title><link>https://chenterry.com/archived/openai-blast-radius/</link><pubDate>Mon, 27 Oct 2025 00:00:00 +0000</pubDate><author>Terry Chen, Livia Li (Terry Chen, Livia Li)</author><guid>https://chenterry.com/archived/openai-blast-radius/</guid><description>How OpenAI's rapid product development affects the startup ecosystem. Strategic frameworks for building defensible AI applications in the shadow of foundation model giants.</description><category>AI Application &amp; Value Creation Layer</category><category>Investing</category><dc:creator>Terry Chen, Livia Li</dc:creator><dc:date>2025-10-27T00:00:00Z</dc:date></item><item><title>Understanding Google: A Primer</title><link>https://chenterry.com/posts/google_primer/</link><pubDate>Mon, 20 Oct 2025 00:00:00 +0000</pubDate><author>Terry Chen (Terry Chen)</author><guid>https://chenterry.com/posts/google_primer/</guid><description>Understanding the key products that made Google the tech giant today, with a deepdive on new AI features. Exploring Google's evolution from search to AI-powered ecosystem and investment implications.</description><category>AI Application &amp; Value Creation Layer</category><category>Investing</category><dc:creator>Terry Chen</dc:creator><dc:date>2025-10-20T00:00:00Z</dc:date></item><item><title>Why Figma Wins (In the AI Era Too)</title><link>https://chenterry.com/posts/figma_ai/</link><pubDate>Mon, 06 Oct 2025 00:00:00 +0000</pubDate><author>Terry Chen (Terry Chen)</author><guid>https://chenterry.com/posts/figma_ai/</guid><description>How Figma's platform advantages position it to dominate AI-native design workflows, despite emerging competition from AI-first tools like Lovable.</description><category>AI Application &amp; Value Creation Layer</category><category>Investing</category><dc:creator>Terry Chen</dc:creator><dc:date>2025-10-06T00:00:00Z</dc:date></item><item><title>AI-Powered Security Data Pipelines: The Future of Enterprise Cybersecurity</title><link>https://chenterry.com/posts/ai-powered-security-data-pipelines/</link><pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate><author>Terry Chen (Terry Chen)</author><guid>https://chenterry.com/posts/ai-powered-security-data-pipelines/</guid><description>Analysis of AI-powered security solutions, market trends, and investment opportunities in enterprise cybersecurity. Exploring how AI is transforming threat detection, response, and prevention in the $150B+ security market through advanced data pipelines and agentic SOC operations.</description><category>Security, Data Pipelines &amp; Agentic SOC</category><category>Investing</category><dc:creator>Terry Chen</dc:creator><dc:date>2025-07-13T00:00:00Z</dc:date></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Investing - Terry Chen</title>
+    <link>https://chenterry.com/tags/investing/</link>
+    <description>Hi, this is Terry. I&#39;m documenting my product ideas and learning notes in this blog. I&#39;m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description>
+    <language>en-us</language>
+    <managingEditor>Terry Chen (Terry Chen)</managingEditor>
+    <webMaster>Terry Chen (Terry Chen)</webMaster>
+    <copyright>© 2026 Terry Chen. All rights reserved.</copyright>
+    <lastBuildDate>Sat, 28 Feb 2026 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://chenterry.com/tags/investing/index.xml" rel="self" type="application/rss+xml" />
+    
+    <generator>Hugo 0.136.2</generator>
+    <category>Technology</category>
+    <category>AI</category>
+    <category>Product Engineering</category>
+    <category>Investment Analysis</category>
+    <image>
+      <url>https://chenterry.com/images/profile.jpg</url>
+      <title>Terry Chen</title>
+      <link>https://chenterry.com/</link>
+      <description>Hi, this is Terry. I&#39;m documenting my product ideas and learning notes in this blog. I&#39;m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description>
+      <width>144</width>
+      <height>144</height>
+    </image>
+    
+    <item>
+      <title>I Don&#39;t Understand How Crypto Is Valued. Period.</title>
+      <link>https://chenterry.com/posts/crypto_valuation/</link>
+      <pubDate>Sat, 28 Feb 2026 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/posts/crypto_valuation/</guid>
+      <description>Lost money. Still don&#39;t understand how it&#39;s priced. That&#39;s the whole post.</description>
+      
+      
+        
+          <category>Crypto</category>
+        
+      
+      
+        
+          
+          <category>Investing</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2026-02-28T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>The Battle for Search: Defining the 10x Infrastructure Layer for an Agentic Future</title>
+      <link>https://chenterry.com/posts/battle_for_search/</link>
+      <pubDate>Tue, 18 Nov 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/posts/battle_for_search/</guid>
+      <description>Analyzing the competitive landscape and market opportunity for AI-native search infrastructure as we transition from human-centric to agent-centric web consumption.</description>
+      
+      
+        
+          
+          <category>AI Application &amp; Value Creation Layer</category>
+          
+        
+      
+      
+        
+          
+          <category>Investing</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-11-18T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Understanding Xiaomi: IP Risk &amp; Starting Again</title>
+      <link>https://chenterry.com/posts/xiaomi-primer/</link>
+      <pubDate>Fri, 31 Oct 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/posts/xiaomi-primer/</guid>
+      <description>Understanding Xiaomi&#39;s evolution from smartphone maker to comprehensive technology ecosystem, with focus on electric vehicle ambitions and IoT infrastructure. Investment analysis of Xiaomi&#39;s diversification strategy.</description>
+      
+      
+        
+          
+          <category>Mobility, Energy, and New Infrastructure</category>
+          
+        
+      
+      
+        
+          
+          <category>Investing</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-10-31T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>OpenAI&#39;s Blast Radius</title>
+      <link>https://chenterry.com/archived/openai-blast-radius/</link>
+      <pubDate>Mon, 27 Oct 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen, Livia Li (Terry Chen, Livia Li)</author>
+      <guid>https://chenterry.com/archived/openai-blast-radius/</guid>
+      <description>How OpenAI&#39;s rapid product development affects the startup ecosystem. Strategic frameworks for building defensible AI applications in the shadow of foundation model giants.</description>
+      
+      
+        
+          
+          <category>AI Application &amp; Value Creation Layer</category>
+          
+        
+      
+      
+        
+          
+          <category>Investing</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen, Livia Li</dc:creator>
+      <dc:date>2025-10-27T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Understanding Google: A Primer</title>
+      <link>https://chenterry.com/posts/google_primer/</link>
+      <pubDate>Mon, 20 Oct 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/posts/google_primer/</guid>
+      <description>Understanding the key products that made Google the tech giant today, with a deepdive on new AI features. Exploring Google&#39;s evolution from search to AI-powered ecosystem and investment implications.</description>
+      
+      
+        
+          
+          <category>AI Application &amp; Value Creation Layer</category>
+          
+        
+      
+      
+        
+          
+          <category>Investing</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-10-20T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Why Figma Wins (In the AI Era Too)</title>
+      <link>https://chenterry.com/posts/figma_ai/</link>
+      <pubDate>Mon, 06 Oct 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/posts/figma_ai/</guid>
+      <description>How Figma&#39;s platform advantages position it to dominate AI-native design workflows, despite emerging competition from AI-first tools like Lovable.</description>
+      
+      
+        
+          
+          <category>AI Application &amp; Value Creation Layer</category>
+          
+        
+      
+      
+        
+          
+          <category>Investing</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-10-06T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>AI-Powered Security Data Pipelines: The Future of Enterprise Cybersecurity</title>
+      <link>https://chenterry.com/posts/ai-powered-security-data-pipelines/</link>
+      <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/posts/ai-powered-security-data-pipelines/</guid>
+      <description>Analysis of AI-powered security solutions, market trends, and investment opportunities in enterprise cybersecurity. Exploring how AI is transforming threat detection, response, and prevention in the $150B+ security market through advanced data pipelines and agentic SOC operations.</description>
+      
+      
+        
+          
+          <category>Security, Data Pipelines &amp; Agentic SOC</category>
+          
+        
+      
+      
+        
+          
+          <category>Investing</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-07-13T00:00:00Z</dc:date>
+    </item>
+    
+  </channel>
+</rss>

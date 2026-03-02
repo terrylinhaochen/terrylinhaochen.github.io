@@ -46,7 +46,11 @@
       <guid>{{ .Permalink }}</guid>
       <description>{{ if .Description }}{{ .Description | html }}{{ else }}{{ .Summary | html }}{{ end }}</description>
       {{ if .Site.Params.ShowFullTextinRSS }}
+      {{ if .Params.gated }}
+      <content:encoded><![CDATA[<p>{{ .Description | default .Summary }}</p><p><a href="{{ .Permalink }}">Read the full article on the site</a></p>]]></content:encoded>
+      {{ else }}
       <content:encoded><![CDATA[{{ .Content }}]]></content:encoded>
+      {{ end }}
       {{ end }}
       {{ if .Params.categories }}
         {{ if reflect.IsSlice .Params.categories }}

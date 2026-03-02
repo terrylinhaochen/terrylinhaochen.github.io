@@ -9,9 +9,7 @@
     </div>
   </header>
 
-  <div class="post-content">
-    {{ .Content }}
-  </div>
+  {{ partial "content-gate.html" . }}
 
   {{ with .Params.related_posts }}
   <div class="related-posts theme-related">

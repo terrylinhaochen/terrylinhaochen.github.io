@@ -11,9 +11,7 @@
   </header>
   
   <!-- Content with proper heading hierarchy -->
-  <div class="post-content">
-    {{ .Content }}
-  </div>
+  {{ partial "content-gate.html" . }}
   
   <!-- Tags -->
   {{ if .Params.tags }}

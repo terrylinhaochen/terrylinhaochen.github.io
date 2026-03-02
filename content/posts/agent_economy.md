@@ -6,6 +6,7 @@ tags: ["Posts"]
 categories: ai
 description: "I spent a day researching how Peter Steinberger ships hundreds of commits a day alone. What I found forced me to confront something uncomfortable: I've been using AI agents wrong the whole time."
 keywords: ["agentic engineering", "Peter Steinberger", "OpenClaw", "Claude Code", "Codex CLI", "AI agents", "developer workflow", "agent economy", "vibe coding", "spec-driven development", "Two-Context Technique", "CrowdListen"]
+gated: true
 ---
 
 I've been spending hundreds of dollars a month on OpenClaw and wondering if I was getting the most out of it. That question led me down a rabbit hole: how does Peter Steinberger, the person who *built* OpenClaw, actually work?

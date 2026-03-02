@@ -1,6 +1,688 @@
-<!doctype html><html lang=en dir=auto><head><meta name=description content="I spent a day researching how Peter Steinberger ships hundreds of commits a day alone. What I found forced me to confront something uncomfortable: I've been using AI agents wrong the whole time."><meta name=keywords content="agentic engineering,Peter Steinberger,OpenClaw,Claude Code,Codex CLI,AI agents,developer workflow,agent economy,vibe coding,spec-driven development,Two-Context Technique,CrowdListen"><meta name=author content="Terry Chen"><meta name=robots content="index, follow"><meta name=language content="en-us"><meta name=revisit-after content="7 days"><meta name=distribution content="global"><meta name=rating content="general"><link rel=canonical href=https://chenterry.com/posts/agent_economy/><meta property="og:title" content="Agentic Engineering: How One Developer Ships Like a Team | Terry Chen"><meta property="og:description" content="I spent a day researching how Peter Steinberger ships hundreds of commits a day alone. What I found forced me to confront something uncomfortable: I've been using AI agents wrong the whole time."><meta property="og:type" content="article"><meta property="og:url" content="https://chenterry.com/posts/agent_economy/"><meta property="og:site_name" content="Terry Chen"><meta property="og:locale" content="en-us"><meta property="article:published_time" content="2026-02-28T00:00:00Z"><meta property="article:modified_time" content="2026-02-28T00:00:00Z"><meta property="article:author" content="Terry Chen"><meta property="article:tag" content="Posts"><meta property="article:section" content="ai"><meta property="og:image" content="https://chenterry.com/images/profile.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Terry Chen"><meta name=twitter:card content="summary_large_image"><meta name=twitter:site content="@terrychen_ai"><meta name=twitter:creator content="@terrychen_ai"><meta name=twitter:title content="Agentic Engineering: How One Developer Ships Like a Team | Terry Chen"><meta name=twitter:description content="I spent a day researching how Peter Steinberger ships hundreds of commits a day alone. What I found forced me to confront something uncomfortable: I've been using AI agents wrong the whole time."><meta name=twitter:image content="https://chenterry.com/images/profile.jpg"><meta name=twitter:image:alt content="Terry Chen"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Agentic Engineering: How One Developer Ships Like a Team","datePublished":"2026-02-28T00:00:00Z","dateModified":"2026-02-28T00:00:00Z","author":{"@type":"Person","name":"Terry Chen","url":"https:\/\/chenterry.com\/"},"publisher":{"@type":"Organization","name":"Terry Chen","logo":{"@type":"ImageObject","url":"https:\/\/chenterry.com\/images/profile.jpg"}},"description":"I spent a day researching how Peter Steinberger ships hundreds of commits a day alone. What I found forced me to confront something uncomfortable: I\u0027ve been using AI agents wrong the whole time.","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/chenterry.com\/posts\/agent_economy\/"},"keywords":"agentic engineering, Peter Steinberger, OpenClaw, Claude Code, Codex CLI, AI agents, developer workflow, agent economy, vibe coding, spec-driven development, Two-Context Technique, CrowdListen","articleSection":"ai","image":{"@type":"ImageObject","url":"https:\/\/chenterry.com\/images\/profile.jpg","width":1200,"height":630}}</script><meta name=article:published_time content="2026-02-28T00:00:00Z"><meta name=article:modified_time content="2026-02-28T00:00:00Z"><meta name=googlebot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><meta name=bingbot content="index, follow"><meta name=slurp content="index, follow"><meta name=duckduckbot content="index, follow"><meta name=section content="posts"><meta name=content-type content="posts"><meta name=geo.region content="US"><meta name=geo.placename content="United States"><meta name=language content="en-us"><meta http-equiv=content-language content="en-us"><meta property="og:determiner" content="the"><meta property="og:rich_attachment" content="true"><meta property="og:updated_time" content="2026-02-28T00:00:00Z"><meta name=format-detection content="telephone=no"><meta name=apple-mobile-web-app-capable content="yes"><meta name=apple-mobile-web-app-status-bar-style content="default"><meta name=apple-mobile-web-app-title content="Terry Chen"><meta http-equiv=Cache-Control content="public, max-age=31536000"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name=referrer content="strict-origin-when-cross-origin"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https:\/\/chenterry.com\/"},{"@type":"ListItem","position":2,"name":"Posts","item":"https:\/\/chenterry.com\/posts/"},{"@type":"ListItem","position":3,"name":"Agentic Engineering: How One Developer Ships Like a Team","item":"https:\/\/chenterry.com\/posts\/agent_economy\/"}]}</script><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link rel=dns-prefetch href=//www.google-analytics.com><link rel=dns-prefetch href=//www.googletagmanager.com><meta name=msapplication-config content="/browserconfig.xml"><meta name=application-name content="Terry Chen"><meta name=DC.type content="Text"><meta name=DC.format content="text/html"><meta name=DC.identifier content="https://chenterry.com/posts/agent_economy/"><meta name=DC.date content="2026-02-28"><meta name=DC.creator content="Terry Chen"><meta name=DC.publisher content="Terry Chen"><meta name=DC.rights content="© 2026 Terry Chen. All rights reserved."><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Agentic Engineering: How One Developer Ships Like a Team | Terry Chen</title>
-<meta name=keywords content="agentic engineering,Peter Steinberger,OpenClaw,Claude Code,Codex CLI,AI agents,developer workflow,agent economy,vibe coding,spec-driven development,Two-Context Technique,CrowdListen"><meta name=author content="Terry Chen"><link rel=canonical href=https://chenterry.com/posts/agent_economy/><link crossorigin=anonymous href=/assets/css/stylesheet.f495fe1dedb119b2969e64d021ab84ebb9f24a5086308bd0222ece1b182e151e.css integrity="sha256-9JX+He2xGbKWnmTQIauE67nySlCGMIvQIi7OGxguFR4=" rel="preload stylesheet" as=style><link rel=icon href=https://chenterry.com/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://chenterry.com/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://chenterry.com/favicon-32x32.png><link rel=apple-touch-icon href=https://chenterry.com/apple-touch-icon.png><link rel=mask-icon href=https://chenterry.com/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=manifest href=https://chenterry.com/manifest.json><link rel=alternate hreflang=en href=https://chenterry.com/posts/agent_economy/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><script src=https://analytics.ahrefs.com/analytics.js data-key=RfhOdZ+DOpWNlhV9QqLgTQ async></script><link rel=icon href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>😜</text></svg>" type=image/svg+xml><link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>😜</text></svg>"><script async src="https://www.googletagmanager.com/gtag/js?id=G-M6GS8Q702L"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-M6GS8Q702L")}</script><meta property="og:url" content="https://chenterry.com/posts/agent_economy/"><meta property="og:site_name" content="Terry Chen"><meta property="og:title" content="Agentic Engineering: How One Developer Ships Like a Team"><meta property="og:description" content="I spent a day researching how Peter Steinberger ships hundreds of commits a day alone. What I found forced me to confront something uncomfortable: I've been using AI agents wrong the whole time."><meta property="og:locale" content="en-us"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2026-02-28T00:00:00+00:00"><meta property="article:modified_time" content="2026-02-28T00:00:00+00:00"><meta property="article:tag" content="Posts"><meta property="og:image" content="https://chenterry.com/images/profile.jpg"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://chenterry.com/images/profile.jpg"><meta name=twitter:title content="Agentic Engineering: How One Developer Ships Like a Team"><meta name=twitter:description content="I spent a day researching how Peter Steinberger ships hundreds of commits a day alone. What I found forced me to confront something uncomfortable: I've been using AI agents wrong the whole time."><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://chenterry.com/posts/"},{"@type":"ListItem","position":2,"name":"Agentic Engineering: How One Developer Ships Like a Team","item":"https://chenterry.com/posts/agent_economy/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Agentic Engineering: How One Developer Ships Like a Team","name":"Agentic Engineering: How One Developer Ships Like a Team","description":"I spent a day researching how Peter Steinberger ships hundreds of commits a day alone. What I found forced me to confront something uncomfortable: I've been using AI agents wrong the whole time.","keywords":["agentic engineering","Peter Steinberger","OpenClaw","Claude Code","Codex CLI","AI agents","developer workflow","agent economy","vibe coding","spec-driven development","Two-Context Technique","CrowdListen"],"articleBody":"I’ve been spending hundreds of dollars a month on OpenClaw and wondering if I was getting the most out of it. That question led me down a rabbit hole: how does Peter Steinberger, the person who built OpenClaw, actually work?\nWhat I found was 8,471 commits across 48 repositories in 72 days. Alone. Not with a team. Not with contractors. With agents.\nThat number forced me to ask a harder question: if I’m using the same tools and getting a fraction of that output, what am I doing differently?\nThe answer was simpler and more uncomfortable than I expected.\nThe Three Stages Three years ago I was managing a team of twelve engineers. I wrote zero code. My job was to think about the product, write the specs, and hand them to people who would figure out how. Engineers resolved the ambiguity — they read the spec, find the gaps, push back on the parts that don’t make sense.\nTwo years ago I went back to building by myself. Writing specs and code — the whole stack. The bottleneck became my own implementation capacity. I could only move as fast as I could type. This also allowed me to experiment with early coding agents and get an early sense of where agents are goig.\nThen AI coding assistants got good enough to matter. I started using Claude and Codex constantly. I shipped 10-20 commits a day, doing what required weeks in hours. For a long time I told myself I was working at a higher level. But when I looked honestly at how I was using these tools, I realized: I was still in Stage 2. Just with faster autocomplete.\nDatabase migration I knew the shape of → asked Claude for the syntax.\nReact component I knew the structure of → asked Claude to type it.\nProduction bug I’d already diagnosed → asked Claude to find the line.\nIn every case I had done the thinking. I handed the agents certainty and kept the ambiguity for myself. That’s not a team. That’s a very fast junior developer.\nWhat Steinberger Actually Does When I dug into his workflow — six blog posts in full, GitHub commit history via API, his 23.5KB AGENTS.MD file, podcast transcripts, public gists — the picture that emerged was nothing like what I expected.\nThe commits aren’t from Steinberger typing. They’re from agents executing against specs so complete they don’t need to ask clarifying questions.\nVoice first, always He uses WisprFlow — holds Fn, talks, releases. Long, rambling, incoherent thoughts. He doesn’t craft prompts. He thinks out loud and lets the transcription handle it. The shift matters: carefully written prompts optimize for precision, voice prompts optimize for reasoning. Agents respond better to reasoning.\nThe spec is the work The voice dump goes into Google AI Studio — Gemini with a one-million-token context window. Gemini turns rambling into a structured Software Design Document (SDD). Not bullets. A 500-line specification covering architecture, data model, edge cases, failure modes, what not to build, and why.\nWhy Gemini for planning? Because it won’t artificially shorten the output. You ask for a comprehensive spec and get a comprehensive spec. Other models trim. When planning, verbose is better.\nHe also uses repo2txt to convert any reference codebase into a single markdown file, feeds it to Gemini, and asks: “Which edge cases are implemented here that I didn’t think of?” The existing solution becomes input to the spec.\nThe Two-Context Technique Once he has a first draft, he opens a fresh, separate Gemini context — no shared history — pastes the spec, and prompts:\n“Take this SDD apart. Give me 20 points that are underspecified, weird, or inconsistent.”\nThe fresh context critiques without mercy. He copies those twenty points back to the original context — which holds the full history of how decisions were made — and resolves them. Three to five rounds. The critiques get increasingly niche. That’s the signal: the spec is bulletproof.\nThe result goes into docs/spec.md.\nThe prompt He opens his agent, types:\n“Build spec.md”\nAnd leaves for two to four hours.\nThe commits that land — feat: add OAuth callback handler, fix: session not persisting on logout, test: add middleware tests — are the agent committing each logical unit of work as it finishes. Run several parallel sessions on non-overlapping areas of the codebase. The commit count is a byproduct. Not the goal.\nThe Tools (And Why He Keeps Changing Them) What makes his approach interesting is that he’s been through four distinct phases in about eighteen months. The workflow principles stay constant; the specific tools evolve. That evolution is worth understanding.\nPhase 1 (early 2025): Gemini for specs + Claude Code for implementation. Established the core loop.\nPhase 2 (mid-2025): Cursor with two parallel windows. Used multiple models — Gemini 2.5 Pro as the workhorse, o3 as what he called the “Dark Knight” (expensive, reserved for the hardest bugs), and Claude Opus for complex tasks. On Opus: “Very capable, but prone to ‘vision quests’ — deviating from the original task if it hits a snag.”\nPhase 3 (late 2025): Back to Ghostty + Claude Code. Removed all MCPs. “Less is more.” Ran four Claude instances side by side on a 40\" ultrawide monitor sized specifically to fit four terminals and a browser without moving windows.\nPhase 4 (2026, current): Fully switched to Codex CLI, running 3–8 instances in a 3×3 terminal grid. When asked why he left Claude Code after championing it:\n“I used to love Claude Code, these days I can’t stand it anymore. It’s the language, the ‘absolutely right’s, the ‘100% production ready’ messages while tests fail — I just can’t anymore. Codex is more like the introverted engineer that chugs along and just gets stuff done.”\nSpecific advantages he cites: ~230k usable context vs Claude’s 156k, message queuing (pre-queue multiple tasks and it works through them), written in Rust (no freezes), and it reads the codebase eagerly before starting rather than diving straight in.\nThe tools that have stayed constant across all phases:\nWisprFlow — voice input for all prompts Poltergeist — build watcher he built and open-sourced; auto-rebuilds on file save so agents always test fresh code. “In agentic engineering, loop iteration speed is everything.” VibeTunnel — tunnels your terminal to the browser, check on agents from your phone CLIs over MCPs — one line per tool in AGENTS.md, no MCP servers. “If you add MCPs, you just pollute the context. Claude sometimes would go off spinning up Playwright unasked when it could simply read the code.” The AGENTS.md Is the Product His AGENTS.MD is 23.5KB. That’s not a quick-start note. It’s an operating manual.\nIt includes a custom scripts/committer tool that scopes git staging precisely — agents commit only the files they actually touched. A sync shorthand: one word = commit + pull rebase + push. Explicit multi-agent safety rules (never use git reset --hard on another agent’s work, never delete files to silence type errors, always git status before committing). A dedicated .agents/skills/PR_WORKFLOW.md that defines the full PR triage → review → rebase → merge pipeline.\nThe result: community contributors submit PRs written with Claude Code. His landing agents review and merge them. The entire contribution pipeline — from feature request to merged commit — is AI-native end to end. His AGENTS.md teaches other people’s agents how to contribute to his project correctly.\nHis CLAUDE.md, by the way, is 9 bytes. It just contains AGENTS.md. Claude Code reads CLAUDE.md by convention; it redirects to the full instruction set. Tool-agnostic by design.\nBlast Radius The mental model he uses to decide how many agents to run and how closely to watch them:\nBlast radius = the surface area of files and modules a change will touch.\nSmall blast radius (two or three isolated files): run four agents in parallel, each on a different area, collect commits when they’re done.\nLarge blast radius (a shared module half the codebase imports): one agent, close watch. If it takes longer than expected, press Escape:\n“I just hit escape and ask ‘what’s the status’ to get a status update and then either help the model find the right direction, abort, or continue. Don’t be afraid of stopping models mid-way — file changes are atomic and they are really good at picking up where they stopped.”\nBefore anything ambiguous, he uses an uncertainty probe: “Give me a few options before making changes.” Gauge scope before committing to an approach.\nThis is product management skill, not engineering skill. Which changes run in parallel, which get serialized, when to intervene — these are the same judgments you’d apply to a team. The execution surface changed. The underlying thinking didn’t.\nThe Realization The skills I built managing an engineering team are exactly the skills I need to manage agents.\nWrite clear specs. Assess blast radius. Notice when something is drifting and correct before it compounds. Review output, catch the subtle issues, make the architectural calls.\nWhat changed:\nCost of a hire is ~$200/month instead of a salary Feedback loop is hours instead of weeks Specs need to be better — agents can’t ask clarifying questions the way humans can Blast radius calculations matter more — agents don’t have intuitions about shared systems What didn’t change:\nSpec quality determines output quality Technical debt accumulates if you don’t actively manage it The hardest problems are still design problems: dependencies, data models, forward-thinking architecture Steinberger’s framing for the distinction between his approach and “vibe coding”:\n“Vibe coding is prompting without thinking, hoping the model figures it out. Agentic engineering is deliberately guiding capable agents toward outcomes you’ve thought through.”\nAnd then, honestly:\n“I do agentic engineering, and then maybe after 3:00 AM I switch to vibe coding, and then I regret it. You should have just gone to sleep.”\nWhat I’m Changing Specs before sessions. Anything more than a two-liner gets a spec first. Ambiguity resolved before implementation starts.\nTwo-Context Technique for planning. Paste rough plan into a fresh session, ask for ten ways it goes wrong. The critique is unsentimental. Fix the issues. Then build.\nplan only before every non-trivial session. Review the plan. Steer if needed. Then: “build it.” One correction at plan stage saves ten corrections mid-implementation.\nAgents commit atomically. In AGENTS.md: “Commit after each logical unit of work.” The commit history becomes a readable log and a recovery surface.\nBlast radius assessment before every session. Frontend component: low blast radius, two parallel sessions. Backend changes touching shared modules: one session, I’m watching.\nTests immediately after features, same context, separate prompt. The agent has full context of what it built. This is the only time tests are cheap and actually find real bugs.\nEscape → “what’s the status.” Mid-task check-in instead of waiting for completion.\nThe Part Nobody Warns You About When the bottleneck was implementation capacity, I stopped when I ran out of capacity. Physical constraint.\nWhen the bottleneck shifts to spec quality, the constraint is cognitive. Cognitive limits are harder to notice than physical ones.\nThe agent economy doesn’t make you more productive automatically. It makes you more capable, which creates more rope. A vibe-coded session at 2am can cost a full day of cleanup.\nThe discipline is: when you can’t write a good spec, stop. Spec quality is the rate-limiting step. When it degrades, everything downstream degrades with it.\nStart Here □ Install Ghostty (or any stable terminal with good split-pane support) □ Install WisprFlow — dictate prompts, stop typing them □ Install Claude Code or Codex CLI □ Install gh, vercel, psql — services with CLIs, no MCPs □ Install Poltergeist — brew tap steipete/tap \u0026\u0026 brew install poltergeist □ Next feature: write a rough spec in Google AI Studio first □ Two-Context Technique: paste spec into fresh window → \"20 inconsistencies\" □ Fix them. Save as docs/spec.md. □ Prompt: \"plan only: build docs/spec.md\" → review → \"build it\" □ After: \"add tests for what we just built\" (same session, separate prompt) □ Commit atomically. Ship. Steinberger joined OpenAI in early 2026 to work on bringing agents to everyone. OpenClaw — which grew to 180,000+ GitHub stars and PR numbers in the thirty-thousands — moved to an independent foundation and stayed open source.\nThe shift from managing twelve humans to managing twelve agents preserves more than I expected. Same judgment, same spec discipline, same instinct for when something drifts. What changes is the cost of a hire, the speed of the feedback loop, and the minimum viable quality of a spec.\nGet the spec right. The rest follows.\nI’m building CrowdListen — audience research powered by AI. I also just launched a way to connect your AI agent to CrowdListen directly — your agent can run real audience analyses on your behalf.\n","wordCount":"2125","inLanguage":"en","image":"https://chenterry.com/images/profile.jpg","datePublished":"2026-02-28T00:00:00Z","dateModified":"2026-02-28T00:00:00Z","author":{"@type":"Person","name":"Terry Chen"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://chenterry.com/posts/agent_economy/"},"publisher":{"@type":"Organization","name":"Terry Chen","logo":{"@type":"ImageObject","url":"https://chenterry.com/favicon.ico"}}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-M6GS8Q702L"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","MEASUREMENT_ID")</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Agentic Engineering: How One Developer Ships Like a Team","image":"https:\/\/chenterry.com\/","datePublished":"2026-02-28T00:00:00\u002b00:00","dateModified":"2026-02-28T00:00:00\u002b00:00","author":{"@type":"Person","name":"Terry Chen"},"publisher":{"@type":"Organization","name":"Terry Chen","logo":{"@type":"ImageObject","url":"https:\/\/chenterry.com\/"}},"description":"I spent a day researching how Peter Steinberger ships hundreds of commits a day alone. What I found forced me to confront something uncomfortable: I\u0027ve been using AI agents wrong the whole time.","keywords":["agentic engineering","Peter Steinberger","OpenClaw","Claude Code","Codex CLI","AI agents","developer workflow","agent economy","vibe coding","spec-driven development","Two-Context Technique","CrowdListen"],"wordCount":"2125","timeRequired":"PT10M"}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https:\/\/chenterry.com\/"},{"@type":"ListItem","position":2,"name":"Posts","item":"https:\/\/chenterry.com\/posts/"},{"@type":"ListItem","position":3,"name":"97","item":"https:\/\/chenterry.com\/categories/97/"},{"@type":"ListItem","position":4,"name":"Agentic Engineering: How One Developer Ships Like a Team","item":"https:\/\/chenterry.com\/posts\/agent_economy\/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"Person","name":"Terry Chen","url":"https:\/\/chenterry.com\/","sameAs":["https://www.linkedin.com/in/terry-chen-3b44911a4/","https://github.com/terrylinhaochen"],"jobTitle":"AI Product Engineer","description":"AI Product Engineer and Investor exploring multi-agent systems, content understanding, and emerging technology investments","knowsAbout":["Artificial Intelligence","Product Engineering","Investment Analysis","Multi-Agent Systems","Machine Learning","Technology Strategy"],"alumniOf":"Northwestern University"}</script><style>link[rel=icon]{content:url("data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>😜</text></svg>")}</style></head><body id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://chenterry.com/ accesskey=h title="Terry Chen (Alt + H)">Terry Chen</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme"><svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=/posts/ title=Posts><span class=active>Posts</span></a></li><li><a href=/product/ title=Product><span>Product</span></a></li><li><a href=/investing/ title=Investing><span>Investing</span></a></li><li><a href=/search/ title=Explore accesskey=/><span>Explore</span></a></li><li><a href=/about/ title=About><span>About</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><h1 class=post-title>Agentic Engineering: How One Developer Ships Like a Team</h1><div class=post-meta>By Terry Chen •
-<time>February 28, 2026</time></div></header><div class=post-content><p>I&rsquo;ve been spending hundreds of dollars a month on OpenClaw and wondering if I was getting the most out of it. That question led me down a rabbit hole: how does Peter Steinberger, the person who <em>built</em> OpenClaw, actually work?</p><p>What I found was 8,471 commits across 48 repositories in 72 days. Alone. Not with a team. Not with contractors. With agents.</p><p>That number forced me to ask a harder question: if I&rsquo;m using the same tools and getting a fraction of that output, what am I doing differently?</p><p>The answer was simpler and more uncomfortable than I expected.</p><hr><h2 id=the-three-stages>The Three Stages</h2><p><strong>Three years ago</strong> I was managing a team of twelve engineers. I wrote zero code. My job was to think about the product, write the specs, and hand them to people who would figure out how. Engineers resolved the ambiguity — they read the spec, find the gaps, push back on the parts that don&rsquo;t make sense.</p><p><strong>Two years ago</strong> I went back to building by myself. Writing specs and code — the whole stack. The bottleneck became my own implementation capacity. I could only move as fast as I could type. This also allowed me to experiment with early coding agents and get an early sense of where agents are goig.</p><p>Then AI coding assistants got good enough to matter. I started using Claude and Codex constantly. I shipped 10-20 commits a day, doing what required weeks in hours. For a long time I told myself I was working at a higher level. But when I looked honestly at how I was using these tools, I realized: <strong>I was still in Stage 2. Just with faster autocomplete.</strong></p><p>Database migration I knew the shape of → asked Claude for the syntax.<br>React component I knew the structure of → asked Claude to type it.<br>Production bug I&rsquo;d already diagnosed → asked Claude to find the line.</p><p>In every case I had done the thinking. I handed the agents certainty and kept the ambiguity for myself. That&rsquo;s not a team. That&rsquo;s a very fast junior developer.</p><hr><h2 id=what-steinberger-actually-does>What Steinberger Actually Does</h2><p>When I dug into his workflow — six blog posts in full, GitHub commit history via API, his 23.5KB <a href=https://github.com/steipete/agent-scripts/blob/main/AGENTS.MD>AGENTS.MD</a> file, podcast transcripts, public gists — the picture that emerged was nothing like what I expected.</p><p>The commits aren&rsquo;t from Steinberger typing. They&rsquo;re from agents executing against specs so complete they don&rsquo;t need to ask clarifying questions.</p><h3 id=voice-first-always>Voice first, always</h3><p>He uses <strong>WisprFlow</strong> — holds <code>Fn</code>, talks, releases. Long, rambling, incoherent thoughts. He doesn&rsquo;t craft prompts. He thinks out loud and lets the transcription handle it. The shift matters: carefully written prompts optimize for precision, voice prompts optimize for <em>reasoning</em>. Agents respond better to reasoning.</p><h3 id=the-spec-is-the-work>The spec is the work</h3><p>The voice dump goes into <strong>Google AI Studio</strong> — Gemini with a one-million-token context window. Gemini turns rambling into a structured <strong>Software Design Document</strong> (SDD). Not bullets. A 500-line specification covering architecture, data model, edge cases, failure modes, what not to build, and why.</p><p>Why Gemini for planning? Because it won&rsquo;t artificially shorten the output. You ask for a comprehensive spec and get a comprehensive spec. Other models trim. When planning, verbose is better.</p><p>He also uses <strong>repo2txt</strong> to convert any reference codebase into a single markdown file, feeds it to Gemini, and asks: <em>&ldquo;Which edge cases are implemented here that I didn&rsquo;t think of?&rdquo;</em> The existing solution becomes input to the spec.</p><h3 id=the-two-context-technique>The Two-Context Technique</h3><p>Once he has a first draft, he opens a <strong>fresh, separate Gemini context</strong> — no shared history — pastes the spec, and prompts:</p><blockquote><p><em>&ldquo;Take this SDD apart. Give me 20 points that are underspecified, weird, or inconsistent.&rdquo;</em></p></blockquote><p>The fresh context critiques without mercy. He copies those twenty points back to the <strong>original context</strong> — which holds the full history of how decisions were made — and resolves them. Three to five rounds. The critiques get increasingly niche. That&rsquo;s the signal: the spec is bulletproof.</p><p>The result goes into <code>docs/spec.md</code>.</p><h3 id=the-prompt>The prompt</h3><p>He opens his agent, types:</p><blockquote><p><em>&ldquo;Build spec.md&rdquo;</em></p></blockquote><p>And leaves for two to four hours.</p><p>The commits that land — <code>feat: add OAuth callback handler</code>, <code>fix: session not persisting on logout</code>, <code>test: add middleware tests</code> — are the agent committing each logical unit of work as it finishes. Run several parallel sessions on non-overlapping areas of the codebase. The commit count is a byproduct. Not the goal.</p><hr><h2 id=the-tools-and-why-he-keeps-changing-them>The Tools (And Why He Keeps Changing Them)</h2><p>What makes his approach interesting is that he&rsquo;s been through four distinct phases in about eighteen months. The workflow principles stay constant; the specific tools evolve. That evolution is worth understanding.</p><p><strong>Phase 1 (early 2025):</strong> Gemini for specs + Claude Code for implementation. Established the core loop.</p><p><strong>Phase 2 (mid-2025):</strong> Cursor with two parallel windows. Used multiple models — Gemini 2.5 Pro as the workhorse, o3 as what he called the &ldquo;Dark Knight&rdquo; (expensive, reserved for the hardest bugs), and Claude Opus for complex tasks. On Opus: <em>&ldquo;Very capable, but prone to &lsquo;vision quests&rsquo; — deviating from the original task if it hits a snag.&rdquo;</em></p><p><strong>Phase 3 (late 2025):</strong> Back to Ghostty + Claude Code. Removed all MCPs. <em>&ldquo;Less is more.&rdquo;</em> Ran four Claude instances side by side on a 40" ultrawide monitor sized specifically to fit four terminals and a browser without moving windows.</p><p><strong>Phase 4 (2026, current):</strong> Fully switched to <strong>Codex CLI</strong>, running 3–8 instances in a 3×3 terminal grid. When asked why he left Claude Code after championing it:</p><blockquote><p><em>&ldquo;I used to love Claude Code, these days I can&rsquo;t stand it anymore. It&rsquo;s the language, the &lsquo;absolutely right&rsquo;s, the &lsquo;100% production ready&rsquo; messages while tests fail — I just can&rsquo;t anymore. Codex is more like the introverted engineer that chugs along and just gets stuff done.&rdquo;</em></p></blockquote><p>Specific advantages he cites: ~230k usable context vs Claude&rsquo;s 156k, message queuing (pre-queue multiple tasks and it works through them), written in Rust (no freezes), and it reads the codebase eagerly before starting rather than diving straight in.</p><p><strong>The tools that have stayed constant across all phases:</strong></p><ul><li><strong>WisprFlow</strong> — voice input for all prompts</li><li><strong>Poltergeist</strong> — build watcher he built and open-sourced; auto-rebuilds on file save so agents always test fresh code. <em>&ldquo;In agentic engineering, loop iteration speed is everything.&rdquo;</em></li><li><strong>VibeTunnel</strong> — tunnels your terminal to the browser, check on agents from your phone</li><li><strong>CLIs over MCPs</strong> — one line per tool in AGENTS.md, no MCP servers. <em>&ldquo;If you add MCPs, you just pollute the context. Claude sometimes would go off spinning up Playwright unasked when it could simply read the code.&rdquo;</em></li></ul><hr><h2 id=the-agentsmd-is-the-product>The AGENTS.md Is the Product</h2><p>His <a href=https://github.com/steipete/agent-scripts/blob/main/AGENTS.MD>AGENTS.MD</a> is 23.5KB. That&rsquo;s not a quick-start note. It&rsquo;s an operating manual.</p><p>It includes a custom <code>scripts/committer</code> tool that scopes git staging precisely — agents commit only the files they actually touched. A <code>sync</code> shorthand: one word = commit + pull rebase + push. Explicit multi-agent safety rules (never use <code>git reset --hard</code> on another agent&rsquo;s work, never delete files to silence type errors, always <code>git status</code> before committing). A dedicated <code>.agents/skills/PR_WORKFLOW.md</code> that defines the full PR triage → review → rebase → merge pipeline.</p><p>The result: community contributors submit PRs written with Claude Code. His landing agents review and merge them. The entire contribution pipeline — from feature request to merged commit — is AI-native end to end. His AGENTS.md teaches other people&rsquo;s agents how to contribute to his project correctly.</p><p>His <code>CLAUDE.md</code>, by the way, is 9 bytes. It just contains <code>AGENTS.md</code>. Claude Code reads <code>CLAUDE.md</code> by convention; it redirects to the full instruction set. Tool-agnostic by design.</p><hr><h2 id=blast-radius>Blast Radius</h2><p>The mental model he uses to decide how many agents to run and how closely to watch them:</p><p><strong>Blast radius</strong> = the surface area of files and modules a change will touch.</p><p>Small blast radius (two or three isolated files): run four agents in parallel, each on a different area, collect commits when they&rsquo;re done.</p><p>Large blast radius (a shared module half the codebase imports): one agent, close watch. If it takes longer than expected, press Escape:</p><blockquote><p><em>&ldquo;I just hit escape and ask &lsquo;what&rsquo;s the status&rsquo; to get a status update and then either help the model find the right direction, abort, or continue. Don&rsquo;t be afraid of stopping models mid-way — file changes are atomic and they are really good at picking up where they stopped.&rdquo;</em></p></blockquote><p>Before anything ambiguous, he uses an uncertainty probe: <em>&ldquo;Give me a few options before making changes.&rdquo;</em> Gauge scope before committing to an approach.</p><p>This is product management skill, not engineering skill. Which changes run in parallel, which get serialized, when to intervene — these are the same judgments you&rsquo;d apply to a team. The execution surface changed. The underlying thinking didn&rsquo;t.</p><hr><h2 id=the-realization>The Realization</h2><p>The skills I built managing an engineering team are exactly the skills I need to manage agents.</p><p>Write clear specs. Assess blast radius. Notice when something is drifting and correct before it compounds. Review output, catch the subtle issues, make the architectural calls.</p><p>What changed:</p><ul><li>Cost of a hire is ~$200/month instead of a salary</li><li>Feedback loop is hours instead of weeks</li><li>Specs need to be better — agents can&rsquo;t ask clarifying questions the way humans can</li><li>Blast radius calculations matter more — agents don&rsquo;t have intuitions about shared systems</li></ul><p>What didn&rsquo;t change:</p><ul><li>Spec quality determines output quality</li><li>Technical debt accumulates if you don&rsquo;t actively manage it</li><li>The hardest problems are still design problems: dependencies, data models, forward-thinking architecture</li></ul><p>Steinberger&rsquo;s framing for the distinction between his approach and &ldquo;vibe coding&rdquo;:</p><blockquote><p><em>&ldquo;Vibe coding is prompting without thinking, hoping the model figures it out. Agentic engineering is deliberately guiding capable agents toward outcomes you&rsquo;ve thought through.&rdquo;</em></p></blockquote><p>And then, honestly:</p><blockquote><p><em>&ldquo;I do agentic engineering, and then maybe after 3:00 AM I switch to vibe coding, and then I regret it. You should have just gone to sleep.&rdquo;</em></p></blockquote><hr><h2 id=what-im-changing>What I&rsquo;m Changing</h2><p><strong>Specs before sessions.</strong> Anything more than a two-liner gets a spec first. Ambiguity resolved before implementation starts.</p><p><strong>Two-Context Technique for planning.</strong> Paste rough plan into a fresh session, ask for ten ways it goes wrong. The critique is unsentimental. Fix the issues. Then build.</p><p><strong><code>plan only</code> before every non-trivial session.</strong> Review the plan. Steer if needed. Then: &ldquo;build it.&rdquo; One correction at plan stage saves ten corrections mid-implementation.</p><p><strong>Agents commit atomically.</strong> In AGENTS.md: <em>&ldquo;Commit after each logical unit of work.&rdquo;</em> The commit history becomes a readable log and a recovery surface.</p><p><strong>Blast radius assessment before every session.</strong> Frontend component: low blast radius, two parallel sessions. Backend changes touching shared modules: one session, I&rsquo;m watching.</p><p><strong>Tests immediately after features, same context, separate prompt.</strong> The agent has full context of what it built. This is the only time tests are cheap and actually find real bugs.</p><p><strong>Escape → &ldquo;what&rsquo;s the status.&rdquo;</strong> Mid-task check-in instead of waiting for completion.</p><hr><h2 id=the-part-nobody-warns-you-about>The Part Nobody Warns You About</h2><p>When the bottleneck was implementation capacity, I stopped when I ran out of capacity. Physical constraint.</p><p>When the bottleneck shifts to spec quality, the constraint is cognitive. Cognitive limits are harder to notice than physical ones.</p><p>The agent economy doesn&rsquo;t make you more productive automatically. It makes you more <em>capable</em>, which creates more rope. A vibe-coded session at 2am can cost a full day of cleanup.</p><p>The discipline is: when you can&rsquo;t write a good spec, stop. Spec quality is the rate-limiting step. When it degrades, everything downstream degrades with it.</p><hr><h2 id=start-here>Start Here</h2><pre tabindex=0><code>□ Install Ghostty (or any stable terminal with good split-pane support)
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head>
+<meta name="description" content="I spent a day researching how Peter Steinberger ships hundreds of commits a day alone. What I found forced me to confront something uncomfortable: I&#39;ve been using AI agents wrong the whole time.">
+<meta name="keywords" content="agentic engineering, Peter Steinberger, OpenClaw, Claude Code, Codex CLI, AI agents, developer workflow, agent economy, vibe coding, spec-driven development, Two-Context Technique, CrowdListen">
+<meta name="author" content="Terry Chen">
+<meta name="robots" content="index, follow">
+<meta name="language" content="en-us">
+<meta name="revisit-after" content="7 days">
+<meta name="distribution" content="global">
+<meta name="rating" content="general">
+<link rel="canonical" href="https://chenterry.com/posts/agent_economy/">
+
+
+<meta property="og:title" content="Agentic Engineering: How One Developer Ships Like a Team | Terry Chen">
+<meta property="og:description" content="I spent a day researching how Peter Steinberger ships hundreds of commits a day alone. What I found forced me to confront something uncomfortable: I&#39;ve been using AI agents wrong the whole time.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://chenterry.com/posts/agent_economy/">
+<meta property="og:site_name" content="Terry Chen">
+<meta property="og:locale" content="en-us">
+
+<meta property="article:published_time" content="2026-02-28T00:00:00Z">
+<meta property="article:modified_time" content="2026-02-28T00:00:00Z">
+<meta property="article:author" content="Terry Chen">
+
+
+<meta property="article:tag" content="Posts">
+
+
+
+
+<meta property="article:section" content="ai">
+
+
+
+
+
+<meta property="og:image" content="https://chenterry.com/images/profile.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Terry Chen">
+
+
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@terrychen_ai">
+<meta name="twitter:creator" content="@terrychen_ai">
+<meta name="twitter:title" content="Agentic Engineering: How One Developer Ships Like a Team | Terry Chen">
+<meta name="twitter:description" content="I spent a day researching how Peter Steinberger ships hundreds of commits a day alone. What I found forced me to confront something uncomfortable: I&#39;ve been using AI agents wrong the whole time.">
+
+
+<meta name="twitter:image" content="https://chenterry.com/images/profile.jpg">
+<meta name="twitter:image:alt" content="Terry Chen">
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Agentic Engineering: How One Developer Ships Like a Team",
+  "datePublished": "2026-02-28T00:00:00Z",
+  "dateModified": "2026-02-28T00:00:00Z",
+  "author": {
+    "@type": "Person",
+    "name": "Terry Chen",
+    "url": "https:\/\/chenterry.com\/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Terry Chen",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https:\/\/chenterry.com\/images/profile.jpg"
+    }
+  },
+  "description": "I spent a day researching how Peter Steinberger ships hundreds of commits a day alone. What I found forced me to confront something uncomfortable: I\u0027ve been using AI agents wrong the whole time.",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https:\/\/chenterry.com\/posts\/agent_economy\/"
+  },
+  "keywords": "agentic engineering, Peter Steinberger, OpenClaw, Claude Code, Codex CLI, AI agents, developer workflow, agent economy, vibe coding, spec-driven development, Two-Context Technique, CrowdListen",
+  "articleSection": "ai"
+  ,
+  "image": {
+    "@type": "ImageObject",
+    "url": "https:\/\/chenterry.com\/images\/profile.jpg",
+    "width": 1200,
+    "height": 630
+  }
+}
+</script>
+
+
+
+
+<meta name="article:published_time" content="2026-02-28T00:00:00Z">
+<meta name="article:modified_time" content="2026-02-28T00:00:00Z">
+
+
+
+<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="bingbot" content="index, follow">
+<meta name="slurp" content="index, follow">
+<meta name="duckduckbot" content="index, follow">
+
+
+
+<meta name="section" content="posts">
+
+
+<meta name="content-type" content="posts">
+
+
+
+<meta name="geo.region" content="US">
+<meta name="geo.placename" content="United States">
+<meta name="language" content="en-us">
+<meta http-equiv="content-language" content="en-us">
+
+
+
+
+
+<meta property="og:determiner" content="the">
+<meta property="og:rich_attachment" content="true">
+
+<meta property="og:updated_time" content="2026-02-28T00:00:00Z">
+
+
+
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Terry Chen">
+
+
+<meta http-equiv="Cache-Control" content="public, max-age=31536000">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https:\/\/chenterry.com\/"
+    }
+    ,
+    {
+      "@type": "ListItem", 
+      "position": 2,
+      "name": "Posts",
+      "item": "https:\/\/chenterry.com\/posts/"
+    }
+    
+    ,
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Agentic Engineering: How One Developer Ships Like a Team",
+      "item": "https:\/\/chenterry.com\/posts\/agent_economy\/"
+    }
+    
+  ]
+}
+</script>
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="dns-prefetch" href="//www.google-analytics.com">
+<link rel="dns-prefetch" href="//www.googletagmanager.com">
+
+
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="application-name" content="Terry Chen">
+
+
+
+<meta name="DC.type" content="Text">
+<meta name="DC.format" content="text/html">
+<meta name="DC.identifier" content="https://chenterry.com/posts/agent_economy/">
+<meta name="DC.date" content="2026-02-28">
+<meta name="DC.creator" content="Terry Chen">
+<meta name="DC.publisher" content="Terry Chen">
+<meta name="DC.rights" content="© 2026 Terry Chen. All rights reserved.">
+ <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow"><title>Agentic Engineering: How One Developer Ships Like a Team | Terry Chen</title>
+<meta name="keywords" content="agentic engineering, Peter Steinberger, OpenClaw, Claude Code, Codex CLI, AI agents, developer workflow, agent economy, vibe coding, spec-driven development, Two-Context Technique, CrowdListen">
+<meta name="author" content="Terry Chen">
+<link rel="canonical" href="https://chenterry.com/posts/agent_economy/">
+    <link crossorigin="anonymous" href="/assets/css/stylesheet.8ca0e8a7581a18a3008a81e9c580528cd206f5e88ca0525e0e24439fbbbc9204.css" integrity="sha256-jKDop1gaGKMAioHpxYBSjNIG9eiMoFJeDiRDn7u8kgQ=" rel="preload stylesheet" as="style"><link rel="icon" href="https://chenterry.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://chenterry.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://chenterry.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://chenterry.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://chenterry.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="manifest" href="https://chenterry.com/manifest.json"><link rel="alternate" hreflang="en" href="https://chenterry.com/posts/agent_economy/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<script src="https://analytics.ahrefs.com/analytics.js" data-key="RfhOdZ+DOpWNlhV9QqLgTQ" async></script>
+
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>😜</text></svg>" type="image/svg+xml">
+
+<link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>😜</text></svg>"> 
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-M6GS8Q702L"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-M6GS8Q702L');
+        }
+      </script><meta property="og:url" content="https://chenterry.com/posts/agent_economy/">
+  <meta property="og:site_name" content="Terry Chen">
+  <meta property="og:title" content="Agentic Engineering: How One Developer Ships Like a Team">
+  <meta property="og:description" content="I spent a day researching how Peter Steinberger ships hundreds of commits a day alone. What I found forced me to confront something uncomfortable: I&#39;ve been using AI agents wrong the whole time.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-02-28T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-02-28T00:00:00+00:00">
+    <meta property="article:tag" content="Posts">
+      <meta property="og:image" content="https://chenterry.com/images/profile.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://chenterry.com/images/profile.jpg">
+<meta name="twitter:title" content="Agentic Engineering: How One Developer Ships Like a Team">
+<meta name="twitter:description" content="I spent a day researching how Peter Steinberger ships hundreds of commits a day alone. What I found forced me to confront something uncomfortable: I&#39;ve been using AI agents wrong the whole time.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://chenterry.com/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Agentic Engineering: How One Developer Ships Like a Team",
+      "item": "https://chenterry.com/posts/agent_economy/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Agentic Engineering: How One Developer Ships Like a Team",
+  "name": "Agentic Engineering: How One Developer Ships Like a Team",
+  "description": "I spent a day researching how Peter Steinberger ships hundreds of commits a day alone. What I found forced me to confront something uncomfortable: I've been using AI agents wrong the whole time.",
+  "keywords": [
+    "agentic engineering", "Peter Steinberger", "OpenClaw", "Claude Code", "Codex CLI", "AI agents", "developer workflow", "agent economy", "vibe coding", "spec-driven development", "Two-Context Technique", "CrowdListen"
+  ],
+  "articleBody": "I’ve been spending hundreds of dollars a month on OpenClaw and wondering if I was getting the most out of it. That question led me down a rabbit hole: how does Peter Steinberger, the person who built OpenClaw, actually work?\nWhat I found was 8,471 commits across 48 repositories in 72 days. Alone. Not with a team. Not with contractors. With agents.\nThat number forced me to ask a harder question: if I’m using the same tools and getting a fraction of that output, what am I doing differently?\nThe answer was simpler and more uncomfortable than I expected.\nThe Three Stages Three years ago I was managing a team of twelve engineers. I wrote zero code. My job was to think about the product, write the specs, and hand them to people who would figure out how. Engineers resolved the ambiguity — they read the spec, find the gaps, push back on the parts that don’t make sense.\nTwo years ago I went back to building by myself. Writing specs and code — the whole stack. The bottleneck became my own implementation capacity. I could only move as fast as I could type. This also allowed me to experiment with early coding agents and get an early sense of where agents are goig.\nThen AI coding assistants got good enough to matter. I started using Claude and Codex constantly. I shipped 10-20 commits a day, doing what required weeks in hours. For a long time I told myself I was working at a higher level. But when I looked honestly at how I was using these tools, I realized: I was still in Stage 2. Just with faster autocomplete.\nDatabase migration I knew the shape of → asked Claude for the syntax.\nReact component I knew the structure of → asked Claude to type it.\nProduction bug I’d already diagnosed → asked Claude to find the line.\nIn every case I had done the thinking. I handed the agents certainty and kept the ambiguity for myself. That’s not a team. That’s a very fast junior developer.\nWhat Steinberger Actually Does When I dug into his workflow — six blog posts in full, GitHub commit history via API, his 23.5KB AGENTS.MD file, podcast transcripts, public gists — the picture that emerged was nothing like what I expected.\nThe commits aren’t from Steinberger typing. They’re from agents executing against specs so complete they don’t need to ask clarifying questions.\nVoice first, always He uses WisprFlow — holds Fn, talks, releases. Long, rambling, incoherent thoughts. He doesn’t craft prompts. He thinks out loud and lets the transcription handle it. The shift matters: carefully written prompts optimize for precision, voice prompts optimize for reasoning. Agents respond better to reasoning.\nThe spec is the work The voice dump goes into Google AI Studio — Gemini with a one-million-token context window. Gemini turns rambling into a structured Software Design Document (SDD). Not bullets. A 500-line specification covering architecture, data model, edge cases, failure modes, what not to build, and why.\nWhy Gemini for planning? Because it won’t artificially shorten the output. You ask for a comprehensive spec and get a comprehensive spec. Other models trim. When planning, verbose is better.\nHe also uses repo2txt to convert any reference codebase into a single markdown file, feeds it to Gemini, and asks: “Which edge cases are implemented here that I didn’t think of?” The existing solution becomes input to the spec.\nThe Two-Context Technique Once he has a first draft, he opens a fresh, separate Gemini context — no shared history — pastes the spec, and prompts:\n“Take this SDD apart. Give me 20 points that are underspecified, weird, or inconsistent.”\nThe fresh context critiques without mercy. He copies those twenty points back to the original context — which holds the full history of how decisions were made — and resolves them. Three to five rounds. The critiques get increasingly niche. That’s the signal: the spec is bulletproof.\nThe result goes into docs/spec.md.\nThe prompt He opens his agent, types:\n“Build spec.md”\nAnd leaves for two to four hours.\nThe commits that land — feat: add OAuth callback handler, fix: session not persisting on logout, test: add middleware tests — are the agent committing each logical unit of work as it finishes. Run several parallel sessions on non-overlapping areas of the codebase. The commit count is a byproduct. Not the goal.\nThe Tools (And Why He Keeps Changing Them) What makes his approach interesting is that he’s been through four distinct phases in about eighteen months. The workflow principles stay constant; the specific tools evolve. That evolution is worth understanding.\nPhase 1 (early 2025): Gemini for specs + Claude Code for implementation. Established the core loop.\nPhase 2 (mid-2025): Cursor with two parallel windows. Used multiple models — Gemini 2.5 Pro as the workhorse, o3 as what he called the “Dark Knight” (expensive, reserved for the hardest bugs), and Claude Opus for complex tasks. On Opus: “Very capable, but prone to ‘vision quests’ — deviating from the original task if it hits a snag.”\nPhase 3 (late 2025): Back to Ghostty + Claude Code. Removed all MCPs. “Less is more.” Ran four Claude instances side by side on a 40\" ultrawide monitor sized specifically to fit four terminals and a browser without moving windows.\nPhase 4 (2026, current): Fully switched to Codex CLI, running 3–8 instances in a 3×3 terminal grid. When asked why he left Claude Code after championing it:\n“I used to love Claude Code, these days I can’t stand it anymore. It’s the language, the ‘absolutely right’s, the ‘100% production ready’ messages while tests fail — I just can’t anymore. Codex is more like the introverted engineer that chugs along and just gets stuff done.”\nSpecific advantages he cites: ~230k usable context vs Claude’s 156k, message queuing (pre-queue multiple tasks and it works through them), written in Rust (no freezes), and it reads the codebase eagerly before starting rather than diving straight in.\nThe tools that have stayed constant across all phases:\nWisprFlow — voice input for all prompts Poltergeist — build watcher he built and open-sourced; auto-rebuilds on file save so agents always test fresh code. “In agentic engineering, loop iteration speed is everything.” VibeTunnel — tunnels your terminal to the browser, check on agents from your phone CLIs over MCPs — one line per tool in AGENTS.md, no MCP servers. “If you add MCPs, you just pollute the context. Claude sometimes would go off spinning up Playwright unasked when it could simply read the code.” The AGENTS.md Is the Product His AGENTS.MD is 23.5KB. That’s not a quick-start note. It’s an operating manual.\nIt includes a custom scripts/committer tool that scopes git staging precisely — agents commit only the files they actually touched. A sync shorthand: one word = commit + pull rebase + push. Explicit multi-agent safety rules (never use git reset --hard on another agent’s work, never delete files to silence type errors, always git status before committing). A dedicated .agents/skills/PR_WORKFLOW.md that defines the full PR triage → review → rebase → merge pipeline.\nThe result: community contributors submit PRs written with Claude Code. His landing agents review and merge them. The entire contribution pipeline — from feature request to merged commit — is AI-native end to end. His AGENTS.md teaches other people’s agents how to contribute to his project correctly.\nHis CLAUDE.md, by the way, is 9 bytes. It just contains AGENTS.md. Claude Code reads CLAUDE.md by convention; it redirects to the full instruction set. Tool-agnostic by design.\nBlast Radius The mental model he uses to decide how many agents to run and how closely to watch them:\nBlast radius = the surface area of files and modules a change will touch.\nSmall blast radius (two or three isolated files): run four agents in parallel, each on a different area, collect commits when they’re done.\nLarge blast radius (a shared module half the codebase imports): one agent, close watch. If it takes longer than expected, press Escape:\n“I just hit escape and ask ‘what’s the status’ to get a status update and then either help the model find the right direction, abort, or continue. Don’t be afraid of stopping models mid-way — file changes are atomic and they are really good at picking up where they stopped.”\nBefore anything ambiguous, he uses an uncertainty probe: “Give me a few options before making changes.” Gauge scope before committing to an approach.\nThis is product management skill, not engineering skill. Which changes run in parallel, which get serialized, when to intervene — these are the same judgments you’d apply to a team. The execution surface changed. The underlying thinking didn’t.\nThe Realization The skills I built managing an engineering team are exactly the skills I need to manage agents.\nWrite clear specs. Assess blast radius. Notice when something is drifting and correct before it compounds. Review output, catch the subtle issues, make the architectural calls.\nWhat changed:\nCost of a hire is ~$200/month instead of a salary Feedback loop is hours instead of weeks Specs need to be better — agents can’t ask clarifying questions the way humans can Blast radius calculations matter more — agents don’t have intuitions about shared systems What didn’t change:\nSpec quality determines output quality Technical debt accumulates if you don’t actively manage it The hardest problems are still design problems: dependencies, data models, forward-thinking architecture Steinberger’s framing for the distinction between his approach and “vibe coding”:\n“Vibe coding is prompting without thinking, hoping the model figures it out. Agentic engineering is deliberately guiding capable agents toward outcomes you’ve thought through.”\nAnd then, honestly:\n“I do agentic engineering, and then maybe after 3:00 AM I switch to vibe coding, and then I regret it. You should have just gone to sleep.”\nWhat I’m Changing Specs before sessions. Anything more than a two-liner gets a spec first. Ambiguity resolved before implementation starts.\nTwo-Context Technique for planning. Paste rough plan into a fresh session, ask for ten ways it goes wrong. The critique is unsentimental. Fix the issues. Then build.\nplan only before every non-trivial session. Review the plan. Steer if needed. Then: “build it.” One correction at plan stage saves ten corrections mid-implementation.\nAgents commit atomically. In AGENTS.md: “Commit after each logical unit of work.” The commit history becomes a readable log and a recovery surface.\nBlast radius assessment before every session. Frontend component: low blast radius, two parallel sessions. Backend changes touching shared modules: one session, I’m watching.\nTests immediately after features, same context, separate prompt. The agent has full context of what it built. This is the only time tests are cheap and actually find real bugs.\nEscape → “what’s the status.” Mid-task check-in instead of waiting for completion.\nThe Part Nobody Warns You About When the bottleneck was implementation capacity, I stopped when I ran out of capacity. Physical constraint.\nWhen the bottleneck shifts to spec quality, the constraint is cognitive. Cognitive limits are harder to notice than physical ones.\nThe agent economy doesn’t make you more productive automatically. It makes you more capable, which creates more rope. A vibe-coded session at 2am can cost a full day of cleanup.\nThe discipline is: when you can’t write a good spec, stop. Spec quality is the rate-limiting step. When it degrades, everything downstream degrades with it.\nStart Here □ Install Ghostty (or any stable terminal with good split-pane support) □ Install WisprFlow — dictate prompts, stop typing them □ Install Claude Code or Codex CLI □ Install gh, vercel, psql — services with CLIs, no MCPs □ Install Poltergeist — brew tap steipete/tap \u0026\u0026 brew install poltergeist □ Next feature: write a rough spec in Google AI Studio first □ Two-Context Technique: paste spec into fresh window → \"20 inconsistencies\" □ Fix them. Save as docs/spec.md. □ Prompt: \"plan only: build docs/spec.md\" → review → \"build it\" □ After: \"add tests for what we just built\" (same session, separate prompt) □ Commit atomically. Ship. Steinberger joined OpenAI in early 2026 to work on bringing agents to everyone. OpenClaw — which grew to 180,000+ GitHub stars and PR numbers in the thirty-thousands — moved to an independent foundation and stayed open source.\nThe shift from managing twelve humans to managing twelve agents preserves more than I expected. Same judgment, same spec discipline, same instinct for when something drifts. What changes is the cost of a hire, the speed of the feedback loop, and the minimum viable quality of a spec.\nGet the spec right. The rest follows.\nI’m building CrowdListen — audience research powered by AI. I also just launched a way to connect your AI agent to CrowdListen directly — your agent can run real audience analyses on your behalf.\n",
+  "wordCount" : "2125",
+  "inLanguage": "en",
+  "image": "https://chenterry.com/images/profile.jpg","datePublished": "2026-02-28T00:00:00Z",
+  "dateModified": "2026-02-28T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Terry Chen"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://chenterry.com/posts/agent_economy/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Terry Chen",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://chenterry.com/favicon.ico"
+    }
+  }
+}
+</script>
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M6GS8Q702L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'MEASUREMENT_ID');
+</script><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  
+  
+  "@type": "BlogPosting",
+  
+  "headline": "Agentic Engineering: How One Developer Ships Like a Team",
+  "image": "https:\/\/chenterry.com\/",
+  "datePublished": "2026-02-28T00:00:00\u002b00:00",
+  "dateModified": "2026-02-28T00:00:00\u002b00:00",
+  "author": {
+    "@type": "Person",
+    "name": "Terry Chen"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Terry Chen",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https:\/\/chenterry.com\/"
+    }
+  },
+  "description": "I spent a day researching how Peter Steinberger ships hundreds of commits a day alone. What I found forced me to confront something uncomfortable: I\u0027ve been using AI agents wrong the whole time.",
+  
+  "keywords": ["agentic engineering", "Peter Steinberger", "OpenClaw", "Claude Code", "Codex CLI", "AI agents", "developer workflow", "agent economy", "vibe coding", "spec-driven development", "Two-Context Technique", "CrowdListen"],
+  
+  
+  "wordCount": "2125",
+  "timeRequired": "PT10M"
+  
+}
+</script>
+
+
+ 
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https:\/\/chenterry.com\/"
+    }
+    
+    ,{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Posts",
+      "item": "https:\/\/chenterry.com\/posts/"
+    }
+    
+    
+    ,{
+      "@type": "ListItem",
+      "position": 3,
+      "name": "97",
+      "item": "https:\/\/chenterry.com\/categories/97/"
+    }
+    
+    ,{
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Agentic Engineering: How One Developer Ships Like a Team",
+      "item": "https:\/\/chenterry.com\/posts\/agent_economy\/"
+    }
+  ]
+}
+</script>
+ 
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Terry Chen",
+  "url": "https:\/\/chenterry.com\/",
+  "sameAs": [
+    "https://www.linkedin.com/in/terry-chen-3b44911a4/",
+    "https://github.com/terrylinhaochen"
+  ],
+  "jobTitle": "AI Product Engineer",
+  "description": "AI Product Engineer and Investor exploring multi-agent systems, content understanding, and emerging technology investments",
+  "knowsAbout": [
+    "Artificial Intelligence",
+    "Product Engineering", 
+    "Investment Analysis",
+    "Multi-Agent Systems",
+    "Machine Learning",
+    "Technology Strategy"
+  ],
+  "alumniOf": "Northwestern University"
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+   
+  link[rel="icon"] {
+    content: url("data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>😜</text></svg>");
+  }
+</style> 
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://chenterry.com/" accesskey="h" title="Terry Chen (Alt + H)">Terry Chen</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            
+            <li>
+                <a href="/posts/" title="Posts">
+                    <span class="active">
+                        Posts
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="/product/" title="Product">
+                    <span>
+                        Product
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="/investing/" title="Investing">
+                    <span>
+                        Investing
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="/search/" title="Explore" accesskey="/">
+                    <span>
+                        Explore
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="/about/" title="About">
+                    <span>
+                        About
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header> <main class="main">
+<article class="post-single">
+  <header class="post-header">
+    <h1 class="post-title">Agentic Engineering: How One Developer Ships Like a Team</h1>
+    
+    
+    <div class="post-meta">
+      By Terry Chen • 
+      <time>February 28, 2026</time>
+    </div>
+  </header>
+  
+  
+  
+<div class="post-content" id="gated-content" data-gated="true" data-preview-percent="30">
+  <div id="gate-preview">
+    <p>I&rsquo;ve been spending hundreds of dollars a month on OpenClaw and wondering if I was getting the most out of it. That question led me down a rabbit hole: how does Peter Steinberger, the person who <em>built</em> OpenClaw, actually work?</p>
+<p>What I found was 8,471 commits across 48 repositories in 72 days. Alone. Not with a team. Not with contractors. With agents.</p>
+<p>That number forced me to ask a harder question: if I&rsquo;m using the same tools and getting a fraction of that output, what am I doing differently?</p>
+<p>The answer was simpler and more uncomfortable than I expected.</p>
+<hr>
+<h2 id="the-three-stages">The Three Stages</h2>
+<p><strong>Three years ago</strong> I was managing a team of twelve engineers. I wrote zero code. My job was to think about the product, write the specs, and hand them to people who would figure out how. Engineers resolved the ambiguity — they read the spec, find the gaps, push back on the parts that don&rsquo;t make sense.</p>
+<p><strong>Two years ago</strong> I went back to building by myself. Writing specs and code — the whole stack. The bottleneck became my own implementation capacity. I could only move as fast as I could type. This also allowed me to experiment with early coding agents and get an early sense of where agents are goig.</p>
+<p>Then AI coding assistants got good enough to matter. I started using Claude and Codex constantly. I shipped 10-20 commits a day, doing what required weeks in hours. For a long time I told myself I was working at a higher level. But when I looked honestly at how I was using these tools, I realized: <strong>I was still in Stage 2. Just with faster autocomplete.</strong></p>
+<p>Database migration I knew the shape of → asked Claude for the syntax.<br>
+React component I knew the structure of → asked Claude to type it.<br>
+Production bug I&rsquo;d already diagnosed → asked Claude to find the line.</p>
+<p>In every case I had done the thinking. I handed the agents certainty and kept the ambiguity for myself. That&rsquo;s not a team. That&rsquo;s a very fast junior developer.</p>
+<hr>
+<h2 id="what-steinberger-actually-does">What Steinberger Actually Does</h2>
+<p>When I dug into his workflow — six blog posts in full, GitHub commit history via API, his 23.5KB <a href="https://github.com/steipete/agent-scripts/blob/main/AGENTS.MD">AGENTS.MD</a> file, podcast transcripts, public gists — the picture that emerged was nothing like what I expected.</p>
+<p>The commits aren&rsquo;t from Steinberger typing. They&rsquo;re from agents executing against specs so complete they don&rsquo;t need to ask clarifying questions.</p>
+<h3 id="voice-first-always">Voice first, always</h3>
+<p>He uses <strong>WisprFlow</strong> — holds <code>Fn</code>, talks, releases. Long, rambling, incoherent thoughts. He doesn&rsquo;t craft prompts. He thinks out loud and lets the transcription handle it. The shift matters: carefully written prompts optimize for precision, voice prompts optimize for <em>reasoning</em>. Agents respond better to reasoning.</p>
+<h3 id="the-spec-is-the-work">The spec is the work</h3>
+<p>The voice dump goes into <strong>Google AI Studio</strong> — Gemini with a one-million-token context window. Gemini turns rambling into a structured <strong>Software Design Document</strong> (SDD). Not bullets. A 500-line specification covering architecture, data model, edge cases, failure modes, what not to build, and why.</p>
+<p>Why Gemini for planning? Because it won&rsquo;t artificially shorten the output. You ask for a comprehensive spec and get a comprehensive spec. Other models trim. When planning, verbose is better.</p>
+<p>He also uses <strong>repo2txt</strong> to convert any reference codebase into a single markdown file, feeds it to Gemini, and asks: <em>&ldquo;Which edge cases are implemented here that I didn&rsquo;t think of?&rdquo;</em> The existing solution becomes input to the spec.</p>
+<h3 id="the-two-context-technique">The Two-Context Technique</h3>
+<p>Once he has a first draft, he opens a <strong>fresh, separate Gemini context</strong> — no shared history — pastes the spec, and prompts:</p>
+<blockquote>
+<p><em>&ldquo;Take this SDD apart. Give me 20 points that are underspecified, weird, or inconsistent.&rdquo;</em></p>
+</blockquote>
+<p>The fresh context critiques without mercy. He copies those twenty points back to the <strong>original context</strong> — which holds the full history of how decisions were made — and resolves them. Three to five rounds. The critiques get increasingly niche. That&rsquo;s the signal: the spec is bulletproof.</p>
+<p>The result goes into <code>docs/spec.md</code>.</p>
+<h3 id="the-prompt">The prompt</h3>
+<p>He opens his agent, types:</p>
+<blockquote>
+<p><em>&ldquo;Build spec.md&rdquo;</em></p>
+</blockquote>
+<p>And leaves for two to four hours.</p>
+<p>The commits that land — <code>feat: add OAuth callback handler</code>, <code>fix: session not persisting on logout</code>, <code>test: add middleware tests</code> — are the agent committing each logical unit of work as it finishes. Run several parallel sessions on non-overlapping areas of the codebase. The commit count is a byproduct. Not the goal.</p>
+<hr>
+<h2 id="the-tools-and-why-he-keeps-changing-them">The Tools (And Why He Keeps Changing Them)</h2>
+<p>What makes his approach interesting is that he&rsquo;s been through four distinct phases in about eighteen months. The workflow principles stay constant; the specific tools evolve. That evolution is worth understanding.</p>
+<p><strong>Phase 1 (early 2025):</strong> Gemini for specs + Claude Code for implementation. Established the core loop.</p>
+<p><strong>Phase 2 (mid-2025):</strong> Cursor with two parallel windows. Used multiple models — Gemini 2.5 Pro as the workhorse, o3 as what he called the &ldquo;Dark Knight&rdquo; (expensive, reserved for the hardest bugs), and Claude Opus for complex tasks. On Opus: <em>&ldquo;Very capable, but prone to &lsquo;vision quests&rsquo; — deviating from the original task if it hits a snag.&rdquo;</em></p>
+<p><strong>Phase 3 (late 2025):</strong> Back to Ghostty + Claude Code. Removed all MCPs. <em>&ldquo;Less is more.&rdquo;</em> Ran four Claude instances side by side on a 40&quot; ultrawide monitor sized specifically to fit four terminals and a browser without moving windows.</p>
+<p><strong>Phase 4 (2026, current):</strong> Fully switched to <strong>Codex CLI</strong>, running 3–8 instances in a 3×3 terminal grid. When asked why he left Claude Code after championing it:</p>
+<blockquote>
+<p><em>&ldquo;I used to love Claude Code, these days I can&rsquo;t stand it anymore. It&rsquo;s the language, the &lsquo;absolutely right&rsquo;s, the &lsquo;100% production ready&rsquo; messages while tests fail — I just can&rsquo;t anymore. Codex is more like the introverted engineer that chugs along and just gets stuff done.&rdquo;</em></p>
+</blockquote>
+<p>Specific advantages he cites: ~230k usable context vs Claude&rsquo;s 156k, message queuing (pre-queue multiple tasks and it works through them), written in Rust (no freezes), and it reads the codebase eagerly before starting rather than diving straight in.</p>
+<p><strong>The tools that have stayed constant across all phases:</strong></p>
+<ul>
+<li><strong>WisprFlow</strong> — voice input for all prompts</li>
+<li><strong>Poltergeist</strong> — build watcher he built and open-sourced; auto-rebuilds on file save so agents always test fresh code. <em>&ldquo;In agentic engineering, loop iteration speed is everything.&rdquo;</em></li>
+<li><strong>VibeTunnel</strong> — tunnels your terminal to the browser, check on agents from your phone</li>
+<li><strong>CLIs over MCPs</strong> — one line per tool in AGENTS.md, no MCP servers. <em>&ldquo;If you add MCPs, you just pollute the context. Claude sometimes would go off spinning up Playwright unasked when it could simply read the code.&rdquo;</em></li>
+</ul>
+<hr>
+<h2 id="the-agentsmd-is-the-product">The AGENTS.md Is the Product</h2>
+<p>His <a href="https://github.com/steipete/agent-scripts/blob/main/AGENTS.MD">AGENTS.MD</a> is 23.5KB. That&rsquo;s not a quick-start note. It&rsquo;s an operating manual.</p>
+<p>It includes a custom <code>scripts/committer</code> tool that scopes git staging precisely — agents commit only the files they actually touched. A <code>sync</code> shorthand: one word = commit + pull rebase + push. Explicit multi-agent safety rules (never use <code>git reset --hard</code> on another agent&rsquo;s work, never delete files to silence type errors, always <code>git status</code> before committing). A dedicated <code>.agents/skills/PR_WORKFLOW.md</code> that defines the full PR triage → review → rebase → merge pipeline.</p>
+<p>The result: community contributors submit PRs written with Claude Code. His landing agents review and merge them. The entire contribution pipeline — from feature request to merged commit — is AI-native end to end. His AGENTS.md teaches other people&rsquo;s agents how to contribute to his project correctly.</p>
+<p>His <code>CLAUDE.md</code>, by the way, is 9 bytes. It just contains <code>AGENTS.md</code>. Claude Code reads <code>CLAUDE.md</code> by convention; it redirects to the full instruction set. Tool-agnostic by design.</p>
+<hr>
+<h2 id="blast-radius">Blast Radius</h2>
+<p>The mental model he uses to decide how many agents to run and how closely to watch them:</p>
+<p><strong>Blast radius</strong> = the surface area of files and modules a change will touch.</p>
+<p>Small blast radius (two or three isolated files): run four agents in parallel, each on a different area, collect commits when they&rsquo;re done.</p>
+<p>Large blast radius (a shared module half the codebase imports): one agent, close watch. If it takes longer than expected, press Escape:</p>
+<blockquote>
+<p><em>&ldquo;I just hit escape and ask &lsquo;what&rsquo;s the status&rsquo; to get a status update and then either help the model find the right direction, abort, or continue. Don&rsquo;t be afraid of stopping models mid-way — file changes are atomic and they are really good at picking up where they stopped.&rdquo;</em></p>
+</blockquote>
+<p>Before anything ambiguous, he uses an uncertainty probe: <em>&ldquo;Give me a few options before making changes.&rdquo;</em> Gauge scope before committing to an approach.</p>
+<p>This is product management skill, not engineering skill. Which changes run in parallel, which get serialized, when to intervene — these are the same judgments you&rsquo;d apply to a team. The execution surface changed. The underlying thinking didn&rsquo;t.</p>
+<hr>
+<h2 id="the-realization">The Realization</h2>
+<p>The skills I built managing an engineering team are exactly the skills I need to manage agents.</p>
+<p>Write clear specs. Assess blast radius. Notice when something is drifting and correct before it compounds. Review output, catch the subtle issues, make the architectural calls.</p>
+<p>What changed:</p>
+<ul>
+<li>Cost of a hire is ~$200/month instead of a salary</li>
+<li>Feedback loop is hours instead of weeks</li>
+<li>Specs need to be better — agents can&rsquo;t ask clarifying questions the way humans can</li>
+<li>Blast radius calculations matter more — agents don&rsquo;t have intuitions about shared systems</li>
+</ul>
+<p>What didn&rsquo;t change:</p>
+<ul>
+<li>Spec quality determines output quality</li>
+<li>Technical debt accumulates if you don&rsquo;t actively manage it</li>
+<li>The hardest problems are still design problems: dependencies, data models, forward-thinking architecture</li>
+</ul>
+<p>Steinberger&rsquo;s framing for the distinction between his approach and &ldquo;vibe coding&rdquo;:</p>
+<blockquote>
+<p><em>&ldquo;Vibe coding is prompting without thinking, hoping the model figures it out. Agentic engineering is deliberately guiding capable agents toward outcomes you&rsquo;ve thought through.&rdquo;</em></p>
+</blockquote>
+<p>And then, honestly:</p>
+<blockquote>
+<p><em>&ldquo;I do agentic engineering, and then maybe after 3:00 AM I switch to vibe coding, and then I regret it. You should have just gone to sleep.&rdquo;</em></p>
+</blockquote>
+<hr>
+<h2 id="what-im-changing">What I&rsquo;m Changing</h2>
+<p><strong>Specs before sessions.</strong> Anything more than a two-liner gets a spec first. Ambiguity resolved before implementation starts.</p>
+<p><strong>Two-Context Technique for planning.</strong> Paste rough plan into a fresh session, ask for ten ways it goes wrong. The critique is unsentimental. Fix the issues. Then build.</p>
+<p><strong><code>plan only</code> before every non-trivial session.</strong> Review the plan. Steer if needed. Then: &ldquo;build it.&rdquo; One correction at plan stage saves ten corrections mid-implementation.</p>
+<p><strong>Agents commit atomically.</strong> In AGENTS.md: <em>&ldquo;Commit after each logical unit of work.&rdquo;</em> The commit history becomes a readable log and a recovery surface.</p>
+<p><strong>Blast radius assessment before every session.</strong> Frontend component: low blast radius, two parallel sessions. Backend changes touching shared modules: one session, I&rsquo;m watching.</p>
+<p><strong>Tests immediately after features, same context, separate prompt.</strong> The agent has full context of what it built. This is the only time tests are cheap and actually find real bugs.</p>
+<p><strong>Escape → &ldquo;what&rsquo;s the status.&rdquo;</strong> Mid-task check-in instead of waiting for completion.</p>
+<hr>
+<h2 id="the-part-nobody-warns-you-about">The Part Nobody Warns You About</h2>
+<p>When the bottleneck was implementation capacity, I stopped when I ran out of capacity. Physical constraint.</p>
+<p>When the bottleneck shifts to spec quality, the constraint is cognitive. Cognitive limits are harder to notice than physical ones.</p>
+<p>The agent economy doesn&rsquo;t make you more productive automatically. It makes you more <em>capable</em>, which creates more rope. A vibe-coded session at 2am can cost a full day of cleanup.</p>
+<p>The discipline is: when you can&rsquo;t write a good spec, stop. Spec quality is the rate-limiting step. When it degrades, everything downstream degrades with it.</p>
+<hr>
+<h2 id="start-here">Start Here</h2>
+<pre tabindex="0"><code>□ Install Ghostty (or any stable terminal with good split-pane support)
 □ Install WisprFlow — dictate prompts, stop typing them
 □ Install Claude Code or Codex CLI
 □ Install gh, vercel, psql — services with CLIs, no MCPs
@@ -12,12 +694,1315 @@
 □ Prompt: &#34;plan only: build docs/spec.md&#34; → review → &#34;build it&#34;
 □ After: &#34;add tests for what we just built&#34; (same session, separate prompt)
 □ Commit atomically. Ship.
-</code></pre><hr><p>Steinberger joined OpenAI in early 2026 to work on bringing agents to everyone. OpenClaw — which grew to 180,000+ GitHub stars and PR numbers in the thirty-thousands — moved to an independent foundation and stayed open source.</p><p>The shift from managing twelve humans to managing twelve agents preserves more than I expected. Same judgment, same spec discipline, same instinct for when something drifts. What changes is the cost of a hire, the speed of the feedback loop, and the minimum viable quality of a spec.</p><p>Get the spec right. The rest follows.</p><hr><p><em>I&rsquo;m building <a href=https://crowdlisten.com>CrowdListen</a> — audience research powered by AI. I also just launched a way to <a href=https://crowdlisten.com/agents>connect your AI agent to CrowdListen</a> directly — your agent can run real audience analyses on your behalf.</em></p></div><footer class=post-footer><div class=post-tags><a href=/tags/posts>Posts</a></div></footer></article><div class=related-posts><h3>Related Articles</h3><div class=related-posts-grid><a href=/posts/one-person-billion/ class=related-post-card><div class=related-post-content><h4>Running a 1-Person Billion Dollar Company: The AI Stack That Makes It Possible</h4><div class=related-post-meta><span class=related-post-date>February 22, 2026</span>
-<span class=related-post-tags>#Posts</span></div><p class=related-post-excerpt>Sam Altman said in a recent post: &ldquo;We&rsquo;re gonna see 10-person billion dollar (valuation) …</p></div></a><a href=/posts/closing_window_ai/ class=related-post-card><div class=related-post-content><h4>The Closing Window Frame of AI Applications</h4><div class=related-post-meta><span class=related-post-date>November 12, 2025</span>
-<span class=related-post-tags>#Posts</span></div><p class=related-post-excerpt>In the fall of 2022, I sat down with my co-founders to discuss what we wanted to achieve by building …</p></div></a><a href=/posts/ai_native/ class=related-post-card><div class=related-post-content><h4>Learnings from Every on Building an AI-Native Startup</h4><div class=related-post-meta><span class=related-post-date>November 1, 2025</span>
-<span class=related-post-tags>#Posts</span></div><p class=related-post-excerpt>When Dan Shipper reveals in a recent podcast that Every&rsquo;s engineers write virtually zero code, …</p></div></a><a href=/posts/apm-interview-preparation-guide/ class=related-post-card><div class=related-post-content><h4>Preparing for Associate Product Manager Interviews: A Comprehensive Guide</h4><div class=related-post-meta><span class=related-post-date>November 1, 2025</span>
-<span class=related-post-tags>#Posts</span></div><p class=related-post-excerpt>Most APM advice focuses on how to sound like a product manager. But sounding right has never built a …</p></div></a></div></div><style>.related-posts{margin-top:3rem;padding-top:2rem;border-top:1px solid var(--border);max-width:var(--content-width,720px);margin-left:auto;margin-right:auto;width:100%;padding-left:var(--gap);padding-right:var(--gap)}.related-posts h3{margin-bottom:1.5rem;font-size:1.5rem;font-weight:600;color:var(--primary)}.related-posts-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.5rem}.related-post-card{display:block;padding:1.2rem;border-radius:var(--radius);background:var(--code-bg);border:1px solid var(--border);box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s;text-decoration:none}.related-post-card:hover{transform:translateY(-3px);box-shadow:0 5px 15px rgba(0,0,0,.1)}:root[data-theme=dark] .related-post-card:hover{box-shadow:0 5px 15px rgba(0,0,0,.4)}.related-post-card h4{margin:0 0 .6rem;font-size:1.1rem;font-weight:500;color:var(--primary);line-height:1.3}.related-post-meta{display:flex;justify-content:space-between;margin-bottom:.8rem;font-size:.85rem;color:var(--secondary)}.related-post-excerpt{font-size:.95rem;color:var(--content);line-height:1.5;margin:0}@media(max-width:768px){.related-posts-grid{grid-template-columns:1fr}}</style><style>body{background-color:var(--theme)}.post-single{background-color:var(--entry);border-radius:var(--radius);max-width:var(--content-width,720px);width:100%;margin-left:auto;margin-right:auto;padding:var(--gap);margin-bottom:var(--gap);box-shadow:var(--shadow)}.post-content{margin-top:var(--content-gap);color:var(--content)}.post-content h1,.post-content h2,.post-content h3,.post-content h4{margin:1.5em 0 .5em;color:var(--primary)}.version-history{margin-top:2rem;padding:1.5rem;background-color:var(--code-bg);border-radius:var(--radius);border-left:4px solid var(--primary)}.version-history h3{margin:0 0 1rem;color:var(--primary);font-size:1.1rem}.version-item{margin-bottom:1rem;padding-bottom:.75rem;border-bottom:1px solid var(--border)}.version-item:last-child{border-bottom:none;margin-bottom:0}.version-header{display:flex;align-items:center;gap:.75rem;margin-bottom:.25rem;flex-wrap:wrap}.version-number{font-weight:700;color:var(--primary);font-family:var(--font-mono,monospace)}.version-date{color:var(--secondary);font-size:.9rem}.current-badge{background-color:var(--primary);color:var(--theme);padding:.2rem .5rem;border-radius:.25rem;font-size:.8rem;font-weight:700}.view-commits{color:var(--primary);text-decoration:none;font-size:.9rem;padding:.2rem .5rem;border:1px solid var(--primary);border-radius:.25rem;transition:all .2s ease;display:inline-flex;align-items:center;gap:.25rem}.view-commits:hover{background-color:var(--primary);color:var(--theme)}.view-commits svg{width:14px;height:14px}.git-info{margin-top:1rem;text-align:center;color:var(--secondary);font-style:italic}.version-changes{color:var(--content);font-style:italic;margin-bottom:.25rem;font-size:.95rem}.version-summary{color:var(--secondary);font-size:.9rem}.update-info{margin-top:1rem;text-align:center;color:var(--secondary);border-top:1px solid var(--border);padding-top:1rem}</style></main><footer class=footer><span>&copy; 2026 <a href=https://chenterry.com/>Terry Chen</a></span> ·
-<span>Powered by
-<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
-        <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span><div class=archived-link><span style=font-size:.85em;color:#888;margin-top:8px;display:block>To view archived content, <a href=/archived/ style=color:#666;text-decoration:underline>click here</a></span></div></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg></a><div id=subscribe-system><div id=subscription-modal class="subscription-modal hidden"><div class=modal-overlay></div><div class=modal-content><button id=modal-close class=modal-close title=Close>×</button><div class=modal-body><h2>Stay close to the frontier</h2><p>Get updates when I publish new insights about design, technology, and human interaction patterns.</p><form id=subscription-form class=centered-subscribe-form><input type=email id=subscription-email placeholder=your@email.com required>
-<button type=submit class=submit-btn>Subscribe</button></form><div id=subscription-message class=form-message></div><div class=modal-footer><button id=modal-no-thanks class=no-thanks-btn>No thanks</button></div></div></div></div><div id=user-reminder class="returning-reminder hidden"><div id=reminder-collapsed class="reminder-collapsed clickable"><span class=reminder-text>Explore More Content</span><div class=expand-btn><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2"><path d="m18 15-6-6-6 6"/></svg></div></div><div id=reminder-expanded class="reminder-expanded hidden"><div class=expanded-header><h4>Stay close to the frontier</h4><button id=reminder-close class=reminder-close title=Minimize><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button></div><p>Get updates when I publish new insights about design, technology, and human interaction patterns.</p><div class=action-options><a href=/posts/ class=action-item><div class=action-icon>📖</div><span class=action-text>Read an article</span><div class=action-arrow>›</div></a><a href=https://crowdlisten.com target=_blank class=action-item><div class=action-icon>👥</div><span class=action-text>Insights with Crowdlisten</span><div class=action-arrow>›</div></a><div class="action-item subscribe-item"><div class=action-icon>✉️</div><span class=action-text>Subscribe for updates</span><div class=action-arrow>›</div></div></div></div></div></div><script>class SimplifiedSubscribe{constructor(){this.init()}init(){this.setupEventListeners(),this.isNewVisitor()&&setTimeout(()=>this.showCenteredModal(),1e3),this.showUserReminder()}isNewVisitor(){const e=localStorage.getItem("has-visited");return!e&&!this.hasSubscribed()&&(localStorage.setItem("has-visited","true"),!0)}hasSubscribed(){return localStorage.getItem("newsletter-subscribed")==="true"}hasPermanentlyDismissed(){return localStorage.getItem("newsletter-never-show")==="true"}showUserReminder(){document.getElementById("user-reminder").classList.remove("hidden")}hideUserReminder(){document.getElementById("user-reminder").classList.add("hidden")}expandReminder(){document.getElementById("reminder-collapsed").classList.add("hidden"),document.getElementById("reminder-expanded").classList.remove("hidden")}collapseReminder(){const e=document.getElementById("reminder-expanded"),t=document.getElementById("reminder-collapsed");e.style.animation="collapseVertical 0.2s ease-in forwards",setTimeout(()=>{e.classList.add("hidden"),e.style.animation="",t.classList.remove("hidden")},200)}showCenteredModal(){document.getElementById("subscription-modal").classList.remove("hidden")}hideCenteredModal(){document.getElementById("subscription-modal").classList.add("hidden")}async submitSubscription(e,t){try{const n=window.location.href,s=await fetch("https://script.google.com/macros/s/AKfycbxF7czbmo2JEeATzFoMnHIfGASoSTzogbjJcuQm30sjBXFqmDOqISWkIHBr64GdmURS/exec",{method:"POST",mode:"no-cors",headers:{"Content-Type":"application/x-www-form-urlencoded"},body:new URLSearchParams({email:e,pageUrl:n,source:t})});return localStorage.setItem("newsletter-subscribed","true"),setTimeout(()=>{this.resetToActionOptions()},2e3),!0}catch(e){return console.error("Subscription error:",e),!1}}resetToActionOptions(){this.hideCenteredModal(),document.getElementById("subscription-email").value="",document.getElementById("subscription-message").textContent="",document.getElementById("subscription-message").classList.remove("success","error")}setupEventListeners(){document.getElementById("reminder-collapsed")?.addEventListener("click",()=>{this.expandReminder()}),document.getElementById("reminder-close")?.addEventListener("click",()=>{this.collapseReminder()}),document.querySelector(".subscribe-item")?.addEventListener("click",()=>{this.showCenteredModal()}),document.getElementById("user-form")?.addEventListener("submit",async e=>{e.preventDefault();const s=document.getElementById("user-email").value,t=document.getElementById("user-message"),n=e.target.querySelector('button[type="submit"]');n.disabled=!0,n.textContent="Subscribing...";const o=await this.submitSubscription(s,"user-reminder");o?(t.textContent="Thanks for subscribing!",t.classList.add("success"),setTimeout(()=>this.hideUserReminder(),2e3)):(t.textContent="Something went wrong. Please try again.",t.classList.add("error")),n.disabled=!1,n.textContent="Subscribe"}),document.getElementById("modal-close")?.addEventListener("click",()=>{this.hideCenteredModal()}),document.querySelector(".modal-overlay")?.addEventListener("click",()=>{this.hideCenteredModal()}),document.getElementById("subscription-form")?.addEventListener("submit",async e=>{e.preventDefault();const s=document.getElementById("subscription-email").value,t=document.getElementById("subscription-message"),n=e.target.querySelector('button[type="submit"]');n.disabled=!0,n.textContent="Subscribing...";const o=await this.submitSubscription(s,"centered-modal");o?(t.textContent="Thanks for subscribing!",t.classList.add("success"),setTimeout(()=>this.hideCenteredModal(),2e3)):(t.textContent="Something went wrong. Please try again.",t.classList.add("error")),n.disabled=!1,n.textContent="Subscribe"}),document.getElementById("modal-no-thanks")?.addEventListener("click",()=>{this.hideCenteredModal()})}}document.addEventListener("DOMContentLoaded",()=>{new SimplifiedSubscribe})</script><style>.hidden{display:none!important}.subscription-modal{position:fixed;top:0;left:0;right:0;bottom:0;z-index:9999;display:flex;align-items:center;justify-content:center;animation:fadeIn .4s ease-out}.modal-overlay{position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.8);backdrop-filter:blur(4px)}.subscription-modal .modal-content{position:relative;background:var(--entry);border:1px solid var(--border);border-radius:var(--radius);max-width:680px;width:95%;max-height:90vh;overflow-y:auto;box-shadow:var(--shadow);animation:modalSlideIn .5s ease-out;font-family:inherit}.modal-close{position:absolute;top:20px;right:20px;background:0 0;border:none;font-size:24px;cursor:pointer;color:var(--secondary);padding:8px;border-radius:var(--radius);transition:all .2s ease;opacity:.6}.modal-close:hover{opacity:1;background:var(--theme);color:var(--primary)}.modal-body{padding:calc(var(--gap) * 2);text-align:center}.modal-body h2{margin:0 0 24px;font-size:32px;font-weight:700;color:var(--primary);font-family:inherit;line-height:1.2}.modal-body p{margin:0 0 32px;color:var(--secondary);line-height:1.6;font-size:16px;font-family:inherit;max-width:480px;margin-left:auto;margin-right:auto}.centered-subscribe-form{display:flex;flex-direction:column;gap:16px;margin-bottom:24px;max-width:400px;margin-left:auto;margin-right:auto}.centered-subscribe-form input{padding:16px 20px;border:1px solid var(--border);border-radius:var(--radius);font-size:16px;background:var(--theme);color:var(--primary);font-family:inherit;transition:border-color .2s ease;text-align:center}.centered-subscribe-form input::placeholder{color:var(--secondary);opacity:.7}.centered-subscribe-form input:focus{outline:none;border-color:var(--primary)}.centered-subscribe-form .submit-btn{background:var(--primary);color:var(--theme);border:none;padding:16px 24px;border-radius:var(--radius);font-size:16px;font-weight:600;cursor:pointer;transition:all .2s ease;font-family:inherit}.centered-subscribe-form .submit-btn:hover{opacity:.9;transform:translateY(-1px)}.centered-subscribe-form .submit-btn:disabled{opacity:.6;transform:none;cursor:not-allowed}.modal-footer{text-align:center;margin-top:16px}.subscribe-form{display:flex;flex-direction:column;gap:12px;margin-bottom:16px;width:100%}.subscribe-form input{padding:14px 16px;border:1px solid var(--border);border-radius:var(--radius);font-size:14px;background:var(--theme);color:var(--primary);font-family:inherit;transition:border-color .2s ease;box-sizing:border-box;width:100%;text-align:left}.subscribe-form input::placeholder{color:var(--secondary);opacity:.7}.subscribe-form input:focus{outline:none;border-color:var(--primary)}.submit-btn{background:var(--primary);color:var(--theme);border:none;padding:14px 16px;border-radius:var(--radius);font-size:14px;font-weight:600;cursor:pointer;transition:all .2s ease;font-family:inherit;box-sizing:border-box;width:100%}.no-thanks-btn{background:0 0;border:none;color:var(--secondary);font-size:14px;cursor:pointer;text-decoration:underline;font-family:inherit;transition:color .2s ease;opacity:.8}.no-thanks-btn:hover{color:var(--primary);opacity:1}.returning-reminder{position:fixed;bottom:0;right:0;z-index:999;font-family:inherit}.reminder-collapsed{background:var(--entry);border:1px solid var(--border);border-radius:calc(var(--radius) * 2)calc(var(--radius) * 2)0 0;padding:12px 20px;box-shadow:var(--shadow);display:flex;align-items:center;justify-content:space-between;cursor:pointer;transition:all .3s ease;user-select:none;width:360px;margin:0}.reminder-collapsed.clickable{cursor:pointer}.reminder-collapsed:hover{transform:translateY(-2px);box-shadow:0 4px 16px rgba(0,0,0,.15)}.reminder-text{font-size:14px;color:var(--secondary);font-weight:500;white-space:nowrap}.expand-btn{background:var(--theme);border:1px solid var(--border);border-radius:50%;padding:6px;transition:all .2s ease;display:flex;align-items:center;justify-content:center;color:var(--secondary);pointer-events:none}.reminder-collapsed:hover .expand-btn{background:var(--border);color:var(--primary)}.reminder-expanded{background:var(--entry);border:1px solid var(--border);border-radius:var(--radius)var(--radius)0 0;padding:24px;box-shadow:var(--shadow);width:360px;animation:expandVertical .3s ease-out;margin:0;box-sizing:border-box}.expanded-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}.expanded-header h4{margin:0;font-size:18px;font-weight:600;color:var(--primary);font-family:inherit}.reminder-close{background:0 0;border:none;cursor:pointer;color:var(--secondary);padding:4px;transition:all .2s ease;border-radius:4px;display:flex;align-items:center;justify-content:center}.reminder-close:hover{color:var(--primary);background:var(--theme)}.reminder-expanded p{margin:0 0 20px;font-size:14px;color:var(--secondary);line-height:1.6;font-family:inherit}.action-options{display:flex;flex-direction:column;gap:8px;margin-bottom:16px}.action-item{display:flex;align-items:center;padding:12px 16px;border:1px solid var(--border);border-radius:var(--radius);background:var(--theme);color:var(--primary);text-decoration:none;transition:all .2s ease;cursor:pointer}.action-item:hover{background:var(--code-bg);border-color:var(--primary)}.action-icon{font-size:16px;margin-right:12px;min-width:20px}.action-text{flex:1;font-size:14px;font-weight:500}.action-arrow{font-size:18px;color:var(--secondary);margin-left:8px}.action-item:hover .action-arrow{color:var(--primary)}.reminder-actions{text-align:center;margin-top:16px}.form-message{margin-top:16px;padding:12px 16px;border-radius:var(--radius);font-size:14px;text-align:center;font-family:inherit}.form-message.success{background:var(--code-bg);color:var(--primary);border:1px solid var(--border)}.form-message.error{background:var(--code-bg);color:var(--primary);border:1px solid var(--border)}@keyframes fadeIn{from{opacity:0}to{opacity:1}}@keyframes modalSlideIn{from{transform:scale(.95)translateY(-10px);opacity:0}to{transform:scale(1)translateY(0);opacity:1}}@keyframes expandVertical{from{transform:scaleY(0);transform-origin:bottom;opacity:0}to{transform:scaleY(1);transform-origin:bottom;opacity:1}}@keyframes collapseVertical{from{transform:scaleY(1);transform-origin:bottom;opacity:1}to{transform:scaleY(0);transform-origin:bottom;opacity:0}}@media(max-width:768px){.new-user-modal .modal-content{margin:20px;width:calc(100% - 40px)}.modal-body{padding:var(--gap)}.modal-body h2{font-size:28px}.returning-reminder{right:0;bottom:0}.reminder-expanded{width:100vw;max-width:360px;padding:16px}.reminder-collapsed{padding:10px 16px;width:100vw;max-width:360px}.reminder-text{font-size:13px}}:root{--main-width:720px;--gap:24px;--radius:8px;--shadow:0 4px 12px rgba(0, 0, 0, 0.15)}</style><script>window.addEventListener("error",function(e){console.error("Page error:",e.error),console.error("Error details:",{message:e.message,filename:e.filename,lineno:e.lineno,colno:e.colno})}),history.scrollRestoration&&(history.scrollRestoration="manual"),window.addEventListener("load",function(){window.scrollTo(0,0)}),window.addEventListener("pageshow",function(e){e.persisted&&window.scrollTo(0,0)});let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script></body></html>
+</code></pre><hr>
+<p>Steinberger joined OpenAI in early 2026 to work on bringing agents to everyone. OpenClaw — which grew to 180,000+ GitHub stars and PR numbers in the thirty-thousands — moved to an independent foundation and stayed open source.</p>
+<p>The shift from managing twelve humans to managing twelve agents preserves more than I expected. Same judgment, same spec discipline, same instinct for when something drifts. What changes is the cost of a hire, the speed of the feedback loop, and the minimum viable quality of a spec.</p>
+<p>Get the spec right. The rest follows.</p>
+<hr>
+<p><em>I&rsquo;m building <a href="https://crowdlisten.com">CrowdListen</a> — audience research powered by AI. I also just launched a way to <a href="https://crowdlisten.com/agents">connect your AI agent to CrowdListen</a> directly — your agent can run real audience analyses on your behalf.</em></p>
+
+  </div>
+  <div id="content-gate" class="content-gate" style="display:none;">
+    <div class="content-fade"></div>
+    <div class="gate-inner">
+      <div class="gate-lock-label">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        Subscribe to continue reading
+      </div>
+      <h2 class="gate-headline">Actionable Insights to<br>Help You Stay at the Edge of AI</h2>
+      <p class="gate-subtext">The essential toolkit for those shaping the future</p>
+      <p class="gate-social-proof">Join 1,000+ leaders, builders, and innovators</p>
+      <form id="gate-form" class="gate-form">
+        <label for="gate-email" class="gate-email-label">Email address</label>
+        <input type="email" id="gate-email" placeholder="example@domain.com" required>
+        <button type="submit" class="gate-submit-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          Unlock this article
+        </button>
+      </form>
+      <div id="gate-message" class="gate-message"></div>
+      <p class="gate-disclaimer">No spam, ever. Unsubscribe at any time.</p>
+    </div>
+  </div>
+</div>
+
+<noscript>
+  <div class="post-content">
+    <p>I spent a day researching how Peter Steinberger ships hundreds of commits a day alone. What I found forced me to confront something uncomfortable: I&#39;ve been using AI agents wrong the whole time.</p>
+    <p><em>JavaScript is required to read the full article. Please enable JavaScript or <a href="mailto:terrychen2026@u.northwestern.edu">contact me</a> for the full text.</em></p>
+  </div>
+</noscript>
+
+<script>
+(function() {
+  var container = document.getElementById('gated-content');
+  if (!container) return;
+
+  var isSubscribed = localStorage.getItem('newsletter-subscribed') === 'true';
+  var previewPercent = parseInt(container.getAttribute('data-preview-percent'), 10) || 30;
+  var preview = document.getElementById('gate-preview');
+  var gate = document.getElementById('content-gate');
+
+  if (isSubscribed) {
+    
+    return;
+  }
+
+  
+  var blocks = [];
+  var children = preview.children;
+  for (var i = 0; i < children.length; i++) {
+    var tag = children[i].tagName;
+    if (tag && /^(P|H[1-6]|UL|OL|BLOCKQUOTE|PRE|TABLE|FIGURE|DIV|DL|HR)$/i.test(tag)) {
+      blocks.push(children[i]);
+    }
+  }
+
+  if (blocks.length < 4) {
+    
+    return;
+  }
+
+  
+  var cutoff = Math.max(2, Math.round(blocks.length * previewPercent / 100));
+
+  
+  for (var j = cutoff; j < blocks.length; j++) {
+    blocks[j].style.display = 'none';
+  }
+
+  
+  gate.style.display = 'block';
+
+  
+  var form = document.getElementById('gate-form');
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var email = document.getElementById('gate-email').value;
+    var msgEl = document.getElementById('gate-message');
+    var btn = form.querySelector('button[type="submit"]');
+
+    btn.disabled = true;
+    btn.textContent = 'Unlocking...';
+
+    fetch('https://script.google.com/macros/s/AKfycbxF7czbmo2JEeATzFoMnHIfGASoSTzogbjJcuQm30sjBXFqmDOqISWkIHBr64GdmURS/exec', {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams({
+        'email': email,
+        'pageUrl': window.location.href,
+        'source': 'content-gate'
+      })
+    }).then(function() {
+      localStorage.setItem('newsletter-subscribed', 'true');
+      msgEl.textContent = 'Thanks! Unlocking the article...';
+      msgEl.classList.add('success');
+
+      
+      gate.classList.add('gate-unlocking');
+      setTimeout(function() {
+        gate.style.display = 'none';
+        
+        for (var k = cutoff; k < blocks.length; k++) {
+          blocks[k].style.display = '';
+          blocks[k].classList.add('gate-content-reveal');
+        }
+      }, 500);
+    }).catch(function() {
+      msgEl.textContent = 'Something went wrong. Please try again.';
+      msgEl.classList.add('error');
+      btn.disabled = false;
+      btn.textContent = 'Read the full article';
+    });
+  });
+})();
+</script>
+
+  
+  
+  
+  <footer class="post-footer">
+    <div class="post-tags">
+      
+      <a href="/tags/posts">Posts</a>
+      
+    </div>
+  </footer>
+  
+
+  
+  
+
+  
+  
+</article>
+
+
+
+
+<div class="related-posts">
+  <h3>Related Articles</h3>
+  <div class="related-posts-grid">
+    
+    <a href="/posts/one-person-billion/" class="related-post-card">
+      <div class="related-post-content">
+        <h4>Running a 1-Person Billion Dollar Company: The AI Stack That Makes It Possible</h4>
+        <div class="related-post-meta">
+          <span class="related-post-date">February 22, 2026</span>
+          
+          <span class="related-post-tags">
+            #Posts
+          </span>
+          
+        </div>
+        <p class="related-post-excerpt">Sam Altman said in a recent post: &ldquo;We&rsquo;re gonna see 10-person billion dollar (valuation) …</p>
+      </div>
+    </a>
+    
+    <a href="/posts/closing_window_ai/" class="related-post-card">
+      <div class="related-post-content">
+        <h4>The Closing Window Frame of AI Applications</h4>
+        <div class="related-post-meta">
+          <span class="related-post-date">November 12, 2025</span>
+          
+          <span class="related-post-tags">
+            #Posts
+          </span>
+          
+        </div>
+        <p class="related-post-excerpt">In the fall of 2022, I sat down with my co-founders to discuss what we wanted to achieve by building …</p>
+      </div>
+    </a>
+    
+    <a href="/posts/ai_native/" class="related-post-card">
+      <div class="related-post-content">
+        <h4>Learnings from Every on Building an AI-Native Startup</h4>
+        <div class="related-post-meta">
+          <span class="related-post-date">November 1, 2025</span>
+          
+          <span class="related-post-tags">
+            #Posts
+          </span>
+          
+        </div>
+        <p class="related-post-excerpt">When Dan Shipper reveals in a recent podcast that Every&rsquo;s engineers write virtually zero code, …</p>
+      </div>
+    </a>
+    
+    <a href="/posts/apm-interview-preparation-guide/" class="related-post-card">
+      <div class="related-post-content">
+        <h4>Preparing for Associate Product Manager Interviews: A Comprehensive Guide</h4>
+        <div class="related-post-meta">
+          <span class="related-post-date">November 1, 2025</span>
+          
+          <span class="related-post-tags">
+            #Posts
+          </span>
+          
+        </div>
+        <p class="related-post-excerpt">Most APM advice focuses on how to sound like a product manager. But sounding right has never built a …</p>
+      </div>
+    </a>
+    
+  </div>
+</div>
+
+<style>
+  .related-posts {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+    max-width: var(--content-width, 720px);
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding-left: var(--gap);
+    padding-right: var(--gap);
+  }
+  
+  .related-posts h3 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary);
+  }
+  
+  .related-posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .related-post-card {
+    display: block;
+    padding: 1.2rem;
+    border-radius: var(--radius);
+    background: var(--code-bg);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-decoration: none;
+  }
+  
+  .related-post-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  :root[data-theme="dark"] .related-post-card:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+  }
+  
+  .related-post-card h4 {
+    margin: 0 0 0.6rem 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--primary);
+    line-height: 1.3;
+  }
+  
+  .related-post-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.8rem;
+    font-size: 0.85rem;
+    color: var(--secondary);
+  }
+  
+  .related-post-excerpt {
+    font-size: 0.95rem;
+    color: var(--content);
+    line-height: 1.5;
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .related-posts-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+ 
+
+
+<style>
+   
+  body {
+    background-color: var(--theme);
+  }
+  
+  .post-single {
+    background-color: var(--entry);
+    border-radius: var(--radius);
+     
+    max-width: var(--content-width, 720px);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: var(--gap);
+    margin-bottom: var(--gap);
+    box-shadow: var(--shadow);
+  }
+  
+  .post-content {
+    margin-top: var(--content-gap);
+    color: var(--content);
+  }
+  
+  .post-content h1,
+  .post-content h2,
+  .post-content h3,
+  .post-content h4 {
+    margin: 1.5em 0 0.5em;
+    color: var(--primary);
+  }
+
+   
+  .version-history {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: var(--code-bg);
+    border-radius: var(--radius);
+    border-left: 4px solid var(--primary);
+  }
+
+  .version-history h3 {
+    margin: 0 0 1rem 0;
+    color: var(--primary);
+    font-size: 1.1rem;
+  }
+
+  .version-item {
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .version-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+
+  .version-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.25rem;
+    flex-wrap: wrap;
+  }
+
+  .version-number {
+    font-weight: bold;
+    color: var(--primary);
+    font-family: var(--font-mono, monospace);
+  }
+
+  .version-date {
+    color: var(--secondary);
+    font-size: 0.9rem;
+  }
+
+  .current-badge {
+    background-color: var(--primary);
+    color: var(--theme);
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+
+  .view-commits {
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 0.2rem 0.5rem;
+    border: 1px solid var(--primary);
+    border-radius: 0.25rem;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  .view-commits:hover {
+    background-color: var(--primary);
+    color: var(--theme);
+  }
+
+  .view-commits svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .git-info {
+    margin-top: 1rem;
+    text-align: center;
+    color: var(--secondary);
+    font-style: italic;
+  }
+
+  .version-changes {
+    color: var(--content);
+    font-style: italic;
+    margin-bottom: 0.25rem;
+    font-size: 0.95rem;
+  }
+
+  .version-summary {
+    color: var(--secondary);
+    font-size: 0.9rem;
+  }
+
+  .update-info {
+    margin-top: 1rem;
+    text-align: center;
+    color: var(--secondary);
+    border-top: 1px solid var(--border);
+    padding-top: 1rem;
+  }
+</style>
+
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://chenterry.com/">Terry Chen</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+    
+    
+    <div class="archived-link">
+        <span style="font-size: 0.85em; color: #888; margin-top: 8px; display: block;">
+            To view archived content, <a href="/archived/" style="color: #666; text-decoration: underline;">click here</a>
+        </span>
+    </div>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+
+
+<div id="subscribe-system">
+  
+  <div id="subscription-modal" class="subscription-modal hidden">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+      <button id="modal-close" class="modal-close" title="Close">×</button>
+      <div class="modal-body">
+        <h2>Stay close to the frontier</h2>
+        <p>Get updates when I publish new insights about design, technology, and human interaction patterns.</p>
+        <form id="subscription-form" class="centered-subscribe-form">
+          <input type="email" id="subscription-email" placeholder="your@email.com" required>
+          <button type="submit" class="submit-btn">Subscribe</button>
+        </form>
+        <div id="subscription-message" class="form-message"></div>
+        <div class="modal-footer">
+          <button id="modal-no-thanks" class="no-thanks-btn">No thanks</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div id="user-reminder" class="returning-reminder hidden">
+    
+    <div id="reminder-collapsed" class="reminder-collapsed clickable">
+      <span class="reminder-text">Explore More Content</span>
+      <div class="expand-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="m18 15-6-6-6 6"/>
+        </svg>
+      </div>
+    </div>
+    
+    
+    <div id="reminder-expanded" class="reminder-expanded hidden">
+      <div class="expanded-header">
+        <h4>Stay close to the frontier</h4>
+        <button id="reminder-close" class="reminder-close" title="Minimize">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 9l6 6 6-6"/>
+          </svg>
+        </button>
+      </div>
+      <p>Get updates when I publish new insights about design, technology, and human interaction patterns.</p>
+      
+      <div class="action-options">
+        <a href="/posts/" class="action-item">
+          <div class="action-icon">📖</div>
+          <span class="action-text">Read an article</span>
+          <div class="action-arrow">›</div>
+        </a>
+        
+        <a href="https://crowdlisten.com" target="_blank" class="action-item">
+          <div class="action-icon">👥</div>
+          <span class="action-text">Insights with Crowdlisten</span>
+          <div class="action-arrow">›</div>
+        </a>
+        
+        <div class="action-item subscribe-item">
+          <div class="action-icon">✉️</div>
+          <span class="action-text">Subscribe for updates</span>
+          <div class="action-arrow">›</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+class SimplifiedSubscribe {
+  constructor() {
+    this.init();
+  }
+
+  init() {
+    this.setupEventListeners();
+    
+    
+    if (this.isNewVisitor()) {
+      setTimeout(() => this.showCenteredModal(), 1000); 
+    }
+    
+    
+    this.showUserReminder();
+  }
+
+  
+  isNewVisitor() {
+    const hasVisited = localStorage.getItem('has-visited');
+    if (!hasVisited && !this.hasSubscribed()) {
+      localStorage.setItem('has-visited', 'true');
+      return true;
+    }
+    return false;
+  }
+
+  
+  hasSubscribed() {
+    return localStorage.getItem('newsletter-subscribed') === 'true';
+  }
+
+  hasPermanentlyDismissed() {
+    return localStorage.getItem('newsletter-never-show') === 'true';
+  }
+
+  
+  showUserReminder() {
+    document.getElementById('user-reminder').classList.remove('hidden');
+  }
+
+  hideUserReminder() {
+    document.getElementById('user-reminder').classList.add('hidden');
+  }
+
+  
+  expandReminder() {
+    document.getElementById('reminder-collapsed').classList.add('hidden');
+    document.getElementById('reminder-expanded').classList.remove('hidden');
+  }
+
+  collapseReminder() {
+    const expanded = document.getElementById('reminder-expanded');
+    const collapsed = document.getElementById('reminder-collapsed');
+    
+    
+    expanded.style.animation = 'collapseVertical 0.2s ease-in forwards';
+    
+    setTimeout(() => {
+      expanded.classList.add('hidden');
+      expanded.style.animation = '';
+      collapsed.classList.remove('hidden');
+    }, 200);
+  }
+
+  
+  showCenteredModal() {
+    document.getElementById('subscription-modal').classList.remove('hidden');
+  }
+
+  
+  hideCenteredModal() {
+    document.getElementById('subscription-modal').classList.add('hidden');
+  }
+
+  
+  async submitSubscription(email, source) {
+    try {
+      const pageUrl = window.location.href;
+      
+      const response = await fetch('https://script.google.com/macros/s/AKfycbxF7czbmo2JEeATzFoMnHIfGASoSTzogbjJcuQm30sjBXFqmDOqISWkIHBr64GdmURS/exec', {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: new URLSearchParams({
+          'email': email,
+          'pageUrl': pageUrl,
+          'source': source
+        })
+      });
+
+      
+      localStorage.setItem('newsletter-subscribed', 'true');
+      
+      
+      setTimeout(() => {
+        this.resetToActionOptions();
+      }, 2000);
+
+      return true;
+    } catch (error) {
+      console.error('Subscription error:', error);
+      return false;
+    }
+  }
+
+  
+  resetToActionOptions() {
+    this.hideCenteredModal();
+    
+    document.getElementById('subscription-email').value = '';
+    document.getElementById('subscription-message').textContent = '';
+    document.getElementById('subscription-message').classList.remove('success', 'error');
+  }
+
+  
+  setupEventListeners() {
+    
+    document.getElementById('reminder-collapsed')?.addEventListener('click', () => {
+      this.expandReminder();
+    });
+
+    document.getElementById('reminder-close')?.addEventListener('click', () => {
+      this.collapseReminder();
+    });
+
+    
+    document.querySelector('.subscribe-item')?.addEventListener('click', () => {
+      this.showCenteredModal();
+    });
+
+    document.getElementById('user-form')?.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const email = document.getElementById('user-email').value;
+      const messageEl = document.getElementById('user-message');
+      const submitBtn = e.target.querySelector('button[type="submit"]');
+      
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Subscribing...';
+      
+      const success = await this.submitSubscription(email, 'user-reminder');
+      
+      if (success) {
+        messageEl.textContent = 'Thanks for subscribing!';
+        messageEl.classList.add('success');
+        setTimeout(() => this.hideUserReminder(), 2000);
+      } else {
+        messageEl.textContent = 'Something went wrong. Please try again.';
+        messageEl.classList.add('error');
+      }
+      
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Subscribe';
+    });
+
+
+    
+    document.getElementById('modal-close')?.addEventListener('click', () => {
+      this.hideCenteredModal();
+    });
+
+    document.querySelector('.modal-overlay')?.addEventListener('click', () => {
+      this.hideCenteredModal();
+    });
+
+    document.getElementById('subscription-form')?.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const email = document.getElementById('subscription-email').value;
+      const messageEl = document.getElementById('subscription-message');
+      const submitBtn = e.target.querySelector('button[type="submit"]');
+      
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Subscribing...';
+      
+      const success = await this.submitSubscription(email, 'centered-modal');
+      
+      if (success) {
+        messageEl.textContent = 'Thanks for subscribing!';
+        messageEl.classList.add('success');
+        setTimeout(() => this.hideCenteredModal(), 2000);
+      } else {
+        messageEl.textContent = 'Something went wrong. Please try again.';
+        messageEl.classList.add('error');
+      }
+      
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Subscribe';
+    });
+
+    document.getElementById('modal-no-thanks')?.addEventListener('click', () => {
+      this.hideCenteredModal();
+    });
+  }
+}
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  new SimplifiedSubscribe();
+});
+</script>
+
+<style>
+ 
+.hidden {
+  display: none !important;
+}
+
+ 
+.subscription-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.4s ease-out;
+}
+
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.8);
+  backdrop-filter: blur(4px);
+}
+
+.subscription-modal .modal-content {
+  position: relative;
+  background: var(--entry);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  max-width: 680px;
+  width: 95%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: var(--shadow);
+  animation: modalSlideIn 0.5s ease-out;
+  font-family: inherit;
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--secondary);
+  padding: 8px;
+  border-radius: var(--radius);
+  transition: all 0.2s ease;
+  opacity: 0.6;
+}
+
+.modal-close:hover {
+  opacity: 1;
+  background: var(--theme);
+  color: var(--primary);
+}
+
+.modal-body {
+  padding: calc(var(--gap) * 2);
+  text-align: center;
+}
+
+.modal-body h2 {
+  margin: 0 0 24px 0;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--primary);
+  font-family: inherit;
+  line-height: 1.2;
+}
+
+.modal-body p {
+  margin: 0 0 32px 0;
+  color: var(--secondary);
+  line-height: 1.6;
+  font-size: 16px;
+  font-family: inherit;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ 
+.centered-subscribe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.centered-subscribe-form input {
+  padding: 16px 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 16px;
+  background: var(--theme);
+  color: var(--primary);
+  font-family: inherit;
+  transition: border-color 0.2s ease;
+  text-align: center;
+}
+
+.centered-subscribe-form input::placeholder {
+  color: var(--secondary);
+  opacity: 0.7;
+}
+
+.centered-subscribe-form input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.centered-subscribe-form .submit-btn {
+  background: var(--primary);
+  color: var(--theme);
+  border: none;
+  padding: 16px 24px;
+  border-radius: var(--radius);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.centered-subscribe-form .submit-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.centered-subscribe-form .submit-btn:disabled {
+  opacity: 0.6;
+  transform: none;
+  cursor: not-allowed;
+}
+
+.modal-footer {
+  text-align: center;
+  margin-top: 16px;
+}
+
+ 
+
+ 
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.subscribe-form input {
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 14px;
+  background: var(--theme);
+  color: var(--primary);
+  font-family: inherit;
+  transition: border-color 0.2s ease;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+}
+
+.subscribe-form input::placeholder {
+  color: var(--secondary);
+  opacity: 0.7;
+}
+
+.subscribe-form input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.submit-btn {
+  background: var(--primary);
+  color: var(--theme);
+  border: none;
+  padding: 14px 16px;
+  border-radius: var(--radius);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.no-thanks-btn {
+  background: none;
+  border: none;
+  color: var(--secondary);
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: underline;
+  font-family: inherit;
+  transition: color 0.2s ease;
+  opacity: 0.8;
+}
+
+.no-thanks-btn:hover {
+  color: var(--primary);
+  opacity: 1;
+}
+
+ 
+.returning-reminder {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+  font-family: inherit;
+}
+
+ 
+.reminder-collapsed {
+  background: var(--entry);
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius) * 2) calc(var(--radius) * 2) 0 0;
+  padding: 12px 20px;
+  box-shadow: var(--shadow);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  user-select: none;
+  width: 360px;
+  margin: 0;
+}
+
+.reminder-collapsed.clickable {
+  cursor: pointer;
+}
+
+.reminder-collapsed:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.reminder-text {
+  font-size: 14px;
+  color: var(--secondary);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.expand-btn {
+  background: var(--theme);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  padding: 6px;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--secondary);
+  pointer-events: none;
+}
+
+.reminder-collapsed:hover .expand-btn {
+  background: var(--border);
+  color: var(--primary);
+}
+
+ 
+.reminder-expanded {
+  background: var(--entry);
+  border: 1px solid var(--border);
+  border-radius: var(--radius) var(--radius) 0 0;
+  padding: 24px;
+  box-shadow: var(--shadow);
+  width: 360px;
+  animation: expandVertical 0.3s ease-out;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.expanded-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.expanded-header h4 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary);
+  font-family: inherit;
+}
+
+.reminder-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--secondary);
+  padding: 4px;
+  transition: all 0.2s ease;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reminder-close:hover {
+  color: var(--primary);
+  background: var(--theme);
+}
+
+.reminder-expanded p {
+  margin: 0 0 20px 0;
+  font-size: 14px;
+  color: var(--secondary);
+  line-height: 1.6;
+  font-family: inherit;
+}
+
+ 
+.action-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.action-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--theme);
+  color: var(--primary);
+  text-decoration: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.action-item:hover {
+  background: var(--code-bg);
+  border-color: var(--primary);
+}
+
+.action-icon {
+  font-size: 16px;
+  margin-right: 12px;
+  min-width: 20px;
+}
+
+.action-text {
+  flex: 1;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.action-arrow {
+  font-size: 18px;
+  color: var(--secondary);
+  margin-left: 8px;
+}
+
+.action-item:hover .action-arrow {
+  color: var(--primary);
+}
+
+.reminder-actions {
+  text-align: center;
+  margin-top: 16px;
+}
+
+ 
+.form-message {
+  margin-top: 16px;
+  padding: 12px 16px;
+  border-radius: var(--radius);
+  font-size: 14px;
+  text-align: center;
+  font-family: inherit;
+}
+
+.form-message.success {
+  background: var(--code-bg);
+  color: var(--primary);
+  border: 1px solid var(--border);
+}
+
+.form-message.error {
+  background: var(--code-bg);
+  color: var(--primary);
+  border: 1px solid var(--border);
+}
+
+ 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modalSlideIn {
+  from {
+    transform: scale(0.95) translateY(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes expandVertical {
+  from {
+    transform: scaleY(0);
+    transform-origin: bottom;
+    opacity: 0;
+  }
+  to {
+    transform: scaleY(1);
+    transform-origin: bottom;
+    opacity: 1;
+  }
+}
+
+@keyframes collapseVertical {
+  from {
+    transform: scaleY(1);
+    transform-origin: bottom;
+    opacity: 1;
+  }
+  to {
+    transform: scaleY(0);
+    transform-origin: bottom;
+    opacity: 0;
+  }
+}
+
+ 
+@media (max-width: 768px) {
+  .new-user-modal .modal-content {
+    margin: 20px;
+    width: calc(100% - 40px);
+  }
+  
+  .modal-body {
+    padding: var(--gap);
+  }
+  
+  .modal-body h2 {
+    font-size: 28px;
+  }
+  
+  .returning-reminder {
+    right: 0;
+    bottom: 0;
+  }
+  
+  .reminder-expanded {
+    width: 100vw;
+    max-width: 360px;
+    padding: 16px;
+  }
+  
+  .reminder-collapsed {
+    padding: 10px 16px;
+    width: 100vw;
+    max-width: 360px;
+  }
+  
+  .reminder-text {
+    font-size: 13px;
+  }
+}
+
+ 
+:root {
+  --main-width: 720px;
+  --gap: 24px;
+  --radius: 8px;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+</style>
+
+<script>
+    
+    window.addEventListener('error', function(e) {
+        console.error('Page error:', e.error);
+        console.error('Error details:', {
+            message: e.message,
+            filename: e.filename,
+            lineno: e.lineno,
+            colno: e.colno
+        });
+    });
+
+    
+    if (history.scrollRestoration) {
+        history.scrollRestoration = 'manual';
+    }
+    
+    
+    window.addEventListener('load', function() {
+        window.scrollTo(0, 0);
+    });
+    
+    
+    window.addEventListener('pageshow', function(event) {
+        if (event.persisted) {
+            window.scrollTo(0, 0);
+        }
+    });
+
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script> </body>
+
+</html>
