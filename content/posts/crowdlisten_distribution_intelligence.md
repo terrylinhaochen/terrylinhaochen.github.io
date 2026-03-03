@@ -1,6 +1,6 @@
 ---
-title: "Distribution Intelligence for Vibe-Coded Products"
-description: "Vibe coding solved the problem of building. Crowdlisten solves the problem of being understood. By turning crowd insight into scalable storytelling, the product helps solo builders move from shipping quietly to reaching their first real users."
+title: "Building Has Become Easier — How Do We Fix Distribution?"
+description: "AI made shipping dramatically faster. The real bottleneck is now distribution: finding the right narrative, channel, and audience signal that turns products into adoption."
 date: 2025-12-17
 author: Terry Chen
 categories: crowdlisten
@@ -35,6 +35,8 @@ Crowdlisten launches as a productized service with two tightly scoped offerings 
 **Ongoing Insights ($69/month).** This package provides ongoing crowd insight and audience feedback analysis. Crowdlisten continuously monitors conversations around adjacent products, analyzes comments and reactions on posted content, and clusters how people describe value, confusion, and objections. The output is a steady stream of actionable insight that informs new content, messaging changes, and product decisions.
 
 ## How It Works
+
+![Distribution Workflow from Crowd Signal](/images/projects/crowdlistening/use-cases-cards-2026-03.png)
 
 Crowdlisten begins by analyzing similar products and adjacent tools within the same category. Rather than focusing on features or positioning statements, the system extracts how people describe their experience in natural language. Phrases like "this saves me time," "this replaces three tools," or "this finally makes sense" become the raw material for storytelling.
 

@@ -1,6 +1,6 @@
 ---
-title: "The Shift to Agentic Content Discovery"
-description: "As AI agents replace human browsing and comparison, the primary consumer of online content shifts from people to software. Crowdlisten becomes the structured insight layer that agents need to reason about real user experience."
+title: "The Agent Economy Starts with Tasks. It Scales Through Attention."
+description: "Agents already execute workflows; the next shift is attention mediation. As discovery moves from humans to agents, distribution and advertising models must adapt to agent-operated demand."
 date: 2025-11-15
 author: Terry Chen
 categories: crowdlisten
@@ -21,6 +21,8 @@ Second, digital interfaces are converging toward natural-language agentic interf
 Third, platforms have strong incentives to accelerate this shift. If agents mediate user decisions, the agent interface becomes the new distribution channel, enabling Google, Microsoft, Amazon, and other platform players to capture more of the decision funnel. The strategic and economic incentives of users (reduced cognitive load), platforms (tighter control over discovery), and vendors (more qualified recommendations) reinforce one another.
 
 ## Content as Data
+
+![Agent-Mediated Insight Interface](/images/projects/crowdlistening/feed-analysis-details-2026-03.png)
 
 As agents begin consuming the majority of content, the nature of content itself changes. Agents do not experience content as media or narrative; they process it as data. They extract claims, features, pricing, evidence, and contradictions. They compare these structured signals against other sources, including technical documentation, competitor claims, and---critically---user-generated feedback.
 

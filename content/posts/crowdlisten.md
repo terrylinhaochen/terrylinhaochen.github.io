@@ -1,11 +1,11 @@
 ---
-title: "From Raw Social Data to Real Research"
+title: "PM for Agents: Turning Audience Insight Into Agent-Ready Specs"
 date: 2025-09-15
 categories: crowdlisten
 projectURL: crowdlisten.com
 tags: ["Entrepreneurship", "Product"]
 company: "crowdlisten"
-description: "Transform large-scale social conversations into actionable insights. Crowdlisten is evolving from insight extraction into a real-time feedback layer that connects what builders ship with how audiences actually respond."
+description: "CrowdListen converts raw user conversation into structured product insight and agent-ready PM specs, preserving intent from feedback signal to executable task."
 keywords: ["social listening", "brand listening", "market analysis", "tiktok", "journalism","reporting", "user experience"]
 images: ["/projects/crowdlisten/featured.jpg"]
 version: "1.1"
@@ -14,15 +14,35 @@ changelog:
     date: "2025-10-25"
     changes: "Updated Title"
 ---
+<div class="cl-thesis-note">
+  <strong>The problem:</strong> customer feedback is fragmented and unstructured, while PRDs written for humans often fail when passed to coding agents because intent and context are lost. <strong>CrowdListen preserves and operationalizes intent</strong> by synthesizing user signal into agent-ready PM specs that decompose features into executable tasks with full context.
+</div>
+
+<style>
+  .cl-thesis-note {
+    margin: 6px 0 18px;
+    padding: 12px 14px;
+    border-left: 3px solid var(--primary);
+    border: 1px solid var(--border);
+    border-left-width: 3px;
+    border-radius: 10px;
+    background: var(--entry);
+    color: var(--secondary);
+    line-height: 1.65;
+  }
+  .cl-thesis-note strong { color: var(--primary); }
+</style>
+
+![CrowdListen Overview](/images/projects/crowdlistening/agent-ready-hero-2026-03-02.png)
 
 <div class="cl-video-cards">
   <a class="cl-video-card" href="https://youtu.be/9JEVxvLL-Yk" target="_blank" rel="noopener noreferrer">
-    <div class="cl-video-label">Founder Video</div>
+    <div class="cl-video-label">Founder video</div>
     <div class="cl-video-title">Why we built CrowdListen</div>
     <div class="cl-video-cta">Watch on YouTube →</div>
   </a>
   <a class="cl-video-card" href="https://youtu.be/cORAZlhC_94" target="_blank" rel="noopener noreferrer">
-    <div class="cl-video-label">Product Demo</div>
+    <div class="cl-video-label">Product demo</div>
     <div class="cl-video-title">End-to-end product walkthrough</div>
     <div class="cl-video-cta">Watch on YouTube →</div>
   </a>
@@ -37,7 +57,9 @@ changelog:
   .cl-video-cta { font-size: 13px; color: var(--secondary); }
 </style>
 
-![CrowdListen Homepage](/images/projects/crowdlistening/homepage-hero-2026-03.png)
+
+
+
 
 ## From Content Aggregation to Original Research
 
@@ -55,29 +77,33 @@ What I'm particularly interested in exploring and building with Crowdlisten is t
 
 ![Product Suite](/images/projects/crowdlistening/use-cases-cards-2026-03.png)
 
-CrowdListen is built around one core problem: customer feedback is fragmented, unstructured, and difficult to convert into reliable product execution. Most teams still rely on manual synthesis and ad hoc workflows, which means intent gets lost between research, planning, and implementation. Traditional PRDs also break when handed to coding agents because they are written for humans, not executable agent workflows.
+CrowdListen is built around a specific execution failure we kept seeing in real teams: feedback is fragmented across channels, synthesis is manual, and intent gets lost between research, planning, and delivery. Most product organizations can collect signal, but they cannot preserve the original user context all the way to implementation. That is where quality drops. Requirements become abstract, handoffs become lossy, and coding agents produce work that is technically correct but strategically misaligned.
 
-Our product suite preserves intent from first signal to shipped outcome through three connected surfaces:
+We designed the product as one connected operating flow instead of disconnected tools. Feed captures and structures raw audience signal, Workspace turns that signal into evidence-backed product direction, and Kanban routes scoped work to agents with enough context to execute reliably. The system is not trying to generate more artifacts; it is trying to preserve decision quality from first observation to shipped output.
 
-### 1) Feed — Signal Intake and Distillation
-Feed pulls cross-channel discussion into one stream (e.g., Reddit, Discord, Slack, support threads, and other public or internal feedback sources). It continuously clusters what people are actually saying: pain points, feature requests, objections, and recurring workarounds.
+### Feed
 
-Instead of raw mention counts, Feed produces structured insight themes that teams can act on immediately. The goal is to turn noisy social and community data into clear product-relevant signal.
+![Feed: Cross-channel Signal Intake](/images/projects/crowdlistening/feed-overview-2026-03.png)
 
-### 2) Workspace — Insight Development and Specification
-Workspace is where teams investigate those signals in depth. It acts as a conversational research environment that helps users explore problem space, validate hypotheses, and synthesize evidence into product decisions.
+Feed consolidates cross-channel conversation into a single signal layer, including pain points, feature requests, objections, and recurring workarounds. Instead of relying on mentions or keyword counts, it clusters meaning and tracks persistence over time, so teams can distinguish temporary noise from durable demand. The output is a structured view of what users are actually asking for, in their own language, with enough specificity to drive product decisions.
 
-From there, users can draft rich PRDs and working product artifacts with preserved context (why this matters, who it impacts, and what constraints apply), not just shallow summaries.
+### Workspace
 
-### 3) Kanban — Agent Orchestration and Execution
-Kanban is the execution bridge between product artifacts and implementation agents. It decomposes specs into scoped tasks and routes them to coding agents with full task context, so execution aligns with original intent.
+![Workspace: Insight Development](/images/projects/crowdlistening/workspace-preview-2026-03.png)
 
-Teams can orchestrate implementation through tools like Claude Code, Codex, and OpenAI-powered agents (including non-coding task flows), while keeping traceability from user signal → insight → spec → shipped work.
+Workspace is where teams turn raw signal into decisions. It supports conversational exploration of the problem space, helps validate hypotheses against evidence, and produces richer product artifacts than traditional summary docs. The emphasis is not on writing longer PRDs; it is on preserving rationale, constraints, and user context so that every decision remains traceable back to real audience behavior.
+
+### Kanban
+
+![Kanban: From Insight to Execution](/images/projects/crowdlistening/kanban-execution-2026-03.png)
+
+Kanban closes the loop between product intent and implementation. It decomposes specs into executable tasks and routes them to coding agents with project context intact, which reduces drift between what the team intended and what actually gets built. This is the layer that turns CrowdListen from an analysis product into an execution system: user signal becomes prioritized work, and prioritized work becomes shipped outcomes with accountability.
 
 ### Why this structure matters
-CrowdListen is designed for an agent-driven product economy: insight should not stop at dashboards, and PRDs should not fail at handoff. By translating user signal into agent-ready PM specs and executable tasks, CrowdListen makes AI-assisted product delivery more reliable, faster, and less lossy.
 
-Our conviction is simple: as more work is executed by agents, the system that preserves intent will determine build quality. CrowdListen is that system.
+![Agent-Ready Analysis Canvas](/images/projects/crowdlistening/analysis-canvas-2026-03.png)
+
+The thesis is simple: in an agent-driven product economy, the bottleneck is no longer writing code, it is preserving intent. Teams that can carry user context through every handoff will iterate faster and ship better decisions, while teams that lose context will scale misalignment. CrowdListen is designed to be the PM layer for agents by translating audience insight into agent-ready specifications that remain grounded in evidence.
 
 ## The Insight Paradox
 
@@ -85,9 +111,6 @@ Brands today face a fundamental paradox: they need broad insights from vast amou
 
 ## Validation and Impact
 
-Our solution has been validated through interviews with major brands like L'Oreal, confirming we drastically cut the time and cost of social media analysis. Crowdlisten enables:
+![CrowdListen Docs & Operating Surface](/images/projects/crowdlistening/docs-portal-2026-03.png)
 
-- Rapid response to emerging trends
-- Deep understanding of consumer sentiment across demographics
-- Identification of microtrends before they become mainstream
-- Competitive intelligence at unprecedented scale
+Early validation work, including enterprise conversations with teams such as L'Oreal, consistently pointed to the same result: when feedback synthesis is structured and context is preserved, teams reduce analysis overhead and make faster product calls. In practice, this means they can respond to trends earlier, understand sentiment shifts with more nuance, identify emerging themes before they become obvious, and run competitive analysis with higher confidence. The key advantage is not just speed; it is the ability to convert audience evidence into higher-quality execution decisions without losing fidelity across the workflow.

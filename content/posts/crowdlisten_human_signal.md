@@ -1,6 +1,6 @@
 ---
-title: "Reconstructing Meaning from Weighted Social Conversations"
-description: "How Crowdlisten turns fragmented social conversations into weighted, structured signal that teams can act on: from listening, to interpretation, to execution."
+title: "Fine-Grained Social Listening for Understanding Crowd Conversations"
+description: "A framework for turning fragmented, high-volume social discussion into weighted signal: what people actually mean, which patterns matter, and how teams should act."
 date: 2026-01-15
 author: Terry Chen
 categories: crowdlisten

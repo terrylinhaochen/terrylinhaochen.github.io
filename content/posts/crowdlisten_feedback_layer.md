@@ -30,6 +30,8 @@ Working with the first cohort of builders, three patterns have become clear.
 
 ## From Insights to Feedback Layer
 
+![Feedback Loop Surface](/images/projects/crowdlistening/feed-overview-2026-03.png)
+
 These observations have shaped how Crowdlisten is evolving. The initial product was oriented around content creation: take crowd insights, produce videos, distribute them. That remains valuable, but it is only half the loop. The other half---feeding audience response back into product decisions---is where the compounding value lives.
 
 The feedback layer works in three stages.
