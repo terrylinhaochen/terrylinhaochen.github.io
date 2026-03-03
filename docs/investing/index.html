@@ -595,9 +595,9 @@
   }
 
    
-  .theme-slide h2 { color: #111 !important; font-weight: 700 !important; }
-  .theme-slide p { color: #333 !important; font-weight: 500 !important; }
-  .theme-carousel .theme-slide, .theme-content { color: #111 !important; }
+  .theme-slide h2 { color: var(--primary) !important; font-weight: 700 !important; }
+  .theme-slide p { color: var(--secondary) !important; font-weight: 500 !important; }
+  .theme-carousel .theme-slide, .theme-content { color: var(--primary) !important; }
 
   .theme-slide .carousel-status {
     display: inline-block;
@@ -609,6 +609,13 @@
     border-radius: 20px;
     margin-left: 0.5rem;
     vertical-align: middle;
+  }
+
+  body.dark .theme-slide .carousel-status,
+  .dark .theme-slide .carousel-status {
+    color: #86efac;
+    background: rgba(22, 101, 52, 0.35);
+    border: 1px solid rgba(134, 239, 172, 0.35);
   }
 
    
