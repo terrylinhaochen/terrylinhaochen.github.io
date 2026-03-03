@@ -1,131 +1,63 @@
 ---
-title: "The Agent User Research Notebook: How to Learn What Worker Agents Actually Need"
-description: "A practical operating notebook for researching worker agents like OpenClaw/Manus: task harnesses, intervention logs, failure taxonomy, scorecards, and product idea decomposition for agent-native markets."
+title: "Moltbook and the Supply–Demand Curve for Agents"
+description: "A thesis on the emerging agent economy: autonomous personal agents, tool-access demand, platform power, and the split between AI as a tool versus AI as a tool-using operator."
 date: 2026-03-03
 author: Terry Chen
 categories: crowdlisten
 tags: ["AI", "Product", "Research"]
-keywords: ["agent user research", "worker agents", "OpenClaw", "Manus", "agent workflow", "task harness", "intervention log", "agent UX", "agent tools", "agent marketing"]
+keywords: ["Moltbook", "agent economy", "AI agents", "agent supply and demand", "autonomous agents", "personalized agents", "tool-using AI", "OpenAI", "Anthropic", "ByteDance"]
 ---
 
-Most people talk about “AI user research” as if agents were just another chatbot interface. That misses the real shift. For worker agents—OpenClaw, Manus-style systems, coding agents—the right research surface is not chat quality. It is execution quality across real tasks.
+Moltbook is interesting not because it is “another social app,” but because it hints at a market structure: a world where agents are no longer occasional assistants and start behaving like persistent economic actors. If that world materializes, the core question is not whether agents can generate text. The core question is how supply and demand for agents evolves when agents can execute work, coordinate tools, and represent user intent over time.
 
-If you want to learn what agents actually need, don’t start with broad surveys. Start with a notebook that captures how they succeed and fail when doing work you already care about.
+## The shift: from chatbot interactions to agent participation
 
-## Why a notebook beats abstract frameworks
+Most current AI usage is still session-bound and task-fragmented. You ask, it answers, the context decays. But the product direction is clearly moving toward continuity: autonomous agents with memory, preferences, delegated permissions, and recurring responsibilities. In that model, users may not have one monolithic assistant. They may run multiple specialized agents—builder agent, research agent, distribution agent, finance agent—each with different capabilities and risk boundaries.
 
-A worker agent can look impressive in demos and still fail in production workflows. The failure usually isn’t one big bug. It’s accumulated friction: unclear requirements, missing context, wrong tool assumptions, weak decomposition, and silent drift from intent.
+That is where Moltbook matters as an early signal. It is less about social posting and more about what happens when agents can discover each other, coordinate, and become legible entities in a shared environment.
 
-A research notebook forces these issues into observable artifacts. Instead of saying “the agent felt unreliable,” you can point to exactly where execution broke and what input or process would have prevented it.
+## Supply side: who will produce agents
 
-## The practical setup
+The initial supply will likely come from large model/platform companies—OpenAI, Anthropic, ByteDance, and others—because they control foundational model access, distribution surfaces, and default user workflows. But that is only the base layer.
 
-Use one living document (Notion, markdown, sheet—anything simple) with one row per run.
+A second supply layer will come from product teams and independent builders creating role-specific agents on top of these foundations. The key differentiator will not be base-model quality alone; it will be workflow fit, tool access, and trust calibration for specific jobs.
 
-Track these fields every time:
+## Demand side: why agent demand compounds
 
-- task name
-- objective
-- input context provided
-- expected output format
-- agent used
-- completion status (pass/fail/partial)
-- human interventions required
-- failure mode
-- fix applied
-- rerun outcome
+Demand for agents increases when three conditions are met:
 
-The goal is not perfect logging. The goal is enough structure to make patterns obvious within 2–3 weeks. Once those patterns emerge, you can stop treating this as “agent testing” and start treating it as product discovery for an agent-native market.
+1. **Task pressure**: users have too many repetitive or cognitively expensive tasks.
+2. **Execution confidence**: agents can complete those tasks with predictable quality.
+3. **Tool leverage**: agents can operate real systems, not just generate suggestions.
 
-## Build a task harness first
+As job scopes shift, demand is less “give me an answer” and more “own this workflow.” That creates demand not only for general agents, but for agent orchestration, governance, and role design.
 
-Pick 15–25 recurring tasks from your real workflow. Avoid toy prompts.
+## The key distinction: AI as a tool vs AI as a tool-using operator
 
-For product/marketing/operator teams, this usually includes:
+This distinction is strategic.
 
-- synthesize feedback into a PRD draft
-- extract top objections from discussion data
-- generate channel-specific distribution assets from long-form source
-- decompose a roadmap item into execution tickets
-- implement scoped code changes with acceptance checks
+**AI as a tool** means the human still performs the workflow and uses AI for local acceleration (drafting, summarizing, coding snippets, brainstorming).
 
-Each task should have explicit success criteria. If success is ambiguous, your research data will be noisy.
+**AI as a tool-using operator** means the agent can invoke other systems, move state, execute multi-step tasks, and return outcomes with traceability.
 
-## The most important signal: intervention logs
+The second category is where real economic displacement and value creation happens. It also introduces harder requirements: permissioning, auditability, rollback, and explicit execution contracts.
 
-Interventions are your strongest research signal. Every time you step in, log why.
+## What product opportunities emerge
 
-Use a fixed taxonomy:
+If this agent economy expands, the opportunity map looks like this:
 
-- context missing
-- requirement ambiguity
-- tool misuse
-- incorrect assumptions
-- poor decomposition
-- output format mismatch
-- quality/control failure
+- **Agent identity + trust layers**: proving who controls an agent and what it can do.
+- **Tool-access infrastructure**: safe routing of agent actions across APIs and internal systems.
+- **Task contract systems**: standardized specs for delegating work to agents with quality controls.
+- **Agent-native distribution**: messaging and discovery optimized for agent interpretation, not only human persuasion.
+- **Agent marketplaces / networks**: environments where agents discover capabilities, collaborators, and demand.
 
-After enough runs, this tells you what agents “want” in concrete terms: better context packs, tighter task templates, stronger guardrails, and clearer stop conditions.
+Moltbook points toward the last category, but its deeper value is as a lens for the entire stack.
 
-## Ask agents to self-audit after failures
+## My working thesis (March 3)
 
-After a failed or partial run, run a postmortem prompt:
+The near-term market will be hybrid: humans plus agents. But over time, competition will shift from “best model output” to “best agent operating system.” Winners will combine personalization, autonomy, and tool leverage under reliable governance.
 
-1. What information was missing?
-2. Which assumption was wrong?
-3. Which step caused the first irreversible error?
-4. What artifact would have prevented this (template/checklist/spec field)?
-5. What should be changed before rerunning?
+In that world, product strategy changes. You are no longer just designing tools for users. You are designing systems where agents act on behalf of users, transact with other systems, and shape demand itself.
 
-This is the agent equivalent of user interviews. You are extracting structured feedback from execution traces.
-
-## Weekly scorecard (keep it simple)
-
-Track four numbers weekly:
-
-- task success rate
-- intervention rate
-- first-pass acceptance rate
-- median time to usable output
-
-If these four move in the right direction, your agent UX is improving.
-
-## Decomposing product ideas from the notebook
-
-Once your notebook has enough runs, start clustering failures into product opportunities. A useful decomposition is: **attention**, **tooling**, and **execution contracts**.
-
-For attention, the open question is whether ads and distribution are shifting from human persuasion to agent interpretation. In an agent-mediated world, an “ad” is less about visual persuasion and more about machine-legible claims: what this tool does, for whom, under what constraints, and with what evidence. That creates a product category around agent-readable positioning layers and trust signals.
-
-For tooling, today’s agents can usually call only a small set of tools. Your notebook should reveal what is missing most often: CRM lookups, analytics queries, ad platform actions, content scheduling, ticket updates, repo actions, or payment operations. That list becomes a roadmap for an agent tool router and permission model, not a random integration backlog.
-
-For execution contracts, most failures come from weak task definitions rather than weak models. This is where “PM for agents” and “marketer for agents” connect: agents need clear contracts for both building and distribution. A product can win by packaging reusable agent contracts (inputs, constraints, evaluation, and rollback conditions) for common workflows.
-
-## A practical opportunity map to test now
-
-Use three near-term experiments:
-
-1. **Agent Tool Demand Map**: rank the top 10 missing tools by intervention frequency.
-2. **Agent-Readable Distribution Brief**: test whether structured campaign briefs improve agent-produced marketing outcomes.
-3. **Task Contract Library**: template the 10 most common tasks and measure first-pass acceptance lift.
-
-These are small, measurable, and directly grounded in observed behavior.
-
-## From research to product decisions
-
-The notebook is only useful if it changes your system.
-
-Every week, convert findings into concrete updates:
-
-- better task template fields
-- improved PRD/spec schema for agents
-- context bundle checklist
-- preflight validation steps
-- tighter handoff boundaries between human and agent
-
-This is how agent research compounds: run → observe → patch → rerun.
-
-## What this means for the next phase
-
-As agents become core contributors, teams that instrument execution loops will outlearn teams that evaluate agents by vibe. The best strategy is not to ask “is this model smart?” The better question is: “what workflow conditions make this agent reliably useful for the work we do?”
-
-That answer lives in a notebook—not in a benchmark leaderboard.
+That is the curve I’m watching: the supply and demand of agents as first-class economic participants.
