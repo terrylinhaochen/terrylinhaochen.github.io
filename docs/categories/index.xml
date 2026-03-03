@@ -8,7 +8,7 @@
     <managingEditor>Terry Chen (Terry Chen)</managingEditor>
     <webMaster>Terry Chen (Terry Chen)</webMaster>
     <copyright>© 2026 Terry Chen. All rights reserved.</copyright>
-    <lastBuildDate>Sat, 28 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Mar 2026 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://chenterry.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -25,6 +25,21 @@
       <width>144</width>
       <height>144</height>
     </image>
+    
+    <item>
+      <title>Reflections</title>
+      <link>https://chenterry.com/categories/reflections/</link>
+      <pubDate>Mon, 02 Mar 2026 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/categories/reflections/</guid>
+      <description></description>
+      
+      
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2026-03-02T00:00:00Z</dc:date>
+    </item>
     
     <item>
       <title>Ai</title>
