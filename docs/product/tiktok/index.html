@@ -584,20 +584,26 @@
       
       <a href="#section-0" class="thesis-nav-link active" data-index="0">
         <span class="nav-number">1</span>
-        <span class="nav-title">Multi-modal Creative Ad Generation</span>
-        <span class="nav-date">May 2024</span>
+        <span class="nav-text">
+          <span class="nav-title">Multi-modal Creative Ad Generation</span>
+          <span class="nav-date">May 2024</span>
+        </span>
       </a>
       
       <a href="#section-1" class="thesis-nav-link" data-index="1">
         <span class="nav-number">2</span>
-        <span class="nav-title">Essence of Creativity: Future of Creative Work</span>
-        <span class="nav-date">Aug 2024</span>
+        <span class="nav-text">
+          <span class="nav-title">Essence of Creativity: Future of Creative Work</span>
+          <span class="nav-date">Aug 2024</span>
+        </span>
       </a>
       
       <a href="#section-2" class="thesis-nav-link" data-index="2">
         <span class="nav-number">3</span>
-        <span class="nav-title">Why Context is Everything in AI Content Generation</span>
-        <span class="nav-date">Sep 2024</span>
+        <span class="nav-text">
+          <span class="nav-title">Why Context is Everything in AI Content Generation</span>
+          <span class="nav-date">Sep 2024</span>
+        </span>
       </a>
       
     </div>
@@ -858,14 +864,26 @@
   .thesis-page {
     display: flex;
     min-height: calc(100vh - 80px);
-    max-width: 1400px;
+    max-width: calc(var(--content-width, 900px) + 260px);
     margin: 0 auto;
+    padding-right: calc((100vw - var(--content-width, 900px)) / 2 - 260px);
+    box-sizing: content-box;
+  }
+
+   
+  @media (min-width: 1200px) {
+    .thesis-page {
+      margin-left: calc((100vw - var(--content-width, 900px)) / 2 - 260px);
+      margin-right: auto;
+      max-width: calc(var(--content-width, 900px) + 260px);
+      padding-right: 0;
+    }
   }
 
    
   .thesis-nav {
-    width: 300px;
-    min-width: 300px;
+    width: 260px;
+    min-width: 260px;
     position: sticky;
     top: 0;
     height: 100vh;
@@ -994,27 +1012,31 @@
     color: var(--theme);
   }
 
+  .nav-text {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+  }
+
   .nav-title {
     font-size: 0.85rem;
     color: var(--primary);
     font-weight: 500;
     line-height: 1.4;
-    flex: 1;
   }
 
   .nav-date {
     font-size: 0.7rem;
     color: var(--secondary);
-    white-space: nowrap;
-    margin-top: 2px;
+    margin-top: 0.15rem;
   }
 
    
   .thesis-content-area {
     flex: 1;
     min-width: 0;
-    padding: 2rem 3rem;
-    max-width: 800px;
+    padding: 2rem 1rem;
   }
 
   .thesis-section {
