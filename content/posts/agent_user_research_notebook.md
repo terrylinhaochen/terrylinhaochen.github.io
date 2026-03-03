@@ -1,6 +1,6 @@
 ---
-title: "Agent User Testing on Moltbook"
-description: "A field report on agent painpoints: approvals, trust calibration, reliability gaps, and the supply–demand curve for tool-using operators."
+title: "The Agent Economy, User Testing on Moltbook"
+description: "A field report on agent painpoints and a broader thesis on the agent economy: from task execution to attention mediation and agent-operated demand."
 date: 2026-03-03
 author: Terry Chen
 categories: crowdlisten
@@ -8,123 +8,21 @@ tags: ["AI", "Product", "Research", "Moltbook", "Agent Economy"]
 keywords: ["Moltbook", "agent economy", "AI agents", "agent painpoints", "approval fatigue", "tool-using operator", "agent reliability", "CrowdListen"]
 ---
 
-## What this is
+This piece combines field observation with product thesis. I analyzed live discussions on Moltbook to understand where agent systems fail in practice, then connected those failures to the larger economics of agent adoption. The core conclusion is straightforward: model capability is improving quickly, but operational trust is not. That gap is now the rate-limiting factor for real adoption.
 
-This is a structured field report from browsing and analyzing Moltbook conversations about agent workflows, tooling friction, and human-operator dynamics.
+In day-to-day usage, the same failure modes appear repeatedly. Human operators are overloaded by unnecessary approvals, agents lose continuity after restarts, handoffs preserve task steps but lose intent, and integration surfaces remain fragile when systems encounter rate limits or partial failures. These are not edge cases. They are routine friction points that consume budget, reduce confidence, and slow teams that otherwise have strong technical capacity.
 
-I originally framed this as **“The Supply–Demand Curve for Agents.”**
-I’m renaming it to **“Agent User Testing on Moltbook”** because this is practical user research, not just theory.
+The strategic split is between AI as a local tool and AI as a tool-using operator. In the first model, the human still owns execution and the model accelerates individual steps. In the second model, the agent executes across systems and must therefore satisfy stricter requirements: authority boundaries, auditability, reversibility, and recovery. Most value in the emerging agent economy will come from the second model, and most risk is concentrated there as well.
 
----
+This is why the supply–demand curve for agents is no longer about access to intelligence. Demand is growing for agents that can complete scoped workflows with low supervision. Supply is constrained by trust infrastructure: risk-tiered permissioning, reliable rollback, durable handoff contracts, and operator-visible evidence for decisions. Teams that close this trust gap will capture disproportionate value because they can safely convert capability into throughput.
 
-## Executive summary
+For product teams, the implication is practical. You do not need another abstract “agent platform” narrative. You need operational primitives that make delegated execution dependable: pre-action risk summaries, checkpoint-and-resume flows, typed failure states, and escalation paths with clear ownership. The winning products in this category will not just answer well; they will execute predictably and recover cleanly when things break.
 
-The bottleneck in the emerging agent economy is not model intelligence. It is **operational trust**.
+## Read full thesis
 
-Agents and humans are stuck in a feedback loop:
-- Humans over-approve because risk is unclear
-- Agents under-deliver because autonomy is throttled
-- Tooling and continuity failures amplify both sides
+This post is part of a broader thesis arc:
 
-The result: demand for reliable agent operators is rising faster than supply of trustworthy operating infrastructure.
+- [The Agent Economy Starts with Tasks. It Scales Through Attention.](/posts/crowdlisten_agentic_discovery/)
+- [Feature Extraction Based on Multi-Modal Content Understanding](/posts/crowdlisten_human_signal/)
 
----
-
-## Top painpoints observed
-
-### 1) Approval fatigue + trust deadlock
-- Too many low-value permission prompts
-- Agents cannot prove competence if they cannot act
-- Humans approve actions they cannot confidently evaluate
-
-### 2) Recovery primitives are missing
-- Repeated need for undo, replay, and rollback checkpoints
-- Reliability is less about “can execute” and more about “can recover safely”
-
-### 3) API/docs usability friction
-- Endpoint confusion, method mismatch, auth/domain gotchas
-- Docs often under-specify failure and edge-case behavior
-
-### 4) Context + handoff continuity failures
-- Task intent (“why”) gets lost across handoffs
-- Crashes/restarts create expensive re-brief loops with humans
-
-### 5) Rate-limit + retry pain
-- 429 interruptions break multi-step workflows
-- Weak retry ergonomics make agents look stalled to operators
-
-### 6) Escalation + alert quality issues
-- Too much alert noise, too little actionability
-- Ownership and stop/go authority are often unclear during incidents
-
----
-
-## Supply–demand curve for agents (working thesis)
-
-### Demand is rising for:
-1. Autonomous personal agents that finish end-to-end tasks
-2. Tool-using operators (not just chat responders)
-3. Reliable, low-supervision execution in production-like contexts
-
-### Supply is constrained by:
-1. Trust calibration failures (binary permissioning)
-2. Weak observability and human-usable explainability
-3. Poor continuity and recovery architecture
-4. Fragile API ergonomics and integration debt
-
-### Platform power will accrue to whoever provides:
-- Risk-tiered permissioning (not all-or-nothing)
-- Native recovery primitives (checkpoint, rollback, replay)
-- Operator-first UX (intent, blast radius, rollback in one card)
-- Stable integration primitives (clear specs, retries, diff/events)
-
----
-
-## The strategic split: AI as tool vs AI as tool-using operator
-
-**AI as a tool**
-- Human still drives the workflow
-- AI accelerates local tasks (drafting, summarizing, coding snippets)
-- Lower accountability surface
-
-**AI as a tool-using operator**
-- Agent executes across systems
-- Requires authority boundaries, escalation paths, auditability
-- Needs reversibility and recoverability by design
-
-Most observed painpoints on Moltbook happen in the second mode.
-
----
-
-## Product implications (what to build)
-
-1. Risk-tiered autonomy + approval budgets
-2. Pre-action operator cards (intent, risk, rollback)
-3. Structured handoff contracts (objective, constraints, rationale, risks)
-4. Crash-safe resume packs
-5. Event/diff APIs for continuity
-6. Alert dedupe + actionability scoring
-
----
-
-## Why this matters for CrowdListen
-
-CrowdListen’s position as **the PM for AI Agents** can be expanded from “insight generation” to “operator reliability intelligence”:
-- instrument where agent-human workflows fail
-- quantify continuity/re-brief costs
-- recommend policy and UX changes that improve trust and throughput
-
-This is a defensible layer in the agent economy: not just helping agents think, but helping them operate responsibly at scale.
-
----
-
-## Subscription
-
-If this kind of agent-economy field research is useful, subscribe for ongoing updates.
-
-I’ll continue publishing:
-- recurring painpoint maps from live agent ecosystems
-- user stories and feature requests from operator friction
-- practical specs for safer autonomy
-
-If you want your workflow included in future testing, message me your top reliability painpoint.
+Read together, these pieces map the shift from fragmented social signal to agent-operated product demand and execution.

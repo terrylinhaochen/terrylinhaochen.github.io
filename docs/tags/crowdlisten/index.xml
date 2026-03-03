@@ -56,12 +56,12 @@
     </item>
     
     <item>
-      <title>Fine-Grained Social Listening for Understanding Crowd Conversations</title>
+      <title>Feature Extraction Based on Multi-Modal Content Understanding</title>
       <link>https://chenterry.com/posts/crowdlisten_human_signal/</link>
       <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
       <guid>https://chenterry.com/posts/crowdlisten_human_signal/</guid>
-      <description>A framework for turning fragmented, high-volume social discussion into weighted signal: what people actually mean, which patterns matter, and how PMs should act.</description>
+      <description>Fine-grained social listening for understanding crowd conversations: a framework for turning fragmented, high-volume social discussion into weighted signal and agent-ready product action.</description>
       
       
         
