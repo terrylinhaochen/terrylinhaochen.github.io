@@ -1,0 +1,499 @@
+{{ define "main" }}
+{{- $category := .Params.thesis_category -}}
+{{- $posts := where (where (where (where .Site.RegularPages "Section" "posts") ".Params.tags" "intersect" (slice "Investing")) ".Params.archived" "!=" true) "Params.categories" $category -}}
+{{- $posts = sort $posts "Date" "asc" -}}
+
+<div class="thesis-page">
+  <!-- Left Side Nav -->
+  <nav class="thesis-nav" id="thesisNav">
+    <a href="/investing/" class="thesis-nav-back">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
+      All Investments
+    </a>
+    <div class="thesis-nav-title">
+      <h2>{{ .Title }}</h2>
+      <p>{{ .Params.description }}</p>
+    </div>
+    {{ if .Params.tickers }}
+    <div class="thesis-nav-work">
+      <span class="work-label">Tickers</span>
+      <span class="work-value tickers-mono">{{ .Params.tickers }}</span>
+    </div>
+    {{ end }}
+    {{ if .Params.status }}
+    <div class="thesis-nav-status">
+      <span class="status-badge">{{ .Params.status }}</span>
+    </div>
+    {{ end }}
+    <div class="thesis-nav-sections">
+      {{ range $index, $post := $posts }}
+      <a href="#section-{{ $index }}" class="thesis-nav-link{{ if eq $index 0 }} active{{ end }}" data-index="{{ $index }}">
+        <span class="nav-number">{{ add $index 1 }}</span>
+        <span class="nav-title">{{ $post.Title }}</span>
+        <span class="nav-date">{{ $post.Date.Format "Jan 2006" }}</span>
+      </a>
+      {{ end }}
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="thesis-content-area">
+    {{ range $index, $post := $posts }}
+    <section class="thesis-section" id="section-{{ $index }}">
+      <header class="thesis-section-header">
+        <div class="thesis-section-meta">
+          <span class="section-number">{{ add $index 1 }} of {{ len $posts }}</span>
+          <time>{{ $post.Date.Format "January 2, 2006" }}</time>
+        </div>
+        <h2>{{ $post.Title }}</h2>
+        {{ if $post.Description }}
+        <p class="thesis-section-desc">{{ $post.Description }}</p>
+        {{ end }}
+      </header>
+      <div class="thesis-section-body">
+        {{ $post.Content }}
+      </div>
+    </section>
+    {{ end }}
+  </div>
+</div>
+
+<!-- Mobile nav toggle -->
+<button class="thesis-mobile-toggle" id="mobileNavToggle" aria-label="Toggle navigation">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18"/><path d="M3 6h18"/><path d="M3 18h18"/></svg>
+</button>
+
+<style>
+  /* Override default main constraints for thesis layout */
+  .main {
+    max-width: none;
+    padding: 0;
+  }
+
+  .thesis-page {
+    display: flex;
+    min-height: calc(100vh - 80px);
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  /* Left Side Nav */
+  .thesis-nav {
+    width: 300px;
+    min-width: 300px;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 2rem 1.5rem;
+    border-right: 1px solid var(--border);
+    background: var(--theme);
+    scrollbar-width: thin;
+    scrollbar-color: var(--border) transparent;
+  }
+
+  .thesis-nav::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .thesis-nav::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: 2px;
+  }
+
+  .thesis-nav-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--secondary);
+    text-decoration: none;
+    font-size: 0.85rem;
+    margin-bottom: 1.5rem;
+    transition: color 0.2s;
+  }
+
+  .thesis-nav-back:hover {
+    color: var(--primary);
+  }
+
+  .thesis-nav-title h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin: 0 0 0.5rem 0;
+  }
+
+  .thesis-nav-title p {
+    font-size: 0.85rem;
+    color: var(--secondary);
+    line-height: 1.5;
+    margin: 0 0 1rem 0;
+  }
+
+  .thesis-nav-work {
+    padding: 0.75rem;
+    background: var(--code-bg);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+
+  .work-label {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.25rem;
+  }
+
+  .work-value {
+    font-size: 0.85rem;
+    color: var(--primary);
+    font-weight: 500;
+    line-height: 1.4;
+  }
+
+  .tickers-mono {
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    font-weight: 600;
+  }
+
+  .thesis-nav-status {
+    margin-bottom: 1.5rem;
+  }
+
+  .status-badge {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #166534;
+    background: #dcfce7;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+  }
+
+  :root[data-theme="dark"] .status-badge,
+  .dark .status-badge {
+    color: #86efac;
+    background: rgba(134, 239, 172, 0.15);
+  }
+
+  .thesis-nav-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .thesis-nav-link {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.2s;
+    position: relative;
+  }
+
+  .thesis-nav-link:hover {
+    background: var(--code-bg);
+  }
+
+  .thesis-nav-link.active {
+    background: var(--code-bg);
+  }
+
+  .thesis-nav-link.active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    bottom: 0.5rem;
+    width: 3px;
+    background: var(--primary);
+    border-radius: 2px;
+  }
+
+  .nav-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    border-radius: 50%;
+    background: var(--border);
+    color: var(--secondary);
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-top: 1px;
+  }
+
+  .thesis-nav-link.active .nav-number {
+    background: var(--primary);
+    color: var(--theme);
+  }
+
+  .nav-title {
+    font-size: 0.85rem;
+    color: var(--primary);
+    font-weight: 500;
+    line-height: 1.4;
+    flex: 1;
+  }
+
+  .nav-date {
+    font-size: 0.7rem;
+    color: var(--secondary);
+    white-space: nowrap;
+    margin-top: 2px;
+  }
+
+  /* Main Content Area */
+  .thesis-content-area {
+    flex: 1;
+    min-width: 0;
+    padding: 2rem 3rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .thesis-section {
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .thesis-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+
+  .thesis-section-header {
+    margin-bottom: 2rem;
+  }
+
+  .thesis-section-meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .section-number {
+    font-size: 0.8rem;
+    color: var(--secondary);
+    font-weight: 500;
+    padding: 0.15rem 0.5rem;
+    background: var(--code-bg);
+    border-radius: 4px;
+  }
+
+  .thesis-section-meta time {
+    font-size: 0.85rem;
+    color: var(--secondary);
+  }
+
+  .thesis-section-header h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin: 0 0 0.75rem 0;
+    line-height: 1.3;
+  }
+
+  .thesis-section-desc {
+    font-size: 0.95rem;
+    color: var(--secondary);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .thesis-section-body {
+    color: var(--content);
+    line-height: 1.8;
+    font-size: 0.95rem;
+  }
+
+  .thesis-section-body h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--primary);
+    margin: 2rem 0 1rem;
+  }
+
+  .thesis-section-body h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--primary);
+    margin: 1.5rem 0 0.75rem;
+  }
+
+  .thesis-section-body p {
+    margin: 0 0 1rem 0;
+  }
+
+  .thesis-section-body img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 1rem 0;
+  }
+
+  .thesis-section-body blockquote {
+    border-left: 3px solid var(--border);
+    padding-left: 1rem;
+    color: var(--secondary);
+    margin: 1rem 0;
+  }
+
+  .thesis-section-body ul, .thesis-section-body ol {
+    margin: 0 0 1rem 0;
+    padding-left: 1.5rem;
+  }
+
+  .thesis-section-body li {
+    margin-bottom: 0.25rem;
+  }
+
+  .thesis-section-body strong {
+    color: var(--primary);
+  }
+
+  /* Mobile nav toggle button */
+  .thesis-mobile-toggle {
+    display: none;
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: var(--theme);
+    border: none;
+    cursor: pointer;
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+  }
+
+  /* Mobile Responsive */
+  @media (max-width: 900px) {
+    .thesis-page {
+      flex-direction: column;
+    }
+
+    .thesis-nav {
+      width: 100%;
+      min-width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 100vh;
+      z-index: 200;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease;
+      border-right: none;
+      box-shadow: 2px 0 12px rgba(0,0,0,0.1);
+    }
+
+    .thesis-nav.open {
+      transform: translateX(0);
+    }
+
+    .thesis-content-area {
+      padding: 1.5rem;
+      max-width: 100%;
+    }
+
+    .thesis-mobile-toggle {
+      display: flex;
+    }
+
+    .thesis-section-header h2 {
+      font-size: 1.3rem;
+    }
+  }
+
+  /* Overlay for mobile nav */
+  .thesis-nav-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 199;
+  }
+
+  .thesis-nav-overlay.active {
+    display: block;
+  }
+</style>
+
+<div class="thesis-nav-overlay" id="navOverlay"></div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const sections = document.querySelectorAll('.thesis-section');
+  const navLinks = document.querySelectorAll('.thesis-nav-link');
+  const nav = document.getElementById('thesisNav');
+  const toggle = document.getElementById('mobileNavToggle');
+  const overlay = document.getElementById('navOverlay');
+
+  // Scroll spy with Intersection Observer
+  const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        const id = entry.target.id;
+        const index = id.replace('section-', '');
+        navLinks.forEach(function(link) {
+          link.classList.toggle('active', link.dataset.index === index);
+        });
+      }
+    });
+  }, {
+    rootMargin: '-20% 0px -60% 0px',
+    threshold: 0
+  });
+
+  sections.forEach(function(section) {
+    observer.observe(section);
+  });
+
+  // Nav link click - smooth scroll
+  navLinks.forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        // Close mobile nav
+        if (window.innerWidth <= 900) {
+          nav.classList.remove('open');
+          overlay.classList.remove('active');
+        }
+      }
+    });
+  });
+
+  // Mobile nav toggle
+  if (toggle) {
+    toggle.addEventListener('click', function() {
+      nav.classList.toggle('open');
+      overlay.classList.toggle('active');
+    });
+  }
+
+  if (overlay) {
+    overlay.addEventListener('click', function() {
+      nav.classList.remove('open');
+      overlay.classList.remove('active');
+    });
+  }
+});
+</script>
+{{ end }}

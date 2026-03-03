@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{- $thesisPages := sort (where (where .Site.Pages "Section" "investing") "Params.layout" "thesis") "Params.weight" -}}
 <style>
   .investing-container {
     max-width: var(--content-width);
@@ -52,28 +53,24 @@
     background: #222;
   }
 
-  /* Investment Sections */
-  .section {
-    margin-bottom: 4rem;
+  /* Carousel text always dark */
+  .theme-slide h2 { color: #111 !important; font-weight: 700 !important; }
+  .theme-slide p { color: #333 !important; font-weight: 500 !important; }
+  .theme-carousel .theme-slide, .theme-content { color: #111 !important; }
+
+  .theme-slide .carousel-status {
+    display: inline-block;
+    font-size: 0.6em;
+    font-weight: 500;
+    color: #166534;
+    background: #dcfce7;
+    padding: 2px 10px;
+    border-radius: 20px;
+    margin-left: 0.5rem;
+    vertical-align: middle;
   }
 
-  .section-header {
-    margin-bottom: 2rem;
-    text-align: center;
-  }
-
-  .section-title {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #333;
-    margin-bottom: 0.5rem;
-  }
-
-  .section-subtitle {
-    color: #666;
-    font-size: 1.1rem;
-  }
-
+  /* Investments Grid */
   .investments-grid {
     display: flex;
     flex-direction: column;
@@ -81,36 +78,39 @@
     margin-top: 2rem;
   }
 
-  .investment-card {
-    background: white;
+  /* Thesis Card */
+  .project-card {
+    background: var(--entry);
     border-radius: 12px;
     padding: 1.5rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-  }
-
-  .investment-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  }
-
-  /* Thesis Card Styles */
-  .thesis-card {
-    cursor: default;
+    border: 1px solid var(--border);
   }
 
   .thesis-header {
-    border-bottom: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid var(--border);
     padding-bottom: 1rem;
     margin-bottom: 1.5rem;
+  }
+
+  .thesis-header-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-decoration: none;
+    color: inherit;
+    gap: 1rem;
+  }
+
+  .thesis-header-link:hover h2 {
+    opacity: 0.8;
   }
 
   .thesis-header h2 {
     color: var(--primary);
     font-size: 1.5rem;
     font-weight: 700;
-    margin-bottom: 0.5rem;
+    margin: 0 0 0.5rem 0;
+    transition: opacity 0.2s;
   }
 
   .thesis-description {
@@ -120,6 +120,52 @@
     margin: 0;
   }
 
+  .thesis-header-arrow {
+    color: var(--secondary);
+    min-width: 20px;
+    margin-top: 0.25rem;
+    transition: transform 0.2s;
+  }
+
+  .thesis-header-link:hover .thesis-header-arrow {
+    transform: translateX(4px);
+    color: var(--primary);
+  }
+
+  .thesis-tickers {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    background: var(--code-bg);
+    border-radius: 8px;
+    border: 1px solid var(--border);
+  }
+
+  .thesis-tickers p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: var(--secondary);
+    font-style: italic;
+  }
+
+  .tickers {
+    font-weight: 600;
+    color: var(--primary);
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  }
+
+  .header-status-badge {
+    display: inline-block;
+    font-size: 0.55em;
+    font-weight: 500;
+    color: #166534;
+    background: #dcfce7;
+    padding: 2px 10px;
+    border-radius: 20px;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+  }
+
+  /* Post entries within cards */
   .thesis-content {
     display: flex;
     flex-direction: column;
@@ -127,16 +173,17 @@
   }
 
   .thesis-content .post-entry {
-    background: rgba(0,0,0,0.02);
+    background: var(--code-bg);
     border-radius: 8px;
     padding: 1rem;
     margin: 0;
     cursor: pointer;
     transition: background 0.2s ease;
+    position: relative;
   }
 
   .thesis-content .post-entry:hover {
-    background: rgba(0,0,0,0.05);
+    background: var(--border);
     transform: none;
     box-shadow: none;
   }
@@ -158,295 +205,49 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    height: 2.8rem; /* 2 lines * 1.4 line-height */
   }
 
-  .investment-card.featured,
-  .work-card {
-    grid-column: span 2;
-    background: linear-gradient(to right bottom, #ffffff, #f8f9fa);
-  }
-
-  /* Modal styles */
-  /* Modal styles */
-  .modal-overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    z-index: 1000;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .modal {
-    background: white;
-    padding: 2rem;
-    border-radius: 12px;
-    max-width: 800px;
-    width: 90%;
-    max-height: 90vh;
-    overflow-y: auto;
-    position: relative;
-  }
-
-  .modal-close {
+  .thesis-content .entry-link {
     position: absolute;
-    top: 1rem;
-    right: 1rem;
-    font-size: 1.5rem;
-    border: none;
-    background: none;
-    cursor: pointer;
+    inset: 0;
   }
 
-  .modal-overlay.active {
-    display: flex;
-  }
-
-
-
-
-
-  /* Theme-aware carousel text */
-  .theme-slide h2 {
-    color: var(--primary) !important;
-    font-weight: 700 !important;
-  }
-
-  .theme-slide p {
-    color: var(--content) !important;
-    font-weight: 500 !important;
-  }
-
-  /* Theme-aware carousel content */
-  .theme-carousel .theme-slide,
-  .theme-content {
-    color: var(--content) !important; 
-  }
-
-  /* Fix dark mode specific styles */
-  body.dark .section-title,
-  body.dark .investing-container .section-header h2.section-title,
-  .dark .section-title {
-    color: white !important;
-    font-weight: 700 !important;
-  }
-
-  /* Theme-aware links in the theme slide */
-  .theme-slide a, 
-  .theme-content a {
-    color: var(--primary) !important;
-    font-weight: 600 !important;
-  }
-
-  /* Theme-aware read more links */
-  a.read-more,
-  .read-more-link,
-  a.read-more-link,
-  .entry-link::after,
-  .post-entry .entry-footer::after,
-  a[aria-label="Read more"],
-  .read-more-icon,
-  .post-entry:hover .entry-footer::after,
-  .post-entry:focus .entry-footer::after,
-  .post-entry:active .entry-footer::after,
-  footer a,
-  .post-meta a,
-  .entry-content a,
-  [class*="read-more"] {
-    color: var(--primary) !important;
-    font-weight: 600 !important;
-    opacity: 1 !important;
-  }
-
-  /* Theme-aware arrow icons */
-  .post-entry::after,
-  .entry-link::after,
-  [class*="read"]::after {
-    color: var(--primary) !important;
-    opacity: 1 !important;
-  }
-
-  /* Ensure archived content link is visible */
-  .archived-link {
-    margin-top: 1rem !important;
-    text-align: center !important;
-  }
-
-  .archived-link span {
-    color: var(--secondary) !important;
-    font-size: 0.85em !important;
-    display: block !important;
-  }
-
-  .archived-link a {
-    color: var(--primary) !important;
-    text-decoration: underline !important;
-    font-weight: normal !important;
-  }
-
-  .archived-link a:hover {
-    color: var(--primary) !important;
-    opacity: 0.8 !important;
-  }
-
-
-
-  /* Make sure carousel dots are visible */
-  .theme-nav button {
-    background: #999; /* Darker gray for dots */
-  }
-
-  .theme-nav button.active {
-    background: #222; /* Almost black for active dot */
-  }
-
-  /* Comprehensive dark mode fixes for Investing page */
-  :root[data-theme="dark"] .section-title,
-  .dark .section-title {
-    color: #ffffff !important; /* White */
-  }
-
-  :root[data-theme="dark"] .section-subtitle,
-  .dark .section-subtitle {
-    color: #dddddd !important; /* Light gray */
-  }
-
-  /* Fix read more links with proper PaperMod classes */
-  :root[data-theme="dark"] .post-entry .entry-footer,
-  .dark .post-entry .entry-footer {
-    color: #ffffff !important;
-  }
-
-  :root[data-theme="dark"] .post-entry .entry-link,
-  .dark .post-entry .entry-link {
-    color: #ffffff !important;
-  }
-
-  /* Fix any post meta content */
-  :root[data-theme="dark"] .post-meta,
-  .dark .post-meta {
-    color: #dddddd !important;
-  }
-
-  /* Make sure investment cards have proper backgrounds in dark mode */
-  :root[data-theme="dark"] .investment-card,
-  .dark .investment-card,
-  :root[data-theme="dark"] .post-entry,
-  .dark .post-entry {
-    background: var(--entry);
-    border: 1px solid var(--border);
-  }
-
-  /* Fix modal styles in dark mode */
-  :root[data-theme="dark"] .modal,
-  .dark .modal {
-    background: var(--entry);
-    color: var(--primary);
-    border: 1px solid var(--border);
-  }
-
-  /* Ultra specific dark mode selectors for investing page */
-  body.dark .section-title,
-  body.dark .investing-container .section-header h2.section-title,
-  .dark .section-title {
-    color: white !important;
-    font-weight: 700 !important;
-  }
-
-  body.dark .post-entry .entry-header h2,
-  .dark .post-entry .entry-header h2 {
-    color: white !important;
-  }
-
-  body.dark .entry-footer a,
-  body.dark a[href*="/investing/"],
-  .dark .post-entry .entry-footer a {
-    color: white !important;
-    font-weight: 600 !important;
-  }
-
-  /* Quote styling */
-  .subtle-quote {
-    margin-top: 2rem;
-    padding-top: 2rem;
-    border-top: 1px solid var(--border);
-    text-align: center;
-    font-style: italic;
+  .thesis-content .post-meta {
+    font-size: 0.8rem;
     color: var(--secondary);
-    opacity: 0.8;
-  }
-  
-  .subtle-quote p {
-    font-size: 0.95rem;
-    max-width: 600px;
-    margin: 0 auto;
+    margin-top: 0.5rem;
   }
 
-  /* Reduce spacing between last section and quote */
-  .section:last-child {
-    margin-bottom: 2rem;
-  }
-
-  /* Style for archived content link */
-  .find-more-posts {
-    text-align: center;
-    margin: 2rem 0;
-    padding: 1rem;
-  }
-
-  .find-more-posts p {
-    color: var(--content);
-  }
-
-  .find-more-posts a {
-    color: var(--primary);
-    text-decoration: underline;
-    font-weight: 500;
-  }
-
-  .find-more-posts a:hover {
-    color: var(--primary);
-    opacity: 0.8;
-  }
-
-  /* Ticker styling */
-  .thesis-tickers {
+  /* Read full thesis link */
+  .thesis-read-all {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
     margin-top: 1rem;
-    padding: 0.75rem;
-    background: rgba(0,0,0,0.02);
-    border-radius: 8px;
-    border: 1px solid rgba(0,0,0,0.05);
-  }
-
-  .thesis-tickers p {
-    margin: 0;
+    padding: 0.5rem 1rem;
     font-size: 0.85rem;
-    color: var(--secondary);
-    font-style: italic;
-  }
-
-  .tickers {
-    font-weight: 600;
     color: var(--primary);
-    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    text-decoration: none;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    transition: all 0.2s;
   }
 
-  /* Dark mode ticker styling */
+  .thesis-read-all:hover {
+    background: var(--code-bg);
+    border-color: var(--primary);
+  }
+
+  /* Dark mode fixes */
+  body.dark .section-title, .dark .section-title {
+    color: white !important;
+    font-weight: 700 !important;
+  }
+
   :root[data-theme="dark"] .thesis-tickers,
   .dark .thesis-tickers {
     background: rgba(255,255,255,0.05);
-    border: 1px solid rgba(255,255,255,0.1);
-  }
-
-  /* Dark mode thesis card styles */
-  :root[data-theme="dark"] .thesis-header,
-  .dark .thesis-header {
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-color: rgba(255,255,255,0.1);
   }
 
   :root[data-theme="dark"] .thesis-content .post-entry,
@@ -458,347 +259,127 @@
   .dark .thesis-content .post-entry:hover {
     background: rgba(255,255,255,0.1);
   }
+
+  :root[data-theme="dark"] .thesis-header,
+  .dark .thesis-header {
+    border-bottom-color: rgba(255,255,255,0.1);
+  }
+
+  :root[data-theme="dark"] .header-status-badge,
+  .dark .header-status-badge {
+    color: #86efac;
+    background: rgba(134, 239, 172, 0.15);
+  }
+
+  /* Archived link */
+  .find-more-posts {
+    text-align: center;
+    margin: 2rem 0;
+    padding: 1rem;
+  }
+  .find-more-posts p { color: var(--secondary); }
+  .find-more-posts a { color: #0066cc; text-decoration: underline; font-weight: 500; }
+  .find-more-posts a:hover { color: #0052a3; }
+  body.dark .find-more-posts a, .dark .find-more-posts a { color: #93cdff !important; }
 </style>
 
 <div class="investing-container">
   <!-- Theme Carousel -->
   <section class="theme-carousel">
     <div class="theme-slides" id="themeSlides">
+      {{ range $thesisPages }}
       <div class="theme-slide">
         <div class="theme-content">
-          <h2>AI Application</h2>
-          <p>Investment opportunities in AI application companies building on foundation model infrastructure (GOOGL, META, FIG, RDDT).</p>
+          <h2>{{ .Title }}{{ with .Params.status }} <span class="carousel-status">{{ . }}</span>{{ end }}</h2>
+          <p>{{ .Params.description }}</p>
         </div>
       </div>
-      <div class="theme-slide">
-        <div class="theme-content">
-          <h2>Security, Data Pipelines <span style="font-size:0.6em;font-weight:400;color:#888;margin-left:0.5rem;">Exited · 50%+ ROI</span></h2>
-          <p>Enterprise security solutions, data infrastructure, and AI-powered security operations centers (CRWD, DDOG).</p>
-        </div>
-      </div>
-      <div class="theme-slide">
-        <div class="theme-content">
-          <h2>Asia Tech</h2>
-          <p>Value opportunities in structurally mispriced Asian technology companies (BABA, TCEHY, PDD, YAHOY).</p>
-        </div>
-      </div>
-      <div class="theme-slide">
-        <div class="theme-content">
-          <h2>Mobility</h2>
-          <p>Transportation, energy transition, and infrastructure transformation investments (TSLA, CSIQ).</p>
-        </div>
-      </div>
-      <div class="theme-slide">
-        <div class="theme-content">
-          <h2>Aesthetic Economy</h2>
-          <p>Consumer brands focused on experience, aesthetics, and lifestyle enhancement (SY, LULU).</p>
-        </div>
-      </div>
-      <div class="theme-slide">
-        <div class="theme-content">
-          <h2>Crypto</h2>
-          <p>Decentralized finance protocols, digital assets, and the infrastructure powering the crypto economy (BMNR, COIN, BTC, ETH).</p>
-        </div>
-      </div>
+      {{ end }}
     </div>
     <div class="theme-nav" id="themeNav"></div>
   </section>
 
-  <!-- Investment Thesis Cards Grid -->
+  <!-- Thesis Cards Grid -->
   <div class="investments-grid">
-    <!-- AI Application & Value Creation Layer Card -->
-    <div class="investment-card thesis-card">
+    {{ range $thesisPages }}
+    {{- $category := .Params.thesis_category -}}
+    {{- $posts := where (where (where (where $.Site.RegularPages "Section" "posts") ".Params.tags" "intersect" (slice "Investing")) ".Params.archived" "!=" true) "Params.categories" $category -}}
+    <div class="project-card">
       <div class="thesis-header">
-        <h2>AI Application</h2>
-        <p class="thesis-description">Investment opportunities in AI application companies building on foundation model infrastructure.</p>
+        <a href="{{ .Permalink }}" class="thesis-header-link">
+          <div>
+            <h2>{{ .Title }}{{ with .Params.status }} <span class="header-status-badge">{{ . }}</span>{{ end }}</h2>
+            <p class="thesis-description">{{ .Params.description }}</p>
+          </div>
+          <svg class="thesis-header-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+        </a>
+        {{ if .Params.tickers }}
         <div class="thesis-tickers">
-          <p>Representative companies: <span class="tickers">GOOGL, META, FIG, RDDT, MSFT</span></p>
+          <p>Representative companies: <span class="tickers">{{ .Params.tickers }}</span></p>
         </div>
-      </div>
-      <div class="thesis-content">
-        {{ range where (where (where .Site.RegularPages "Section" "posts") ".Params.tags" "intersect" (slice "Investing")) ".Params.archived" "!=" true }}
-          {{ if in .Params.categories "AI Application & Value Creation Layer" }}
-          <article class="post-entry">
-            {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
-            {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
-            <header class="entry-header">
-              <h3>{{ .Title }}</h3>
-            </header>
-            <div class="entry-content">
-              {{ if .Description }}{{ .Description | plainify | htmlUnescape }}{{ else }}{{ .Summary | plainify | htmlUnescape }}{{ end }}
-            </div>
-            <footer class="entry-footer">
-              <div class="post-meta">
-                {{- partial "post_meta.html" . -}}
-              </div>
-            </footer>
-            <a class="entry-link" href="{{ .Permalink }}"></a>
-          </article>
-          {{ end }}
         {{ end }}
       </div>
-    </div>
-
-    <!-- Security, Data Pipelines & Agentic SOC Card -->
-    <div class="investment-card thesis-card">
-      <div class="thesis-header">
-        <h2>Security, Data Pipelines <span style="font-size:0.55em;font-weight:500;color:#888;background:#f3f3f3;padding:2px 10px;border-radius:20px;margin-left:0.5rem;vertical-align:middle;">Exited · 50%+ ROI</span></h2>
-        <p class="thesis-description">Enterprise security solutions, data infrastructure, and AI-powered security operations centers.</p>
-        <div class="thesis-tickers">
-          <p>Representative companies: <span class="tickers">CRWD, DDOG, MSFT</span></p>
-        </div>
-      </div>
       <div class="thesis-content">
-        {{ range where (where (where .Site.RegularPages "Section" "posts") ".Params.tags" "intersect" (slice "Investing")) ".Params.archived" "!=" true }}
-          {{ if in .Params.categories "Security, Data Pipelines & Agentic SOC" }}
-          <article class="post-entry">
-            {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
-            {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
-            <header class="entry-header">
-              <h3>{{ .Title }}</h3>
-            </header>
-            <div class="entry-content">
-              {{ if .Description }}{{ .Description | plainify | htmlUnescape }}{{ else }}{{ .Summary | plainify | htmlUnescape }}{{ end }}
-            </div>
-            <footer class="entry-footer">
-              <div class="post-meta">
-                {{- partial "post_meta.html" . -}}
-              </div>
-            </footer>
-            <a class="entry-link" href="{{ .Permalink }}"></a>
-          </article>
-          {{ end }}
+        {{ range $posts }}
+        <article class="post-entry">
+          <header class="entry-header">
+            <h3>{{ .Title }}</h3>
+          </header>
+          <div class="entry-content">
+            {{ if .Description }}{{ .Description | plainify | htmlUnescape }}{{ else }}{{ .Summary | plainify | htmlUnescape }}{{ end }}
+          </div>
+          <div class="post-meta">
+            {{- partial "post_meta.html" . -}}
+          </div>
+          <a class="entry-link" href="{{ .Permalink }}"></a>
+        </article>
         {{ end }}
       </div>
+      <a href="{{ .Permalink }}" class="thesis-read-all">
+        Read full thesis
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+      </a>
     </div>
-
-    <!-- Structural Repricing of Asia Tech Card -->
-    <div class="investment-card thesis-card">
-      <div class="thesis-header">
-        <h2>Asia Tech</h2>
-        <p class="thesis-description">Value opportunities in structurally mispriced Asian technology companies.</p>
-        <div class="thesis-tickers">
-          <p>Representative companies: <span class="tickers">BABA, TCEHY, PDD, YAHOY</span></p>
-        </div>
-      </div>
-      <div class="thesis-content">
-        {{ range where (where (where .Site.RegularPages "Section" "posts") ".Params.tags" "intersect" (slice "Investing")) ".Params.archived" "!=" true }}
-          {{ if in .Params.categories "Structural Repricing of Asia Tech" }}
-          <article class="post-entry">
-            {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
-            {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
-            <header class="entry-header">
-              <h3>{{ .Title }}</h3>
-            </header>
-            <div class="entry-content">
-              {{ if .Description }}{{ .Description | plainify | htmlUnescape }}{{ else }}{{ .Summary | plainify | htmlUnescape }}{{ end }}
-            </div>
-            <footer class="entry-footer">
-              <div class="post-meta">
-                {{- partial "post_meta.html" . -}}
-              </div>
-            </footer>
-            <a class="entry-link" href="{{ .Permalink }}"></a>
-          </article>
-          {{ end }}
-        {{ end }}
-      </div>
-    </div>
-
-    <!-- Mobility, Energy, and New Infrastructure Card -->
-    <div class="investment-card thesis-card">
-      <div class="thesis-header">
-        <h2>Mobility</h2>
-        <p class="thesis-description">Transportation, energy transition, and infrastructure transformation investments.</p>
-        <div class="thesis-tickers">
-          <p>Representative companies: <span class="tickers">TSLA, CSIQ</span></p>
-        </div>
-      </div>
-      <div class="thesis-content">
-        {{ range where (where (where .Site.RegularPages "Section" "posts") ".Params.tags" "intersect" (slice "Investing")) ".Params.archived" "!=" true }}
-          {{ if in .Params.categories "Mobility, Energy, and New Infrastructure" }}
-          <article class="post-entry">
-            {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
-            {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
-            <header class="entry-header">
-              <h3>{{ .Title }}</h3>
-            </header>
-            <div class="entry-content">
-              {{ if .Description }}{{ .Description | plainify | htmlUnescape }}{{ else }}{{ .Summary | plainify | htmlUnescape }}{{ end }}
-            </div>
-            <footer class="entry-footer">
-              <div class="post-meta">
-                {{- partial "post_meta.html" . -}}
-              </div>
-            </footer>
-            <a class="entry-link" href="{{ .Permalink }}"></a>
-          </article>
-          {{ end }}
-        {{ end }}
-      </div>
-    </div>
-
-    <!-- Consumer Experience & Aesthetic Economy Card -->
-    <div class="investment-card thesis-card">
-      <div class="thesis-header">
-        <h2>Aesthetic Economy</h2>
-        <p class="thesis-description">Consumer brands focused on experience, aesthetics, and lifestyle enhancement.</p>
-        <div class="thesis-tickers">
-          <p>Representative companies: <span class="tickers">SY, LULU</span></p>
-        </div>
-      </div>
-      <div class="thesis-content">
-        {{ range where (where (where .Site.RegularPages "Section" "posts") ".Params.tags" "intersect" (slice "Investing")) ".Params.archived" "!=" true }}
-          {{ if in .Params.categories "Consumer Experience & Aesthetic Economy" }}
-          <article class="post-entry">
-            {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
-            {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
-            <header class="entry-header">
-              <h3>{{ .Title }}</h3>
-            </header>
-            <div class="entry-content">
-              {{ if .Description }}{{ .Description | plainify | htmlUnescape }}{{ else }}{{ .Summary | plainify | htmlUnescape }}{{ end }}
-            </div>
-            <footer class="entry-footer">
-              <div class="post-meta">
-                {{- partial "post_meta.html" . -}}
-              </div>
-            </footer>
-            <a class="entry-link" href="{{ .Permalink }}"></a>
-          </article>
-          {{ end }}
-        {{ end }}
-      </div>
-    </div>
-
-    <!-- Crypto Card -->
-    <div class="investment-card thesis-card">
-      <div class="thesis-header">
-        <h2>Crypto</h2>
-        <p class="thesis-description">Decentralized finance protocols, digital assets, and the infrastructure powering the crypto economy.</p>
-        <div class="thesis-tickers">
-          <p>Representative companies: <span class="tickers">BMNR, COIN, BTC, ETH</span></p>
-        </div>
-      </div>
-      <div class="thesis-content">
-        {{ range where (where (where .Site.RegularPages "Section" "posts") ".Params.tags" "intersect" (slice "Investing")) ".Params.archived" "!=" true }}
-          {{ if in .Params.categories "Crypto" }}
-          <article class="post-entry">
-            {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
-            {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
-            <header class="entry-header">
-              <h3>{{ .Title }}</h3>
-            </header>
-            <div class="entry-content">
-              {{ if .Description }}{{ .Description | plainify | htmlUnescape }}{{ else }}{{ .Summary | plainify | htmlUnescape }}{{ end }}
-            </div>
-            <footer class="entry-footer">
-              <div class="post-meta">
-                {{- partial "post_meta.html" . -}}
-              </div>
-            </footer>
-            <a class="entry-link" href="{{ .Permalink }}"></a>
-          </article>
-          {{ end }}
-        {{ end }}
-      </div>
-    </div>
+    {{ end }}
   </div>
 </div>
 
-<!-- Information about finding archived content -->
 <div class="find-more-posts">
   <p>To view archived content, <a href="/archived/">click here</a>.</p>
 </div>
 
-<!-- Modal Template -->
-<div class="modal-container">
-  {{ range where (where (where .Site.RegularPages "Section" "posts") ".Params.tags" "intersect" (slice "Investing")) ".Params.archived" "!=" true }}
-  <div id="modal-{{ .Title | urlize }}" class="modal-overlay">
-    <div class="modal">
-      <button class="modal-close" onclick="closeModal('{{ .Title | urlize }}')">&times;</button>
-      <h2>{{ .Title }}</h2>
-      <p class="project-meta">{{ if .Date }}{{ .Date.Format "January 2, 2006" }}{{ end }}</p>
-      <div class="modal-content">
-        {{ .Content }}
-      </div>
-    </div>
-  </div>
-  {{ end }}
-</div>
-
 <script>
-// Theme carousel functionality
 document.addEventListener('DOMContentLoaded', function() {
-  const slides = document.querySelectorAll('.theme-slide');
-  const nav = document.getElementById('themeNav');
-  let currentSlide = 0;
+  var slides = document.querySelectorAll('.theme-slide');
+  var nav = document.getElementById('themeNav');
+  var currentSlide = 0;
 
-  // Create navigation dots
-  slides.forEach((_, index) => {
-    const button = document.createElement('button');
-    button.onclick = () => goToSlide(index);
+  slides.forEach(function(_, index) {
+    var button = document.createElement('button');
+    button.onclick = function() { goToSlide(index); };
     nav.appendChild(button);
   });
 
   function updateNav() {
-    const buttons = nav.querySelectorAll('button');
-    buttons.forEach((button, index) => {
+    var buttons = nav.querySelectorAll('button');
+    buttons.forEach(function(button, index) {
       button.classList.toggle('active', index === currentSlide);
     });
   }
 
   function goToSlide(index) {
-    const slideWidth = slides[0].offsetWidth;
+    var slideWidth = slides[0].offsetWidth;
     document.getElementById('themeSlides').scrollLeft = slideWidth * index;
     currentSlide = index;
     updateNav();
   }
 
-  // Initialize
   updateNav();
 
-  // Auto-advance slides every 5 seconds
-  setInterval(() => {
+  setInterval(function() {
     currentSlide = (currentSlide + 1) % slides.length;
     goToSlide(currentSlide);
   }, 5000);
 });
-
-// Modal functionality
-function openModal(investmentId) {
-  const modal = document.getElementById(`modal-${investmentId}`);
-  if (modal) {
-    modal.classList.add('active');
-    document.body.style.overflow = 'hidden';
-  }
-}
-
-function closeModal(investmentId) {
-  const modal = document.getElementById(`modal-${investmentId}`);
-  if (modal) {
-    modal.classList.remove('active');
-    document.body.style.overflow = 'auto';
-  }
-}
-
-// Close modal when clicking outside
-document.addEventListener('click', function(event) {
-  if (event.target.classList.contains('modal-overlay')) {
-    event.target.classList.remove('active');
-    document.body.style.overflow = 'auto';
-  }
-});
-
-// Close modal on escape key
-document.addEventListener('keydown', function(event) {
-  if (event.key === 'Escape') {
-    const activeModal = document.querySelector('.modal-overlay.active');
-    if (activeModal) {
-      activeModal.classList.remove('active');
-      document.body.style.overflow = 'auto';
-    }
-  }
-});
 </script>
-{{ end }} 
+{{ end }}
