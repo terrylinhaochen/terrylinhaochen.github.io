@@ -1,9 +1,9 @@
 ---
-title: "Exploring Unknown Unknowns"
+title: "Deciding the Right Question Is More Important Than the Answer"
 date: 2024-10-05
 categories: aibrary
 tags: ["Product"]
-description: "Development of intelligent knowledge interfaces that help users discover unknown unknowns. Technical implementation of AI-powered learning systems and knowledge discovery platforms."
+description: "When problems are ambiguous, the limiting factor is often not answer quality but question quality. This piece explores why framing better questions is the real leverage point in AI-assisted thinking and product work."
 keywords: ["knowledge interfaces", "learning systems", "AI education", "knowledge discovery", "unknown unknowns", "learning technology", "knowledge management", "AI learning"]
 ---
 

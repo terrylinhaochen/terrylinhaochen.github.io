@@ -1,6 +1,6 @@
 ---
-title: "Value Add of AI: Generation as Distribution"
-description: "Exploring how AI's greatest value shifts from content creation to personalized distribution and synthesis. From RSS feeds to knowledge liquefaction and the future of adaptive content experiences."
+title: "Content Platforms Will Become Distribution-by-Generation Systems"
+description: "As generation costs collapse, distribution shifts from routing static content to generating the right content instance for each context. This post argues that future content platforms will distribute by generation, not retrieval."
 date: 2025-05-08
 author: Terry Chen
 tags: ["Observations", "Product", "Posts"]
