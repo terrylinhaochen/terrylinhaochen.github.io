@@ -72,7 +72,7 @@
                             {{- if (.Param "ShowReadingTime") }} • {{ i18n "read_time" .ReadingTime | default (printf "%d min read" .ReadingTime) }}{{- end }}
                         </div>
                     </footer>
-                    <a class="entry-link" href="{{ .Permalink }}"></a>
+                    <a class="entry-link" href="{{ .RelPermalink }}"></a>
                 </article>
                 {{- end }}
             </div>

@@ -15,7 +15,27 @@ changelog:
     changes: "Updated Title"
 ---
 
-**Videos:** [Founder video](https://youtu.be/9JEVxvLL-Yk) · [Product demo](https://youtu.be/cORAZlhC_94)
+<div class="cl-video-cards">
+  <a class="cl-video-card" href="https://youtu.be/9JEVxvLL-Yk" target="_blank" rel="noopener noreferrer">
+    <div class="cl-video-label">Founder Video</div>
+    <div class="cl-video-title">Why we built CrowdListen</div>
+    <div class="cl-video-cta">Watch on YouTube →</div>
+  </a>
+  <a class="cl-video-card" href="https://youtu.be/cORAZlhC_94" target="_blank" rel="noopener noreferrer">
+    <div class="cl-video-label">Product Demo</div>
+    <div class="cl-video-title">End-to-end product walkthrough</div>
+    <div class="cl-video-cta">Watch on YouTube →</div>
+  </a>
+</div>
+
+<style>
+  .cl-video-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin: 8px 0 18px; }
+  .cl-video-card { display: block; text-decoration: none !important; padding: 14px 16px; border: 1px solid var(--border); border-radius: 12px; background: var(--entry); transition: transform .12s ease, border-color .12s ease; }
+  .cl-video-card:hover { transform: translateY(-1px); border-color: var(--primary); }
+  .cl-video-label { font-size: 12px; color: var(--secondary); text-transform: uppercase; letter-spacing: .04em; margin-bottom: 6px; }
+  .cl-video-title { font-size: 16px; color: var(--primary); font-weight: 600; margin-bottom: 8px; }
+  .cl-video-cta { font-size: 13px; color: var(--secondary); }
+</style>
 
 ![CrowdListen Homepage](/images/projects/crowdlistening/homepage-hero-2026-03.png)
 
