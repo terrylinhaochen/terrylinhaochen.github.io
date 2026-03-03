@@ -6,6 +6,7 @@ author: Terry Chen
 tags: ["Posts"]
 categories: ai-native
 keywords: ["AI-native startup", "Every", "AI-first operations", "startup operations", "AI productivity", "remote work", "content creation", "AI consulting"]
+gated: true
 ---
 
 When Dan Shipper reveals in a recent podcast that Every's engineers write virtually zero code, the claim sounds almost impossible. Then he breaks down their numbers: 15 people, daily AI newsletter, multiple shipped products, and a million-dollar consulting arm. No traditional coding. No massive engineering team. Just humans orchestrating AI agents like conductors leading a symphony.

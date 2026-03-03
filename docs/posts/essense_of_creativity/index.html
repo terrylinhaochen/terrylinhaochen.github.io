@@ -575,8 +575,9 @@
   
   
   
-<div class="post-content">
-  <p>Is it creative to screenshot someone else&rsquo;s video and caption it with other people&rsquo;s comments? This seemingly simple question hits every creator making rent from content: if AI can remix, analyze, and generate at scale, what&rsquo;s left that&rsquo;s genuinely yours?</p>
+<div class="post-content" id="gated-content" data-gated="true" data-preview-percent="30">
+  <div id="gate-preview">
+    <p>Is it creative to screenshot someone else&rsquo;s video and caption it with other people&rsquo;s comments? This seemingly simple question hits every creator making rent from content: if AI can remix, analyze, and generate at scale, what&rsquo;s left that&rsquo;s genuinely yours?</p>
 <p>Through building AI content tools, I&rsquo;ve discovered the real opportunity isn&rsquo;t AI replacing creators—it&rsquo;s AI helping creators understand the massive amounts of content data around them to find genuinely fresh angles. Think of it as having a research team that can analyze millions of posts, comments, and engagement patterns in seconds, then surface the insights that lead to truly original work.</p>
 <div style="text-align: center; margin: 20px 0;">
   <img src="/images/projects/tiktok/tiktok-video-1.png" alt="TikTok Video Interface" style="width: 100%; border-radius: 8px;">
@@ -690,7 +691,123 @@
 <p>This article was originally developed as a presentation and shared internally with TikTok team members during my time there. The content has been adapted for public publication and adjusted to remove potentially sensitive information while preserving the core insights about AI and creativity.</p>
 <p>All views expressed in this article are my own and do not represent the official positions or strategies of TikTok or any other organization.</p>
 
+  </div>
+  <div id="content-gate" class="content-gate" style="display:none;">
+    <div class="content-fade"></div>
+    <div class="gate-inner">
+      <div class="gate-lock-label">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        Subscribe to continue reading
+      </div>
+      <h2 class="gate-headline">Actionable Insights to<br>Help You Stay at the Edge of AI</h2>
+      <p class="gate-subtext">The essential toolkit for those shaping the future</p>
+      <p class="gate-social-proof">Join 1,000+ leaders, builders, and innovators</p>
+      <form id="gate-form" class="gate-form">
+        <label for="gate-email" class="gate-email-label">Email address</label>
+        <input type="email" id="gate-email" placeholder="example@domain.com" required>
+        <button type="submit" class="gate-submit-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          Unlock this article
+        </button>
+      </form>
+      <div id="gate-message" class="gate-message"></div>
+      <p class="gate-disclaimer">No spam, ever. Unsubscribe at any time.</p>
+    </div>
+  </div>
 </div>
+
+<noscript>
+  <div class="post-content">
+    <p>Exploring the intersection of AI-generated content and human creativity. Analysis of creative workflows, multimodal interactions, and the future of content creation in the AI era.</p>
+    <p><em>JavaScript is required to read the full article. Please enable JavaScript or <a href="mailto:terrychen2026@u.northwestern.edu">contact me</a> for the full text.</em></p>
+  </div>
+</noscript>
+
+<script>
+(function() {
+  var container = document.getElementById('gated-content');
+  if (!container) return;
+
+  var isSubscribed = localStorage.getItem('newsletter-subscribed') === 'true';
+  var previewPercent = parseInt(container.getAttribute('data-preview-percent'), 10) || 30;
+  var preview = document.getElementById('gate-preview');
+  var gate = document.getElementById('content-gate');
+
+  if (isSubscribed) {
+    
+    return;
+  }
+
+  
+  var blocks = [];
+  var children = preview.children;
+  for (var i = 0; i < children.length; i++) {
+    var tag = children[i].tagName;
+    if (tag && /^(P|H[1-6]|UL|OL|BLOCKQUOTE|PRE|TABLE|FIGURE|DIV|DL|HR)$/i.test(tag)) {
+      blocks.push(children[i]);
+    }
+  }
+
+  if (blocks.length < 4) {
+    
+    return;
+  }
+
+  
+  var cutoff = Math.max(2, Math.round(blocks.length * previewPercent / 100));
+
+  
+  for (var j = cutoff; j < blocks.length; j++) {
+    blocks[j].style.display = 'none';
+  }
+
+  
+  gate.style.display = 'block';
+
+  
+  var form = document.getElementById('gate-form');
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var email = document.getElementById('gate-email').value;
+    var msgEl = document.getElementById('gate-message');
+    var btn = form.querySelector('button[type="submit"]');
+
+    btn.disabled = true;
+    btn.textContent = 'Unlocking...';
+
+    fetch('https://script.google.com/macros/s/AKfycbxF7czbmo2JEeATzFoMnHIfGASoSTzogbjJcuQm30sjBXFqmDOqISWkIHBr64GdmURS/exec', {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams({
+        'email': email,
+        'pageUrl': window.location.href,
+        'source': 'content-gate'
+      })
+    }).then(function() {
+      localStorage.setItem('newsletter-subscribed', 'true');
+      msgEl.textContent = 'Thanks! Unlocking the article...';
+      msgEl.classList.add('success');
+
+      
+      gate.classList.add('gate-unlocking');
+      setTimeout(function() {
+        gate.style.display = 'none';
+        
+        for (var k = cutoff; k < blocks.length; k++) {
+          blocks[k].style.display = '';
+          blocks[k].classList.add('gate-content-reveal');
+        }
+      }, 500);
+    }).catch(function() {
+      msgEl.textContent = 'Something went wrong. Please try again.';
+      msgEl.classList.add('error');
+      btn.disabled = false;
+      btn.textContent = 'Read the full article';
+    });
+  });
+})();
+</script>
 
   
   

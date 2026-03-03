@@ -6,6 +6,7 @@ author: Terry Chen'
 categories: microsoft
 tags: ["Posts", "Observations", "Entrepreneurship"]
 keywords: ["AI product engineer", "product engineering with AI", "AI multipliers", "small team productivity", "AI-first product development", "Shopify AI strategy"]
+gated: true
 ---
 ![Product Engineers](/images/posts/product_engineer/shopify_ai.png)
 *Tobi Lutke's Shopify internal memo*
