@@ -15,7 +15,9 @@ changelog:
     changes: "Updated Title"
 ---
 
-![CrowdListen Homepage](/images/projects/crowdlistening/homepage-new.png)
+**Videos:** [Founder video](https://youtu.be/9JEVxvLL-Yk) · [Product demo](https://youtu.be/cORAZlhC_94)
+
+![CrowdListen Homepage](/images/projects/crowdlistening/homepage-hero-2026-03.png)
 
 ## From Content Aggregation to Original Research
 
@@ -31,85 +33,35 @@ What I'm particularly interested in exploring and building with Crowdlisten is t
 
 ## Product Suite Overview
 
-![Product Suite](/images/projects/crowdlistening/product-suite-new.png)
+![Product Suite](/images/projects/crowdlistening/use-cases-cards-2026-03.png)
 
-CrowdListen has evolved into a comprehensive suite of AI-powered products designed to address different aspects of social intelligence and content strategy. The Analyze product serves as our core offering, enabling users to discover what people really think about any topic through sophisticated AI-powered sentiment analysis and opinion mining capabilities. This goes beyond simple positive/negative categorization to understand nuanced perspectives, emotional context, and the underlying reasons behind audience reactions.
+CrowdListen is built around one core problem: customer feedback is fragmented, unstructured, and difficult to convert into reliable product execution. Most teams still rely on manual synthesis and ad hoc workflows, which means intent gets lost between research, planning, and implementation. Traditional PRDs also break when handed to coding agents because they are written for humans, not executable agent workflows.
 
-Our Research product delivers an agentic research experience that systematically analyzes large volumes of social media content at scale. This comprehensive approach takes longer to run but provides significantly more thorough coverage across platforms, enabling researchers to uncover deeper insights and emerging patterns that automated dashboards typically miss.
+Our product suite preserves intent from first signal to shipped outcome through three connected surfaces:
 
-The Predict product represents our foray into predictive analytics, allowing users to test content variations and predict audience engagement before publishing. Using AI simulation technology, teams can experiment with different messaging approaches and understand likely audience reactions without the risk and cost of live testing.
+### 1) Feed — Signal Intake and Distillation
+Feed pulls cross-channel discussion into one stream (e.g., Reddit, Discord, Slack, support threads, and other public or internal feedback sources). It continuously clusters what people are actually saying: pain points, feature requests, objections, and recurring workarounds.
 
-Finally, our Insights+ product caters to enterprise users and power analysts who need advanced analytics capabilities and custom reporting features. This tier provides the depth and customization necessary for organizations making strategic decisions based on social intelligence data.
+Instead of raw mention counts, Feed produces structured insight themes that teams can act on immediately. The goal is to turn noisy social and community data into clear product-relevant signal.
+
+### 2) Workspace — Insight Development and Specification
+Workspace is where teams investigate those signals in depth. It acts as a conversational research environment that helps users explore problem space, validate hypotheses, and synthesize evidence into product decisions.
+
+From there, users can draft rich PRDs and working product artifacts with preserved context (why this matters, who it impacts, and what constraints apply), not just shallow summaries.
+
+### 3) Kanban — Agent Orchestration and Execution
+Kanban is the execution bridge between product artifacts and implementation agents. It decomposes specs into scoped tasks and routes them to coding agents with full task context, so execution aligns with original intent.
+
+Teams can orchestrate implementation through tools like Claude Code, Codex, and OpenAI-powered agents (including non-coding task flows), while keeping traceability from user signal → insight → spec → shipped work.
+
+### Why this structure matters
+CrowdListen is designed for an agent-driven product economy: insight should not stop at dashboards, and PRDs should not fail at handoff. By translating user signal into agent-ready PM specs and executable tasks, CrowdListen makes AI-assisted product delivery more reliable, faster, and less lossy.
+
+Our conviction is simple: as more work is executed by agents, the system that preserves intent will determine build quality. CrowdListen is that system.
 
 ## The Insight Paradox
 
 Brands today face a fundamental paradox: they need broad insights from vast amounts of social data, yet require the detailed understanding typically only available through limited case studies. Current solutions offer either abstracted metrics that require tedious manual interpretation, expensive and limited content screening that can't scale, or surface-level sentiment analysis that misses nuanced opinions. Crowdlisten bridges this gap by combining the scale of algorithmic analysis with the depth of human-like comprehension. This addresses the first challenge identified in ["Essence of Creativity"](/posts/essense_of_creativity/) - helping users understand massive amounts of information and generate meaningful insights when they "don't know what output they want."
-
-## Technical Architecture: Multi-Modal by Design
-
-The rationale behind Crowdlisten's multi-modal technical architecture stems from the fundamental challenge of extracting truly valuable insights from the vast and varied landscape of online conversations. Traditional methods often fall short because they either focus on structured data or analyze individual modalities (text, video, audio) in isolation. This approach misses the rich context and nuanced understanding that arises from the interplay between different forms of content and engagement. For example, a viral TikTok video's impact is not solely determined by its visual content but also by its accompanying audio, captions, user comments, and engagement metrics like likes and shares.
-
-![Analysis Interface](/images/projects/crowdlistening/analyze-interface.png)
-
-Crowdlisten's design directly tackles this limitation by integrating embedding-based topic modeling and LLM deep research capabilities to process and understand this multi-faceted data. Embedding-based topic modeling efficiently identifies key themes across massive datasets, while the LLM's deep reasoning capabilities can then analyze these themes within the context of various modalities. 
-
-This dual approach allows for a layered analysis, examining both the primary content and the subsequent engagement it generates. By processing video, audio, text, and engagement metrics in a unified system, Crowdlisten can generate insights that reflect not just what is being said, but how it's being said, the surrounding context, and the audience's multifaceted response. This comprehensive understanding is crucial for overcoming the "insight paradox" and delivering truly actionable intelligence that goes beyond surface-level sentiment or abstracted metrics. Ultimately, this multi-modal design is essential for achieving the core goal of Crowdlisten: to conduct original research directly from raw social data and uncover emerging trends and nuanced opinions that would be invisible to single-mode analysis systems.
-
-## Detailed Analysis Capabilities
-
-The platform provides granular breakdowns of content performance and audience reactions. Users can explore specific themes, track sentiment over time, and identify the most engaging content types across different categories and industries. This helps brands understand not just what is being said, but why certain content resonates with their audience.
-
-![Category Analysis](/images/projects/crowdlistening/category-analysis.png)
-
-The opinion analysis feature goes beyond simple positive/negative sentiment to categorize specific viewpoints and concerns. This allows brands to understand the nuanced perspectives their audience holds, helping them craft more targeted and effective messaging.
-
-## Advanced Research Infrastructure
-
-![Research Command Center](/images/projects/crowdlistening/research-command-center-new.png)
-
-CrowdListen's research infrastructure is built around a sophisticated orchestration system that coordinates multiple specialized AI engines. The Research Command Center provides users with a unified interface to launch complex analysis workflows while monitoring the progress of different analytical engines in real-time.
-
-Our system utilizes the Research Engine, which orchestrates various AI engines including the Insight Engine for sentiment analysis, Media Engine for multimodal content processing, Query Engine for information retrieval, and Report Engine for generating executive-ready reports. This modular architecture allows for scalable analysis that can adapt to different research requirements.
-
-![Research Interface](/images/projects/crowdlistening/research-interface-new.png)
-
-The research interface enables users to input complex queries and optionally upload analysis templates to guide the investigation. The system then automatically determines which analytical capabilities to deploy, processing everything from web search and specialized platform data collection to multi-layered content analysis and synthesis.
-
-This integrated approach represents a significant advancement over traditional social media monitoring tools, enabling researchers to conduct comprehensive investigations that would typically require weeks of manual work in a matter of minutes while maintaining the depth and rigor of human-led research.
-
-## Case Study: Google NotebookLM Analysis
-
-To demonstrate Crowdlisten's capabilities in product intelligence, we conducted a comprehensive analysis of user sentiment regarding Google's NotebookLM tool. This case study showcases our platform's ability to extract nuanced insights about emerging AI tools and understand user adoption patterns.
-
-![NotebookLM Analysis](/images/projects/crowdlistening/notebooklm-analysis-new.png)
-
-When analyzing user sentiment around NotebookLM, our system provided a comprehensive overview showing that customer feedback indicates NotebookLM is effective for information synthesis and content generation, particularly in educational settings. However, users express concerns about the lack of persistent chat history, word count limits, and potential biases in the auto-generated podcast feature. Approximately 56% of users have a positive sentiment, praising its summarization capabilities and educational applications, while 34% express negative sentiment due to usability issues and accuracy concerns.
-
-![Theme Analysis](/images/projects/crowdlistening/notebooklm-themes-new.png)
-
-Our thematic analysis reveals that Information Synthesis and Summarization is the most discussed topic, with 100 mentions representing 33.39% of all conversations. The sentiment breakdown shows overwhelmingly positive feedback for this core functionality, with users particularly appreciating the tool's ability to synthesize information from uploaded documents and aid in quick comprehension and analysis.
-
-The detailed sentiment analysis shows specific user opinions, including praise for NotebookLM's effectiveness in summarizing and synthesizing information from uploaded documents, its utility for creating study guides and educational materials, and its ability to provide citations for generated information to help users verify accuracy and build trust in the tool's output.
-
-![Source Analysis](/images/projects/crowdlistening/notebooklm-sources-new.png)
-
-Our analysis draws from 31 sources across 25 unique domains, indicating a moderate level of source diversity at 81%. The sources encompass various types including blogs, news outlets, and other platforms, offering a mix of perspectives. This comprehensive source analysis helps validate the reliability and breadth of our insights.
-
-![Related Topics](/images/projects/crowdlistening/notebooklm-related-new.png)
-
-The platform also identifies related research opportunities, suggesting additional analysis areas such as specific research or writing challenges that NotebookLM helps users overcome, how effectively it addresses information overload, the biggest frustrations users encounter, and whether it has improved research workflows. This demonstrates our system's ability to not only analyze current sentiment but also identify strategic research directions.
-
-## Content Predictor: AI-Powered Engagement Forecasting
-
-![Content Predictor](/images/projects/crowdlistening/content-predictor-new.png)
-
-One of our most innovative features is the Content Predictor, which allows users to test content variations and predict audience engagement before publishing. This tool represents a significant advancement in social media strategy, enabling teams to experiment with different messaging approaches without the traditional risks and costs associated with live testing.
-
-The Content Predictor uses a sophisticated three-step workflow. Users begin by generating multiple versions of their content, allowing our AI to create variations optimized for specific platforms like Twitter, Instagram, or LinkedIn. Next, the system runs engagement simulations using AI-powered user reactions that model realistic audience behavior patterns. Finally, users can view detailed simulation results and select the most promising content variations based on predicted performance metrics.
-
-This capability is particularly valuable for brands and content creators who need to maximize the impact of their social media presence. Rather than relying on intuition or conducting expensive A/B tests with real audiences, teams can now validate their content strategies in a controlled environment before committing to publication. The system considers factors such as platform-specific audience behaviors, trending topics, and historical engagement patterns to provide accurate predictions.
-
-The Content Predictor exemplifies our broader mission of transforming social media from a reactive medium to a strategic tool where decisions are informed by data and predictive intelligence rather than guesswork.
 
 ## Validation and Impact
 
@@ -119,71 +71,3 @@ Our solution has been validated through interviews with major brands like L'Orea
 - Deep understanding of consumer sentiment across demographics
 - Identification of microtrends before they become mainstream
 - Competitive intelligence at unprecedented scale
-
-## The Future of MCP-Driven Research
-
-We believe Model Context Protocols represent the future of specialized LLM applications. As shown in our implementation, MCPs provide a structured way for language models to interact with specialized tools and data sources while maintaining context awareness throughout the analysis process.
-
-This approach is likely to become standard in LLM application development given how effectively it bridges the gap between general-purpose AI and domain-specific functionality. We anticipate seeing more MCP clients (interaction surfaces like Claude's interface) emerge as this paradigm gains traction.
-
-For social media analysis specifically, this approach creates a fascinating dynamic where AI-driven insights can actually lead structured reporting in terms of timeliness and depth. By processing and analyzing unstructured social data at scale, we can identify emerging trends and public sentiment shifts before they're covered in traditional reporting.
-
-## Credits
-
-This project was developed in collaboration with Madison Bratley, whose expertise in journalism and social media analysis was instrumental in conceptualizing how this technology could transform research methodologies. Additional contributions from Violet Liu in providing valuable usability feedback for our early prototype. I would also like to acknowledge Zhengjin, Cathy, Roy, Ruiwan, Qiping, Tongming and other members on the Creative team at TikTok, who I've discussed early conceptions of this idea with.
-
-## On Social Intelligence
-
-Crowdlisten represents the next evolution in social listening tools - moving beyond counting mentions to truly understanding conversations at scale. By transforming social media chatter into structured insights, we're helping brands make more informed decisions faster than ever before.
-
-As noted in ["Essence of Creativity"](/posts/essense_of_creativity/), the real value in AI-powered tools comes not just from generating content, but from helping users find new perspectives and insights. Our platform serves as both an inspiration acquisition tool (accelerating original content production) and a content understanding tool (helping brands better comprehend their audience). By connecting insight data with generation capabilities, we're creating the kind of breakthrough product that bridges the gap between understanding and action.
-
----
-
-## The Real-Time Feedback Layer
-
-Over the past few months, I have written about Crowdlisten from several angles: as a distribution partner for vibe-coded products, as an insight infrastructure for AI agents, and as a way to preserve human signal in an age of synthetic content. Each framing captured something real. But after working with early users and watching how they actually use the product, a clearer picture has emerged. Crowdlisten is not just an insights tool. It is a feedback layer.
-
-### Products Are Conversations
-
-The mental model most builders carry is that a product launches, gets feedback, and then iterates. The reality is messier. Feedback does not arrive in a clean batch after launch. It leaks out continuously---in comments on adjacent products, in questions people ask about similar tools, in the language they use to describe problems they did not know had names. The best builders I have worked with treat this ambient signal as their primary input, not post-launch surveys or NPS scores.
-
-The problem is that this signal is scattered, unstructured, and ephemeral. A comment on a TikTok video about a competitor disappears into an algorithmic feed within hours. A Reddit thread comparing tools gets buried under new posts. A recurring question in a Discord server never makes it into the product roadmap because nobody is systematically watching.
-
-Crowdlisten's job is to make this signal legible and actionable, in real time.
-
-### What We Have Learned
-
-Working with the first cohort of builders, three patterns have become clear.
-
-**Framing matters more than features.** The same product, described differently, produces wildly different engagement. One builder's tool was ignored when positioned as "an AI writing assistant" but gained traction when a commenter described it as "the thing that finally made me stop staring at blank pages." That reframe did not come from the builder. It came from the crowd. Crowdlisten's job is to surface these reframes before they disappear.
-
-**Objections are more valuable than praise.** Positive comments feel good but teach little. The comments that drive real product iteration are the ones that say "I would use this if..." or "This almost works but..." These conditional statements contain the exact specification for what to build next. We now weight objection clusters higher than sentiment scores in our analysis.
-
-**Speed of learning determines speed of growth.** The builders who reach their first thousand users fastest are not the ones who produce the most content or spend the most on ads. They are the ones who close the loop between audience reaction and product change most quickly. A builder who ships a feature mentioned in comments within forty-eight hours creates a narrative of responsiveness that compounds. The audience feels heard, shares more, and becomes invested in the product's evolution.
-
-### From Insights to Feedback Layer
-
-These observations have shaped how Crowdlisten is evolving. The initial product was oriented around content creation: take crowd insights, produce videos, distribute them. That remains valuable, but it is only half the loop. The other half---feeding audience response back into product decisions---is where the compounding value lives.
-
-The feedback layer works in three stages.
-
-**Listen.** Crowdlisten continuously monitors conversations across platforms where a builder's audience and adjacent audiences discuss relevant tools, problems, and workflows. This is not keyword monitoring. It is semantic clustering: understanding what people mean, not just what they say.
-
-**Interpret.** Raw signal is noisy. Crowdlisten distills it into structured themes: what use cases are emerging, what objections recur, what language resonates, and how perceptions shift over time. These themes are updated continuously, not in weekly reports.
-
-**Connect.** The interpreted signal feeds directly into two outputs. First, content: new videos, hooks, and framings grounded in what is actually resonating. Second, product insight: specific, evidence-backed suggestions for what to build, change, or stop doing, based on what the audience is telling us through their behavior.
-
-### The Compounding Effect
-
-Each cycle through this loop makes the next cycle more effective. As Crowdlisten processes more conversations, the semantic models become more nuanced. As more builders use the platform, cross-category patterns emerge: which objections are universal, which framings transfer across domains, which audience segments adopt new tools in predictable sequences.
-
-This is not a moat built on data volume. It is a moat built on interpretive depth. Anyone can scrape comments. The value is in knowing which comments matter, why they matter, and what to do about them.
-
-### What This Means for the Thesis
-
-When I started Crowdlisten, the thesis was about crowd intelligence: understanding what people think at scale. That thesis still holds, but it has sharpened. The insight is not just in understanding what people think---it is in connecting that understanding to action fast enough that the feedback becomes a competitive advantage.
-
-In a world where building is cheap and distribution is hard, the builders who win are the ones who learn fastest. Crowdlisten is the infrastructure that makes that learning possible.
-
-The long-term vision has not changed: Crowdlisten becomes the intelligence layer between products and their audiences. What has changed is my understanding of what that layer actually does. It does not just observe. It closes loops. And closed loops compound.
