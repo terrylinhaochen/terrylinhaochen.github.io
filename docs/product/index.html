@@ -969,6 +969,58 @@
         
         <article class="post-entry"> 
           <header class="entry-header">
+            <h3>The Real-Time Feedback Layer: How Crowdlisten Closes the Loop Between Builders and Audiences</h3>
+          </header>
+          <div class="entry-content">
+            Products are conversations, not launches. Crowdlisten is evolving from insight extraction into a real-time feedback layer that connects what builders ship with how audiences actually respond, creating continuous learning loops that compound over time.
+          </div>
+          <footer class="entry-footer">
+            <div class="post-meta"><span title='2026-02-15 00:00:00 +0000 UTC'>February 15, 2026</span> • 📖 4 min read • Terry Chen</div>
+          </footer>
+          <a class="entry-link" href="https://chenterry.com/posts/crowdlisten_feedback_layer/"></a>
+        </article>
+        
+        <article class="post-entry"> 
+          <header class="entry-header">
+            <h3>Bringing Human Signal Back in an Age of AI Noise</h3>
+          </header>
+          <div class="entry-content">
+            As AI-generated content becomes cheaper and more abundant, authentic human insight becomes more valuable. Crowdlisten exists to make discernment, taste, and human judgment visible, protectable, and accessible.
+          </div>
+          <footer class="entry-footer">
+            <div class="post-meta"><span title='2026-01-15 00:00:00 +0000 UTC'>January 15, 2026</span> • 📖 4 min read • Terry Chen</div>
+          </footer>
+          <a class="entry-link" href="https://chenterry.com/posts/crowdlisten_human_signal/"></a>
+        </article>
+        
+        <article class="post-entry"> 
+          <header class="entry-header">
+            <h3>Distribution Intelligence for Vibe-Coded Products</h3>
+          </header>
+          <div class="entry-content">
+            Vibe coding solved the problem of building. Crowdlisten solves the problem of being understood. By turning crowd insight into scalable storytelling, the product helps solo builders move from shipping quietly to reaching their first real users.
+          </div>
+          <footer class="entry-footer">
+            <div class="post-meta"><span title='2025-12-17 00:00:00 +0000 UTC'>December 17, 2025</span> • 📖 5 min read • Terry Chen</div>
+          </footer>
+          <a class="entry-link" href="https://chenterry.com/posts/crowdlisten_distribution_intelligence/"></a>
+        </article>
+        
+        <article class="post-entry"> 
+          <header class="entry-header">
+            <h3>The Shift to Agentic Content Discovery</h3>
+          </header>
+          <div class="entry-content">
+            As AI agents replace human browsing and comparison, the primary consumer of online content shifts from people to software. Crowdlisten becomes the structured insight layer that agents need to reason about real user experience.
+          </div>
+          <footer class="entry-footer">
+            <div class="post-meta"><span title='2025-11-15 00:00:00 +0000 UTC'>November 15, 2025</span> • 📖 5 min read • Terry Chen</div>
+          </footer>
+          <a class="entry-link" href="https://chenterry.com/posts/crowdlisten_agentic_discovery/"></a>
+        </article>
+        
+        <article class="post-entry"> 
+          <header class="entry-header">
             <h3>Weighing Social Interactions: Reconstructing Meaning from Large Multi-modal Datasets</h3>
           </header>
           <div class="entry-content">
@@ -1283,6 +1335,139 @@
 <li><a href="/posts/ambiguity/">The Best Practices Lie: On Dealing with Ambiguity</a> - Why institutional training becomes a liability in genuinely uncertain situations</li>
 <li><a href="/posts/crowdlisten/">From Raw Social Data to Real Research</a> - The technical architecture behind CrowdListen&rsquo;s insight engine</li>
 </ul>
+
+      </div>
+    </div>
+  </div>
+  
+  <div id="modal-the-real-time-feedback-layer-how-crowdlisten-closes-the-loop-between-builders-and-audiences" class="modal-overlay">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('the-real-time-feedback-layer-how-crowdlisten-closes-the-loop-between-builders-and-audiences')">&times;</button>
+      <h2>The Real-Time Feedback Layer: How Crowdlisten Closes the Loop Between Builders and Audiences</h2>
+      <p class="project-meta">February 15, 2026</p>
+      <div class="modal-content">
+        <p>Over the past few months, I have written about Crowdlisten from several angles: as a distribution partner for vibe-coded products, as an insight infrastructure for AI agents, and as a way to preserve human signal in an age of synthetic content. Each framing captured something real. But after working with early users and watching how they actually use the product, a clearer picture has emerged. Crowdlisten is not just an insights tool. It is a feedback layer.</p>
+<h2 id="products-are-conversations">Products Are Conversations</h2>
+<p>The mental model most builders carry is that a product launches, gets feedback, and then iterates. The reality is messier. Feedback does not arrive in a clean batch after launch. It leaks out continuously&mdash;in comments on adjacent products, in questions people ask about similar tools, in the language they use to describe problems they did not know had names. The best builders I have worked with treat this ambient signal as their primary input, not post-launch surveys or NPS scores.</p>
+<p>The problem is that this signal is scattered, unstructured, and ephemeral. A comment on a TikTok video about a competitor disappears into an algorithmic feed within hours. A Reddit thread comparing tools gets buried under new posts. A recurring question in a Discord server never makes it into the product roadmap because nobody is systematically watching.</p>
+<p>Crowdlisten&rsquo;s job is to make this signal legible and actionable, in real time.</p>
+<h2 id="what-we-have-learned">What We Have Learned</h2>
+<p>Working with the first cohort of builders, three patterns have become clear.</p>
+<p><strong>Framing matters more than features.</strong> The same product, described differently, produces wildly different engagement. One builder&rsquo;s tool was ignored when positioned as &ldquo;an AI writing assistant&rdquo; but gained traction when a commenter described it as &ldquo;the thing that finally made me stop staring at blank pages.&rdquo; That reframe did not come from the builder. It came from the crowd. Crowdlisten&rsquo;s job is to surface these reframes before they disappear.</p>
+<p><strong>Objections are more valuable than praise.</strong> Positive comments feel good but teach little. The comments that drive real product iteration are the ones that say &ldquo;I would use this if&hellip;&rdquo; or &ldquo;This almost works but&hellip;&rdquo; These conditional statements contain the exact specification for what to build next. We now weight objection clusters higher than sentiment scores in our analysis.</p>
+<p><strong>Speed of learning determines speed of growth.</strong> The builders who reach their first thousand users fastest are not the ones who produce the most content or spend the most on ads. They are the ones who close the loop between audience reaction and product change most quickly. A builder who ships a feature mentioned in comments within forty-eight hours creates a narrative of responsiveness that compounds. The audience feels heard, shares more, and becomes invested in the product&rsquo;s evolution.</p>
+<h2 id="from-insights-to-feedback-layer">From Insights to Feedback Layer</h2>
+<p>These observations have shaped how Crowdlisten is evolving. The initial product was oriented around content creation: take crowd insights, produce videos, distribute them. That remains valuable, but it is only half the loop. The other half&mdash;feeding audience response back into product decisions&mdash;is where the compounding value lives.</p>
+<p>The feedback layer works in three stages.</p>
+<p><strong>Listen.</strong> Crowdlisten continuously monitors conversations across platforms where a builder&rsquo;s audience and adjacent audiences discuss relevant tools, problems, and workflows. This is not keyword monitoring. It is semantic clustering: understanding what people mean, not just what they say.</p>
+<p><strong>Interpret.</strong> Raw signal is noisy. Crowdlisten distills it into structured themes: what use cases are emerging, what objections recur, what language resonates, and how perceptions shift over time. These themes are updated continuously, not in weekly reports.</p>
+<p><strong>Connect.</strong> The interpreted signal feeds directly into two outputs. First, content: new videos, hooks, and framings grounded in what is actually resonating. Second, product insight: specific, evidence-backed suggestions for what to build, change, or stop doing, based on what the audience is telling us through their behavior.</p>
+<h2 id="the-compounding-effect">The Compounding Effect</h2>
+<p>Each cycle through this loop makes the next cycle more effective. As Crowdlisten processes more conversations, the semantic models become more nuanced. As more builders use the platform, cross-category patterns emerge: which objections are universal, which framings transfer across domains, which audience segments adopt new tools in predictable sequences.</p>
+<p>This is not a moat built on data volume. It is a moat built on interpretive depth. Anyone can scrape comments. The value is in knowing which comments matter, why they matter, and what to do about them.</p>
+<h2 id="what-this-means-for-the-thesis">What This Means for the Thesis</h2>
+<p>When I started Crowdlisten, the thesis was about crowd intelligence: understanding what people think at scale. That thesis still holds, but it has sharpened. The insight is not just in understanding what people think&mdash;it is in connecting that understanding to action fast enough that the feedback becomes a competitive advantage.</p>
+<p>In a world where building is cheap and distribution is hard, the builders who win are the ones who learn fastest. Crowdlisten is the infrastructure that makes that learning possible.</p>
+<p>The long-term vision has not changed: Crowdlisten becomes the intelligence layer between products and their audiences. What has changed is my understanding of what that layer actually does. It does not just observe. It closes loops. And closed loops compound.</p>
+
+      </div>
+    </div>
+  </div>
+  
+  <div id="modal-bringing-human-signal-back-in-an-age-of-ai-noise" class="modal-overlay">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('bringing-human-signal-back-in-an-age-of-ai-noise')">&times;</button>
+      <h2>Bringing Human Signal Back in an Age of AI Noise</h2>
+      <p class="project-meta">January 15, 2026</p>
+      <div class="modal-content">
+        <p>We are living in a period where content is no longer scarce. AI systems can generate text, images, and ideas at near-zero cost, producing an endless stream of output that is often fluent, technically correct, and difficult to distinguish from human work. As a result, the internet is filling with material that resembles knowledge but lacks judgment, taste, and lived understanding. The central challenge today is not producing more information, but identifying what is real, meaningful, and worth engaging with.</p>
+<h2 id="the-consumer-problem">The Consumer Problem</h2>
+<p>For people consuming knowledge, generic AI-generated answers are no longer enough. As AI output becomes ubiquitous, the value of information shifts away from speed and volume toward discernment, credibility, and insight. What people increasingly seek is not another synthesized response, but access to real human perspectives&mdash;ideas shaped by experience, judgment, and a coherent point of view. They want to engage with thinking that reflects how someone actually understands a topic, not a statistical average of existing content. Crowdlisten offers a way to interact with knowledge that is grounded in real people and the insights they have developed, rather than generic or SEO-optimized approximations.</p>
+<h2 id="the-creator-problem">The Creator Problem</h2>
+<p>At the same time, creators and experts face a parallel problem. AI systems are working to replicate what they do well, not only in terms of factual knowledge, but in the harder-to-define qualities that make their work valuable: how they frame problems, how they reason through ambiguity, the intuition behind a strong insight, and the sense of what matters and what does not. These qualities are rarely captured by text alone, yet they are what audiences respond to most deeply. Today, they are often flattened, diluted, or absorbed without consent.</p>
+<h2 id="the-core-belief">The Core Belief</h2>
+<p>Crowdlisten is built on a simple belief: as AI-generated content becomes cheaper and more abundant, authentic human insight becomes more valuable. The future of AI should not be about replacing or diluting human expertise, but about preserving it, understanding it, and integrating it responsibly. If AI systems are going to speak with authority, they should be grounded in real human judgment rather than synthetic approximation.</p>
+<h2 id="who-this-is-for">Who This Is For</h2>
+<p>Crowdlisten is a tool for thinkers&mdash;anyone with genuine taste and a distinctive way of communicating ideas. These are domain experts whose value lies not only in what they say, but in how they think, frame, and express insight. Their voice is recognizable over time. Their judgment cannot be reduced to a checklist or a prompt. Their work resonates because it reflects a coherent point of view rather than interchangeable output.</p>
+<h2 id="the-insights-engine">The Insights Engine</h2>
+<p>Our core offering is an insights engine designed to surface this human layer. Crowdlisten analyzes a creator&rsquo;s body of work alongside real user engagement data to understand how ideas land with actual audiences. We examine discussion depth, response patterns, and signals of resonance, combined with features extracted from content and materials creators choose to upload. This approach allows us to move beyond surface-level semantics or stylistic markers and toward the deeper qualities that make ideas compelling, trustworthy, and worth sharing.</p>
+<p>What emerges is a semantic representation of insight and methodology. Rather than copying text or imitating phrasing, Crowdlisten captures recurring patterns of judgment, framing, and expression that shape how someone approaches ideas. This representation powers Crowdlisten&rsquo;s own research system, enabling consumers to explore complex topics through grounded, human-informed perspectives. It can also be integrated by AI companies as an authorized interface to real expertise, allowing AI systems to respond in ways that reflect genuine human insight rather than averaged training data.</p>
+<h2 id="consent-and-control">Consent and Control</h2>
+<p>Crowdlisten is designed with consent and control at its core. We do not disclose raw source material, and we do not allow replication without explicit permission. Creators retain ownership over their voice and their insight, and decide how it is used. This enables them to monetize their expertise and participate directly in the AI ecosystem, rather than watching their work be quietly extracted. The relationship between creators and AI shifts from one of exploitation to one of collaboration.</p>
+<h2 id="closing">Closing</h2>
+<p>In a world flooded with AI-generated content, what matters most is discernment, taste, and human judgment. Crowdlisten exists to make those qualities visible, protectable, and accessible. We are not trying to generate more output. We are creating a new way to interact with knowledge, one that connects people to real human insight, and gives creators the tools to ensure their thinking remains distinct, valued, and intact.</p>
+
+      </div>
+    </div>
+  </div>
+  
+  <div id="modal-distribution-intelligence-for-vibe-coded-products" class="modal-overlay">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('distribution-intelligence-for-vibe-coded-products')">&times;</button>
+      <h2>Distribution Intelligence for Vibe-Coded Products</h2>
+      <p class="project-meta">December 17, 2025</p>
+      <div class="modal-content">
+        <p>Vibe coding has dramatically lowered the cost of building software. Tools like Lovable, Bolt, Gemini, and Cursor enable solo builders to ship functional, polished products in days. As a result, the number of AI-native, one-person products has exploded. What has not scaled alongside product creation is storytelling, distribution, and user acquisition. Most vibe-coded products do not fail because the product is bad; they fail because the builder cannot articulate the value clearly enough for it to spread.</p>
+<p>Crowdlisten addresses this gap by acting as a content and distribution partner for solo AI builders. The product helps founders reach their first one thousand users by discovering which ideas resonate with real audiences and amplifying those ideas through short-form, multimodal content. Rather than generating content in a vacuum, Crowdlisten grounds content creation in crowd behavior, language, and interpretation, turning audience reactions into creative fuel and iteration insight.</p>
+<h2 id="the-problem">The Problem</h2>
+<p>Distribution remains the hardest problem for early-stage products, especially for solo builders. Vibe coding has shifted the bottleneck from engineering to communication. Builders can ship quickly, but they struggle to answer basic questions: what is the clearest use case, which framing resonates, how should the product be demonstrated, and where should it be shared?</p>
+<p>Existing tools do not solve this problem for this audience. Video clipping tools like Opus Clip assume an existing content library and a marketer&rsquo;s intuition. Social media management tools assume an established audience. Creator agencies are built for brands with budgets and teams, not for individual developers shipping side projects or early startups. Meanwhile, generative AI content tools produce output, but they do not solve distribution, resonance, or learning.</p>
+<p>The result is a widening gap: more products than ever, but fewer products that successfully reach users.</p>
+<h2 id="product-vision">Product Vision</h2>
+<p>Crowdlisten is built on a simple thesis: the best ideas for explaining a product already exist in the crowd. They appear in comments, reactions, questions, and off-hand interpretations from people encountering similar tools. These ideas rarely travel far, but when they do, they drive adoption.</p>
+<p>The product&rsquo;s goal is not to invent narratives, but to surface, select, and amplify interpretations that already resonate. Crowdlisten takes early user reactions and adjacent crowd discussions, identifies the most compelling ways people describe value, and turns those insights into short-form content that spreads. Over time, it closes the loop by feeding audience feedback back into both content and product iteration.</p>
+<h2 id="initial-offering">Initial Offering</h2>
+<p>Crowdlisten launches as a productized service with two tightly scoped offerings designed for speed, clarity, and validation.</p>
+<p><strong>Launch Package ($79, one-time).</strong> Builders provide a product link, a brief description, and a target audience. Crowdlisten then produces ten TikTok-style videos demonstrating different crowd-validated use cases. Each video uses language, hooks, and framing derived from real audience discourse around similar tools. The goal is not virality, but signal: which ideas resonate, which questions emerge, and whether the product earns attention from real users.</p>
+<p><strong>Ongoing Insights ($69/month).</strong> This package provides ongoing crowd insight and audience feedback analysis. Crowdlisten continuously monitors conversations around adjacent products, analyzes comments and reactions on posted content, and clusters how people describe value, confusion, and objections. The output is a steady stream of actionable insight that informs new content, messaging changes, and product decisions.</p>
+<h2 id="how-it-works">How It Works</h2>
+<p>Crowdlisten begins by analyzing similar products and adjacent tools within the same category. Rather than focusing on features or positioning statements, the system extracts how people describe their experience in natural language. Phrases like &ldquo;this saves me time,&rdquo; &ldquo;this replaces three tools,&rdquo; or &ldquo;this finally makes sense&rdquo; become the raw material for storytelling.</p>
+<p>These crowd-derived use-case clusters are then translated into multimodal content. Each piece of content is designed to feel native to short-form platforms: founder-led, demo-driven, informal, and authentic. The emphasis is on clarity and resonance, not polish.</p>
+<p>After distribution, Crowdlisten analyzes audience response. Comments, questions, and engagement patterns are treated as first-class signals. These signals reveal not just whether content worked, but why it worked, and for whom. This feedback directly informs subsequent content and highlights opportunities for product iteration.</p>
+<h2 id="why-now">Why Now</h2>
+<p>Three converging trends make this product particularly timely.</p>
+<p>First, vibe coding has created an unprecedented volume of new products, dramatically increasing competition for attention.</p>
+<p>Second, multimodal content has become the dominant format for discovery, and this is expected to accelerate further in the coming years.</p>
+<p>Third, founder-led growth has become culturally preferred; audiences trust builders demonstrating real products more than polished brand campaigns.</p>
+<p>Crowdlisten sits at the intersection of these trends. It does not compete with vibe coding tools or generative content platforms; it complements them by solving the distribution and learning problem they leave untouched.</p>
+<h2 id="differentiation">Differentiation</h2>
+<p>What differentiates Crowdlisten is its grounding in real audience behavior. While most content tools optimize for production efficiency, Crowdlisten optimizes for resonance and learning. It treats audience interpretation as data, not noise, and uses that data to guide both creative output and product direction.</p>
+<p>This creates a compounding advantage. As Crowdlisten works with more builders, it develops a deeper understanding of which framings work across categories, which objections recur, and how early adopters talk about new tools. This knowledge becomes increasingly difficult to replicate.</p>
+<h2 id="long-term-direction">Long-Term Direction</h2>
+<p>In the near term, Crowdlisten is a high-leverage, productized service. Over time, the patterns learned from working with dozens or hundreds of builders can be distilled into software: automated use-case discovery, resonance-aware content generation, and feedback-driven iteration loops.</p>
+<p>Long-term, Crowdlisten becomes the distribution intelligence layer for the long tail of AI-native products.</p>
+<h2 id="closing">Closing</h2>
+<p>Vibe coding solved the problem of building. Crowdlisten solves the problem of being understood. By turning crowd insight into scalable storytelling, the product helps solo builders move from shipping quietly to reaching their first real users.</p>
+
+      </div>
+    </div>
+  </div>
+  
+  <div id="modal-the-shift-to-agentic-content-discovery" class="modal-overlay">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('the-shift-to-agentic-content-discovery')">&times;</button>
+      <h2>The Shift to Agentic Content Discovery</h2>
+      <p class="project-meta">November 15, 2025</p>
+      <div class="modal-content">
+        <p>Over the next three to five years, software agents will increasingly take over the work that humans currently perform when making decisions: searching for information, reading and interpreting content, and comparing alternative options. Instead of opening multiple tabs, scanning articles and reviews, and manually weighing tradeoffs, users will provide high-level intent (&ldquo;recommend a CRM for my small business&rdquo;), and agents will execute the discovery, retrieval, and comparison steps internally. As this shift accelerates, the primary consumer of online content is no longer the human reader but the agent acting on their behalf. This changes the underlying economics and structure of content: brands will no longer optimize primarily for human attention and persuasion but for how well their information can be interpreted, verified, and ranked by autonomous agents.</p>
+<h2 id="three-forces-driving-the-shift">Three Forces Driving the Shift</h2>
+<p>This transition is driven by three forces that follow directly from first principles.</p>
+<p>First, the tasks agents replace&mdash;searching for information, synthesizing it, and performing multi-criteria comparisons&mdash;are repetitive, information-dense, and cognitively demanding for humans. Automation pressure on such tasks is inherently high.</p>
+<p>Second, digital interfaces are converging toward natural-language agentic interfaces embedded at the OS, browser, and productivity-tool level. Once the dominant mode of interaction becomes &ldquo;ask and receive an answer,&rdquo; the cognitive heavy lifting moves upstream to the agent.</p>
+<p>Third, platforms have strong incentives to accelerate this shift. If agents mediate user decisions, the agent interface becomes the new distribution channel, enabling Google, Microsoft, Amazon, and other platform players to capture more of the decision funnel. The strategic and economic incentives of users (reduced cognitive load), platforms (tighter control over discovery), and vendors (more qualified recommendations) reinforce one another.</p>
+<h2 id="content-as-data">Content as Data</h2>
+<p>As agents begin consuming the majority of content, the nature of content itself changes. Agents do not experience content as media or narrative; they process it as data. They extract claims, features, pricing, evidence, and contradictions. They compare these structured signals against other sources, including technical documentation, competitor claims, and&mdash;critically&mdash;user-generated feedback.</p>
+<p>Persuasion-oriented design becomes less important; semantic clarity, internal consistency, and alignment with real user experience become the dominant ranking factors. Ads also shift away from driving human clicks and toward shaping an agent&rsquo;s internal model of what a product is, who it serves, and how it performs. In this world, the most important determinant of how a brand appears in an agent&rsquo;s recommendation is how well its claims match the lived experiences of users&mdash;experiences that agents can increasingly cross-verify at scale.</p>
+<h2 id="the-missing-layer">The Missing Layer</h2>
+<p>The problem is that agents cannot natively construct reliable, large-scale representations of user sentiment or preference. While excellent at interpreting individual pieces of text, they are not designed to aggregate noisy, multimodal public content into coherent, stable clusters; infer personas and use cases; extract representative or causal themes; or track how these dynamics change over time. They hallucinate when the underlying data is ambiguous or sparse, and their internal representations shift unpredictably across contexts and prompts. What agents lack is a structured, continuously updated substrate of human experience that they can query as part of their reasoning process.</p>
+<h2 id="where-crowdlisten-fits">Where Crowdlisten Fits</h2>
+<p>This is where Crowdlisten fits. At its core, Crowdlisten transforms messy, multimodal public feedback into a clean, queryable map of what people think, want, and experience. By clustering large-scale UGC, extracting representative themes, modeling sentiment and tradeoffs, and tracking temporal changes, Crowdlisten provides the structured knowledge that agents need but cannot build reliably on their own.</p>
+<p>For AI agents, Crowdlisten can serve as the insight infrastructure layer&mdash;an API that answers questions such as: &ldquo;What do people like me prefer about this product?&rdquo; &ldquo;What pain points dominate the discussion around this tool?&rdquo; &ldquo;Which features drive satisfaction or frustration?&rdquo; and &ldquo;How do these perceptions shift over time?&rdquo; Instead of scraping or hallucinating from incomplete data, agents can integrate this structured representation directly into their decision procedures.</p>
+<p>For brands, Crowdlisten becomes the measurement layer for an agent-first world. Companies will need to understand how agents perceive them, whether their claims align with the crowd&rsquo;s actual experience, and how they are likely to be ranked in agentic recommendation flows. This becomes the new form of SEO&mdash;Agent Experience Optimization&mdash;where the goal is not to capture human clicks but to ensure that agents interpret and evaluate a product correctly based on factual, crowd-grounded evidence. Crowdlisten provides the feedback loop brands need to adapt their messaging, improve their product, and maintain alignment with user sentiment.</p>
+<h2 id="risks-and-uncertainties">Risks and Uncertainties</h2>
+<p>There are risks and uncertainties. Agents might remain shallow wrappers over traditional search for longer than expected, meaning platforms rather than independent developers become the primary integration targets. Human trust in agents could plateau for high-stakes decisions, slowing the transition in certain verticals. Data access constraints could affect how much UGC remains available for large-scale modeling. Yet none of these challenges undermine the core trajectory&mdash;the increasing reliance on agents for complex information tasks&mdash;or the structural need for a high-fidelity representation of human preference and sentiment grounded in real-world data.</p>
+<h2 id="summary">Summary</h2>
+<p>As discovery and comparison shift from humans to agents, the limiting factor in accurate decision-making becomes access to structured, trustworthy representations of human experience. Crowdlisten is positioned to build that substrate. By converting noisy crowd data into a stable map of themes, tradeoffs, and outcomes, it enables both agents and brands to reason from what people actually think&mdash;not from surface-level content or potentially hallucinated inferences. This positions Crowdlisten as both the infrastructure layer beneath agentic reasoning and the measurement system brands will rely on as agents become the dominant interface for decision-making.</p>
 
       </div>
     </div>
