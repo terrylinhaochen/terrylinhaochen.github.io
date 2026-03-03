@@ -1,0 +1,30 @@
+# chenterry.com — LLM Full Index
+
+Canonical: https://chenterry.com/llms-full.txt
+Site: https://chenterry.com/
+
+This file is the expanded index for agents. It lists high-signal essays by theme with one-line descriptions and canonical URLs.
+
+## Key Thesis Posts
+- PM for Agents: Turning Audience Insight Into Agent-Ready Specs — Core thesis: preserve user intent from social signal to executable tasks for coding agents. https://chenterry.com/posts/crowdlisten/
+- Fine-Grained Social Listening for Understanding Crowd Conversations — Defines weighted conversation modeling and interpretive depth as durable product advantage. https://chenterry.com/posts/crowdlisten_human_signal/
+- Building Has Become Easier — How Do We Fix Distribution? — Argues distribution intelligence is now the bottleneck for vibe-coded products. https://chenterry.com/posts/crowdlisten_distribution_intelligence/
+- The Real-Time Feedback Layer — Reframes CrowdListen as an always-on feedback loop connecting audience reaction to product iteration. https://chenterry.com/posts/crowdlisten_feedback_layer/
+- The Agent Economy Starts with Tasks. It Scales Through Attention. — Explains shift from human attention markets to agent-mediated discovery and AEO. https://chenterry.com/posts/crowdlisten_agentic_discovery/
+
+## CrowdListen Posts
+- Why People Care What Others Think — Foundational argument for crowd context as a decision substrate, not just social proof. https://chenterry.com/posts/crowd_thesis/
+- Running a 1-Person Billion Dollar Company — Practical stack note on combining CrowdListen, coding agents, OpenClaw, and content systems. https://chenterry.com/posts/one-person-billion/
+- From Raw Social Data to Real Research — Product framing on converting fragmented public discussion into PM-ready insight. https://chenterry.com/posts/crowdlisten/
+
+## Foundational Posts
+- When Knowledge Becomes Fluid: How AI Transforms Learning — On adaptive knowledge interfaces, synthesis, and tradeoffs between frictionless and durable learning. https://chenterry.com/posts/fluid-knowledge-ai-transforms-learning/
+- Generation Is Easy. Distribution Is Hard. — Early thesis on why deployment and attention capture dominate post-generation value. https://chenterry.com/posts/generation_distribution/
+- Intent-Driven Discovery in the AI Era — Positioning argument for moving from query matching to intent-level discovery systems. https://chenterry.com/posts/intent_driven_discovery/
+- The Essence of Creativity in the Age of AI — Frames creativity as judgment and recombination under abundance, not raw output volume. https://chenterry.com/posts/essense_of_creativity/
+- Building Agent Prototypes in Ambiguity — Practical lens for shipping agent workflows under uncertainty without overfitting process too early. https://chenterry.com/posts/agent_prototyping/
+
+## Navigation
+- Posts index: https://chenterry.com/posts/
+- About: https://chenterry.com/about/
+- Product: https://chenterry.com/product/

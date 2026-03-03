@@ -1,0 +1,16 @@
+# chenterry.com — LLM Router
+
+Canonical: https://chenterry.com/llms.txt
+Full index: https://chenterry.com/llms-full.txt
+
+Use this file as a concise router. For source material, prefer `llms-full.txt`.
+
+## Start here
+- Home: https://chenterry.com/
+- Posts index: https://chenterry.com/posts/
+- CrowdListen thesis anchor: https://chenterry.com/posts/crowdlisten/
+
+## Focus areas
+- Thesis writing on agent-native product development and distribution
+- CrowdListen: social signal → product decisions → agent-ready execution
+- Foundational essays on AI-native workflows and knowledge interfaces

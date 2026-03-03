@@ -45,3 +45,13 @@ Every post should answer four questions clearly:
 - Do not leave outline placeholders in published posts.
 - Do not default to bullet-point dumps for core thesis sections.
 - Do not keep redundant sections that repeat the same claim.
+
+## Agent-Discovery Files (`llms.txt`, `llms-full.txt`)
+- `static/llms.txt` must stay concise and act only as a router (entry points + topic map).
+- `static/llms-full.txt` is the authoritative long index for agents and should contain:
+  - key thesis posts,
+  - CrowdListen posts,
+  - foundational posts.
+- Every listed item should have exactly one-line context + canonical URL on `https://chenterry.com/...`.
+- When adding/removing key posts, update both files in the same change.
+- After edits, run `hugo` and verify generated outputs exist at `docs/llms.txt` and `docs/llms-full.txt`.
