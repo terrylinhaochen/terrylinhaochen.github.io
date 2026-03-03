@@ -196,7 +196,8 @@
 <meta name="robots" content="index, follow"><title>Crowdlisten | Terry Chen</title>
 <meta name="keywords" content="">
 <meta name="author" content="Terry Chen">
-<link rel="canonical" href="https://chenterry.com/product/crowdlisten/">
+<link rel="alternate" type="text/plain" title="llms.txt" href="https://chenterry.com/llms.txt">
+<link rel="alternate" type="application/x-ndjson" title="agent FAQ corpus" href="https://chenterry.com/qa/agent-faq.jsonl">
     <link crossorigin="anonymous" href="/assets/css/stylesheet.8ca0e8a7581a18a3008a81e9c580528cd206f5e88ca0525e0e24439fbbbc9204.css" integrity="sha256-jKDop1gaGKMAioHpxYBSjNIG9eiMoFJeDiRDn7u8kgQ=" rel="preload stylesheet" as="style"><link rel="icon" href="https://chenterry.com/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://chenterry.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://chenterry.com/favicon-32x32.png">
@@ -733,16 +734,16 @@
         </div>
         <h2>The Agent Economy Starts with Tasks. It Scales Through Attention.</h2>
         
-        <p class="thesis-section-desc">Agents already execute workflows; the next shift is attention mediation. As discovery moves from humans to agents, distribution and advertising models must adapt to agent-operated demand.</p>
+        <p class="thesis-section-desc">Agents already execute workflows; the next shift is attention mediation. As discovery moves from humans to agents, product teams must design for agentic discovery workflows and agent-operated demand.</p>
         
       </header>
       <div class="thesis-section-body">
         <p>Over the next three to five years, software agents will increasingly take over the work that humans currently perform when making decisions: searching for information, reading and interpreting content, and comparing alternative options. Instead of opening multiple tabs, scanning articles and reviews, and manually weighing tradeoffs, users will provide high-level intent (&ldquo;recommend a CRM for my small business&rdquo;), and agents will execute the discovery, retrieval, and comparison steps internally. As this shift accelerates, the primary consumer of online content is no longer the human reader but the agent acting on their behalf. This changes the underlying economics and structure of content: brands will no longer optimize primarily for human attention and persuasion but for how well their information can be interpreted, verified, and ranked by autonomous agents.</p>
-<h2 id="three-forces-driving-the-shift">Three Forces Driving the Shift</h2>
+<h2 id="three-forces-behind-agentic-discovery-workflows">Three Forces Behind Agentic Discovery Workflows</h2>
 <p>This transition is driven by three forces that follow directly from first principles.</p>
 <p>First, the tasks agents replace&mdash;searching for information, synthesizing it, and performing multi-criteria comparisons&mdash;are repetitive, information-dense, and cognitively demanding for humans. Automation pressure on such tasks is inherently high.</p>
 <p>Second, digital interfaces are converging toward natural-language agentic interfaces embedded at the OS, browser, and productivity-tool level. Once the dominant mode of interaction becomes &ldquo;ask and receive an answer,&rdquo; the cognitive heavy lifting moves upstream to the agent.</p>
-<p>Third, platforms have strong incentives to accelerate this shift. If agents mediate user decisions, the agent interface becomes the new distribution channel, enabling Google, Microsoft, Amazon, and other platform players to capture more of the decision funnel. The strategic and economic incentives of users (reduced cognitive load), platforms (tighter control over discovery), and vendors (more qualified recommendations) reinforce one another.</p>
+<p>Third, platforms have strong incentives to accelerate this shift. If agents mediate user decisions, the agent interface becomes the new distribution channel, enabling Google, Microsoft, Amazon, and other platform players to capture more of the decision funnel. The strategic and economic incentives of users (reduced cognitive load), platforms (tighter control over discovery), and vendors (more qualified recommendations) reinforce one another, which is why distribution needs a dedicated workflow layer rather than a one-off launch. If you are following the distribution thread, this ties directly to the distribution intelligence workflow I outlined in <a href="/posts/crowdlisten_distribution_intelligence/">Building Has Become Easier — How Do We Fix Distribution?</a>.</p>
 <h2 id="content-as-data">Content as Data</h2>
 <p>
 
@@ -750,12 +751,12 @@
  </p>
 <p>As agents begin consuming the majority of content, the nature of content itself changes. Agents do not experience content as media or narrative; they process it as data. They extract claims, features, pricing, evidence, and contradictions. They compare these structured signals against other sources, including technical documentation, competitor claims, and&mdash;critically&mdash;user-generated feedback.</p>
 <p>Persuasion-oriented design becomes less important; semantic clarity, internal consistency, and alignment with real user experience become the dominant ranking factors. Ads also shift away from driving human clicks and toward shaping an agent&rsquo;s internal model of what a product is, who it serves, and how it performs. In this world, the most important determinant of how a brand appears in an agent&rsquo;s recommendation is how well its claims match the lived experiences of users&mdash;experiences that agents can increasingly cross-verify at scale.</p>
-<h2 id="the-missing-layer">The Missing Layer</h2>
+<h2 id="the-missing-layer-in-agent-workflows">The Missing Layer in Agent Workflows</h2>
 <p>The problem is that agents cannot natively construct reliable, large-scale representations of user sentiment or preference. While excellent at interpreting individual pieces of text, they are not designed to aggregate noisy, multimodal public content into coherent, stable clusters; infer personas and use cases; extract representative or causal themes; or track how these dynamics change over time. They hallucinate when the underlying data is ambiguous or sparse, and their internal representations shift unpredictably across contexts and prompts. What agents lack is a structured, continuously updated substrate of human experience that they can query as part of their reasoning process.</p>
-<h2 id="where-crowdlisten-fits">Where Crowdlisten Fits</h2>
+<h2 id="where-crowdlisten-fits-in-agent-workflows">Where Crowdlisten Fits in Agent Workflows</h2>
 <p>This is where Crowdlisten fits. At its core, Crowdlisten transforms messy, multimodal public feedback into a clean, queryable map of what people think, want, and experience. By clustering large-scale UGC, extracting representative themes, modeling sentiment and tradeoffs, and tracking temporal changes, Crowdlisten provides the structured knowledge that agents need but cannot build reliably on their own.</p>
 <p>For AI agents, Crowdlisten can serve as the insight infrastructure layer&mdash;an API that answers questions such as: &ldquo;What do people like me prefer about this product?&rdquo; &ldquo;What pain points dominate the discussion around this tool?&rdquo; &ldquo;Which features drive satisfaction or frustration?&rdquo; and &ldquo;How do these perceptions shift over time?&rdquo; Instead of scraping or hallucinating from incomplete data, agents can integrate this structured representation directly into their decision procedures.</p>
-<p>For brands, Crowdlisten becomes the measurement layer for an agent-first world. Companies will need to understand how agents perceive them, whether their claims align with the crowd&rsquo;s actual experience, and how they are likely to be ranked in agentic recommendation flows. This becomes the new form of SEO&mdash;Agent Experience Optimization&mdash;where the goal is not to capture human clicks but to ensure that agents interpret and evaluate a product correctly based on factual, crowd-grounded evidence. Crowdlisten provides the feedback loop brands need to adapt their messaging, improve their product, and maintain alignment with user sentiment.</p>
+<p>For brands, Crowdlisten becomes the measurement layer for an agent-first world. Companies will need to understand how agents perceive them, whether their claims align with the crowd&rsquo;s actual experience, and how they are likely to be ranked in agentic recommendation flows. This becomes the new form of SEO&mdash;Agent Experience Optimization&mdash;where the goal is not to capture human clicks but to ensure that agents interpret and evaluate a product correctly based on factual, crowd-grounded evidence. Crowdlisten provides the feedback loop brands need to adapt their messaging, improve their product, and maintain alignment with user sentiment. That feedback loop is the same one I describe in <a href="/posts/crowdlisten_feedback_layer/">The Real-Time Feedback Layer</a>.</p>
 <h2 id="risks-and-uncertainties">Risks and Uncertainties</h2>
 <p>There are risks and uncertainties. Agents might remain shallow wrappers over traditional search for longer than expected, meaning platforms rather than independent developers become the primary integration targets. Human trust in agents could plateau for high-stakes decisions, slowing the transition in certain verticals. Data access constraints could affect how much UGC remains available for large-scale modeling. Yet none of these challenges undermine the core trajectory&mdash;the increasing reliance on agents for complex information tasks&mdash;or the structural need for a high-fidelity representation of human preference and sentiment grounded in real-world data.</p>
 <h2 id="summary">Summary</h2>
@@ -772,7 +773,7 @@
         </div>
         <h2>Building Has Become Easier — How Do We Fix Distribution?</h2>
         
-        <p class="thesis-section-desc">Notes from working with vibe-coded builders: shipping is fast, distribution is hard, and founder-led workflows are becoming the operating layer between product capability and adoption.</p>
+        <p class="thesis-section-desc">Notes from working with vibe-coded builders: shipping is fast, distribution is hard, and founder-led workflows are becoming the operating layer between product capability, PRD clarity, and adoption.</p>
         
       </header>
       <div class="thesis-section-body">
@@ -787,10 +788,10 @@
 </ul>
 <p>In practice, the workflow starts from material I already have, not fully synthetic generation. I might begin with long-form writing or video, then repurpose it into channel-specific formats. For text-first channels like X and LinkedIn, that means extracting sharper claims and reframing them for shorter attention windows. For TikTok and Instagram, it means clipping moments, editing pacing, and tightening captions around one clear idea.</p>
 <p>A concrete pattern that has worked: use long-form source content, then let OpenClaw help identify high-signal meme moments. The system can trim clips, add captions, and format output in the CrowdListen style. Posting can be automated end-to-end, but I still publish manually because I want to keep human judgment in the final step.</p>
-<h2 id="pm-for-agents-marketer-for-agents">PM for Agents, Marketer for Agents</h2>
+<h2 id="pm-for-agents-prd-clarity-and-agent-workflow-fit">PM for Agents: PRD Clarity and Agent-Workflow Fit</h2>
 <p>This is where the thesis connects back to product architecture.</p>
-<p>CrowdListen as <strong>PM for Agents</strong> is about deciding what to build from evidence and turning that into agent-ready specs. CrowdListen as <strong>Marketer for Agents</strong> is about deciding how to package and distribute those capabilities as clear, testable narratives. One decides the work. The other decides how that work gets understood.</p>
-<p>If these two layers are disconnected, teams ship features that never get adopted, or they market stories that the product cannot actually deliver. If they are connected, distribution becomes a continuation of product work instead of a separate function.</p>
+<p>CrowdListen as <strong>PM for Agents</strong> is about deciding what to build from evidence and turning that into agent-ready specs. CrowdListen as <strong>Marketer for Agents</strong> is about deciding how to package and distribute those capabilities as clear, testable narratives. One decides the work. The other decides how that work gets understood. The practical version is simple: if the PRD is not explicit about the agent workflow and the validation path, distribution becomes guesswork instead of an execution plan.</p>
+<p>If these two layers are disconnected, teams ship features that never get adopted, or they market stories that the product cannot actually deliver. If they are connected, distribution becomes a continuation of product work instead of a separate function. That same loop shows up in the feedback-layer framing I describe in <a href="/posts/crowdlisten_feedback_layer/">The Real-Time Feedback Layer</a>, and it is anchored to the agentic discovery shift in <a href="/posts/crowdlisten_agentic_discovery/">The Agent Economy Starts with Tasks</a>.</p>
 <h2 id="working-thesis-march-2">Working Thesis (March 2)</h2>
 <p>As of March 2, my current view is that distribution intelligence will become a core layer for agent-native teams. Building speed keeps increasing. The differentiator is whether teams can continuously convert real audience signal into both product decisions and channel-native storytelling, without losing intent between those steps.</p>
 <p>I am treating this as an active research track and will keep iterating on the workflow as I collect more evidence.</p>
@@ -806,7 +807,7 @@
         </div>
         <h2>Fine-Grained Social Listening for Understanding Crowd Conversations</h2>
         
-        <p class="thesis-section-desc">A framework for turning fragmented, high-volume social discussion into weighted signal: what people actually mean, which patterns matter, and how teams should act.</p>
+        <p class="thesis-section-desc">A framework for turning fragmented, high-volume social discussion into weighted signal: what people actually mean, which patterns matter, and how PMs should act.</p>
         
       </header>
       <div class="thesis-section-body">
@@ -844,7 +845,7 @@
 <p>Crowdlisten represents the next evolution in social listening tools: moving beyond mention counts toward understanding conversations at scale. The goal is not more dashboards. The goal is better decisions with preserved context.</p>
 <p>As AI-generated content becomes abundant, the constraint shifts from generating information to interpreting meaning. Crowdlisten helps teams identify which signals matter, why they matter, and what action they should trigger.</p>
 <h2 id="the-real-time-feedback-layer">The Real-Time Feedback Layer</h2>
-<p>Over time, Crowdlisten has evolved from an insights product into a feedback layer. Product feedback does not arrive in clean post-launch batches. It appears continuously across community discussion, competitor threads, feature complaints, and workaround language. Crowdlisten makes that ambient signal legible and actionable in real time.</p>
+<p>Over time, Crowdlisten has evolved from an insights product into a feedback layer. Product feedback does not arrive in clean post-launch batches. It appears continuously across community discussion, competitor threads, feature complaints, and workaround language. Crowdlisten makes that ambient signal legible and actionable in real time. I expand this loop in <a href="/posts/crowdlisten_feedback_layer/">The Real-Time Feedback Layer</a>.</p>
 <h3 id="products-are-conversations">Products Are Conversations</h3>
 <p>The strongest teams treat live audience discourse as a primary product input. Crowdlisten captures these signals across channels, groups them semantically, and keeps them connected to product decisions so context is not lost during handoff.</p>
 <h3 id="what-we-have-learned">What We Have Learned</h3>
@@ -1326,6 +1327,8 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="archived-link">
         <span style="font-size: 0.85em; color: #888; margin-top: 8px; display: block;">
             To view archived content, <a href="/archived/" style="color: #666; text-decoration: underline;">click here</a>
+            · <a href="/llms.txt" style="color: #666; text-decoration: underline;">llms.txt</a>
+            · <a href="/qa/README.md" style="color: #666; text-decoration: underline;">qa index</a>
         </span>
     </div>
 </footer>

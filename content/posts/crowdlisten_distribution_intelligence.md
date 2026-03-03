@@ -1,6 +1,6 @@
 ---
 title: "Building Has Become Easier — How Do We Fix Distribution?"
-description: "Notes from working with vibe-coded builders: shipping is fast, distribution is hard, and founder-led workflows are becoming the operating layer between product capability and adoption."
+description: "Notes from working with vibe-coded builders: shipping is fast, distribution is hard, and founder-led workflows are becoming the operating layer between product capability, PRD clarity, and adoption."
 date: 2025-12-17
 author: Terry Chen
 categories: crowdlisten
@@ -8,7 +8,7 @@ thesis_featured: true
 featured_rank: 3
 archived: false
 tags: ["Crowdlisten", "Product", "Entrepreneurship"]
-keywords: ["distribution intelligence", "founder-led growth", "vibe coding", "content workflows", "Crowdlisten"]
+keywords: ["distribution intelligence", "founder-led growth", "vibe coding", "content workflows", "agent workflows", "product requirements", "PRD", "Crowdlisten"]
 ---
 
 I have been having the same conversation with builders, marketers, and engineers who are now shipping vibe-coded products. Most of these products are not random projects. They usually come from some form of market validation: people have seen adjacent products working, or they have felt the pain directly and built for themselves first.
@@ -29,13 +29,13 @@ In practice, the workflow starts from material I already have, not fully synthet
 
 A concrete pattern that has worked: use long-form source content, then let OpenClaw help identify high-signal meme moments. The system can trim clips, add captions, and format output in the CrowdListen style. Posting can be automated end-to-end, but I still publish manually because I want to keep human judgment in the final step.
 
-## PM for Agents, Marketer for Agents
+## PM for Agents: PRD Clarity and Agent-Workflow Fit
 
 This is where the thesis connects back to product architecture.
 
-CrowdListen as **PM for Agents** is about deciding what to build from evidence and turning that into agent-ready specs. CrowdListen as **Marketer for Agents** is about deciding how to package and distribute those capabilities as clear, testable narratives. One decides the work. The other decides how that work gets understood.
+CrowdListen as **PM for Agents** is about deciding what to build from evidence and turning that into agent-ready specs. CrowdListen as **Marketer for Agents** is about deciding how to package and distribute those capabilities as clear, testable narratives. One decides the work. The other decides how that work gets understood. The practical version is simple: if the PRD is not explicit about the agent workflow and the validation path, distribution becomes guesswork instead of an execution plan.
 
-If these two layers are disconnected, teams ship features that never get adopted, or they market stories that the product cannot actually deliver. If they are connected, distribution becomes a continuation of product work instead of a separate function.
+If these two layers are disconnected, teams ship features that never get adopted, or they market stories that the product cannot actually deliver. If they are connected, distribution becomes a continuation of product work instead of a separate function. That same loop shows up in the feedback-layer framing I describe in [The Real-Time Feedback Layer](/posts/crowdlisten_feedback_layer/), and it is anchored to the agentic discovery shift in [The Agent Economy Starts with Tasks](/posts/crowdlisten_agentic_discovery/).
 
 ## Working Thesis (March 2)
 

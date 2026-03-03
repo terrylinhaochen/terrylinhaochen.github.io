@@ -20,10 +20,12 @@
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
     
-    <!-- Subtle link to archived content -->
+    <!-- Crawlable utility links for archives + machine-readable assets -->
     <div class="archived-link">
         <span style="font-size: 0.85em; color: #888; margin-top: 8px; display: block;">
-            To view archived content, <a href="/archived/" style="color: #666; text-decoration: underline;">click here</a>
+            To view archived content, <a href="{{ "archived/" | relLangURL }}" style="color: #666; text-decoration: underline;">click here</a>
+            · <a href="{{ "llms.txt" | relLangURL }}" style="color: #666; text-decoration: underline;">llms.txt</a>
+            · <a href="{{ "qa/README.md" | relLangURL }}" style="color: #666; text-decoration: underline;">qa index</a>
         </span>
     </div>
 </footer>

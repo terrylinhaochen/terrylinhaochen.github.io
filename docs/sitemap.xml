@@ -2098,4 +2098,19 @@
   </url>
   
   
+  <url>
+    <loc>https://chenterry.com/llms.txt</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://chenterry.com/qa/README.md</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://chenterry.com/qa/agent-faq.jsonl</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.3</priority>
+  </url>
 </urlset>

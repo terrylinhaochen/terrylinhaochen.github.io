@@ -65,7 +65,7 @@
       <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
       <guid>https://chenterry.com/posts/crowdlisten_human_signal/</guid>
-      <description>A framework for turning fragmented, high-volume social discussion into weighted signal: what people actually mean, which patterns matter, and how teams should act.</description>
+      <description>A framework for turning fragmented, high-volume social discussion into weighted signal: what people actually mean, which patterns matter, and how PMs should act.</description>
       
       
         
@@ -94,7 +94,7 @@
       <pubDate>Wed, 17 Dec 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
       <guid>https://chenterry.com/posts/crowdlisten_distribution_intelligence/</guid>
-      <description>Notes from working with vibe-coded builders: shipping is fast, distribution is hard, and founder-led workflows are becoming the operating layer between product capability and adoption.</description>
+      <description>Notes from working with vibe-coded builders: shipping is fast, distribution is hard, and founder-led workflows are becoming the operating layer between product capability, PRD clarity, and adoption.</description>
       
       
         
@@ -123,7 +123,7 @@
       <pubDate>Sat, 15 Nov 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
       <guid>https://chenterry.com/posts/crowdlisten_agentic_discovery/</guid>
-      <description>Agents already execute workflows; the next shift is attention mediation. As discovery moves from humans to agents, distribution and advertising models must adapt to agent-operated demand.</description>
+      <description>Agents already execute workflows; the next shift is attention mediation. As discovery moves from humans to agents, product teams must design for agentic discovery workflows and agent-operated demand.</description>
       
       
         
@@ -256,7 +256,7 @@
       <pubDate>Fri, 29 Aug 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
       <guid>https://chenterry.com/posts/agent_prototyping/</guid>
-      <description>Two approaches to building agentic experiences: platform-first vs scenario-first. How AI coding tools enable faster prototyping and cross-functional collaboration for agent product development.</description>
+      <description>Two approaches to building agentic experiences: platform-first vs scenario-first. How AI coding tools enable faster prototyping, PRD clarity, and cross-functional collaboration for agent workflows.</description>
       
       
         

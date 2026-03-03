@@ -1,11 +1,11 @@
 ---
 title: "Social Listening for Product Insight"
-description: "Using AI-powered social listening to extract authentic customer insights from online discourse. Moving from product-to-market to market-to-product development through systematic analysis of community discussions."
+description: "Using AI-powered social listening to extract authentic customer insights from online discourse. Moving from product-to-market to market-to-product development through systematic analysis of community discussions that inform PRDs."
 date: 2025-08-29
 author: Terry Chen
 categories: microsoft
 tags: ["Posts"]
-keywords: ["social listening", "customer insights", "product development", "AI analysis", "community research", "market validation", "customer discourse", "product-market fit", "embeddings", "customer research"]
+keywords: ["social listening", "customer insights", "product development", "PRD", "agile discovery", "AI analysis", "community research", "market validation", "customer discourse", "product-market fit", "embeddings", "customer research"]
 ---
 
 ## Why We Need More Ways to Hear Customers
@@ -25,13 +25,13 @@ Traditional social listening tells you what people think about your brand. But w
 
 Beyond internal testers and formal user research channels, the internet already hosts rich, authentic signals about how products—yours and competitors'—land in the real world. Community forums, Q&A sites, GitHub issues, Reddit threads, and support communities contain unfiltered customer discourse about pain points, expectations, and the exact language users employ when describing their needs. If we capture, filter, and analyze that discourse responsibly, we get a truer view of market needs than traditional research methods often provide.
 
-### Practical workflow
+### Practical workflow for PMs
 
 The system operates through two complementary approaches based on your research needs. **Targeted discovery** works best when you have specific product questions—like "why do users abandon our checkout flow?" Here, we compile a focused corpus from relevant public discussions (support forums, Reddit threads, GitHub issues), extract and normalize the text, then use large-context LLMs to identify and synthesize recurring themes with direct citations back to source material.
 
 **Open-ended exploration** suits broader market research where you're not sure what patterns might emerge. This approach generates embeddings at both sentence and discussion levels, applies semantic clustering to group similar concerns naturally, and labels each cluster with evidence-linked summaries. The goal isn't to confirm existing hypotheses but to discover what customers actually discuss when they think no one from your company is listening.
 
-Every discovered theme flows into a structured decision scaffold: **theme** → **testable hypothesis** → **bet** → **telemetry** → **refinement**. This prevents what I call "insight theater"—beautiful dashboards that don't change what gets built. For example, discovering that users frequently mention "billing confusion" becomes the hypothesis "clearer usage breakdowns will reduce support tickets," which becomes the bet "redesign invoice layout," measured through "support ticket volume" and refined based on actual outcomes.
+Every discovered theme flows into a structured decision scaffold: **theme** → **testable hypothesis** → **bet** → **telemetry** → **refinement**. This prevents what I call "insight theater"—beautiful dashboards that don't change what gets built. For example, discovering that users frequently mention "billing confusion" becomes the hypothesis "clearer usage breakdowns will reduce support tickets," which becomes the bet "redesign invoice layout," measured through "support ticket volume" and refined based on actual outcomes. In practice, this scaffold becomes the backbone of a PRD because it keeps evidence, decision, and measurement tied together.
 
 Longer-term, the system runs as an always-on Customer Insight Radar that continuously ingests external communities alongside internal customer notes (with appropriate privacy filters). It tracks theme velocity—which concerns are growing versus shrinking—and maintains representative quotes so product managers and engineers can feel the human reality behind abstract metrics. 
 
@@ -88,7 +88,7 @@ When we analyzed discussions from cybersecurity forums and support communities, 
 4. **Workflow friction**: Constant context switching and manual processes break investigation flow
 5. **Platform limitations**: Analysts spend time troubleshooting tools rather than investigating threats
 
-The design mandate became clear: lower technical barriers, suppress noise, preserve investigative context, and streamline common workflows so analysts can focus on actual threats rather than tool mechanics. The most impactful solutions involved agentic experiences that automate routine tasks and stronger default configurations that require less customization.
+The design mandate became clear: lower technical barriers, suppress noise, preserve investigative context, and streamline common workflows so analysts can focus on actual threats rather than tool mechanics. The most impactful solutions involved agentic experiences that automate routine tasks and stronger default configurations that require less customization. For a deeper take on how to prototype those agent workflows, see [Iterating at the Pace of AI](/posts/agent_prototyping/).
 
 
 ![CrowdListening Platform Homepage](/images/projects/crowdlistening/crowdlisten-homepage.png)
@@ -103,7 +103,7 @@ The design mandate became clear: lower technical barriers, suppress noise, prese
 
 As shown in the cost-estimation agent presentation, Crowdlistening is a tool I built to extract patterns from collective discourse without flattening individual voices. It pairs LLM reasoning with a larger-context pipeline to ingest public discussions, structure them, and tie findings back to evidence. At its core, Crowdlistening treats raw discourse as primary data, emphasizes traceability (“show your work”), and optimizes for original insight over derivative summaries.
 
-Crowdlistening's goal isn't forced consensus; it's to surface authentic needs, native customer language, and edge cases that formal channels miss. At enterprise scale—where the user base is large and diverse—listening broadly helps us prioritize what's real over what's merely loud. (More background at Crowdlistening.com.)
+Crowdlistening's goal isn't forced consensus; it's to surface authentic needs, native customer language, and edge cases that formal channels miss. At enterprise scale—where the user base is large and diverse—listening broadly helps us prioritize what's real over what's merely loud. This is the same feedback layer loop I describe in [The Real-Time Feedback Layer](/posts/crowdlisten_feedback_layer/). (More background at Crowdlistening.com.)
 
 
 

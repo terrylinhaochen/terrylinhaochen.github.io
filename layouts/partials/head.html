@@ -25,7 +25,8 @@
     {{- range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }} {{- end -}}">
 {{- end }}
 <meta name="author" content="{{ (partial "author.html" . ) }}">
-<link rel="canonical" href="{{ .Permalink }}">
+<link rel="alternate" type="text/plain" title="llms.txt" href="{{ "llms.txt" | absURL }}">
+<link rel="alternate" type="application/x-ndjson" title="agent FAQ corpus" href="{{ "qa/agent-faq.jsonl" | absURL }}">
 {{- if site.Params.analytics.google.SiteVerificationTag }}
 <meta name="google-site-verification" content="{{ site.Params.analytics.google.SiteVerificationTag }}">
 {{- end }}

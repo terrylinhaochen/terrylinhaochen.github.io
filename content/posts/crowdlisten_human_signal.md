@@ -1,6 +1,6 @@
 ---
 title: "Fine-Grained Social Listening for Understanding Crowd Conversations"
-description: "A framework for turning fragmented, high-volume social discussion into weighted signal: what people actually mean, which patterns matter, and how teams should act."
+description: "A framework for turning fragmented, high-volume social discussion into weighted signal: what people actually mean, which patterns matter, and how PMs should act."
 date: 2026-01-15
 author: Terry Chen
 categories: crowdlisten
@@ -8,7 +8,7 @@ thesis_featured: true
 featured_rank: 2
 archived: false
 tags: ["Crowdlisten", "Product", "AI"]
-keywords: ["human signal", "AI noise", "authentic insight", "creator economy", "AI content", "human judgment", "expertise monetization", "Crowdlisten", "semantic retrieval", "topic modeling"]
+keywords: ["human signal", "AI noise", "authentic insight", "product decisions", "PM", "creator economy", "AI content", "human judgment", "expertise monetization", "Crowdlisten", "semantic retrieval", "topic modeling"]
 ---
 
 We are living in a period where content is no longer scarce. AI systems can generate text, images, and ideas at near-zero cost, producing an endless stream of output that is often fluent, technically correct, and difficult to distinguish from human work. As a result, the internet is filling with material that resembles knowledge but lacks judgment, taste, and lived understanding. The central challenge today is not producing more information, but identifying what is real, meaningful, and worth engaging with.
@@ -65,7 +65,7 @@ As AI-generated content becomes abundant, the constraint shifts from generating 
 
 ## The Real-Time Feedback Layer
 
-Over time, Crowdlisten has evolved from an insights product into a feedback layer. Product feedback does not arrive in clean post-launch batches. It appears continuously across community discussion, competitor threads, feature complaints, and workaround language. Crowdlisten makes that ambient signal legible and actionable in real time.
+Over time, Crowdlisten has evolved from an insights product into a feedback layer. Product feedback does not arrive in clean post-launch batches. It appears continuously across community discussion, competitor threads, feature complaints, and workaround language. Crowdlisten makes that ambient signal legible and actionable in real time. I expand this loop in [The Real-Time Feedback Layer](/posts/crowdlisten_feedback_layer/).
 
 ### Products Are Conversations
 
@@ -100,4 +100,3 @@ Weighted social conversations are not just clustered by frequency; they are weig
 The durable advantage is not raw data collection. It is interpretive depth and operational connection. Anyone can scrape comments. Very few systems can preserve intent from conversation to decision to shipped output.
 
 That is the thesis: reconstruct meaning from weighted social conversations, then convert that meaning into reliable execution.
-
