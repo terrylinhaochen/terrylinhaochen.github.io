@@ -4,6 +4,7 @@ description: "Agents already execute workflows; the next shift is attention medi
 date: 2025-11-15
 author: Terry Chen
 categories: crowdlisten
+archived: false
 tags: ["Crowdlisten", "Product", "AI"]
 keywords: ["agentic discovery", "AI agents", "content discovery", "agent experience optimization", "AEO", "user sentiment", "crowd intelligence", "Crowdlisten"]
 ---

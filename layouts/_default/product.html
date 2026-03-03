@@ -272,7 +272,10 @@
   <div class="projects-grid">
     {{ range $thesisPages }}
     {{- $category := .Params.thesis_category -}}
-    {{- $posts := where (where (where (where $.Site.RegularPages "Section" "posts") ".Params.tags" "intersect" (slice "Product")) ".Params.archived" "!=" true) "Params.categories" $category -}}
+    {{- $allPosts := where (where (where $.Site.RegularPages "Section" "posts") ".Params.tags" "intersect" (slice "Product")) "Params.categories" $category -}}
+    {{- $activePosts := where $allPosts ".Params.archived" "!=" true -}}
+    {{- $featuredPosts := where $activePosts ".Params.thesis_featured" true -}}
+    {{- $posts := cond (gt (len $featuredPosts) 0) (sort $featuredPosts "Params.featured_rank" "asc") (sort $activePosts "Date" "desc") -}}
     <div class="project-card">
       <div class="thesis-header">
         <a href="{{ .RelPermalink }}" class="thesis-header-link">

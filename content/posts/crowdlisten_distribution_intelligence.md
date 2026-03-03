@@ -4,6 +4,9 @@ description: "AI made shipping dramatically faster. The real bottleneck is now d
 date: 2025-12-17
 author: Terry Chen
 categories: crowdlisten
+thesis_featured: true
+featured_rank: 3
+archived: false
 tags: ["Crowdlisten", "Product", "Entrepreneurship"]
 keywords: ["distribution intelligence", "vibe coding", "content distribution", "solo builders", "AI-native products", "crowd insight", "user acquisition", "Crowdlisten"]
 ---

@@ -587,6 +587,7 @@
         <span class="nav-text">
           <span class="nav-title">Exploring Unknown Unknowns</span>
           <span class="nav-date">Oct 2024</span>
+          <span class="nav-state active">Active</span>
         </span>
       </a>
       
@@ -595,6 +596,7 @@
         <span class="nav-text">
           <span class="nav-title">Value Add of AI: Generation as Distribution</span>
           <span class="nav-date">May 2025</span>
+          <span class="nav-state active">Active</span>
         </span>
       </a>
       
@@ -603,6 +605,7 @@
         <span class="nav-text">
           <span class="nav-title">From Indexing to Understanding Intent in Discovery Systems</span>
           <span class="nav-date">Oct 2025</span>
+          <span class="nav-state active">Active</span>
         </span>
       </a>
       
@@ -611,6 +614,7 @@
         <span class="nav-text">
           <span class="nav-title">When Knowledge Becomes Fluid: How AI Transforms Learning</span>
           <span class="nav-date">Oct 2025</span>
+          <span class="nav-state active">Active</span>
         </span>
       </a>
       
@@ -625,6 +629,7 @@
         <div class="thesis-section-meta">
           <span class="section-number">1 of 4</span>
           <time>October 5, 2024</time>
+          <span class="section-state active">Active</span>
         </div>
         <h2>Exploring Unknown Unknowns</h2>
         
@@ -650,6 +655,7 @@
         <div class="thesis-section-meta">
           <span class="section-number">2 of 4</span>
           <time>May 8, 2025</time>
+          <span class="section-state active">Active</span>
         </div>
         <h2>Value Add of AI: Generation as Distribution</h2>
         
@@ -675,6 +681,7 @@
         <div class="thesis-section-meta">
           <span class="section-number">3 of 4</span>
           <time>October 26, 2025</time>
+          <span class="section-state active">Active</span>
         </div>
         <h2>From Indexing to Understanding Intent in Discovery Systems</h2>
         
@@ -779,6 +786,7 @@
         <div class="thesis-section-meta">
           <span class="section-number">4 of 4</span>
           <time>October 26, 2025</time>
+          <span class="section-state active">Active</span>
         </div>
         <h2>When Knowledge Becomes Fluid: How AI Transforms Learning</h2>
         
@@ -857,6 +865,40 @@
     border-radius: 2px;
   }
 
+
+  .nav-state, .section-state {
+    display: inline-block;
+    font-size: 0.68rem;
+    line-height: 1;
+    padding: 4px 8px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    color: var(--secondary);
+    margin-top: 6px;
+    width: fit-content;
+  }
+  .nav-state.active, .section-state.active {
+    color: #166534;
+    border-color: rgba(22,101,52,0.35);
+    background: rgba(220,252,231,0.5);
+  }
+  .nav-state.archived, .section-state.archived {
+    color: #9a3412;
+    border-color: rgba(154,52,18,0.35);
+    background: rgba(255,237,213,0.55);
+  }
+  body.dark .nav-state.active, body.dark .section-state.active,
+  .dark .nav-state.active, .dark .section-state.active {
+    color: #86efac;
+    border-color: rgba(134,239,172,0.45);
+    background: rgba(22,101,52,0.35);
+  }
+  body.dark .nav-state.archived, body.dark .section-state.archived,
+  .dark .nav-state.archived, .dark .section-state.archived {
+    color: #fdba74;
+    border-color: rgba(251,146,60,0.45);
+    background: rgba(124,45,18,0.35);
+  }
   .thesis-nav-back {
     display: inline-flex;
     align-items: center;

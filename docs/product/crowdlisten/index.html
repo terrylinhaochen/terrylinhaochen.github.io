@@ -587,6 +587,7 @@
         <span class="nav-text">
           <span class="nav-title">PM for Agents: Turning Audience Insight Into Agent-Ready Specs</span>
           <span class="nav-date">Sep 2025</span>
+          <span class="nav-state active">Active</span>
         </span>
       </a>
       
@@ -595,6 +596,7 @@
         <span class="nav-text">
           <span class="nav-title">The Agent Economy Starts with Tasks. It Scales Through Attention.</span>
           <span class="nav-date">Nov 2025</span>
+          <span class="nav-state active">Active</span>
         </span>
       </a>
       
@@ -603,6 +605,7 @@
         <span class="nav-text">
           <span class="nav-title">Building Has Become Easier — How Do We Fix Distribution?</span>
           <span class="nav-date">Dec 2025</span>
+          <span class="nav-state active">Active</span>
         </span>
       </a>
       
@@ -611,6 +614,7 @@
         <span class="nav-text">
           <span class="nav-title">Fine-Grained Social Listening for Understanding Crowd Conversations</span>
           <span class="nav-date">Jan 2026</span>
+          <span class="nav-state active">Active</span>
         </span>
       </a>
       
@@ -625,6 +629,7 @@
         <div class="thesis-section-meta">
           <span class="section-number">1 of 4</span>
           <time>September 15, 2025</time>
+          <span class="section-state active">Active</span>
         </div>
         <h2>PM for Agents: Turning Audience Insight Into Agent-Ready Specs</h2>
         
@@ -727,6 +732,7 @@
         <div class="thesis-section-meta">
           <span class="section-number">2 of 4</span>
           <time>November 15, 2025</time>
+          <span class="section-state active">Active</span>
         </div>
         <h2>The Agent Economy Starts with Tasks. It Scales Through Attention.</h2>
         
@@ -766,6 +772,7 @@
         <div class="thesis-section-meta">
           <span class="section-number">3 of 4</span>
           <time>December 17, 2025</time>
+          <span class="section-state active">Active</span>
         </div>
         <h2>Building Has Become Easier — How Do We Fix Distribution?</h2>
         
@@ -817,6 +824,7 @@
         <div class="thesis-section-meta">
           <span class="section-number">4 of 4</span>
           <time>January 15, 2026</time>
+          <span class="section-state active">Active</span>
         </div>
         <h2>Fine-Grained Social Listening for Understanding Crowd Conversations</h2>
         
@@ -938,6 +946,40 @@
     border-radius: 2px;
   }
 
+
+  .nav-state, .section-state {
+    display: inline-block;
+    font-size: 0.68rem;
+    line-height: 1;
+    padding: 4px 8px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    color: var(--secondary);
+    margin-top: 6px;
+    width: fit-content;
+  }
+  .nav-state.active, .section-state.active {
+    color: #166534;
+    border-color: rgba(22,101,52,0.35);
+    background: rgba(220,252,231,0.5);
+  }
+  .nav-state.archived, .section-state.archived {
+    color: #9a3412;
+    border-color: rgba(154,52,18,0.35);
+    background: rgba(255,237,213,0.55);
+  }
+  body.dark .nav-state.active, body.dark .section-state.active,
+  .dark .nav-state.active, .dark .section-state.active {
+    color: #86efac;
+    border-color: rgba(134,239,172,0.45);
+    background: rgba(22,101,52,0.35);
+  }
+  body.dark .nav-state.archived, body.dark .section-state.archived,
+  .dark .nav-state.archived, .dark .section-state.archived {
+    color: #fdba74;
+    border-color: rgba(251,146,60,0.45);
+    background: rgba(124,45,18,0.35);
+  }
   .thesis-nav-back {
     display: inline-flex;
     align-items: center;

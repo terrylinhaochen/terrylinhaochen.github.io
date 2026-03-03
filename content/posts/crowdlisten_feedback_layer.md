@@ -4,6 +4,7 @@ description: "Products are conversations, not launches. Crowdlisten is evolving 
 date: 2026-02-15
 author: Terry Chen
 categories: crowdlisten
+archived: false
 tags: ["Crowdlisten", "Posts", "AI"]
 keywords: ["feedback layer", "real-time insights", "product iteration", "audience feedback", "continuous learning", "builder tools", "Crowdlisten", "crowd intelligence"]
 ---

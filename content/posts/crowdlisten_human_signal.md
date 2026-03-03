@@ -4,6 +4,9 @@ description: "A framework for turning fragmented, high-volume social discussion 
 date: 2026-01-15
 author: Terry Chen
 categories: crowdlisten
+thesis_featured: true
+featured_rank: 2
+archived: false
 tags: ["Crowdlisten", "Product", "AI"]
 keywords: ["human signal", "AI noise", "authentic insight", "creator economy", "AI content", "human judgment", "expertise monetization", "Crowdlisten", "semantic retrieval", "topic modeling"]
 ---
