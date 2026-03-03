@@ -330,7 +330,28 @@
   <url>
     <loc>https://chenterry.com/</loc>
     
-    <lastmod>2026-03-02T00:00:00+00:00</lastmod>
+    <lastmod>2026-03-03T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+    
+    
+    
+    
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://chenterry.com/tags/ai/</loc>
+    
+    <lastmod>2026-03-03T00:00:00+00:00</lastmod>
     
     
     <changefreq>weekly</changefreq>
@@ -351,7 +372,28 @@
   <url>
     <loc>https://chenterry.com/categories/</loc>
     
-    <lastmod>2026-03-02T00:00:00+00:00</lastmod>
+    <lastmod>2026-03-03T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+    
+    
+    
+    
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://chenterry.com/categories/crowdlisten/</loc>
+    
+    <lastmod>2026-03-03T00:00:00+00:00</lastmod>
     
     
     <changefreq>weekly</changefreq>
@@ -372,7 +414,91 @@
   <url>
     <loc>https://chenterry.com/posts/</loc>
     
-    <lastmod>2026-03-02T00:00:00+00:00</lastmod>
+    <lastmod>2026-03-03T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+    
+    
+    
+    
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://chenterry.com/tags/product/</loc>
+    
+    <lastmod>2026-03-03T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+    
+    
+    
+    
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://chenterry.com/tags/research/</loc>
+    
+    <lastmod>2026-03-03T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+    
+    
+    
+    
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://chenterry.com/tags/</loc>
+    
+    <lastmod>2026-03-03T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+    
+    
+    
+    
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://chenterry.com/posts/agent_user_research_notebook/</loc>
+    
+    <lastmod>2026-03-03T00:00:00+00:00</lastmod>
     
     
     <changefreq>weekly</changefreq>
@@ -434,27 +560,6 @@
   
   <url>
     <loc>https://chenterry.com/tags/strategy/</loc>
-    
-    <lastmod>2026-03-02T00:00:00+00:00</lastmod>
-    
-    
-    <changefreq>weekly</changefreq>
-    
-    
-    <priority>0.5</priority>
-    
-    
-    
-    
-    
-    
-    
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://chenterry.com/tags/</loc>
     
     <lastmod>2026-03-02T00:00:00+00:00</lastmod>
     
@@ -643,27 +748,6 @@
   
   
   <url>
-    <loc>https://chenterry.com/tags/ai/</loc>
-    
-    <lastmod>2026-02-22T00:00:00+00:00</lastmod>
-    
-    
-    <changefreq>weekly</changefreq>
-    
-    
-    <priority>0.5</priority>
-    
-    
-    
-    
-    
-    
-    
-  </url>
-  
-  
-  
-  <url>
     <loc>https://chenterry.com/categories/ai-application--value-creation-layer/</loc>
     
     <lastmod>2026-02-22T00:00:00+00:00</lastmod>
@@ -706,27 +790,6 @@
   
   
   <url>
-    <loc>https://chenterry.com/tags/product/</loc>
-    
-    <lastmod>2026-02-22T00:00:00+00:00</lastmod>
-    
-    
-    <changefreq>weekly</changefreq>
-    
-    
-    <priority>0.5</priority>
-    
-    
-    
-    
-    
-    
-    
-  </url>
-  
-  
-  
-  <url>
     <loc>https://chenterry.com/posts/one-person-billion/</loc>
     
     <lastmod>2026-02-22T00:00:00+00:00</lastmod>
@@ -749,27 +812,6 @@
   
   <url>
     <loc>https://chenterry.com/tags/crowdlisten/</loc>
-    
-    <lastmod>2026-02-15T00:00:00+00:00</lastmod>
-    
-    
-    <changefreq>weekly</changefreq>
-    
-    
-    <priority>0.5</priority>
-    
-    
-    
-    
-    
-    
-    
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://chenterry.com/categories/crowdlisten/</loc>
     
     <lastmod>2026-02-15T00:00:00+00:00</lastmod>
     
@@ -1640,27 +1682,6 @@
   
   
   
-  
-  
-  
-  <url>
-    <loc>https://chenterry.com/tags/research/</loc>
-    
-    <lastmod>2025-03-10T00:00:00+00:00</lastmod>
-    
-    
-    <changefreq>weekly</changefreq>
-    
-    
-    <priority>0.5</priority>
-    
-    
-    
-    
-    
-    
-    
-  </url>
   
   
   

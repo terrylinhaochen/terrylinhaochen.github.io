@@ -8,7 +8,7 @@
     <managingEditor>Terry Chen (Terry Chen)</managingEditor>
     <webMaster>Terry Chen (Terry Chen)</webMaster>
     <copyright>© 2026 Terry Chen. All rights reserved.</copyright>
-    <lastBuildDate>Sun, 22 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Mar 2026 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://chenterry.com/tags/product/index.xml" rel="self" type="application/rss+xml" />
     
@@ -25,6 +25,35 @@
       <width>144</width>
       <height>144</height>
     </image>
+    
+    <item>
+      <title>The Agent User Research Notebook: How to Learn What Worker Agents Actually Need</title>
+      <link>https://chenterry.com/posts/agent_user_research_notebook/</link>
+      <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/posts/agent_user_research_notebook/</guid>
+      <description>A practical operating notebook for researching worker agents like OpenClaw/Manus: task harnesses, intervention logs, failure taxonomy, and weekly scorecards.</description>
+      
+      
+        
+          <category>crowdlisten</category>
+        
+      
+      
+        
+          
+          <category>AI</category>
+          
+          <category>Product</category>
+          
+          <category>Research</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2026-03-03T00:00:00Z</dc:date>
+    </item>
     
     <item>
       <title>Running a 1-Person Billion Dollar Company: The AI Stack That Makes It Possible</title>

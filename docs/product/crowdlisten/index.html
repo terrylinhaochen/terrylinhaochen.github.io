@@ -616,6 +616,14 @@
         </span>
       </a>
       
+      <a href="#section-4" class="thesis-nav-link" data-index="4">
+        <span class="nav-number">5</span>
+        <span class="nav-text">
+          <span class="nav-title">The Agent User Research Notebook: How to Learn What Worker Agents Actually Need</span>
+          <span class="nav-date">Mar 2026</span>
+        </span>
+      </a>
+      
 
       
     </div>
@@ -627,7 +635,7 @@
     <section class="thesis-section" id="section-0">
       <header class="thesis-section-header">
         <div class="thesis-section-meta">
-          <span class="section-number">1 of 4</span>
+          <span class="section-number">1 of 5</span>
           <time>September 15, 2025</time>
         </div>
         <h2>PM for Agents: Turning Audience Insight Into Agent-Ready Specs</h2>
@@ -729,7 +737,7 @@
     <section class="thesis-section" id="section-1">
       <header class="thesis-section-header">
         <div class="thesis-section-meta">
-          <span class="section-number">2 of 4</span>
+          <span class="section-number">2 of 5</span>
           <time>November 15, 2025</time>
         </div>
         <h2>The Agent Economy Starts with Tasks. It Scales Through Attention.</h2>
@@ -768,7 +776,7 @@
     <section class="thesis-section" id="section-2">
       <header class="thesis-section-header">
         <div class="thesis-section-meta">
-          <span class="section-number">3 of 4</span>
+          <span class="section-number">3 of 5</span>
           <time>December 17, 2025</time>
         </div>
         <h2>Building Has Become Easier — How Do We Fix Distribution?</h2>
@@ -802,7 +810,7 @@
     <section class="thesis-section" id="section-3">
       <header class="thesis-section-header">
         <div class="thesis-section-meta">
-          <span class="section-number">4 of 4</span>
+          <span class="section-number">4 of 5</span>
           <time>January 15, 2026</time>
         </div>
         <h2>Fine-Grained Social Listening for Understanding Crowd Conversations</h2>
@@ -863,6 +871,100 @@
 <h2 id="why-weighted-conversations-is-the-thesis">Why “Weighted Conversations” Is the Thesis</h2>
 <p>The durable advantage is not raw data collection. It is interpretive depth and operational connection. Anyone can scrape comments. Very few systems can preserve intent from conversation to decision to shipped output.</p>
 <p>That is the thesis: reconstruct meaning from weighted social conversations, then convert that meaning into reliable execution.</p>
+
+      </div>
+    </section>
+    
+    <section class="thesis-section" id="section-4">
+      <header class="thesis-section-header">
+        <div class="thesis-section-meta">
+          <span class="section-number">5 of 5</span>
+          <time>March 3, 2026</time>
+        </div>
+        <h2>The Agent User Research Notebook: How to Learn What Worker Agents Actually Need</h2>
+        
+        <p class="thesis-section-desc">A practical operating notebook for researching worker agents like OpenClaw/Manus: task harnesses, intervention logs, failure taxonomy, and weekly scorecards.</p>
+        
+      </header>
+      <div class="thesis-section-body">
+        <p>Most people talk about “AI user research” as if agents were just another chatbot interface. That misses the real shift. For worker agents—OpenClaw, Manus-style systems, coding agents—the right research surface is not chat quality. It is execution quality across real tasks.</p>
+<p>If you want to learn what agents actually need, don’t start with broad surveys. Start with a notebook that captures how they succeed and fail when doing work you already care about.</p>
+<h2 id="why-a-notebook-beats-abstract-frameworks">Why a notebook beats abstract frameworks</h2>
+<p>A worker agent can look impressive in demos and still fail in production workflows. The failure usually isn’t one big bug. It’s accumulated friction: unclear requirements, missing context, wrong tool assumptions, weak decomposition, and silent drift from intent.</p>
+<p>A research notebook forces these issues into observable artifacts. Instead of saying “the agent felt unreliable,” you can point to exactly where execution broke and what input or process would have prevented it.</p>
+<h2 id="the-practical-setup">The practical setup</h2>
+<p>Use one living document (Notion, markdown, sheet—anything simple) with one row per run.</p>
+<p>Track these fields every time:</p>
+<ul>
+<li>task name</li>
+<li>objective</li>
+<li>input context provided</li>
+<li>expected output format</li>
+<li>agent used</li>
+<li>completion status (pass/fail/partial)</li>
+<li>human interventions required</li>
+<li>failure mode</li>
+<li>fix applied</li>
+<li>rerun outcome</li>
+</ul>
+<p>The goal is not perfect logging. The goal is enough structure to make patterns obvious within 2–3 weeks.</p>
+<h2 id="build-a-task-harness-first">Build a task harness first</h2>
+<p>Pick 15–25 recurring tasks from your real workflow. Avoid toy prompts.</p>
+<p>For product/marketing/operator teams, this usually includes:</p>
+<ul>
+<li>synthesize feedback into a PRD draft</li>
+<li>extract top objections from discussion data</li>
+<li>generate channel-specific distribution assets from long-form source</li>
+<li>decompose a roadmap item into execution tickets</li>
+<li>implement scoped code changes with acceptance checks</li>
+</ul>
+<p>Each task should have explicit success criteria. If success is ambiguous, your research data will be noisy.</p>
+<h2 id="the-most-important-signal-intervention-logs">The most important signal: intervention logs</h2>
+<p>Interventions are your strongest research signal. Every time you step in, log why.</p>
+<p>Use a fixed taxonomy:</p>
+<ul>
+<li>context missing</li>
+<li>requirement ambiguity</li>
+<li>tool misuse</li>
+<li>incorrect assumptions</li>
+<li>poor decomposition</li>
+<li>output format mismatch</li>
+<li>quality/control failure</li>
+</ul>
+<p>After enough runs, this tells you what agents “want” in concrete terms: better context packs, tighter task templates, stronger guardrails, and clearer stop conditions.</p>
+<h2 id="ask-agents-to-self-audit-after-failures">Ask agents to self-audit after failures</h2>
+<p>After a failed or partial run, run a postmortem prompt:</p>
+<ol>
+<li>What information was missing?</li>
+<li>Which assumption was wrong?</li>
+<li>Which step caused the first irreversible error?</li>
+<li>What artifact would have prevented this (template/checklist/spec field)?</li>
+<li>What should be changed before rerunning?</li>
+</ol>
+<p>This is the agent equivalent of user interviews. You are extracting structured feedback from execution traces.</p>
+<h2 id="weekly-scorecard-keep-it-simple">Weekly scorecard (keep it simple)</h2>
+<p>Track four numbers weekly:</p>
+<ul>
+<li>task success rate</li>
+<li>intervention rate</li>
+<li>first-pass acceptance rate</li>
+<li>median time to usable output</li>
+</ul>
+<p>If these four move in the right direction, your agent UX is improving.</p>
+<h2 id="from-research-to-product-decisions">From research to product decisions</h2>
+<p>The notebook is only useful if it changes your system.</p>
+<p>Every week, convert findings into concrete updates:</p>
+<ul>
+<li>better task template fields</li>
+<li>improved PRD/spec schema for agents</li>
+<li>context bundle checklist</li>
+<li>preflight validation steps</li>
+<li>tighter handoff boundaries between human and agent</li>
+</ul>
+<p>This is how agent research compounds: run → observe → patch → rerun.</p>
+<h2 id="what-this-means-for-the-next-phase">What this means for the next phase</h2>
+<p>As agents become core contributors, teams that instrument execution loops will outlearn teams that evaluate agents by vibe. The best strategy is not to ask “is this model smart?” The better question is: “what workflow conditions make this agent reliably useful for the work we do?”</p>
+<p>That answer lives in a notebook—not in a benchmark leaderboard.</p>
 
       </div>
     </section>
