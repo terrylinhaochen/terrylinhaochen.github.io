@@ -1,11 +1,11 @@
 ---
 title: "The Agent User Research Notebook: How to Learn What Worker Agents Actually Need"
-description: "A practical operating notebook for researching worker agents like OpenClaw/Manus: task harnesses, intervention logs, failure taxonomy, and weekly scorecards."
+description: "A practical operating notebook for researching worker agents like OpenClaw/Manus: task harnesses, intervention logs, failure taxonomy, scorecards, and product idea decomposition for agent-native markets."
 date: 2026-03-03
 author: Terry Chen
 categories: crowdlisten
 tags: ["AI", "Product", "Research"]
-keywords: ["agent user research", "worker agents", "OpenClaw", "Manus", "agent workflow", "task harness", "intervention log", "agent UX"]
+keywords: ["agent user research", "worker agents", "OpenClaw", "Manus", "agent workflow", "task harness", "intervention log", "agent UX", "agent tools", "agent marketing"]
 ---
 
 Most people talk about “AI user research” as if agents were just another chatbot interface. That misses the real shift. For worker agents—OpenClaw, Manus-style systems, coding agents—the right research surface is not chat quality. It is execution quality across real tasks.
@@ -35,7 +35,7 @@ Track these fields every time:
 - fix applied
 - rerun outcome
 
-The goal is not perfect logging. The goal is enough structure to make patterns obvious within 2–3 weeks.
+The goal is not perfect logging. The goal is enough structure to make patterns obvious within 2–3 weeks. Once those patterns emerge, you can stop treating this as “agent testing” and start treating it as product discovery for an agent-native market.
 
 ## Build a task harness first
 
@@ -89,6 +89,26 @@ Track four numbers weekly:
 - median time to usable output
 
 If these four move in the right direction, your agent UX is improving.
+
+## Decomposing product ideas from the notebook
+
+Once your notebook has enough runs, start clustering failures into product opportunities. A useful decomposition is: **attention**, **tooling**, and **execution contracts**.
+
+For attention, the open question is whether ads and distribution are shifting from human persuasion to agent interpretation. In an agent-mediated world, an “ad” is less about visual persuasion and more about machine-legible claims: what this tool does, for whom, under what constraints, and with what evidence. That creates a product category around agent-readable positioning layers and trust signals.
+
+For tooling, today’s agents can usually call only a small set of tools. Your notebook should reveal what is missing most often: CRM lookups, analytics queries, ad platform actions, content scheduling, ticket updates, repo actions, or payment operations. That list becomes a roadmap for an agent tool router and permission model, not a random integration backlog.
+
+For execution contracts, most failures come from weak task definitions rather than weak models. This is where “PM for agents” and “marketer for agents” connect: agents need clear contracts for both building and distribution. A product can win by packaging reusable agent contracts (inputs, constraints, evaluation, and rollback conditions) for common workflows.
+
+## A practical opportunity map to test now
+
+Use three near-term experiments:
+
+1. **Agent Tool Demand Map**: rank the top 10 missing tools by intervention frequency.
+2. **Agent-Readable Distribution Brief**: test whether structured campaign briefs improve agent-produced marketing outcomes.
+3. **Task Contract Library**: template the 10 most common tasks and measure first-pass acceptance lift.
+
+These are small, measurable, and directly grounded in observed behavior.
 
 ## From research to product decisions
 
