@@ -1,12 +1,11 @@
 ---
-title: "Bringing Human Signal Back in an Age of AI Noise"
+title: "Weighing Social Interactions: Reconstructing Meaning from Large Multi-modal Datasets"
 description: "As AI-generated content becomes cheaper and more abundant, authentic human insight becomes more valuable. Crowdlisten exists to make discernment, taste, and human judgment visible, protectable, and accessible."
 date: 2026-01-15
 author: Terry Chen
 categories: crowdlisten
 tags: ["Crowdlisten", "Product", "AI"]
-keywords: ["human signal", "AI noise", "authentic insight", "creator economy", "AI content", "human judgment", "expertise monetization", "Crowdlisten"]
-gated: true
+keywords: ["human signal", "AI noise", "authentic insight", "creator economy", "AI content", "human judgment", "expertise monetization", "Crowdlisten", "semantic retrieval", "topic modeling"]
 ---
 
 We are living in a period where content is no longer scarce. AI systems can generate text, images, and ideas at near-zero cost, producing an endless stream of output that is often fluent, technically correct, and difficult to distinguish from human work. As a result, the internet is filling with material that resembles knowledge but lacks judgment, taste, and lived understanding. The central challenge today is not producing more information, but identifying what is real, meaningful, and worth engaging with.
@@ -26,6 +25,20 @@ Crowdlisten is built on a simple belief: as AI-generated content becomes cheaper
 ## Who This Is For
 
 Crowdlisten is a tool for thinkers---anyone with genuine taste and a distinctive way of communicating ideas. These are domain experts whose value lies not only in what they say, but in how they think, frame, and express insight. Their voice is recognizable over time. Their judgment cannot be reduced to a checklist or a prompt. Their work resonates because it reflects a coherent point of view rather than interchangeable output.
+
+## Reconstructing Meaning from Multi-modal Data
+
+Surfacing authentic human signal requires more than keyword matching. It demands understanding what people actually mean across different formats and platforms.
+
+### Semantic Retrieval vs. Traditional Search
+
+![Semantic Retrieval Explanation](/images/posts/ai-search-topic-modeling/semantic-retrieval-explanation.png)
+*Understanding the fundamental difference between semantic retrieval systems and traditional web crawlers: Exa operates as a semantic retrieval index over a pre-crawled corpus, focusing on high-quality, text-rich pages suitable for LLM context windows rather than real-time web crawling.*
+
+### Modern Web Crawling Challenges
+
+![Crawler Restrictions and Challenges](/images/posts/ai-search-topic-modeling/crawler-restrictions-challenges.png)
+*The evolving landscape of web access restrictions: Modern platforms like Reddit, Xueqiu, and others implement sophisticated barriers to automated crawling, fundamentally changing how AI systems can access and index web content.*
 
 ## The Insights Engine
 

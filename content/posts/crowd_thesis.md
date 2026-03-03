@@ -4,7 +4,7 @@ description: "Understanding collective intelligence and social dynamics. Why cro
 date: 2025-05-12
 author: Terry Chen
 categories: crowdlisten
-tags: ["Observations", "Entrepreneurship", "Product"]
+tags: ["Observations", "Entrepreneurship", "Posts"]
 keywords: ["crowd psychology", "collective intelligence", "social behavior", "product psychology", "human behavior patterns", "social dynamics"]
 ---
 Every builder I know checks the comments.

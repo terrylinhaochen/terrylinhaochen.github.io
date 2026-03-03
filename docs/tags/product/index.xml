@@ -60,35 +60,6 @@
     </item>
     
     <item>
-      <title>The Real-Time Feedback Layer: How Crowdlisten Closes the Loop Between Builders and Audiences</title>
-      <link>https://chenterry.com/posts/crowdlisten_feedback_layer/</link>
-      <pubDate>Sun, 15 Feb 2026 00:00:00 +0000</pubDate>
-      <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/posts/crowdlisten_feedback_layer/</guid>
-      <description>Products are conversations, not launches. Crowdlisten is evolving from insight extraction into a real-time feedback layer that connects what builders ship with how audiences actually respond, creating continuous learning loops that compound over time.</description>
-      
-      
-        
-          <category>crowdlisten</category>
-        
-      
-      
-        
-          
-          <category>Crowdlisten</category>
-          
-          <category>Product</category>
-          
-          <category>AI</category>
-          
-        
-      
-      
-      <dc:creator>Terry Chen</dc:creator>
-      <dc:date>2026-02-15T00:00:00Z</dc:date>
-    </item>
-    
-    <item>
       <title>Bringing Human Signal Back in an Age of AI Noise</title>
       <link>https://chenterry.com/posts/crowdlisten_human_signal/</link>
       <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
@@ -203,87 +174,6 @@
     </item>
     
     <item>
-      <title>The Monetization Paradox of AI</title>
-      <link>https://chenterry.com/posts/monetizing_ai/</link>
-      <pubDate>Tue, 11 Nov 2025 00:00:00 +0000</pubDate>
-      <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/posts/monetizing_ai/</guid>
-      <description>Despite heavy investment in AI, a core challenge remains: turning its outsized promise into tangible, monetizable value for users.</description>
-      
-      
-        
-          
-          <category>TikTok</category>
-          
-        
-      
-      
-        
-          
-          <category>Product</category>
-          
-        
-      
-      
-      <dc:creator>Terry Chen</dc:creator>
-      <dc:date>2025-11-11T00:00:00Z</dc:date>
-    </item>
-    
-    <item>
-      <title>Weighing Social Interactions: Reconstructing Meaning from Large Multi-modal Datasets</title>
-      <link>https://chenterry.com/posts/search_topic/</link>
-      <pubDate>Tue, 11 Nov 2025 00:00:00 +0000</pubDate>
-      <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/posts/search_topic/</guid>
-      <description>Technical analysis of AI-powered search systems and topic modeling approaches, exploring semantic retrieval, embedding spaces, and the challenges of modern web crawling.</description>
-      
-      
-        
-          <category>crowdlisten</category>
-        
-      
-      
-        
-          
-          <category>Product</category>
-          
-          <category>Crowdlisten</category>
-          
-        
-      
-      
-      <dc:creator>Terry Chen</dc:creator>
-      <dc:date>2025-11-11T00:00:00Z</dc:date>
-    </item>
-    
-    <item>
-      <title>The Best Practices Lie: On Dealing with Ambiguity</title>
-      <link>https://chenterry.com/posts/ambiguity/</link>
-      <pubDate>Fri, 31 Oct 2025 00:00:00 +0000</pubDate>
-      <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/posts/ambiguity/</guid>
-      <description>The methodologies that get you into elite institutions—optimized for speed and pattern recognition—become liabilities when facing the genuine ambiguity of startups and real-world problems.</description>
-      
-      
-        
-          <category>northwestern</category>
-        
-      
-      
-        
-          
-          <category>Posts</category>
-          
-          <category>Product</category>
-          
-        
-      
-      
-      <dc:creator>Terry Chen</dc:creator>
-      <dc:date>2025-10-31T00:00:00Z</dc:date>
-    </item>
-    
-    <item>
       <title>From Indexing to Understanding Intent in Discovery Systems</title>
       <link>https://chenterry.com/posts/intent_driven_discovery/</link>
       <pubDate>Sun, 26 Oct 2025 00:00:00 +0000</pubDate>
@@ -339,7 +229,7 @@
       <pubDate>Mon, 15 Sep 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
       <guid>https://chenterry.com/posts/crowdlisten/</guid>
-      <description>Transform large-scale social conversations into actionable insights. Understand crowd sentiment, track emerging opinions, and identify key narratives.</description>
+      <description>Transform large-scale social conversations into actionable insights. Crowdlisten is evolving from insight extraction into a real-time feedback layer that connects what builders ship with how audiences actually respond.</description>
       
       
         
@@ -371,33 +261,6 @@
       
         
           <category>microsoft</category>
-        
-      
-      
-        
-          
-          <category>Product</category>
-          
-        
-      
-      
-      <dc:creator>Terry Chen</dc:creator>
-      <dc:date>2025-08-29T00:00:00Z</dc:date>
-    </item>
-    
-    <item>
-      <title>Social Listening for Product Insight</title>
-      <link>https://chenterry.com/posts/need_validation/</link>
-      <pubDate>Fri, 29 Aug 2025 00:00:00 +0000</pubDate>
-      <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/posts/need_validation/</guid>
-      <description>Using AI-powered social listening to extract authentic customer insights from online discourse. Moving from product-to-market to market-to-product development through systematic analysis of community discussions.</description>
-      
-      
-        
-          
-          <category>AI Application &amp; Value Creation Layer</category>
-          
         
       
       
@@ -460,35 +323,6 @@
       
       <dc:creator>Terry Chen</dc:creator>
       <dc:date>2025-07-13T00:00:00Z</dc:date>
-    </item>
-    
-    <item>
-      <title>Why People Care What Others Think</title>
-      <link>https://chenterry.com/posts/crowd_thesis/</link>
-      <pubDate>Mon, 12 May 2025 00:00:00 +0000</pubDate>
-      <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/posts/crowd_thesis/</guid>
-      <description>Understanding collective intelligence and social dynamics. Why crowd psychology matters for product builders and how human need for belonging drives engagement patterns.</description>
-      
-      
-        
-          <category>crowdlisten</category>
-        
-      
-      
-        
-          
-          <category>Observations</category>
-          
-          <category>Entrepreneurship</category>
-          
-          <category>Product</category>
-          
-        
-      
-      
-      <dc:creator>Terry Chen</dc:creator>
-      <dc:date>2025-05-12T00:00:00Z</dc:date>
     </item>
     
     <item>

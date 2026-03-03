@@ -6,7 +6,6 @@ tags: ["Observations", "Entrepreneurship", "Product", "Posts"]
 categories: tiktok
 description: "Exploring the intersection of AI-generated content and human creativity. Analysis of creative workflows, multimodal interactions, and the future of content creation in the AI era."
 keywords: ["AI creativity", "content generation", "creative workflows", "multimodal AI", "content understanding", "AI-generated content", "creative technology", "content creation"]
-gated: true
 ---
 
 Is it creative to screenshot someone else's video and caption it with other people's comments? This seemingly simple question hits every creator making rent from content: if AI can remix, analyze, and generate at scale, what's left that's genuinely yours?

@@ -194,32 +194,5 @@
       <dc:date>2025-10-06T00:00:00Z</dc:date>
     </item>
     
-    <item>
-      <title>Social Listening for Product Insight</title>
-      <link>https://chenterry.com/posts/need_validation/</link>
-      <pubDate>Fri, 29 Aug 2025 00:00:00 +0000</pubDate>
-      <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/posts/need_validation/</guid>
-      <description>Using AI-powered social listening to extract authentic customer insights from online discourse. Moving from product-to-market to market-to-product development through systematic analysis of community discussions.</description>
-      
-      
-        
-          
-          <category>AI Application &amp; Value Creation Layer</category>
-          
-        
-      
-      
-        
-          
-          <category>Product</category>
-          
-        
-      
-      
-      <dc:creator>Terry Chen</dc:creator>
-      <dc:date>2025-08-29T00:00:00Z</dc:date>
-    </item>
-    
   </channel>
 </rss>

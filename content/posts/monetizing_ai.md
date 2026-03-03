@@ -2,8 +2,7 @@
 title: "The Monetization Paradox of AI"
 date: 2025-11-11
 categories: tiktok
-tags: ["Product"]
-categories: ["TikTok"]
+tags: ["Posts"]
 company: "TikTok"
 description: "Despite heavy investment in AI, a core challenge remains: turning its outsized promise into tangible, monetizable value for users."
 keywords: ["TikTok Symphony", "AI advertising", "creative generation", "ad scripts", "video ads", "agentic workflows", "creative automation", "TikTok ads", "AI monetization"]

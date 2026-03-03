@@ -2,7 +2,7 @@
 title: "Google NotebookLM - Long Context Windows and Multimodality"
 date: 2025-11-11
 author: Terry Chen
-tags: ["Observations", "Crowdlisten"]
+tags: ["Observations", "Posts"]
 categories: crowdlisten
 company: "crowdlisten"
 description: "Exploring Google NotebookLM's approach to long context windows and multimodal AI interactions for research and knowledge management."

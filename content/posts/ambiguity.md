@@ -2,7 +2,7 @@
 title: "The Best Practices Lie: On Dealing with Ambiguity"
 date: 2025-10-31
 author: Terry Chen
-tags: ["Posts", "Product"]
+tags: ["Posts"]
 categories: northwestern
 description: "The methodologies that get you into elite institutions—optimized for speed and pattern recognition—become liabilities when facing the genuine ambiguity of startups and real-world problems."
 keywords: ["ambiguity", "self-regulation", "ill-defined problems", "startup methodology", "institutional learning", "problem solving", "decision making", "elite education"]
