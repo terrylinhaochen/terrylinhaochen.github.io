@@ -581,15 +581,17 @@
     </div>
     
     <div class="thesis-nav-sections">
+      <div class="thesis-nav-group-label">Active</div>
       
       <a href="#section-0" class="thesis-nav-link active" data-index="0">
         <span class="nav-number">1</span>
         <span class="nav-text">
           <span class="nav-title">Building AI That Actually Understands How Students Learn</span>
           <span class="nav-date">Aug 2024</span>
-          <span class="nav-state active">Active</span>
         </span>
       </a>
+      
+
       
     </div>
   </nav>
@@ -602,7 +604,6 @@
         <div class="thesis-section-meta">
           <span class="section-number">1 of 1</span>
           <time>August 15, 2024</time>
-          <span class="section-state active">Active</span>
         </div>
         <h2>Building AI That Actually Understands How Students Learn</h2>
         
@@ -912,6 +913,7 @@ Generate conversation facilitation questions for the user. This scaffolding shou
       </div>
     </section>
     
+    
   </div>
 </div>
 
@@ -930,26 +932,26 @@ Generate conversation facilitation questions for the user. This scaffolding shou
   .thesis-page {
     display: flex;
     min-height: calc(100vh - 80px);
-    max-width: calc(var(--content-width, 900px) + 260px);
+    max-width: calc(var(--content-width, 900px) + 320px);
     margin: 0 auto;
-    padding-right: calc((100vw - var(--content-width, 900px)) / 2 - 260px);
+    padding-right: calc((100vw - var(--content-width, 900px)) / 2 - 320px);
     box-sizing: content-box;
   }
 
    
   @media (min-width: 1200px) {
     .thesis-page {
-      margin-left: calc((100vw - var(--content-width, 900px)) / 2 - 260px);
+      margin-left: calc((100vw - var(--content-width, 900px)) / 2 - 320px);
       margin-right: auto;
-      max-width: calc(var(--content-width, 900px) + 260px);
+      max-width: calc(var(--content-width, 900px) + 320px);
       padding-right: 0;
     }
   }
 
    
   .thesis-nav {
-    width: 260px;
-    min-width: 260px;
+    width: 320px;
+    min-width: 320px;
     position: sticky;
     top: 0;
     height: 100vh;
@@ -968,41 +970,6 @@ Generate conversation facilitation questions for the user. This scaffolding shou
   .thesis-nav::-webkit-scrollbar-thumb {
     background: var(--border);
     border-radius: 2px;
-  }
-
-
-  .nav-state, .section-state {
-    display: inline-block;
-    font-size: 0.68rem;
-    line-height: 1;
-    padding: 4px 8px;
-    border-radius: 999px;
-    border: 1px solid var(--border);
-    color: var(--secondary);
-    margin-top: 6px;
-    width: fit-content;
-  }
-  .nav-state.active, .section-state.active {
-    color: #166534;
-    border-color: rgba(22,101,52,0.35);
-    background: rgba(220,252,231,0.5);
-  }
-  .nav-state.archived, .section-state.archived {
-    color: #9a3412;
-    border-color: rgba(154,52,18,0.35);
-    background: rgba(255,237,213,0.55);
-  }
-  body.dark .nav-state.active, body.dark .section-state.active,
-  .dark .nav-state.active, .dark .section-state.active {
-    color: #86efac;
-    border-color: rgba(134,239,172,0.45);
-    background: rgba(22,101,52,0.35);
-  }
-  body.dark .nav-state.archived, body.dark .section-state.archived,
-  .dark .nav-state.archived, .dark .section-state.archived {
-    color: #fdba74;
-    border-color: rgba(251,146,60,0.45);
-    background: rgba(124,45,18,0.35);
   }
   .thesis-nav-back {
     display: inline-flex;
@@ -1060,6 +1027,19 @@ Generate conversation facilitation questions for the user. This scaffolding shou
     display: flex;
     flex-direction: column;
     gap: 2px;
+  }
+
+  .thesis-nav-group-label {
+    margin: 0.85rem 0 0.35rem;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--secondary);
+    font-weight: 600;
+  }
+
+  .thesis-nav-group-label.archived-label {
+    margin-top: 1.1rem;
   }
 
   .thesis-nav-link {
