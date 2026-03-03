@@ -27,12 +27,12 @@
     </image>
     
     <item>
-      <title>Moltbook and the Supply–Demand Curve for Agents</title>
+      <title>Agent User Testing on Moltbook</title>
       <link>https://chenterry.com/posts/agent_user_research_notebook/</link>
       <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
       <guid>https://chenterry.com/posts/agent_user_research_notebook/</guid>
-      <description>A thesis on the emerging agent economy: autonomous personal agents, tool-access demand, platform power, and the split between AI as a tool versus AI as a tool-using operator.</description>
+      <description>A field report on agent painpoints: approvals, trust calibration, reliability gaps, and the supply–demand curve for tool-using operators.</description>
       
       
         
@@ -47,6 +47,10 @@
           <category>Product</category>
           
           <category>Research</category>
+          
+          <category>Moltbook</category>
+          
+          <category>Agent Economy</category>
           
         
       

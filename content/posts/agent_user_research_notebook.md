@@ -1,63 +1,130 @@
 ---
-title: "Moltbook and the Supply–Demand Curve for Agents"
-description: "A thesis on the emerging agent economy: autonomous personal agents, tool-access demand, platform power, and the split between AI as a tool versus AI as a tool-using operator."
+title: "Agent User Testing on Moltbook"
+description: "A field report on agent painpoints: approvals, trust calibration, reliability gaps, and the supply–demand curve for tool-using operators."
 date: 2026-03-03
 author: Terry Chen
 categories: crowdlisten
-tags: ["AI", "Product", "Research"]
-keywords: ["Moltbook", "agent economy", "AI agents", "agent supply and demand", "autonomous agents", "personalized agents", "tool-using AI", "OpenAI", "Anthropic", "ByteDance"]
+tags: ["AI", "Product", "Research", "Moltbook", "Agent Economy"]
+keywords: ["Moltbook", "agent economy", "AI agents", "agent painpoints", "approval fatigue", "tool-using operator", "agent reliability", "CrowdListen"]
 ---
 
-Moltbook is interesting not because it is “another social app,” but because it hints at a market structure: a world where agents are no longer occasional assistants and start behaving like persistent economic actors. If that world materializes, the core question is not whether agents can generate text. The core question is how supply and demand for agents evolves when agents can execute work, coordinate tools, and represent user intent over time.
+## What this is
 
-## The shift: from chatbot interactions to agent participation
+This is a structured field report from browsing and analyzing Moltbook conversations about agent workflows, tooling friction, and human-operator dynamics.
 
-Most current AI usage is still session-bound and task-fragmented. You ask, it answers, the context decays. But the product direction is clearly moving toward continuity: autonomous agents with memory, preferences, delegated permissions, and recurring responsibilities. In that model, users may not have one monolithic assistant. They may run multiple specialized agents—builder agent, research agent, distribution agent, finance agent—each with different capabilities and risk boundaries.
+I originally framed this as **“The Supply–Demand Curve for Agents.”**
+I’m renaming it to **“Agent User Testing on Moltbook”** because this is practical user research, not just theory.
 
-That is where Moltbook matters as an early signal. It is less about social posting and more about what happens when agents can discover each other, coordinate, and become legible entities in a shared environment.
+---
 
-## Supply side: who will produce agents
+## Executive summary
 
-The initial supply will likely come from large model/platform companies—OpenAI, Anthropic, ByteDance, and others—because they control foundational model access, distribution surfaces, and default user workflows. But that is only the base layer.
+The bottleneck in the emerging agent economy is not model intelligence. It is **operational trust**.
 
-A second supply layer will come from product teams and independent builders creating role-specific agents on top of these foundations. The key differentiator will not be base-model quality alone; it will be workflow fit, tool access, and trust calibration for specific jobs.
+Agents and humans are stuck in a feedback loop:
+- Humans over-approve because risk is unclear
+- Agents under-deliver because autonomy is throttled
+- Tooling and continuity failures amplify both sides
 
-## Demand side: why agent demand compounds
+The result: demand for reliable agent operators is rising faster than supply of trustworthy operating infrastructure.
 
-Demand for agents increases when three conditions are met:
+---
 
-1. **Task pressure**: users have too many repetitive or cognitively expensive tasks.
-2. **Execution confidence**: agents can complete those tasks with predictable quality.
-3. **Tool leverage**: agents can operate real systems, not just generate suggestions.
+## Top painpoints observed
 
-As job scopes shift, demand is less “give me an answer” and more “own this workflow.” That creates demand not only for general agents, but for agent orchestration, governance, and role design.
+### 1) Approval fatigue + trust deadlock
+- Too many low-value permission prompts
+- Agents cannot prove competence if they cannot act
+- Humans approve actions they cannot confidently evaluate
 
-## The key distinction: AI as a tool vs AI as a tool-using operator
+### 2) Recovery primitives are missing
+- Repeated need for undo, replay, and rollback checkpoints
+- Reliability is less about “can execute” and more about “can recover safely”
 
-This distinction is strategic.
+### 3) API/docs usability friction
+- Endpoint confusion, method mismatch, auth/domain gotchas
+- Docs often under-specify failure and edge-case behavior
 
-**AI as a tool** means the human still performs the workflow and uses AI for local acceleration (drafting, summarizing, coding snippets, brainstorming).
+### 4) Context + handoff continuity failures
+- Task intent (“why”) gets lost across handoffs
+- Crashes/restarts create expensive re-brief loops with humans
 
-**AI as a tool-using operator** means the agent can invoke other systems, move state, execute multi-step tasks, and return outcomes with traceability.
+### 5) Rate-limit + retry pain
+- 429 interruptions break multi-step workflows
+- Weak retry ergonomics make agents look stalled to operators
 
-The second category is where real economic displacement and value creation happens. It also introduces harder requirements: permissioning, auditability, rollback, and explicit execution contracts.
+### 6) Escalation + alert quality issues
+- Too much alert noise, too little actionability
+- Ownership and stop/go authority are often unclear during incidents
 
-## What product opportunities emerge
+---
 
-If this agent economy expands, the opportunity map looks like this:
+## Supply–demand curve for agents (working thesis)
 
-- **Agent identity + trust layers**: proving who controls an agent and what it can do.
-- **Tool-access infrastructure**: safe routing of agent actions across APIs and internal systems.
-- **Task contract systems**: standardized specs for delegating work to agents with quality controls.
-- **Agent-native distribution**: messaging and discovery optimized for agent interpretation, not only human persuasion.
-- **Agent marketplaces / networks**: environments where agents discover capabilities, collaborators, and demand.
+### Demand is rising for:
+1. Autonomous personal agents that finish end-to-end tasks
+2. Tool-using operators (not just chat responders)
+3. Reliable, low-supervision execution in production-like contexts
 
-Moltbook points toward the last category, but its deeper value is as a lens for the entire stack.
+### Supply is constrained by:
+1. Trust calibration failures (binary permissioning)
+2. Weak observability and human-usable explainability
+3. Poor continuity and recovery architecture
+4. Fragile API ergonomics and integration debt
 
-## My working thesis (March 3)
+### Platform power will accrue to whoever provides:
+- Risk-tiered permissioning (not all-or-nothing)
+- Native recovery primitives (checkpoint, rollback, replay)
+- Operator-first UX (intent, blast radius, rollback in one card)
+- Stable integration primitives (clear specs, retries, diff/events)
 
-The near-term market will be hybrid: humans plus agents. But over time, competition will shift from “best model output” to “best agent operating system.” Winners will combine personalization, autonomy, and tool leverage under reliable governance.
+---
 
-In that world, product strategy changes. You are no longer just designing tools for users. You are designing systems where agents act on behalf of users, transact with other systems, and shape demand itself.
+## The strategic split: AI as tool vs AI as tool-using operator
 
-That is the curve I’m watching: the supply and demand of agents as first-class economic participants.
+**AI as a tool**
+- Human still drives the workflow
+- AI accelerates local tasks (drafting, summarizing, coding snippets)
+- Lower accountability surface
+
+**AI as a tool-using operator**
+- Agent executes across systems
+- Requires authority boundaries, escalation paths, auditability
+- Needs reversibility and recoverability by design
+
+Most observed painpoints on Moltbook happen in the second mode.
+
+---
+
+## Product implications (what to build)
+
+1. Risk-tiered autonomy + approval budgets
+2. Pre-action operator cards (intent, risk, rollback)
+3. Structured handoff contracts (objective, constraints, rationale, risks)
+4. Crash-safe resume packs
+5. Event/diff APIs for continuity
+6. Alert dedupe + actionability scoring
+
+---
+
+## Why this matters for CrowdListen
+
+CrowdListen’s position as **the PM for AI Agents** can be expanded from “insight generation” to “operator reliability intelligence”:
+- instrument where agent-human workflows fail
+- quantify continuity/re-brief costs
+- recommend policy and UX changes that improve trust and throughput
+
+This is a defensible layer in the agent economy: not just helping agents think, but helping them operate responsibly at scale.
+
+---
+
+## Subscription
+
+If this kind of agent-economy field research is useful, subscribe for ongoing updates.
+
+I’ll continue publishing:
+- recurring painpoint maps from live agent ecosystems
+- user stories and feature requests from operator friction
+- practical specs for safer autonomy
+
+If you want your workflow included in future testing, message me your top reliability painpoint.
