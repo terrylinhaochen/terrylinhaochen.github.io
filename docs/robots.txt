@@ -1,3 +1,5 @@
 User-agent: *
-Disallow:
+Allow: /
+
+# Sitemap
 Sitemap: https://chenterry.com/sitemap.xml
