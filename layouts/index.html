@@ -71,8 +71,8 @@
                             <time>{{ .Date.Format (default "January 2, 2006" .Site.Params.DateFormat) }}</time>
                             {{- if (.Param "ShowReadingTime") }} • {{ i18n "read_time" .ReadingTime | default (printf "%d min read" .ReadingTime) }}{{- end }}
                         </div>
-                        <a href="{{ .Permalink }}" title="{{ .Title }}">{{ i18n "read_more" | default "Read More →" }}</a>
                     </footer>
+                    <a class="entry-link" href="{{ .Permalink }}"></a>
                 </article>
                 {{- end }}
             </div>
@@ -289,6 +289,17 @@
     .posts-grid .post-entry {
         width: 100%;
         margin: 0;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .posts-grid .post-entry:hover {
+        background: var(--border);
+    }
+
+    .posts-grid .entry-link {
+        position: absolute;
+        inset: 0;
     }
 
     /* Ultra-specific selectors for homepage dark mode */
