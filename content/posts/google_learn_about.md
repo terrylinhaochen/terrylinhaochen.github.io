@@ -2,7 +2,7 @@
 title: "Google Learn About - Interest Directed, AI Aided Learning"
 date: 2025-11-11
 author: Terry Chen
-tags: ["Product"]
+tags: ["Product", "Investing"]
 categories: ["AI Application & Value Creation Layer"]
 description: "Google's Learn About reframes both search and chat as an explore-first learning loop, lowering the cost of asking good questions while managing cognitive load with structured, clickable cards."
 keywords: ["Google Learn About", "exploratory learning", "AI-aided learning", "interactive education", "conversational AI", "learning interface design", "educational technology"]

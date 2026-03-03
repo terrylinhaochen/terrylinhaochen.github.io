@@ -303,7 +303,7 @@
   <div class="investments-grid">
     {{ range $thesisPages }}
     {{- $category := .Params.thesis_category -}}
-    {{- $posts := where (where (where (where $.Site.RegularPages "Section" "posts") ".Params.tags" "intersect" (slice "Investing")) ".Params.archived" "!=" true) "Params.categories" $category -}}
+    {{- $posts := where (where (where (where $.Site.RegularPages "Section" "posts") ".Params.tags" "intersect" (slice "Investing")) ".Params.archived" "!=" true) ".Params.categories" "intersect" (slice $category) -}}
     <div class="project-card">
       <div class="thesis-header">
         <a href="{{ .Permalink }}" class="thesis-header-link">

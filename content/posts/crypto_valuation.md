@@ -3,7 +3,7 @@ title: "I Don't Understand How Crypto Is Valued. Period."
 date: 2026-02-28
 author: Terry Chen
 tags: ["Investing"]
-categories: Crypto
+categories: ["Crypto"]
 description: "Lost money. Still don't understand how it's priced. That's the whole post."
 keywords: ["crypto", "valuation", "bitcoin", "investing"]
 ---
