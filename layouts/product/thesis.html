@@ -505,9 +505,10 @@ document.addEventListener('DOMContentLoaded', function() {
         navLinks.forEach(function(l) { l.classList.remove('active'); });
         this.classList.add('active');
 
-        const offset = 12; // avoid observer selecting adjacent section at exact boundary
+        const offset = 12;
         const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
-        window.scrollTo({ top, behavior: 'smooth' });
+        // Jump immediately (no smooth scroll) so one click always lands on target
+        window.scrollTo(0, top);
 
         // keep URL hash aligned with target section
         history.replaceState(null, '', this.getAttribute('href'));
