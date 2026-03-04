@@ -5,6 +5,9 @@ categories: aibrary
 tags: ["Product"]
 description: "When problems are ambiguous, the limiting factor is often not answer quality but question quality. This piece explores why framing better questions is the real leverage point in AI-assisted thinking and product work."
 keywords: ["knowledge interfaces", "learning systems", "AI education", "knowledge discovery", "unknown unknowns", "learning technology", "knowledge management", "AI learning"]
+
+thesis_featured: true
+featured_rank: 2
 ---
 
 There's a category of problem I keep running into when building AI products for learning: people don't know what they don't know. This sounds obvious, but it has a specific implication that's easy to overlook. If you build a search box, you're assuming the user can formulate a query. If the user is in unfamiliar territory, they often can't. They know they're confused. They can't always say about what.

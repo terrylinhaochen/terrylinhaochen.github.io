@@ -1,5 +1,5 @@
 ---
-title: "From Indexing to Understanding Intent in Discovery Systems"
+title: "From Indexing to Understanding"
 date: 2025-10-26
 author: Terry Chen
 categories: aibrary
@@ -8,6 +8,9 @@ company: "ouraca"
 description: "Discovery is moving from static data retrieval toward systems that understand why a user is searching, not just what they type. The next generation of search experiences must merge precise recall with adaptive reasoning."
 keywords: ["intent-based search", "AI discovery", "search systems", "content recommendation", "user intent", "semantic search", "discovery systems", "search AI"]
 aliases: ["/projects/discovery/", "/projects/search/", "/projects/recommendation/"]
+
+thesis_featured: true
+featured_rank: 3
 ---
 
 # From Indexing to Understanding Intent in Discovery Systems

@@ -1,9 +1,12 @@
 {{ define "main" }}
 {{- $category := .Params.thesis_category -}}
 {{- $posts := where (where (where .Site.RegularPages "Section" "posts") ".Params.tags" "intersect" (slice "Product")) "Params.categories" $category -}}
-{{- $posts = sort $posts "Date" "desc" -}}
-{{- $activePosts := where $posts ".Params.archived" "!=" true -}}
-{{- $archivedPosts := where $posts ".Params.archived" true -}}
+{{- $activeRaw := where $posts ".Params.archived" "!=" true -}}
+{{- $featured := sort (where $activeRaw ".Params.thesis_featured" true) "Params.featured_rank" "asc" -}}
+{{- $others := sort (where $activeRaw ".Params.thesis_featured" "!=" true) "Date" "desc" -}}
+{{- $activePosts := $featured | append $others -}}
+{{- $archivedPosts := sort (where $posts ".Params.archived" true) "Date" "desc" -}}
+{{- $posts = $activePosts | append $archivedPosts -}}
 
 <div class="thesis-page">
   <!-- Left Side Nav -->

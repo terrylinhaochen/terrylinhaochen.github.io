@@ -5,6 +5,9 @@ date: 2025-05-08
 author: Terry Chen
 tags: ["Observations", "Product", "Posts"]
 categories: aibrary
+
+thesis_featured: true
+featured_rank: 4
 ---
 
 I spent a summer interning at China Impact Investing Network, a few blocks from Huangzhuang, earning 100 RMB a day doing translation and RSS aggregation. It was mostly tedious. Someone would point me at a feed, I'd scan through items, pull anything that seemed relevant to impact investing in China, and write a short summary. Three months of that. Now GPT does it in seconds.
