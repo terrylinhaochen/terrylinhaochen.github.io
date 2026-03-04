@@ -47,7 +47,7 @@ Finally, our Insights+ product caters to enterprise users and power analysts who
 
 ## The Insight Paradox
 
-![Insight Paradox](/images/projects/crowdlistening/insight_paradox.png)
+![Insight Paradox](/images/projects/crowdlistening/category-analysis.png)
 
 Brands today face a fundamental paradox: they need broad insights from vast amounts of social data, yet require the detailed understanding typically only available through limited case studies. Current solutions offer either abstracted metrics that require tedious manual interpretation, expensive and limited content screening that can't scale, or surface-level sentiment analysis that misses nuanced opinions. Crowdlistening bridges this gap by combining the scale of algorithmic analysis with the depth of human-like comprehension. This addresses the first challenge identified in "Essence of Creativity" - helping users understand massive amounts of information and generate meaningful insights when they "don't know what output they want."
 
@@ -55,7 +55,7 @@ Brands today face a fundamental paradox: they need broad insights from vast amou
 
 The rationale behind Crowdlistening's multi-modal technical architecture stems from the fundamental challenge of extracting truly valuable insights from the vast and varied landscape of online conversations. Traditional methods often fall short because they either focus on structured data or analyze individual modalities (text, video, audio) in isolation. This approach misses the rich context and nuanced understanding that arises from the interplay between different forms of content and engagement. For example, a viral TikTok video's impact is not solely determined by its visual content but also by its accompanying audio, captions, user comments, and engagement metrics like likes and shares.
 
-![Analysis Page](/images/projects/crowdlistening/analysis_page.png)
+![Analysis Page](/images/projects/crowdlistening/analyze-interface.png)
 
 Crowdlistening's design directly tackles this limitation by integrating embedding-based topic modeling and LLM deep research capabilities to process and understand this multi-faceted data. Embedding-based topic modeling efficiently identifies key themes across massive datasets, while the LLM's deep reasoning capabilities can then analyze these themes within the context of various modalities. 
 
@@ -65,11 +65,11 @@ This dual approach allows for a layered analysis, examining both the primary con
 
 The platform provides granular breakdowns of content performance and audience reactions. As shown in our analysis results page, users can explore specific themes, track sentiment over time, and identify the most engaging content types. This helps brands understand not just what is being said, but why certain content resonates with their audience.
 
-![Analysis Results](/images/projects/crowdlistening/analysis_results.png)
+![Analysis Results](/images/projects/crowdlistening/detailed-analysis.png)
 
 The opinion analysis feature goes beyond simple positive/negative sentiment to categorize specific viewpoints and concerns. This allows brands to understand the nuanced perspectives their audience holds, helping them craft more targeted and effective messaging.
 
-![Opinion Analysis](/images/projects/crowdlistening/opinion_analysis.png)
+![Opinion Analysis](/images/projects/crowdlistening/sentiment-breakdown.png)
 
 ## Advanced Research Infrastructure
 
