@@ -8,7 +8,7 @@
     <managingEditor>Terry Chen (Terry Chen)</managingEditor>
     <webMaster>Terry Chen (Terry Chen)</webMaster>
     <copyright>© 2026 Terry Chen. All rights reserved.</copyright>
-    <lastBuildDate>Tue, 03 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 04 Mar 2026 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://chenterry.com/tags/ai/index.xml" rel="self" type="application/rss+xml" />
     
@@ -27,7 +27,40 @@
     </image>
     
     <item>
-      <title>The Agent Economy, User Testing on Moltbook</title>
+      <title>When to Use MCPs vs Skills for Agents</title>
+      <link>https://chenterry.com/posts/skills_vs_mcps_for_agents/</link>
+      <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/posts/skills_vs_mcps_for_agents/</guid>
+      <description>A practical comparison of Skills and MCPs for modern agent workflows, with implications for OpenClaw-style systems and CrowdListen product design.</description>
+      
+      
+        
+          <category>posts</category>
+        
+      
+      
+        
+          
+          <category>AI</category>
+          
+          <category>Product</category>
+          
+          <category>Agents</category>
+          
+          <category>MCP</category>
+          
+          <category>Skills</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2026-03-04T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>The Agent Economy: Tokens as Bandwidth, Apps for Agents</title>
       <link>https://chenterry.com/posts/agent_user_research_notebook/</link>
       <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
@@ -148,35 +181,6 @@
       
       <dc:creator>Terry Chen</dc:creator>
       <dc:date>2026-01-15T00:00:00Z</dc:date>
-    </item>
-    
-    <item>
-      <title>The Agent Economy Starts with Tasks. It Scales Through Attention.</title>
-      <link>https://chenterry.com/posts/crowdlisten_agentic_discovery/</link>
-      <pubDate>Sat, 15 Nov 2025 00:00:00 +0000</pubDate>
-      <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/posts/crowdlisten_agentic_discovery/</guid>
-      <description>Agents already execute workflows; the next shift is attention mediation. As discovery moves from humans to agents, product teams must design for agentic discovery workflows and agent-operated demand.</description>
-      
-      
-        
-          <category>crowdlisten</category>
-        
-      
-      
-        
-          
-          <category>Crowdlisten</category>
-          
-          <category>Product</category>
-          
-          <category>AI</category>
-          
-        
-      
-      
-      <dc:creator>Terry Chen</dc:creator>
-      <dc:date>2025-11-15T00:00:00Z</dc:date>
     </item>
     
   </channel>

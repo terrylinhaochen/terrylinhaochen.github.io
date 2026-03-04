@@ -27,34 +27,7 @@
     </image>
     
     <item>
-      <title>Archive: From Content Aggregation to Original Research</title>
-      <link>https://chenterry.com/posts/crowdlisten_from_content_aggregation_archive/</link>
-      <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
-      <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/posts/crowdlisten_from_content_aggregation_archive/</guid>
-      <description>Archived earlier CrowdListen framing preserved for reference.</description>
-      
-      
-        
-          <category>crowdlisten</category>
-        
-      
-      
-        
-          
-          <category>Crowdlisten</category>
-          
-          <category>Archive</category>
-          
-        
-      
-      
-      <dc:creator>Terry Chen</dc:creator>
-      <dc:date>2026-03-03T00:00:00Z</dc:date>
-    </item>
-    
-    <item>
-      <title>The Agent Economy, User Testing on Moltbook</title>
+      <title>The Agent Economy: Tokens as Bandwidth, Apps for Agents</title>
       <link>https://chenterry.com/posts/agent_user_research_notebook/</link>
       <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
@@ -174,64 +147,6 @@
     </item>
     
     <item>
-      <title>Building Has Become Easier — How Do We Fix Distribution?</title>
-      <link>https://chenterry.com/posts/crowdlisten_distribution_intelligence/</link>
-      <pubDate>Wed, 17 Dec 2025 00:00:00 +0000</pubDate>
-      <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/posts/crowdlisten_distribution_intelligence/</guid>
-      <description>Notes from working with vibe-coded builders: shipping is fast, distribution is hard, and founder-led workflows are becoming the operating layer between product capability, PRD clarity, and adoption.</description>
-      
-      
-        
-          <category>crowdlisten</category>
-        
-      
-      
-        
-          
-          <category>Crowdlisten</category>
-          
-          <category>Product</category>
-          
-          <category>Entrepreneurship</category>
-          
-        
-      
-      
-      <dc:creator>Terry Chen</dc:creator>
-      <dc:date>2025-12-17T00:00:00Z</dc:date>
-    </item>
-    
-    <item>
-      <title>The Agent Economy Starts with Tasks. It Scales Through Attention.</title>
-      <link>https://chenterry.com/posts/crowdlisten_agentic_discovery/</link>
-      <pubDate>Sat, 15 Nov 2025 00:00:00 +0000</pubDate>
-      <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/posts/crowdlisten_agentic_discovery/</guid>
-      <description>Agents already execute workflows; the next shift is attention mediation. As discovery moves from humans to agents, product teams must design for agentic discovery workflows and agent-operated demand.</description>
-      
-      
-        
-          <category>crowdlisten</category>
-        
-      
-      
-        
-          
-          <category>Crowdlisten</category>
-          
-          <category>Product</category>
-          
-          <category>AI</category>
-          
-        
-      
-      
-      <dc:creator>Terry Chen</dc:creator>
-      <dc:date>2025-11-15T00:00:00Z</dc:date>
-    </item>
-    
-    <item>
       <title>Google NotebookLM - Long Context Windows and Multimodality</title>
       <link>https://chenterry.com/posts/google_notebooklm/</link>
       <pubDate>Tue, 11 Nov 2025 00:00:00 +0000</pubDate>
@@ -286,7 +201,34 @@
     </item>
     
     <item>
-      <title>PM for Agents: Turning Audience Insight Into Agent-Ready Specs</title>
+      <title>CrowdListen (Archived v2025-11-09)</title>
+      <link>https://chenterry.com/posts/crowdlisten_archive_v2025_11_09/</link>
+      <pubDate>Sun, 09 Nov 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/posts/crowdlisten_archive_v2025_11_09/</guid>
+      <description>Transform large-scale social conversations into actionable insights. Understand crowd sentiment, track emerging opinions, and identify key narratives.</description>
+      
+      
+        
+          <category>crowdlisten</category>
+        
+      
+      
+        
+          
+          <category>Entrepreneurship</category>
+          
+          <category>Product</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-11-09T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Turning Audience Insight Into Agent-Ready Specs</title>
       <link>https://chenterry.com/posts/crowdlisten/</link>
       <pubDate>Mon, 15 Sep 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
@@ -310,6 +252,35 @@
       
       <dc:creator>Terry Chen</dc:creator>
       <dc:date>2025-09-15T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>CrowdListen (Archived v2025-09-01)</title>
+      <link>https://chenterry.com/posts/crowdlisten_archive_v2025_09_01/</link>
+      <pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/posts/crowdlisten_archive_v2025_09_01/</guid>
+      <description>Understanding collective intelligence and social dynamics. Why crowd psychology matters for product builders and how human need for belonging drives engagement patterns.</description>
+      
+      
+        
+          <category>crowdlisten</category>
+        
+      
+      
+        
+          
+          <category>Crowdlisten</category>
+          
+          <category>Product</category>
+          
+          <category>Archive</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-09-01T00:00:00Z</dc:date>
     </item>
     
     <item>

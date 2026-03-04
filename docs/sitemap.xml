@@ -412,27 +412,6 @@
   
   
   <url>
-    <loc>https://chenterry.com/categories/crowdlisten/</loc>
-    
-    <lastmod>2026-03-04T00:00:00+00:00</lastmod>
-    
-    
-    <changefreq>weekly</changefreq>
-    
-    
-    <priority>0.5</priority>
-    
-    
-    
-    
-    
-    
-    
-  </url>
-  
-  
-  
-  <url>
     <loc>https://chenterry.com/tags/mcp/</loc>
     
     <lastmod>2026-03-04T00:00:00+00:00</lastmod>
@@ -455,6 +434,27 @@
   
   <url>
     <loc>https://chenterry.com/posts/</loc>
+    
+    <lastmod>2026-03-04T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+    
+    
+    
+    
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://chenterry.com/categories/posts/</loc>
     
     <lastmod>2026-03-04T00:00:00+00:00</lastmod>
     
@@ -517,7 +517,7 @@
   
   
   <url>
-    <loc>https://chenterry.com/posts/skills_vs_mcps_for_agents/</loc>
+    <loc>https://chenterry.com/tags/</loc>
     
     <lastmod>2026-03-04T00:00:00+00:00</lastmod>
     
@@ -538,7 +538,7 @@
   
   
   <url>
-    <loc>https://chenterry.com/tags/</loc>
+    <loc>https://chenterry.com/posts/skills_vs_mcps_for_agents/</loc>
     
     <lastmod>2026-03-04T00:00:00+00:00</lastmod>
     
@@ -580,49 +580,28 @@
   
   
   <url>
-    <loc>https://chenterry.com/tags/archive/</loc>
-    
-    <lastmod>2026-03-03T00:00:00+00:00</lastmod>
-    
-    
-    <changefreq>weekly</changefreq>
-    
-    
-    <priority>0.5</priority>
-    
-    
-    
-    
-    
-    
-    
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://chenterry.com/posts/crowdlisten_from_content_aggregation_archive/</loc>
-    
-    <lastmod>2026-03-03T00:00:00+00:00</lastmod>
-    
-    
-    <changefreq>weekly</changefreq>
-    
-    
-    <priority>0.5</priority>
-    
-    
-    
-    
-    
-    
-    
-  </url>
-  
-  
-  
-  <url>
     <loc>https://chenterry.com/tags/crowdlisten/</loc>
+    
+    <lastmod>2026-03-03T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+    
+    
+    
+    
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://chenterry.com/categories/crowdlisten/</loc>
     
     <lastmod>2026-03-03T00:00:00+00:00</lastmod>
     
@@ -1126,27 +1105,6 @@
   
   
   <url>
-    <loc>https://chenterry.com/posts/crowdlisten_agentic_discovery/</loc>
-    
-    <lastmod>2025-11-15T00:00:00+00:00</lastmod>
-    
-    
-    <changefreq>weekly</changefreq>
-    
-    
-    <priority>0.5</priority>
-    
-    
-    
-    
-    
-    
-    
-  </url>
-  
-  
-  
-  <url>
     <loc>https://chenterry.com/tags/observations/</loc>
     
     <lastmod>2025-11-12T00:00:00+00:00</lastmod>
@@ -1276,6 +1234,27 @@
     <loc>https://chenterry.com/posts/search_topic/</loc>
     
     <lastmod>2025-11-11T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+    
+    
+    
+    
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://chenterry.com/posts/crowdlisten_archive_v2025_11_09/</loc>
+    
+    <lastmod>2025-11-09T00:00:00+00:00</lastmod>
     
     
     <changefreq>weekly</changefreq>
@@ -1553,6 +1532,48 @@
     <loc>https://chenterry.com/posts/crowdlisten/</loc>
     
     <lastmod>2025-09-15T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+    
+    
+    
+    
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://chenterry.com/tags/archive/</loc>
+    
+    <lastmod>2025-09-01T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+    
+    
+    
+    
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://chenterry.com/posts/crowdlisten_archive_v2025_09_01/</loc>
+    
+    <lastmod>2025-09-01T00:00:00+00:00</lastmod>
     
     
     <changefreq>weekly</changefreq>
