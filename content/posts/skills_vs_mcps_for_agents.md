@@ -55,42 +55,22 @@ CrowdListen should use both, with clear boundaries.
 
 ### 1) Skills as the default behavior layer
 
-Use Skills to encode how agents should perform audience research and PM transformation work:
-- source evaluation heuristics
-- synthesis rules
-- insight-to-PRD transformation structure
-- ambiguity-reduction checklists
-- handoff formatting and validation
-
-This is where repeatability and product quality come from.
+Skills should carry the behavioral logic for recurring work. In a product workflow, that means encoding how agents evaluate source quality, synthesize evidence, transform findings into PRD-grade structure, reduce ambiguity before delegation, and format handoffs so downstream execution remains faithful to intent. This is the layer that creates repeatability and quality: agents do not just produce outputs, they follow a stable method.
 
 ### 2) MCP as the integration layer
 
-Use MCP where agents need standardized access to systems:
-- source ingestion endpoints
-- cross-platform retrieval and normalization
-- task board operations
-- partner surfaces and controlled external actions
-
-This is where interoperability and ecosystem connectivity come from.
+MCP should sit at the boundary where agents must interact with external systems in a standardized way. That includes source ingestion interfaces, cross-platform retrieval and normalization paths, task-system operations, and controlled partner-facing actions. This layer is about interoperability and safe connectivity, not about teaching the agent how to reason.
 
 ## How this integrates with OpenClaw
 
-For OpenClaw-style operation, the clean model is:
+For OpenClaw-style operation, the clean model is a skills-first execution loop with deliberate MCP usage at system boundaries. The core reasoning loop stays lean and local, while MCP is invoked when external systems must be accessed in a portable and governed way. Tool exposure should remain minimal by default to reduce context drag and accidental behavior, and task/output contracts should stay structured so insights can become agent-ready specs and executable work without translation loss.
 
-1. **Skills-first planning/execution loop** for local reasoning and decision quality
-2. **MCP calls at integration boundaries** when external systems must be accessed
-3. **Minimal tool exposure by default** to reduce context drag and accidental behavior
-4. **Structured task/output contracts** so insights become agent-ready specs and executable tasks
-
-In other words: keep the core loop lean, and use MCP deliberately where standardization actually adds value.
+In short, keep the core loop lean and use MCP where standardization materially improves reliability.
 
 ## Final take
 
-The market is not moving from MCP to Skills. It is moving toward **layered agent architecture**:
-- Skills for specialized, reusable execution behavior
-- MCP for portable tool/data connectivity
+The market is not moving from MCP to Skills as a clean replacement. It is moving toward layered agent architecture, where Skills handle specialized and reusable execution behavior while MCP provides portable tool and data connectivity. The strategic advantage comes from separating these concerns clearly, so capability packaging and systems integration each do their own job well.
 
-CrowdListen’s opportunity is exactly this combination: turn noisy audience signal into structured, high-context product decisions, then route those decisions into agent-ready execution without losing intent.
+CrowdListen’s opportunity is exactly this pattern: transform noisy audience signal into structured, high-context product decisions, then route those decisions into agent-ready execution without losing intent.
 
 That is not an either/or model. It is a product architecture decision.
