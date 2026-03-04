@@ -1,10 +1,10 @@
 ---
 title: "Archive: From Content Aggregation to Original Research"
 description: "Archived earlier CrowdListen framing preserved for reference."
-date: 2026-03-03
+date: 2025-11-01
 author: Terry Chen
 categories: crowdlisten
-tags: ["Crowdlisten", "Archive"]
+tags: ["Crowdlisten", "Product", "Archive"]
 keywords: ["CrowdListen archive", "content aggregation", "original research"]
 archived: true
 ---

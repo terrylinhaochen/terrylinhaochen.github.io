@@ -1,6 +1,6 @@
 ---
 title: "CrowdListen (Archived v2025-10-26)"
-date: 2025-09-15
+date: 2025-10-26
 categories: crowdlisten
 projectURL: crowdlisten.com
 tags: ["Entrepreneurship", "Product"]
