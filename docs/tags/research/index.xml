@@ -60,6 +60,35 @@
     </item>
     
     <item>
+      <title>The Very Beginning</title>
+      <link>https://chenterry.com/posts/the_very_beginning/</link>
+      <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/posts/the_very_beginning/</guid>
+      <description>How CrowdListen started: from content aggregation ideas to original research workflows over unstructured social data.</description>
+      
+      
+        
+          <category>crowdlisten</category>
+        
+      
+      
+        
+          
+          <category>Crowdlisten</category>
+          
+          <category>Origin</category>
+          
+          <category>Research</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2026-03-03T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
       <title>LLM Memory Consolidation and Augmentation</title>
       <link>https://chenterry.com/archived/human-inspired-llm-memory/</link>
       <pubDate>Mon, 10 Mar 2025 00:00:00 +0000</pubDate>
