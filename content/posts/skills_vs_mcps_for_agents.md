@@ -67,6 +67,20 @@ For OpenClaw-style operation, the clean model is a skills-first execution loop w
 
 In short, keep the core loop lean and use MCP where standardization materially improves reliability.
 
+
+
+## When MCP clutters context (and how to design around it)
+
+A useful way to read the "MCP clutters context" critique is as a systems warning, not a protocol rejection. The failure mode appears when MCP is treated as the entire agent architecture rather than the integration boundary. In that setup, the inner reasoning loop gets flooded with tool schemas and repetitive tool-result payloads, so the model spends attention budget on transport mechanics instead of decision quality.
+
+Two anti-patterns show up repeatedly. The first is **tool overexposure**: connecting large numbers of tools and injecting broad definitions up front, even when only a small subset is relevant to the current task. The second is **payload bouncing**: passing large intermediate outputs through model context across multi-step tool chains instead of processing them in an execution layer and returning compact results.
+
+The design response is straightforward. First, keep the **inner loop lean** by exposing only the tools required for the current scope and loading capability details progressively. Second, treat MCP as a **boundary layer**, where deterministic calls happen with clear contracts, while transformation and judgment stay in a behavior layer. Third, move heavy intermediate processing out of the model context whenever possible, and pass distilled outputs back to the model for reasoning.
+
+For CrowdListen, this yields a practical architecture-in-words. The inner loop is skill-driven: source evaluation standards, synthesis heuristics, ambiguity checks, and PRD transformation logic. The boundary loop is MCP-driven: source ingest/sync/retrieval operations in Sources MCP and stateful execution lifecycle operations in Tasks MCP. The integration contract between the two is explicit: Skills decide what should happen and why; MCP executes where and how it must happen in external systems.
+
+This framing resolves the false tradeoff. If you only add tools, the agent becomes connected but noisy. If you only add skills, the agent becomes thoughtful but isolated. A robust stack needs both, with context-sensitive routing between them.
+
 ## Final take
 
 The market is not moving from MCP to Skills as a clean replacement. It is moving toward layered agent architecture, where Skills handle specialized and reusable execution behavior while MCP provides portable tool and data connectivity. The strategic advantage comes from separating these concerns clearly, so capability packaging and systems integration each do their own job well.
