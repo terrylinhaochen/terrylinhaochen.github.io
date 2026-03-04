@@ -19,7 +19,7 @@ thesis_featured: false
 > **Archived snapshot (pulled from commit `a6ddeef`, 2025-11-09).**
 > Historical version preserved from the earlier `crowdlistening.md` lineage.
 
-![CrowdListen Homepage](/images/projects/crowdlistening/homepage-updated.png)
+![CrowdListen Homepage](/images/projects/crowdlistening/crowdlisten-homepage.png)
 
 ## From Content Aggregation to Original Research (crowdlisten.com)
 

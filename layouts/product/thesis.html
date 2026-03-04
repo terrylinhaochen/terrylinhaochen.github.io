@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{- $category := .Params.thesis_category -}}
 {{- $posts := where (where (where .Site.RegularPages "Section" "posts") ".Params.tags" "intersect" (slice "Product")) "Params.categories" $category -}}
-{{- $posts = sort $posts "Date" "asc" -}}
+{{- $posts = sort $posts "Date" "desc" -}}
 {{- $activePosts := where $posts ".Params.archived" "!=" true -}}
 {{- $archivedPosts := where $posts ".Params.archived" true -}}
 
