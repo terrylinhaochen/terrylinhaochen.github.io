@@ -74,3 +74,38 @@ The market is not moving from MCP to Skills as a clean replacement. It is moving
 CrowdListen’s opportunity is exactly this pattern: transform noisy audience signal into structured, high-context product decisions, then route those decisions into agent-ready execution without losing intent.
 
 That is not an either/or model. It is a product architecture decision.
+
+## A concrete CrowdListen stack breakdown: what is MCP, what is Skill
+
+The clearest way to remove ambiguity is to map the CrowdListen stack component by component. CrowdListen Sources MCP and CrowdListen Tasks MCP should remain MCP surfaces because they are integration boundaries by nature. Sources MCP is responsible for platform access, ingestion, normalization, and analysis retrieval across external systems. Tasks MCP is responsible for task lifecycle state, assignment, progress logging, completion records, and multi-session execution coordination. These are protocol concerns: structured calls, permissions, idempotency, and interoperability across agent clients.
+
+The Skill layer should sit on top of those MCP surfaces and control behavior, not transport. A CrowdListen "source-to-PRD" Skill should define how an agent chooses source scope, filters weak evidence, clusters demand signals, writes tradeoff-aware feature narratives, and converts those insights into agent-ready PRD sections. A CrowdListen "task-orchestration" Skill should define when to split work, when to keep ambiguity unresolved and ask follow-up questions, how to write progress notes that preserve context, and what completion quality bar is required before marking work done. In other words, MCP handles the calls; Skills handle the judgment.
+
+This separation is especially useful in OpenClaw-style systems. If you expose only MCP tools without a behavior layer, you get high connectivity with uneven decision quality. If you provide only Skills without integration rails, you get elegant reasoning that cannot reliably act on real systems. The practical architecture is a two-layer contract: MCPs provide deterministic system interfaces, and Skills provide repeatable cognitive workflow.
+
+## Example: one workflow expressed both ways
+
+Consider a common workflow: "Find recurring user pain from social channels, propose features, and create executable tasks." The MCP expression of this workflow is explicit tool interaction: query source adapters, fetch and normalize content, run analysis endpoints, create tasks, update status, and persist outputs. The Skill expression of the same workflow is procedural intent: define confidence thresholds, rank evidence by persistence and impact, write a concise product recommendation with alternatives, and enforce handoff quality before task creation.
+
+When these two expressions are composed, you get a system that can both think and act. The MCP path ensures portability and system reliability; the Skill path ensures that each action is interpreted through product logic rather than shallow automation. This is the core distinction for teams deciding between "building the full agent stack" and "giving agents tools": tools alone do not produce product judgment.
+
+## Should CrowdListen move from MCPs to Skills?
+
+No. CrowdListen should not "move from" MCPs to Skills, because that treats complements as substitutes. The right move is to keep MCPs as stable integration infrastructure and invest more aggressively in Skills as the behavioral operating layer. As the stack matures, MCP endpoints become cleaner and narrower, while Skills become richer and more opinionated about product reasoning and handoff quality.
+
+That path also aligns with the broader shift in agent engineering: lean inner loops, deliberate boundary integrations, and reusable procedural knowledge packaged for agents. If the goal is agent-ready product execution, the winning pattern is not MCP-first or Skill-first in isolation; it is architectural separation with tight composition.
+
+## References
+
+Anthropic, "Skills explained: How Skills compares to prompts, Projects, MCP, and subagents" (2025): https://claude.com/blog/skills-explained
+
+Anthropic Engineering, "Equipping agents for the real world with Agent Skills" (2025): https://claude.com/blog/equipping-agents-for-the-real-world-with-agent-skills
+
+Anthropic Engineering, "Code execution with MCP: Building more efficient agents" (2025): https://www.anthropic.com/engineering/code-execution-with-mcp
+
+Model Context Protocol docs, "What is the Model Context Protocol (MCP)?": https://modelcontextprotocol.io/docs/getting-started/intro
+
+Y Combinator Startup Library, "Anthropic Co-founder: Building Claude Code, Lessons From GPT-3 & LLM System Design": https://www.ycombinator.com/library/Mp-anthropic-co-founder-building-claude-code-lessons-from-gpt-3-llm-system-design
+
+OpenClaw docs: https://docs.openclaw.ai/
+
