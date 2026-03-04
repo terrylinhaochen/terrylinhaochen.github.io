@@ -1,5 +1,5 @@
 ---
-title: "Skills vs MCPs for Agents: What They Are, What They’re Not, and How CrowdListen Should Use Both"
+title: "Skills vs MCP for Agents: Building the Full Agent Stack vs Giving Agents Tools"
 description: "A practical comparison of Skills and MCPs for modern agent workflows, with implications for OpenClaw-style systems and CrowdListen product design."
 date: 2026-03-04
 author: Terry Chen
