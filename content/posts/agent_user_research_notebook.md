@@ -29,6 +29,8 @@ Four working points shape how I currently think about the agent economy:
 3. **Human-optimized tools can constrain agent performance.** Interfaces built to simplify choices for humans often compress away the context agents need for high-fidelity execution.
 4. **Context packaging becomes a core product primitive.** Flattening project knowledge into durable specs (for example, markdown artifacts) improves long-running agent continuity, reduces handoff drift, and keeps intent intact.
 
+These four points connect the field observations to product strategy: if agents are the operating layer, the winning products are the ones that preserve context and make delegated execution dependable.
+
 ## Read full thesis
 
 This post is part of a broader thesis arc:
@@ -68,8 +70,3 @@ Agents still struggle to build stable representations of preference directly fro
 ## Where CrowdListen fits
 
 CrowdListen is built as that missing layer: a structured, queryable map of user needs, objections, sentiment, and behavioral context. It allows agents and operators to reason from traceable evidence instead of shallow scraping or hallucinated summaries. In an agent economy, this substrate becomes core infrastructure for both product discovery and execution reliability.
-
-## Risks and uncertainties
-
-The trajectory is strong, but timing and shape remain uncertain. Agents may remain wrapper-like in some categories longer than expected; trust ceilings may persist in high-stakes workflows; and data-access constraints can limit signal quality. Even so, the direction is consistent: as discovery shifts from humans to agents, structured and trustworthy human-signal infrastructure becomes a strategic requirement.
-
