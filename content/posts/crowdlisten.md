@@ -109,15 +109,21 @@ Kanban closes the loop between product intent and implementation. It decomposes 
 The thesis is simple: in an agent-driven product economy, the bottleneck is no longer writing code, it is preserving intent. Teams that can carry user context through every handoff will iterate faster and ship better decisions, while teams that lose context will scale misalignment. CrowdListen is designed to be the PM layer for agents by translating audience insight into agent-ready specifications that remain grounded in evidence.
 
 
-## MCP layer for agent execution
+## Tooling for agents: MCPs and skills that connect directly to CrowdListen
 
-To make this usable by agents in real workflows, CrowdListen now has two MCP surfaces that map directly to how agents work.
+A large part of our current execution is built around an agent integration layer. In practice, we treat CrowdListen as tooling for agents rather than a dashboard humans manually operate. We expose MCPs and agent skills so agents can directly access CrowdListen features, pull evidence, and convert findings into work artifacts without losing context.
 
-**CrowdListen Sources MCP** is the ingestion and discovery layer. It gives agents a unified interface across social platforms, supports multi-modal analysis, and returns structured outputs that can be used for real research rather than isolated scraping. In practice, this helps agents discover relevant source material quickly, synthesize cross-platform signal, and ground conclusions in evidence rather than generic web summaries.
+This shows up in two concrete examples.
 
-**CrowdListen Tasks MCP** is the execution layer. It connects coding agents to a shared task system so insights can move into scoped work without losing context. It supports task creation, claiming, progress logging, completion summaries, and multi-session parallel execution, which makes it easier for multiple agents to work concurrently while preserving ownership and state.
+### 1) Product management for agents (delegating ambiguity)
 
-Together, these two MCPs form the operational bridge from source signal to shipped work. Sources MCP turns fragmented conversation into structured evidence. Tasks MCP turns that evidence into agent-ready PRDs and executable tasks with enough context to reduce handoff drift. This is the core product direction: a product management system for agents, not just another analytics dashboard.
+The first pattern is delegating ambiguity to agents while keeping intent intact. Agents ingest signals across channels, connect dots between recurring pain points and feature requests, and surface structured opportunities that can be acted on immediately. Instead of handing agents vague summaries, we route evidence-backed context and constraints so they can turn fragmented conversation into actionable feature proposals.
+
+A meaningful share of this workflow now runs through our agent integration layer: source ingestion, synthesis, and conversion into agent-ready specs/tasks. The objective is not more reporting. The objective is reducing ambiguity between signal, decision, and execution.
+
+### 2) Actionable insights for agents, with agents
+
+The second pattern is the same operational loop described above: convert noisy social signal into actionable insights that agents can directly use in planning and delivery. This keeps insight generation and execution tightly connected, so recommendations do not die at handoff.
 
 ## The Insight Paradox
 
