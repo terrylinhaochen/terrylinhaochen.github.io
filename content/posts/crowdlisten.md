@@ -108,6 +108,17 @@ Kanban closes the loop between product intent and implementation. It decomposes 
 
 The thesis is simple: in an agent-driven product economy, the bottleneck is no longer writing code, it is preserving intent. Teams that can carry user context through every handoff will iterate faster and ship better decisions, while teams that lose context will scale misalignment. CrowdListen is designed to be the PM layer for agents by translating audience insight into agent-ready specifications that remain grounded in evidence.
 
+
+## MCP layer for agent execution
+
+To make this usable by agents in real workflows, CrowdListen now has two MCP surfaces that map directly to how agents work.
+
+**CrowdListen Sources MCP** is the ingestion and discovery layer. It gives agents a unified interface across social platforms, supports multi-modal analysis, and returns structured outputs that can be used for real research rather than isolated scraping. In practice, this helps agents discover relevant source material quickly, synthesize cross-platform signal, and ground conclusions in evidence rather than generic web summaries.
+
+**CrowdListen Tasks MCP** is the execution layer. It connects coding agents to a shared task system so insights can move into scoped work without losing context. It supports task creation, claiming, progress logging, completion summaries, and multi-session parallel execution, which makes it easier for multiple agents to work concurrently while preserving ownership and state.
+
+Together, these two MCPs form the operational bridge from source signal to shipped work. Sources MCP turns fragmented conversation into structured evidence. Tasks MCP turns that evidence into agent-ready PRDs and executable tasks with enough context to reduce handoff drift. This is the core product direction: a product management system for agents, not just another analytics dashboard.
+
 ## The Insight Paradox
 
 Brands today face a fundamental paradox: they need broad insights from vast amounts of social data, yet require the detailed understanding typically only available through limited case studies. Current solutions offer either abstracted metrics that require tedious manual interpretation, expensive and limited content screening that can't scale, or surface-level sentiment analysis that misses nuanced opinions. Crowdlisten bridges this gap by combining the scale of algorithmic analysis with the depth of human-like comprehension. This addresses the first challenge identified in ["Essence of Creativity"](/posts/essense_of_creativity/) - helping users understand massive amounts of information and generate meaningful insights when they "don't know what output they want."
