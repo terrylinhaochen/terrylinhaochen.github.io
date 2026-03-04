@@ -19,7 +19,7 @@
 </div>
 {{- end }}
 
-{{- $postsPages := where .Pages ".Params.tags" "intersect" (slice "Posts") }}
+{{- $postsPages := where .Pages ".Params.archived" "!=" true }}
 {{- if $postsPages }}
 <!-- Group posts by year and month -->
 <div class="archive-list">

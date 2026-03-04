@@ -3,9 +3,8 @@ title: "Building Has Become Easier — How Do We Fix Distribution?"
 description: "Notes from working with vibe-coded builders: shipping is fast, distribution is hard, and founder-led workflows are becoming the operating layer between product capability, PRD clarity, and adoption."
 date: 2025-12-17
 author: Terry Chen
-categories: crowdlisten
-thesis_featured: true
-featured_rank: 3
+categories: posts
+thesis_featured: false
 archived: false
 tags: ["Crowdlisten", "Product", "Entrepreneurship"]
 keywords: ["distribution intelligence", "founder-led growth", "vibe coding", "content workflows", "agent workflows", "product requirements", "PRD", "Crowdlisten"]
@@ -35,7 +34,7 @@ This is where the thesis connects back to product architecture.
 
 CrowdListen as **PM for Agents** is about deciding what to build from evidence and turning that into agent-ready specs. CrowdListen as **Marketer for Agents** is about deciding how to package and distribute those capabilities as clear, testable narratives. One decides the work. The other decides how that work gets understood. The practical version is simple: if the PRD is not explicit about the agent workflow and the validation path, distribution becomes guesswork instead of an execution plan.
 
-If these two layers are disconnected, teams ship features that never get adopted, or they market stories that the product cannot actually deliver. If they are connected, distribution becomes a continuation of product work instead of a separate function. That same loop shows up in the feedback-layer framing I describe in [The Real-Time Feedback Layer](/posts/crowdlisten_feedback_layer/), and it is anchored to the agentic discovery shift in [The Agent Economy Starts with Tasks](/posts/crowdlisten_agentic_discovery/).
+If these two layers are disconnected, teams ship features that never get adopted, or they market stories that the product cannot actually deliver. If they are connected, distribution becomes a continuation of product work instead of a separate function. That same loop shows up in the feedback-layer framing I describe in [The Real-Time Feedback Layer](/posts/crowdlisten_feedback_layer/), and it is anchored to the broader agent-economy thesis in [The Agent Economy, User Testing on Moltbook](/posts/agent_user_research_notebook/).
 
 ## Working Thesis (March 2)
 

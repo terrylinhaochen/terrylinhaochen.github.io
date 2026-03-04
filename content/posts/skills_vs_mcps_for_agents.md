@@ -1,9 +1,10 @@
 ---
-title: "Skills vs MCP for Agents: Building the Full Agent Stack vs Giving Agents Tools"
+title: "When to Use MCPs vs Skills for Agents"
 description: "A practical comparison of Skills and MCPs for modern agent workflows, with implications for OpenClaw-style systems and CrowdListen product design."
 date: 2026-03-04
 author: Terry Chen
-categories: crowdlisten
+categories: posts
+thesis_featured: false
 tags: ["AI", "Product", "Agents", "MCP", "Skills"]
 keywords: ["Skills vs MCP", "OpenClaw", "agent tooling", "CrowdListen", "agent-ready specs", "Peter Steinberger"]
 archived: false
