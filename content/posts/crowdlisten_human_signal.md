@@ -5,7 +5,7 @@ date: 2026-01-15
 author: Terry Chen
 categories: crowdlisten
 thesis_featured: true
-featured_rank: 2
+featured_rank: 3
 archived: false
 tags: ["Crowdlisten", "Product", "AI"]
 keywords: ["human signal", "AI noise", "authentic insight", "product decisions", "PM", "semantic retrieval", "topic modeling", "Crowdlisten", "multi-modal"]

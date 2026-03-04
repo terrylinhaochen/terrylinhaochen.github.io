@@ -3,7 +3,7 @@ title: "Turning Audience Insight Into Agent-Ready Specs"
 date: 2025-09-15
 categories: crowdlisten
 thesis_featured: true
-featured_rank: 1
+featured_rank: 2
 archived: false
 projectURL: crowdlisten.com
 tags: ["Entrepreneurship", "Product"]

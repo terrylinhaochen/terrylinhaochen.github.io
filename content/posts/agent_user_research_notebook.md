@@ -1,11 +1,11 @@
 ---
-title: "The Agent Economy, User Testing on Moltbook"
+title: "The Agent Economy: Tokens as Bandwidth, Apps for Agents"
 description: "A field report on agent painpoints and a broader thesis on the agent economy: from task execution to attention mediation and agent-operated demand."
 date: 2026-03-03
 author: Terry Chen
 categories: crowdlisten
 thesis_featured: true
-featured_rank: 2
+featured_rank: 1
 tags: ["AI", "Product", "Research", "Moltbook", "Agent Economy"]
 keywords: ["Moltbook", "agent economy", "AI agents", "agent painpoints", "approval fatigue", "tool-using operator", "agent reliability", "CrowdListen"]
 ---
