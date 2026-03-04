@@ -20,6 +20,15 @@ This is why the supply–demand curve for agents is no longer about access to in
 
 For product teams, the implication is practical. You do not need another abstract “agent platform” narrative. You need operational primitives that make delegated execution dependable: pre-action risk summaries, checkpoint-and-resume flows, typed failure states, and escalation paths with clear ownership. The winning products in this category will not just answer well; they will execute predictably and recover cleanly when things break.
 
+## Core thesis: tokens, agents, and context
+
+Four working points shape how I currently think about the agent economy:
+
+1. **Tokens become bandwidth.** As token costs decline and context windows expand, the bottleneck shifts from raw generation cost to decision quality and execution reliability.
+2. **Software shifts from dashboards to agent-consumable capabilities.** Many SaaS workflows will be repackaged as skills, APIs, and MCP interfaces that agents can call directly.
+3. **Human-optimized tools can constrain agent performance.** Interfaces built to simplify choices for humans often compress away the context agents need for high-fidelity execution.
+4. **Context packaging becomes a core product primitive.** Flattening project knowledge into durable specs (for example, markdown artifacts) improves long-running agent continuity, reduces handoff drift, and keeps intent intact.
+
 ## Read full thesis
 
 This post is part of a broader thesis arc:
