@@ -655,15 +655,18 @@
         
       </header>
       <div class="thesis-section-body">
-        <h2 id="delegating-ambiguity-in-the-agent-economy">Delegating Ambiguity in the Agent Economy</h2>
-<p>As token costs continue to fall, more work shifts into agent-mediated execution. We can already see this in practice: mobile and operating-layer agents are starting to run app-level actions for users, while systems like OpenClaw handle research, synthesis, and content-production workflows that previously required manual coordination across many tools. The interface between humans and tooling is no longer direct in many workflows; agents increasingly sit in the middle, orchestrating tools and information on behalf of people.</p>
-<p>That shift changes the bottleneck. The hard part is not only generating code or content quickly—it is resolving ambiguity correctly: extracting durable signal from noisy human discussion, reconciling conflicting constraints, and preserving rationale from discovery through execution.</p>
-<h2 id="from-unstructured-discussion-to-executable-context">From Unstructured Discussion to Executable Context</h2>
-<p>In an agent-mediated economy, winning systems must run one continuous pipeline: reason over large volumes of unstructured human data (social discussion, internal docs, operator notes), distill that signal into decision-grade themes and trade-offs, and store the result as full-context requirements that agents can execute with high fidelity. CrowdListen is built for this layer—not as another dashboard, but as the ambiguity-delegation system that converts fragmented multimodal input into structured, traceable, agent-ready specs.</p>
-<h2 id="why-context-formation-and-context-preservation-matter">Why Context Formation and Context Preservation Matter</h2>
-<p>Traditional software assumed humans would absorb complexity through interfaces and then manually coordinate execution. In agent-mediated workflows, that coordination increasingly moves to agents. For delegated execution to work, teams need both context formation (reasoning through messy signal into coherent constraints and priorities) and context preservation (packaging that reasoning into specs and artifacts that survive handoffs across product, engineering, and go-to-market workflows). Without both, agents execute quickly but drift strategically.</p>
-<h2 id="product-direction-build-for-reliable-delegation">Product Direction: Build for Reliable Delegation</h2>
-<p>The goal is not more AI output; the goal is reliable delegation. Systems should let agents act on complete context rather than thin prompts, with clear rationale, constraints, and evaluation criteria carried forward. CrowdListen’s role is to provide that context substrate—from unstructured discussion to full-context specs—so agent execution remains aligned with real user intent and business constraints.</p>
+        <blockquote>
+<p><strong>Thesis role:</strong> Macro frame — what is changing in software as agents become the operational layer.</p>
+</blockquote>
+<h2 id="the-interface-shift-humans--agents--tools">The Interface Shift: Humans → Agents → Tools</h2>
+<p>As token costs continue to fall, more work moves into agent-mediated execution. We already see this in practice: operating-layer agents can run app actions, and systems like OpenClaw can coordinate research, synthesis, and production workflows that previously required manual tool switching. In many workflows, humans are no longer the direct interface to every tool; agents increasingly sit in the middle.</p>
+<p>This changes the product bottleneck. The hard part is not only generation speed, but ambiguity delegation: how to carry constraints, trade-offs, and rationale from human intent into executable action.</p>
+<h2 id="delegating-ambiguity-not-just-tasks">Delegating Ambiguity, Not Just Tasks</h2>
+<p>In human teams, incomplete requirements are often repaired through shared context and follow-up conversation. Agent workflows are less forgiving. If intent is implicit, distributed, or contradictory, agents can execute quickly but drift strategically.</p>
+<p>The practical implication is that agent-era systems must support reasoning transfer, not just command transfer. Teams need mechanisms that preserve upstream judgment—why this trade-off, why this constraint, why now—so delegated execution remains aligned.</p>
+<h2 id="what-winning-systems-must-provide">What Winning Systems Must Provide</h2>
+<p>In an agent-mediated economy, durable advantage comes from systems that can reason over unstructured human signal, distill decision-grade constraints, and package full-context artifacts that survive handoffs across product, engineering, and go-to-market functions.</p>
+<p>This is the foundation for the rest of the CrowdListen thesis: if agents become primary operators, then context quality and ambiguity handling become first-order product design variables.</p>
 
       </div>
     </section>
@@ -680,7 +683,10 @@
         
       </header>
       <div class="thesis-section-body">
-        <div class="cl-thesis-note">
+        <blockquote>
+<p><strong>Thesis role:</strong> System design — how CrowdListen converts ambiguity into agent-ready execution context.</p>
+</blockquote>
+<div class="cl-thesis-note">
   <strong>The problem:</strong> customer feedback is fragmented and unstructured, while PRDs written for humans often fail when passed to coding agents because intent and context are lost. <strong>CrowdListen preserves and operationalizes intent</strong> by synthesizing user signal into agent-ready PM specs that decompose features into executable tasks with full context.
 </div>
 <style>
@@ -721,15 +727,9 @@
   .cl-video-title { font-size: 16px; color: var(--primary); font-weight: 600; margin-bottom: 8px; }
   .cl-video-cta { font-size: 13px; color: var(--secondary); }
 </style>
-<h2 id="the-cost-of-ambiguity-in-the-agent-economy">The cost of ambiguity in the agent economy</h2>
+<h2 id="why-this-product-exists-ambiguity-breaks-execution">Why this product exists: ambiguity breaks execution</h2>
 <p>In the agent economy, ambiguity compounds cost faster than most teams expect. A team can ingest massive volumes of comments, videos, and feedback across channels and still miss the actual decision signal. The dashboards look complete, but when it is time to prioritize, the core question remains unresolved: which pain points are durable, which are transient, and what should be built now.</p>
 <p>This is where execution quality breaks down. If ambiguity is not reduced early, it propagates through planning, handoff, and implementation. Agents can execute quickly, but they execute what they are given. When context is fuzzy, speed amplifies misalignment. CrowdListen is designed to reduce that ambiguity before work is delegated, so the transition from signal to decision to execution remains grounded in evidence.</p>
-<h2 id="token-bandwidth-and-agent-native-product-design">Token bandwidth and agent-native product design</h2>
-<p>Tokens increasingly behave like cognitive bandwidth, not just usage cost. As token prices decline and context windows expand, the bottleneck shifts from generation to decision quality: preserving intent, ranking signal quality, and keeping execution reliable across long workflows.</p>
-<p>This changes how products should be built. Human-first SaaS interfaces compress complexity for people, but that same compression can remove context agents need for high-fidelity execution. CrowdListen is designed as an agent-consumable context layer: evidence, rationale, constraints, and task-ready outputs in one flow.</p>
-<h2 id="context-packaging-and-long-running-agent-execution">Context packaging and long-running agent execution</h2>
-<p>A pattern we repeatedly see in strong agent workflows is flattening fragmented project knowledge into durable markdown specs and references. With full project context in machine-readable form, agents can run longer, maintain continuity, and reduce handoff drift.</p>
-<p>That is why CrowdListen focuses on structured outputs rather than raw dashboards. The product packages audience signal into traceable context that agents can use directly, from discovery through execution.</p>
 <h2 id="product-suite-overview">Product Suite Overview</h2>
 <p>
 
@@ -791,25 +791,19 @@
         
       </header>
       <div class="thesis-section-body">
-        <h2 id="why-this-problem-matters-now">Why this problem matters now</h2>
-<p>The most relevant and influential market signal increasingly comes from unstructured web data: user-generated posts, short-form videos, comments, and community discussion. This data is constantly refreshed, behavior-linked, and closer to real user interpretation than polished summary content. There may not be a single authoritative answer in these environments, but there is a high-fidelity map of what people are actually noticing, feeling, and reacting to in real time.</p>
-<p>As content shifts toward short-form and visual-first formats, this signal becomes harder to extract. The question is no longer “how much data do we have?” but “how do we interpret multimodal discourse at scale without losing context?”</p>
-<h2 id="two-dominant-approaches-today">Two dominant approaches today</h2>
-<h3 id="1-the-flatten-to-text-pipeline-asrocr--ner">1) The flatten-to-text pipeline (ASR/OCR + NER)</h3>
-<p>The traditional route converts multimodal inputs into text first: ASR for audio, OCR for on-screen text, plus comments and metadata flattened into one corpus. Then NER/keyword extraction is applied to identify themes.</p>
-<p>This approach is efficient, but it breaks important structure. Original content (tier-one opinion) and comment reaction (tier-two interpretation) get merged too early. Once flattened, weighting and causality become blurry: you can extract keywords, but you lose clarity on which signal should matter more and why.</p>
-<h3 id="2-direct-multimodal-model-pipelines">2) Direct multimodal model pipelines</h3>
-<p>A newer route uses multimodal language models and vision-language models more directly. This improves semantic coverage, but introduces cost/latency trade-offs and still does not fully solve structural interpretation. In many practical systems, multimodal understanding is still implemented as segmented processing rather than true platform-aware reasoning.</p>
-<p>The missing layer is not only better models; it is better representation of how content is formatted and consumed across environments (e.g., TikTok, Slack, community threads). Without that processing layer, outputs improve superficially but still miss key decision context.</p>
-<h2 id="the-core-failure-mode">The core failure mode</h2>
-<p>Humans interpret multimodal content with implicit structure: we see salience cues, we process original context before comments, and we infer intent from presentation plus response. Social platforms are designed for this human parsing loop.</p>
-<p>Agents do not automatically inherit that loop. If we want agent-mediated product research to work, we need explicit structure that preserves hierarchy, weighting, and evidentiary relationships across modalities.</p>
-<h2 id="a-better-framing-for-feature-extraction">A better framing for feature extraction</h2>
-<p>Feature extraction should be treated as decision infrastructure, not preprocessing. The goal is to move from noisy multimodal discussion to weighted, traceable evidence that can support product decisions.</p>
-<p>In practice, this means separating tier-one source signal from tier-two reaction signal, weighting evidence by persistence, engagement, and relevance, preserving rationale and trade-offs through synthesis, and producing outputs that survive handoff into execution.</p>
-<h2 id="from-multimodal-signal-to-agent-ready-action">From multimodal signal to agent-ready action</h2>
-<p>For PM workflows, the objective is not to generate more summaries. It is to produce decision-ready structure: prioritized problem clusters, representative evidence, constraints, and full-context specs that agents can execute against.</p>
-<p>CrowdListen is built around this principle. The product turns fragmented multimodal audience discussion into structured, traceable, agent-ready insight so teams can delegate more work without losing intent.</p>
+        <blockquote>
+<p><strong>Thesis role:</strong> Technical substrate — how multimodal signal becomes decision-grade input for agent execution.</p>
+</blockquote>
+<h2 id="the-data-problem">The Data Problem</h2>
+<p>The most relevant market signal increasingly lives in unstructured web discourse: short-form video, comments, threads, and community discussion. This data is rich and current, but difficult to interpret at scale because meaning is distributed across modalities and interaction context.</p>
+<h2 id="two-implementation-branches">Two Implementation Branches</h2>
+<p>The first branch is flatten-to-text: ASR/OCR plus comments and metadata are merged, then NER/keyword extraction is applied. This is efficient, but it collapses structure too early. Tier-one source content and tier-two reaction signal become mixed, making weighting and causality blurry.</p>
+<p>The second branch is direct multimodal model pipelines. This improves semantic coverage, but often increases latency/cost and still under-specifies platform-aware structure. Better models help, but do not automatically solve representation quality.</p>
+<h2 id="what-is-missing">What Is Missing</h2>
+<p>The missing layer is structured interpretation: explicit handling of signal hierarchy, evidentiary weighting, and cross-modal relationships. Humans do this naturally when consuming content; agents need it encoded.</p>
+<h2 id="feature-extraction-as-decision-infrastructure">Feature Extraction as Decision Infrastructure</h2>
+<p>Feature extraction should be treated as decision infrastructure, not preprocessing. The output must be traceable and actionable: prioritized themes, weighted evidence, trade-offs, and constraints that can be passed forward into full-context specs.</p>
+<p>This is how multimodal content understanding becomes useful in the agent economy: not as summary generation, but as a reliable substrate for ambiguity resolution and downstream execution.</p>
 
       </div>
     </section>
