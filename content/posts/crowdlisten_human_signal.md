@@ -32,3 +32,13 @@ The missing layer is structured interpretation: explicit handling of signal hier
 Feature extraction should be treated as decision infrastructure, not preprocessing. The output must be traceable and actionable: prioritized themes, weighted evidence, trade-offs, and constraints that can be passed forward into full-context specs.
 
 This is how multimodal content understanding becomes useful in the agent economy: not as summary generation, but as a reliable substrate for ambiguity resolution and downstream execution.
+
+## Business Model and Competitive Position in an Agent Economy
+
+A core economic shift is happening from SaaS priced per human seat to systems where agents increasingly function as operational headcount. In that world, charging mainly for interface access becomes less defensible than charging for completed work. The more relevant unit is successful task throughput: how many useful synthesis, decision, and execution tasks the system actually completes with quality.
+
+Because baseline model runtime costs continue to compress, raw model access becomes less differentiated over time. What differentiates value is outcome conversion: whether the system can reliably transform noisy, multimodal input into high-quality requirements and downstream execution artifacts. That supports a consumption model tied to completed tasks or validated outcomes rather than static seat count.
+
+On competition, foundation-model companies and large platforms will likely dominate broad planning layers and general agent orchestration. The strategic gap is the intent-preservation layer: converting unstructured, multimodal human signal into context that agents can execute against without drift. This is less about who has the biggest model and more about who owns the strongest translation layer from discourse to decision.
+
+Over time, each company will accumulate its own delegation assets: constraint libraries, brand logic, quality thresholds, decision history, and reusable context specs. Those assets become compounding infrastructure for agent execution and may be defensibility points if integrated deeply into workflow and governance. In that framing, feature extraction is not a reporting feature; it is the front end of a results-oriented delegation system.
