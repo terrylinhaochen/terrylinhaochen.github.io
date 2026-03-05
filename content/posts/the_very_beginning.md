@@ -1,13 +1,18 @@
 ---
-title: "The Very Beginning"
+title: "CrowdListen (Archived v2025-08)"
 description: "How CrowdListen started: from content aggregation ideas to original research workflows over unstructured social data."
-date: 2026-03-03
+date: 2025-08-15
 author: Terry Chen
 categories: crowdlisten
-tags: ["Crowdlisten", "Origin", "Research"]
+tags: ["Crowdlisten", "Product", "Archive"]
 keywords: ["CrowdListen origin", "original research", "content aggregation", "social data", "MCP"]
-archived: false
+archived: true
+thesis_featured: false
 ---
+> **Archived snapshot (v2025-08).**
+> Early CrowdListen thesis draft preserved for lineage.
+
+
 
 This is the origin story behind CrowdListen. Before the current product architecture, there was a simpler but important question: can we move from generic content aggregation to genuine original research directly on raw social data?
 
