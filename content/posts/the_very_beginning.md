@@ -1,7 +1,7 @@
 ---
-title: "CrowdListen (Archived v2025-08)"
+title: "CrowdListen (Archived v2025-08-29)"
 description: "How CrowdListen started: from content aggregation ideas to original research workflows over unstructured social data."
-date: 2025-08-15
+date: 2025-08-29
 author: Terry Chen
 categories: crowdlisten
 tags: ["Crowdlisten", "Product", "Archive"]
@@ -9,7 +9,7 @@ keywords: ["CrowdListen origin", "original research", "content aggregation", "so
 archived: true
 thesis_featured: false
 ---
-> **Archived snapshot (v2025-08).**
+> **Archived snapshot (v2025-08-29).**
 > Early CrowdListen thesis draft preserved for lineage.
 
 
