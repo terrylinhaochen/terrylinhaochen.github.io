@@ -1,6 +1,6 @@
 ---
 title: "The Agent Economy: Tokens as Bandwidth, Apps for Agents"
-description: "A field report on agent painpoints and a broader thesis on the agent economy: from task execution to attention mediation and agent-operated demand."
+description: "A reasoned view of the agent economy: practical pain points today, what is changing, and where agent-mediated software is headed."
 date: 2026-03-03
 author: Terry Chen
 categories: crowdlisten
