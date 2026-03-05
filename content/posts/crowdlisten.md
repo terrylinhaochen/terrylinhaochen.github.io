@@ -88,7 +88,7 @@ That is why CrowdListen focuses on structured outputs rather than raw dashboards
 
 CrowdListen is built around a specific execution failure we kept seeing in real teams: feedback is fragmented across channels, synthesis is manual, and intent gets lost between research, planning, and delivery. Most product organizations can collect signal, but they cannot preserve the original user context all the way to implementation. That is where quality drops. Requirements become abstract, handoffs become lossy, and coding agents produce work that is technically correct but strategically misaligned.
 
-We designed the product as one connected operating flow instead of disconnected tools. Feed captures and structures raw audience signal, Workspace turns that signal into evidence-backed product direction, and Kanban routes scoped work to agents with enough context to execute reliably. The system is not trying to generate more artifacts; it is trying to preserve decision quality from first observation to shipped output.
+We designed the product as one connected operating flow instead of disconnected tools. Feed captures and structures raw audience signal, Workspace turns that signal into evidence-backed product direction, and Tasks routes scoped work to agents with enough context to execute reliably. The system is not trying to generate more artifacts; it is trying to preserve decision quality from first observation to shipped output.
 
 ### Feed
 
@@ -102,11 +102,11 @@ Feed consolidates cross-channel conversation into a single signal layer, includi
 
 Workspace is where teams turn raw signal into decisions. It supports conversational exploration of the problem space, helps validate hypotheses against evidence, and produces richer product artifacts than traditional summary docs. The emphasis is not on writing longer PRDs; it is on preserving rationale, constraints, and user context so that every decision remains traceable back to real audience behavior.
 
-### Kanban
+### Tasks
 
-![Kanban: From Insight to Execution](/images/projects/crowdlistening/kanban-execution-2026-03.png)
+![Tasks: From Insight to Execution](/images/projects/crowdlistening/kanban-execution-2026-03.png)
 
-Kanban closes the loop between product intent and implementation. It decomposes specs into executable tasks and routes them to coding agents with project context intact, which reduces drift between what the team intended and what actually gets built. This is the layer that turns CrowdListen from an analysis product into an execution system: user signal becomes prioritized work, and prioritized work becomes shipped outcomes with accountability.
+Tasks closes the loop between product intent and implementation. It decomposes specs into executable tasks and routes them to coding agents with project context intact, which reduces drift between what the team intended and what actually gets built. This is the layer that turns CrowdListen from an analysis product into an execution system: user signal becomes prioritized work, and prioritized work becomes shipped outcomes with accountability.
 
 ### Why this structure matters
 

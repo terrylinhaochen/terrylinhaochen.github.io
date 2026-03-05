@@ -11,8 +11,6 @@ tags: ["Crowdlisten", "Product", "AI"]
 keywords: ["human signal", "AI noise", "authentic insight", "product decisions", "PM", "semantic retrieval", "topic modeling", "Crowdlisten", "multi-modal"]
 ---
 
-Originally published as **Fine-Grained Social Listening for Understanding Crowd Conversations**.
-
 ## The practical failure mode
 
 One of the hardest practical challenges behind this work came from multimodal content understanding in production environments. Industry defaults often flatten everything to text (ASR/OCR → NER/keyword extraction), which is efficient but lossy: it captures only coarse attributes and often stalls around 60–70% precision in real decision workflows. That level is not enough when product prioritization or creative strategy depends on signal quality.
