@@ -2,8 +2,8 @@
 <html lang="en" dir="auto">
 
 <head>
-<meta name="description" content="A field report on agent painpoints and a broader thesis on the agent economy: from task execution to attention mediation and agent-operated demand.">
-<meta name="keywords" content="Moltbook, agent economy, AI agents, agent painpoints, approval fatigue, tool-using operator, agent reliability, CrowdListen">
+<meta name="description" content="A reasoned view of the agent economy: what is changing, where agent-mediated software is headed, and what product teams should build for next.">
+<meta name="keywords" content="Moltbook, agent economy, AI agents, agent-mediated software, tool-using operator, agent reliability, CrowdListen">
 <meta name="author" content="Terry Chen">
 <meta name="robots" content="index, follow">
 <meta name="language" content="en-us">
@@ -14,7 +14,7 @@
 
 
 <meta property="og:title" content="The Agent Economy: Tokens as Bandwidth, Apps for Agents | Terry Chen">
-<meta property="og:description" content="A field report on agent painpoints and a broader thesis on the agent economy: from task execution to attention mediation and agent-operated demand.">
+<meta property="og:description" content="A reasoned view of the agent economy: what is changing, where agent-mediated software is headed, and what product teams should build for next.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://chenterry.com/posts/agent_user_research_notebook/">
 <meta property="og:site_name" content="Terry Chen">
@@ -56,7 +56,7 @@
 <meta name="twitter:site" content="@terrychen_ai">
 <meta name="twitter:creator" content="@terrychen_ai">
 <meta name="twitter:title" content="The Agent Economy: Tokens as Bandwidth, Apps for Agents | Terry Chen">
-<meta name="twitter:description" content="A field report on agent painpoints and a broader thesis on the agent economy: from task execution to attention mediation and agent-operated demand.">
+<meta name="twitter:description" content="A reasoned view of the agent economy: what is changing, where agent-mediated software is headed, and what product teams should build for next.">
 
 
 <meta name="twitter:image" content="https://chenterry.com/images/profile.jpg">
@@ -86,12 +86,12 @@
       "url": "https:\/\/chenterry.com\/images/profile.jpg"
     }
   },
-  "description": "A field report on agent painpoints and a broader thesis on the agent economy: from task execution to attention mediation and agent-operated demand.",
+  "description": "A reasoned view of the agent economy: what is changing, where agent-mediated software is headed, and what product teams should build for next.",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https:\/\/chenterry.com\/posts\/agent_user_research_notebook\/"
   },
-  "keywords": "Moltbook, agent economy, AI agents, agent painpoints, approval fatigue, tool-using operator, agent reliability, CrowdListen",
+  "keywords": "Moltbook, agent economy, AI agents, agent-mediated software, tool-using operator, agent reliability, CrowdListen",
   "articleSection": "crowdlisten"
   ,
   "image": {
@@ -210,7 +210,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow"><title>The Agent Economy: Tokens as Bandwidth, Apps for Agents | Terry Chen</title>
-<meta name="keywords" content="Moltbook, agent economy, AI agents, agent painpoints, approval fatigue, tool-using operator, agent reliability, CrowdListen">
+<meta name="keywords" content="Moltbook, agent economy, AI agents, agent-mediated software, tool-using operator, agent reliability, CrowdListen">
 <meta name="author" content="Terry Chen">
 <link rel="alternate" type="text/plain" title="llms.txt" href="https://chenterry.com/llms.txt">
 <link rel="alternate" type="application/x-ndjson" title="agent FAQ corpus" href="https://chenterry.com/qa/agent-faq.jsonl">
@@ -281,7 +281,7 @@
       </script><meta property="og:url" content="https://chenterry.com/posts/agent_user_research_notebook/">
   <meta property="og:site_name" content="Terry Chen">
   <meta property="og:title" content="The Agent Economy: Tokens as Bandwidth, Apps for Agents">
-  <meta property="og:description" content="A field report on agent painpoints and a broader thesis on the agent economy: from task execution to attention mediation and agent-operated demand.">
+  <meta property="og:description" content="A reasoned view of the agent economy: what is changing, where agent-mediated software is headed, and what product teams should build for next.">
   <meta property="og:locale" content="en-us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -296,7 +296,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://chenterry.com/images/profile.jpg">
 <meta name="twitter:title" content="The Agent Economy: Tokens as Bandwidth, Apps for Agents">
-<meta name="twitter:description" content="A field report on agent painpoints and a broader thesis on the agent economy: from task execution to attention mediation and agent-operated demand.">
+<meta name="twitter:description" content="A reasoned view of the agent economy: what is changing, where agent-mediated software is headed, and what product teams should build for next.">
 
 
 <script type="application/ld+json">
@@ -325,12 +325,12 @@
   "@type": "BlogPosting",
   "headline": "The Agent Economy: Tokens as Bandwidth, Apps for Agents",
   "name": "The Agent Economy: Tokens as Bandwidth, Apps for Agents",
-  "description": "A field report on agent painpoints and a broader thesis on the agent economy: from task execution to attention mediation and agent-operated demand.",
+  "description": "A reasoned view of the agent economy: what is changing, where agent-mediated software is headed, and what product teams should build for next.",
   "keywords": [
-    "Moltbook", "agent economy", "AI agents", "agent painpoints", "approval fatigue", "tool-using operator", "agent reliability", "CrowdListen"
+    "Moltbook", "agent economy", "AI agents", "agent-mediated software", "tool-using operator", "agent reliability", "CrowdListen"
   ],
-  "articleBody": "This piece combines field observation with product thesis. I analyzed live discussions on Moltbook to understand where agent systems fail in practice, then connected those failures to the larger economics of agent adoption. The core conclusion is straightforward: model capability is improving quickly, but operational trust is not. That gap is now the rate-limiting factor for real adoption.\nIn day-to-day usage, the same failure modes appear repeatedly. Human operators are overloaded by unnecessary approvals, agents lose continuity after restarts, handoffs preserve task steps but lose intent, and integration surfaces remain fragile when systems encounter rate limits or partial failures. These are not edge cases. They are routine friction points that consume budget, reduce confidence, and slow teams that otherwise have strong technical capacity.\nThe strategic split is between AI as a local tool and AI as a tool-using operator. In the first model, the human still owns execution and the model accelerates individual steps. In the second model, the agent executes across systems and must therefore satisfy stricter requirements: authority boundaries, auditability, reversibility, and recovery. Most value in the emerging agent economy will come from the second model, and most risk is concentrated there as well.\nThis is why the supply–demand curve for agents is no longer about access to intelligence. Demand is growing for agents that can complete scoped workflows with low supervision. Supply is constrained by trust infrastructure: risk-tiered permissioning, reliable rollback, durable handoff contracts, and operator-visible evidence for decisions. Teams that close this trust gap will capture disproportionate value because they can safely convert capability into throughput.\nFor product teams, the implication is practical. You do not need another abstract “agent platform” narrative. You need operational primitives that make delegated execution dependable: pre-action risk summaries, checkpoint-and-resume flows, typed failure states, and escalation paths with clear ownership. The winning products in this category will not just answer well; they will execute predictably and recover cleanly when things break.\nCore thesis: tokens, agents, and context Four working points shape how I currently think about the agent economy:\nTokens become bandwidth. As token costs decline and context windows expand, the bottleneck shifts from raw generation cost to decision quality and execution reliability. Software shifts from dashboards to agent-consumable capabilities. Many SaaS workflows will be repackaged as skills, APIs, and MCP interfaces that agents can call directly. Human-optimized tools can constrain agent performance. Interfaces built to simplify choices for humans often compress away the context agents need for high-fidelity execution. Context packaging becomes a core product primitive. Flattening project knowledge into durable specs (for example, markdown artifacts) improves long-running agent continuity, reduces handoff drift, and keeps intent intact. These four points connect the field observations to product strategy: if agents are the operating layer, the winning products are the ones that preserve context and make delegated execution dependable.\nRead full thesis This post is part of a broader thesis arc:\nFeature Extraction Based on Multi-Modal Content Understanding Read together, these pieces map the shift from fragmented social signal to agent-operated product demand and execution.\nIntegrated thesis: from tasks to attention mediation The core argument from my earlier post, The Agent Economy Starts with Tasks. It Scales Through Attention., is now folded into this piece. Agents first win by automating repetitive, high-cognitive-load tasks such as search, synthesis, and comparison. As those workflows mature, the bottleneck shifts from execution to discovery: which products, claims, and evidence get surfaced inside agent-mediated decision loops.\nThat shift changes product strategy. Teams are no longer optimizing only for human persuasion on landing pages. They are increasingly optimizing for machine-legible truth: semantic clarity, consistency across claims, and alignment with real user outcomes. In other words, attention becomes mediated by agents, and demand is increasingly routed by the quality of structured evidence available to those agents.\nThis is where Crowdlisten’s role expands beyond social listening. The opportunity is to provide a reliable signal substrate that agents can query: what users actually prefer, where friction persists, and which objections predict churn or non-adoption. If this substrate is weak, agents hallucinate or overfit to surface-level content. If it is strong, agents can make better recommendations and operators can trust delegated decisions.\nSo the combined thesis is:\nagent adoption starts with delegated task execution, market power accrues at the attention-routing layer, durable advantage comes from trustworthy signal plus recoverable operations. That is why the product roadmap must connect discovery, decision quality, and execution reliability in one system rather than treating them as separate tools.\nThree forces behind agentic discovery workflows This transition is reinforced by three structural forces. First, the tasks agents replace—search, synthesis, and multi-criteria comparison—are repetitive and cognitively expensive for humans, so automation pressure is inherently high. Second, interfaces are converging toward natural-language agent layers across OS, browser, and productivity surfaces, which shifts cognitive work upstream to agents. Third, platforms are incentivized to control this layer because agent-mediated discovery becomes a distribution channel.\nContent becomes data in agent-mediated decisions As agents consume more of the web, content is evaluated less as narrative and more as data. Agents extract claims, features, pricing, evidence, and contradictions, then cross-check those against technical docs, competitors, and user feedback. In this setting, semantic clarity and consistency matter more than persuasive copy. The ranking question becomes: does this claim align with lived user experience?\nThe missing layer: trustworthy human signal Agents still struggle to build stable representations of preference directly from noisy, multimodal public data. They can interpret individual samples well but are weaker at persistent clustering, temporal tracking, and robust tradeoff modeling under ambiguity. That creates a missing layer between raw discourse and dependable agent decisions.\nWhere CrowdListen fits CrowdListen is built as that missing layer: a structured, queryable map of user needs, objections, sentiment, and behavioral context. It allows agents and operators to reason from traceable evidence instead of shallow scraping or hallucinated summaries. In an agent economy, this substrate becomes core infrastructure for both product discovery and execution reliability.\n",
-  "wordCount" : "986",
+  "articleBody": "Delegating Ambiguity in the Agent Economy As token costs continue to fall, more work shifts into agent-mediated execution. We can already see this in practice: mobile and operating-layer agents are starting to run app-level actions for users, while systems like OpenClaw handle research, synthesis, and content-production workflows that previously required manual coordination across many tools. The interface between humans and tooling is no longer direct in many workflows; agents increasingly sit in the middle, orchestrating tools and information on behalf of people.\nThat shift changes the bottleneck. The hard part is not only generating code or content quickly—it is resolving ambiguity correctly: extracting durable signal from noisy human discussion, reconciling conflicting constraints, and preserving rationale from discovery through execution.\nFrom Unstructured Discussion to Executable Context In an agent-mediated economy, winning systems must run one continuous pipeline: reason over large volumes of unstructured human data (social discussion, internal docs, operator notes), distill that signal into decision-grade themes and trade-offs, and store the result as full-context requirements that agents can execute with high fidelity. CrowdListen is built for this layer—not as another dashboard, but as the ambiguity-delegation system that converts fragmented multimodal input into structured, traceable, agent-ready specs.\nWhy Context Formation and Context Preservation Matter Traditional software assumed humans would absorb complexity through interfaces and then manually coordinate execution. In agent-mediated workflows, that coordination increasingly moves to agents. For delegated execution to work, teams need both context formation (reasoning through messy signal into coherent constraints and priorities) and context preservation (packaging that reasoning into specs and artifacts that survive handoffs across product, engineering, and go-to-market workflows). Without both, agents execute quickly but drift strategically.\nProduct Direction: Build for Reliable Delegation The goal is not more AI output; the goal is reliable delegation. Systems should let agents act on complete context rather than thin prompts, with clear rationale, constraints, and evaluation criteria carried forward. CrowdListen’s role is to provide that context substrate—from unstructured discussion to full-context specs—so agent execution remains aligned with real user intent and business constraints.\n",
+  "wordCount" : "335",
   "inLanguage": "en",
   "image": "https://chenterry.com/images/profile.jpg","datePublished": "2026-03-03T00:00:00Z",
   "dateModified": "2026-03-03T00:00:00Z",
@@ -383,13 +383,13 @@
       "url": "https:\/\/chenterry.com\/"
     }
   },
-  "description": "A field report on agent painpoints and a broader thesis on the agent economy: from task execution to attention mediation and agent-operated demand.",
+  "description": "A reasoned view of the agent economy: what is changing, where agent-mediated software is headed, and what product teams should build for next.",
   
-  "keywords": ["Moltbook", "agent economy", "AI agents", "agent painpoints", "approval fatigue", "tool-using operator", "agent reliability", "CrowdListen"],
+  "keywords": ["Moltbook", "agent economy", "AI agents", "agent-mediated software", "tool-using operator", "agent reliability", "CrowdListen"],
   
   
-  "wordCount": "986",
-  "timeRequired": "PT4M"
+  "wordCount": "335",
+  "timeRequired": "PT1M"
   
 }
 </script>
@@ -406,7 +406,7 @@
       "name": "What is the agent economy: tokens as bandwidth, apps for agents?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "This piece combines field observation with product thesis. I analyzed live discussions on Moltbook to understand where agent systems fail in practice, then …"
+        "text": "Delegating Ambiguity in the Agent Economy As token costs continue to fall, more work shifts into agent-mediated execution. We can already see this in practice: …"
       }
     }
   ]
@@ -477,9 +477,6 @@
   "alumniOf": "Northwestern University"
 }
 </script>
-
-
-
 
 
 
@@ -597,45 +594,15 @@
   
   
 <div class="post-content">
-  <p>This piece combines field observation with product thesis. I analyzed live discussions on Moltbook to understand where agent systems fail in practice, then connected those failures to the larger economics of agent adoption. The core conclusion is straightforward: model capability is improving quickly, but operational trust is not. That gap is now the rate-limiting factor for real adoption.</p>
-<p>In day-to-day usage, the same failure modes appear repeatedly. Human operators are overloaded by unnecessary approvals, agents lose continuity after restarts, handoffs preserve task steps but lose intent, and integration surfaces remain fragile when systems encounter rate limits or partial failures. These are not edge cases. They are routine friction points that consume budget, reduce confidence, and slow teams that otherwise have strong technical capacity.</p>
-<p>The strategic split is between AI as a local tool and AI as a tool-using operator. In the first model, the human still owns execution and the model accelerates individual steps. In the second model, the agent executes across systems and must therefore satisfy stricter requirements: authority boundaries, auditability, reversibility, and recovery. Most value in the emerging agent economy will come from the second model, and most risk is concentrated there as well.</p>
-<p>This is why the supply–demand curve for agents is no longer about access to intelligence. Demand is growing for agents that can complete scoped workflows with low supervision. Supply is constrained by trust infrastructure: risk-tiered permissioning, reliable rollback, durable handoff contracts, and operator-visible evidence for decisions. Teams that close this trust gap will capture disproportionate value because they can safely convert capability into throughput.</p>
-<p>For product teams, the implication is practical. You do not need another abstract “agent platform” narrative. You need operational primitives that make delegated execution dependable: pre-action risk summaries, checkpoint-and-resume flows, typed failure states, and escalation paths with clear ownership. The winning products in this category will not just answer well; they will execute predictably and recover cleanly when things break.</p>
-<h2 id="core-thesis-tokens-agents-and-context">Core thesis: tokens, agents, and context</h2>
-<p>Four working points shape how I currently think about the agent economy:</p>
-<ol>
-<li><strong>Tokens become bandwidth.</strong> As token costs decline and context windows expand, the bottleneck shifts from raw generation cost to decision quality and execution reliability.</li>
-<li><strong>Software shifts from dashboards to agent-consumable capabilities.</strong> Many SaaS workflows will be repackaged as skills, APIs, and MCP interfaces that agents can call directly.</li>
-<li><strong>Human-optimized tools can constrain agent performance.</strong> Interfaces built to simplify choices for humans often compress away the context agents need for high-fidelity execution.</li>
-<li><strong>Context packaging becomes a core product primitive.</strong> Flattening project knowledge into durable specs (for example, markdown artifacts) improves long-running agent continuity, reduces handoff drift, and keeps intent intact.</li>
-</ol>
-<p>These four points connect the field observations to product strategy: if agents are the operating layer, the winning products are the ones that preserve context and make delegated execution dependable.</p>
-<h2 id="read-full-thesis">Read full thesis</h2>
-<p>This post is part of a broader thesis arc:</p>
-<ul>
-<li><a href="/posts/crowdlisten_human_signal/">Feature Extraction Based on Multi-Modal Content Understanding</a></li>
-</ul>
-<p>Read together, these pieces map the shift from fragmented social signal to agent-operated product demand and execution.</p>
-<h2 id="integrated-thesis-from-tasks-to-attention-mediation">Integrated thesis: from tasks to attention mediation</h2>
-<p>The core argument from my earlier post, <em>The Agent Economy Starts with Tasks. It Scales Through Attention.</em>, is now folded into this piece. Agents first win by automating repetitive, high-cognitive-load tasks such as search, synthesis, and comparison. As those workflows mature, the bottleneck shifts from execution to discovery: which products, claims, and evidence get surfaced inside agent-mediated decision loops.</p>
-<p>That shift changes product strategy. Teams are no longer optimizing only for human persuasion on landing pages. They are increasingly optimizing for machine-legible truth: semantic clarity, consistency across claims, and alignment with real user outcomes. In other words, attention becomes mediated by agents, and demand is increasingly routed by the quality of structured evidence available to those agents.</p>
-<p>This is where Crowdlisten’s role expands beyond social listening. The opportunity is to provide a reliable signal substrate that agents can query: what users actually prefer, where friction persists, and which objections predict churn or non-adoption. If this substrate is weak, agents hallucinate or overfit to surface-level content. If it is strong, agents can make better recommendations and operators can trust delegated decisions.</p>
-<p>So the combined thesis is:</p>
-<ol>
-<li>agent adoption starts with delegated task execution,</li>
-<li>market power accrues at the attention-routing layer,</li>
-<li>durable advantage comes from trustworthy signal plus recoverable operations.</li>
-</ol>
-<p>That is why the product roadmap must connect discovery, decision quality, and execution reliability in one system rather than treating them as separate tools.</p>
-<h2 id="three-forces-behind-agentic-discovery-workflows">Three forces behind agentic discovery workflows</h2>
-<p>This transition is reinforced by three structural forces. First, the tasks agents replace—search, synthesis, and multi-criteria comparison—are repetitive and cognitively expensive for humans, so automation pressure is inherently high. Second, interfaces are converging toward natural-language agent layers across OS, browser, and productivity surfaces, which shifts cognitive work upstream to agents. Third, platforms are incentivized to control this layer because agent-mediated discovery becomes a distribution channel.</p>
-<h2 id="content-becomes-data-in-agent-mediated-decisions">Content becomes data in agent-mediated decisions</h2>
-<p>As agents consume more of the web, content is evaluated less as narrative and more as data. Agents extract claims, features, pricing, evidence, and contradictions, then cross-check those against technical docs, competitors, and user feedback. In this setting, semantic clarity and consistency matter more than persuasive copy. The ranking question becomes: does this claim align with lived user experience?</p>
-<h2 id="the-missing-layer-trustworthy-human-signal">The missing layer: trustworthy human signal</h2>
-<p>Agents still struggle to build stable representations of preference directly from noisy, multimodal public data. They can interpret individual samples well but are weaker at persistent clustering, temporal tracking, and robust tradeoff modeling under ambiguity. That creates a missing layer between raw discourse and dependable agent decisions.</p>
-<h2 id="where-crowdlisten-fits">Where CrowdListen fits</h2>
-<p>CrowdListen is built as that missing layer: a structured, queryable map of user needs, objections, sentiment, and behavioral context. It allows agents and operators to reason from traceable evidence instead of shallow scraping or hallucinated summaries. In an agent economy, this substrate becomes core infrastructure for both product discovery and execution reliability.</p>
+  <h2 id="delegating-ambiguity-in-the-agent-economy">Delegating Ambiguity in the Agent Economy</h2>
+<p>As token costs continue to fall, more work shifts into agent-mediated execution. We can already see this in practice: mobile and operating-layer agents are starting to run app-level actions for users, while systems like OpenClaw handle research, synthesis, and content-production workflows that previously required manual coordination across many tools. The interface between humans and tooling is no longer direct in many workflows; agents increasingly sit in the middle, orchestrating tools and information on behalf of people.</p>
+<p>That shift changes the bottleneck. The hard part is not only generating code or content quickly—it is resolving ambiguity correctly: extracting durable signal from noisy human discussion, reconciling conflicting constraints, and preserving rationale from discovery through execution.</p>
+<h2 id="from-unstructured-discussion-to-executable-context">From Unstructured Discussion to Executable Context</h2>
+<p>In an agent-mediated economy, winning systems must run one continuous pipeline: reason over large volumes of unstructured human data (social discussion, internal docs, operator notes), distill that signal into decision-grade themes and trade-offs, and store the result as full-context requirements that agents can execute with high fidelity. CrowdListen is built for this layer—not as another dashboard, but as the ambiguity-delegation system that converts fragmented multimodal input into structured, traceable, agent-ready specs.</p>
+<h2 id="why-context-formation-and-context-preservation-matter">Why Context Formation and Context Preservation Matter</h2>
+<p>Traditional software assumed humans would absorb complexity through interfaces and then manually coordinate execution. In agent-mediated workflows, that coordination increasingly moves to agents. For delegated execution to work, teams need both context formation (reasoning through messy signal into coherent constraints and priorities) and context preservation (packaging that reasoning into specs and artifacts that survive handoffs across product, engineering, and go-to-market workflows). Without both, agents execute quickly but drift strategically.</p>
+<h2 id="product-direction-build-for-reliable-delegation">Product Direction: Build for Reliable Delegation</h2>
+<p>The goal is not more AI output; the goal is reliable delegation. Systems should let agents act on complete context rather than thin prompts, with clear rationale, constraints, and evaluation criteria carried forward. CrowdListen’s role is to provide that context substrate—from unstructured discussion to full-context specs—so agent execution remains aligned with real user intent and business constraints.</p>
 
 </div>
 
@@ -714,8 +681,7 @@
           </span>
           
         </div>
-        <p class="related-post-excerpt">Originally published as Fine-Grained Social Listening for Understanding Crowd Conversations.
-The …</p>
+        <p class="related-post-excerpt">Why this problem matters now The most relevant and influential market signal increasingly comes from …</p>
       </div>
     </a>
     
