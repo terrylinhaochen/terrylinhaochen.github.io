@@ -12,19 +12,13 @@ keywords: ["Moltbook", "agent economy", "AI agents", "agent-mediated software", 
 
 Delegating ambiguity is becoming the central problem in the agent economy.
 
-As token costs continue to fall, more work shifts into agent-mediated execution. The interface between humans and tooling is no longer direct in many workflows; agents increasingly sit in the middle, orchestrating tools and information on behalf of people.
+As token costs continue to fall, more work shifts into agent-mediated execution. We can already see this in practice: mobile/operating-layer agents are beginning to run app-level actions for users, while systems like OpenClaw increasingly handle research, synthesis, and content-production workflows that previously required manual coordination across tools. The interface between humans and tooling is no longer direct in many workflows; agents increasingly sit in the middle, orchestrating tools and information on behalf of people.
 
 That shift changes the bottleneck. The hard part is not only generating code or content quickly—it is resolving ambiguity correctly: extracting durable signal from noisy human discussion, reconciling conflicting constraints, and preserving rationale from discovery through execution.
 
 ## Main thesis
 
-In an agent-mediated economy, the winning systems will be the ones that can:
-
-1. **Reason over large volumes of unstructured human data** (social discussion, internal docs, operator notes),
-2. **Distill that data into decision-grade themes and trade-offs**, and
-3. **Store the result as full-context requirements specs** that agents can execute with high fidelity.
-
-This is where CrowdListen is positioned: not as another dashboard, but as the ambiguity-delegation layer that converts fragmented multimodal input into structured, traceable, agent-ready requirements.
+In an agent-mediated economy, winning systems must do three things as one continuous process: reason over large volumes of unstructured human data (social discussion, internal docs, operator notes), distill that signal into decision-grade themes and trade-offs, and store the result as full-context requirements specs that agents can execute with high fidelity. This is where CrowdListen is positioned: not as another dashboard, but as the ambiguity-delegation layer that converts fragmented multimodal input into structured, traceable, agent-ready requirements.
 
 ## Why this matters now
 
