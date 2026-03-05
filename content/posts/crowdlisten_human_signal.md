@@ -1,5 +1,5 @@
 ---
-title: "Feature Extraction Based on Multi-Modal Content Understanding"
+title: "Feature Extraction & Multimodal Content Understanding"
 description: "Fine-grained social listening for understanding crowd conversations: a framework for turning fragmented, high-volume social discussion into weighted signal and agent-ready product action."
 date: 2026-01-15
 author: Terry Chen
@@ -41,12 +41,7 @@ Agents do not automatically inherit that loop. If we want agent-mediated product
 
 Feature extraction should be treated as decision infrastructure, not preprocessing. The goal is to move from noisy multimodal discussion to weighted, traceable evidence that can support product decisions.
 
-In practice, that means:
-
-- separating tier-one source signal from tier-two reaction signal,
-- weighting signals by persistence, engagement, and relevance,
-- preserving rationale and trade-offs through synthesis,
-- producing outputs that survive handoff into execution.
+In practice, this means separating tier-one source signal from tier-two reaction signal, weighting evidence by persistence, engagement, and relevance, preserving rationale and trade-offs through synthesis, and producing outputs that survive handoff into execution.
 
 ## From multimodal signal to agent-ready action
 
