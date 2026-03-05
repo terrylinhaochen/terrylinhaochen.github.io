@@ -14,7 +14,7 @@ keywords: ["Moltbook", "agent economy", "AI agents", "agent-mediated software", 
 
 ## The Interface Shift: Humans → Agents → Tools
 
-As token costs continue to fall, more work moves into agent-mediated execution. We already see this in practice: operating-layer agents can run app actions, and systems like OpenClaw can coordinate research, synthesis, and production workflows that previously required manual tool switching. In many workflows, humans are no longer the direct interface to every tool; agents increasingly sit in the middle.
+As agents become the operational layer between people and tools, value shifts from UI access to reliable delegation. As token costs continue to fall, more work moves into agent-mediated execution. We already see this in practice: operating-layer agents can run app actions, and systems like OpenClaw can coordinate research, synthesis, and production workflows that previously required manual tool switching. In many workflows, humans are no longer the direct interface to every tool; agents increasingly sit in the middle.
 
 This changes the product bottleneck. The hard part is not only generation speed, but ambiguity delegation: how to carry constraints, trade-offs, and rationale from human intent into executable action.
 
