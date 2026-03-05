@@ -14,8 +14,6 @@ thesis_featured: false
 
 
 
-This is the origin story behind CrowdListen. Before the current product architecture, there was a simpler but important question: can we move from generic content aggregation to genuine original research directly on raw social data?
-
 [Crowdlisten](https://crowdlisten.com) transforms large-scale social conversations into actionable insight by integrating LLM reasoning with extensive model context protocol (MCP) capabilities. While being able to quantitatively analyze large volumes of data is already an interesting task, our focus is not just on content analysis at scale, but rather conducting original research directly from raw social data, generating insights that haven't yet appeared in established reporting.
 
 Deep research features provide professional-looking research reports, yet the contents are far from original, as they're drawn from articles already indexable on the internet and paraphrased with LLMs. However, much of the internet's data exists in unstructured formats - TikTok videos, comments, and metadata, for example. Too much content is generated every day for there to be existing articles written about it all, and when such articles are published, they're often already outdated. When you consider multimodal data, metadata, and connections between data points, these are precisely the types of information that could yield genuinely interesting and useful insights.
