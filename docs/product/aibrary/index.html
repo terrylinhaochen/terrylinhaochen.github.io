@@ -603,14 +603,6 @@
       <a href="#section-2" class="thesis-nav-link" data-index="2">
         <span class="nav-number">3</span>
         <span class="nav-text">
-          <span class="nav-title">From Indexing to Understanding</span>
-          <span class="nav-date">Oct 2025</span>
-        </span>
-      </a>
-      
-      <a href="#section-3" class="thesis-nav-link" data-index="3">
-        <span class="nav-number">4</span>
-        <span class="nav-text">
           <span class="nav-title">Content Platforms Will Become Distribution-by-Generation Systems</span>
           <span class="nav-date">May 2025</span>
         </span>
@@ -627,7 +619,7 @@
     <section class="thesis-section" id="section-0">
       <header class="thesis-section-header">
         <div class="thesis-section-meta">
-          <span class="section-number">1 of 4</span>
+          <span class="section-number">1 of 3</span>
           <time>October 26, 2025</time>
         </div>
         <h2>When Knowledge Becomes Fluid: How AI Transforms Learning</h2>
@@ -652,7 +644,7 @@
     <section class="thesis-section" id="section-1">
       <header class="thesis-section-header">
         <div class="thesis-section-meta">
-          <span class="section-number">2 of 4</span>
+          <span class="section-number">2 of 3</span>
           <time>October 5, 2024</time>
         </div>
         <h2>Deciding the Right Question Is More Important Than the Answer</h2>
@@ -677,111 +669,7 @@
     <section class="thesis-section" id="section-2">
       <header class="thesis-section-header">
         <div class="thesis-section-meta">
-          <span class="section-number">3 of 4</span>
-          <time>October 26, 2025</time>
-        </div>
-        <h2>From Indexing to Understanding</h2>
-        
-        <p class="thesis-section-desc">Discovery is moving from static data retrieval toward systems that understand why a user is searching, not just what they type. The next generation of search experiences must merge precise recall with adaptive reasoning.</p>
-        
-      </header>
-      <div class="thesis-section-body">
-        <h1 id="from-indexing-to-understanding-intent-in-discovery-systems">From Indexing to Understanding Intent in Discovery Systems</h1>
-<p>Discovery is moving from static data retrieval toward systems that understand why a user is searching, not just what they type. The next generation of search experiences must merge precise recall with adaptive reasoning—delivering fast, contextually relevant answers while offering deeper AI-powered synthesis when users explore unfamiliar or complex topics.</p>
-<hr>
-<h2 id="why-traditional-search-falls-short">Why Traditional Search Falls Short</h2>
-<p>Traditional keyword search works best when the user knows exactly what to ask. However, most discovery today begins with uncertainty: a half-remembered quote, a general theme, or a desire for inspiration. Users often don&rsquo;t know what they&rsquo;re looking for until they see it. The problem is both cognitive and technical—users&rsquo; mental models evolve as they explore. Modern discovery tools must anticipate that evolution, interpret vague intent, and surface meaningfully related ideas rather than exact word matches.</p>
-<hr>
-<h2 id="from-indexing-to-intent-based-query-completion">From Indexing to Intent-Based Query Completion</h2>
-<p>The transition from indexing to intent-driven discovery mirrors a broader movement from databases that store information to systems that reason about context. In practice, this takes two complementary forms: <em>fast responses</em> and <em>deep responses</em>.</p>
-<p>Fast responses are built for immediate clarity. They combine multiple recall routes—lexical, semantic, behavioral, and social—to provide accurate answers quickly. This approach excels in known-item retrieval and factual questions. For instance, <strong>Fable&rsquo;s new search experience</strong> goes beyond simple keyword matching to understand emotional and stylistic dimensions. When a reader searches &ldquo;books that feel like autumn evenings,&rdquo; the system infers ambience and tone rather than relying solely on metadata tags. This design transforms search from literal matching to contextual association.</p>
-<p>
-
-  <img src="/images/product/intent-discovery/fable-predictive-search.png" alt="Fable&rsquo;s predictive search improvements" loading="lazy">
- 
-<em>Fable&rsquo;s enhanced search showing predictive completion for incomplete queries like &ldquo;heaven and earth g&rdquo;</em></p>
-<p>The system demonstrates superior intent understanding by providing relevant suggestions before users complete their queries. The &ldquo;After&rdquo; version shows how modern search anticipates user needs, surfacing &ldquo;The Heaven &amp; Earth Grocery Store&rdquo; and related titles when users type partial queries.</p>
-<p>
-
-  <img src="/images/product/intent-discovery/fable-relevant-matches.png" alt="Fable&rsquo;s contextual matching" loading="lazy">
- 
-<em>Fable&rsquo;s improved relevance matching for author searches like &ldquo;james&rdquo;</em></p>
-<p>Similarly, when searching for &ldquo;james,&rdquo; the enhanced system prioritizes contextually relevant results like &ldquo;James (Pulitzer Prize Winner)&rdquo; rather than generic matches, demonstrating how intent-aware systems understand query context.</p>
-<p>Deep responses, in contrast, serve users exploring open-ended questions. They rely on large language models to synthesize information, drawing connections across content sources and explaining the reasoning behind conclusions. <strong>Red (Xiaohongshu)</strong> offers a compelling example through its <em>AskNow</em> feature, where AI-generated insights are grounded on verified community posts, maintaining both authenticity and transparency. Similarly, <strong>Reddit Answers</strong> (currently in beta) uses real user discussions as evidence for its responses, ensuring that generated insights remain rooted in human context rather than abstract data patterns.</p>
-<p>
-
-  <img src="/images/product/intent-discovery/red-asknow-results.png" alt="Red AskNow analysis" loading="lazy">
- 
-<em>Red&rsquo;s AskNow feature providing AI-generated company analysis with structured insights on market competition, privacy policies, and legal disputes</em></p>
-<p>The AskNow interface demonstrates sophisticated content synthesis, taking user queries about companies like AppLovin and generating comprehensive analyses that include market positioning (competition with Meta, Google), regulatory challenges (privacy policies like IDFA), and risk factors (legal disputes affecting stock prices)—all grounded in community discussions rather than abstract data.</p>
-<p>This dual architecture—fast for confidence, deep for curiosity—captures how systems can dynamically adapt to user intent during a single session.</p>
-<hr>
-<h2 id="the-two-loop-discovery-engine">The Two-Loop Discovery Engine</h2>
-<p>Intent-aware systems operate through a continuous feedback structure combining retrieval and reasoning. The retrieval loop aggregates relevant results using hybrid signals such as keyword relevance, vector similarity, and recency. The reasoning loop interprets ongoing behavior—clicks, refinements, and skips—to update an <em>Intent State</em> that guides subsequent outputs. Each iteration yields one of three outcomes: a direct answer, a curated content set, or an AI-generated synthesis.</p>
-<hr>
-<h2 id="mapping-intent-and-context">Mapping Intent and Context</h2>
-<p>Different user goals demand different discovery experiences. The table below illustrates how systems can tailor responses according to intent and specificity.</p>
-<table>
-  <thead>
-      <tr>
-          <th>User Goal</th>
-          <th>Specificity</th>
-          <th>Ideal Response</th>
-          <th>Interface Type</th>
-          <th>Example</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Retrieve</td>
-          <td>Exact</td>
-          <td>Concise factual snippet with citation</td>
-          <td>Inline summary</td>
-          <td>&ldquo;Release date of Dune Part Two.&rdquo;</td>
-      </tr>
-      <tr>
-          <td>Learn</td>
-          <td>Fuzzy</td>
-          <td>Conceptual overview with examples and follow-ups</td>
-          <td>Accordion-style cards</td>
-          <td>&ldquo;How do neural embeddings improve search?&rdquo;</td>
-      </tr>
-      <tr>
-          <td>Decide</td>
-          <td>Mid</td>
-          <td>Structured comparison with trade-offs</td>
-          <td>Comparison grid with rationale notes</td>
-          <td>&ldquo;Which AI search tools balance transparency and cost?&rdquo;</td>
-      </tr>
-      <tr>
-          <td>Explore</td>
-          <td>Open</td>
-          <td>Serendipitous content spanning adjacent ideas</td>
-          <td>Visual knowledge map or gallery</td>
-          <td>&ldquo;Books that inspire design thinking.&rdquo;</td>
-      </tr>
-  </tbody>
-</table>
-<hr>
-<h2 id="design-principles-for-intent-aware-search">Design Principles for Intent-Aware Search</h2>
-<p>An effective discovery system prioritizes clarity, adaptability, and transparency. Each result should show why it was retrieved—through cues such as &ldquo;popular in similar sessions&rdquo; or &ldquo;matches your theme and tone.&rdquo; Systems should learn within each session, refining their understanding as the user interacts. They must balance novelty with relevance, maintaining an exploratory rhythm without overwhelming the user. Transparency matters most: showing data sources, confidence levels, and offering manual control over personalization builds long-term trust. Lastly, discovery should feel seamless across formats—books, posts, videos, and conversations—as part of a single cognitive journey.</p>
-<hr>
-<h2 id="when-the-corpus-falls-short">When the Corpus Falls Short</h2>
-<p>An intent-aware system recognizes when no direct answer exists. Instead of ending in failure, it synthesizes a grounded response that discloses its sources and confidence level. These generated insights transform information gaps into moments of learning—highlighting missing viewpoints, summarizing scattered data, or surfacing counterexamples that broaden understanding.</p>
-<hr>
-<h2 id="measuring-success-through-comprehension">Measuring Success Through Comprehension</h2>
-<p>Success in intent-based discovery extends beyond engagement metrics. Systems should measure <strong>Time to Insight (TTI)</strong> to understand how quickly users reach clarity, <strong>Exploration Depth</strong> to gauge how broadly users traverse concepts, and <strong>Trust Indicators</strong> reflecting how often users expand citations or rely on AI explanations. Another key metric, <strong>Intent Alignment</strong>, measures how closely the system&rsquo;s inferred goal matches the user&rsquo;s evolving intent. These metrics move focus from clicks to comprehension, rewarding designs that help people think more efficiently.</p>
-<hr>
-<h2 id="why-intent-awareness-matters">Why Intent Awareness Matters</h2>
-<p>Search and recommendation are converging into a unified discipline focused on <em>intent understanding</em>. Platforms like Fable, Red, and Reddit show how discovery is shifting from indexing content to interpreting context. The future of search will belong to systems that bridge speed and synthesis—those that recognize a user&rsquo;s goal, respond in real time, and expand understanding with each interaction.</p>
-
-      </div>
-    </section>
-    
-    <section class="thesis-section" id="section-3">
-      <header class="thesis-section-header">
-        <div class="thesis-section-meta">
-          <span class="section-number">4 of 4</span>
+          <span class="section-number">3 of 3</span>
           <time>May 8, 2025</time>
         </div>
         <h2>Content Platforms Will Become Distribution-by-Generation Systems</h2>

@@ -1,4 +1,6 @@
 ---
+thesis_featured: true
+featured_rank: 1
 title: "Essence of Creativity: Future of Creative Work"
 date: 2024-08-25
 author: Terry Chen

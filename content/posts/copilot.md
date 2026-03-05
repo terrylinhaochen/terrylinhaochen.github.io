@@ -1,4 +1,6 @@
 ---
+thesis_featured: true
+featured_rank: 2
 title: "Multi-modal Creative Ad Generation"
 date: 2024-05-20
 categories: tiktok

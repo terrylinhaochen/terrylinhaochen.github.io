@@ -652,6 +652,15 @@
 <p>The strategic split is between AI as a local tool and AI as a tool-using operator. In the first model, the human still owns execution and the model accelerates individual steps. In the second model, the agent executes across systems and must therefore satisfy stricter requirements: authority boundaries, auditability, reversibility, and recovery. Most value in the emerging agent economy will come from the second model, and most risk is concentrated there as well.</p>
 <p>This is why the supply–demand curve for agents is no longer about access to intelligence. Demand is growing for agents that can complete scoped workflows with low supervision. Supply is constrained by trust infrastructure: risk-tiered permissioning, reliable rollback, durable handoff contracts, and operator-visible evidence for decisions. Teams that close this trust gap will capture disproportionate value because they can safely convert capability into throughput.</p>
 <p>For product teams, the implication is practical. You do not need another abstract “agent platform” narrative. You need operational primitives that make delegated execution dependable: pre-action risk summaries, checkpoint-and-resume flows, typed failure states, and escalation paths with clear ownership. The winning products in this category will not just answer well; they will execute predictably and recover cleanly when things break.</p>
+<h2 id="core-thesis-tokens-agents-and-context">Core thesis: tokens, agents, and context</h2>
+<p>Four working points shape how I currently think about the agent economy:</p>
+<ol>
+<li><strong>Tokens become bandwidth.</strong> As token costs decline and context windows expand, the bottleneck shifts from raw generation cost to decision quality and execution reliability.</li>
+<li><strong>Software shifts from dashboards to agent-consumable capabilities.</strong> Many SaaS workflows will be repackaged as skills, APIs, and MCP interfaces that agents can call directly.</li>
+<li><strong>Human-optimized tools can constrain agent performance.</strong> Interfaces built to simplify choices for humans often compress away the context agents need for high-fidelity execution.</li>
+<li><strong>Context packaging becomes a core product primitive.</strong> Flattening project knowledge into durable specs (for example, markdown artifacts) improves long-running agent continuity, reduces handoff drift, and keeps intent intact.</li>
+</ol>
+<p>These four points connect the field observations to product strategy: if agents are the operating layer, the winning products are the ones that preserve context and make delegated execution dependable.</p>
 <h2 id="read-full-thesis">Read full thesis</h2>
 <p>This post is part of a broader thesis arc:</p>
 <ul>
@@ -677,8 +686,6 @@
 <p>Agents still struggle to build stable representations of preference directly from noisy, multimodal public data. They can interpret individual samples well but are weaker at persistent clustering, temporal tracking, and robust tradeoff modeling under ambiguity. That creates a missing layer between raw discourse and dependable agent decisions.</p>
 <h2 id="where-crowdlisten-fits">Where CrowdListen fits</h2>
 <p>CrowdListen is built as that missing layer: a structured, queryable map of user needs, objections, sentiment, and behavioral context. It allows agents and operators to reason from traceable evidence instead of shallow scraping or hallucinated summaries. In an agent economy, this substrate becomes core infrastructure for both product discovery and execution reliability.</p>
-<h2 id="risks-and-uncertainties">Risks and uncertainties</h2>
-<p>The trajectory is strong, but timing and shape remain uncertain. Agents may remain wrapper-like in some categories longer than expected; trust ceilings may persist in high-stakes workflows; and data-access constraints can limit signal quality. Even so, the direction is consistent: as discovery shifts from humans to agents, structured and trustworthy human-signal infrastructure becomes a strategic requirement.</p>
 
       </div>
     </section>

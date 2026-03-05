@@ -1,4 +1,6 @@
 ---
+thesis_featured: true
+featured_rank: 3
 title: "Why Context is Everything in AI Content Generation"
 date: 2024-09-20
 categories: tiktok
