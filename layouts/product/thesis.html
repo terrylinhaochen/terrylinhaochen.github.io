@@ -88,6 +88,18 @@
       </div>
     </section>
     {{ end }}
+
+    {{ if eq .File.BaseFileName "crowdlisten" }}
+    <section class="thesis-subscribe-block" id="crowdlisten-subscribe-block">
+      <h3>Get CrowdListen updates</h3>
+      <p>Occasional product + thesis updates. No spam.</p>
+      <form id="crowdlisten-subscribe-form" class="thesis-subscribe-form">
+        <input type="email" id="crowdlisten-subscribe-email" placeholder="your@email.com" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <div id="crowdlisten-subscribe-message" class="thesis-subscribe-message"></div>
+    </section>
+    {{ end }}
   </div>
 </div>
 
@@ -452,6 +464,58 @@
     }
   }
 
+
+
+  .thesis-subscribe-block {
+    margin-top: 1.5rem;
+    padding: 1.25rem;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--entry);
+  }
+
+  .thesis-subscribe-block h3 {
+    margin: 0 0 0.4rem;
+    font-size: 1.1rem;
+  }
+
+  .thesis-subscribe-block p {
+    margin: 0 0 0.9rem;
+    color: var(--secondary);
+  }
+
+  .thesis-subscribe-form {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .thesis-subscribe-form input {
+    flex: 1;
+    min-width: 220px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.65rem 0.75rem;
+    background: var(--theme);
+    color: var(--primary);
+  }
+
+  .thesis-subscribe-form button {
+    border: none;
+    border-radius: 8px;
+    padding: 0.65rem 0.9rem;
+    background: var(--primary);
+    color: var(--theme);
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  .thesis-subscribe-message {
+    margin-top: 0.6rem;
+    font-size: 0.9rem;
+    color: var(--secondary);
+  }
+
   /* Overlay for mobile nav */
   .thesis-nav-overlay {
     display: none;
@@ -537,6 +601,50 @@ document.addEventListener('DOMContentLoaded', function() {
     overlay.addEventListener('click', function() {
       nav.classList.remove('open');
       overlay.classList.remove('active');
+    });
+  }
+
+  const subscribeForm = document.getElementById('crowdlisten-subscribe-form');
+  if (subscribeForm) {
+    subscribeForm.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const emailInput = document.getElementById('crowdlisten-subscribe-email');
+      const messageEl = document.getElementById('crowdlisten-subscribe-message');
+      const button = subscribeForm.querySelector('button[type="submit"], button');
+      const email = (emailInput?.value || '').trim();
+      if (!email) return;
+
+      const prevText = button ? button.textContent : '';
+      if (button) {
+        button.disabled = true;
+        button.textContent = 'Subscribing...';
+      }
+
+      try {
+        await fetch('https://script.google.com/macros/s/AKfycbxF7czbmo2JEeATzFoMnHIfGASoSTzogbjJcuQm30sjBXFqmDOqISWkIHBr64GdmURS/exec', {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+          },
+          body: new URLSearchParams({
+            email,
+            pageUrl: window.location.href,
+            source: 'crowdlisten-product-inline'
+          })
+        });
+
+        localStorage.setItem('newsletter-subscribed', 'true');
+        if (messageEl) messageEl.textContent = 'Thanks — you are subscribed.';
+        if (emailInput) emailInput.value = '';
+      } catch (err) {
+        if (messageEl) messageEl.textContent = 'Something went wrong. Please try again.';
+      } finally {
+        if (button) {
+          button.disabled = false;
+          button.textContent = prevText || 'Subscribe';
+        }
+      }
     });
   }
 });
