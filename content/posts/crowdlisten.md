@@ -12,6 +12,8 @@ description: "CrowdListen converts raw user conversation into structured product
 keywords: ["social listening", "brand listening", "market analysis", "tiktok", "journalism","reporting", "user experience"]
 images: ["/projects/crowdlisten/featured.jpg"]
 version: "1.1"
+gated: true
+gate_preview_percent: 30
 changelog:
   - version: "1.1"
     date: "2025-10-25"
@@ -68,7 +70,7 @@ changelog:
 
 ## Why this product exists: ambiguity breaks execution
 
-In the agent economy, ambiguity compounds cost faster than most teams expect. A team can ingest massive volumes of comments, videos, and feedback across channels and still miss the actual decision signal. The dashboards look complete, but when it is time to prioritize, the core question remains unresolved: which pain points are durable, which are transient, and what should be built now.
+In the agent economy, ambiguity compounds cost quickly. Teams can ingest massive volumes of comments, videos, and feedback and still miss the decision signal. Dashboards may look complete, but at prioritization time the core question remains: which pain points are durable, which are transient, and what should be built now.
 
 This is where execution quality breaks down. If ambiguity is not reduced early, it propagates through planning, handoff, and implementation. Agents can execute quickly, but they execute what they are given. When context is fuzzy, speed amplifies misalignment. CrowdListen is designed to reduce that ambiguity before work is delegated, so the transition from signal to decision to execution remains grounded in evidence.
 
@@ -76,7 +78,7 @@ This is where execution quality breaks down. If ambiguity is not reduced early, 
 
 ![Product Suite](/images/projects/crowdlistening/use-cases-cards-2026-03.png)
 
-CrowdListen is built around a specific execution failure we kept seeing in real teams: feedback is fragmented across channels, synthesis is manual, and intent gets lost between research, planning, and delivery. Most product organizations can collect signal, but they cannot preserve the original user context all the way to implementation. That is where quality drops. Requirements become abstract, handoffs become lossy, and coding agents produce work that is technically correct but strategically misaligned.
+CrowdListen is built around a specific execution failure we kept seeing: feedback is fragmented across channels, synthesis is manual, and intent gets lost between research, planning, and delivery. Most product organizations can collect signal but cannot preserve user context through implementation. That is where quality drops: requirements become abstract, handoffs become lossy, and coding agents produce work that is technically correct but strategically misaligned.
 
 We designed the product as one connected operating flow instead of disconnected tools. Feed captures and structures raw audience signal, Workspace turns that signal into evidence-backed product direction, and Tasks routes scoped work to agents with enough context to execute reliably. The system is not trying to generate more artifacts; it is trying to preserve decision quality from first observation to shipped output.
 
@@ -107,7 +109,7 @@ The thesis is simple: in an agent-driven product economy, the bottleneck is no l
 
 ## Tooling for agents: MCPs and skills that connect directly to CrowdListen
 
-A large part of our current execution is built around an agent integration layer. In practice, we treat CrowdListen as tooling for agents rather than a dashboard humans manually operate. We expose MCPs and agent skills so agents can directly access CrowdListen features, pull evidence, and convert findings into work artifacts without losing context.
+A large part of our execution runs through an agent integration layer. In practice, we treat CrowdListen as tooling for agents rather than a dashboard humans manually operate. We expose MCPs and agent skills so agents can directly access features, pull evidence, and convert findings into work artifacts.
 
 This shows up in two concrete examples.
 
@@ -117,7 +119,7 @@ This shows up in two concrete examples.
 
 The first pattern is delegating ambiguity to agents while keeping intent intact. Agents ingest signals across channels, connect dots between recurring pain points and feature requests, and surface structured opportunities that can be acted on immediately. Instead of handing agents vague summaries, we route evidence-backed context and constraints so they can turn fragmented conversation into actionable feature proposals.
 
-A meaningful share of this workflow now runs through our agent integration layer: source ingestion, synthesis, and conversion into agent-ready specs/tasks. The objective is not more reporting. The objective is reducing ambiguity between signal, decision, and execution.
+A meaningful share of this workflow now runs through our agent integration layer: source ingestion, synthesis, and conversion into agent-ready specs/tasks. The objective is not more reporting; it is reducing ambiguity between signal, decision, and execution.
 
 ### 2) Actionable insights for agents, with agents
 
@@ -125,5 +127,5 @@ The second pattern is the insight loop itself: turning broad social data into de
 
 CrowdListen is designed to close that gap by combining large-scale signal capture with structured synthesis that preserves nuance. In practice, this means agents can move from fragmented discussion to usable decisions with less manual translation and less context loss.
 
-Early validation supports this direction. In enterprise conversations, including teams such as L'Oréal, we repeatedly saw the same outcome: when synthesis is structured and context is preserved, teams reduce analysis overhead, respond to shifts earlier, and make faster product calls with higher confidence. The key benefit is not just speed. It is the ability to convert audience evidence into better execution decisions without losing fidelity across the workflow.
+Early validation supports this direction. In enterprise conversations, including teams such as L'Oréal, we repeatedly saw the same outcome: when synthesis is structured and context is preserved, teams reduce analysis overhead, respond to shifts earlier, and make faster product calls with higher confidence. The key benefit is not just speed; it is converting audience evidence into better execution decisions without losing fidelity across the workflow.
 
