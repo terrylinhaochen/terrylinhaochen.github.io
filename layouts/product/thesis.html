@@ -54,6 +54,29 @@
 
   <!-- Main Content -->
   <div class="thesis-content-area">
+    {{ if eq .File.BaseFileName "crowdlisten" }}
+    <section class="thesis-global-gate" id="thesis-global-gate" style="display:none;">
+      <div class="gate-inner">
+        <div class="gate-lock-label">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          Subscribe to continue reading
+        </div>
+        <h2 class="gate-headline">Actionable Insights to<br>Help You Stay at the Edge of AI</h2>
+        <p class="gate-subtext">The essential toolkit for those shaping the future</p>
+        <p class="gate-social-proof">Join 1,000+ leaders, builders, and innovators</p>
+        <form id="thesis-gate-form" class="gate-form">
+          <label for="thesis-gate-email" class="gate-email-label">Email address</label>
+          <input type="email" id="thesis-gate-email" placeholder="example@domain.com" required>
+          <button type="submit" class="gate-submit-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            Unlock this article
+          </button>
+        </form>
+        <div id="thesis-gate-message" class="gate-message"></div>
+        <p class="gate-disclaimer">No spam, ever. Unsubscribe at any time.</p>
+      </div>
+    </section>
+    {{ end }}
     {{ range $index, $post := $activePosts }}
     <section class="thesis-section" id="section-{{ $index }}">
       <header class="thesis-section-header">
@@ -67,7 +90,7 @@
         {{ end }}
       </header>
       <div class="thesis-section-body">
-        {{ partial "content-gate.html" $post }}
+        {{ $post.Content }}
       </div>
     </section>
     {{ end }}
@@ -84,7 +107,7 @@
         {{ end }}
       </header>
       <div class="thesis-section-body">
-        {{ partial "content-gate.html" $post }}
+        {{ $post.Content }}
       </div>
     </section>
     {{ end }}
@@ -394,6 +417,27 @@
     color: var(--primary);
   }
 
+
+  .thesis-global-gate {
+    margin: 1rem 0 2rem;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--entry);
+    padding: 1.2rem;
+  }
+
+  .thesis-global-gate .gate-headline {
+    margin: 0.65rem 0;
+    font-size: 1.9rem;
+    line-height: 1.15;
+  }
+
+  .thesis-global-gate .gate-subtext,
+  .thesis-global-gate .gate-social-proof,
+  .thesis-global-gate .gate-disclaimer {
+    color: var(--secondary);
+  }
+
   /* Mobile nav toggle button */
   .thesis-mobile-toggle {
     display: none;
@@ -539,6 +583,45 @@ document.addEventListener('DOMContentLoaded', function() {
     overlay.addEventListener('click', function() {
       nav.classList.remove('open');
       overlay.classList.remove('active');
+    });
+  }
+
+  const pageGate = document.getElementById('thesis-global-gate');
+  if (pageGate) {
+    const subscribed = localStorage.getItem('newsletter-subscribed') === 'true';
+    const sections = Array.from(document.querySelectorAll('.thesis-content-area > .thesis-section'));
+
+    if (!subscribed) {
+      pageGate.style.display = 'block';
+      sections.forEach((s) => { s.style.display = 'none'; });
+    }
+
+    const form = document.getElementById('thesis-gate-form');
+    form?.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const email = document.getElementById('thesis-gate-email')?.value?.trim();
+      const msg = document.getElementById('thesis-gate-message');
+      const btn = form.querySelector('button[type="submit"]');
+      if (!email) return;
+      btn.disabled = true;
+      btn.textContent = 'Unlocking...';
+
+      fetch('https://script.google.com/macros/s/AKfycbxF7czbmo2JEeATzFoMnHIfGASoSTzogbjJcuQm30sjBXFqmDOqISWkIHBr64GdmURS/exec', {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+        body: new URLSearchParams({ email, pageUrl: window.location.href, source: 'thesis-page-gate' })
+      }).then(() => {
+        localStorage.setItem('newsletter-subscribed', 'true');
+        if (msg) msg.textContent = 'Thanks! Unlocking the article...';
+        pageGate.style.display = 'none';
+        sections.forEach((s) => { s.style.display = 'block'; });
+      }).catch(() => {
+        if (msg) msg.textContent = 'Something went wrong. Please try again.';
+      }).finally(() => {
+        btn.disabled = false;
+        btn.textContent = 'Unlock this article';
+      });
     });
   }
 });

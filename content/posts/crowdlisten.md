@@ -12,8 +12,6 @@ description: "CrowdListen converts raw user conversation into structured product
 keywords: ["social listening", "brand listening", "market analysis", "tiktok", "journalism","reporting", "user experience"]
 images: ["/projects/crowdlisten/featured.jpg"]
 version: "1.1"
-gated: true
-gate_preview_percent: 30
 changelog:
   - version: "1.1"
     date: "2025-10-25"
