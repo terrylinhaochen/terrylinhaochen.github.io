@@ -9,113 +9,61 @@ keywords: ["HCI", "agents", "delegation", "reasoning transfer", "trust in automa
 gated: true
 ---
 
-## Abstract
+Delegating Ambiguity: Human–Computer Interaction in the Age of Personal Agents
 
-Traditional HCI has designed systems around the cognitive limits of human operators, constraining system capability to match human processing capacity. This paper argues that agent-mediated interaction changes this constraint. As the interaction hierarchy shifts from **Human → Tool** to **Human → Agent → Tool**, system complexity is no longer bounded by what a person can directly operate; it is bounded by what an agent can navigate on a person's behalf. However, this shift introduces new interaction challenges: the handoff between human and agent must carry not just commands but reasoning, including intent, constraints, and rationale, to prevent strategic drift.
+Abstract
+Traditional HCI has designed systems around the cognitive limits of human operators, constraining system capability to match human processing capacity. This paper argues that agent-mediated interaction changes this constraint. As the interaction hierarchy shifts from Human → Tool to Human → Agent → Tool, system complexity is no longer bounded by what a person can directly operate; it is bounded by what an agent can navigate on a person's behalf. However, this shift introduces new interaction challenges: the handoff between human and agent must carry not just commands but reasoning, including intent, constraints, and rationale, to prevent strategic drift. Drawing on Norman's (2013) Gulf model, Lee and See's (2004) trust-in-automation framework, and empirical work on progressive disclosure in AI systems (Springer & Whittaker, 2019), this paper analyzes how complexity transforms from a usability liability into an interaction strength under delegation, and what design requirements must be met for this transformation to succeed.
+1. Introduction
+For decades, the capability of interactive systems has been constrained by the cognitive capacity of their human operators. Because people are limited information processors, bounded by a working memory of roughly seven plus or minus two chunks (Miller, 1956, p. 81), systems designed for broad adoption must be simple enough for an average user to operate effectively. Products are constrained by the friction costs of human cognition: limited time, restricted processing bandwidth, and finite attention. To reduce this friction, systems optimize for the lowest common denominator, sacrificing flexibility and personalization so that average users can operate them at all.
+This constraint has shaped entire product categories. Myers, Hudson, and Pausch (2000) formalized this as the threshold-ceiling tradeoff: the difficulty of initial use (threshold) versus the maximum complexity a tool can support (ceiling). Raising the ceiling raises the threshold, and products are forced to choose (p. 10).
+Agent-mediated interaction changes this tradeoff. When an AI agent sits between the human and the system, creating a hierarchy of Human to Agent to Tool, the agent, not the human, operates the system's controls. The human's role shifts from direct operation to specifying intent and overseeing outcomes. Under this model, a system's complexity is not a barrier but a resource: the richer the parameter space, the more the agent can do on the user's behalf. The threshold remains high, but the human no longer needs to cross it.
+This paper argues that realizing this shift requires more than capable agents. It requires a redesign of the interaction itself: from command transfer to reasoning transfer, from final-result delivery to progressive display, and from assumed trust to calibrated trust. Without these, delegated systems are prone to strategic drift, opacity, and misalignment.
+2. Background: Human Friction and Simplified Design
+The history of interface design is a history of working around human limitations. Norman (2013) formalized the core challenge through the Gulf of Execution, the gap between a user's intended goal and the actions a system permits, and the Gulf of Evaluation, the gap between the system's state and the user's ability to perceive it (pp. 10–13). The standard response has been simplification: reduce options, flatten complexity, make the next action obvious. Yet Norman identified the paradox this creates: "The same technology that simplifies life by providing more functions in each device also complicates life by making the device harder to learn, harder to use" (p. 31).
+The cost of resolving this paradox in favor of simplification is real. Cooper et al. (2014) showed how the drive to simplify individual screens produces deep menu hierarchies that force users into "uninformed consent," navigating choices without adequate context about what they are agreeing to (Ch. 1). The system's implementation model gets hidden, but so does the user's ability to understand what is actually happening. The result is not merely that complex features are tucked away; system capability itself is designed down to match human operating capacity. Hutchins, Hollan, and Norman (1985) showed that direct manipulation interfaces work by minimizing cognitive distance, making objects visible and directly manipulable (pp. 311–338). But this creates a structural limitation: a user can only interact with capabilities the designer explicitly surfaces. Everything else, the full range of what the system could do, remains inaccessible. High-ceiling tools exist, but they serve narrow expert populations because their threshold exceeds what most users can manage.
+Engelbart (1962) saw this differently. His H-LAM/T framework (Human using Language, Artifacts, Methodology, in which he is Trained) treats intellectual effectiveness as a system property, not a fixed individual trait (p. 15). He argued that "the intellectual effectiveness exercised today by a given human has little likelihood of being intelligence-limited" (p. 11); the real constraint is the quality of the augmentation means available. The question, in Engelbart's framing, is not how to simplify systems to fit human limits but how to provide tools that extend what humans can accomplish. Agent-mediated interaction is a new class of augmentation means: rather than making systems easier to operate directly, it introduces a layer that operates systems on behalf of humans, integrating human judgment with automated execution.
+3. Complexity as a Native Advantage
+Agent-mediated interaction restructures the interaction hierarchy from Human → Tool to Human → Agent → Tool. The consequence is that "high barriers," features too complex for direct human operation, are no longer defects. For an agent, a system with excessive flexibility provides more functional range. The HCI challenge shifts from simplifying buttons to delegating ambiguity.
+This shift is visible across domains. In software development, the paradigm has evolved from token-level code completion to task-level autonomous execution, where agents plan, code, test, and debug entire features from an intent-level specification. Hassan et al. (2025) characterized this as a shift from AI-augmented work to fully agentic work (p. 1). In product management, CrowdListen (crowdlisten.com), a platform I built, has shifted from a graphical workspace to agent-facing APIs, where the same high-ceiling features that required GUI expertise are navigable by agents accepting intent-level instructions.
+Nielsen (2023) identifies this as a third UI paradigm: intent-based outcome specification, where users describe what they want rather than how to achieve it. The threshold-ceiling tradeoff (Myers et al., 2000) is resolved not by lowering the ceiling but by having agents bridge the threshold. Agents have their own limits, including finite context windows and a tendency toward confident confabulation, but they do not share the same bandwidth constraints; they can process massive data throughput and navigate high-threshold systems that would overwhelm a person. The era of downward compatibility, designing systems down to the lowest common denominator, gives way to upward delegation, designing systems up to the full range of what agents can execute. This inversion has concrete implications: features that were never built because no human could operate them become viable, and systems can expose their full parameter space without worrying that complexity will drive users away.
+4. Reasoning Transfer: The New Master-Apprentice Model
+The critical design challenge in delegated work is the quality of the handoff. In traditional interfaces, interaction is command transfer: the user clicks a button, the system executes a predefined action. The mapping is explicit and one-to-one. In agent-mediated systems, the handoff must carry not only what the user wants but why: priorities, constraints, acceptable tradeoffs, and the contextual history behind decisions.
+Without this richer handoff, delegation fails through strategic drift. When an agent receives instructions that are technically clear but contextually incomplete, it executes efficiently while moving progressively further from the user's actual intent. The danger is that each individual step looks correct, so neither the agent nor the user detects the divergence until the cumulative misalignment becomes obvious in the final output. Unlike human collaborators, who repair incomplete requirements through shared context and follow-up questions, agents have limited capacity to detect and recover from ambiguity; they fill gaps with plausible defaults rather than surfacing them for clarification.
+Beyer and Holtzblatt's (1998) master-apprentice model from Contextual Inquiry captures this dynamic precisely. Much of a practitioner's expertise is tacit knowledge, embedded in practice, visible only through observation and contextual probing (Ch. 3). In agent-mediated interaction, the agent occupies the apprentice role. It must acquire not just explicit rules but implicit rationale: why certain tradeoffs are preferred, which constraints are hard versus soft, what counts as an acceptable outcome. The interaction moves from transferring commands to transferring reasoning. The question, then, is how to evaluate whether this tacit knowledge has actually been transferred, or whether the agent is operating on plausible but incorrect assumptions.
+Lee and See (2004) provide the trust framework for evaluating whether this transfer succeeds. They distinguish performance (what the automation does), process (how it does it), and purpose (why it was designed to do it) (p. 10). Users need access to all three; without process and purpose visibility, they cannot calibrate trust, leading to either misuse or disuse (p. 1). This means effective delegation requires rationale repositories: persistent stores of decision history and contextual rules that agents consult during execution (Cooper et al., 2014, Ch. 9). In agent-mediated systems, this rationale becomes operational infrastructure: the substrate through which intent is preserved across automated execution chains.
+5. Progressive Display and Intent-Execution Divergence
+When an agent executes autonomously, a temporal problem emerges: the longer it operates without showing its work, the greater the gap between what the user intended and what the agent is doing. If undetected, this gap compounds until misalignment is irrecoverable. This is intent-execution divergence, and progressive display is the primary mechanism for preventing it.
+But visibility must be calibrated. Norman (2013) noted that "too much feedback can be even more annoying than too little" (p. 24), and Springer and Whittaker (2019) confirmed this empirically in AI systems: users who initially expected detailed incremental feedback to help retracted this preference after experience, finding it "distracting" and counterproductive to the simple heuristics they formed about system operation (p. 1). The design principle that emerges is graduated visibility: simplified summaries first, details on demand, full traces when needed. Horvitz (1999) formalized this for mixed-initiative systems: agents should consider uncertainty and the expected costs of autonomous action before acting, surfacing decisions for human review when confidence is low (pp. 159–166). Amershi et al. (2019) operationalized these principles through 18 design guidelines for human-AI interaction, including making capabilities clear and supporting efficient correction (pp. 1–13).
+There is also a deeper dimension to progressive display. Amayuelas et al. (2024) showed that models fine-tuned to articulate what they do not know improved outcomes in multi-agent reasoning tasks (p. 1). When agents surface their own uncertainty, they do more than prevent errors; they expand the human's awareness of what remains unknown, converting unknown unknowns into known unknowns that can be investigated. This is itself a form of complexity becoming affordance: the agent uses its access to the full system to identify gaps the human could not have seen through direct operation. Progressive display is not only about showing what the agent is doing; it is about communicating what the agent does not know, directing human attention toward the most consequential uncertainties.
+6. Managing the Swarm: Visibility, Control, and Trust
+The shift from single-agent to multi-agent interaction follows from the same logic that enabled delegation in the first place. In the autocomplete era, the human remained an individual contributor, with AI assisting at the token level: suggesting the next line, completing a phrase. As agents grew more capable, the human's role changed from doing the work to providing context and goals, effectively becoming a manager of a single autonomous worker. But a manager who can effectively delegate to one agent can delegate to many. And agents that can reason about tasks can also reason about coordination, spawning and directing other agents on their own. The natural trajectory is from individual contribution to management to orchestration, where the human sets strategic direction and agents organize themselves into coordinated groups to execute.
+When this scales to multiple agents operating concurrently, the interaction challenges compound. Park et al. (2023) showed that generative agents can maintain individual goals and coordinate behavior, but only with architectures supporting memory, reflection, and planning (pp. 1–2). Wu et al. (2023) demonstrated through AutoGen that multi-agent systems solve complex tasks through structured conversation when control flow is explicitly designed (pp. 4–5). The interaction is hierarchical: Card, Moran, and Newell's (1983) GOMS model describes how a manager decomposes high-level goals into subgoals assigned to different agents, maintaining a mental model of collective state.
+The core design requirement at this scale is trust at the right granularity: the user needs to calibrate reliance on individual agents and tasks, not form a blanket judgment of the system as a whole. Nielsen's (1994) heuristic of visibility of system status now means providing a coherent overview of concurrent processes and their collective progress. Lee and See (2004) argue that trust calibration depends on resolution, how precisely trust differentiates levels of capability (p. 6), which becomes exponentially harder as the number of autonomous actors increases. Without mechanisms for humans to influence agent goals, Gupta et al. (2023) warn, "we will stand to lose as a society and exhibit lower collective intelligence" (p. 6), and Burton et al. (2024) show that agents' "opaqueness can create illusions of consensus or obscure important differences" (p. 6). The system must provide checkpoints, escalation protocols, and override paths that preserve the user's capacity to direct the work, not just observe it.
+As compute bandwidth scales further, agents will evolve from isolated single entities into high-frequency interactive networked swarms, where massive-scale data throughput fundamentally overturns product forms built for human use, such as conventional websites and apps. The interaction design challenge at this scale is not merely visibility but governance: ensuring that human intent remains the organizing principle even when no single agent's behavior is individually monitored.
+7. Conclusion
+The relationship between complexity and usability is not fixed; it is contingent on the interaction model. Under direct operation, complexity is a liability because it exceeds human cognitive capacity. Under delegated work, complexity becomes an affordance, a resource that expands what agents can do on the user's behalf. The threshold-ceiling tradeoff is resolved not by lowering the ceiling but by having agents bridge the threshold.
+This reversal requires reasoning transfer that carries intent and rationale into agent execution, progressive display that surfaces agent behavior to prevent divergence, and trust calibration that enables appropriate reliance. The competitive advantage in an agent-mediated era lies not in the sophistication of the agent itself but in the strength of the translation layer that converts unstructured human intent into context-aware, decision-grade action. In practice, this means rationale repositories that persist decision history, progressive display systems that surface uncertainty at the right granularity, and trust calibration interfaces that let users modulate reliance per agent and per task. Complexity is no longer the enemy of usability. With the right interaction design, it becomes its engine.
 
-Drawing on Norman's Gulf model, Lee and See's trust-in-automation framework, and empirical work on progressive disclosure in AI systems, this essay analyzes how complexity transforms from a usability liability into an interaction strength under delegation, and what design requirements must be met for this transformation to succeed.
+References
+Amayuelas, A., Wong, K., Pang, L., Chen, W., & Wang, W. (2024). Knowledge of knowledge: Exploring known-unknowns uncertainty with large language models. arXiv preprint arXiv:2305.13712. https://arxiv.org/abs/2305.13712
+Amershi, S., Weld, D., Vorvoreanu, M., Fourney, A., Nushi, B., Collisson, P., Suh, J., Iqbal, S., Bennett, P. N., Inkpen, K., Teevan, J., Kikin-Gil, R., & Horvitz, E. (2019). Guidelines for human-AI interaction. In Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems (Paper No. 3, pp. 1–13). ACM. https://doi.org/10.1145/3290605.3300233
+Beyer, H., & Holtzblatt, K. (1998). Contextual Design: Defining Customer-Centered Systems. Morgan Kaufmann.
+Burton, J. W., Lopez-Lopez, E., Hechtlinger, S., Rahwan, Z., Aeschbach, S., Bakker, M. A., Becker, J. A., Berditchevskaia, A., Berger, J., Brinkmann, L., Flek, L., Herzog, S. M., Huang, S., Kapoor, S., Narayanan, A., Nishi, A., Pilditch, T. D., Rutherford, A., Shumailov, I., ... Hertwig, R. (2024). How large language models can reshape collective intelligence. Nature Human Behaviour, 8, 1643–1655. https://doi.org/10.1038/s41562-024-01959-9
+Card, S. K., Moran, T. P., & Newell, A. (1983). The Psychology of Human-Computer Interaction. Lawrence Erlbaum Associates.
+Cooper, A., Reimann, R., Cronin, D., & Noessel, C. (2014). About Face: The Essentials of Interaction Design (4th ed.). Wiley.
+Engelbart, D. C. (1962). Augmenting human intellect: A conceptual framework (SRI Summary Report AFOSR-3223). Stanford Research Institute.
+Gupta, P., Nguyen, N. T., Gonzalez, C., & Woolley, A. W. (2023). Fostering collective intelligence in human–AI collaboration: Laying the groundwork for COHUMAIN. Topics in Cognitive Science, 16(4), 699–731. https://doi.org/10.1111/tops.12679
+Hassan, A. E., Li, H., Lin, D., Adams, B., Chen, T.-H., Kashiwa, Y., & Qiu, D. (2025). Agentic software engineering: Foundational pillars and a research roadmap. arXiv preprint arXiv:2509.06216. https://arxiv.org/abs/2509.06216
+Horvitz, E. (1999). Principles of mixed-initiative user interfaces. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (pp. 159–166). ACM. https://doi.org/10.1145/302979.303030
+Hutchins, E. L., Hollan, J. D., & Norman, D. A. (1985). Direct manipulation interfaces. Human–Computer Interaction, 1(4), 311–338. https://doi.org/10.1207/s15327051hci0104_2
+Lee, J. D., & See, K. A. (2004). Trust in automation: Designing for appropriate reliance. Human Factors, 46(1), 50–80. https://doi.org/10.1518/hfes.46.1.50.30392
+Miller, G. A. (1956). The magical number seven, plus or minus two: Some limits on our capacity for processing information. Psychological Review, 63(2), 81–97. https://doi.org/10.1037/h0043158
+Myers, B. A., Hudson, S. E., & Pausch, R. (2000). Past, present, and future of user interface software tools. ACM Transactions on Computer-Human Interaction, 7(1), 3–28. https://doi.org/10.1145/344949.344959
+Nielsen, J. (1994). Usability Engineering. Morgan Kaufmann.
+Nielsen, J. (2023, June 18). AI: First new UI paradigm in 60 years. Nielsen Norman Group. https://www.nngroup.com/articles/ai-paradigm/
+Norman, D. A. (2013). The Design of Everyday Things (Revised and expanded ed.). Basic Books.
+Park, J. S., O'Brien, J. C., Cai, C. J., Morris, M. R., Liang, P., & Bernstein, M. S. (2023). Generative agents: Interactive simulacra of human behavior. In Proceedings of the 36th Annual ACM Symposium on User Interface Software and Technology (Article 2, pp. 1–22). ACM. https://doi.org/10.1145/3586183.3606763
+Springer, A., & Whittaker, S. (2019). Progressive disclosure: Empirically motivated approaches to designing effective transparency. In Proceedings of the 24th International Conference on Intelligent User Interfaces (pp. 107–120). ACM. https://doi.org/10.1145/3301275.3302322
+Wu, Q., Bansal, G., Zhang, J., Wu, Y., Li, B., Zhu, E., Jiang, L., Zhang, X., Zhang, S., Liu, J., Awadallah, A. H., White, R. W., Burger, D., & Wang, C. (2023). AutoGen: Enabling next-gen LLM applications via multi-agent conversation. arXiv preprint arXiv:2308.08155. https://arxiv.org/abs/2308.08155
 
-## 1. Introduction
 
-For decades, the capability of interactive systems has been constrained by the cognitive capacity of their human operators. Because people are limited information processors, systems designed for broad adoption have typically been simplified so average users can operate them effectively. Products are constrained by friction costs of human cognition: limited time, restricted processing bandwidth, and finite attention.
-
-This constraint has shaped entire product categories. High-flexibility tools (for example, node-based creative systems) often offer extraordinary compositional power but require substantial expertise. Simplified wrappers increase accessibility, but compress the space of possible outcomes to what interface designers anticipated. This is the classic threshold-ceiling tradeoff.
-
-Agent-mediated interaction changes this tradeoff. When an AI agent sits between the human and the system, the human role shifts from direct operation to intent specification and outcome supervision. Under this model, complexity is no longer just a barrier; it becomes a resource. The richer the parameter space, the more an agent can do on a user's behalf.
-
-Realizing this shift requires more than capable models. It requires a redesign of interaction itself: from command transfer to reasoning transfer, from final-result delivery to progressive display, and from assumed trust to calibrated trust.
-
-## 2. Background: Human Friction and Simplified Design
-
-The history of interface design is largely a history of working around human limits. Norman's Gulf of Execution and Gulf of Evaluation captured the core gaps between what users want, what systems allow, and what users can perceive. The default response has been simplification: reduce options, flatten complexity, make the next action obvious.
-
-But simplification has costs. As systems hide implementation complexity, users also lose contextual understanding and control. Deep menu trees and abstraction layers often create what feels like "uninformed consent": users can proceed, but without enough visibility into what they are actually approving.
-
-Direct manipulation worked by lowering cognitive distance between intention and action. Yet it also structurally limits interaction to what is explicitly surfaced. High-ceiling capabilities remain inaccessible unless users can cross high thresholds.
-
-A more useful framing is augmentation: not forcing systems down to human limits, but improving the augmentation layer between people and capability.
-
-## 3. Complexity as a Native Advantage
-
-Agent-mediated interaction restructures the hierarchy from **Human → Tool** to **Human → Agent → Tool**. In this arrangement, "high barriers" that were previously defects can become advantages. For agents, high-flexibility systems provide larger functional range.
-
-The HCI challenge therefore shifts: less about simplifying controls, more about delegating ambiguity safely.
-
-Across domains, we can already see this inversion:
-
-- In software, interaction is moving from token-level suggestions to task-level execution.
-- In creative tooling, copilots can traverse complex graph structures while users specify intent in natural language.
-- In product systems like CrowdListen, interaction can move from GUI-first operation toward agent-facing APIs that preserve high-ceiling functionality.
-
-The old downward-compatibility logic (designing down to the lowest common denominator) gives way to upward delegation (designing up to what agents can execute reliably).
-
-## 4. Reasoning Transfer: The New Master–Apprentice Model
-
-Delegated work fails or succeeds at the handoff boundary.
-
-Traditional interfaces are primarily command transfer: users issue explicit operations and systems execute predefined mappings. Agent mediation requires richer transfer: not only **what** to do, but **why**—priorities, constraints, acceptable tradeoffs, and contextual history.
-
-Without this, systems drift. Agents can execute quickly yet move progressively away from user intent because missing context gets filled with plausible defaults.
-
-The master–apprentice framing from contextual inquiry is helpful here: expertise is partly tacit and must be learned in context, not just read from a spec. In delegated interaction, agents occupy the apprentice role and need access to rationale to avoid superficial compliance.
-
-This implies rationale repositories are not a documentation luxury—they are execution infrastructure.
-
-## 5. Progressive Display and Intent–Execution Divergence
-
-As autonomous runtime length increases, the gap between intended and actual execution can widen. Progressive display is the primary mitigation.
-
-But visibility must be calibrated. Too little transparency creates opacity and mistrust; too much creates cognitive overload. The practical pattern is graduated visibility:
-
-1. concise status summaries by default,
-2. drill-down details on demand,
-3. full traces when confidence is low or risk is high.
-
-A key extension is uncertainty display. Agents should surface what they do **not** know. This turns unknown unknowns into known unknowns and gives humans leverage for targeted intervention.
-
-## 6. Managing the Swarm: Visibility, Control, and Trust
-
-As users move from supervising one agent to orchestrating many, interaction becomes managerial and hierarchical.
-
-Multi-agent systems can coordinate effectively, but only when memory, reflection, planning, and control flow are explicit. At this scale, trust must be calibrated at the task and agent level—not treated as a binary property of "the system."
-
-Design requirements for swarm UX:
-
-- coherent overview of concurrent work,
-- checkpoints and escalation protocols,
-- interrupt/override paths,
-- per-agent confidence and uncertainty indicators,
-- rationale-linked audit trails for decisions.
-
-The core governance goal is straightforward: even if execution is distributed and partially opaque, **human intent remains the organizing principle**.
-
-## 7. CrowdListen as a Case of Delegation Infrastructure
-
-CrowdListen is a useful case study because it sits directly at the intent-to-execution boundary. Its core value is not only analysis output, but translation: converting fragmented, multimodal user signals into agent-ready constraints.
-
-In HCI terms, CrowdListen functions as a reasoning-transfer layer:
-
-- it structures ambiguous input,
-- preserves rationale across handoffs,
-- and increases the chance that downstream agent actions reflect upstream intent.
-
-This is the practical center of AI-native interaction design: not removing complexity, but making complexity delegable.
-
-## 8. Conclusion
-
-The relationship between complexity and usability is contingent on interaction architecture.
-
-- Under direct operation, complexity is often a liability.
-- Under delegated interaction, complexity can become an affordance.
-
-The threshold-ceiling tradeoff is no longer solved only by lowering threshold. It can also be solved by creating reliable delegation layers that bridge threshold on the user's behalf.
-
-The real moat in agent-mediated products is therefore not just model capability. It is the strength of the translation layer that converts unstructured human intent into context-aware, decision-grade action.
-
-With the right design—reasoning transfer, progressive visibility, and calibrated trust—complexity becomes not the enemy of usability, but its engine.
-
----
-
-## Acknowledgments
-
-I’m grateful to **Prof. Darren Gergle (Northwestern University)** and **Ethan Li** for contributing ideas and discussing early versions of this blog post with me.
