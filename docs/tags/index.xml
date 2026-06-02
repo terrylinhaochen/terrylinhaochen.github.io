@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     <title>Tags - Terry Chen</title>
-    <link>https://chenterry.com/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Hi, this is Terry. I&#39;m documenting my product ideas and learning notes in this blog. I&#39;m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description>
     <language>en-us</language>
     <managingEditor>Terry Chen (Terry Chen)</managingEditor>
@@ -10,7 +10,7 @@
     <copyright>© 2026 Terry Chen. All rights reserved.</copyright>
     <lastBuildDate>Wed, 04 Mar 2026 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="https://chenterry.com/tags/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     
     <generator>Hugo 0.136.2</generator>
     <category>Technology</category>
@@ -18,9 +18,9 @@
     <category>Product Engineering</category>
     <category>Investment Analysis</category>
     <image>
-      <url>https://chenterry.com/images/profile.jpg</url>
+      <url>http://localhost:1313/images/profile.jpg</url>
       <title>Terry Chen</title>
-      <link>https://chenterry.com/</link>
+      <link>http://localhost:1313/</link>
       <description>Hi, this is Terry. I&#39;m documenting my product ideas and learning notes in this blog. I&#39;m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description>
       <width>144</width>
       <height>144</height>
@@ -28,10 +28,10 @@
     
     <item>
       <title>Agents</title>
-      <link>https://chenterry.com/tags/agents/</link>
+      <link>http://localhost:1313/tags/agents/</link>
       <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/tags/agents/</guid>
+      <guid>http://localhost:1313/tags/agents/</guid>
       <description></description>
       
       
@@ -43,10 +43,10 @@
     
     <item>
       <title>AI</title>
-      <link>https://chenterry.com/tags/ai/</link>
+      <link>http://localhost:1313/tags/ai/</link>
       <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/tags/ai/</guid>
+      <guid>http://localhost:1313/tags/ai/</guid>
       <description></description>
       
       
@@ -58,10 +58,10 @@
     
     <item>
       <title>MCP</title>
-      <link>https://chenterry.com/tags/mcp/</link>
+      <link>http://localhost:1313/tags/mcp/</link>
       <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/tags/mcp/</guid>
+      <guid>http://localhost:1313/tags/mcp/</guid>
       <description></description>
       
       
@@ -73,10 +73,10 @@
     
     <item>
       <title>Product</title>
-      <link>https://chenterry.com/tags/product/</link>
+      <link>http://localhost:1313/tags/product/</link>
       <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/tags/product/</guid>
+      <guid>http://localhost:1313/tags/product/</guid>
       <description></description>
       
       
@@ -88,10 +88,10 @@
     
     <item>
       <title>Skills</title>
-      <link>https://chenterry.com/tags/skills/</link>
+      <link>http://localhost:1313/tags/skills/</link>
       <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/tags/skills/</guid>
+      <guid>http://localhost:1313/tags/skills/</guid>
       <description></description>
       
       
@@ -103,10 +103,10 @@
     
     <item>
       <title>Agent Economy</title>
-      <link>https://chenterry.com/tags/agent-economy/</link>
+      <link>http://localhost:1313/tags/agent-economy/</link>
       <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/tags/agent-economy/</guid>
+      <guid>http://localhost:1313/tags/agent-economy/</guid>
       <description></description>
       
       
@@ -118,10 +118,10 @@
     
     <item>
       <title>Moltbook</title>
-      <link>https://chenterry.com/tags/moltbook/</link>
+      <link>http://localhost:1313/tags/moltbook/</link>
       <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/tags/moltbook/</guid>
+      <guid>http://localhost:1313/tags/moltbook/</guid>
       <description></description>
       
       
@@ -133,10 +133,10 @@
     
     <item>
       <title>Research</title>
-      <link>https://chenterry.com/tags/research/</link>
+      <link>http://localhost:1313/tags/research/</link>
       <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/tags/research/</guid>
+      <guid>http://localhost:1313/tags/research/</guid>
       <description></description>
       
       
@@ -148,10 +148,10 @@
     
     <item>
       <title>Product Thinking</title>
-      <link>https://chenterry.com/tags/product-thinking/</link>
+      <link>http://localhost:1313/tags/product-thinking/</link>
       <pubDate>Mon, 02 Mar 2026 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/tags/product-thinking/</guid>
+      <guid>http://localhost:1313/tags/product-thinking/</guid>
       <description></description>
       
       
@@ -163,10 +163,10 @@
     
     <item>
       <title>Strategy</title>
-      <link>https://chenterry.com/tags/strategy/</link>
+      <link>http://localhost:1313/tags/strategy/</link>
       <pubDate>Mon, 02 Mar 2026 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/tags/strategy/</guid>
+      <guid>http://localhost:1313/tags/strategy/</guid>
       <description></description>
       
       
@@ -178,10 +178,10 @@
     
     <item>
       <title>Writing</title>
-      <link>https://chenterry.com/tags/writing/</link>
+      <link>http://localhost:1313/tags/writing/</link>
       <pubDate>Mon, 02 Mar 2026 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/tags/writing/</guid>
+      <guid>http://localhost:1313/tags/writing/</guid>
       <description></description>
       
       
@@ -193,10 +193,10 @@
     
     <item>
       <title>Investing</title>
-      <link>https://chenterry.com/tags/investing/</link>
+      <link>http://localhost:1313/tags/investing/</link>
       <pubDate>Sat, 28 Feb 2026 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/tags/investing/</guid>
+      <guid>http://localhost:1313/tags/investing/</guid>
       <description></description>
       
       
@@ -208,10 +208,10 @@
     
     <item>
       <title>Posts</title>
-      <link>https://chenterry.com/tags/posts/</link>
+      <link>http://localhost:1313/tags/posts/</link>
       <pubDate>Sat, 28 Feb 2026 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/tags/posts/</guid>
+      <guid>http://localhost:1313/tags/posts/</guid>
       <description></description>
       
       
@@ -223,10 +223,10 @@
     
     <item>
       <title>Entrepreneurship</title>
-      <link>https://chenterry.com/tags/entrepreneurship/</link>
+      <link>http://localhost:1313/tags/entrepreneurship/</link>
       <pubDate>Sun, 22 Feb 2026 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/tags/entrepreneurship/</guid>
+      <guid>http://localhost:1313/tags/entrepreneurship/</guid>
       <description></description>
       
       
@@ -238,10 +238,10 @@
     
     <item>
       <title>Crowdlisten</title>
-      <link>https://chenterry.com/tags/crowdlisten/</link>
+      <link>http://localhost:1313/tags/crowdlisten/</link>
       <pubDate>Sun, 15 Feb 2026 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/tags/crowdlisten/</guid>
+      <guid>http://localhost:1313/tags/crowdlisten/</guid>
       <description></description>
       
       
@@ -253,10 +253,10 @@
     
     <item>
       <title>Observations</title>
-      <link>https://chenterry.com/tags/observations/</link>
+      <link>http://localhost:1313/tags/observations/</link>
       <pubDate>Wed, 12 Nov 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/tags/observations/</guid>
+      <guid>http://localhost:1313/tags/observations/</guid>
       <description></description>
       
       
@@ -268,10 +268,10 @@
     
     <item>
       <title>Archive</title>
-      <link>https://chenterry.com/tags/archive/</link>
+      <link>http://localhost:1313/tags/archive/</link>
       <pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/tags/archive/</guid>
+      <guid>http://localhost:1313/tags/archive/</guid>
       <description></description>
       
       

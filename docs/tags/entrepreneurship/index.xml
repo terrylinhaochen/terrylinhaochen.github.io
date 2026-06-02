@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     <title>Entrepreneurship - Terry Chen</title>
-    <link>https://chenterry.com/tags/entrepreneurship/</link>
+    <link>http://localhost:1313/tags/entrepreneurship/</link>
     <description>Hi, this is Terry. I&#39;m documenting my product ideas and learning notes in this blog. I&#39;m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description>
     <language>en-us</language>
     <managingEditor>Terry Chen (Terry Chen)</managingEditor>
@@ -10,7 +10,7 @@
     <copyright>© 2026 Terry Chen. All rights reserved.</copyright>
     <lastBuildDate>Sun, 22 Feb 2026 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="https://chenterry.com/tags/entrepreneurship/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/tags/entrepreneurship/index.xml" rel="self" type="application/rss+xml" />
     
     <generator>Hugo 0.136.2</generator>
     <category>Technology</category>
@@ -18,9 +18,9 @@
     <category>Product Engineering</category>
     <category>Investment Analysis</category>
     <image>
-      <url>https://chenterry.com/images/profile.jpg</url>
+      <url>http://localhost:1313/images/profile.jpg</url>
       <title>Terry Chen</title>
-      <link>https://chenterry.com/</link>
+      <link>http://localhost:1313/</link>
       <description>Hi, this is Terry. I&#39;m documenting my product ideas and learning notes in this blog. I&#39;m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description>
       <width>144</width>
       <height>144</height>
@@ -28,10 +28,10 @@
     
     <item>
       <title>Running a 1-Person Billion Dollar Company: The AI Stack That Makes It Possible</title>
-      <link>https://chenterry.com/posts/one-person-billion/</link>
+      <link>http://localhost:1313/posts/one-person-billion/</link>
       <pubDate>Sun, 22 Feb 2026 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/posts/one-person-billion/</guid>
+      <guid>http://localhost:1313/posts/one-person-billion/</guid>
       <description>The complete toolkit for building a billion-dollar company with a team of one. How AI agents handle research, coding, operations, and marketing while you focus on vision.</description>
       
       
@@ -61,10 +61,10 @@
     
     <item>
       <title>Building Has Become Easier — How Do We Fix Distribution?</title>
-      <link>https://chenterry.com/posts/crowdlisten_distribution_intelligence/</link>
+      <link>http://localhost:1313/posts/crowdlisten_distribution_intelligence/</link>
       <pubDate>Wed, 17 Dec 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/posts/crowdlisten_distribution_intelligence/</guid>
+      <guid>http://localhost:1313/posts/crowdlisten_distribution_intelligence/</guid>
       <description>Notes from working with vibe-coded builders: shipping is fast, distribution is hard, and founder-led workflows are becoming the operating layer between product capability, PRD clarity, and adoption.</description>
       
       
@@ -90,10 +90,10 @@
     
     <item>
       <title>CrowdListen (Archived v2025-11-09)</title>
-      <link>https://chenterry.com/posts/crowdlisten_archive_v2025_11_09/</link>
+      <link>http://localhost:1313/posts/crowdlisten_archive_v2025_11_09/</link>
       <pubDate>Sun, 09 Nov 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/posts/crowdlisten_archive_v2025_11_09/</guid>
+      <guid>http://localhost:1313/posts/crowdlisten_archive_v2025_11_09/</guid>
       <description>Transform large-scale social conversations into actionable insights. Understand crowd sentiment, track emerging opinions, and identify key narratives.</description>
       
       
@@ -117,10 +117,10 @@
     
     <item>
       <title>Turning Audience Insight Into Agent-Ready Specs</title>
-      <link>https://chenterry.com/posts/crowdlisten/</link>
+      <link>http://localhost:1313/posts/crowdlisten/</link>
       <pubDate>Mon, 15 Sep 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/posts/crowdlisten/</guid>
+      <guid>http://localhost:1313/posts/crowdlisten/</guid>
       <description>CrowdListen converts raw user conversation into structured product insight and agent-ready PM specs, preserving intent from feedback signal to executable task.</description>
       
       
@@ -144,10 +144,10 @@
     
     <item>
       <title>When to Sunset a Product: A Decision Framework for Entrepreneurs</title>
-      <link>https://chenterry.com/posts/when-to-sunset-a-product/</link>
+      <link>http://localhost:1313/posts/when-to-sunset-a-product/</link>
       <pubDate>Sat, 12 Jul 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/posts/when-to-sunset-a-product/</guid>
+      <guid>http://localhost:1313/posts/when-to-sunset-a-product/</guid>
       <description>A framework for deciding when to sunset products and projects. Understanding opportunity costs, sunk cost fallacy, and making difficult decisions about failing ventures. Essential guidance for startup founders and product managers.</description>
       
       
@@ -169,10 +169,10 @@
     
     <item>
       <title>Why People Care What Others Think</title>
-      <link>https://chenterry.com/posts/crowd_thesis/</link>
+      <link>http://localhost:1313/posts/crowd_thesis/</link>
       <pubDate>Mon, 12 May 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/posts/crowd_thesis/</guid>
+      <guid>http://localhost:1313/posts/crowd_thesis/</guid>
       <description>Understanding collective intelligence and social dynamics. Why crowd psychology matters for product builders and how human need for belonging drives engagement patterns.</description>
       
       
@@ -198,10 +198,10 @@
     
     <item>
       <title>Product Engineers and AI Multipliers</title>
-      <link>https://chenterry.com/posts/product_engineers/</link>
+      <link>http://localhost:1313/posts/product_engineers/</link>
       <pubDate>Sat, 19 Apr 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen&#39; (Terry Chen&#39;)</author>
-      <guid>https://chenterry.com/posts/product_engineers/</guid>
+      <guid>http://localhost:1313/posts/product_engineers/</guid>
       <description>How AI is transforming product engineering teams into smaller, more efficient units. Learn why product engineers are becoming more valuable than traditional product managers in AI-first organizations.</description>
       
       
@@ -227,10 +227,10 @@
     
     <item>
       <title>Interesting Reads</title>
-      <link>https://chenterry.com/posts/interesting_reads/</link>
+      <link>http://localhost:1313/posts/interesting_reads/</link>
       <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/posts/interesting_reads/</guid>
+      <guid>http://localhost:1313/posts/interesting_reads/</guid>
       <description>Curated collection of compelling articles and insights on AI agents, entrepreneurship, and product development. Features analysis of breakthrough AI tools and emerging trends.</description>
       
       
@@ -252,10 +252,10 @@
     
     <item>
       <title>User Needs &amp; Opportunities</title>
-      <link>https://chenterry.com/posts/user-needs/</link>
+      <link>http://localhost:1313/posts/user-needs/</link>
       <pubDate>Tue, 25 Mar 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/posts/user-needs/</guid>
+      <guid>http://localhost:1313/posts/user-needs/</guid>
       <description>Identifying real user pain points and business opportunities through conversations and online research. A collection of validated user needs that could become viable startups.</description>
       
       
@@ -279,10 +279,10 @@
     
     <item>
       <title>Essence of Creativity: Future of Creative Work</title>
-      <link>https://chenterry.com/posts/essense_of_creativity/</link>
+      <link>http://localhost:1313/posts/essense_of_creativity/</link>
       <pubDate>Sun, 25 Aug 2024 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/posts/essense_of_creativity/</guid>
+      <guid>http://localhost:1313/posts/essense_of_creativity/</guid>
       <description>Exploring the intersection of AI-generated content and human creativity. Analysis of creative workflows, multimodal interactions, and the future of content creation in the AI era.</description>
       
       
@@ -310,10 +310,10 @@
     
     <item>
       <title>Cogno: Multi-agent AI for Sales Automation</title>
-      <link>https://chenterry.com/archived/cogno/</link>
+      <link>http://localhost:1313/archived/cogno/</link>
       <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/archived/cogno/</guid>
+      <guid>http://localhost:1313/archived/cogno/</guid>
       <description>&lt;p&gt;Multi-agent system for cross boarder e-commerce sales automation. Co-founder and head of product.
 &lt;a href=&#34;https://cognogpt.com&#34;&gt;https://cognogpt.com&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Cogno+ is dedicated to revolutionizing global e-commerce by empowering brands with AI-driven assistance that offers seamless, personalized customer experiences. Our mission is to serve as the digital bridge between brands and customers, enhancing interactions and transactions across international markets, and allowing the brand to increase conversion and upsell while reducing time and money spent on manual customer service.&lt;/p&gt;</description>
@@ -339,10 +339,10 @@
     
     <item>
       <title>Agentic Workforce</title>
-      <link>https://chenterry.com/main-themes/multi-agent-systems/</link>
+      <link>http://localhost:1313/main-themes/multi-agent-systems/</link>
       <pubDate>Sun, 20 Aug 2023 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/main-themes/multi-agent-systems/</guid>
+      <guid>http://localhost:1313/main-themes/multi-agent-systems/</guid>
       <description>What does an organization look like when a meaningful portion of the workforce is non-human?</description>
       
       

@@ -1,5 +1,5 @@
 ---
-title: "Northwestern (DTR)"
+title: "Regulation Skill Coaching"
 description: "Improving and scaling self-regulation skill coaching through AI agent systems."
 work_focus: "Regulation informed learning, case library enabled diagnosis and intervention"
 thesis_category: "northwestern"
