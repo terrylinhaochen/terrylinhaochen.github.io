@@ -579,7 +579,7 @@
         
         <h2>Work Samples</h2>
         <div class="products-section">
-            <p class="products-note">Independent products I've built and shipped myself. For product work at larger companies — Microsoft, TikTok, ByteDance — see <a href="/about/">About</a>.</p>
+            <p class="products-note">Independent products I've shipped. For company work, see <a href="/about/">About</a>.</p>
             <div class="products-grid">
                 <div class="product-card">
                     <h4>CrowdListen</h4>
@@ -791,6 +791,8 @@
     }
 
     .product-card {
+        display: flex;
+        flex-direction: column;
         background: var(--entry);
         border: 1px solid var(--border);
         border-radius: 12px;
@@ -829,6 +831,7 @@
     .product-links {
         display: flex;
         gap: 1rem;
+        margin-top: auto;
     }
 
     .product-links a {
