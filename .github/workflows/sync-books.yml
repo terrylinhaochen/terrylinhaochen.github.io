@@ -12,7 +12,7 @@
 # syncs twice a day (or run it manually from the Actions tab) and kicks off
 # the Hugo deploy when something changed.
 
-name: Sync book recommendations
+name: Sync reading data
 
 on:
   schedule:
@@ -46,19 +46,24 @@ jobs:
           BOOKS_SHEET_CSV_URL: ${{ secrets.BOOKS_SHEET_CSV_URL }}
         run: python3 scripts/sync_book_recommendations.py
 
+      - name: Sync Readwise books
+        if: ${{ secrets.READWISE_TOKEN != '' }}
+        env:
+          READWISE_TOKEN: ${{ secrets.READWISE_TOKEN }}
+        run: python3 scripts/sync_readwise_books.py
+
       - name: Commit and deploy if changed
-        if: steps.check.outputs.configured == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          if git diff --quiet data/book_recommendations.json; then
-            echo "No new approved recommendations."
+          if git diff --quiet data/book_recommendations.json data/readwise_books.json; then
+            echo "No reading-data changes."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/book_recommendations.json
-          git commit -m "Sync approved book recommendations"
+          git add data/book_recommendations.json data/readwise_books.json
+          git commit -m "Sync reading data (recommendations + Readwise)"
           git push
           # Pushes from GITHUB_TOKEN don't trigger other workflows, so kick
           # off the Pages deploy explicitly.

@@ -14,6 +14,11 @@
 #   rating:    (optional) 1-5
 #   notes:     (optional, read list only) markdown supported
 
+# Titles that the Readwise sync (scripts/sync_readwise_books.py) must never
+# publish, even though they sit in the Readwise "books" category.
+readwise_exclude:
+  - "How to Use Readwise"
+
 read:
   - title: "The Mom Test"
     author: "Rob Fitzpatrick"

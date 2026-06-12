@@ -22,12 +22,18 @@
 
 {{- $books := site.Data.books }}
 
+{{- /* Readwise-synced books (metadata only, auto-updated by GitHub Action) */}}
+{{- $rw := site.Data.readwise_books | default dict }}
+
 <!-- Off the Shelf (books I've read) -->
 <h2 class="reading-section-title">Off the Shelf</h2>
-{{- with $books.read }}
+{{- if or $books.read $rw.read }}
 <div class="book-gallery">
-  {{- range $i, $book := . }}
+  {{- range $i, $book := $books.read }}
   {{- partial "book-card.html" (dict "book" $book "kind" "read" "index" $i) }}
+  {{- end }}
+  {{- range $rw.read }}
+  {{- partial "book-card.html" (dict "book" . "kind" "shelf") }}
   {{- end }}
 </div>
 {{- else }}
@@ -36,9 +42,12 @@
 
 <!-- On the Shelf -->
 <h2 class="reading-section-title">On the Shelf</h2>
-{{- with $books.shelf }}
+{{- if or $books.shelf $rw.shelf }}
 <div class="book-gallery">
-  {{- range . }}
+  {{- range $books.shelf }}
+  {{- partial "book-card.html" (dict "book" . "kind" "shelf") }}
+  {{- end }}
+  {{- range $rw.shelf }}
   {{- partial "book-card.html" (dict "book" . "kind" "shelf") }}
   {{- end }}
 </div>
