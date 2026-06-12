@@ -330,7 +330,154 @@
   <url>
     <loc>http://localhost:1313/</loc>
     
-    <lastmod>2026-03-04T00:00:00+00:00</lastmod>
+    <lastmod>2026-05-16T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+    
+    
+    
+    
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:1313/tags/posts/</loc>
+    
+    <lastmod>2026-05-16T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+    
+    
+    
+    
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:1313/posts/</loc>
+    
+    <lastmod>2026-05-16T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+    
+    
+    
+    
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:1313/posts/senior_talk/</loc>
+    
+    <lastmod>2026-05-16T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+    
+    
+    
+    
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:1313/tags/</loc>
+    
+    <lastmod>2026-05-16T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+    
+    
+    
+    
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:1313/categories/ai/</loc>
+    
+    <lastmod>2026-03-08T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+    
+    
+    
+    
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:1313/categories/</loc>
+    
+    <lastmod>2026-03-08T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+    
+    
+    
+    
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:1313/posts/delegating_ambiguity/</loc>
+    
+    <lastmod>2026-03-08T00:00:00+00:00</lastmod>
     
     
     <changefreq>weekly</changefreq>
@@ -391,49 +538,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/categories/</loc>
-    
-    <lastmod>2026-03-04T00:00:00+00:00</lastmod>
-    
-    
-    <changefreq>weekly</changefreq>
-    
-    
-    <priority>0.5</priority>
-    
-    
-    
-    
-    
-    
-    
-  </url>
-  
-  
-  
-  <url>
     <loc>http://localhost:1313/tags/mcp/</loc>
-    
-    <lastmod>2026-03-04T00:00:00+00:00</lastmod>
-    
-    
-    <changefreq>weekly</changefreq>
-    
-    
-    <priority>0.5</priority>
-    
-    
-    
-    
-    
-    
-    
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:1313/posts/</loc>
     
     <lastmod>2026-03-04T00:00:00+00:00</lastmod>
     
@@ -497,27 +602,6 @@
   
   <url>
     <loc>http://localhost:1313/tags/skills/</loc>
-    
-    <lastmod>2026-03-04T00:00:00+00:00</lastmod>
-    
-    
-    <changefreq>weekly</changefreq>
-    
-    
-    <priority>0.5</priority>
-    
-    
-    
-    
-    
-    
-    
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:1313/tags/</loc>
     
     <lastmod>2026-03-04T00:00:00+00:00</lastmod>
     
@@ -769,48 +853,6 @@
   
   
   <url>
-    <loc>http://localhost:1313/posts/agent_economy/</loc>
-    
-    <lastmod>2026-02-28T00:00:00+00:00</lastmod>
-    
-    
-    <changefreq>weekly</changefreq>
-    
-    
-    <priority>0.5</priority>
-    
-    
-    
-    
-    
-    
-    
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:1313/categories/ai/</loc>
-    
-    <lastmod>2026-02-28T00:00:00+00:00</lastmod>
-    
-    
-    <changefreq>weekly</changefreq>
-    
-    
-    <priority>0.5</priority>
-    
-    
-    
-    
-    
-    
-    
-  </url>
-  
-  
-  
-  <url>
     <loc>http://localhost:1313/categories/crypto/</loc>
     
     <lastmod>2026-02-28T00:00:00+00:00</lastmod>
@@ -854,27 +896,6 @@
   
   <url>
     <loc>http://localhost:1313/tags/investing/</loc>
-    
-    <lastmod>2026-02-28T00:00:00+00:00</lastmod>
-    
-    
-    <changefreq>weekly</changefreq>
-    
-    
-    <priority>0.5</priority>
-    
-    
-    
-    
-    
-    
-    
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:1313/tags/posts/</loc>
     
     <lastmod>2026-02-28T00:00:00+00:00</lastmod>
     
@@ -2198,6 +2219,25 @@
   
   
   <url>
+    <loc>http://localhost:1313/posts/agent_economy/</loc>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+    
+    
+    
+    
+    
+  </url>
+  
+  
+  
+  <url>
     <loc>http://localhost:1313/about/</loc>
     
     
@@ -2275,6 +2315,25 @@
   
   <url>
     <loc>http://localhost:1313/product/</loc>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+    
+    
+    
+    
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:1313/reading/</loc>
     
     
     <changefreq>weekly</changefreq>

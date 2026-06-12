@@ -1,0 +1,65 @@
+# Pulls approved book recommendations from the Google Sheet behind the
+# recommendation form and commits them to data/book_recommendations.json.
+#
+# Setup (one-time):
+#   1. Create the Google Form and its linked response Sheet.
+#   2. In the Sheet, add an "Approved" checkbox column.
+#   3. File > Share > Publish to web > select the responses tab as CSV; copy the URL.
+#   4. Add it as a repository secret named BOOKS_SHEET_CSV_URL
+#      (Settings > Secrets and variables > Actions).
+#
+# After that, ticking "Approved" in the sheet is all it takes — this workflow
+# syncs twice a day (or run it manually from the Actions tab) and kicks off
+# the Hugo deploy when something changed.
+
+name: Sync book recommendations
+
+on:
+  schedule:
+    - cron: "17 6,18 * * *" # twice a day
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write # to trigger the Hugo deploy workflow after committing
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check secret
+        id: check
+        run: |
+          if [ -z "${{ secrets.BOOKS_SHEET_CSV_URL }}" ]; then
+            echo "BOOKS_SHEET_CSV_URL secret not set; skipping sync."
+            echo "configured=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "configured=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Sync recommendations
+        if: steps.check.outputs.configured == 'true'
+        env:
+          BOOKS_SHEET_CSV_URL: ${{ secrets.BOOKS_SHEET_CSV_URL }}
+        run: python3 scripts/sync_book_recommendations.py
+
+      - name: Commit and deploy if changed
+        if: steps.check.outputs.configured == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet data/book_recommendations.json; then
+            echo "No new approved recommendations."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/book_recommendations.json
+          git commit -m "Sync approved book recommendations"
+          git push
+          # Pushes from GITHUB_TOKEN don't trigger other workflows, so kick
+          # off the Pages deploy explicitly.
+          gh workflow run hugo.yml --ref main

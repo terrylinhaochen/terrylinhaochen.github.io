@@ -97,6 +97,13 @@ enableRobotsTXT = true
     name = "email"
     url = "mailto:terrychen2026@u.northwestern.edu"
 
+  # Reading page settings
+  [params.reading]
+    # Google Form for book recommendations. Create the form, then paste its
+    # public link here. See scripts/sync_book_recommendations.py for the
+    # approval/sync pipeline.
+    recommendForm = "https://docs.google.com/forms/d/e/1FAIpQLSfw2S1NNwp3_KDMs2SrP_eBc34fMNkGHrmP7ZKkmTXd4_cLhg/viewform"
+
   # Assets for cover images and profile pictures
   [params.assets]
     favicon = "/favicon.ico"
@@ -122,6 +129,11 @@ enableRobotsTXT = true
     url = "/investing/"
     weight = 25
   # Archived section removed from main navigation
+  [[menu.main]]
+    identifier = "reading"
+    name = "Reading"
+    url = "/reading/"
+    weight = 28
   [[menu.main]]
     identifier = "search"
     name = "Search"

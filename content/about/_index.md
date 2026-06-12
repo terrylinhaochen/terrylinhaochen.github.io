@@ -2,7 +2,7 @@
 title: "About Me"
 url: "/about/"
 summary: "About Terry Chen"
-description: "CS @ Northwestern, thinking about product. My focus areas include multi-agent systems, content understanding, and scaling creative workflows through AI multipliers. In my free time, I like to go hiking and travelling."
+description: "CS @ Northwestern, thinking about product. My focus areas include crowd intelligence, agentic workflows, and traveling the world. In my free time, I like to read."
 keywords: ["Terry Chen", "Product Management", "AI Research", "SEO Product Engineers", "AI Multipliers"]
 hidemeta: true
 ShowBreadCrumbs: false
@@ -11,7 +11,7 @@ layout: "about"
 
 ## About {.section-title}
 
-CS & HCI @ Northwestern [Resume](https://drive.google.com/file/d/17jaSujjHz8XCGOTPwsHBOtqubgMAKmut/view?usp=drive_link). Beijing, Toronto, Evanston. I'm experienced in product management and agent ai implementation. Right now I'm thinking about content understanding, scaling creative workflows, and social simulation. In my free time, I like to read and travel. Always happy to chat ;)
+CS & HCI @ Northwestern [Resume](https://drive.google.com/file/d/17jaSujjHz8XCGOTPwsHBOtqubgMAKmut/view?usp=drive_link). Beijing, Evanston, San Francisco. I'm experienced in product management and agent ai implementation. Right now I'm thinking about crowd intelligence, agentic workflows, and traveling the world. In my free time, I like to read. Always happy to chat ;)
 
 ## Skills {.section-title}
 

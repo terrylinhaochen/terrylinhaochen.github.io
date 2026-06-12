@@ -1,7 +1,7 @@
 ---
-title: "Agentic Workforce"
+title: "Language Models and Agents"
 date: 2023-08-20
-description: "What does an organization look like when a meaningful portion of the workforce is non-human?"
+description: "What becomes possible when language models can hold context, make decisions, and execute across long horizons?"
 tags: ["Entrepreneurship"]
 categories: ["Research"]
 featured: true
@@ -26,6 +26,6 @@ related_posts:
     blurb: "AI-aided exploratory learning interfaces."
 ---
 
-## What does an organization look like when a meaningful portion of the workforce is non-human?
+## What becomes possible when language models can hold context, make decisions, and execute across long horizons?
 
 The interesting question isn't how to use AI agents as tools — it's how to structure work when agents can hold context, make decisions, and execute across long horizons without human intervention at every step. The org chart changes. The spec-writing changes. The definition of a "team" changes.

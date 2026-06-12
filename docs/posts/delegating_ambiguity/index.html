@@ -1,0 +1,1939 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<meta name="description" content="As interaction shifts from Human→Tool to Human→Agent→Tool, complexity becomes an affordance—but only if we design for reasoning transfer, progressive visibility, and calibrated trust.">
+<meta name="keywords" content="HCI, agents, delegation, reasoning transfer, trust in automation, CrowdListen, multi-agent, progressive disclosure">
+<meta name="author" content="Terry Chen">
+<meta name="robots" content="index, follow">
+<meta name="language" content="en-us">
+<meta name="revisit-after" content="7 days">
+<meta name="distribution" content="global">
+<meta name="rating" content="general">
+<link rel="canonical" href="http://localhost:1313/posts/delegating_ambiguity/">
+
+
+<meta property="og:title" content="Delegating Ambiguity: Human–Computer Interaction in the Age of Personal Agents | Terry Chen">
+<meta property="og:description" content="As interaction shifts from Human→Tool to Human→Agent→Tool, complexity becomes an affordance—but only if we design for reasoning transfer, progressive visibility, and calibrated trust.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://localhost:1313/posts/delegating_ambiguity/">
+<meta property="og:site_name" content="Terry Chen">
+<meta property="og:locale" content="en-us">
+
+<meta property="article:published_time" content="2026-03-08T00:00:00Z">
+<meta property="article:modified_time" content="2026-03-08T00:00:00Z">
+<meta property="article:author" content="Terry Chen">
+
+
+<meta property="article:tag" content="Posts">
+
+
+
+
+<meta property="article:section" content="ai">
+
+
+
+
+
+<meta property="og:image" content="http://localhost:1313/images/profile.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Terry Chen">
+
+
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@terrychen_ai">
+<meta name="twitter:creator" content="@terrychen_ai">
+<meta name="twitter:title" content="Delegating Ambiguity: Human–Computer Interaction in the Age of Personal Agents | Terry Chen">
+<meta name="twitter:description" content="As interaction shifts from Human→Tool to Human→Agent→Tool, complexity becomes an affordance—but only if we design for reasoning transfer, progressive visibility, and calibrated trust.">
+
+
+<meta name="twitter:image" content="http://localhost:1313/images/profile.jpg">
+<meta name="twitter:image:alt" content="Terry Chen">
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Delegating Ambiguity: Human–Computer Interaction in the Age of Personal Agents",
+  "datePublished": "2026-03-08T00:00:00Z",
+  "dateModified": "2026-03-08T00:00:00Z",
+  "author": {
+    "@type": "Person",
+    "name": "Terry Chen",
+    "url": "http:\/\/localhost:1313\/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Terry Chen",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http:\/\/localhost:1313\/images/profile.jpg"
+    }
+  },
+  "description": "As interaction shifts from Human→Tool to Human→Agent→Tool, complexity becomes an affordance—but only if we design for reasoning transfer, progressive visibility, and calibrated trust.",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http:\/\/localhost:1313\/posts\/delegating_ambiguity\/"
+  },
+  "keywords": "HCI, agents, delegation, reasoning transfer, trust in automation, CrowdListen, multi-agent, progressive disclosure",
+  "articleSection": "ai"
+  ,
+  "image": {
+    "@type": "ImageObject",
+    "url": "http:\/\/localhost:1313\/images\/profile.jpg",
+    "width": 1200,
+    "height": 630
+  }
+}
+</script>
+
+
+
+
+<meta name="article:published_time" content="2026-03-08T00:00:00Z">
+<meta name="article:modified_time" content="2026-03-08T00:00:00Z">
+
+
+
+<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="bingbot" content="index, follow">
+<meta name="slurp" content="index, follow">
+<meta name="duckduckbot" content="index, follow">
+
+
+
+<meta name="section" content="posts">
+
+
+<meta name="content-type" content="posts">
+
+
+
+<meta name="geo.region" content="US">
+<meta name="geo.placename" content="United States">
+<meta name="language" content="en-us">
+<meta http-equiv="content-language" content="en-us">
+
+
+
+
+
+<meta property="og:determiner" content="the">
+<meta property="og:rich_attachment" content="true">
+
+<meta property="og:updated_time" content="2026-03-08T00:00:00Z">
+
+
+
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Terry Chen">
+
+
+<meta http-equiv="Cache-Control" content="public, max-age=31536000">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "http:\/\/localhost:1313\/"
+    }
+    ,
+    {
+      "@type": "ListItem", 
+      "position": 2,
+      "name": "Posts",
+      "item": "http:\/\/localhost:1313\/posts/"
+    }
+    
+    ,
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Delegating Ambiguity: Human–Computer Interaction in the Age of Personal Agents",
+      "item": "http:\/\/localhost:1313\/posts\/delegating_ambiguity\/"
+    }
+    
+  ]
+}
+</script>
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="dns-prefetch" href="//www.google-analytics.com">
+<link rel="dns-prefetch" href="//www.googletagmanager.com">
+
+
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="application-name" content="Terry Chen">
+
+
+
+<meta name="DC.type" content="Text">
+<meta name="DC.format" content="text/html">
+<meta name="DC.identifier" content="http://localhost:1313/posts/delegating_ambiguity/">
+<meta name="DC.date" content="2026-03-08">
+<meta name="DC.creator" content="Terry Chen">
+<meta name="DC.publisher" content="Terry Chen">
+<meta name="DC.rights" content="© 2026 Terry Chen. All rights reserved.">
+ <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow"><title>Delegating Ambiguity: Human–Computer Interaction in the Age of Personal Agents | Terry Chen</title>
+<meta name="keywords" content="HCI, agents, delegation, reasoning transfer, trust in automation, CrowdListen, multi-agent, progressive disclosure">
+<meta name="author" content="Terry Chen">
+<link rel="alternate" type="text/plain" title="llms.txt" href="http://localhost:1313/llms.txt">
+<link rel="alternate" type="application/x-ndjson" title="agent FAQ corpus" href="http://localhost:1313/qa/agent-faq.jsonl">
+    <link crossorigin="anonymous" href="/assets/css/stylesheet.8ca0e8a7581a18a3008a81e9c580528cd206f5e88ca0525e0e24439fbbbc9204.css" integrity="sha256-jKDop1gaGKMAioHpxYBSjNIG9eiMoFJeDiRDn7u8kgQ=" rel="preload stylesheet" as="style"><link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="manifest" href="http://localhost:1313/manifest.json"><link rel="alternate" hreflang="en" href="http://localhost:1313/posts/delegating_ambiguity/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<script src="https://analytics.ahrefs.com/analytics.js" data-key="RfhOdZ+DOpWNlhV9QqLgTQ" async></script>
+
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>😜</text></svg>" type="image/svg+xml">
+
+<link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>😜</text></svg>"> 
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-M6GS8Q702L"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-M6GS8Q702L');
+        }
+      </script><meta property="og:url" content="http://localhost:1313/posts/delegating_ambiguity/">
+  <meta property="og:site_name" content="Terry Chen">
+  <meta property="og:title" content="Delegating Ambiguity: Human–Computer Interaction in the Age of Personal Agents">
+  <meta property="og:description" content="As interaction shifts from Human→Tool to Human→Agent→Tool, complexity becomes an affordance—but only if we design for reasoning transfer, progressive visibility, and calibrated trust.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-03-08T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-03-08T00:00:00+00:00">
+    <meta property="article:tag" content="Posts">
+      <meta property="og:image" content="http://localhost:1313/images/profile.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://localhost:1313/images/profile.jpg">
+<meta name="twitter:title" content="Delegating Ambiguity: Human–Computer Interaction in the Age of Personal Agents">
+<meta name="twitter:description" content="As interaction shifts from Human→Tool to Human→Agent→Tool, complexity becomes an affordance—but only if we design for reasoning transfer, progressive visibility, and calibrated trust.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "http://localhost:1313/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Delegating Ambiguity: Human–Computer Interaction in the Age of Personal Agents",
+      "item": "http://localhost:1313/posts/delegating_ambiguity/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Delegating Ambiguity: Human–Computer Interaction in the Age of Personal Agents",
+  "name": "Delegating Ambiguity: Human–Computer Interaction in the Age of Personal Agents",
+  "description": "As interaction shifts from Human→Tool to Human→Agent→Tool, complexity becomes an affordance—but only if we design for reasoning transfer, progressive visibility, and calibrated trust.",
+  "keywords": [
+    "HCI", "agents", "delegation", "reasoning transfer", "trust in automation", "CrowdListen", "multi-agent", "progressive disclosure"
+  ],
+  "articleBody": "Delegating Ambiguity: Human–Computer Interaction in the Age of Personal Agents\nAbstract Traditional HCI has designed systems around the cognitive limits of human operators, constraining system capability to match human processing capacity. This paper argues that agent-mediated interaction changes this constraint. As the interaction hierarchy shifts from Human → Tool to Human → Agent → Tool, system complexity is no longer bounded by what a person can directly operate; it is bounded by what an agent can navigate on a person’s behalf. However, this shift introduces new interaction challenges: the handoff between human and agent must carry not just commands but reasoning, including intent, constraints, and rationale, to prevent strategic drift. Drawing on Norman’s (2013) Gulf model, Lee and See’s (2004) trust-in-automation framework, and empirical work on progressive disclosure in AI systems (Springer \u0026 Whittaker, 2019), this paper analyzes how complexity transforms from a usability liability into an interaction strength under delegation, and what design requirements must be met for this transformation to succeed.\nIntroduction For decades, the capability of interactive systems has been constrained by the cognitive capacity of their human operators. Because people are limited information processors, bounded by a working memory of roughly seven plus or minus two chunks (Miller, 1956, p. 81), systems designed for broad adoption must be simple enough for an average user to operate effectively. Products are constrained by the friction costs of human cognition: limited time, restricted processing bandwidth, and finite attention. To reduce this friction, systems optimize for the lowest common denominator, sacrificing flexibility and personalization so that average users can operate them at all. This constraint has shaped entire product categories. Myers, Hudson, and Pausch (2000) formalized this as the threshold-ceiling tradeoff: the difficulty of initial use (threshold) versus the maximum complexity a tool can support (ceiling). Raising the ceiling raises the threshold, and products are forced to choose (p. 10). Agent-mediated interaction changes this tradeoff. When an AI agent sits between the human and the system, creating a hierarchy of Human to Agent to Tool, the agent, not the human, operates the system’s controls. The human’s role shifts from direct operation to specifying intent and overseeing outcomes. Under this model, a system’s complexity is not a barrier but a resource: the richer the parameter space, the more the agent can do on the user’s behalf. The threshold remains high, but the human no longer needs to cross it. This paper argues that realizing this shift requires more than capable agents. It requires a redesign of the interaction itself: from command transfer to reasoning transfer, from final-result delivery to progressive display, and from assumed trust to calibrated trust. Without these, delegated systems are prone to strategic drift, opacity, and misalignment. Background: Human Friction and Simplified Design The history of interface design is a history of working around human limitations. Norman (2013) formalized the core challenge through the Gulf of Execution, the gap between a user’s intended goal and the actions a system permits, and the Gulf of Evaluation, the gap between the system’s state and the user’s ability to perceive it (pp. 10–13). The standard response has been simplification: reduce options, flatten complexity, make the next action obvious. Yet Norman identified the paradox this creates: “The same technology that simplifies life by providing more functions in each device also complicates life by making the device harder to learn, harder to use” (p. 31). The cost of resolving this paradox in favor of simplification is real. Cooper et al. (2014) showed how the drive to simplify individual screens produces deep menu hierarchies that force users into “uninformed consent,” navigating choices without adequate context about what they are agreeing to (Ch. 1). The system’s implementation model gets hidden, but so does the user’s ability to understand what is actually happening. The result is not merely that complex features are tucked away; system capability itself is designed down to match human operating capacity. Hutchins, Hollan, and Norman (1985) showed that direct manipulation interfaces work by minimizing cognitive distance, making objects visible and directly manipulable (pp. 311–338). But this creates a structural limitation: a user can only interact with capabilities the designer explicitly surfaces. Everything else, the full range of what the system could do, remains inaccessible. High-ceiling tools exist, but they serve narrow expert populations because their threshold exceeds what most users can manage. Engelbart (1962) saw this differently. His H-LAM/T framework (Human using Language, Artifacts, Methodology, in which he is Trained) treats intellectual effectiveness as a system property, not a fixed individual trait (p. 15). He argued that “the intellectual effectiveness exercised today by a given human has little likelihood of being intelligence-limited” (p. 11); the real constraint is the quality of the augmentation means available. The question, in Engelbart’s framing, is not how to simplify systems to fit human limits but how to provide tools that extend what humans can accomplish. Agent-mediated interaction is a new class of augmentation means: rather than making systems easier to operate directly, it introduces a layer that operates systems on behalf of humans, integrating human judgment with automated execution. Complexity as a Native Advantage Agent-mediated interaction restructures the interaction hierarchy from Human → Tool to Human → Agent → Tool. The consequence is that “high barriers,” features too complex for direct human operation, are no longer defects. For an agent, a system with excessive flexibility provides more functional range. The HCI challenge shifts from simplifying buttons to delegating ambiguity. This shift is visible across domains. In software development, the paradigm has evolved from token-level code completion to task-level autonomous execution, where agents plan, code, test, and debug entire features from an intent-level specification. Hassan et al. (2025) characterized this as a shift from AI-augmented work to fully agentic work (p. 1). In product management, CrowdListen (crowdlisten.com), a platform I built, has shifted from a graphical workspace to agent-facing APIs, where the same high-ceiling features that required GUI expertise are navigable by agents accepting intent-level instructions. Nielsen (2023) identifies this as a third UI paradigm: intent-based outcome specification, where users describe what they want rather than how to achieve it. The threshold-ceiling tradeoff (Myers et al., 2000) is resolved not by lowering the ceiling but by having agents bridge the threshold. Agents have their own limits, including finite context windows and a tendency toward confident confabulation, but they do not share the same bandwidth constraints; they can process massive data throughput and navigate high-threshold systems that would overwhelm a person. The era of downward compatibility, designing systems down to the lowest common denominator, gives way to upward delegation, designing systems up to the full range of what agents can execute. This inversion has concrete implications: features that were never built because no human could operate them become viable, and systems can expose their full parameter space without worrying that complexity will drive users away. Reasoning Transfer: The New Master-Apprentice Model The critical design challenge in delegated work is the quality of the handoff. In traditional interfaces, interaction is command transfer: the user clicks a button, the system executes a predefined action. The mapping is explicit and one-to-one. In agent-mediated systems, the handoff must carry not only what the user wants but why: priorities, constraints, acceptable tradeoffs, and the contextual history behind decisions. Without this richer handoff, delegation fails through strategic drift. When an agent receives instructions that are technically clear but contextually incomplete, it executes efficiently while moving progressively further from the user’s actual intent. The danger is that each individual step looks correct, so neither the agent nor the user detects the divergence until the cumulative misalignment becomes obvious in the final output. Unlike human collaborators, who repair incomplete requirements through shared context and follow-up questions, agents have limited capacity to detect and recover from ambiguity; they fill gaps with plausible defaults rather than surfacing them for clarification. Beyer and Holtzblatt’s (1998) master-apprentice model from Contextual Inquiry captures this dynamic precisely. Much of a practitioner’s expertise is tacit knowledge, embedded in practice, visible only through observation and contextual probing (Ch. 3). In agent-mediated interaction, the agent occupies the apprentice role. It must acquire not just explicit rules but implicit rationale: why certain tradeoffs are preferred, which constraints are hard versus soft, what counts as an acceptable outcome. The interaction moves from transferring commands to transferring reasoning. The question, then, is how to evaluate whether this tacit knowledge has actually been transferred, or whether the agent is operating on plausible but incorrect assumptions. Lee and See (2004) provide the trust framework for evaluating whether this transfer succeeds. They distinguish performance (what the automation does), process (how it does it), and purpose (why it was designed to do it) (p. 10). Users need access to all three; without process and purpose visibility, they cannot calibrate trust, leading to either misuse or disuse (p. 1). This means effective delegation requires rationale repositories: persistent stores of decision history and contextual rules that agents consult during execution (Cooper et al., 2014, Ch. 9). In agent-mediated systems, this rationale becomes operational infrastructure: the substrate through which intent is preserved across automated execution chains. Progressive Display and Intent-Execution Divergence When an agent executes autonomously, a temporal problem emerges: the longer it operates without showing its work, the greater the gap between what the user intended and what the agent is doing. If undetected, this gap compounds until misalignment is irrecoverable. This is intent-execution divergence, and progressive display is the primary mechanism for preventing it. But visibility must be calibrated. Norman (2013) noted that “too much feedback can be even more annoying than too little” (p. 24), and Springer and Whittaker (2019) confirmed this empirically in AI systems: users who initially expected detailed incremental feedback to help retracted this preference after experience, finding it “distracting” and counterproductive to the simple heuristics they formed about system operation (p. 1). The design principle that emerges is graduated visibility: simplified summaries first, details on demand, full traces when needed. Horvitz (1999) formalized this for mixed-initiative systems: agents should consider uncertainty and the expected costs of autonomous action before acting, surfacing decisions for human review when confidence is low (pp. 159–166). Amershi et al. (2019) operationalized these principles through 18 design guidelines for human-AI interaction, including making capabilities clear and supporting efficient correction (pp. 1–13). There is also a deeper dimension to progressive display. Amayuelas et al. (2024) showed that models fine-tuned to articulate what they do not know improved outcomes in multi-agent reasoning tasks (p. 1). When agents surface their own uncertainty, they do more than prevent errors; they expand the human’s awareness of what remains unknown, converting unknown unknowns into known unknowns that can be investigated. This is itself a form of complexity becoming affordance: the agent uses its access to the full system to identify gaps the human could not have seen through direct operation. Progressive display is not only about showing what the agent is doing; it is about communicating what the agent does not know, directing human attention toward the most consequential uncertainties. Managing the Swarm: Visibility, Control, and Trust The shift from single-agent to multi-agent interaction follows from the same logic that enabled delegation in the first place. In the autocomplete era, the human remained an individual contributor, with AI assisting at the token level: suggesting the next line, completing a phrase. As agents grew more capable, the human’s role changed from doing the work to providing context and goals, effectively becoming a manager of a single autonomous worker. But a manager who can effectively delegate to one agent can delegate to many. And agents that can reason about tasks can also reason about coordination, spawning and directing other agents on their own. The natural trajectory is from individual contribution to management to orchestration, where the human sets strategic direction and agents organize themselves into coordinated groups to execute. When this scales to multiple agents operating concurrently, the interaction challenges compound. Park et al. (2023) showed that generative agents can maintain individual goals and coordinate behavior, but only with architectures supporting memory, reflection, and planning (pp. 1–2). Wu et al. (2023) demonstrated through AutoGen that multi-agent systems solve complex tasks through structured conversation when control flow is explicitly designed (pp. 4–5). The interaction is hierarchical: Card, Moran, and Newell’s (1983) GOMS model describes how a manager decomposes high-level goals into subgoals assigned to different agents, maintaining a mental model of collective state. The core design requirement at this scale is trust at the right granularity: the user needs to calibrate reliance on individual agents and tasks, not form a blanket judgment of the system as a whole. Nielsen’s (1994) heuristic of visibility of system status now means providing a coherent overview of concurrent processes and their collective progress. Lee and See (2004) argue that trust calibration depends on resolution, how precisely trust differentiates levels of capability (p. 6), which becomes exponentially harder as the number of autonomous actors increases. Without mechanisms for humans to influence agent goals, Gupta et al. (2023) warn, “we will stand to lose as a society and exhibit lower collective intelligence” (p. 6), and Burton et al. (2024) show that agents’ “opaqueness can create illusions of consensus or obscure important differences” (p. 6). The system must provide checkpoints, escalation protocols, and override paths that preserve the user’s capacity to direct the work, not just observe it. As compute bandwidth scales further, agents will evolve from isolated single entities into high-frequency interactive networked swarms, where massive-scale data throughput fundamentally overturns product forms built for human use, such as conventional websites and apps. The interaction design challenge at this scale is not merely visibility but governance: ensuring that human intent remains the organizing principle even when no single agent’s behavior is individually monitored. Conclusion The relationship between complexity and usability is not fixed; it is contingent on the interaction model. Under direct operation, complexity is a liability because it exceeds human cognitive capacity. Under delegated work, complexity becomes an affordance, a resource that expands what agents can do on the user’s behalf. The threshold-ceiling tradeoff is resolved not by lowering the ceiling but by having agents bridge the threshold. This reversal requires reasoning transfer that carries intent and rationale into agent execution, progressive display that surfaces agent behavior to prevent divergence, and trust calibration that enables appropriate reliance. The competitive advantage in an agent-mediated era lies not in the sophistication of the agent itself but in the strength of the translation layer that converts unstructured human intent into context-aware, decision-grade action. In practice, this means rationale repositories that persist decision history, progressive display systems that surface uncertainty at the right granularity, and trust calibration interfaces that let users modulate reliance per agent and per task. Complexity is no longer the enemy of usability. With the right interaction design, it becomes its engine. References Amayuelas, A., Wong, K., Pang, L., Chen, W., \u0026 Wang, W. (2024). Knowledge of knowledge: Exploring known-unknowns uncertainty with large language models. arXiv preprint arXiv:2305.13712. https://arxiv.org/abs/2305.13712 Amershi, S., Weld, D., Vorvoreanu, M., Fourney, A., Nushi, B., Collisson, P., Suh, J., Iqbal, S., Bennett, P. N., Inkpen, K., Teevan, J., Kikin-Gil, R., \u0026 Horvitz, E. (2019). Guidelines for human-AI interaction. In Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems (Paper No. 3, pp. 1–13). ACM. https://doi.org/10.1145/3290605.3300233 Beyer, H., \u0026 Holtzblatt, K. (1998). Contextual Design: Defining Customer-Centered Systems. Morgan Kaufmann. Burton, J. W., Lopez-Lopez, E., Hechtlinger, S., Rahwan, Z., Aeschbach, S., Bakker, M. A., Becker, J. A., Berditchevskaia, A., Berger, J., Brinkmann, L., Flek, L., Herzog, S. M., Huang, S., Kapoor, S., Narayanan, A., Nishi, A., Pilditch, T. D., Rutherford, A., Shumailov, I., … Hertwig, R. (2024). How large language models can reshape collective intelligence. Nature Human Behaviour, 8, 1643–1655. https://doi.org/10.1038/s41562-024-01959-9 Card, S. K., Moran, T. P., \u0026 Newell, A. (1983). The Psychology of Human-Computer Interaction. Lawrence Erlbaum Associates. Cooper, A., Reimann, R., Cronin, D., \u0026 Noessel, C. (2014). About Face: The Essentials of Interaction Design (4th ed.). Wiley. Engelbart, D. C. (1962). Augmenting human intellect: A conceptual framework (SRI Summary Report AFOSR-3223). Stanford Research Institute. Gupta, P., Nguyen, N. T., Gonzalez, C., \u0026 Woolley, A. W. (2023). Fostering collective intelligence in human–AI collaboration: Laying the groundwork for COHUMAIN. Topics in Cognitive Science, 16(4), 699–731. https://doi.org/10.1111/tops.12679 Hassan, A. E., Li, H., Lin, D., Adams, B., Chen, T.-H., Kashiwa, Y., \u0026 Qiu, D. (2025). Agentic software engineering: Foundational pillars and a research roadmap. arXiv preprint arXiv:2509.06216. https://arxiv.org/abs/2509.06216 Horvitz, E. (1999). Principles of mixed-initiative user interfaces. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (pp. 159–166). ACM. https://doi.org/10.1145/302979.303030 Hutchins, E. L., Hollan, J. D., \u0026 Norman, D. A. (1985). Direct manipulation interfaces. Human–Computer Interaction, 1(4), 311–338. https://doi.org/10.1207/s15327051hci0104_2 Lee, J. D., \u0026 See, K. A. (2004). Trust in automation: Designing for appropriate reliance. Human Factors, 46(1), 50–80. https://doi.org/10.1518/hfes.46.1.50.30392 Miller, G. A. (1956). The magical number seven, plus or minus two: Some limits on our capacity for processing information. Psychological Review, 63(2), 81–97. https://doi.org/10.1037/h0043158 Myers, B. A., Hudson, S. E., \u0026 Pausch, R. (2000). Past, present, and future of user interface software tools. ACM Transactions on Computer-Human Interaction, 7(1), 3–28. https://doi.org/10.1145/344949.344959 Nielsen, J. (1994). Usability Engineering. Morgan Kaufmann. Nielsen, J. (2023, June 18). AI: First new UI paradigm in 60 years. Nielsen Norman Group. https://www.nngroup.com/articles/ai-paradigm/ Norman, D. A. (2013). The Design of Everyday Things (Revised and expanded ed.). Basic Books. Park, J. S., O’Brien, J. C., Cai, C. J., Morris, M. R., Liang, P., \u0026 Bernstein, M. S. (2023). Generative agents: Interactive simulacra of human behavior. In Proceedings of the 36th Annual ACM Symposium on User Interface Software and Technology (Article 2, pp. 1–22). ACM. https://doi.org/10.1145/3586183.3606763 Springer, A., \u0026 Whittaker, S. (2019). Progressive disclosure: Empirically motivated approaches to designing effective transparency. In Proceedings of the 24th International Conference on Intelligent User Interfaces (pp. 107–120). ACM. https://doi.org/10.1145/3301275.3302322 Wu, Q., Bansal, G., Zhang, J., Wu, Y., Li, B., Zhu, E., Jiang, L., Zhang, X., Zhang, S., Liu, J., Awadallah, A. H., White, R. W., Burger, D., \u0026 Wang, C. (2023). AutoGen: Enabling next-gen LLM applications via multi-agent conversation. arXiv preprint arXiv:2308.08155. https://arxiv.org/abs/2308.08155\n",
+  "wordCount" : "3005",
+  "inLanguage": "en",
+  "image": "http://localhost:1313/images/profile.jpg","datePublished": "2026-03-08T00:00:00Z",
+  "dateModified": "2026-03-08T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Terry Chen"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/posts/delegating_ambiguity/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Terry Chen",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M6GS8Q702L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'MEASUREMENT_ID');
+</script><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  
+  
+  "@type": "BlogPosting",
+  
+  "headline": "Delegating Ambiguity: Human–Computer Interaction in the Age of Personal Agents",
+  "image": "http:\/\/localhost:1313\/",
+  "datePublished": "2026-03-08T00:00:00\u002b00:00",
+  "dateModified": "2026-03-08T00:00:00\u002b00:00",
+  "author": {
+    "@type": "Person",
+    "name": "Terry Chen"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Terry Chen",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http:\/\/localhost:1313\/"
+    }
+  },
+  "description": "As interaction shifts from Human→Tool to Human→Agent→Tool, complexity becomes an affordance—but only if we design for reasoning transfer, progressive visibility, and calibrated trust.",
+  
+  "keywords": ["HCI", "agents", "delegation", "reasoning transfer", "trust in automation", "CrowdListen", "multi-agent", "progressive disclosure"],
+  
+  
+  "wordCount": "3005",
+  "timeRequired": "PT15M"
+  
+}
+</script>
+
+
+ 
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "http:\/\/localhost:1313\/"
+    }
+    
+    ,{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Posts",
+      "item": "http:\/\/localhost:1313\/posts/"
+    }
+    
+    
+    ,{
+      "@type": "ListItem",
+      "position": 3,
+      "name": "97",
+      "item": "http:\/\/localhost:1313\/categories/97/"
+    }
+    
+    ,{
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Delegating Ambiguity: Human–Computer Interaction in the Age of Personal Agents",
+      "item": "http:\/\/localhost:1313\/posts\/delegating_ambiguity\/"
+    }
+  ]
+}
+</script>
+ 
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Terry Chen",
+  "url": "http:\/\/localhost:1313\/",
+  "sameAs": [
+    "https://www.linkedin.com/in/terry-chen-3b44911a4/",
+    "https://github.com/terrylinhaochen"
+  ],
+  "jobTitle": "AI Product Engineer",
+  "description": "AI Product Engineer and Investor exploring multi-agent systems, content understanding, and emerging technology investments",
+  "knowsAbout": [
+    "Artificial Intelligence",
+    "Product Engineering", 
+    "Investment Analysis",
+    "Multi-Agent Systems",
+    "Machine Learning",
+    "Technology Strategy"
+  ],
+  "alumniOf": "Northwestern University"
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+   
+  link[rel="icon"] {
+    content: url("data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>😜</text></svg>");
+  }
+</style> 
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Terry Chen (Alt + H)">Terry Chen</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            
+            <li>
+                <a href="/posts/" title="Posts">
+                    <span class="active">
+                        Posts
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="/product/" title="Product">
+                    <span>
+                        Product
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="/investing/" title="Investing">
+                    <span>
+                        Investing
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="/reading/" title="Reading">
+                    <span>
+                        Reading
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="/search/" title="Explore" accesskey="/">
+                    <span>
+                        Explore
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="/about/" title="About">
+                    <span>
+                        About
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header> <main class="main">
+<article class="post-single">
+  <header class="post-header">
+    <h1 class="post-title">Delegating Ambiguity: Human–Computer Interaction in the Age of Personal Agents</h1>
+    
+    
+    <div class="post-meta">
+      By Terry Chen • 
+      <time>March 8, 2026</time>
+    </div>
+  </header>
+  
+  
+  
+<div class="post-content" id="gated-content" data-gated="true" data-preview-percent="30">
+  <div id="gate-preview">
+    <p>Delegating Ambiguity: Human–Computer Interaction in the Age of Personal Agents</p>
+<p>Abstract
+Traditional HCI has designed systems around the cognitive limits of human operators, constraining system capability to match human processing capacity. This paper argues that agent-mediated interaction changes this constraint. As the interaction hierarchy shifts from Human → Tool to Human → Agent → Tool, system complexity is no longer bounded by what a person can directly operate; it is bounded by what an agent can navigate on a person&rsquo;s behalf. However, this shift introduces new interaction challenges: the handoff between human and agent must carry not just commands but reasoning, including intent, constraints, and rationale, to prevent strategic drift. Drawing on Norman&rsquo;s (2013) Gulf model, Lee and See&rsquo;s (2004) trust-in-automation framework, and empirical work on progressive disclosure in AI systems (Springer &amp; Whittaker, 2019), this paper analyzes how complexity transforms from a usability liability into an interaction strength under delegation, and what design requirements must be met for this transformation to succeed.</p>
+<ol>
+<li>Introduction
+For decades, the capability of interactive systems has been constrained by the cognitive capacity of their human operators. Because people are limited information processors, bounded by a working memory of roughly seven plus or minus two chunks (Miller, 1956, p. 81), systems designed for broad adoption must be simple enough for an average user to operate effectively. Products are constrained by the friction costs of human cognition: limited time, restricted processing bandwidth, and finite attention. To reduce this friction, systems optimize for the lowest common denominator, sacrificing flexibility and personalization so that average users can operate them at all.
+This constraint has shaped entire product categories. Myers, Hudson, and Pausch (2000) formalized this as the threshold-ceiling tradeoff: the difficulty of initial use (threshold) versus the maximum complexity a tool can support (ceiling). Raising the ceiling raises the threshold, and products are forced to choose (p. 10).
+Agent-mediated interaction changes this tradeoff. When an AI agent sits between the human and the system, creating a hierarchy of Human to Agent to Tool, the agent, not the human, operates the system&rsquo;s controls. The human&rsquo;s role shifts from direct operation to specifying intent and overseeing outcomes. Under this model, a system&rsquo;s complexity is not a barrier but a resource: the richer the parameter space, the more the agent can do on the user&rsquo;s behalf. The threshold remains high, but the human no longer needs to cross it.
+This paper argues that realizing this shift requires more than capable agents. It requires a redesign of the interaction itself: from command transfer to reasoning transfer, from final-result delivery to progressive display, and from assumed trust to calibrated trust. Without these, delegated systems are prone to strategic drift, opacity, and misalignment.</li>
+<li>Background: Human Friction and Simplified Design
+The history of interface design is a history of working around human limitations. Norman (2013) formalized the core challenge through the Gulf of Execution, the gap between a user&rsquo;s intended goal and the actions a system permits, and the Gulf of Evaluation, the gap between the system&rsquo;s state and the user&rsquo;s ability to perceive it (pp. 10–13). The standard response has been simplification: reduce options, flatten complexity, make the next action obvious. Yet Norman identified the paradox this creates: &ldquo;The same technology that simplifies life by providing more functions in each device also complicates life by making the device harder to learn, harder to use&rdquo; (p. 31).
+The cost of resolving this paradox in favor of simplification is real. Cooper et al. (2014) showed how the drive to simplify individual screens produces deep menu hierarchies that force users into &ldquo;uninformed consent,&rdquo; navigating choices without adequate context about what they are agreeing to (Ch. 1). The system&rsquo;s implementation model gets hidden, but so does the user&rsquo;s ability to understand what is actually happening. The result is not merely that complex features are tucked away; system capability itself is designed down to match human operating capacity. Hutchins, Hollan, and Norman (1985) showed that direct manipulation interfaces work by minimizing cognitive distance, making objects visible and directly manipulable (pp. 311–338). But this creates a structural limitation: a user can only interact with capabilities the designer explicitly surfaces. Everything else, the full range of what the system could do, remains inaccessible. High-ceiling tools exist, but they serve narrow expert populations because their threshold exceeds what most users can manage.
+Engelbart (1962) saw this differently. His H-LAM/T framework (Human using Language, Artifacts, Methodology, in which he is Trained) treats intellectual effectiveness as a system property, not a fixed individual trait (p. 15). He argued that &ldquo;the intellectual effectiveness exercised today by a given human has little likelihood of being intelligence-limited&rdquo; (p. 11); the real constraint is the quality of the augmentation means available. The question, in Engelbart&rsquo;s framing, is not how to simplify systems to fit human limits but how to provide tools that extend what humans can accomplish. Agent-mediated interaction is a new class of augmentation means: rather than making systems easier to operate directly, it introduces a layer that operates systems on behalf of humans, integrating human judgment with automated execution.</li>
+<li>Complexity as a Native Advantage
+Agent-mediated interaction restructures the interaction hierarchy from Human → Tool to Human → Agent → Tool. The consequence is that &ldquo;high barriers,&rdquo; features too complex for direct human operation, are no longer defects. For an agent, a system with excessive flexibility provides more functional range. The HCI challenge shifts from simplifying buttons to delegating ambiguity.
+This shift is visible across domains. In software development, the paradigm has evolved from token-level code completion to task-level autonomous execution, where agents plan, code, test, and debug entire features from an intent-level specification. Hassan et al. (2025) characterized this as a shift from AI-augmented work to fully agentic work (p. 1). In product management, CrowdListen (crowdlisten.com), a platform I built, has shifted from a graphical workspace to agent-facing APIs, where the same high-ceiling features that required GUI expertise are navigable by agents accepting intent-level instructions.
+Nielsen (2023) identifies this as a third UI paradigm: intent-based outcome specification, where users describe what they want rather than how to achieve it. The threshold-ceiling tradeoff (Myers et al., 2000) is resolved not by lowering the ceiling but by having agents bridge the threshold. Agents have their own limits, including finite context windows and a tendency toward confident confabulation, but they do not share the same bandwidth constraints; they can process massive data throughput and navigate high-threshold systems that would overwhelm a person. The era of downward compatibility, designing systems down to the lowest common denominator, gives way to upward delegation, designing systems up to the full range of what agents can execute. This inversion has concrete implications: features that were never built because no human could operate them become viable, and systems can expose their full parameter space without worrying that complexity will drive users away.</li>
+<li>Reasoning Transfer: The New Master-Apprentice Model
+The critical design challenge in delegated work is the quality of the handoff. In traditional interfaces, interaction is command transfer: the user clicks a button, the system executes a predefined action. The mapping is explicit and one-to-one. In agent-mediated systems, the handoff must carry not only what the user wants but why: priorities, constraints, acceptable tradeoffs, and the contextual history behind decisions.
+Without this richer handoff, delegation fails through strategic drift. When an agent receives instructions that are technically clear but contextually incomplete, it executes efficiently while moving progressively further from the user&rsquo;s actual intent. The danger is that each individual step looks correct, so neither the agent nor the user detects the divergence until the cumulative misalignment becomes obvious in the final output. Unlike human collaborators, who repair incomplete requirements through shared context and follow-up questions, agents have limited capacity to detect and recover from ambiguity; they fill gaps with plausible defaults rather than surfacing them for clarification.
+Beyer and Holtzblatt&rsquo;s (1998) master-apprentice model from Contextual Inquiry captures this dynamic precisely. Much of a practitioner&rsquo;s expertise is tacit knowledge, embedded in practice, visible only through observation and contextual probing (Ch. 3). In agent-mediated interaction, the agent occupies the apprentice role. It must acquire not just explicit rules but implicit rationale: why certain tradeoffs are preferred, which constraints are hard versus soft, what counts as an acceptable outcome. The interaction moves from transferring commands to transferring reasoning. The question, then, is how to evaluate whether this tacit knowledge has actually been transferred, or whether the agent is operating on plausible but incorrect assumptions.
+Lee and See (2004) provide the trust framework for evaluating whether this transfer succeeds. They distinguish performance (what the automation does), process (how it does it), and purpose (why it was designed to do it) (p. 10). Users need access to all three; without process and purpose visibility, they cannot calibrate trust, leading to either misuse or disuse (p. 1). This means effective delegation requires rationale repositories: persistent stores of decision history and contextual rules that agents consult during execution (Cooper et al., 2014, Ch. 9). In agent-mediated systems, this rationale becomes operational infrastructure: the substrate through which intent is preserved across automated execution chains.</li>
+<li>Progressive Display and Intent-Execution Divergence
+When an agent executes autonomously, a temporal problem emerges: the longer it operates without showing its work, the greater the gap between what the user intended and what the agent is doing. If undetected, this gap compounds until misalignment is irrecoverable. This is intent-execution divergence, and progressive display is the primary mechanism for preventing it.
+But visibility must be calibrated. Norman (2013) noted that &ldquo;too much feedback can be even more annoying than too little&rdquo; (p. 24), and Springer and Whittaker (2019) confirmed this empirically in AI systems: users who initially expected detailed incremental feedback to help retracted this preference after experience, finding it &ldquo;distracting&rdquo; and counterproductive to the simple heuristics they formed about system operation (p. 1). The design principle that emerges is graduated visibility: simplified summaries first, details on demand, full traces when needed. Horvitz (1999) formalized this for mixed-initiative systems: agents should consider uncertainty and the expected costs of autonomous action before acting, surfacing decisions for human review when confidence is low (pp. 159–166). Amershi et al. (2019) operationalized these principles through 18 design guidelines for human-AI interaction, including making capabilities clear and supporting efficient correction (pp. 1–13).
+There is also a deeper dimension to progressive display. Amayuelas et al. (2024) showed that models fine-tuned to articulate what they do not know improved outcomes in multi-agent reasoning tasks (p. 1). When agents surface their own uncertainty, they do more than prevent errors; they expand the human&rsquo;s awareness of what remains unknown, converting unknown unknowns into known unknowns that can be investigated. This is itself a form of complexity becoming affordance: the agent uses its access to the full system to identify gaps the human could not have seen through direct operation. Progressive display is not only about showing what the agent is doing; it is about communicating what the agent does not know, directing human attention toward the most consequential uncertainties.</li>
+<li>Managing the Swarm: Visibility, Control, and Trust
+The shift from single-agent to multi-agent interaction follows from the same logic that enabled delegation in the first place. In the autocomplete era, the human remained an individual contributor, with AI assisting at the token level: suggesting the next line, completing a phrase. As agents grew more capable, the human&rsquo;s role changed from doing the work to providing context and goals, effectively becoming a manager of a single autonomous worker. But a manager who can effectively delegate to one agent can delegate to many. And agents that can reason about tasks can also reason about coordination, spawning and directing other agents on their own. The natural trajectory is from individual contribution to management to orchestration, where the human sets strategic direction and agents organize themselves into coordinated groups to execute.
+When this scales to multiple agents operating concurrently, the interaction challenges compound. Park et al. (2023) showed that generative agents can maintain individual goals and coordinate behavior, but only with architectures supporting memory, reflection, and planning (pp. 1–2). Wu et al. (2023) demonstrated through AutoGen that multi-agent systems solve complex tasks through structured conversation when control flow is explicitly designed (pp. 4–5). The interaction is hierarchical: Card, Moran, and Newell&rsquo;s (1983) GOMS model describes how a manager decomposes high-level goals into subgoals assigned to different agents, maintaining a mental model of collective state.
+The core design requirement at this scale is trust at the right granularity: the user needs to calibrate reliance on individual agents and tasks, not form a blanket judgment of the system as a whole. Nielsen&rsquo;s (1994) heuristic of visibility of system status now means providing a coherent overview of concurrent processes and their collective progress. Lee and See (2004) argue that trust calibration depends on resolution, how precisely trust differentiates levels of capability (p. 6), which becomes exponentially harder as the number of autonomous actors increases. Without mechanisms for humans to influence agent goals, Gupta et al. (2023) warn, &ldquo;we will stand to lose as a society and exhibit lower collective intelligence&rdquo; (p. 6), and Burton et al. (2024) show that agents&rsquo; &ldquo;opaqueness can create illusions of consensus or obscure important differences&rdquo; (p. 6). The system must provide checkpoints, escalation protocols, and override paths that preserve the user&rsquo;s capacity to direct the work, not just observe it.
+As compute bandwidth scales further, agents will evolve from isolated single entities into high-frequency interactive networked swarms, where massive-scale data throughput fundamentally overturns product forms built for human use, such as conventional websites and apps. The interaction design challenge at this scale is not merely visibility but governance: ensuring that human intent remains the organizing principle even when no single agent&rsquo;s behavior is individually monitored.</li>
+<li>Conclusion
+The relationship between complexity and usability is not fixed; it is contingent on the interaction model. Under direct operation, complexity is a liability because it exceeds human cognitive capacity. Under delegated work, complexity becomes an affordance, a resource that expands what agents can do on the user&rsquo;s behalf. The threshold-ceiling tradeoff is resolved not by lowering the ceiling but by having agents bridge the threshold.
+This reversal requires reasoning transfer that carries intent and rationale into agent execution, progressive display that surfaces agent behavior to prevent divergence, and trust calibration that enables appropriate reliance. The competitive advantage in an agent-mediated era lies not in the sophistication of the agent itself but in the strength of the translation layer that converts unstructured human intent into context-aware, decision-grade action. In practice, this means rationale repositories that persist decision history, progressive display systems that surface uncertainty at the right granularity, and trust calibration interfaces that let users modulate reliance per agent and per task. Complexity is no longer the enemy of usability. With the right interaction design, it becomes its engine.</li>
+</ol>
+<p>References
+Amayuelas, A., Wong, K., Pang, L., Chen, W., &amp; Wang, W. (2024). Knowledge of knowledge: Exploring known-unknowns uncertainty with large language models. arXiv preprint arXiv:2305.13712. <a href="https://arxiv.org/abs/2305.13712">https://arxiv.org/abs/2305.13712</a>
+Amershi, S., Weld, D., Vorvoreanu, M., Fourney, A., Nushi, B., Collisson, P., Suh, J., Iqbal, S., Bennett, P. N., Inkpen, K., Teevan, J., Kikin-Gil, R., &amp; Horvitz, E. (2019). Guidelines for human-AI interaction. In Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems (Paper No. 3, pp. 1–13). ACM. <a href="https://doi.org/10.1145/3290605.3300233">https://doi.org/10.1145/3290605.3300233</a>
+Beyer, H., &amp; Holtzblatt, K. (1998). Contextual Design: Defining Customer-Centered Systems. Morgan Kaufmann.
+Burton, J. W., Lopez-Lopez, E., Hechtlinger, S., Rahwan, Z., Aeschbach, S., Bakker, M. A., Becker, J. A., Berditchevskaia, A., Berger, J., Brinkmann, L., Flek, L., Herzog, S. M., Huang, S., Kapoor, S., Narayanan, A., Nishi, A., Pilditch, T. D., Rutherford, A., Shumailov, I., &hellip; Hertwig, R. (2024). How large language models can reshape collective intelligence. Nature Human Behaviour, 8, 1643–1655. <a href="https://doi.org/10.1038/s41562-024-01959-9">https://doi.org/10.1038/s41562-024-01959-9</a>
+Card, S. K., Moran, T. P., &amp; Newell, A. (1983). The Psychology of Human-Computer Interaction. Lawrence Erlbaum Associates.
+Cooper, A., Reimann, R., Cronin, D., &amp; Noessel, C. (2014). About Face: The Essentials of Interaction Design (4th ed.). Wiley.
+Engelbart, D. C. (1962). Augmenting human intellect: A conceptual framework (SRI Summary Report AFOSR-3223). Stanford Research Institute.
+Gupta, P., Nguyen, N. T., Gonzalez, C., &amp; Woolley, A. W. (2023). Fostering collective intelligence in human–AI collaboration: Laying the groundwork for COHUMAIN. Topics in Cognitive Science, 16(4), 699–731. <a href="https://doi.org/10.1111/tops.12679">https://doi.org/10.1111/tops.12679</a>
+Hassan, A. E., Li, H., Lin, D., Adams, B., Chen, T.-H., Kashiwa, Y., &amp; Qiu, D. (2025). Agentic software engineering: Foundational pillars and a research roadmap. arXiv preprint arXiv:2509.06216. <a href="https://arxiv.org/abs/2509.06216">https://arxiv.org/abs/2509.06216</a>
+Horvitz, E. (1999). Principles of mixed-initiative user interfaces. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (pp. 159–166). ACM. <a href="https://doi.org/10.1145/302979.303030">https://doi.org/10.1145/302979.303030</a>
+Hutchins, E. L., Hollan, J. D., &amp; Norman, D. A. (1985). Direct manipulation interfaces. Human–Computer Interaction, 1(4), 311–338. <a href="https://doi.org/10.1207/s15327051hci0104_2">https://doi.org/10.1207/s15327051hci0104_2</a>
+Lee, J. D., &amp; See, K. A. (2004). Trust in automation: Designing for appropriate reliance. Human Factors, 46(1), 50–80. <a href="https://doi.org/10.1518/hfes.46.1.50.30392">https://doi.org/10.1518/hfes.46.1.50.30392</a>
+Miller, G. A. (1956). The magical number seven, plus or minus two: Some limits on our capacity for processing information. Psychological Review, 63(2), 81–97. <a href="https://doi.org/10.1037/h0043158">https://doi.org/10.1037/h0043158</a>
+Myers, B. A., Hudson, S. E., &amp; Pausch, R. (2000). Past, present, and future of user interface software tools. ACM Transactions on Computer-Human Interaction, 7(1), 3–28. <a href="https://doi.org/10.1145/344949.344959">https://doi.org/10.1145/344949.344959</a>
+Nielsen, J. (1994). Usability Engineering. Morgan Kaufmann.
+Nielsen, J. (2023, June 18). AI: First new UI paradigm in 60 years. Nielsen Norman Group. <a href="https://www.nngroup.com/articles/ai-paradigm/">https://www.nngroup.com/articles/ai-paradigm/</a>
+Norman, D. A. (2013). The Design of Everyday Things (Revised and expanded ed.). Basic Books.
+Park, J. S., O&rsquo;Brien, J. C., Cai, C. J., Morris, M. R., Liang, P., &amp; Bernstein, M. S. (2023). Generative agents: Interactive simulacra of human behavior. In Proceedings of the 36th Annual ACM Symposium on User Interface Software and Technology (Article 2, pp. 1–22). ACM. <a href="https://doi.org/10.1145/3586183.3606763">https://doi.org/10.1145/3586183.3606763</a>
+Springer, A., &amp; Whittaker, S. (2019). Progressive disclosure: Empirically motivated approaches to designing effective transparency. In Proceedings of the 24th International Conference on Intelligent User Interfaces (pp. 107–120). ACM. <a href="https://doi.org/10.1145/3301275.3302322">https://doi.org/10.1145/3301275.3302322</a>
+Wu, Q., Bansal, G., Zhang, J., Wu, Y., Li, B., Zhu, E., Jiang, L., Zhang, X., Zhang, S., Liu, J., Awadallah, A. H., White, R. W., Burger, D., &amp; Wang, C. (2023). AutoGen: Enabling next-gen LLM applications via multi-agent conversation. arXiv preprint arXiv:2308.08155. <a href="https://arxiv.org/abs/2308.08155">https://arxiv.org/abs/2308.08155</a></p>
+
+  </div>
+  <div id="content-gate" class="content-gate" style="display:none;">
+    <div class="content-fade"></div>
+    <div class="gate-inner">
+      <div class="gate-lock-label">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        Subscribe to continue reading
+      </div>
+      <h2 class="gate-headline">Actionable Insights to<br>Help You Stay at the Edge of AI</h2>
+      <p class="gate-subtext">The essential toolkit for those shaping the future</p>
+      <p class="gate-social-proof">Join 1,000+ leaders, builders, and innovators</p>
+      <form id="gate-form" class="gate-form">
+        <label for="gate-email" class="gate-email-label">Email address</label>
+        <input type="email" id="gate-email" placeholder="example@domain.com" required>
+        <button type="submit" class="gate-submit-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          Unlock this article
+        </button>
+      </form>
+      <div id="gate-message" class="gate-message"></div>
+      <p class="gate-disclaimer">No spam, ever. Unsubscribe at any time.</p>
+    </div>
+  </div>
+</div>
+
+<noscript>
+  <div class="post-content">
+    <p>As interaction shifts from Human→Tool to Human→Agent→Tool, complexity becomes an affordance—but only if we design for reasoning transfer, progressive visibility, and calibrated trust.</p>
+    <p><em>JavaScript is required to read the full article. Please enable JavaScript or <a href="mailto:terrychen2026@u.northwestern.edu">contact me</a> for the full text.</em></p>
+  </div>
+</noscript>
+
+<script>
+(function() {
+  var container = document.getElementById('gated-content');
+  if (!container) return;
+
+  var isSubscribed = localStorage.getItem('newsletter-subscribed') === 'true';
+  var previewPercent = parseInt(container.getAttribute('data-preview-percent'), 10) || 30;
+  var preview = document.getElementById('gate-preview');
+  var gate = document.getElementById('content-gate');
+
+  if (isSubscribed) {
+    
+    return;
+  }
+
+  
+  var blocks = [];
+  var children = preview.children;
+  for (var i = 0; i < children.length; i++) {
+    var tag = children[i].tagName;
+    if (tag && /^(P|H[1-6]|UL|OL|BLOCKQUOTE|PRE|TABLE|FIGURE|DIV|DL|HR)$/i.test(tag)) {
+      blocks.push(children[i]);
+    }
+  }
+
+  if (blocks.length < 4) {
+    
+    return;
+  }
+
+  
+  var cutoff = Math.max(2, Math.round(blocks.length * previewPercent / 100));
+
+  
+  for (var j = cutoff; j < blocks.length; j++) {
+    blocks[j].style.display = 'none';
+  }
+
+  
+  gate.style.display = 'block';
+
+  
+  var form = document.getElementById('gate-form');
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var email = document.getElementById('gate-email').value;
+    var msgEl = document.getElementById('gate-message');
+    var btn = form.querySelector('button[type="submit"]');
+
+    btn.disabled = true;
+    btn.textContent = 'Unlocking...';
+
+    fetch('https://script.google.com/macros/s/AKfycbxF7czbmo2JEeATzFoMnHIfGASoSTzogbjJcuQm30sjBXFqmDOqISWkIHBr64GdmURS/exec', {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams({
+        'email': email,
+        'pageUrl': window.location.href,
+        'source': 'content-gate'
+      })
+    }).then(function() {
+      localStorage.setItem('newsletter-subscribed', 'true');
+      msgEl.textContent = 'Thanks! Unlocking the article...';
+      msgEl.classList.add('success');
+
+      
+      gate.classList.add('gate-unlocking');
+      setTimeout(function() {
+        gate.style.display = 'none';
+        
+        for (var k = cutoff; k < blocks.length; k++) {
+          blocks[k].style.display = '';
+          blocks[k].classList.add('gate-content-reveal');
+        }
+      }, 500);
+    }).catch(function() {
+      msgEl.textContent = 'Something went wrong. Please try again.';
+      msgEl.classList.add('error');
+      btn.disabled = false;
+      btn.textContent = 'Read the full article';
+    });
+  });
+})();
+</script>
+
+  
+  
+  
+  <footer class="post-footer">
+    <div class="post-tags">
+      
+      <a href="/tags/posts">Posts</a>
+      
+    </div>
+  </footer>
+  
+
+  
+  
+
+  
+  
+</article>
+
+
+
+
+<div class="related-posts">
+  <h3>Related Articles</h3>
+  <div class="related-posts-grid">
+    
+    <a href="/posts/one-person-billion/" class="related-post-card">
+      <div class="related-post-content">
+        <h4>Running a 1-Person Billion Dollar Company: The AI Stack That Makes It Possible</h4>
+        <div class="related-post-meta">
+          <span class="related-post-date">February 22, 2026</span>
+          
+          <span class="related-post-tags">
+            #Posts
+          </span>
+          
+        </div>
+        <p class="related-post-excerpt">Sam Altman said in a recent post: &ldquo;We&rsquo;re gonna see 10-person billion dollar (valuation) …</p>
+      </div>
+    </a>
+    
+    <a href="/posts/crowdlisten_feedback_layer/" class="related-post-card">
+      <div class="related-post-content">
+        <h4>The Real-Time Feedback Layer: How Crowdlisten Closes the Loop Between Builders and Audiences</h4>
+        <div class="related-post-meta">
+          <span class="related-post-date">February 15, 2026</span>
+          
+          <span class="related-post-tags">
+            #Crowdlisten
+          </span>
+          
+        </div>
+        <p class="related-post-excerpt">Over the past few months, I have written about Crowdlisten from several angles: as a distribution …</p>
+      </div>
+    </a>
+    
+    <a href="/posts/closing_window_ai/" class="related-post-card">
+      <div class="related-post-content">
+        <h4>The Closing Window Frame of AI Applications</h4>
+        <div class="related-post-meta">
+          <span class="related-post-date">November 12, 2025</span>
+          
+          <span class="related-post-tags">
+            #Posts
+          </span>
+          
+        </div>
+        <p class="related-post-excerpt">In the fall of 2022, I sat down with my co-founders to discuss what we wanted to achieve by building …</p>
+      </div>
+    </a>
+    
+    <a href="/posts/google_notebooklm/" class="related-post-card">
+      <div class="related-post-content">
+        <h4>Google NotebookLM - Long Context Windows and Multimodality</h4>
+        <div class="related-post-meta">
+          <span class="related-post-date">November 11, 2025</span>
+          
+          <span class="related-post-tags">
+            #Observations
+          </span>
+          
+        </div>
+        <p class="related-post-excerpt"> Google NotebookLM&rsquo;s main interface showing featured notebooks and recent projects, …</p>
+      </div>
+    </a>
+    
+  </div>
+</div>
+
+<style>
+  .related-posts {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+    max-width: var(--content-width, 720px);
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding-left: var(--gap);
+    padding-right: var(--gap);
+  }
+  
+  .related-posts h3 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary);
+  }
+  
+  .related-posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .related-post-card {
+    display: block;
+    padding: 1.2rem;
+    border-radius: var(--radius);
+    background: var(--code-bg);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-decoration: none;
+  }
+  
+  .related-post-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  :root[data-theme="dark"] .related-post-card:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+  }
+  
+  .related-post-card h4 {
+    margin: 0 0 0.6rem 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--primary);
+    line-height: 1.3;
+  }
+  
+  .related-post-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.8rem;
+    font-size: 0.85rem;
+    color: var(--secondary);
+  }
+  
+  .related-post-excerpt {
+    font-size: 0.95rem;
+    color: var(--content);
+    line-height: 1.5;
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .related-posts-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+ 
+
+
+<style>
+   
+  body {
+    background-color: var(--theme);
+  }
+  
+  .post-single {
+    background-color: var(--entry);
+    border-radius: var(--radius);
+     
+    max-width: var(--content-width, 720px);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: var(--gap);
+    margin-bottom: var(--gap);
+    box-shadow: var(--shadow);
+  }
+  
+  .post-content {
+    margin-top: var(--content-gap);
+    color: var(--content);
+  }
+  
+  .post-content h1,
+  .post-content h2,
+  .post-content h3,
+  .post-content h4 {
+    margin: 1.5em 0 0.5em;
+    color: var(--primary);
+  }
+
+   
+  .version-history {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: var(--code-bg);
+    border-radius: var(--radius);
+    border-left: 4px solid var(--primary);
+  }
+
+  .version-history h3 {
+    margin: 0 0 1rem 0;
+    color: var(--primary);
+    font-size: 1.1rem;
+  }
+
+  .version-item {
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .version-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+
+  .version-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.25rem;
+    flex-wrap: wrap;
+  }
+
+  .version-number {
+    font-weight: bold;
+    color: var(--primary);
+    font-family: var(--font-mono, monospace);
+  }
+
+  .version-date {
+    color: var(--secondary);
+    font-size: 0.9rem;
+  }
+
+  .current-badge {
+    background-color: var(--primary);
+    color: var(--theme);
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+
+  .view-commits {
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 0.2rem 0.5rem;
+    border: 1px solid var(--primary);
+    border-radius: 0.25rem;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  .view-commits:hover {
+    background-color: var(--primary);
+    color: var(--theme);
+  }
+
+  .view-commits svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .git-info {
+    margin-top: 1rem;
+    text-align: center;
+    color: var(--secondary);
+    font-style: italic;
+  }
+
+  .version-changes {
+    color: var(--content);
+    font-style: italic;
+    margin-bottom: 0.25rem;
+    font-size: 0.95rem;
+  }
+
+  .version-summary {
+    color: var(--secondary);
+    font-size: 0.9rem;
+  }
+
+  .update-info {
+    margin-top: 1rem;
+    text-align: center;
+    color: var(--secondary);
+    border-top: 1px solid var(--border);
+    padding-top: 1rem;
+  }
+</style>
+
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">Terry Chen</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+    
+    
+    <div class="archived-link">
+        <span style="font-size: 0.85em; color: #888; margin-top: 8px; display: block;">
+            To view archived content, <a href="/archived/" style="color: #666; text-decoration: underline;">click here</a>
+            · <a href="/llms.txt" style="color: #666; text-decoration: underline;">llms.txt</a>
+            · <a href="/qa/README.md" style="color: #666; text-decoration: underline;">qa index</a>
+        </span>
+    </div>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+
+
+<div id="subscribe-system">
+  
+  <div id="subscription-modal" class="subscription-modal hidden">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+      <button id="modal-close" class="modal-close" title="Close">×</button>
+      <div class="modal-body">
+        <h2>Stay close to the frontier</h2>
+        <p>Get updates when I publish new insights about design, technology, and human interaction patterns.</p>
+        <form id="subscription-form" class="centered-subscribe-form">
+          <input type="email" id="subscription-email" placeholder="your@email.com" required>
+          <button type="submit" class="submit-btn">Subscribe</button>
+        </form>
+        <div id="subscription-message" class="form-message"></div>
+        <div class="modal-footer">
+          <button id="modal-no-thanks" class="no-thanks-btn">No thanks</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div id="user-reminder" class="returning-reminder hidden">
+    
+    <div id="reminder-collapsed" class="reminder-collapsed clickable">
+      <span class="reminder-text">Explore More Content</span>
+      <div class="expand-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="m18 15-6-6-6 6"/>
+        </svg>
+      </div>
+    </div>
+    
+    
+    <div id="reminder-expanded" class="reminder-expanded hidden">
+      <div class="expanded-header">
+        <h4>Stay close to the frontier</h4>
+        <button id="reminder-close" class="reminder-close" title="Minimize">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 9l6 6 6-6"/>
+          </svg>
+        </button>
+      </div>
+      <p>Get updates when I publish new insights about design, technology, and human interaction patterns.</p>
+      
+      <div class="action-options">
+        <a href="/posts/" class="action-item">
+          <div class="action-icon">📖</div>
+          <span class="action-text">Read an article</span>
+          <div class="action-arrow">›</div>
+        </a>
+        
+        <a href="https://crowdlisten.com" target="_blank" class="action-item">
+          <div class="action-icon">👥</div>
+          <span class="action-text">Insights with Crowdlisten</span>
+          <div class="action-arrow">›</div>
+        </a>
+        
+        <div class="action-item subscribe-item">
+          <div class="action-icon">✉️</div>
+          <span class="action-text">Subscribe for updates</span>
+          <div class="action-arrow">›</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+class SimplifiedSubscribe {
+  constructor() {
+    this.init();
+  }
+
+  init() {
+    this.setupEventListeners();
+    
+    
+    if (this.isNewVisitor()) {
+      setTimeout(() => this.showCenteredModal(), 1000); 
+    }
+    
+    
+    this.showUserReminder();
+  }
+
+  
+  isNewVisitor() {
+    const hasVisited = localStorage.getItem('has-visited');
+    if (!hasVisited && !this.hasSubscribed()) {
+      localStorage.setItem('has-visited', 'true');
+      return true;
+    }
+    return false;
+  }
+
+  
+  hasSubscribed() {
+    return localStorage.getItem('newsletter-subscribed') === 'true';
+  }
+
+  hasPermanentlyDismissed() {
+    return localStorage.getItem('newsletter-never-show') === 'true';
+  }
+
+  
+  showUserReminder() {
+    document.getElementById('user-reminder').classList.remove('hidden');
+  }
+
+  hideUserReminder() {
+    document.getElementById('user-reminder').classList.add('hidden');
+  }
+
+  
+  expandReminder() {
+    document.getElementById('reminder-collapsed').classList.add('hidden');
+    document.getElementById('reminder-expanded').classList.remove('hidden');
+  }
+
+  collapseReminder() {
+    const expanded = document.getElementById('reminder-expanded');
+    const collapsed = document.getElementById('reminder-collapsed');
+    
+    
+    expanded.style.animation = 'collapseVertical 0.2s ease-in forwards';
+    
+    setTimeout(() => {
+      expanded.classList.add('hidden');
+      expanded.style.animation = '';
+      collapsed.classList.remove('hidden');
+    }, 200);
+  }
+
+  
+  showCenteredModal() {
+    document.getElementById('subscription-modal').classList.remove('hidden');
+  }
+
+  
+  hideCenteredModal() {
+    document.getElementById('subscription-modal').classList.add('hidden');
+  }
+
+  
+  async submitSubscription(email, source) {
+    try {
+      const pageUrl = window.location.href;
+      
+      const response = await fetch('https://script.google.com/macros/s/AKfycbxF7czbmo2JEeATzFoMnHIfGASoSTzogbjJcuQm30sjBXFqmDOqISWkIHBr64GdmURS/exec', {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: new URLSearchParams({
+          'email': email,
+          'pageUrl': pageUrl,
+          'source': source
+        })
+      });
+
+      
+      localStorage.setItem('newsletter-subscribed', 'true');
+      
+      
+      setTimeout(() => {
+        this.resetToActionOptions();
+      }, 2000);
+
+      return true;
+    } catch (error) {
+      console.error('Subscription error:', error);
+      return false;
+    }
+  }
+
+  
+  resetToActionOptions() {
+    this.hideCenteredModal();
+    
+    document.getElementById('subscription-email').value = '';
+    document.getElementById('subscription-message').textContent = '';
+    document.getElementById('subscription-message').classList.remove('success', 'error');
+  }
+
+  
+  setupEventListeners() {
+    
+    document.getElementById('reminder-collapsed')?.addEventListener('click', () => {
+      this.expandReminder();
+    });
+
+    document.getElementById('reminder-close')?.addEventListener('click', () => {
+      this.collapseReminder();
+    });
+
+    
+    document.querySelector('.subscribe-item')?.addEventListener('click', () => {
+      this.showCenteredModal();
+    });
+
+    document.getElementById('user-form')?.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const email = document.getElementById('user-email').value;
+      const messageEl = document.getElementById('user-message');
+      const submitBtn = e.target.querySelector('button[type="submit"]');
+      
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Subscribing...';
+      
+      const success = await this.submitSubscription(email, 'user-reminder');
+      
+      if (success) {
+        messageEl.textContent = 'Thanks for subscribing!';
+        messageEl.classList.add('success');
+        setTimeout(() => this.hideUserReminder(), 2000);
+      } else {
+        messageEl.textContent = 'Something went wrong. Please try again.';
+        messageEl.classList.add('error');
+      }
+      
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Subscribe';
+    });
+
+
+    
+    document.getElementById('modal-close')?.addEventListener('click', () => {
+      this.hideCenteredModal();
+    });
+
+    document.querySelector('.modal-overlay')?.addEventListener('click', () => {
+      this.hideCenteredModal();
+    });
+
+    document.getElementById('subscription-form')?.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const email = document.getElementById('subscription-email').value;
+      const messageEl = document.getElementById('subscription-message');
+      const submitBtn = e.target.querySelector('button[type="submit"]');
+      
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Subscribing...';
+      
+      const success = await this.submitSubscription(email, 'centered-modal');
+      
+      if (success) {
+        messageEl.textContent = 'Thanks for subscribing!';
+        messageEl.classList.add('success');
+        setTimeout(() => this.hideCenteredModal(), 2000);
+      } else {
+        messageEl.textContent = 'Something went wrong. Please try again.';
+        messageEl.classList.add('error');
+      }
+      
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Subscribe';
+    });
+
+    document.getElementById('modal-no-thanks')?.addEventListener('click', () => {
+      this.hideCenteredModal();
+    });
+  }
+}
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  new SimplifiedSubscribe();
+});
+</script>
+
+<style>
+ 
+.hidden {
+  display: none !important;
+}
+
+ 
+.subscription-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.4s ease-out;
+}
+
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.8);
+  backdrop-filter: blur(4px);
+}
+
+.subscription-modal .modal-content {
+  position: relative;
+  background: var(--entry);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  max-width: 680px;
+  width: 95%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: var(--shadow);
+  animation: modalSlideIn 0.5s ease-out;
+  font-family: inherit;
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--secondary);
+  padding: 8px;
+  border-radius: var(--radius);
+  transition: all 0.2s ease;
+  opacity: 0.6;
+}
+
+.modal-close:hover {
+  opacity: 1;
+  background: var(--theme);
+  color: var(--primary);
+}
+
+.modal-body {
+  padding: calc(var(--gap) * 2);
+  text-align: center;
+}
+
+.modal-body h2 {
+  margin: 0 0 24px 0;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--primary);
+  font-family: inherit;
+  line-height: 1.2;
+}
+
+.modal-body p {
+  margin: 0 0 32px 0;
+  color: var(--secondary);
+  line-height: 1.6;
+  font-size: 16px;
+  font-family: inherit;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ 
+.centered-subscribe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.centered-subscribe-form input {
+  padding: 16px 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 16px;
+  background: var(--theme);
+  color: var(--primary);
+  font-family: inherit;
+  transition: border-color 0.2s ease;
+  text-align: center;
+}
+
+.centered-subscribe-form input::placeholder {
+  color: var(--secondary);
+  opacity: 0.7;
+}
+
+.centered-subscribe-form input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.centered-subscribe-form .submit-btn {
+  background: var(--primary);
+  color: var(--theme);
+  border: none;
+  padding: 16px 24px;
+  border-radius: var(--radius);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.centered-subscribe-form .submit-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.centered-subscribe-form .submit-btn:disabled {
+  opacity: 0.6;
+  transform: none;
+  cursor: not-allowed;
+}
+
+.modal-footer {
+  text-align: center;
+  margin-top: 16px;
+}
+
+ 
+
+ 
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.subscribe-form input {
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 14px;
+  background: var(--theme);
+  color: var(--primary);
+  font-family: inherit;
+  transition: border-color 0.2s ease;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+}
+
+.subscribe-form input::placeholder {
+  color: var(--secondary);
+  opacity: 0.7;
+}
+
+.subscribe-form input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.submit-btn {
+  background: var(--primary);
+  color: var(--theme);
+  border: none;
+  padding: 14px 16px;
+  border-radius: var(--radius);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.no-thanks-btn {
+  background: none;
+  border: none;
+  color: var(--secondary);
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: underline;
+  font-family: inherit;
+  transition: color 0.2s ease;
+  opacity: 0.8;
+}
+
+.no-thanks-btn:hover {
+  color: var(--primary);
+  opacity: 1;
+}
+
+ 
+.returning-reminder {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+  font-family: inherit;
+}
+
+ 
+.reminder-collapsed {
+  background: var(--entry);
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius) * 2) calc(var(--radius) * 2) 0 0;
+  padding: 12px 20px;
+  box-shadow: var(--shadow);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  user-select: none;
+  width: 360px;
+  margin: 0;
+}
+
+.reminder-collapsed.clickable {
+  cursor: pointer;
+}
+
+.reminder-collapsed:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.reminder-text {
+  font-size: 14px;
+  color: var(--secondary);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.expand-btn {
+  background: var(--theme);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  padding: 6px;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--secondary);
+  pointer-events: none;
+}
+
+.reminder-collapsed:hover .expand-btn {
+  background: var(--border);
+  color: var(--primary);
+}
+
+ 
+.reminder-expanded {
+  background: var(--entry);
+  border: 1px solid var(--border);
+  border-radius: var(--radius) var(--radius) 0 0;
+  padding: 24px;
+  box-shadow: var(--shadow);
+  width: 360px;
+  animation: expandVertical 0.3s ease-out;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.expanded-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.expanded-header h4 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary);
+  font-family: inherit;
+}
+
+.reminder-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--secondary);
+  padding: 4px;
+  transition: all 0.2s ease;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reminder-close:hover {
+  color: var(--primary);
+  background: var(--theme);
+}
+
+.reminder-expanded p {
+  margin: 0 0 20px 0;
+  font-size: 14px;
+  color: var(--secondary);
+  line-height: 1.6;
+  font-family: inherit;
+}
+
+ 
+.action-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.action-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--theme);
+  color: var(--primary);
+  text-decoration: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.action-item:hover {
+  background: var(--code-bg);
+  border-color: var(--primary);
+}
+
+.action-icon {
+  font-size: 16px;
+  margin-right: 12px;
+  min-width: 20px;
+}
+
+.action-text {
+  flex: 1;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.action-arrow {
+  font-size: 18px;
+  color: var(--secondary);
+  margin-left: 8px;
+}
+
+.action-item:hover .action-arrow {
+  color: var(--primary);
+}
+
+.reminder-actions {
+  text-align: center;
+  margin-top: 16px;
+}
+
+ 
+.form-message {
+  margin-top: 16px;
+  padding: 12px 16px;
+  border-radius: var(--radius);
+  font-size: 14px;
+  text-align: center;
+  font-family: inherit;
+}
+
+.form-message.success {
+  background: var(--code-bg);
+  color: var(--primary);
+  border: 1px solid var(--border);
+}
+
+.form-message.error {
+  background: var(--code-bg);
+  color: var(--primary);
+  border: 1px solid var(--border);
+}
+
+ 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modalSlideIn {
+  from {
+    transform: scale(0.95) translateY(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes expandVertical {
+  from {
+    transform: scaleY(0);
+    transform-origin: bottom;
+    opacity: 0;
+  }
+  to {
+    transform: scaleY(1);
+    transform-origin: bottom;
+    opacity: 1;
+  }
+}
+
+@keyframes collapseVertical {
+  from {
+    transform: scaleY(1);
+    transform-origin: bottom;
+    opacity: 1;
+  }
+  to {
+    transform: scaleY(0);
+    transform-origin: bottom;
+    opacity: 0;
+  }
+}
+
+ 
+@media (max-width: 768px) {
+  .new-user-modal .modal-content {
+    margin: 20px;
+    width: calc(100% - 40px);
+  }
+  
+  .modal-body {
+    padding: var(--gap);
+  }
+  
+  .modal-body h2 {
+    font-size: 28px;
+  }
+  
+  .returning-reminder {
+    right: 0;
+    bottom: 0;
+  }
+  
+  .reminder-expanded {
+    width: 100vw;
+    max-width: 360px;
+    padding: 16px;
+  }
+  
+  .reminder-collapsed {
+    padding: 10px 16px;
+    width: 100vw;
+    max-width: 360px;
+  }
+  
+  .reminder-text {
+    font-size: 13px;
+  }
+}
+
+ 
+:root {
+  --main-width: 720px;
+  --gap: 24px;
+  --radius: 8px;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+</style>
+
+<script>
+    
+    window.addEventListener('error', function(e) {
+        console.error('Page error:', e.error);
+        console.error('Error details:', {
+            message: e.message,
+            filename: e.filename,
+            lineno: e.lineno,
+            colno: e.colno
+        });
+    });
+
+    
+    if (history.scrollRestoration) {
+        history.scrollRestoration = 'manual';
+    }
+    
+    
+    window.addEventListener('load', function() {
+        window.scrollTo(0, 0);
+    });
+    
+    
+    window.addEventListener('pageshow', function(event) {
+        if (event.persisted) {
+            window.scrollTo(0, 0);
+        }
+    });
+
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script> </body>
+
+</html>

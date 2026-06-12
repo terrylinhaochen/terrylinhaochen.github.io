@@ -12,7 +12,7 @@
         <!-- About Me Section -->
         <h2>About Me</h2>
         <div class="about-section">
-            <p>CS & HCI @ Northwestern. Prev product @ Microsoft, TikTok, ByteDance. Experienced in product management and agent implementation. Right now I'm thinking about agent ai for education, social listening, and creative workflows. In my free time, I like to read and travel. Always happy to chat ;)</p>
+            <p>CS & HCI @ Northwestern. Prev product @ Microsoft, TikTok, ByteDance. Experienced in product management and agent implementation. Right now I'm thinking about crowd intelligence, agentic workflows, and traveling the world. In my free time, I like to read. Always happy to chat ;)</p>
             
             <div class="map-section">
                 <div id="journey-map"></div>
@@ -386,6 +386,19 @@
         // Define locations with their details and precise coordinates
         const locations = [
             {
+                name: "San Francisco",
+                region: "sanfrancisco",
+                position: [37.7793, -122.4193],
+                companies: [
+                    {
+                        name: "Home",
+                        role: "San Francisco",
+                        position: [37.7793, -122.4193],
+                        description: "Home | San Francisco\nBased in San Francisco, building at the intersection of crowd intelligence and agentic workflows."
+                    }
+                ]
+            },
+            {
                 name: "Chicago",
                 region: "chicago",
                 position: [42.0565, -87.6753],
@@ -496,7 +509,7 @@
         ];
 
         // Define the sequence of regions
-        const regions = ['seattle', 'bayarea', 'chicago', 'beijing'];
+        const regions = ['sanfrancisco', 'seattle', 'bayarea', 'chicago', 'beijing'];
         let currentRegionIndex = 0;
         const markers = [];
         const modal = document.getElementById('location-modal');
@@ -507,6 +520,7 @@
 
         // Define zoom levels for each region
         const regionZooms = {
+            'sanfrancisco': 13,
             'chicago': 14,
             'toronto': 12,
             'bayarea': 10.5,
@@ -560,10 +574,10 @@
             smoothMove(location.position);
         }
 
-        // Initialize map with Seattle view
+        // Initialize map with San Francisco view
         const map = L.map('journey-map', {
-            center: locations.find(loc => loc.region === 'seattle').position,
-            zoom: regionZooms['seattle'],
+            center: locations.find(loc => loc.region === 'sanfrancisco').position,
+            zoom: regionZooms['sanfrancisco'],
             zoomControl: false,
             attributionControl: false,
             scrollWheelZoom: false,
@@ -628,7 +642,7 @@
         });
 
         // Initial view
-        updateMapView('seattle');
+        updateMapView('sanfrancisco');
 
         // Modal close handlers
         modal.addEventListener('click', function(e) {

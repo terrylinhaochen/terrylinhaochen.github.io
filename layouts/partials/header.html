@@ -144,6 +144,13 @@
                 </a>
             </li>
             <li>
+                <a href="/reading/" title="Reading">
+                    <span {{- if eq $currentPage.Section "reading" }} class="active" {{- end }}>
+                        Reading
+                    </span>
+                </a>
+            </li>
+            <li>
                 <a href="/search/" title="Explore" accesskey="/">
                     <span {{- if eq $currentPage.Layout "search" }} class="active" {{- end }}>
                         Explore

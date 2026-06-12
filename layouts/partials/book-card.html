@@ -1,0 +1,23 @@
+{{- /* Renders one book card. Expects a dict: book, kind ("read"|"shelf"|"rec"), index */}}
+{{- $book := .book }}
+{{- $cover := $book.cover }}
+{{- if and (not $cover) $book.isbn }}
+  {{- $cover = printf "https://covers.openlibrary.org/b/isbn/%s-L.jpg?default=false" $book.isbn }}
+{{- end }}
+<div class="book-card{{ if eq .kind "read" }} has-notes{{ end }}" {{ if eq .kind "read" }}data-book-index="{{ .index }}" role="button" tabindex="0" aria-label="Notes on {{ $book.title }}"{{ end }}>
+  <div class="book-cover">
+    {{- if $cover }}
+    <img src="{{ $cover }}" alt="Cover of {{ $book.title }}" loading="lazy"
+         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+    <div class="cover-fallback" style="display:none;"><span>{{ $book.title }}</span><em>{{ $book.author }}</em></div>
+    {{- else }}
+    <div class="cover-fallback"><span>{{ $book.title }}</span><em>{{ $book.author }}</em></div>
+    {{- end }}
+    {{- if eq .kind "read" }}<div class="notes-hint">Notes</div>{{ end }}
+  </div>
+  <div class="book-meta">
+    <h4>{{ $book.title }}</h4>
+    {{ with $book.author }}<p>{{ . }}</p>{{ end }}
+    {{- if eq .kind "rec" }}{{ with $book.recommended_by }}<p class="rec-by">via {{ . }}</p>{{ end }}{{ end }}
+  </div>
+</div>

@@ -1,0 +1,107 @@
+# Book catalog for the /reading/ page.
+#
+# Two lists:
+#   read:  books you've finished — each can carry personal notes (rendered in a
+#          modal when the card is clicked)
+#   shelf: books you own / plan to read — no notes needed
+#
+# Fields per book:
+#   title:     (required)
+#   author:    (required)
+#   isbn:      (optional) used to auto-fetch the cover from Open Library
+#   cover:     (optional) explicit cover image URL — overrides isbn lookup
+#   date_read: (optional) free-form, e.g. "2025" or "March 2025"
+#   rating:    (optional) 1-5
+#   notes:     (optional, read list only) markdown supported
+
+read:
+  - title: "The Mom Test"
+    author: "Rob Fitzpatrick"
+    isbn: "9781492180746"
+    notes: |
+      *(Notes coming soon.)*
+
+  - title: "The Design of Everyday Things"
+    author: "Don Norman"
+    isbn: "9780465050659"
+    notes: |
+      *(Notes coming soon.)*
+
+  - title: "俞军产品方法论 (Yu Jun's Product Methodology)"
+    author: "俞军 (Yu Jun)"
+    cover: "/images/books/yujun.jpg"
+    notes: |
+      *(Notes coming soon.)*
+
+  - title: "The Crowd: A Study of the Popular Mind"
+    author: "Gustave Le Bon"
+    isbn: "9780486419565"
+    notes: |
+      Partially read. *(Notes coming soon.)*
+
+  - title: "Capital (Das Kapital)"
+    author: "Karl Marx"
+    isbn: "9780199535705"
+    notes: |
+      Partially read. *(Notes coming soon.)*
+
+shelf:
+  - title: "Thinking, Fast and Slow"
+    author: "Daniel Kahneman"
+    isbn: "9780374533557"
+
+  - title: "The Wisdom of Crowds"
+    author: "James Surowiecki"
+    isbn: "9780385721707"
+
+  - title: "The Inevitable (必然)"
+    author: "Kevin Kelly"
+    isbn: "9780525428084"
+
+  - title: "Outliers"
+    author: "Malcolm Gladwell"
+    isbn: "9780316017930"
+
+  - title: "真需求 (True Demand)"
+    author: "梁宁 (Liang Ning)"
+    cover: "/images/books/zhenxuqiu.jpg"
+
+  - title: "How to Win Friends and Influence People"
+    author: "Dale Carnegie"
+    isbn: "9780671027032"
+
+  - title: "The Globalization Paradox"
+    author: "Dani Rodrik"
+    isbn: "9780393071610"
+
+  - title: "Poor Charlie's Almanack"
+    author: "Charlie Munger"
+    isbn: "9781953953230"
+
+  - title: "Man's Search for Meaning"
+    author: "Viktor E. Frankl"
+    isbn: "9780807014295"
+
+  - title: "Capitalism, Socialism and Democracy"
+    author: "Joseph A. Schumpeter"
+    isbn: "9780061561610"
+
+  - title: "The Score Takes Care of Itself"
+    author: "Bill Walsh"
+    isbn: "9781591843474"
+
+  - title: "Steve Jobs"
+    author: "Walter Isaacson"
+    isbn: "9781451648539"
+
+  - title: "A Culture of Growth"
+    author: "Joel Mokyr"
+    isbn: "9780691168883"
+
+  - title: "价值 (Value)"
+    author: "张磊 (Zhang Lei)"
+    cover: "/images/books/jiazhi.jpg"
+
+  - title: "The Beginning of Infinity"
+    author: "David Deutsch"
+    isbn: "9780143121350"

@@ -1,7 +1,7 @@
 ---
-title: "Service Localization"
+title: "Traveling, People of the World"
 date: 2023-08-18
-description: "Technology built for one market rarely works in another without rethinking the product, not just the language."
+description: "Different places run on different assumptions — about infrastructure, trust, money, and daily life. Traveling is the fastest way to see them."
 tags: ["Product"]
 categories: ["Research"]
 featured: true
@@ -18,6 +18,6 @@ related_posts:
     blurb: "A case study in building for a market with fundamentally different rules."
 ---
 
-## Technology built for one market rarely works in another without rethinking the product, not just the language.
+## Different places run on different assumptions — and traveling is the fastest way to see them.
 
-Localization isn't translation. Different markets have different infrastructure constraints, payment behaviors, trust patterns, and distribution channels. A product that wins in one context can fail completely in another for reasons that have nothing to do with the core technology — and everything to do with the assumptions baked into the design.
+Every city I've lived in or visited runs on a different set of defaults: how people pay, who they trust, what they do after work, which apps own their attention. Spending time with people in different markets is the cheapest way to discover that your assumptions are local, not universal. A product that wins in one context can fail completely in another for reasons that have nothing to do with the core technology — and everything to do with the assumptions baked into the design.

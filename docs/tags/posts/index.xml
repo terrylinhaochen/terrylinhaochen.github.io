@@ -8,7 +8,7 @@
     <managingEditor>Terry Chen (Terry Chen)</managingEditor>
     <webMaster>Terry Chen (Terry Chen)</webMaster>
     <copyright>© 2026 Terry Chen. All rights reserved.</copyright>
-    <lastBuildDate>Sat, 28 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 16 May 2026 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="http://localhost:1313/tags/posts/index.xml" rel="self" type="application/rss+xml" />
     
@@ -27,12 +27,33 @@
     </image>
     
     <item>
-      <title>Agentic Engineering: How One Developer Ships Like a Team</title>
-      <link>http://localhost:1313/posts/agent_economy/</link>
-      <pubDate>Sat, 28 Feb 2026 00:00:00 +0000</pubDate>
+      <title>Senior Talk: On Timing, China, and My Thoughts for Post-Grad</title>
+      <link>http://localhost:1313/posts/senior_talk/</link>
+      <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/posts/agent_economy/</guid>
-      <description>I spent a day researching how Peter Steinberger ships hundreds of commits a day alone. What I found forced me to confront something uncomfortable: I&#39;ve been using AI agents wrong the whole time.</description>
+      <guid>http://localhost:1313/posts/senior_talk/</guid>
+      <description>LJV Cohort #7 Senior Talk — three lessons from four years at Northwestern, overlapping with everything happening in AI.</description>
+      
+      
+      
+        
+          
+          <category>Posts</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2026-05-16T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Delegating Ambiguity: Human–Computer Interaction in the Age of Personal Agents</title>
+      <link>http://localhost:1313/posts/delegating_ambiguity/</link>
+      <pubDate>Sun, 08 Mar 2026 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>http://localhost:1313/posts/delegating_ambiguity/</guid>
+      <description>As interaction shifts from Human→Tool to Human→Agent→Tool, complexity becomes an affordance—but only if we design for reasoning transfer, progressive visibility, and calibrated trust.</description>
       
       
         
@@ -48,7 +69,7 @@
       
       
       <dc:creator>Terry Chen</dc:creator>
-      <dc:date>2026-02-28T00:00:00Z</dc:date>
+      <dc:date>2026-03-08T00:00:00Z</dc:date>
     </item>
     
     <item>
