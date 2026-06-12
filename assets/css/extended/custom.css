@@ -1375,3 +1375,17 @@ body.dark .caption {
     font-size: 0.95rem !important;
   }
 }
+
+/* Scroll-to-top button: keep it bottom-left so it never collides with the
+   "Explore More Content" subscribe pill pinned to the bottom-right. */
+.top-link {
+    right: unset;
+    left: 30px;
+    bottom: 30px;
+}
+
+@media screen and (max-width: 900px) {
+    .list .top-link {
+        transform: none;
+    }
+}
