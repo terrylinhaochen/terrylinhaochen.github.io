@@ -45,6 +45,12 @@ read:
     notes: |
       Partially read. *(Notes coming soon.)*
 
+  - title: "The Globalization Paradox"
+    author: "Dani Rodrik"
+    isbn: "9780393071610"
+    notes: |
+      *(Notes coming soon.)*
+
 shelf:
   - title: "Thinking, Fast and Slow"
     author: "Daniel Kahneman"
@@ -69,10 +75,6 @@ shelf:
   - title: "How to Win Friends and Influence People"
     author: "Dale Carnegie"
     isbn: "9780671027032"
-
-  - title: "The Globalization Paradox"
-    author: "Dani Rodrik"
-    isbn: "9780393071610"
 
   - title: "Poor Charlie's Almanack"
     author: "Charlie Munger"
