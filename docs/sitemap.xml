@@ -2181,25 +2181,6 @@
   
   
   <url>
-    <loc>https://chenterry.com/investing/</loc>
-    
-    
-    <changefreq>weekly</changefreq>
-    
-    
-    <priority>0.5</priority>
-    
-    
-    
-    
-    
-    
-    
-  </url>
-  
-  
-  
-  <url>
     <loc>https://chenterry.com/llm-coaching/</loc>
     
     
@@ -2258,6 +2239,25 @@
   
   <url>
     <loc>https://chenterry.com/series/</loc>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+    
+    
+    
+    
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://chenterry.com/investing/</loc>
     
     
     <changefreq>weekly</changefreq>

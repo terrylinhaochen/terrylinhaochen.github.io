@@ -445,9 +445,9 @@
                 </a>
             </li>
             <li>
-                <a href="/investing/" title="Investing">
+                <a href="/investing/" title="Theses">
                     <span>
-                        Investing
+                        Theses
                     </span>
                 </a>
             </li>
@@ -527,6 +527,14 @@
                     </div>
                 </div>
                 <div class="product-card">
+                    <h4>A2A Catalog</h4>
+                    <p class="product-tagline">Agent Directory</p>
+                    <p>A directory of A2A agents and MCP servers — discover what's out there and submit your own.</p>
+                    <div class="product-links">
+                        <a href="https://a2acatalog.com" target="_blank" rel="noopener">Site →</a>
+                    </div>
+                </div>
+                <div class="product-card more-project" hidden>
                     <h4>LLM Coaching</h4>
                     <p class="product-tagline">AI Coaching</p>
                     <p>Diagnoses self-regulation gaps in coaching conversations and suggests peer connections. Northwestern research.</p>
@@ -535,24 +543,7 @@
                         <a href="/categories/northwestern/">Posts</a>
                     </div>
                 </div>
-                <div class="product-card">
-                    <h4>Cogno</h4>
-                    <p class="product-tagline">Sales Automation</p>
-                    <p>Multi-agent sales assistant for cross-border e-commerce brands. 24/7 personalized customer engagement.</p>
-                    <div class="product-links">
-                        <a href="https://cognogpt.com" target="_blank" rel="noopener">Site →</a>
-                        <a href="/archived/cogno/">About</a>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <h4>A2A Catalog</h4>
-                    <p class="product-tagline">Agent Directory</p>
-                    <p>A directory of A2A agents and MCP servers — discover what's out there and submit your own.</p>
-                    <div class="product-links">
-                        <a href="https://a2acatalog.com" target="_blank" rel="noopener">Site →</a>
-                    </div>
-                </div>
-                <div class="product-card">
+                <div class="product-card more-project" hidden>
                     <h4>China Travel Made Easy</h4>
                     <p class="product-tagline">Travel Guides</p>
                     <p>Practical guides for traveling China — payments, visas, connectivity, and getting around.</p>
@@ -560,7 +551,7 @@
                         <a href="https://chinatravelmadeeasy.com" target="_blank" rel="noopener">Site →</a>
                     </div>
                 </div>
-                <div class="product-card">
+                <div class="product-card more-project" hidden>
                     <h4>Answer With Books</h4>
                     <p class="product-tagline">Read for Answers</p>
                     <p>Answers to real questions, drawn from books worth reading.</p>
@@ -568,7 +559,17 @@
                         <a href="https://answerwithbooks.com" target="_blank" rel="noopener">Site →</a>
                     </div>
                 </div>
+                <div class="product-card more-project" hidden>
+                    <h4>Cogno</h4>
+                    <p class="product-tagline">Sales Automation</p>
+                    <p>Multi-agent sales assistant for cross-border e-commerce brands.</p>
+                    <div class="product-links">
+                        <a href="https://cognogpt.com" target="_blank" rel="noopener">Site →</a>
+                        <a href="/archived/cogno/">About</a>
+                    </div>
+                </div>
             </div>
+            <button id="toggle-projects" class="toggle-projects" aria-expanded="false">More projects ▾</button>
         </div>
 
         
@@ -686,20 +687,32 @@
 
     .products-grid {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
-    }
-
-    @media (max-width: 900px) {
-        .products-grid {
-            grid-template-columns: repeat(2, 1fr);
-        }
     }
 
     @media (max-width: 600px) {
         .products-grid {
             grid-template-columns: 1fr;
         }
+    }
+
+    .toggle-projects {
+        display: block;
+        margin: 1.25rem auto 0;
+        background: var(--entry);
+        color: var(--secondary);
+        border: 1px solid var(--border);
+        padding: 0.45rem 1.2rem;
+        border-radius: 8px;
+        font-size: 0.9rem;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+
+    .toggle-projects:hover {
+        background: var(--border);
+        color: var(--primary);
     }
 
     .product-card {
@@ -1012,6 +1025,19 @@
 
     <script>
     document.addEventListener('DOMContentLoaded', function() {
+        
+        const toggleBtn = document.getElementById('toggle-projects');
+        if (toggleBtn) {
+            toggleBtn.addEventListener('click', function() {
+                const expanded = toggleBtn.getAttribute('aria-expanded') === 'true';
+                document.querySelectorAll('.more-project').forEach(card => {
+                    card.hidden = expanded;
+                });
+                toggleBtn.setAttribute('aria-expanded', String(!expanded));
+                toggleBtn.textContent = expanded ? 'More projects ▾' : 'Fewer projects ▴';
+            });
+        }
+
         
         const locations = [
             {

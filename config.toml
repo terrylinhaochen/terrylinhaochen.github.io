@@ -120,7 +120,7 @@ enableRobotsTXT = true
     weight = 10
   [[menu.main]]
     identifier = "investing"
-    name = "Investing"
+    name = "Theses"
     url = "/investing/"
     weight = 25
   # Archived section removed from main navigation
