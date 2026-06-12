@@ -22,8 +22,8 @@
 
 {{- $books := site.Data.books }}
 
-<!-- Books I've Read -->
-<h2 class="reading-section-title">Books I've Read</h2>
+<!-- Off the Shelf (books I've read) -->
+<h2 class="reading-section-title">Off the Shelf</h2>
 {{- with $books.read }}
 <div class="book-gallery">
   {{- range $i, $book := . }}

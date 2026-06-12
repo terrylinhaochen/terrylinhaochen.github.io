@@ -43,9 +43,10 @@
             </div>
         </div>
 
-        <!-- Products I've Built Section -->
-        <h2>Products I've Built</h2>
+        <!-- Work Samples Section -->
+        <h2>Work Samples</h2>
         <div class="products-section">
+            <p class="products-note">Independent products I've built and shipped myself. For product work at larger companies — Microsoft, TikTok, ByteDance — see <a href="/about/">About</a>.</p>
             <div class="products-grid">
                 <div class="product-card">
                     <h4>CrowdListen</h4>
@@ -187,9 +188,20 @@
         }
     }
 
-    /* Products I've Built */
+    /* Work Samples */
     .products-section {
         margin: 3rem 0;
+    }
+
+    .products-note {
+        font-size: 0.95rem;
+        color: var(--secondary);
+        margin: 0 0 1.25rem;
+    }
+
+    .products-note a {
+        color: var(--primary);
+        font-weight: 600;
     }
 
     .products-grid {
