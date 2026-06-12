@@ -119,11 +119,6 @@ enableRobotsTXT = true
     url = "/posts/"
     weight = 10
   [[menu.main]]
-    identifier = "product"
-    name = "Product"
-    url = "/product/"
-    weight = 20
-  [[menu.main]]
     identifier = "investing"
     name = "Investing"
     url = "/investing/"

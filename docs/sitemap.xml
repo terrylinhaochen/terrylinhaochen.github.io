@@ -5,7 +5,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/investing/ai-application/</loc>
+    <loc>https://chenterry.com/investing/ai-application/</loc>
     
     
     <changefreq>weekly</changefreq>
@@ -24,7 +24,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/product/crowdlisten/</loc>
+    <loc>https://chenterry.com/about/projects/crowdlistening/</loc>
     
     
     <changefreq>weekly</changefreq>
@@ -43,7 +43,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/about/projects/crowdlistening/</loc>
+    <loc>https://chenterry.com/about/experience/microsoft/</loc>
     
     
     <changefreq>weekly</changefreq>
@@ -62,7 +62,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/about/experience/microsoft/</loc>
+    <loc>https://chenterry.com/about/research/c3lab/</loc>
     
     
     <changefreq>weekly</changefreq>
@@ -81,7 +81,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/about/research/c3lab/</loc>
+    <loc>https://chenterry.com/about/research/deltalab/</loc>
     
     
     <changefreq>weekly</changefreq>
@@ -100,7 +100,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/product/microsoft/</loc>
+    <loc>https://chenterry.com/about/experience/ouraca/</loc>
     
     
     <changefreq>weekly</changefreq>
@@ -119,7 +119,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/about/research/deltalab/</loc>
+    <loc>https://chenterry.com/investing/security/</loc>
     
     
     <changefreq>weekly</changefreq>
@@ -138,7 +138,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/about/experience/ouraca/</loc>
+    <loc>https://chenterry.com/investing/asia-tech/</loc>
     
     
     <changefreq>weekly</changefreq>
@@ -157,7 +157,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/investing/security/</loc>
+    <loc>https://chenterry.com/about/experience/tiktok/</loc>
     
     
     <changefreq>weekly</changefreq>
@@ -176,7 +176,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/product/northwestern/</loc>
+    <loc>https://chenterry.com/investing/mobility-energy/</loc>
     
     
     <changefreq>weekly</changefreq>
@@ -195,7 +195,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/investing/asia-tech/</loc>
+    <loc>https://chenterry.com/investing/consumer-experience/</loc>
     
     
     <changefreq>weekly</changefreq>
@@ -214,7 +214,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/about/experience/tiktok/</loc>
+    <loc>https://chenterry.com/investing/crypto/</loc>
     
     
     <changefreq>weekly</changefreq>
@@ -233,102 +233,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/product/aibrary/</loc>
-    
-    
-    <changefreq>weekly</changefreq>
-    
-    
-    <priority>0.5</priority>
-    
-    
-    
-    
-    
-    
-    
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:1313/investing/mobility-energy/</loc>
-    
-    
-    <changefreq>weekly</changefreq>
-    
-    
-    <priority>0.5</priority>
-    
-    
-    
-    
-    
-    
-    
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:1313/investing/consumer-experience/</loc>
-    
-    
-    <changefreq>weekly</changefreq>
-    
-    
-    <priority>0.5</priority>
-    
-    
-    
-    
-    
-    
-    
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:1313/product/tiktok/</loc>
-    
-    
-    <changefreq>weekly</changefreq>
-    
-    
-    <priority>0.5</priority>
-    
-    
-    
-    
-    
-    
-    
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:1313/investing/crypto/</loc>
-    
-    
-    <changefreq>weekly</changefreq>
-    
-    
-    <priority>0.5</priority>
-    
-    
-    
-    
-    
-    
-    
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://chenterry.com/</loc>
     
     <lastmod>2026-05-16T00:00:00+00:00</lastmod>
     
@@ -349,7 +254,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/tags/posts/</loc>
+    <loc>https://chenterry.com/tags/posts/</loc>
     
     <lastmod>2026-05-16T00:00:00+00:00</lastmod>
     
@@ -370,7 +275,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://chenterry.com/posts/</loc>
     
     <lastmod>2026-05-16T00:00:00+00:00</lastmod>
     
@@ -391,7 +296,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/posts/senior_talk/</loc>
+    <loc>https://chenterry.com/posts/senior_talk/</loc>
     
     <lastmod>2026-05-16T00:00:00+00:00</lastmod>
     
@@ -412,7 +317,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://chenterry.com/tags/</loc>
     
     <lastmod>2026-05-16T00:00:00+00:00</lastmod>
     
@@ -433,7 +338,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/categories/ai/</loc>
+    <loc>https://chenterry.com/categories/ai/</loc>
     
     <lastmod>2026-03-08T00:00:00+00:00</lastmod>
     
@@ -454,7 +359,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://chenterry.com/categories/</loc>
     
     <lastmod>2026-03-08T00:00:00+00:00</lastmod>
     
@@ -475,7 +380,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/posts/delegating_ambiguity/</loc>
+    <loc>https://chenterry.com/posts/delegating_ambiguity/</loc>
     
     <lastmod>2026-03-08T00:00:00+00:00</lastmod>
     
@@ -496,7 +401,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/tags/agents/</loc>
+    <loc>https://chenterry.com/tags/agents/</loc>
     
     <lastmod>2026-03-04T00:00:00+00:00</lastmod>
     
@@ -517,7 +422,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/tags/ai/</loc>
+    <loc>https://chenterry.com/tags/ai/</loc>
     
     <lastmod>2026-03-04T00:00:00+00:00</lastmod>
     
@@ -538,7 +443,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/tags/mcp/</loc>
+    <loc>https://chenterry.com/tags/mcp/</loc>
     
     <lastmod>2026-03-04T00:00:00+00:00</lastmod>
     
@@ -559,7 +464,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/categories/posts/</loc>
+    <loc>https://chenterry.com/categories/posts/</loc>
     
     <lastmod>2026-03-04T00:00:00+00:00</lastmod>
     
@@ -580,7 +485,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/tags/product/</loc>
+    <loc>https://chenterry.com/tags/product/</loc>
     
     <lastmod>2026-03-04T00:00:00+00:00</lastmod>
     
@@ -601,7 +506,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/tags/skills/</loc>
+    <loc>https://chenterry.com/tags/skills/</loc>
     
     <lastmod>2026-03-04T00:00:00+00:00</lastmod>
     
@@ -622,7 +527,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/posts/skills_vs_mcps_for_agents/</loc>
+    <loc>https://chenterry.com/posts/skills_vs_mcps_for_agents/</loc>
     
     <lastmod>2026-03-04T00:00:00+00:00</lastmod>
     
@@ -643,7 +548,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/tags/agent-economy/</loc>
+    <loc>https://chenterry.com/tags/agent-economy/</loc>
     
     <lastmod>2026-03-03T00:00:00+00:00</lastmod>
     
@@ -664,7 +569,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/categories/crowdlisten/</loc>
+    <loc>https://chenterry.com/categories/crowdlisten/</loc>
     
     <lastmod>2026-03-03T00:00:00+00:00</lastmod>
     
@@ -685,7 +590,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/tags/moltbook/</loc>
+    <loc>https://chenterry.com/tags/moltbook/</loc>
     
     <lastmod>2026-03-03T00:00:00+00:00</lastmod>
     
@@ -706,7 +611,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/tags/research/</loc>
+    <loc>https://chenterry.com/tags/research/</loc>
     
     <lastmod>2026-03-03T00:00:00+00:00</lastmod>
     
@@ -727,7 +632,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/posts/agent_user_research_notebook/</loc>
+    <loc>https://chenterry.com/posts/agent_user_research_notebook/</loc>
     
     <lastmod>2026-03-03T00:00:00+00:00</lastmod>
     
@@ -748,7 +653,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/tags/product-thinking/</loc>
+    <loc>https://chenterry.com/tags/product-thinking/</loc>
     
     <lastmod>2026-03-02T00:00:00+00:00</lastmod>
     
@@ -769,7 +674,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/categories/reflections/</loc>
+    <loc>https://chenterry.com/categories/reflections/</loc>
     
     <lastmod>2026-03-02T00:00:00+00:00</lastmod>
     
@@ -790,7 +695,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/tags/strategy/</loc>
+    <loc>https://chenterry.com/tags/strategy/</loc>
     
     <lastmod>2026-03-02T00:00:00+00:00</lastmod>
     
@@ -811,7 +716,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/posts/thoughts_on_creating_this_blog/</loc>
+    <loc>https://chenterry.com/posts/thoughts_on_creating_this_blog/</loc>
     
     <lastmod>2026-03-02T00:00:00+00:00</lastmod>
     
@@ -832,7 +737,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/tags/writing/</loc>
+    <loc>https://chenterry.com/tags/writing/</loc>
     
     <lastmod>2026-03-02T00:00:00+00:00</lastmod>
     
@@ -853,7 +758,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/categories/crypto/</loc>
+    <loc>https://chenterry.com/categories/crypto/</loc>
     
     <lastmod>2026-02-28T00:00:00+00:00</lastmod>
     
@@ -874,7 +779,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/posts/crypto_valuation/</loc>
+    <loc>https://chenterry.com/posts/crypto_valuation/</loc>
     
     <lastmod>2026-02-28T00:00:00+00:00</lastmod>
     
@@ -895,7 +800,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/tags/investing/</loc>
+    <loc>https://chenterry.com/tags/investing/</loc>
     
     <lastmod>2026-02-28T00:00:00+00:00</lastmod>
     
@@ -916,7 +821,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/categories/ai-application--value-creation-layer/</loc>
+    <loc>https://chenterry.com/categories/ai-application--value-creation-layer/</loc>
     
     <lastmod>2026-02-22T00:00:00+00:00</lastmod>
     
@@ -937,7 +842,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/tags/entrepreneurship/</loc>
+    <loc>https://chenterry.com/tags/entrepreneurship/</loc>
     
     <lastmod>2026-02-22T00:00:00+00:00</lastmod>
     
@@ -958,7 +863,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/posts/one-person-billion/</loc>
+    <loc>https://chenterry.com/posts/one-person-billion/</loc>
     
     <lastmod>2026-02-22T00:00:00+00:00</lastmod>
     
@@ -979,7 +884,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/tags/crowdlisten/</loc>
+    <loc>https://chenterry.com/tags/crowdlisten/</loc>
     
     <lastmod>2026-02-15T00:00:00+00:00</lastmod>
     
@@ -1000,7 +905,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/posts/crowdlisten_feedback_layer/</loc>
+    <loc>https://chenterry.com/posts/crowdlisten_feedback_layer/</loc>
     
     <lastmod>2026-02-15T00:00:00+00:00</lastmod>
     
@@ -1021,7 +926,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/posts/crowdlisten_human_signal/</loc>
+    <loc>https://chenterry.com/posts/crowdlisten_human_signal/</loc>
     
     <lastmod>2026-01-15T00:00:00+00:00</lastmod>
     
@@ -1042,7 +947,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/posts/crowdlisten_distribution_intelligence/</loc>
+    <loc>https://chenterry.com/posts/crowdlisten_distribution_intelligence/</loc>
     
     <lastmod>2025-12-17T00:00:00+00:00</lastmod>
     
@@ -1063,7 +968,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/posts/battle_for_search/</loc>
+    <loc>https://chenterry.com/posts/battle_for_search/</loc>
     
     <lastmod>2025-11-18T00:00:00+00:00</lastmod>
     
@@ -1084,7 +989,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/tags/observations/</loc>
+    <loc>https://chenterry.com/tags/observations/</loc>
     
     <lastmod>2025-11-12T00:00:00+00:00</lastmod>
     
@@ -1105,7 +1010,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/posts/closing_window_ai/</loc>
+    <loc>https://chenterry.com/posts/closing_window_ai/</loc>
     
     <lastmod>2025-11-12T00:00:00+00:00</lastmod>
     
@@ -1126,7 +1031,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/posts/google_learn_about/</loc>
+    <loc>https://chenterry.com/posts/google_learn_about/</loc>
     
     <lastmod>2025-11-11T00:00:00+00:00</lastmod>
     
@@ -1147,7 +1052,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/posts/google_notebooklm/</loc>
+    <loc>https://chenterry.com/posts/google_notebooklm/</loc>
     
     <lastmod>2025-11-11T00:00:00+00:00</lastmod>
     
@@ -1168,7 +1073,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/posts/monetizing_ai/</loc>
+    <loc>https://chenterry.com/posts/monetizing_ai/</loc>
     
     <lastmod>2025-11-11T00:00:00+00:00</lastmod>
     
@@ -1189,7 +1094,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/categories/tiktok/</loc>
+    <loc>https://chenterry.com/categories/tiktok/</loc>
     
     <lastmod>2025-11-11T00:00:00+00:00</lastmod>
     
@@ -1210,7 +1115,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/posts/search_topic/</loc>
+    <loc>https://chenterry.com/posts/search_topic/</loc>
     
     <lastmod>2025-11-11T00:00:00+00:00</lastmod>
     
@@ -1231,7 +1136,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/posts/crowdlisten_archive_v2025_11_09/</loc>
+    <loc>https://chenterry.com/posts/crowdlisten_archive_v2025_11_09/</loc>
     
     <lastmod>2025-11-09T00:00:00+00:00</lastmod>
     
@@ -1252,7 +1157,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/categories/ai-native/</loc>
+    <loc>https://chenterry.com/categories/ai-native/</loc>
     
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
     
@@ -1273,7 +1178,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/posts/ai_native/</loc>
+    <loc>https://chenterry.com/posts/ai_native/</loc>
     
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
     
@@ -1294,7 +1199,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/posts/apm-interview-preparation-guide/</loc>
+    <loc>https://chenterry.com/posts/apm-interview-preparation-guide/</loc>
     
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
     
@@ -1315,7 +1220,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/categories/mobility-energy-and-new-infrastructure/</loc>
+    <loc>https://chenterry.com/categories/mobility-energy-and-new-infrastructure/</loc>
     
     <lastmod>2025-10-31T00:00:00+00:00</lastmod>
     
@@ -1336,7 +1241,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/categories/northwestern/</loc>
+    <loc>https://chenterry.com/categories/northwestern/</loc>
     
     <lastmod>2025-10-31T00:00:00+00:00</lastmod>
     
@@ -1357,7 +1262,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/posts/ambiguity/</loc>
+    <loc>https://chenterry.com/posts/ambiguity/</loc>
     
     <lastmod>2025-10-31T00:00:00+00:00</lastmod>
     
@@ -1378,7 +1283,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/posts/xiaomi-primer/</loc>
+    <loc>https://chenterry.com/posts/xiaomi-primer/</loc>
     
     <lastmod>2025-10-31T00:00:00+00:00</lastmod>
     
@@ -1403,7 +1308,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/categories/aibrary/</loc>
+    <loc>https://chenterry.com/categories/aibrary/</loc>
     
     <lastmod>2025-10-26T00:00:00+00:00</lastmod>
     
@@ -1424,7 +1329,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/posts/intent_driven_discovery/</loc>
+    <loc>https://chenterry.com/posts/intent_driven_discovery/</loc>
     
     <lastmod>2025-10-26T00:00:00+00:00</lastmod>
     
@@ -1445,7 +1350,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/posts/fluid-knowledge-ai-transforms-learning/</loc>
+    <loc>https://chenterry.com/posts/fluid-knowledge-ai-transforms-learning/</loc>
     
     <lastmod>2025-10-26T00:00:00+00:00</lastmod>
     
@@ -1466,7 +1371,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/posts/google_primer/</loc>
+    <loc>https://chenterry.com/posts/google_primer/</loc>
     
     <lastmod>2025-10-20T00:00:00+00:00</lastmod>
     
@@ -1487,7 +1392,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/posts/figma_ai/</loc>
+    <loc>https://chenterry.com/posts/figma_ai/</loc>
     
     <lastmod>2025-10-06T00:00:00+00:00</lastmod>
     
@@ -1508,7 +1413,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/posts/crowdlisten/</loc>
+    <loc>https://chenterry.com/posts/crowdlisten/</loc>
     
     <lastmod>2025-09-15T00:00:00+00:00</lastmod>
     
@@ -1529,7 +1434,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/tags/archive/</loc>
+    <loc>https://chenterry.com/tags/archive/</loc>
     
     <lastmod>2025-09-01T00:00:00+00:00</lastmod>
     
@@ -1550,7 +1455,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/posts/crowdlisten_archive_v2025_09_01/</loc>
+    <loc>https://chenterry.com/posts/crowdlisten_archive_v2025_09_01/</loc>
     
     <lastmod>2025-09-01T00:00:00+00:00</lastmod>
     
@@ -1571,7 +1476,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/posts/the_very_beginning/</loc>
+    <loc>https://chenterry.com/posts/the_very_beginning/</loc>
     
     <lastmod>2025-08-29T00:00:00+00:00</lastmod>
     
@@ -1592,7 +1497,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/posts/agent_prototyping/</loc>
+    <loc>https://chenterry.com/posts/agent_prototyping/</loc>
     
     <lastmod>2025-08-29T00:00:00+00:00</lastmod>
     
@@ -1613,7 +1518,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/categories/microsoft/</loc>
+    <loc>https://chenterry.com/categories/microsoft/</loc>
     
     <lastmod>2025-08-29T00:00:00+00:00</lastmod>
     
@@ -1634,7 +1539,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/posts/need_validation/</loc>
+    <loc>https://chenterry.com/posts/need_validation/</loc>
     
     <lastmod>2025-08-29T00:00:00+00:00</lastmod>
     
@@ -1655,7 +1560,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/posts/ai-powered-security-data-pipelines/</loc>
+    <loc>https://chenterry.com/posts/ai-powered-security-data-pipelines/</loc>
     
     <lastmod>2025-07-13T00:00:00+00:00</lastmod>
     
@@ -1680,7 +1585,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/categories/security-data-pipelines--agentic-soc/</loc>
+    <loc>https://chenterry.com/categories/security-data-pipelines--agentic-soc/</loc>
     
     <lastmod>2025-07-13T00:00:00+00:00</lastmod>
     
@@ -1701,7 +1606,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/posts/when-to-sunset-a-product/</loc>
+    <loc>https://chenterry.com/posts/when-to-sunset-a-product/</loc>
     
     <lastmod>2025-07-12T00:00:00+00:00</lastmod>
     
@@ -1722,7 +1627,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/posts/poor_thinking/</loc>
+    <loc>https://chenterry.com/posts/poor_thinking/</loc>
     
     <lastmod>2025-06-16T00:00:00+00:00</lastmod>
     
@@ -1743,7 +1648,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/posts/questions-new-bottleneck-learning/</loc>
+    <loc>https://chenterry.com/posts/questions-new-bottleneck-learning/</loc>
     
     <lastmod>2025-05-14T00:00:00+00:00</lastmod>
     
@@ -1764,7 +1669,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/posts/crowd_thesis/</loc>
+    <loc>https://chenterry.com/posts/crowd_thesis/</loc>
     
     <lastmod>2025-05-12T00:00:00+00:00</lastmod>
     
@@ -1785,7 +1690,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/posts/generation_distribution/</loc>
+    <loc>https://chenterry.com/posts/generation_distribution/</loc>
     
     <lastmod>2025-05-08T00:00:00+00:00</lastmod>
     
@@ -1808,7 +1713,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/posts/product_engineers/</loc>
+    <loc>https://chenterry.com/posts/product_engineers/</loc>
     
     <lastmod>2025-04-19T00:00:00+00:00</lastmod>
     
@@ -1829,7 +1734,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/posts/interesting_reads/</loc>
+    <loc>https://chenterry.com/posts/interesting_reads/</loc>
     
     <lastmod>2025-04-01T00:00:00+00:00</lastmod>
     
@@ -1850,7 +1755,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/posts/craft_miyakazi/</loc>
+    <loc>https://chenterry.com/posts/craft_miyakazi/</loc>
     
     <lastmod>2025-03-27T00:00:00+00:00</lastmod>
     
@@ -1871,7 +1776,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/posts/user-needs/</loc>
+    <loc>https://chenterry.com/posts/user-needs/</loc>
     
     <lastmod>2025-03-25T00:00:00+00:00</lastmod>
     
@@ -1892,7 +1797,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/categories/prototype/</loc>
+    <loc>https://chenterry.com/categories/prototype/</loc>
     
     <lastmod>2025-03-21T00:00:00+00:00</lastmod>
     
@@ -1917,7 +1822,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/categories/research/</loc>
+    <loc>https://chenterry.com/categories/research/</loc>
     
     <lastmod>2025-03-10T00:00:00+00:00</lastmod>
     
@@ -1938,7 +1843,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/posts/2024-year-review-startup-lessons/</loc>
+    <loc>https://chenterry.com/posts/2024-year-review-startup-lessons/</loc>
     
     <lastmod>2024-12-31T00:00:00+00:00</lastmod>
     
@@ -1963,7 +1868,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/posts/learning_interface/</loc>
+    <loc>https://chenterry.com/posts/learning_interface/</loc>
     
     <lastmod>2024-10-05T00:00:00+00:00</lastmod>
     
@@ -1984,7 +1889,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/main-themes/human-quirks/</loc>
+    <loc>https://chenterry.com/main-themes/human-quirks/</loc>
     
     <lastmod>2024-10-01T00:00:00+00:00</lastmod>
     
@@ -2005,7 +1910,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/main-themes/</loc>
+    <loc>https://chenterry.com/main-themes/</loc>
     
     <lastmod>2024-10-01T00:00:00+00:00</lastmod>
     
@@ -2026,7 +1931,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/posts/personalized_content/</loc>
+    <loc>https://chenterry.com/posts/personalized_content/</loc>
     
     <lastmod>2024-09-20T00:00:00+00:00</lastmod>
     
@@ -2047,7 +1952,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/posts/how-to-work-on-what-you-love/</loc>
+    <loc>https://chenterry.com/posts/how-to-work-on-what-you-love/</loc>
     
     <lastmod>2024-09-01T00:00:00+00:00</lastmod>
     
@@ -2068,7 +1973,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/posts/essense_of_creativity/</loc>
+    <loc>https://chenterry.com/posts/essense_of_creativity/</loc>
     
     <lastmod>2024-08-25T00:00:00+00:00</lastmod>
     
@@ -2089,7 +1994,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/posts/llmcoaching/</loc>
+    <loc>https://chenterry.com/posts/llmcoaching/</loc>
     
     <lastmod>2024-08-15T00:00:00+00:00</lastmod>
     
@@ -2110,7 +2015,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/posts/copilot/</loc>
+    <loc>https://chenterry.com/posts/copilot/</loc>
     
     <lastmod>2024-05-20T00:00:00+00:00</lastmod>
     
@@ -2133,7 +2038,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/main-themes/tech-history/</loc>
+    <loc>https://chenterry.com/main-themes/tech-history/</loc>
     
     <lastmod>2024-03-19T00:00:00+00:00</lastmod>
     
@@ -2156,7 +2061,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/categories/startup/</loc>
+    <loc>https://chenterry.com/categories/startup/</loc>
     
     <lastmod>2024-03-01T00:00:00+00:00</lastmod>
     
@@ -2177,7 +2082,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/main-themes/multi-agent-systems/</loc>
+    <loc>https://chenterry.com/main-themes/multi-agent-systems/</loc>
     
     <lastmod>2023-08-20T00:00:00+00:00</lastmod>
     
@@ -2198,7 +2103,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/main-themes/data-insights/</loc>
+    <loc>https://chenterry.com/main-themes/data-insights/</loc>
     
     <lastmod>2023-08-18T00:00:00+00:00</lastmod>
     
@@ -2219,7 +2124,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/posts/agent_economy/</loc>
+    <loc>https://chenterry.com/posts/agent_economy/</loc>
     
     
     <changefreq>weekly</changefreq>
@@ -2238,7 +2143,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://chenterry.com/about/</loc>
     
     
     <changefreq>weekly</changefreq>
@@ -2257,7 +2162,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/crowdlisten/</loc>
+    <loc>https://chenterry.com/crowdlisten/</loc>
     
     
     <changefreq>weekly</changefreq>
@@ -2276,7 +2181,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/investing/</loc>
+    <loc>https://chenterry.com/investing/</loc>
     
     
     <changefreq>weekly</changefreq>
@@ -2295,7 +2200,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/llm-coaching/</loc>
+    <loc>https://chenterry.com/llm-coaching/</loc>
     
     
     <changefreq>weekly</changefreq>
@@ -2314,7 +2219,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/product/</loc>
+    <loc>https://chenterry.com/reading/</loc>
     
     
     <changefreq>weekly</changefreq>
@@ -2333,7 +2238,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/reading/</loc>
+    <loc>https://chenterry.com/search/</loc>
     
     
     <changefreq>weekly</changefreq>
@@ -2352,26 +2257,7 @@
   
   
   <url>
-    <loc>http://localhost:1313/search/</loc>
-    
-    
-    <changefreq>weekly</changefreq>
-    
-    
-    <priority>0.5</priority>
-    
-    
-    
-    
-    
-    
-    
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:1313/series/</loc>
+    <loc>https://chenterry.com/series/</loc>
     
     
     <changefreq>weekly</changefreq>
@@ -2389,17 +2275,17 @@
   
   
   <url>
-    <loc>http://localhost:1313/llms.txt</loc>
+    <loc>https://chenterry.com/llms.txt</loc>
     <changefreq>weekly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/qa/README.md</loc>
+    <loc>https://chenterry.com/qa/README.md</loc>
     <changefreq>weekly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/qa/agent-faq.jsonl</loc>
+    <loc>https://chenterry.com/qa/agent-faq.jsonl</loc>
     <changefreq>weekly</changefreq>
     <priority>0.3</priority>
   </url>

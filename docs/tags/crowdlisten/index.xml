@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     <title>Crowdlisten - Terry Chen</title>
-    <link>http://localhost:1313/tags/crowdlisten/</link>
+    <link>https://chenterry.com/tags/crowdlisten/</link>
     <description>Hi, this is Terry. I&#39;m documenting my product ideas and learning notes in this blog. I&#39;m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description>
     <language>en-us</language>
     <managingEditor>Terry Chen (Terry Chen)</managingEditor>
@@ -10,7 +10,7 @@
     <copyright>© 2026 Terry Chen. All rights reserved.</copyright>
     <lastBuildDate>Sun, 15 Feb 2026 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="http://localhost:1313/tags/crowdlisten/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://chenterry.com/tags/crowdlisten/index.xml" rel="self" type="application/rss+xml" />
     
     <generator>Hugo 0.136.2</generator>
     <category>Technology</category>
@@ -18,9 +18,9 @@
     <category>Product Engineering</category>
     <category>Investment Analysis</category>
     <image>
-      <url>http://localhost:1313/images/profile.jpg</url>
+      <url>https://chenterry.com/images/profile.jpg</url>
       <title>Terry Chen</title>
-      <link>http://localhost:1313/</link>
+      <link>https://chenterry.com/</link>
       <description>Hi, this is Terry. I&#39;m documenting my product ideas and learning notes in this blog. I&#39;m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description>
       <width>144</width>
       <height>144</height>
@@ -28,10 +28,10 @@
     
     <item>
       <title>The Real-Time Feedback Layer: How Crowdlisten Closes the Loop Between Builders and Audiences</title>
-      <link>http://localhost:1313/posts/crowdlisten_feedback_layer/</link>
+      <link>https://chenterry.com/posts/crowdlisten_feedback_layer/</link>
       <pubDate>Sun, 15 Feb 2026 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/posts/crowdlisten_feedback_layer/</guid>
+      <guid>https://chenterry.com/posts/crowdlisten_feedback_layer/</guid>
       <description>Products are conversations, not launches. Crowdlisten is evolving from insight extraction into a real-time feedback layer that connects what builders ship with how audiences actually respond, creating continuous learning loops that compound over time and inform PRD decisions.</description>
       
       
@@ -57,10 +57,10 @@
     
     <item>
       <title>Feature Extraction &amp; Multimodal Content Understanding</title>
-      <link>http://localhost:1313/posts/crowdlisten_human_signal/</link>
+      <link>https://chenterry.com/posts/crowdlisten_human_signal/</link>
       <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/posts/crowdlisten_human_signal/</guid>
+      <guid>https://chenterry.com/posts/crowdlisten_human_signal/</guid>
       <description>Fine-grained social listening for understanding crowd conversations: a framework for turning fragmented, high-volume social discussion into weighted signal and agent-ready product action.</description>
       
       
@@ -86,10 +86,10 @@
     
     <item>
       <title>Building Has Become Easier — How Do We Fix Distribution?</title>
-      <link>http://localhost:1313/posts/crowdlisten_distribution_intelligence/</link>
+      <link>https://chenterry.com/posts/crowdlisten_distribution_intelligence/</link>
       <pubDate>Wed, 17 Dec 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/posts/crowdlisten_distribution_intelligence/</guid>
+      <guid>https://chenterry.com/posts/crowdlisten_distribution_intelligence/</guid>
       <description>Notes from working with vibe-coded builders: shipping is fast, distribution is hard, and founder-led workflows are becoming the operating layer between product capability, PRD clarity, and adoption.</description>
       
       
@@ -115,10 +115,10 @@
     
     <item>
       <title>Weighing Social Interactions: Reconstructing Meaning from Large Multi-modal Datasets</title>
-      <link>http://localhost:1313/posts/search_topic/</link>
+      <link>https://chenterry.com/posts/search_topic/</link>
       <pubDate>Tue, 11 Nov 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/posts/search_topic/</guid>
+      <guid>https://chenterry.com/posts/search_topic/</guid>
       <description>Technical analysis of AI-powered search systems and topic modeling approaches, exploring semantic retrieval, embedding spaces, and the challenges of modern web crawling.</description>
       
       
@@ -142,10 +142,10 @@
     
     <item>
       <title>CrowdListen (Archived v2025-09-01)</title>
-      <link>http://localhost:1313/posts/crowdlisten_archive_v2025_09_01/</link>
+      <link>https://chenterry.com/posts/crowdlisten_archive_v2025_09_01/</link>
       <pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/posts/crowdlisten_archive_v2025_09_01/</guid>
+      <guid>https://chenterry.com/posts/crowdlisten_archive_v2025_09_01/</guid>
       <description>Understanding collective intelligence and social dynamics. Why crowd psychology matters for product builders and how human need for belonging drives engagement patterns.</description>
       
       
@@ -171,10 +171,10 @@
     
     <item>
       <title>CrowdListen (Archived v2025-08-29)</title>
-      <link>http://localhost:1313/posts/the_very_beginning/</link>
+      <link>https://chenterry.com/posts/the_very_beginning/</link>
       <pubDate>Fri, 29 Aug 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/posts/the_very_beginning/</guid>
+      <guid>https://chenterry.com/posts/the_very_beginning/</guid>
       <description>How CrowdListen started: from content aggregation ideas to original research workflows over unstructured social data.</description>
       
       

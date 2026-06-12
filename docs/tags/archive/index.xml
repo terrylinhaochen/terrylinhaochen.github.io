@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     <title>Archive - Terry Chen</title>
-    <link>http://localhost:1313/tags/archive/</link>
+    <link>https://chenterry.com/tags/archive/</link>
     <description>Hi, this is Terry. I&#39;m documenting my product ideas and learning notes in this blog. I&#39;m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description>
     <language>en-us</language>
     <managingEditor>Terry Chen (Terry Chen)</managingEditor>
@@ -10,7 +10,7 @@
     <copyright>© 2026 Terry Chen. All rights reserved.</copyright>
     <lastBuildDate>Mon, 01 Sep 2025 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="http://localhost:1313/tags/archive/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://chenterry.com/tags/archive/index.xml" rel="self" type="application/rss+xml" />
     
     <generator>Hugo 0.136.2</generator>
     <category>Technology</category>
@@ -18,9 +18,9 @@
     <category>Product Engineering</category>
     <category>Investment Analysis</category>
     <image>
-      <url>http://localhost:1313/images/profile.jpg</url>
+      <url>https://chenterry.com/images/profile.jpg</url>
       <title>Terry Chen</title>
-      <link>http://localhost:1313/</link>
+      <link>https://chenterry.com/</link>
       <description>Hi, this is Terry. I&#39;m documenting my product ideas and learning notes in this blog. I&#39;m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description>
       <width>144</width>
       <height>144</height>
@@ -28,10 +28,10 @@
     
     <item>
       <title>CrowdListen (Archived v2025-09-01)</title>
-      <link>http://localhost:1313/posts/crowdlisten_archive_v2025_09_01/</link>
+      <link>https://chenterry.com/posts/crowdlisten_archive_v2025_09_01/</link>
       <pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/posts/crowdlisten_archive_v2025_09_01/</guid>
+      <guid>https://chenterry.com/posts/crowdlisten_archive_v2025_09_01/</guid>
       <description>Understanding collective intelligence and social dynamics. Why crowd psychology matters for product builders and how human need for belonging drives engagement patterns.</description>
       
       
@@ -57,10 +57,10 @@
     
     <item>
       <title>CrowdListen (Archived v2025-08-29)</title>
-      <link>http://localhost:1313/posts/the_very_beginning/</link>
+      <link>https://chenterry.com/posts/the_very_beginning/</link>
       <pubDate>Fri, 29 Aug 2025 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>http://localhost:1313/posts/the_very_beginning/</guid>
+      <guid>https://chenterry.com/posts/the_very_beginning/</guid>
       <description>How CrowdListen started: from content aggregation ideas to original research workflows over unstructured social data.</description>
       
       
