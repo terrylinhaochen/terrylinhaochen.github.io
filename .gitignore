@@ -14,3 +14,11 @@ hugo.linux
 
 # Mac OS files
 .DS_Store 
+# Local agent/tool artifacts
+.claude/
+.playwright-mcp/
+
+# Ad-hoc QA screenshots in repo root
+/*-check.png
+/gate-*.png
+/thesis-*.png
