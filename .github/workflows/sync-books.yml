@@ -26,6 +26,8 @@ permissions:
 jobs:
   sync:
     runs-on: ubuntu-latest
+    env:
+      READWISE_TOKEN: ${{ secrets.READWISE_TOKEN }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -47,9 +49,7 @@ jobs:
         run: python3 scripts/sync_book_recommendations.py
 
       - name: Sync Readwise books
-        if: ${{ secrets.READWISE_TOKEN != '' }}
-        env:
-          READWISE_TOKEN: ${{ secrets.READWISE_TOKEN }}
+        if: env.READWISE_TOKEN != ''
         run: python3 scripts/sync_readwise_books.py
 
       - name: Commit and deploy if changed
