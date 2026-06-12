@@ -1,9 +1,9 @@
 ---
-title: "Senior Talk: On Timing, China, and My Thoughts for Post-Grad"
+title: "Senior Talk: Reflections on My Time at Northwestern"
 date: 2026-05-16
 author: Terry Chen
 tags: ["Posts"]
-description: "LJV Cohort #7 Senior Talk — three lessons from four years at Northwestern, overlapping with everything happening in AI."
+description: "A reflection on my four years at Northwestern, shared with the LJVs."
 ---
 
 Hello LJV Cohort #7. My name is Terry. My four years at Northwestern happened to overlap almost exactly with the AI wave — from ChatGPT launching my freshman year to now, when every company is trying to figure out what to do with it. I've been a founder, an operator at TikTok and Microsoft, and an international student through all of it.
