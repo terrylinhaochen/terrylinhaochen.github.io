@@ -20,6 +20,7 @@
 {{- end }}
 
 {{- $postsPages := where .Pages ".Params.archived" "!=" true }}
+{{- $postsPages = where $postsPages "Date.Year" ">" 1 }}
 {{- if $postsPages }}
 <!-- Group posts by year and month -->
 <div class="archive-list">

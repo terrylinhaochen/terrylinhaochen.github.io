@@ -1,5 +1,5 @@
 ---
-title: "Traveling, People of the World"
+title: "People of the World"
 date: 2023-08-18
 description: "Different places run on different assumptions — about infrastructure, trust, money, and daily life. Traveling is the fastest way to see them."
 tags: ["Product"]
@@ -10,12 +10,8 @@ related_posts:
     blurb: "Building CrowdListen to process social data across platforms and markets."
   - path: "/posts/need_validation/"
     blurb: "Market-specific pain points and how validation differs by geography."
-  - path: "/posts/search_topic/"
-    blurb: "Challenges of crawling and modeling data across Reddit, Xueqiu, and TikTok."
   - path: "/posts/personalized_content/"
     blurb: "How context shapes what content works in different markets."
-  - path: "/posts/xiaomi-primer/"
-    blurb: "A case study in building for a market with fundamentally different rules."
 ---
 
 ## Different places run on different assumptions — and traveling is the fastest way to see them.

@@ -4,10 +4,12 @@
     <h1 class="post-title">{{ .Title }}</h1>
     
     <!-- Author & Date -->
+    {{- if or .Params.author (gt .Date.Year 1) }}
     <div class="post-meta">
-      {{ if .Params.author }}By {{ .Params.author }} • {{ end }}
-      <time>{{ .Date.Format "January 2, 2006" }}</time>
+      {{ if .Params.author }}By {{ .Params.author }}{{ if gt .Date.Year 1 }} • {{ end }}{{ end }}
+      {{ if gt .Date.Year 1 }}<time>{{ .Date.Format "January 2, 2006" }}</time>{{ end }}
     </div>
+    {{- end }}
   </header>
   
   <!-- Content with proper heading hierarchy -->

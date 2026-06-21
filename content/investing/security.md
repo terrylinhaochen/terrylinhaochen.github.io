@@ -5,4 +5,6 @@ tickers: "CRWD, DDOG, MSFT"
 thesis_category: "Security, Data Pipelines & Agentic SOC"
 layout: "thesis"
 weight: 2
+aliases:
+  - "/investing/security/"
 ---

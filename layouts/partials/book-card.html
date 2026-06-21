@@ -1,6 +1,12 @@
 {{- /* Renders one book card. Expects a dict: book, kind ("read"|"shelf"|"rec"), index */}}
 {{- $book := .book }}
 {{- $cover := $book.cover }}
+{{- $coverOverrides := site.Data.books.cover_overrides | default dict }}
+{{- if not $cover }}
+  {{- with index $coverOverrides $book.title }}
+    {{- $cover = . }}
+  {{- end }}
+{{- end }}
 {{- if and (not $cover) $book.isbn }}
   {{- $cover = printf "https://covers.openlibrary.org/b/isbn/%s-L.jpg?default=false" $book.isbn }}
 {{- end }}

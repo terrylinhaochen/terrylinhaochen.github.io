@@ -13,11 +13,20 @@
 #   date_read: (optional) free-form, e.g. "2025" or "March 2025"
 #   rating:    (optional) 1-5
 #   notes:     (optional, read list only) markdown supported
+#
+# cover_overrides fills missing cover metadata for generated Readwise entries.
+cover_overrides:
+  "牡丹亭": "https://books.google.com/books/content?id=16NdAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  "Miyazakiworld": "https://covers.openlibrary.org/b/id/10279492-L.jpg?default=false"
+  "耻": "https://covers.openlibrary.org/b/id/11434870-L.jpg?default=false"
+  "Against Empathy": "https://covers.openlibrary.org/b/id/12515747-L.jpg?default=false"
 
 # Titles that the Readwise sync (scripts/sync_readwise_books.py) must never
 # publish, even though they sit in the Readwise "books" category.
 readwise_exclude:
   - "How to Use Readwise"
+  - "The Story of My Life"
+  - "Against Empathy"
 
 read:
   - title: "The Mom Test"
@@ -38,11 +47,11 @@ read:
     notes: |
       *(Notes coming soon.)*
 
-  - title: "The Crowd: A Study of the Popular Mind"
+  - title: "The Crowd"
     author: "Gustave Le Bon"
     isbn: "9780486419565"
     notes: |
-      Partially read. *(Notes coming soon.)*
+      *(Notes coming soon.)*
 
   - title: "Capital (Das Kapital)"
     author: "Karl Marx"
@@ -53,6 +62,12 @@ read:
   - title: "The Globalization Paradox"
     author: "Dani Rodrik"
     isbn: "9780393071610"
+    notes: |
+      *(Notes coming soon.)*
+
+  - title: "The Great Divergence"
+    author: "Kenneth Pomeranz"
+    cover: "https://covers.openlibrary.org/b/id/442605-L.jpg?default=false"
     notes: |
       *(Notes coming soon.)*
 
@@ -72,6 +87,16 @@ shelf:
   - title: "Outliers"
     author: "Malcolm Gladwell"
     isbn: "9780316017930"
+
+  - title: "段永平传"
+    author: "孙力科"
+    isbn: "9787213110306"
+    cover: "/images/books/duanyongpingzhuan.jpg"
+
+  - title: "运营之光：我的互联网运营方法论与自白"
+    author: "黄有璨"
+    isbn: "9787121298097"
+    cover: "/images/books/yunyingzhiguang.jpg"
 
   - title: "真需求 (True Demand)"
     author: "梁宁 (Liang Ning)"
@@ -100,6 +125,22 @@ shelf:
   - title: "Steve Jobs"
     author: "Walter Isaacson"
     isbn: "9781451648539"
+
+  - title: "To Sell Is Human"
+    author: "Daniel H. Pink"
+    cover: "https://covers.openlibrary.org/b/id/10297418-L.jpg?default=false"
+
+  - title: "On Task"
+    author: "David Badre"
+    cover: "https://covers.openlibrary.org/b/id/13189904-L.jpg?default=false"
+
+  - title: "The Technological Republic"
+    author: "Alexander C. Karp and Nicholas W. Zamiska"
+    cover: "https://covers.openlibrary.org/b/id/15101498-L.jpg?default=false"
+
+  - title: "Zen and the Art of Motorcycle Maintenance"
+    author: "Robert M. Pirsig"
+    cover: "https://covers.openlibrary.org/b/id/10673266-L.jpg?default=false"
 
   - title: "A Culture of Growth"
     author: "Joel Mokyr"

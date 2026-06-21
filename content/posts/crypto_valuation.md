@@ -6,6 +6,7 @@ tags: ["Investing"]
 categories: ["Crypto"]
 description: "Lost money. Still don't understand how it's priced. That's the whole post."
 keywords: ["crypto", "valuation", "bitcoin", "investing"]
+draft: true
 ---
 
 I've lost money in crypto. Not a catastrophic amount, but enough to sting.

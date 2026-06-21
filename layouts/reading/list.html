@@ -25,17 +25,20 @@
 {{- /* Readwise-synced books (metadata only, auto-updated by GitHub Action) */}}
 {{- $rw := site.Data.readwise_books | default dict }}
 
-<!-- Off the Shelf (books I've read) -->
-<h2 class="reading-section-title">Off the Shelf</h2>
+<!-- Past Reads (books I've read) -->
+<h2 class="reading-section-title">Past Reads</h2>
 {{- if or $books.read $rw.read }}
-<div class="book-gallery">
+<div class="book-gallery reading-collapsible" data-visible-rows="3">
   {{- range $i, $book := $books.read }}
   {{- partial "book-card.html" (dict "book" $book "kind" "read" "index" $i) }}
   {{- end }}
   {{- range $rw.read }}
+  {{- if not (in $books.readwise_exclude .title) }}
   {{- partial "book-card.html" (dict "book" . "kind" "shelf") }}
   {{- end }}
+  {{- end }}
 </div>
+<button class="gallery-toggle" type="button" hidden>View all</button>
 {{- else }}
 <p class="reading-empty">Catalog coming soon.</p>
 {{- end }}
@@ -43,14 +46,17 @@
 <!-- On the Shelf -->
 <h2 class="reading-section-title">On the Shelf</h2>
 {{- if or $books.shelf $rw.shelf }}
-<div class="book-gallery">
+<div class="book-gallery reading-collapsible" data-visible-rows="3">
   {{- range $books.shelf }}
   {{- partial "book-card.html" (dict "book" . "kind" "shelf") }}
   {{- end }}
   {{- range $rw.shelf }}
+  {{- if not (in $books.readwise_exclude .title) }}
   {{- partial "book-card.html" (dict "book" . "kind" "shelf") }}
   {{- end }}
+  {{- end }}
 </div>
+<button class="gallery-toggle" type="button" hidden>View all</button>
 {{- else }}
 <p class="reading-empty">Nothing queued up yet.</p>
 {{- end }}
@@ -134,6 +140,21 @@
 @media (max-width: 500px) {
   .book-gallery { grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 1rem; }
 }
+
+.gallery-toggle {
+  display: block;
+  margin: 1.25rem auto 0;
+  padding: 0.55rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--entry);
+  color: var(--primary);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.gallery-toggle:hover { border-color: var(--secondary); }
+.gallery-toggle[hidden] { display: none; }
 
 .book-card { position: relative; }
 .book-card.has-notes { cursor: pointer; }
@@ -260,6 +281,42 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
+
+  function setupCollapsibleGallery(gallery) {
+    const toggle = gallery.nextElementSibling?.classList?.contains('gallery-toggle')
+      ? gallery.nextElementSibling
+      : null;
+    if (!toggle) return;
+
+    let expanded = false;
+
+    function visibleLimit() {
+      const rows = parseInt(gallery.dataset.visibleRows || '3', 10);
+      const columns = getComputedStyle(gallery).gridTemplateColumns.split(' ').filter(Boolean).length || 1;
+      return rows * columns;
+    }
+
+    function applyState() {
+      const cards = Array.from(gallery.querySelectorAll('.book-card'));
+      const limit = visibleLimit();
+      const shouldCollapse = cards.length > limit;
+      toggle.hidden = !shouldCollapse;
+      toggle.textContent = expanded ? 'Show less' : 'View all';
+      cards.forEach((card, index) => {
+        card.hidden = shouldCollapse && !expanded && index >= limit;
+      });
+    }
+
+    toggle.addEventListener('click', () => {
+      expanded = !expanded;
+      applyState();
+    });
+
+    window.addEventListener('resize', applyState);
+    applyState();
+  }
+
+  document.querySelectorAll('.reading-collapsible').forEach(setupCollapsibleGallery);
 
   modal.addEventListener('click', e => { if (e.target === modal) modal.style.display = 'none'; });
   modal.querySelector('.modal-close').addEventListener('click', () => modal.style.display = 'none');

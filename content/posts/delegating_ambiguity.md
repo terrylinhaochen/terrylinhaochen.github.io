@@ -1,6 +1,5 @@
-
 ---
-title: "Delegating Ambiguity: Human–Computer Interaction in the Age of Personal Agents"
+title: "My Thoughts on Designing Interfaces for Agents"
 date: 2026-03-08
 author: Terry Chen
 tags: ["Posts"]
@@ -10,7 +9,7 @@ keywords: ["HCI", "agents", "delegation", "reasoning transfer", "trust in automa
 gated: true
 ---
 
-Delegating Ambiguity: Human–Computer Interaction in the Age of Personal Agents
+My Thoughts on Designing Interfaces for Agents
 
 Abstract
 Traditional HCI has designed systems around the cognitive limits of human operators, constraining system capability to match human processing capacity. This paper argues that agent-mediated interaction changes this constraint. As the interaction hierarchy shifts from Human → Tool to Human → Agent → Tool, system complexity is no longer bounded by what a person can directly operate; it is bounded by what an agent can navigate on a person's behalf. However, this shift introduces new interaction challenges: the handoff between human and agent must carry not just commands but reasoning, including intent, constraints, and rationale, to prevent strategic drift. Drawing on Norman's (2013) Gulf model, Lee and See's (2004) trust-in-automation framework, and empirical work on progressive disclosure in AI systems (Springer & Whittaker, 2019), this paper analyzes how complexity transforms from a usability liability into an interaction strength under delegation, and what design requirements must be met for this transformation to succeed.
@@ -66,5 +65,3 @@ Norman, D. A. (2013). The Design of Everyday Things (Revised and expanded ed.). 
 Park, J. S., O'Brien, J. C., Cai, C. J., Morris, M. R., Liang, P., & Bernstein, M. S. (2023). Generative agents: Interactive simulacra of human behavior. In Proceedings of the 36th Annual ACM Symposium on User Interface Software and Technology (Article 2, pp. 1–22). ACM. https://doi.org/10.1145/3586183.3606763
 Springer, A., & Whittaker, S. (2019). Progressive disclosure: Empirically motivated approaches to designing effective transparency. In Proceedings of the 24th International Conference on Intelligent User Interfaces (pp. 107–120). ACM. https://doi.org/10.1145/3301275.3302322
 Wu, Q., Bansal, G., Zhang, J., Wu, Y., Li, B., Zhu, E., Jiang, L., Zhang, X., Zhang, S., Liu, J., Awadallah, A. H., White, R. W., Burger, D., & Wang, C. (2023). AutoGen: Enabling next-gen LLM applications via multi-agent conversation. arXiv preprint arXiv:2308.08155. https://arxiv.org/abs/2308.08155
-
-

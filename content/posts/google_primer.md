@@ -6,6 +6,7 @@ tags: ["Investing"]
 categories: ["AI Application & Value Creation Layer"]
 description: "Understanding the key products that made Google the tech giant today, with a deepdive on new AI features. Exploring Google's evolution from search to AI-powered ecosystem and investment implications."
 keywords: ["Google", "Alphabet", "AI features", "search engine", "Google Learn about", "Google Cloud Platform","Google NotebookLM", "artificial intelligence", "technology investment"]
+draft: true
 ---
 
 ## Understanding Google's Product Ecosystem
@@ -127,4 +128,4 @@ The breadth of Google's product portfolio also provides resilience against compe
 16. **Search Engine Land**. "Google Search Parameter Changes and Website Visibility Impact." Search Engine Land. 2025.
 
 ### Appendix 
-This post has been pre-processed to remove potentially sensitive information concerning specific companies. For further clarification or discussion, please reach out to terrychen2026@u.northwestern.edu.
+This post has been pre-processed to remove potentially sensitive information concerning specific companies. For further clarification or discussion, please reach out to terry@crowdlisten.com.

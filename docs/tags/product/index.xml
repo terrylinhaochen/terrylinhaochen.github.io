@@ -60,7 +60,7 @@
     </item>
     
     <item>
-      <title>The Agent Economy: Tokens as Bandwidth, Apps for Agents</title>
+      <title>Tokens as Bandwidth, Apps for Agents</title>
       <link>https://chenterry.com/posts/agent_user_research_notebook/</link>
       <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
@@ -93,7 +93,7 @@
     </item>
     
     <item>
-      <title>Running a 1-Person Billion Dollar Company: The AI Stack That Makes It Possible</title>
+      <title>The AI Stack for a One-Person Company</title>
       <link>https://chenterry.com/posts/one-person-billion/</link>
       <pubDate>Sun, 22 Feb 2026 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
@@ -317,35 +317,6 @@
     </item>
     
     <item>
-      <title>CrowdListen (Archived v2025-09-01)</title>
-      <link>https://chenterry.com/posts/crowdlisten_archive_v2025_09_01/</link>
-      <pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
-      <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/posts/crowdlisten_archive_v2025_09_01/</guid>
-      <description>Understanding collective intelligence and social dynamics. Why crowd psychology matters for product builders and how human need for belonging drives engagement patterns.</description>
-      
-      
-        
-          <category>crowdlisten</category>
-        
-      
-      
-        
-          
-          <category>Crowdlisten</category>
-          
-          <category>Product</category>
-          
-          <category>Archive</category>
-          
-        
-      
-      
-      <dc:creator>Terry Chen</dc:creator>
-      <dc:date>2025-09-01T00:00:00Z</dc:date>
-    </item>
-    
-    <item>
       <title>CrowdListen (Archived v2025-08-29)</title>
       <link>https://chenterry.com/posts/the_very_beginning/</link>
       <pubDate>Fri, 29 Aug 2025 00:00:00 +0000</pubDate>
@@ -497,31 +468,6 @@
       
       <dc:creator>Terry Chen</dc:creator>
       <dc:date>2025-05-07T00:00:00Z</dc:date>
-    </item>
-    
-    <item>
-      <title>Interesting Reads</title>
-      <link>https://chenterry.com/posts/interesting_reads/</link>
-      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
-      <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/posts/interesting_reads/</guid>
-      <description>Curated collection of compelling articles and insights on AI agents, entrepreneurship, and product development. Features analysis of breakthrough AI tools and emerging trends.</description>
-      
-      
-      
-        
-          
-          <category>Entrepreneurship</category>
-          
-          <category>Product</category>
-          
-          <category>Posts</category>
-          
-        
-      
-      
-      <dc:creator>Terry Chen</dc:creator>
-      <dc:date>2025-04-01T00:00:00Z</dc:date>
     </item>
     
     <item>
@@ -800,7 +746,7 @@
     </item>
     
     <item>
-      <title>Traveling, People of the World</title>
+      <title>People of the World</title>
       <link>https://chenterry.com/main-themes/data-insights/</link>
       <pubDate>Fri, 18 Aug 2023 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>

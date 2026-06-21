@@ -1,5 +1,5 @@
 ---
-title: "Running a 1-Person Billion Dollar Company: The AI Stack That Makes It Possible"
+title: "The AI Stack for a One-Person Company"
 date: 2026-02-22
 author: Terry Chen
 tags: ["Posts", "Entrepreneurship", "AI", "Product"]

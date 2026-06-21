@@ -1,5 +1,8 @@
 ---
-title: "Theses"
-description: "Long-held positions on where technology and markets are heading."
+title: "Notes"
+description: "Domains, questions, and small bets I'm actively thinking through."
 layout: "investing"
+url: "/notes/"
+aliases:
+  - "/investing/"
 ---

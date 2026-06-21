@@ -8,7 +8,7 @@
     <managingEditor>Terry Chen (Terry Chen)</managingEditor>
     <webMaster>Terry Chen (Terry Chen)</webMaster>
     <copyright>© 2026 Terry Chen. All rights reserved.</copyright>
-    <lastBuildDate>Tue, 11 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 13 Jul 2025 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://chenterry.com/categories/tiktok/index.xml" rel="self" type="application/rss+xml" />
     
@@ -25,31 +25,6 @@
       <width>144</width>
       <height>144</height>
     </image>
-    
-    <item>
-      <title>The Monetization Paradox of AI</title>
-      <link>https://chenterry.com/posts/monetizing_ai/</link>
-      <pubDate>Tue, 11 Nov 2025 00:00:00 +0000</pubDate>
-      <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/posts/monetizing_ai/</guid>
-      <description>Despite heavy investment in AI, a core challenge remains: turning its outsized promise into tangible, monetizable value for users.</description>
-      
-      
-        
-          <category>tiktok</category>
-        
-      
-      
-        
-          
-          <category>Posts</category>
-          
-        
-      
-      
-      <dc:creator>Terry Chen</dc:creator>
-      <dc:date>2025-11-11T00:00:00Z</dc:date>
-    </item>
     
     <item>
       <title>Search Advertisement</title>

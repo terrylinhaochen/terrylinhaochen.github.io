@@ -1,5 +1,5 @@
 ---
-title: "The Agent Economy: Tokens as Bandwidth, Apps for Agents"
+title: "Tokens as Bandwidth, Apps for Agents"
 description: "A reasoned view of the agent economy: what is changing, where agent-mediated software is headed, and what product teams should build for next."
 date: 2026-03-03
 author: Terry Chen

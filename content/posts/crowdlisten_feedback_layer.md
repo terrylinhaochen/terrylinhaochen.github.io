@@ -1,5 +1,5 @@
 ---
-title: "The Real-Time Feedback Layer: How Crowdlisten Closes the Loop Between Builders and Audiences"
+title: "CrowdListen as the Real-Time Feedback Layer"
 description: "Products are conversations, not launches. Crowdlisten is evolving from insight extraction into a real-time feedback layer that connects what builders ship with how audiences actually respond, creating continuous learning loops that compound over time and inform PRD decisions."
 date: 2026-02-15
 author: Terry Chen

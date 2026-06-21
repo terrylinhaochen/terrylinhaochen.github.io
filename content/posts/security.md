@@ -7,6 +7,7 @@ categories: ["Security, Data Pipelines & Agentic SOC"]
 description: "Analysis of AI-powered security solutions, market trends, and investment opportunities in enterprise cybersecurity. Exploring how AI is transforming threat detection, response, and prevention in the $150B+ security market through advanced data pipelines and agentic SOC operations."
 keywords: ["AI security", "cybersecurity", "enterprise security", "threat detection", "AI defense", "security automation", "zero trust", "security AI market", "SIEM", "security data lakes", "agentic SOC", "security analytics", "threat intelligence", "security orchestration"]
 slug: "ai-powered-security-data-pipelines"
+draft: true
 
 ---
 
@@ -56,4 +57,4 @@ Differentiation: Microsoft excels in ecosystem integration/AI (Copilot boosts hu
 - **Wiz**: [Google Acquisition Analysis](https://www.crn.com/news/security/2025/analysis-no-matter-how-google-deal-turns-out-wiz-wins) - Analysis: No Matter How Google Deal Turns Out, Wiz Wins
 
 ### Appendix 
-This post has been pre-processed to remove potentially sensitive information concerning specific companies. For further clarification or discussion, please reach out to terrychen2026@u.northwestern.edu.
+This post has been pre-processed to remove potentially sensitive information concerning specific companies. For further clarification or discussion, please reach out to terry@crowdlisten.com.

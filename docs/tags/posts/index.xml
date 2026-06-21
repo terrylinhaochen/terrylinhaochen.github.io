@@ -27,7 +27,7 @@
     </image>
     
     <item>
-      <title>Senior Talk: Reflections on My Time at Northwestern</title>
+      <title>Be Where the Change Is Happening</title>
       <link>https://chenterry.com/posts/senior_talk/</link>
       <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
@@ -48,7 +48,7 @@
     </item>
     
     <item>
-      <title>Delegating Ambiguity: Human–Computer Interaction in the Age of Personal Agents</title>
+      <title>My Thoughts on Designing Interfaces for Agents</title>
       <link>https://chenterry.com/posts/delegating_ambiguity/</link>
       <pubDate>Sun, 08 Mar 2026 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
@@ -73,7 +73,7 @@
     </item>
     
     <item>
-      <title>Running a 1-Person Billion Dollar Company: The AI Stack That Makes It Possible</title>
+      <title>The AI Stack for a One-Person Company</title>
       <link>https://chenterry.com/posts/one-person-billion/</link>
       <pubDate>Sun, 22 Feb 2026 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
@@ -106,7 +106,7 @@
     </item>
     
     <item>
-      <title>The Real-Time Feedback Layer: How Crowdlisten Closes the Loop Between Builders and Audiences</title>
+      <title>CrowdListen as the Real-Time Feedback Layer</title>
       <link>https://chenterry.com/posts/crowdlisten_feedback_layer/</link>
       <pubDate>Sun, 15 Feb 2026 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
@@ -155,85 +155,6 @@
       
       <dc:creator>Terry Chen</dc:creator>
       <dc:date>2025-11-12T00:00:00Z</dc:date>
-    </item>
-    
-    <item>
-      <title>Google NotebookLM - Long Context Windows and Multimodality</title>
-      <link>https://chenterry.com/posts/google_notebooklm/</link>
-      <pubDate>Tue, 11 Nov 2025 00:00:00 +0000</pubDate>
-      <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/posts/google_notebooklm/</guid>
-      <description>Exploring Google NotebookLM&#39;s approach to long context windows and multimodal AI interactions for research and knowledge management.</description>
-      
-      
-        
-          <category>crowdlisten</category>
-        
-      
-      
-        
-          
-          <category>Observations</category>
-          
-          <category>Posts</category>
-          
-        
-      
-      
-      <dc:creator>Terry Chen</dc:creator>
-      <dc:date>2025-11-11T00:00:00Z</dc:date>
-    </item>
-    
-    <item>
-      <title>The Monetization Paradox of AI</title>
-      <link>https://chenterry.com/posts/monetizing_ai/</link>
-      <pubDate>Tue, 11 Nov 2025 00:00:00 +0000</pubDate>
-      <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/posts/monetizing_ai/</guid>
-      <description>Despite heavy investment in AI, a core challenge remains: turning its outsized promise into tangible, monetizable value for users.</description>
-      
-      
-        
-          <category>tiktok</category>
-        
-      
-      
-        
-          
-          <category>Posts</category>
-          
-        
-      
-      
-      <dc:creator>Terry Chen</dc:creator>
-      <dc:date>2025-11-11T00:00:00Z</dc:date>
-    </item>
-    
-    <item>
-      <title>Weighing Social Interactions: Reconstructing Meaning from Large Multi-modal Datasets</title>
-      <link>https://chenterry.com/posts/search_topic/</link>
-      <pubDate>Tue, 11 Nov 2025 00:00:00 +0000</pubDate>
-      <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/posts/search_topic/</guid>
-      <description>Technical analysis of AI-powered search systems and topic modeling approaches, exploring semantic retrieval, embedding spaces, and the challenges of modern web crawling.</description>
-      
-      
-        
-          <category>crowdlisten</category>
-        
-      
-      
-        
-          
-          <category>Posts</category>
-          
-          <category>Crowdlisten</category>
-          
-        
-      
-      
-      <dc:creator>Terry Chen</dc:creator>
-      <dc:date>2025-11-11T00:00:00Z</dc:date>
     </item>
     
     <item>
@@ -515,31 +436,6 @@
       
       <dc:creator>Terry Chen&#39;</dc:creator>
       <dc:date>2025-04-19T00:00:00Z</dc:date>
-    </item>
-    
-    <item>
-      <title>Interesting Reads</title>
-      <link>https://chenterry.com/posts/interesting_reads/</link>
-      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
-      <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/posts/interesting_reads/</guid>
-      <description>Curated collection of compelling articles and insights on AI agents, entrepreneurship, and product development. Features analysis of breakthrough AI tools and emerging trends.</description>
-      
-      
-      
-        
-          
-          <category>Entrepreneurship</category>
-          
-          <category>Product</category>
-          
-          <category>Posts</category>
-          
-        
-      
-      
-      <dc:creator>Terry Chen</dc:creator>
-      <dc:date>2025-04-01T00:00:00Z</dc:date>
     </item>
     
     <item>

@@ -14,7 +14,7 @@ This file is the expanded index for agents. It lists high-signal essays by theme
 
 ## CrowdListen Posts
 - Why People Care What Others Think — Foundational argument for crowd context as a decision substrate, not just social proof. https://chenterry.com/posts/crowd_thesis/
-- Running a 1-Person Billion Dollar Company — Practical stack note on combining CrowdListen, coding agents, OpenClaw, and content systems. https://chenterry.com/posts/one-person-billion/
+- The AI Stack for a One-Person Company — Practical stack note on combining CrowdListen, coding agents, OpenClaw, and content systems. https://chenterry.com/posts/one-person-billion/
 - From Raw Social Data to Real Research — Product framing on converting fragmented public discussion into PM-ready insight. https://chenterry.com/posts/crowdlisten/
 
 ## Foundational Posts

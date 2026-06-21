@@ -68,7 +68,7 @@ enableRobotsTXT = true
   # Home page info
   [params.homeInfoParams]
     Title = "👋 Welcome to Terry's Blog"
-    Content = "Hi, this is Terry. I work as an SEO Product Engineer focused on AI Multipliers to enhance content generation and insight extraction. I'm documenting my product ideas and learning notes in this blog. You can reach me at terrychen2026@u.northwestern.edu"
+    Content = "Hi, this is Terry. I work as an SEO Product Engineer focused on AI Multipliers to enhance content generation and insight extraction. I'm documenting my product ideas and learning notes in this blog. You can reach me at terry@crowdlisten.com"
   
   # Enable searching
   [params.fuseOpts]
@@ -95,7 +95,7 @@ enableRobotsTXT = true
     url = "https://x.com/227terry?s=21"
   [[params.socialIcons]]
     name = "email"
-    url = "mailto:terrychen2026@u.northwestern.edu"
+    url = "mailto:terry@crowdlisten.com"
 
   # Reading page settings
   [params.reading]
@@ -120,8 +120,8 @@ enableRobotsTXT = true
     weight = 10
   [[menu.main]]
     identifier = "investing"
-    name = "Theses"
-    url = "/investing/"
+    name = "Notes"
+    url = "/notes/"
     weight = 25
   # Archived section removed from main navigation
   [[menu.main]]
@@ -134,6 +134,9 @@ enableRobotsTXT = true
     name = "Search"
     url = "/search/"
     weight = 30
+
+[permalinks]
+  investing = "/notes/:filename/"
       
 # Taxonomies for categorization
 [taxonomies]

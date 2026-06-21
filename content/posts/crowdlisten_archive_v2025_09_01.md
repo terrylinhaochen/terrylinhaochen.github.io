@@ -9,6 +9,7 @@ keywords: ["crowd psychology", "collective intelligence", "social behavior", "pr
 categories: crowdlisten
 archived: true
 thesis_featured: false
+draft: true
 ---
 > **Archived snapshot (Sep 2025 era; source commit `d3e4a51` dated 2025-09-03).**
 > Preserved as an in-between version between the May and Oct thesis snapshots.
@@ -29,7 +30,7 @@ When we learn to listen to crowds effectively, we gain access to a type of distr
 
 ## Related Reading
 
-- [Crowdlistening](/product/crowdlistening/) - Technical implementation of crowd intelligence systems
+- [Crowdlistening](/posts/crowdlisten/) - Technical implementation of crowd intelligence systems
 - [User Needs & Opportunities](/posts/user-needs/) - Identifying real user problems through crowd observation
 - [Finding the Next ByteDance](/posts/finding_the_next_bytedance/) - Understanding market dynamics and collective behavior patterns
 

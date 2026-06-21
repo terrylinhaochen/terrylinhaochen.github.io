@@ -5,4 +5,6 @@ tickers: "BMNR, COIN, BTC, ETH"
 thesis_category: "Crypto"
 layout: "thesis"
 weight: 6
+aliases:
+  - "/investing/crypto/"
 ---

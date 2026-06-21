@@ -2,8 +2,8 @@
 <div class="breadcrumbs">
   <a href="/">Home</a>
   {{ if ne .Type "page" }}
-    {{ with .Section }}
-      <span class="separator">/</span><a href="/{{ . }}/">{{ humanize . }}</a>
+    {{ with .Site.GetPage "section" .Section }}
+      <span class="separator">/</span><a href="{{ .RelPermalink }}">{{ .Title }}</a>
     {{ end }}
   {{ end }}
   {{ if not .IsHome }}

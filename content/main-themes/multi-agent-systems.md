@@ -1,5 +1,5 @@
 ---
-title: "Language Models and Agents"
+title: "The Agentic Economy"
 date: 2023-08-20
 description: "What becomes possible when language models can hold context, make decisions, and execute across long horizons?"
 tags: ["Entrepreneurship"]
@@ -20,8 +20,6 @@ related_posts:
     blurb: "Agents as coaches and mentors."
   - path: "/posts/generation_distribution/"
     blurb: "How AI generation reshapes content distribution."
-  - path: "/posts/google_notebooklm/"
-    blurb: "Long-context AI for knowledge work."
   - path: "/posts/google_learn_about/"
     blurb: "AI-aided exploratory learning interfaces."
 ---

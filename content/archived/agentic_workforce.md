@@ -53,4 +53,4 @@ Prototypes: Multi-agent systems (Chain-of-Agents); explorations: AI data enginee
 - **IDC**: [AI Workforce Market](https://www.idc.com/getdoc.jsp?containerId=prUS51245625) - AI workforce market analysis and projections
 
 ### Appendix 
-This post has been pre-processed to remove potentially sensitive information concerning specific companies. For further clarification or discussion, please reach out to terrychen2026@u.northwestern.edu.
+This post has been pre-processed to remove potentially sensitive information concerning specific companies. For further clarification or discussion, please reach out to terry@crowdlisten.com.

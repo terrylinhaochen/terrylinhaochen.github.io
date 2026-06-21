@@ -28,10 +28,10 @@
     
     <item>
       <title>AI Application &amp; Value Creation Layer</title>
-      <link>https://chenterry.com/investing/ai-application/</link>
+      <link>https://chenterry.com/notes/ai-application/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/investing/ai-application/</guid>
+      <guid>https://chenterry.com/notes/ai-application/</guid>
       <description>Investment opportunities in AI application companies building on foundation model infrastructure.</description>
       
       
@@ -118,10 +118,10 @@
     
     <item>
       <title>Security, Data Pipelines &amp; Agentic SOC</title>
-      <link>https://chenterry.com/investing/security/</link>
+      <link>https://chenterry.com/notes/security/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/investing/security/</guid>
+      <guid>https://chenterry.com/notes/security/</guid>
       <description>Enterprise security solutions, data infrastructure, and AI-powered security operations centers.</description>
       
       
@@ -133,10 +133,10 @@
     
     <item>
       <title>Structural Repricing of Asia Tech</title>
-      <link>https://chenterry.com/investing/asia-tech/</link>
+      <link>https://chenterry.com/notes/asia-tech/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/investing/asia-tech/</guid>
+      <guid>https://chenterry.com/notes/asia-tech/</guid>
       <description>Value opportunities in structurally mispriced Asian technology companies.</description>
       
       
@@ -170,10 +170,10 @@
     
     <item>
       <title>Mobility, Energy, and New Infrastructure</title>
-      <link>https://chenterry.com/investing/mobility-energy/</link>
+      <link>https://chenterry.com/notes/mobility-energy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/investing/mobility-energy/</guid>
+      <guid>https://chenterry.com/notes/mobility-energy/</guid>
       <description>Transportation, energy transition, and infrastructure transformation investments.</description>
       
       
@@ -185,10 +185,10 @@
     
     <item>
       <title>Consumer Experience &amp; Aesthetic Economy</title>
-      <link>https://chenterry.com/investing/consumer-experience/</link>
+      <link>https://chenterry.com/notes/consumer-experience/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/investing/consumer-experience/</guid>
+      <guid>https://chenterry.com/notes/consumer-experience/</guid>
       <description>Consumer brands focused on experience, aesthetics, and lifestyle enhancement.</description>
       
       
@@ -200,10 +200,10 @@
     
     <item>
       <title>Crypto</title>
-      <link>https://chenterry.com/investing/crypto/</link>
+      <link>https://chenterry.com/notes/crypto/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/investing/crypto/</guid>
+      <guid>https://chenterry.com/notes/crypto/</guid>
       <description>Decentralized finance protocols, digital assets, and the infrastructure powering the crypto economy.</description>
       
       
@@ -214,7 +214,7 @@
     </item>
     
     <item>
-      <title>Senior Talk: Reflections on My Time at Northwestern</title>
+      <title>Be Where the Change Is Happening</title>
       <link>https://chenterry.com/posts/senior_talk/</link>
       <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
@@ -235,7 +235,7 @@
     </item>
     
     <item>
-      <title>Delegating Ambiguity: Human–Computer Interaction in the Age of Personal Agents</title>
+      <title>My Thoughts on Designing Interfaces for Agents</title>
       <link>https://chenterry.com/posts/delegating_ambiguity/</link>
       <pubDate>Sun, 08 Mar 2026 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
@@ -293,7 +293,7 @@
     </item>
     
     <item>
-      <title>The Agent Economy: Tokens as Bandwidth, Apps for Agents</title>
+      <title>Tokens as Bandwidth, Apps for Agents</title>
       <link>https://chenterry.com/posts/agent_user_research_notebook/</link>
       <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
@@ -355,34 +355,7 @@
     </item>
     
     <item>
-      <title>I Don&#39;t Understand How Crypto Is Valued. Period.</title>
-      <link>https://chenterry.com/posts/crypto_valuation/</link>
-      <pubDate>Sat, 28 Feb 2026 00:00:00 +0000</pubDate>
-      <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/posts/crypto_valuation/</guid>
-      <description>Lost money. Still don&#39;t understand how it&#39;s priced. That&#39;s the whole post.</description>
-      
-      
-        
-          
-          <category>Crypto</category>
-          
-        
-      
-      
-        
-          
-          <category>Investing</category>
-          
-        
-      
-      
-      <dc:creator>Terry Chen</dc:creator>
-      <dc:date>2026-02-28T00:00:00Z</dc:date>
-    </item>
-    
-    <item>
-      <title>Running a 1-Person Billion Dollar Company: The AI Stack That Makes It Possible</title>
+      <title>The AI Stack for a One-Person Company</title>
       <link>https://chenterry.com/posts/one-person-billion/</link>
       <pubDate>Sun, 22 Feb 2026 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
@@ -415,7 +388,7 @@
     </item>
     
     <item>
-      <title>The Real-Time Feedback Layer: How Crowdlisten Closes the Loop Between Builders and Audiences</title>
+      <title>CrowdListen as the Real-Time Feedback Layer</title>
       <link>https://chenterry.com/posts/crowdlisten_feedback_layer/</link>
       <pubDate>Sun, 15 Feb 2026 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
@@ -579,85 +552,6 @@
     </item>
     
     <item>
-      <title>Google NotebookLM - Long Context Windows and Multimodality</title>
-      <link>https://chenterry.com/posts/google_notebooklm/</link>
-      <pubDate>Tue, 11 Nov 2025 00:00:00 +0000</pubDate>
-      <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/posts/google_notebooklm/</guid>
-      <description>Exploring Google NotebookLM&#39;s approach to long context windows and multimodal AI interactions for research and knowledge management.</description>
-      
-      
-        
-          <category>crowdlisten</category>
-        
-      
-      
-        
-          
-          <category>Observations</category>
-          
-          <category>Posts</category>
-          
-        
-      
-      
-      <dc:creator>Terry Chen</dc:creator>
-      <dc:date>2025-11-11T00:00:00Z</dc:date>
-    </item>
-    
-    <item>
-      <title>The Monetization Paradox of AI</title>
-      <link>https://chenterry.com/posts/monetizing_ai/</link>
-      <pubDate>Tue, 11 Nov 2025 00:00:00 +0000</pubDate>
-      <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/posts/monetizing_ai/</guid>
-      <description>Despite heavy investment in AI, a core challenge remains: turning its outsized promise into tangible, monetizable value for users.</description>
-      
-      
-        
-          <category>tiktok</category>
-        
-      
-      
-        
-          
-          <category>Posts</category>
-          
-        
-      
-      
-      <dc:creator>Terry Chen</dc:creator>
-      <dc:date>2025-11-11T00:00:00Z</dc:date>
-    </item>
-    
-    <item>
-      <title>Weighing Social Interactions: Reconstructing Meaning from Large Multi-modal Datasets</title>
-      <link>https://chenterry.com/posts/search_topic/</link>
-      <pubDate>Tue, 11 Nov 2025 00:00:00 +0000</pubDate>
-      <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/posts/search_topic/</guid>
-      <description>Technical analysis of AI-powered search systems and topic modeling approaches, exploring semantic retrieval, embedding spaces, and the challenges of modern web crawling.</description>
-      
-      
-        
-          <category>crowdlisten</category>
-        
-      
-      
-        
-          
-          <category>Posts</category>
-          
-          <category>Crowdlisten</category>
-          
-        
-      
-      
-      <dc:creator>Terry Chen</dc:creator>
-      <dc:date>2025-11-11T00:00:00Z</dc:date>
-    </item>
-    
-    <item>
       <title>CrowdListen (Archived v2025-11-09)</title>
       <link>https://chenterry.com/posts/crowdlisten_archive_v2025_11_09/</link>
       <pubDate>Sun, 09 Nov 2025 00:00:00 +0000</pubDate>
@@ -756,33 +650,6 @@
     </item>
     
     <item>
-      <title>Understanding Xiaomi: IP Risk &amp; Starting Again</title>
-      <link>https://chenterry.com/posts/xiaomi-primer/</link>
-      <pubDate>Fri, 31 Oct 2025 00:00:00 +0000</pubDate>
-      <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/posts/xiaomi-primer/</guid>
-      <description>Understanding Xiaomi&#39;s evolution from smartphone maker to comprehensive technology ecosystem, with focus on electric vehicle ambitions and IoT infrastructure. Investment analysis of Xiaomi&#39;s diversification strategy.</description>
-      
-      
-        
-          
-          <category>Mobility, Energy, and New Infrastructure</category>
-          
-        
-      
-      
-        
-          
-          <category>Investing</category>
-          
-        
-      
-      
-      <dc:creator>Terry Chen</dc:creator>
-      <dc:date>2025-10-31T00:00:00Z</dc:date>
-    </item>
-    
-    <item>
       <title>OpenAI&#39;s Blast Radius</title>
       <link>https://chenterry.com/archived/openai-blast-radius/</link>
       <pubDate>Mon, 27 Oct 2025 00:00:00 +0000</pubDate>
@@ -862,33 +729,6 @@
     </item>
     
     <item>
-      <title>Understanding Google: A Primer</title>
-      <link>https://chenterry.com/posts/google_primer/</link>
-      <pubDate>Mon, 20 Oct 2025 00:00:00 +0000</pubDate>
-      <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/posts/google_primer/</guid>
-      <description>Understanding the key products that made Google the tech giant today, with a deepdive on new AI features. Exploring Google&#39;s evolution from search to AI-powered ecosystem and investment implications.</description>
-      
-      
-        
-          
-          <category>AI Application &amp; Value Creation Layer</category>
-          
-        
-      
-      
-        
-          
-          <category>Investing</category>
-          
-        
-      
-      
-      <dc:creator>Terry Chen</dc:creator>
-      <dc:date>2025-10-20T00:00:00Z</dc:date>
-    </item>
-    
-    <item>
       <title>Why Figma Wins (In the AI Era Too)</title>
       <link>https://chenterry.com/posts/figma_ai/</link>
       <pubDate>Mon, 06 Oct 2025 00:00:00 +0000</pubDate>
@@ -940,35 +780,6 @@
       
       <dc:creator>Terry Chen</dc:creator>
       <dc:date>2025-09-15T00:00:00Z</dc:date>
-    </item>
-    
-    <item>
-      <title>CrowdListen (Archived v2025-09-01)</title>
-      <link>https://chenterry.com/posts/crowdlisten_archive_v2025_09_01/</link>
-      <pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
-      <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/posts/crowdlisten_archive_v2025_09_01/</guid>
-      <description>Understanding collective intelligence and social dynamics. Why crowd psychology matters for product builders and how human need for belonging drives engagement patterns.</description>
-      
-      
-        
-          <category>crowdlisten</category>
-        
-      
-      
-        
-          
-          <category>Crowdlisten</category>
-          
-          <category>Product</category>
-          
-          <category>Archive</category>
-          
-        
-      
-      
-      <dc:creator>Terry Chen</dc:creator>
-      <dc:date>2025-09-01T00:00:00Z</dc:date>
     </item>
     
     <item>
@@ -1048,33 +859,6 @@
       
       <dc:creator>Terry Chen</dc:creator>
       <dc:date>2025-08-29T00:00:00Z</dc:date>
-    </item>
-    
-    <item>
-      <title>AI-Powered Security Data Pipelines: The Future of Enterprise Cybersecurity</title>
-      <link>https://chenterry.com/posts/ai-powered-security-data-pipelines/</link>
-      <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
-      <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/posts/ai-powered-security-data-pipelines/</guid>
-      <description>Analysis of AI-powered security solutions, market trends, and investment opportunities in enterprise cybersecurity. Exploring how AI is transforming threat detection, response, and prevention in the $150B+ security market through advanced data pipelines and agentic SOC operations.</description>
-      
-      
-        
-          
-          <category>Security, Data Pipelines &amp; Agentic SOC</category>
-          
-        
-      
-      
-        
-          
-          <category>Investing</category>
-          
-        
-      
-      
-      <dc:creator>Terry Chen</dc:creator>
-      <dc:date>2025-07-13T00:00:00Z</dc:date>
     </item>
     
     <item>
@@ -1304,31 +1088,6 @@
       
       <dc:creator>Terry Chen&#39;</dc:creator>
       <dc:date>2025-04-19T00:00:00Z</dc:date>
-    </item>
-    
-    <item>
-      <title>Interesting Reads</title>
-      <link>https://chenterry.com/posts/interesting_reads/</link>
-      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
-      <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/posts/interesting_reads/</guid>
-      <description>Curated collection of compelling articles and insights on AI agents, entrepreneurship, and product development. Features analysis of breakthrough AI tools and emerging trends.</description>
-      
-      
-      
-        
-          
-          <category>Entrepreneurship</category>
-          
-          <category>Product</category>
-          
-          <category>Posts</category>
-          
-        
-      
-      
-      <dc:creator>Terry Chen</dc:creator>
-      <dc:date>2025-04-01T00:00:00Z</dc:date>
     </item>
     
     <item>
@@ -1782,7 +1541,7 @@
     </item>
     
     <item>
-      <title>Language Models and Agents</title>
+      <title>The Agentic Economy</title>
       <link>https://chenterry.com/main-themes/multi-agent-systems/</link>
       <pubDate>Sun, 20 Aug 2023 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
@@ -1809,7 +1568,7 @@
     </item>
     
     <item>
-      <title>Traveling, People of the World</title>
+      <title>People of the World</title>
       <link>https://chenterry.com/main-themes/data-insights/</link>
       <pubDate>Fri, 18 Aug 2023 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
@@ -1833,21 +1592,6 @@
       
       <dc:creator>Terry Chen</dc:creator>
       <dc:date>2023-08-18T00:00:00Z</dc:date>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://chenterry.com/posts/agent_economy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/posts/agent_economy/</guid>
-      <description></description>
-      
-      
-      
-      
-      <dc:creator>Terry Chen</dc:creator>
-      <dc:date>0001-01-01T00:00:00Z</dc:date>
     </item>
     
     <item>

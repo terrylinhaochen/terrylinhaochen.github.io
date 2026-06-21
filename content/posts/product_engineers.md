@@ -80,9 +80,9 @@ The future belongs to smaller, more nimble teams of highly capable individuals w
 
 ## Related Reading
 
-- [A2A Catalog: A Human-Mediated Agentic Workforce](/product/agentic-workforce/) - Deep dive into autonomous AI agents and workforce automation
+- [A2A Catalog: A Human-Mediated Agentic Workforce](/archived/agentic_workforce/) - Deep dive into autonomous AI agents and workforce automation
 - [User Needs & Opportunities](/posts/user-needs/) - Identifying product opportunities in the AI-first world
-- [When do I Sunset a Product?](/posts/sunsetting_projects/) - Making strategic decisions in fast-moving AI product development
+- [When do I Sunset a Product?](/posts/when-to-sunset-a-product/) - Making strategic decisions in fast-moving AI product development
 
 ---
 Works Cited

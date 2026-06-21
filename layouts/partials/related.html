@@ -11,7 +11,9 @@
       <div class="related-post-content">
         <h4>{{ .Title }}</h4>
         <div class="related-post-meta">
+          {{- if gt .Date.Year 1 }}
           <span class="related-post-date">{{ .Date.Format "January 2, 2006" }}</span>
+          {{- end }}
           {{ with .Params.tags }}
           <span class="related-post-tags">
             {{ range first 1 . }}#{{ . }}{{ end }}

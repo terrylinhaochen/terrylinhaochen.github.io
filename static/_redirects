@@ -13,17 +13,29 @@ http://chenterry.com/* https://chenterry.com/:splat 301!
 /blog/* /posts/:splat 301
 
 # Fix 404s reported by Google Search Console
-/posts/ai-search-topic-modeling/ /posts/search_topic/ 301
+/investing/ai-application/ /notes/ai-application/ 301
+/investing/asia-tech/ /notes/asia-tech/ 301
+/investing/consumer-experience/ /notes/consumer-experience/ 301
+/investing/crypto/ /notes/crypto/ 301
+/investing/mobility-energy/ /notes/mobility-energy/ 301
+/investing/security/ /notes/security/ 301
+/investing/ /notes/ 301
+/posts/ai-search-topic-modeling/ /posts/battle_for_search/ 301
 /posts/essense-of-creativity/ /posts/essense_of_creativity/ 301
 /posts/google-learn-about/ /posts/google_learn_about/ 301
-/posts/google-notebooklm/ /posts/google_notebooklm/ 301
+/posts/google-notebooklm/ /posts/google_learn_about/ 301
+/posts/google_primer/ /notes/ai-application/ 301
+/posts/ai-powered-security-data-pipelines/ /notes/security/ 301
+/posts/interesting_reads/ /reading/ 301
+/posts/monetizing_ai/ /posts/copilot/ 301
+/posts/crypto_valuation/ /notes/crypto/ 301
+/posts/crowdlisten_archive_v2025_09_01/ /posts/crowdlisten_archive_v2025_11_09/ 301
 /posts/being-ai-native/ /posts/ai_native/ 301
 /posts/built_to_last/ /posts/ 301
 /posts/year-in-review/ /posts/2024-year-review-startup-lessons/ 301
 /product/learning_interface/ /posts/learning_interface/ 301
 /product/crowdlistening/ /posts/crowdlisten/ 301
 /product/search/ /search/ 301
-/investing/security/ /posts/ai-powered-security-data-pipelines/ 301
 /archived/case_studies/ /posts/ 301
 /categories/discovery-surfaces/ /categories/ 301
 /categories/enterprise/ /categories/ 301

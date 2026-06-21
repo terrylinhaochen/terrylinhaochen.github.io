@@ -5,4 +5,6 @@ tickers: "SY, LULU"
 thesis_category: "Consumer Experience & Aesthetic Economy"
 layout: "thesis"
 weight: 5
+aliases:
+  - "/investing/consumer-experience/"
 ---

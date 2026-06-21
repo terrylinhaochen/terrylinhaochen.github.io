@@ -33,4 +33,4 @@ CrowdListen bridges the gap between broad social media insights and detailed und
 - **Competitive Intelligence**: Track competitor performance and audience sentiment
 - **Crisis Management**: Monitor and respond to developing situations in real-time
 
-[Learn more about the technology](/posts/crowdlistening/)
+[Learn more about the technology](/posts/crowdlisten/)

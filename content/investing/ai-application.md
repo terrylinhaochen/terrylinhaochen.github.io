@@ -5,4 +5,6 @@ tickers: "GOOGL, META, FIG, RDDT, MSFT"
 thesis_category: "AI Application & Value Creation Layer"
 layout: "thesis"
 weight: 1
+aliases:
+  - "/investing/ai-application/"
 ---

@@ -5,4 +5,6 @@ tickers: "BABA, TCEHY, PDD, YAHOY"
 thesis_category: "Structural Repricing of Asia Tech"
 layout: "thesis"
 weight: 3
+aliases:
+  - "/investing/asia-tech/"
 ---
