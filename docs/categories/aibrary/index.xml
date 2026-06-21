@@ -8,7 +8,7 @@
     <managingEditor>Terry Chen (Terry Chen)</managingEditor>
     <webMaster>Terry Chen (Terry Chen)</webMaster>
     <copyright>© 2026 Terry Chen. All rights reserved.</copyright>
-    <lastBuildDate>Sun, 26 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 21 Jun 2026 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://chenterry.com/categories/aibrary/index.xml" rel="self" type="application/rss+xml" />
     
@@ -25,6 +25,35 @@
       <width>144</width>
       <height>144</height>
     </image>
+    
+    <item>
+      <title>Why Don&#39;t People Read Books Anymore?</title>
+      <link>https://chenterry.com/posts/why-dont-people-read-books-anymore/</link>
+      <pubDate>Sun, 21 Jun 2026 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/posts/why-dont-people-read-books-anymore/</guid>
+      <description>Why the decline in book reading is not only about social media stealing attention, but about a deeper shift in how people expect information to be packaged, previewed, and processed.</description>
+      
+      
+        
+          <category>aibrary</category>
+        
+      
+      
+        
+          
+          <category>Learning</category>
+          
+          <category>Media</category>
+          
+          <category>Product</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2026-06-21T00:00:00Z</dc:date>
+    </item>
     
     <item>
       <title>When Knowledge Becomes Fluid: How AI Transforms Learning</title>

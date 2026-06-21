@@ -1007,50 +1007,44 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="products-grid">
                 <div class="product-card">
                     <h4>CrowdListen</h4>
-                    <p class="product-tagline">Social Listening</p>
-                    <p>Turns large-scale social conversations into insights — sentiment, opinions, and narratives from raw social data.</p>
+                    <p>Finds useful insight in broad social conversations.</p>
                     <div class="product-links">
                         <a href="/crowdlisten/">Try it →</a>
                         <a href="/categories/crowdlisten/">Posts</a>
                     </div>
                 </div>
+                <div class="product-card product-card--travel">
+                    <h4>China Travel Guide</h4>
+                    <p>China travel guides based on authentic crowd opinions.</p>
+                    <div class="product-links">
+                        <a href="https://chinatravelmadeeasy.com" target="_blank" rel="noopener">Site →</a>
+                    </div>
+                </div>
                 <div class="product-card">
                     <h4>A2A Catalog</h4>
-                    <p class="product-tagline">Agent Directory</p>
-                    <p>A directory of A2A agents and MCP servers — discover what's out there and submit your own.</p>
+                    <p>A catalog for finding A2A agents and MCP servers.</p>
                     <div class="product-links">
                         <a href="https://a2acatalog.com" target="_blank" rel="noopener">Site →</a>
                     </div>
                 </div>
+                <div class="product-card">
+                    <h4>Answer With Books</h4>
+                    <p>Answers to real questions from books worth reading.</p>
+                    <div class="product-links">
+                        <a href="https://answerwithbooks.com" target="_blank" rel="noopener">Site →</a>
+                    </div>
+                </div>
                 <div class="product-card more-project" hidden>
-                    <h4>LLM Coaching</h4>
-                    <p class="product-tagline">AI Coaching</p>
-                    <p>Diagnoses self-regulation gaps in coaching conversations and suggests peer connections. Northwestern research.</p>
+                    <h4>Regulation Coaching</h4>
+                    <p>Diagnoses learning regulation gaps in coaching conversations.</p>
                     <div class="product-links">
                         <a href="/llm-coaching/">Demo →</a>
                         <a href="/categories/northwestern/">Posts</a>
                     </div>
                 </div>
                 <div class="product-card more-project" hidden>
-                    <h4>China Travel Made Easy</h4>
-                    <p class="product-tagline">Travel Guides</p>
-                    <p>Practical guides for traveling China — payments, visas, connectivity, and getting around.</p>
-                    <div class="product-links">
-                        <a href="https://chinatravelmadeeasy.com" target="_blank" rel="noopener">Site →</a>
-                    </div>
-                </div>
-                <div class="product-card more-project" hidden>
-                    <h4>Answer With Books</h4>
-                    <p class="product-tagline">Read for Answers</p>
-                    <p>Answers to real questions, drawn from books worth reading.</p>
-                    <div class="product-links">
-                        <a href="https://answerwithbooks.com" target="_blank" rel="noopener">Site →</a>
-                    </div>
-                </div>
-                <div class="product-card more-project" hidden>
                     <h4>Cogno</h4>
-                    <p class="product-tagline">Sales Automation</p>
-                    <p>Multi-agent sales assistant for cross-border e-commerce brands.</p>
+                    <p>Sales assistant for ecommerce brands.</p>
                     <div class="product-links">
                         <a href="https://cognogpt.com" target="_blank" rel="noopener">Site →</a>
                         <a href="/archived/cogno/">About</a>
@@ -1064,6 +1058,20 @@ document.addEventListener('DOMContentLoaded', function() {
         <div class="recent-posts">
             <h2>Recent Posts</h2>
             <div class="posts-grid">
+                <article class="post-entry">
+                    <header class="entry-header">
+                        <h2>Why Don&#39;t People Read Books Anymore?</h2>
+                    </header>
+                    <div class="entry-content">
+                        Why the decline in book reading is not only about social media stealing attention, but about a deeper shift in how people expect information to be packaged, previewed, and processed.
+                    </div>
+                    <footer class="entry-footer">
+                        <div class="post-meta">
+                            <time>June 21, 2026</time>
+                        </div>
+                    </footer>
+                    <a class="entry-link" href="/posts/why-dont-people-read-books-anymore/"></a>
+                </article>
                 <article class="post-entry">
                     <header class="entry-header">
                         <h2>Tokens and Inference as Bandwidth</h2>
@@ -1091,20 +1099,6 @@ document.addEventListener('DOMContentLoaded', function() {
                         </div>
                     </footer>
                     <a class="entry-link" href="/posts/senior_talk/"></a>
-                </article>
-                <article class="post-entry">
-                    <header class="entry-header">
-                        <h2>My Thoughts on Designing Interfaces for Agents</h2>
-                    </header>
-                    <div class="entry-content">
-                        As interaction shifts from Human→Tool to Human→Agent→Tool, complexity becomes an affordance—but only if we design for reasoning transfer, progressive visibility, and calibrated trust.
-                    </div>
-                    <footer class="entry-footer">
-                        <div class="post-meta">
-                            <time>March 8, 2026</time>
-                        </div>
-                    </footer>
-                    <a class="entry-link" href="/posts/delegating_ambiguity/"></a>
                 </article>
             </div>
         </div>
@@ -1228,15 +1222,6 @@ document.addEventListener('DOMContentLoaded', function() {
         font-weight: 700;
         color: var(--primary);
         margin: 0 0 0.15rem;
-    }
-
-    .product-card .product-tagline {
-        font-size: 0.85rem;
-        color: var(--secondary);
-        opacity: 0.8;
-        margin: 0 0 0.75rem;
-        text-transform: uppercase;
-        letter-spacing: 0.04em;
     }
 
     .product-card p {

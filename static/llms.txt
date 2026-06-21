@@ -14,3 +14,4 @@ Use this file as a concise router. For source material, prefer `llms-full.txt`.
 - Thesis writing on agent-native product development and distribution
 - CrowdListen: social signal → product decisions → agent-ready execution
 - Foundational essays on AI-native workflows and knowledge interfaces
+- Reading, learning, and how information interfaces shape attention

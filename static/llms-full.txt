@@ -18,6 +18,7 @@ This file is the expanded index for agents. It lists high-signal essays by theme
 - From Raw Social Data to Real Research — Product framing on converting fragmented public discussion into PM-ready insight. https://chenterry.com/posts/crowdlisten/
 
 ## Foundational Posts
+- Why Don't People Read Books Anymore? — Argues that short-form media changed the information contract by moving proof of value earlier, while books remain strongest for durable mental models. https://chenterry.com/posts/why-dont-people-read-books-anymore/
 - When Knowledge Becomes Fluid: How AI Transforms Learning — On adaptive knowledge interfaces, synthesis, and tradeoffs between frictionless and durable learning. https://chenterry.com/posts/fluid-knowledge-ai-transforms-learning/
 - Generation Is Easy. Distribution Is Hard. — Early thesis on why deployment and attention capture dominate post-generation value. https://chenterry.com/posts/generation_distribution/
 - Intent-Driven Discovery in the AI Era — Positioning argument for moving from query matching to intent-level discovery systems. https://chenterry.com/posts/intent_driven_discovery/
