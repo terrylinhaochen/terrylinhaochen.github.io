@@ -8,7 +8,7 @@
     <managingEditor>Terry Chen (Terry Chen)</managingEditor>
     <webMaster>Terry Chen (Terry Chen)</webMaster>
     <copyright>© 2026 Terry Chen. All rights reserved.</copyright>
-    <lastBuildDate>Sat, 16 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 20 Jun 2026 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://chenterry.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -25,6 +25,51 @@
       <width>144</width>
       <height>144</height>
     </image>
+    
+    <item>
+      <title>AI</title>
+      <link>https://chenterry.com/tags/ai/</link>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/tags/ai/</guid>
+      <description></description>
+      
+      
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2026-06-20T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Infrastructure</title>
+      <link>https://chenterry.com/tags/infrastructure/</link>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/tags/infrastructure/</guid>
+      <description></description>
+      
+      
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2026-06-20T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>Investing</title>
+      <link>https://chenterry.com/tags/investing/</link>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/tags/investing/</guid>
+      <description></description>
+      
+      
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2026-06-20T00:00:00Z</dc:date>
+    </item>
     
     <item>
       <title>Posts</title>
@@ -47,21 +92,6 @@
       <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
       <guid>https://chenterry.com/tags/agents/</guid>
-      <description></description>
-      
-      
-      
-      
-      <dc:creator>Terry Chen</dc:creator>
-      <dc:date>2026-03-04T00:00:00Z</dc:date>
-    </item>
-    
-    <item>
-      <title>AI</title>
-      <link>https://chenterry.com/tags/ai/</link>
-      <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
-      <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/tags/ai/</guid>
       <description></description>
       
       
@@ -234,21 +264,6 @@
       
       <dc:creator>Terry Chen</dc:creator>
       <dc:date>2026-02-15T00:00:00Z</dc:date>
-    </item>
-    
-    <item>
-      <title>Investing</title>
-      <link>https://chenterry.com/tags/investing/</link>
-      <pubDate>Tue, 18 Nov 2025 00:00:00 +0000</pubDate>
-      <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/tags/investing/</guid>
-      <description></description>
-      
-      
-      
-      
-      <dc:creator>Terry Chen</dc:creator>
-      <dc:date>2025-11-18T00:00:00Z</dc:date>
     </item>
     
     <item>

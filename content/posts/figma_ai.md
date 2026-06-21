@@ -1,9 +1,9 @@
 ---
-title: "Why Figma Wins (In the AI Era Too)"
+title: "Is Figma a System of Record?"
 date: 2025-10-06
 author: Terry Chen
 tags: ["Investing"]
-categories: ["AI Application & Value Creation Layer"]
+categories: ["Enterprise SaaS Product"]
 description: "How Figma's platform advantages position it to dominate AI-native design workflows, despite emerging competition from AI-first tools like Lovable."
 keywords: ["Figma", "AI design tools", "Lovable", "design collaboration", "AI applications", "design workflows", "platform strategy", "OpenAI developer conference"]
 ---

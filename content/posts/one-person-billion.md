@@ -3,7 +3,7 @@ title: "The AI Stack for a One-Person Company"
 date: 2026-02-22
 author: Terry Chen
 tags: ["Posts", "Entrepreneurship", "AI", "Product"]
-categories: ["AI Application & Value Creation Layer"]
+categories: ["AI Application"]
 description: "The complete toolkit for building a billion-dollar company with a team of one. How AI agents handle research, coding, operations, and marketing while you focus on vision."
 keywords: ["AI agents", "one person company", "solopreneur", "Claude Code", "OpenClaw", "Crowdlisten", "AI-native startup", "founder tools", "automation"]
 ---

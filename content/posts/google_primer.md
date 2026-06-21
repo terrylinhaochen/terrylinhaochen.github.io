@@ -3,7 +3,7 @@ title: "Understanding Google: A Primer"
 date: 2025-10-20
 author: Terry Chen
 tags: ["Investing"]
-categories: ["AI Application & Value Creation Layer"]
+categories: ["AI Application"]
 description: "Understanding the key products that made Google the tech giant today, with a deepdive on new AI features. Exploring Google's evolution from search to AI-powered ecosystem and investment implications."
 keywords: ["Google", "Alphabet", "AI features", "search engine", "Google Learn about", "Google Cloud Platform","Google NotebookLM", "artificial intelligence", "technology investment"]
 draft: true

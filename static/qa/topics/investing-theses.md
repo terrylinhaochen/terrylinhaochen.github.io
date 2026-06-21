@@ -1,11 +1,10 @@
 # Topic: Investing Theses
 
-Summary: The investing section outlines structured viewpoints across AI applications, consumer experience, cybersecurity, mobility/energy, Asia tech, and crypto.
+Summary: The notes section outlines structured viewpoints across AI infrastructure, consumer products, enterprise SaaS, consumer packaged goods, and cybersecurity.
 
 Relevant links:
-- https://chenterry.com/notes/ai-application/
-- https://chenterry.com/notes/consumer-experience/
+- https://chenterry.com/notes/ai-infrastructure/
+- https://chenterry.com/notes/consumer-products/
+- https://chenterry.com/notes/cpg/
+- https://chenterry.com/notes/enterprise-saas-product/
 - https://chenterry.com/notes/security/
-- https://chenterry.com/notes/mobility-energy/
-- https://chenterry.com/notes/asia-tech/
-- https://chenterry.com/notes/crypto/

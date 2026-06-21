@@ -3,6 +3,7 @@ title: "Preparing for Associate Product Manager Interviews: A Comprehensive Guid
 description: "Everything you need to know to ace your APM interviews at top tech companies. Covers behavioral questions, product sense, technical skills, and strategic thinking frameworks."
 date: 2025-11-01
 author: Terry Chen
+draft: true
 tags: ["Posts"]
 keywords: ["APM interviews", "associate product manager", "product management", "tech interviews", "behavioral questions", "product sense", "case studies", "interview prep", "tech careers", "product strategy"]
 slug: "apm-interview-preparation-guide"

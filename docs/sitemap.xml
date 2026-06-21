@@ -5,25 +5,6 @@
   
   
   <url>
-    <loc>https://chenterry.com/notes/ai-application/</loc>
-    
-    
-    <changefreq>weekly</changefreq>
-    
-    
-    <priority>0.5</priority>
-    
-    
-    
-    
-    
-    
-    
-  </url>
-  
-  
-  
-  <url>
     <loc>https://chenterry.com/about/projects/crowdlistening/</loc>
     
     
@@ -63,6 +44,25 @@
   
   <url>
     <loc>https://chenterry.com/about/research/c3lab/</loc>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+    
+    
+    
+    
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://chenterry.com/notes/ai-infrastructure/</loc>
     
     
     <changefreq>weekly</changefreq>
@@ -138,25 +138,6 @@
   
   
   <url>
-    <loc>https://chenterry.com/notes/asia-tech/</loc>
-    
-    
-    <changefreq>weekly</changefreq>
-    
-    
-    <priority>0.5</priority>
-    
-    
-    
-    
-    
-    
-    
-  </url>
-  
-  
-  
-  <url>
     <loc>https://chenterry.com/about/experience/tiktok/</loc>
     
     
@@ -176,7 +157,7 @@
   
   
   <url>
-    <loc>https://chenterry.com/notes/mobility-energy/</loc>
+    <loc>https://chenterry.com/notes/consumer-products/</loc>
     
     
     <changefreq>weekly</changefreq>
@@ -195,7 +176,7 @@
   
   
   <url>
-    <loc>https://chenterry.com/notes/consumer-experience/</loc>
+    <loc>https://chenterry.com/notes/cpg/</loc>
     
     
     <changefreq>weekly</changefreq>
@@ -214,7 +195,7 @@
   
   
   <url>
-    <loc>https://chenterry.com/notes/crypto/</loc>
+    <loc>https://chenterry.com/notes/enterprise-saas-product/</loc>
     
     
     <changefreq>weekly</changefreq>
@@ -235,7 +216,175 @@
   <url>
     <loc>https://chenterry.com/</loc>
     
-    <lastmod>2026-05-16T00:00:00+00:00</lastmod>
+    <lastmod>2026-06-20T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+    
+    
+    
+    
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://chenterry.com/tags/ai/</loc>
+    
+    <lastmod>2026-06-20T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+    
+    
+    
+    
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://chenterry.com/categories/ai-infrastructure/</loc>
+    
+    <lastmod>2026-06-20T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+    
+    
+    
+    
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://chenterry.com/categories/</loc>
+    
+    <lastmod>2026-06-20T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+    
+    
+    
+    
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://chenterry.com/tags/infrastructure/</loc>
+    
+    <lastmod>2026-06-20T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+    
+    
+    
+    
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://chenterry.com/tags/investing/</loc>
+    
+    <lastmod>2026-06-20T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+    
+    
+    
+    
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://chenterry.com/posts/</loc>
+    
+    <lastmod>2026-06-20T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+    
+    
+    
+    
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://chenterry.com/tags/</loc>
+    
+    <lastmod>2026-06-20T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+    
+    
+    
+    
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://chenterry.com/posts/tokens-inference-bandwidth/</loc>
+    
+    <lastmod>2026-06-20T00:00:00+00:00</lastmod>
     
     
     <changefreq>weekly</changefreq>
@@ -296,70 +445,7 @@
   
   
   <url>
-    <loc>https://chenterry.com/posts/</loc>
-    
-    <lastmod>2026-05-16T00:00:00+00:00</lastmod>
-    
-    
-    <changefreq>weekly</changefreq>
-    
-    
-    <priority>0.5</priority>
-    
-    
-    
-    
-    
-    
-    
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://chenterry.com/tags/</loc>
-    
-    <lastmod>2026-05-16T00:00:00+00:00</lastmod>
-    
-    
-    <changefreq>weekly</changefreq>
-    
-    
-    <priority>0.5</priority>
-    
-    
-    
-    
-    
-    
-    
-  </url>
-  
-  
-  
-  <url>
     <loc>https://chenterry.com/categories/ai/</loc>
-    
-    <lastmod>2026-03-08T00:00:00+00:00</lastmod>
-    
-    
-    <changefreq>weekly</changefreq>
-    
-    
-    <priority>0.5</priority>
-    
-    
-    
-    
-    
-    
-    
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://chenterry.com/categories/</loc>
     
     <lastmod>2026-03-08T00:00:00+00:00</lastmod>
     
@@ -402,27 +488,6 @@
   
   <url>
     <loc>https://chenterry.com/tags/agents/</loc>
-    
-    <lastmod>2026-03-04T00:00:00+00:00</lastmod>
-    
-    
-    <changefreq>weekly</changefreq>
-    
-    
-    <priority>0.5</priority>
-    
-    
-    
-    
-    
-    
-    
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://chenterry.com/tags/ai/</loc>
     
     <lastmod>2026-03-04T00:00:00+00:00</lastmod>
     
@@ -758,7 +823,7 @@
   
   
   <url>
-    <loc>https://chenterry.com/categories/ai-application--value-creation-layer/</loc>
+    <loc>https://chenterry.com/categories/ai-application/</loc>
     
     <lastmod>2026-02-22T00:00:00+00:00</lastmod>
     
@@ -887,27 +952,6 @@
     <loc>https://chenterry.com/posts/crowdlisten_distribution_intelligence/</loc>
     
     <lastmod>2025-12-17T00:00:00+00:00</lastmod>
-    
-    
-    <changefreq>weekly</changefreq>
-    
-    
-    <priority>0.5</priority>
-    
-    
-    
-    
-    
-    
-    
-  </url>
-  
-  
-  
-  <url>
-    <loc>https://chenterry.com/tags/investing/</loc>
-    
-    <lastmod>2025-11-18T00:00:00+00:00</lastmod>
     
     
     <changefreq>weekly</changefreq>
@@ -1073,27 +1117,6 @@
   
   
   <url>
-    <loc>https://chenterry.com/posts/apm-interview-preparation-guide/</loc>
-    
-    <lastmod>2025-11-01T00:00:00+00:00</lastmod>
-    
-    
-    <changefreq>weekly</changefreq>
-    
-    
-    <priority>0.5</priority>
-    
-    
-    
-    
-    
-    
-    
-  </url>
-  
-  
-  
-  <url>
     <loc>https://chenterry.com/categories/northwestern/</loc>
     
     <lastmod>2025-10-31T00:00:00+00:00</lastmod>
@@ -1185,6 +1208,27 @@
     <loc>https://chenterry.com/posts/fluid-knowledge-ai-transforms-learning/</loc>
     
     <lastmod>2025-10-26T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+    
+    
+    
+    
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://chenterry.com/categories/enterprise-saas-product/</loc>
+    
+    <lastmod>2025-10-06T00:00:00+00:00</lastmod>
     
     
     <changefreq>weekly</changefreq>
@@ -1349,7 +1393,49 @@
   
   
   
+  <url>
+    <loc>https://chenterry.com/posts/ai-powered-security-data-pipelines/</loc>
+    
+    <lastmod>2025-07-13T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+    
+    
+    
+    
+    
+  </url>
   
+  
+  
+  
+  
+  
+  
+  <url>
+    <loc>https://chenterry.com/categories/security-data-pipelines/</loc>
+    
+    <lastmod>2025-07-13T00:00:00+00:00</lastmod>
+    
+    
+    <changefreq>weekly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+    
+    
+    
+    
+    
+    
+  </url>
   
   
   

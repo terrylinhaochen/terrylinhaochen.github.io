@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>AI Infrastructure - Terry Chen</title>
+    <link>https://chenterry.com/categories/ai-infrastructure/</link>
+    <description>Hi, this is Terry. I&#39;m documenting my product ideas and learning notes in this blog. I&#39;m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description>
+    <language>en-us</language>
+    <managingEditor>Terry Chen (Terry Chen)</managingEditor>
+    <webMaster>Terry Chen (Terry Chen)</webMaster>
+    <copyright>© 2026 Terry Chen. All rights reserved.</copyright>
+    <lastBuildDate>Sat, 20 Jun 2026 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://chenterry.com/categories/ai-infrastructure/index.xml" rel="self" type="application/rss+xml" />
+    
+    <generator>Hugo 0.136.2</generator>
+    <category>Technology</category>
+    <category>AI</category>
+    <category>Product Engineering</category>
+    <category>Investment Analysis</category>
+    <image>
+      <url>https://chenterry.com/images/profile.jpg</url>
+      <title>Terry Chen</title>
+      <link>https://chenterry.com/</link>
+      <description>Hi, this is Terry. I&#39;m documenting my product ideas and learning notes in this blog. I&#39;m interested in creating new user experiences through generative ai, focusing on synthesized content generation and actionable insight extraction.</description>
+      <width>144</width>
+      <height>144</height>
+    </image>
+    
+    <item>
+      <title>Tokens and Inference as Bandwidth</title>
+      <link>https://chenterry.com/posts/tokens-inference-bandwidth/</link>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/posts/tokens-inference-bandwidth/</guid>
+      <description>WIP notes on tokens, inference capacity, and why the cost and availability of model calls increasingly look like bandwidth for agentic systems.</description>
+      
+      
+        
+          
+          <category>AI Infrastructure</category>
+          
+        
+      
+      
+        
+          
+          <category>Investing</category>
+          
+          <category>AI</category>
+          
+          <category>Infrastructure</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2026-06-20T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>The 10x Infrastructure Layer for Agentic Search</title>
+      <link>https://chenterry.com/posts/battle_for_search/</link>
+      <pubDate>Tue, 18 Nov 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/posts/battle_for_search/</guid>
+      <description>Analyzing the market opportunity for AI-native search infrastructure as web consumption shifts from human-centric browsing to agent-mediated retrieval.</description>
+      
+      
+        
+          
+          <category>AI Infrastructure</category>
+          
+        
+      
+      
+        
+          
+          <category>Investing</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2025-11-18T00:00:00Z</dc:date>
+    </item>
+    
+    <item>
+      <title>OpenAI&#39;s Blast Radius</title>
+      <link>https://chenterry.com/archived/openai-blast-radius/</link>
+      <pubDate>Mon, 27 Oct 2025 00:00:00 +0000</pubDate>
+      <author>Terry Chen, Livia Li (Terry Chen, Livia Li)</author>
+      <guid>https://chenterry.com/archived/openai-blast-radius/</guid>
+      <description>How OpenAI&#39;s rapid product development affects the startup ecosystem. Strategic frameworks for building defensible AI applications in the shadow of foundation model giants.</description>
+      
+      
+        
+          
+          <category>AI Infrastructure</category>
+          
+        
+      
+      
+        
+          
+          <category>Investing</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen, Livia Li</dc:creator>
+      <dc:date>2025-10-27T00:00:00Z</dc:date>
+    </item>
+    
+  </channel>
+</rss>

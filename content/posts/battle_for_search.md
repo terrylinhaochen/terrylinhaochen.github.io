@@ -1,11 +1,11 @@
 ---
-title: "The Battle for Search: Defining the 10x Infrastructure Layer for an Agentic Future"
+title: "The 10x Infrastructure Layer for Agentic Search"
 date: 2025-11-18
 author: Terry Chen
 tags: ["Investing"]
-categories: ["AI Application & Value Creation Layer"]
+categories: ["AI Infrastructure"]
 
-description: "Analyzing the competitive landscape and market opportunity for AI-native search infrastructure as we transition from human-centric to agent-centric web consumption."
+description: "Analyzing the market opportunity for AI-native search infrastructure as web consumption shifts from human-centric browsing to agent-mediated retrieval."
 keywords: ["AI search", "agent infrastructure", "Perplexity", "Exa AI", "Parallel Webs", "OpenAI", "programmatic web", "search competition"]
 ---
 

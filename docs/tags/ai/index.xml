@@ -8,7 +8,7 @@
     <managingEditor>Terry Chen (Terry Chen)</managingEditor>
     <webMaster>Terry Chen (Terry Chen)</webMaster>
     <copyright>© 2026 Terry Chen. All rights reserved.</copyright>
-    <lastBuildDate>Wed, 04 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 20 Jun 2026 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://chenterry.com/tags/ai/index.xml" rel="self" type="application/rss+xml" />
     
@@ -25,6 +25,37 @@
       <width>144</width>
       <height>144</height>
     </image>
+    
+    <item>
+      <title>Tokens and Inference as Bandwidth</title>
+      <link>https://chenterry.com/posts/tokens-inference-bandwidth/</link>
+      <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
+      <author>Terry Chen (Terry Chen)</author>
+      <guid>https://chenterry.com/posts/tokens-inference-bandwidth/</guid>
+      <description>WIP notes on tokens, inference capacity, and why the cost and availability of model calls increasingly look like bandwidth for agentic systems.</description>
+      
+      
+        
+          
+          <category>AI Infrastructure</category>
+          
+        
+      
+      
+        
+          
+          <category>Investing</category>
+          
+          <category>AI</category>
+          
+          <category>Infrastructure</category>
+          
+        
+      
+      
+      <dc:creator>Terry Chen</dc:creator>
+      <dc:date>2026-06-20T00:00:00Z</dc:date>
+    </item>
     
     <item>
       <title>When to Use MCPs vs Skills for Agents</title>
@@ -103,7 +134,7 @@
       
         
           
-          <category>AI Application &amp; Value Creation Layer</category>
+          <category>AI Application</category>
           
         
       

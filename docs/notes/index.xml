@@ -27,12 +27,12 @@
     </image>
     
     <item>
-      <title>AI Application &amp; Value Creation Layer</title>
-      <link>https://chenterry.com/notes/ai-application/</link>
+      <title>AI Infrastructure</title>
+      <link>https://chenterry.com/notes/ai-infrastructure/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/notes/ai-application/</guid>
-      <description>Investment opportunities in AI application companies building on foundation model infrastructure.</description>
+      <guid>https://chenterry.com/notes/ai-infrastructure/</guid>
+      <description>Infrastructure, retrieval, search, and agent-facing systems that make AI applications more capable and reliable.</description>
       
       
       
@@ -42,7 +42,7 @@
     </item>
     
     <item>
-      <title>Security, Data Pipelines &amp; Agentic SOC</title>
+      <title>Security Data Pipelines</title>
       <link>https://chenterry.com/notes/security/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
@@ -57,12 +57,12 @@
     </item>
     
     <item>
-      <title>Structural Repricing of Asia Tech</title>
-      <link>https://chenterry.com/notes/asia-tech/</link>
+      <title>Consumer Products</title>
+      <link>https://chenterry.com/notes/consumer-products/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/notes/asia-tech/</guid>
-      <description>Value opportunities in structurally mispriced Asian technology companies.</description>
+      <guid>https://chenterry.com/notes/consumer-products/</guid>
+      <description>Consumer products, brands, and everyday experiences shaped by repeat behavior, distribution, and cultural taste.</description>
       
       
       
@@ -72,12 +72,12 @@
     </item>
     
     <item>
-      <title>Mobility, Energy, and New Infrastructure</title>
-      <link>https://chenterry.com/notes/mobility-energy/</link>
+      <title>Consumer Packaged Goods</title>
+      <link>https://chenterry.com/notes/cpg/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/notes/mobility-energy/</guid>
-      <description>Transportation, energy transition, and infrastructure transformation investments.</description>
+      <guid>https://chenterry.com/notes/cpg/</guid>
+      <description>Consumer packaged goods, repeat-purchase brands, and everyday products where distribution, taste, and habit shape durable demand.</description>
       
       
       
@@ -87,27 +87,12 @@
     </item>
     
     <item>
-      <title>Consumer Experience &amp; Aesthetic Economy</title>
-      <link>https://chenterry.com/notes/consumer-experience/</link>
+      <title>Enterprise SaaS Product</title>
+      <link>https://chenterry.com/notes/enterprise-saas-product/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/notes/consumer-experience/</guid>
-      <description>Consumer brands focused on experience, aesthetics, and lifestyle enhancement.</description>
-      
-      
-      
-      
-      <dc:creator>Terry Chen</dc:creator>
-      <dc:date>0001-01-01T00:00:00Z</dc:date>
-    </item>
-    
-    <item>
-      <title>Crypto</title>
-      <link>https://chenterry.com/notes/crypto/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>Terry Chen (Terry Chen)</author>
-      <guid>https://chenterry.com/notes/crypto/</guid>
-      <description>Decentralized finance protocols, digital assets, and the infrastructure powering the crypto economy.</description>
+      <guid>https://chenterry.com/notes/enterprise-saas-product/</guid>
+      <description>Enterprise software products, workflow systems, and SaaS companies where product design, distribution, and retention compound.</description>
       
       
       

@@ -5,6 +5,7 @@ tickers: "TSLA, CSIQ"
 thesis_category: "Mobility, Energy, and New Infrastructure"
 layout: "thesis"
 weight: 4
+draft: true
 aliases:
   - "/investing/mobility-energy/"
 ---

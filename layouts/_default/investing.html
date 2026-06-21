@@ -202,6 +202,18 @@
     margin-bottom: 0.5rem;
   }
 
+  .thesis-content .post-status-badge {
+    display: inline-block;
+    font-size: 0.6em;
+    font-weight: 600;
+    color: #854d0e;
+    background: #fef3c7;
+    padding: 2px 8px;
+    border-radius: 999px;
+    margin-left: 0.4rem;
+    vertical-align: middle;
+  }
+
   .thesis-content .entry-content {
     font-size: 0.9rem;
     color: var(--content);
@@ -278,6 +290,12 @@
     background: rgba(134, 239, 172, 0.15);
   }
 
+  :root[data-theme="dark"] .thesis-content .post-status-badge,
+  .dark .thesis-content .post-status-badge {
+    color: #fde68a;
+    background: rgba(245, 158, 11, 0.2);
+  }
+
   /* Archived link */
   .find-more-posts {
     text-align: center;
@@ -325,7 +343,7 @@
         {{ range $posts }}
         <article class="post-entry">
           <header class="entry-header">
-            <h3>{{ .Title }}</h3>
+            <h3>{{ .Title }}{{ with .Params.status }} <span class="post-status-badge">{{ . }}</span>{{ end }}</h3>
           </header>
           <div class="entry-content">
             {{ if .Description }}{{ .Description | plainify | htmlUnescape }}{{ else }}{{ .Summary | plainify | htmlUnescape }}{{ end }}

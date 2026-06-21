@@ -27,7 +27,7 @@
       <a href="#section-{{ $index }}" class="thesis-nav-link{{ if eq $index 0 }} active{{ end }}" data-index="{{ $index }}">
         <span class="nav-number">{{ add $index 1 }}</span>
         <span class="nav-text">
-          <span class="nav-title">{{ $post.Title }}</span>
+          <span class="nav-title">{{ $post.Title }}{{ with $post.Params.status }} <span class="post-status-badge">{{ . }}</span>{{ end }}</span>
           <span class="nav-date">{{ $post.Date.Format "Jan 2006" }}</span>
         </span>
       </a>
@@ -39,7 +39,7 @@
       <a href="#section-{{ add (len $activePosts) $index }}" class="thesis-nav-link" data-index="{{ add (len $activePosts) $index }}">
         <span class="nav-number">{{ add (len $activePosts) (add $index 1) }}</span>
         <span class="nav-text">
-          <span class="nav-title">{{ $post.Title }}</span>
+          <span class="nav-title">{{ $post.Title }}{{ with $post.Params.status }} <span class="post-status-badge">{{ . }}</span>{{ end }}</span>
           <span class="nav-date">{{ $post.Date.Format "Jan 2006" }}</span>
         </span>
       </a>
@@ -57,7 +57,7 @@
           <span class="section-number">{{ add $index 1 }} of {{ len $posts }}</span>
           <time>{{ $post.Date.Format "January 2, 2006" }}</time>
         </div>
-        <h2>{{ $post.Title }}</h2>
+        <h2>{{ $post.Title }}{{ with $post.Params.status }} <span class="post-status-badge">{{ . }}</span>{{ end }}</h2>
         {{ if $post.Description }}
         <p class="thesis-section-desc">{{ $post.Description }}</p>
         {{ end }}
@@ -74,7 +74,7 @@
           <span class="section-number">{{ add (len $activePosts) (add $index 1) }} of {{ len $posts }}</span>
           <time>{{ $post.Date.Format "January 2, 2006" }}</time>
         </div>
-        <h2>{{ $post.Title }}</h2>
+        <h2>{{ $post.Title }}{{ with $post.Params.status }} <span class="post-status-badge">{{ . }}</span>{{ end }}</h2>
         {{ if $post.Description }}
         <p class="thesis-section-desc">{{ $post.Description }}</p>
         {{ end }}
@@ -216,6 +216,25 @@
   .dark .status-badge {
     color: #86efac;
     background: rgba(134, 239, 172, 0.15);
+  }
+
+  .post-status-badge {
+    display: inline-block;
+    font-size: 0.58em;
+    font-weight: 700;
+    line-height: 1;
+    color: #854d0e;
+    background: #fef3c7;
+    padding: 4px 8px;
+    border-radius: 999px;
+    margin-left: 0.4rem;
+    vertical-align: middle;
+  }
+
+  :root[data-theme="dark"] .post-status-badge,
+  .dark .post-status-badge {
+    color: #fde68a;
+    background: rgba(245, 158, 11, 0.2);
   }
 
   .thesis-nav-sections {
