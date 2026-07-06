@@ -957,79 +957,80 @@
     </svg>
 </a>
 
-<div id="project-links-toggle" class="project-links-toggle">
-  <button id="project-links-collapsed" class="project-links-collapsed" type="button" aria-expanded="false" aria-controls="project-links-expanded">
-    <span>Explore More Content</span>
-    <span class="project-links-icon" aria-hidden="true">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <path d="m18 15-6-6-6 6"/>
-      </svg>
-    </span>
-  </button>
-
-  <div id="project-links-expanded" class="project-links-expanded hidden">
-    <div class="project-links-header">
-      <h4>Explore more</h4>
-      <button id="project-links-close" class="project-links-close" type="button" title="Minimize" aria-label="Minimize project links">
+<div id="project-links-system">
+  <div id="user-reminder" class="returning-reminder hidden">
+    <div id="reminder-collapsed" class="reminder-collapsed clickable">
+      <span class="reminder-text">Explore More Content</span>
+      <div class="expand-btn">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M6 9l6 6 6-6"/>
+          <path d="m18 15-6-6-6 6"/>
         </svg>
-      </button>
+      </div>
     </div>
 
-    <div class="project-link-options">
-      <a href="https://crowdlisten.com" target="_blank" rel="noopener" class="project-link-item">
-        <span class="project-link-icon">CL</span>
-        <span class="project-link-text">Insights with Crowdlisten</span>
-        <span class="project-link-arrow" aria-hidden="true">›</span>
-      </a>
+    <div id="reminder-expanded" class="reminder-expanded hidden">
+      <div class="expanded-header">
+        <h4>Explore more</h4>
+        <button id="reminder-close" class="reminder-close" title="Minimize" type="button" aria-label="Minimize project links">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 9l6 6 6-6"/>
+          </svg>
+        </button>
+      </div>
 
-      <a href="https://chinatravelmadeeasy.com" target="_blank" rel="noopener" class="project-link-item">
-        <span class="project-link-icon">CN</span>
-        <span class="project-link-text">Travel Guide on China</span>
-        <span class="project-link-arrow" aria-hidden="true">›</span>
-      </a>
+      <div class="action-options">
+        <a href="https://crowdlisten.com" target="_blank" rel="noopener" class="action-item">
+          <div class="action-icon">👥</div>
+          <span class="action-text">Insights with Crowdlisten</span>
+          <div class="action-arrow">›</div>
+        </a>
 
-      <a href="https://answerwithbooks.com" target="_blank" rel="noopener" class="project-link-item">
-        <span class="project-link-icon">BK</span>
-        <span class="project-link-text">Top of minds answered</span>
-        <span class="project-link-arrow" aria-hidden="true">›</span>
-      </a>
+        <a href="https://chinatravelmadeeasy.com" target="_blank" rel="noopener" class="action-item">
+          <div class="action-icon">🧭</div>
+          <span class="action-text">Travel Guide on China</span>
+          <div class="action-arrow">›</div>
+        </a>
+
+        <a href="https://answerwithbooks.com" target="_blank" rel="noopener" class="action-item">
+          <div class="action-icon">📖</div>
+          <span class="action-text">Top of minds answered</span>
+          <div class="action-arrow">›</div>
+        </a>
+      </div>
     </div>
   </div>
 </div>
 
 <script>
 document.addEventListener('DOMContentLoaded', () => {
-  const collapsed = document.getElementById('project-links-collapsed');
-  const expanded = document.getElementById('project-links-expanded');
-  const close = document.getElementById('project-links-close');
+  const reminder = document.getElementById('user-reminder');
+  const collapsed = document.getElementById('reminder-collapsed');
+  const expanded = document.getElementById('reminder-expanded');
+  const close = document.getElementById('reminder-close');
 
-  if (!collapsed || !expanded || !close) return;
+  if (!reminder || !collapsed || !expanded || !close) return;
 
-  const openLinks = () => {
+  reminder.classList.remove('hidden');
+
+  collapsed.addEventListener('click', () => {
     collapsed.classList.add('hidden');
-    collapsed.setAttribute('aria-expanded', 'true');
     expanded.classList.remove('hidden');
-  };
+  });
 
-  const closeLinks = () => {
-    expanded.classList.add('project-links-collapsing');
+  close.addEventListener('click', () => {
+    expanded.style.animation = 'collapseVertical 0.2s ease-in forwards';
+
     setTimeout(() => {
       expanded.classList.add('hidden');
-      expanded.classList.remove('project-links-collapsing');
+      expanded.style.animation = '';
       collapsed.classList.remove('hidden');
-      collapsed.setAttribute('aria-expanded', 'false');
-    }, 180);
-  };
-
-  collapsed.addEventListener('click', openLinks);
-  close.addEventListener('click', closeLinks);
+    }, 200);
+  });
 });
 </script>
 
 <style>
-.project-links-toggle {
+.returning-reminder {
   position: fixed;
   bottom: 0;
   right: 0;
@@ -1037,140 +1038,144 @@ document.addEventListener('DOMContentLoaded', () => {
   font-family: inherit;
 }
 
-.project-links-collapsed {
-  width: 360px;
-  margin: 0;
+.reminder-collapsed {
+  background: var(--entry);
+  border: 1px solid var(--border);
+  border-radius: 16px 16px 0 0;
   padding: 12px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: var(--entry);
-  color: var(--secondary);
-  border: 1px solid var(--border);
-  border-radius: 16px 16px 0 0;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   cursor: pointer;
-  font: inherit;
-  font-size: 14px;
-  font-weight: 500;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: all 0.3s ease;
+  user-select: none;
+  width: 360px;
+  margin: 0;
 }
 
-.project-links-collapsed:hover {
+.reminder-collapsed:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
-.project-links-icon {
-  width: 28px;
-  height: 28px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+.reminder-text {
+  font-size: 14px;
   color: var(--secondary);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.expand-btn {
   background: var(--theme);
   border: 1px solid var(--border);
   border-radius: 50%;
+  padding: 6px;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--secondary);
+  pointer-events: none;
 }
 
-.project-links-expanded {
-  width: 360px;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 20px;
+.reminder-collapsed:hover .expand-btn {
+  background: var(--border);
+  color: var(--primary);
+}
+
+.reminder-expanded {
   background: var(--entry);
   border: 1px solid var(--border);
   border-radius: 8px 8px 0 0;
+  padding: 24px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  animation: projectLinksExpand 0.24s ease-out;
-}
-
-.project-links-collapsing {
-  animation: projectLinksCollapse 0.18s ease-in forwards;
-}
-
-.project-links-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 14px;
-}
-
-.project-links-header h4 {
+  width: 360px;
+  animation: expandVertical 0.3s ease-out;
   margin: 0;
-  color: var(--primary);
+  box-sizing: border-box;
+}
+
+.expanded-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.expanded-header h4 {
+  margin: 0;
   font-size: 18px;
   font-weight: 600;
+  color: var(--primary);
+  font-family: inherit;
 }
 
-.project-links-close {
-  width: 28px;
-  height: 28px;
-  display: inline-flex;
+.reminder-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--secondary);
+  padding: 4px;
+  transition: all 0.2s ease;
+  border-radius: 4px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0;
-  color: var(--secondary);
-  background: transparent;
-  border: 0;
-  border-radius: 4px;
-  cursor: pointer;
 }
 
-.project-links-close:hover {
+.reminder-close:hover {
   color: var(--primary);
   background: var(--theme);
 }
 
-.project-link-options {
+.action-options {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-.project-link-item {
+.action-item {
   display: flex;
   align-items: center;
-  padding: 12px 14px;
-  color: var(--primary);
-  background: var(--theme);
+  padding: 12px 16px;
   border: 1px solid var(--border);
   border-radius: 8px;
+  background: var(--theme);
+  color: var(--primary);
   text-decoration: none;
-  transition: background 0.2s ease, border-color 0.2s ease;
+  transition: all 0.2s ease;
+  cursor: pointer;
 }
 
-.project-link-item:hover {
+.action-item:hover {
   background: var(--code-bg);
   border-color: var(--primary);
 }
 
-.project-link-icon {
-  min-width: 28px;
-  margin-right: 10px;
-  color: var(--secondary);
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0;
+.action-icon {
+  font-size: 16px;
+  margin-right: 12px;
+  min-width: 20px;
 }
 
-.project-link-text {
+.action-text {
   flex: 1;
   font-size: 14px;
   font-weight: 500;
 }
 
-.project-link-arrow {
-  margin-left: 8px;
-  color: var(--secondary);
+.action-arrow {
   font-size: 18px;
+  color: var(--secondary);
+  margin-left: 8px;
 }
 
-.project-link-item:hover .project-link-arrow {
+.action-item:hover .action-arrow {
   color: var(--primary);
 }
 
-@keyframes projectLinksExpand {
+@keyframes expandVertical {
   from {
     transform: scaleY(0);
     transform-origin: bottom;
@@ -1183,7 +1188,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 }
 
-@keyframes projectLinksCollapse {
+@keyframes collapseVertical {
   from {
     transform: scaleY(1);
     transform-origin: bottom;
@@ -1197,14 +1202,25 @@ document.addEventListener('DOMContentLoaded', () => {
 }
 
 @media (max-width: 768px) {
-  .project-links-collapsed,
-  .project-links-expanded {
+  .returning-reminder {
+    right: 0;
+    bottom: 0;
+  }
+
+  .reminder-expanded {
+    width: 100vw;
+    max-width: 360px;
+    padding: 16px;
+  }
+
+  .reminder-collapsed {
+    padding: 10px 16px;
     width: 100vw;
     max-width: 360px;
   }
 
-  .project-links-expanded {
-    padding: 16px;
+  .reminder-text {
+    font-size: 13px;
   }
 }
 </style>
