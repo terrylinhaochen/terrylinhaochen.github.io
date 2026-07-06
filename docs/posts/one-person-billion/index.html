@@ -214,7 +214,7 @@
 <meta name="author" content="Terry Chen">
 <link rel="alternate" type="text/plain" title="llms.txt" href="https://chenterry.com/llms.txt">
 <link rel="alternate" type="application/x-ndjson" title="agent FAQ corpus" href="https://chenterry.com/qa/agent-faq.jsonl">
-    <link crossorigin="anonymous" href="/assets/css/stylesheet.a812c7ac7f9f530b9c2266579114f0e359e9b9df91aa298a8d787e11e102284b.css" integrity="sha256-qBLHrH&#43;fUwucImZXkRTw41npud&#43;RqimKjXh&#43;EeECKEs=" rel="preload stylesheet" as="style"><link rel="icon" href="https://chenterry.com/favicon.ico">
+    <link crossorigin="anonymous" href="/assets/css/stylesheet.a910fb06fa13500529730dee5bb90b40a3d4509ed59dd297c6021602734372cc.css" integrity="sha256-qRD7BvoTUAUpcw3uW7kLQKPUUJ7VndKXxgIWAnNDcsw=" rel="preload stylesheet" as="style"><link rel="icon" href="https://chenterry.com/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://chenterry.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://chenterry.com/favicon-32x32.png">
 <link rel="apple-touch-icon" href="https://chenterry.com/apple-touch-icon.png">
@@ -596,8 +596,7 @@
   </header>
   
   
-  
-<div class="post-content">
+  <div class="post-content">
   <p>Sam Altman said in a recent post: &ldquo;We&rsquo;re gonna see 10-person billion dollar (valuation) companies pretty soon. In my little group chat with my tech CEO friends, there&rsquo;s this betting pool for the first year that there is a one-person billion-dollar company. Which would have been unimaginable without AI and now will happen.&rdquo;</p>
 <p>As AI coding agents become increasingly capable—moving beyond code generation to CI/CD pipelines and automated testing—an ambitious founder could outsource the work they would traditionally use employees for to an army of artificial intelligence agents. Theoretically, this would allow entrepreneurs to focus exclusively on their most important competitive advantage.</p>
 <p>While for many of us it might seem we&rsquo;re close to this vision, I&rsquo;m interested in thinking about how this applies more broadly, signaling a fundamental disruption in knowledge work. Looking at engineering and product friends who left big tech to work on their own thing, or are building something part-time, a pattern emerges. Coding and actually shipping the product has become table stakes. With some Cursor brilliance, Supabase magic, and Stripe configurations, you could have a fully functional product within a week.</p>
@@ -1009,6 +1008,259 @@
         <path d="M12 6H0l6-6z" />
     </svg>
 </a>
+
+<div id="project-links-toggle" class="project-links-toggle">
+  <button id="project-links-collapsed" class="project-links-collapsed" type="button" aria-expanded="false" aria-controls="project-links-expanded">
+    <span>Explore More Content</span>
+    <span class="project-links-icon" aria-hidden="true">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="m18 15-6-6-6 6"/>
+      </svg>
+    </span>
+  </button>
+
+  <div id="project-links-expanded" class="project-links-expanded hidden">
+    <div class="project-links-header">
+      <h4>Explore more</h4>
+      <button id="project-links-close" class="project-links-close" type="button" title="Minimize" aria-label="Minimize project links">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M6 9l6 6 6-6"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="project-link-options">
+      <a href="https://crowdlisten.com" target="_blank" rel="noopener" class="project-link-item">
+        <span class="project-link-icon">CL</span>
+        <span class="project-link-text">Insights with Crowdlisten</span>
+        <span class="project-link-arrow" aria-hidden="true">›</span>
+      </a>
+
+      <a href="https://chinatravelmadeeasy.com" target="_blank" rel="noopener" class="project-link-item">
+        <span class="project-link-icon">CN</span>
+        <span class="project-link-text">Travel Guide on China</span>
+        <span class="project-link-arrow" aria-hidden="true">›</span>
+      </a>
+
+      <a href="https://answerwithbooks.com" target="_blank" rel="noopener" class="project-link-item">
+        <span class="project-link-icon">BK</span>
+        <span class="project-link-text">Top of minds answered</span>
+        <span class="project-link-arrow" aria-hidden="true">›</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const collapsed = document.getElementById('project-links-collapsed');
+  const expanded = document.getElementById('project-links-expanded');
+  const close = document.getElementById('project-links-close');
+
+  if (!collapsed || !expanded || !close) return;
+
+  const openLinks = () => {
+    collapsed.classList.add('hidden');
+    collapsed.setAttribute('aria-expanded', 'true');
+    expanded.classList.remove('hidden');
+  };
+
+  const closeLinks = () => {
+    expanded.classList.add('project-links-collapsing');
+    setTimeout(() => {
+      expanded.classList.add('hidden');
+      expanded.classList.remove('project-links-collapsing');
+      collapsed.classList.remove('hidden');
+      collapsed.setAttribute('aria-expanded', 'false');
+    }, 180);
+  };
+
+  collapsed.addEventListener('click', openLinks);
+  close.addEventListener('click', closeLinks);
+});
+</script>
+
+<style>
+.project-links-toggle {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+  font-family: inherit;
+}
+
+.project-links-collapsed {
+  width: 360px;
+  margin: 0;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--entry);
+  color: var(--secondary);
+  border: 1px solid var(--border);
+  border-radius: 16px 16px 0 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-links-collapsed:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.project-links-icon {
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--secondary);
+  background: var(--theme);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+}
+
+.project-links-expanded {
+  width: 360px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 20px;
+  background: var(--entry);
+  border: 1px solid var(--border);
+  border-radius: 8px 8px 0 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  animation: projectLinksExpand 0.24s ease-out;
+}
+
+.project-links-collapsing {
+  animation: projectLinksCollapse 0.18s ease-in forwards;
+}
+
+.project-links-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.project-links-header h4 {
+  margin: 0;
+  color: var(--primary);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.project-links-close {
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  color: var(--secondary);
+  background: transparent;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.project-links-close:hover {
+  color: var(--primary);
+  background: var(--theme);
+}
+
+.project-link-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.project-link-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 14px;
+  color: var(--primary);
+  background: var(--theme);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.project-link-item:hover {
+  background: var(--code-bg);
+  border-color: var(--primary);
+}
+
+.project-link-icon {
+  min-width: 28px;
+  margin-right: 10px;
+  color: var(--secondary);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.project-link-text {
+  flex: 1;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.project-link-arrow {
+  margin-left: 8px;
+  color: var(--secondary);
+  font-size: 18px;
+}
+
+.project-link-item:hover .project-link-arrow {
+  color: var(--primary);
+}
+
+@keyframes projectLinksExpand {
+  from {
+    transform: scaleY(0);
+    transform-origin: bottom;
+    opacity: 0;
+  }
+  to {
+    transform: scaleY(1);
+    transform-origin: bottom;
+    opacity: 1;
+  }
+}
+
+@keyframes projectLinksCollapse {
+  from {
+    transform: scaleY(1);
+    transform-origin: bottom;
+    opacity: 1;
+  }
+  to {
+    transform: scaleY(0);
+    transform-origin: bottom;
+    opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-links-collapsed,
+  .project-links-expanded {
+    width: 100vw;
+    max-width: 360px;
+  }
+
+  .project-links-expanded {
+    padding: 16px;
+  }
+}
+</style>
+
 
 <script>
     

@@ -210,7 +210,7 @@
 <meta name="author" content="Terry Chen&#39;">
 <link rel="alternate" type="text/plain" title="llms.txt" href="https://chenterry.com/llms.txt">
 <link rel="alternate" type="application/x-ndjson" title="agent FAQ corpus" href="https://chenterry.com/qa/agent-faq.jsonl">
-    <link crossorigin="anonymous" href="/assets/css/stylesheet.a812c7ac7f9f530b9c2266579114f0e359e9b9df91aa298a8d787e11e102284b.css" integrity="sha256-qBLHrH&#43;fUwucImZXkRTw41npud&#43;RqimKjXh&#43;EeECKEs=" rel="preload stylesheet" as="style"><link rel="icon" href="https://chenterry.com/favicon.ico">
+    <link crossorigin="anonymous" href="/assets/css/stylesheet.a910fb06fa13500529730dee5bb90b40a3d4509ed59dd297c6021602734372cc.css" integrity="sha256-qRD7BvoTUAUpcw3uW7kLQKPUUJ7VndKXxgIWAnNDcsw=" rel="preload stylesheet" as="style"><link rel="icon" href="https://chenterry.com/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://chenterry.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://chenterry.com/favicon-32x32.png">
 <link rel="apple-touch-icon" href="https://chenterry.com/apple-touch-icon.png">
@@ -574,10 +574,8 @@
   </header>
   
   
-  
-<div class="post-content" id="gated-content" data-gated="true" data-preview-percent="30">
-  <div id="gate-preview">
-    <p>
+  <div class="post-content">
+  <p>
 
   <img src="/images/posts/product_engineer/shopify_ai.png" alt="Product Engineers" loading="lazy">
  
@@ -636,123 +634,7 @@
 <p>Kwok, K. (2020, June 19). Why Figma Wins. <a href="https://kwokchain.com/2020/06/19/why-figma-wins/">https://kwokchain.com/2020/06/19/why-figma-wins/</a></p>
 <p>Lütke, Tobi. &ldquo;Internal Company Memo on AI Usage.&rdquo; Shopify, 2025.</p>
 
-  </div>
-  <div id="content-gate" class="content-gate" style="display:none;">
-    <div class="content-fade"></div>
-    <div class="gate-inner">
-      <div class="gate-lock-label">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-        Subscribe to continue reading
-      </div>
-      <h2 class="gate-headline">Actionable Insights to<br>Help You Stay at the Edge of AI</h2>
-      <p class="gate-subtext">The essential toolkit for those shaping the future</p>
-      <p class="gate-social-proof">Join 1,000+ leaders, builders, and innovators</p>
-      <form id="gate-form" class="gate-form">
-        <label for="gate-email" class="gate-email-label">Email address</label>
-        <input type="email" id="gate-email" placeholder="example@domain.com" required>
-        <button type="submit" class="gate-submit-btn">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-          Unlock this article
-        </button>
-      </form>
-      <div id="gate-message" class="gate-message"></div>
-      <p class="gate-disclaimer">No spam, ever. Unsubscribe at any time.</p>
-    </div>
-  </div>
 </div>
-
-<noscript>
-  <div class="post-content">
-    <p>How AI is transforming product engineering teams into smaller, more efficient units. Learn why product engineers are becoming more valuable than traditional product managers in AI-first organizations.</p>
-    <p><em>JavaScript is required to read the full article. Please enable JavaScript or <a href="mailto:terry@crowdlisten.com">contact me</a> for the full text.</em></p>
-  </div>
-</noscript>
-
-<script>
-(function() {
-  var container = document.getElementById('gated-content');
-  if (!container) return;
-
-  var isSubscribed = localStorage.getItem('newsletter-subscribed') === 'true';
-  var previewPercent = parseInt(container.getAttribute('data-preview-percent'), 10) || 30;
-  var preview = document.getElementById('gate-preview');
-  var gate = document.getElementById('content-gate');
-
-  if (isSubscribed) {
-    
-    return;
-  }
-
-  
-  var blocks = [];
-  var children = preview.children;
-  for (var i = 0; i < children.length; i++) {
-    var tag = children[i].tagName;
-    if (tag && /^(P|H[1-6]|UL|OL|BLOCKQUOTE|PRE|TABLE|FIGURE|DIV|DL|HR)$/i.test(tag)) {
-      blocks.push(children[i]);
-    }
-  }
-
-  if (blocks.length < 4) {
-    
-    return;
-  }
-
-  
-  var cutoff = Math.max(2, Math.round(blocks.length * previewPercent / 100));
-
-  
-  for (var j = cutoff; j < blocks.length; j++) {
-    blocks[j].style.display = 'none';
-  }
-
-  
-  gate.style.display = 'block';
-
-  
-  var form = document.getElementById('gate-form');
-  form.addEventListener('submit', function(e) {
-    e.preventDefault();
-    var email = document.getElementById('gate-email').value;
-    var msgEl = document.getElementById('gate-message');
-    var btn = form.querySelector('button[type="submit"]');
-
-    btn.disabled = true;
-    btn.textContent = 'Unlocking...';
-
-    fetch('https://script.google.com/macros/s/AKfycbxF7czbmo2JEeATzFoMnHIfGASoSTzogbjJcuQm30sjBXFqmDOqISWkIHBr64GdmURS/exec', {
-      method: 'POST',
-      mode: 'no-cors',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: new URLSearchParams({
-        'email': email,
-        'pageUrl': window.location.href,
-        'source': 'content-gate'
-      })
-    }).then(function() {
-      localStorage.setItem('newsletter-subscribed', 'true');
-      msgEl.textContent = 'Thanks! Unlocking the article...';
-      msgEl.classList.add('success');
-
-      
-      gate.classList.add('gate-unlocking');
-      setTimeout(function() {
-        gate.style.display = 'none';
-        
-        for (var k = cutoff; k < blocks.length; k++) {
-          blocks[k].style.display = '';
-          blocks[k].classList.add('gate-content-reveal');
-        }
-      }, 500);
-    }).catch(function() {
-      msgEl.textContent = 'Something went wrong. Please try again.';
-      msgEl.classList.add('error');
-      btn.disabled = false;
-      btn.textContent = 'Read the full article';
-    });
-  });
-})();
-</script>
 
   
   
@@ -1088,6 +970,259 @@
         <path d="M12 6H0l6-6z" />
     </svg>
 </a>
+
+<div id="project-links-toggle" class="project-links-toggle">
+  <button id="project-links-collapsed" class="project-links-collapsed" type="button" aria-expanded="false" aria-controls="project-links-expanded">
+    <span>Explore More Content</span>
+    <span class="project-links-icon" aria-hidden="true">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="m18 15-6-6-6 6"/>
+      </svg>
+    </span>
+  </button>
+
+  <div id="project-links-expanded" class="project-links-expanded hidden">
+    <div class="project-links-header">
+      <h4>Explore more</h4>
+      <button id="project-links-close" class="project-links-close" type="button" title="Minimize" aria-label="Minimize project links">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M6 9l6 6 6-6"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="project-link-options">
+      <a href="https://crowdlisten.com" target="_blank" rel="noopener" class="project-link-item">
+        <span class="project-link-icon">CL</span>
+        <span class="project-link-text">Insights with Crowdlisten</span>
+        <span class="project-link-arrow" aria-hidden="true">›</span>
+      </a>
+
+      <a href="https://chinatravelmadeeasy.com" target="_blank" rel="noopener" class="project-link-item">
+        <span class="project-link-icon">CN</span>
+        <span class="project-link-text">Travel Guide on China</span>
+        <span class="project-link-arrow" aria-hidden="true">›</span>
+      </a>
+
+      <a href="https://answerwithbooks.com" target="_blank" rel="noopener" class="project-link-item">
+        <span class="project-link-icon">BK</span>
+        <span class="project-link-text">Top of minds answered</span>
+        <span class="project-link-arrow" aria-hidden="true">›</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const collapsed = document.getElementById('project-links-collapsed');
+  const expanded = document.getElementById('project-links-expanded');
+  const close = document.getElementById('project-links-close');
+
+  if (!collapsed || !expanded || !close) return;
+
+  const openLinks = () => {
+    collapsed.classList.add('hidden');
+    collapsed.setAttribute('aria-expanded', 'true');
+    expanded.classList.remove('hidden');
+  };
+
+  const closeLinks = () => {
+    expanded.classList.add('project-links-collapsing');
+    setTimeout(() => {
+      expanded.classList.add('hidden');
+      expanded.classList.remove('project-links-collapsing');
+      collapsed.classList.remove('hidden');
+      collapsed.setAttribute('aria-expanded', 'false');
+    }, 180);
+  };
+
+  collapsed.addEventListener('click', openLinks);
+  close.addEventListener('click', closeLinks);
+});
+</script>
+
+<style>
+.project-links-toggle {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+  font-family: inherit;
+}
+
+.project-links-collapsed {
+  width: 360px;
+  margin: 0;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--entry);
+  color: var(--secondary);
+  border: 1px solid var(--border);
+  border-radius: 16px 16px 0 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-links-collapsed:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.project-links-icon {
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--secondary);
+  background: var(--theme);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+}
+
+.project-links-expanded {
+  width: 360px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 20px;
+  background: var(--entry);
+  border: 1px solid var(--border);
+  border-radius: 8px 8px 0 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  animation: projectLinksExpand 0.24s ease-out;
+}
+
+.project-links-collapsing {
+  animation: projectLinksCollapse 0.18s ease-in forwards;
+}
+
+.project-links-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.project-links-header h4 {
+  margin: 0;
+  color: var(--primary);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.project-links-close {
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  color: var(--secondary);
+  background: transparent;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.project-links-close:hover {
+  color: var(--primary);
+  background: var(--theme);
+}
+
+.project-link-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.project-link-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 14px;
+  color: var(--primary);
+  background: var(--theme);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.project-link-item:hover {
+  background: var(--code-bg);
+  border-color: var(--primary);
+}
+
+.project-link-icon {
+  min-width: 28px;
+  margin-right: 10px;
+  color: var(--secondary);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.project-link-text {
+  flex: 1;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.project-link-arrow {
+  margin-left: 8px;
+  color: var(--secondary);
+  font-size: 18px;
+}
+
+.project-link-item:hover .project-link-arrow {
+  color: var(--primary);
+}
+
+@keyframes projectLinksExpand {
+  from {
+    transform: scaleY(0);
+    transform-origin: bottom;
+    opacity: 0;
+  }
+  to {
+    transform: scaleY(1);
+    transform-origin: bottom;
+    opacity: 1;
+  }
+}
+
+@keyframes projectLinksCollapse {
+  from {
+    transform: scaleY(1);
+    transform-origin: bottom;
+    opacity: 1;
+  }
+  to {
+    transform: scaleY(0);
+    transform-origin: bottom;
+    opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-links-collapsed,
+  .project-links-expanded {
+    width: 100vw;
+    max-width: 360px;
+  }
+
+  .project-links-expanded {
+    padding: 16px;
+  }
+}
+</style>
+
 
 <script>
     
