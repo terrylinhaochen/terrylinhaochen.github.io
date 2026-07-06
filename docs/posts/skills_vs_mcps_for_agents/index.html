@@ -1002,6 +1002,25 @@ The …</p>
 </a>
 
 <div id="project-links-system">
+  <div id="subscription-modal" class="subscription-modal is-hidden" aria-hidden="true">
+    <div class="modal-overlay"></div>
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="subscription-title">
+      <button id="modal-close" class="modal-close" title="Close" type="button" aria-label="Close subscription form">×</button>
+      <div class="modal-body">
+        <h2 id="subscription-title">Stay close to the frontier</h2>
+        <p>Get updates when I publish new insights about design, technology, and human interaction patterns.</p>
+        <form id="subscription-form" class="centered-subscribe-form">
+          <input type="email" id="subscription-email" placeholder="your@email.com" autocomplete="email" required>
+          <button type="submit" class="submit-btn">Subscribe</button>
+        </form>
+        <div id="subscription-message" class="form-message" aria-live="polite"></div>
+        <div class="modal-footer">
+          <button id="modal-no-thanks" class="no-thanks-btn" type="button">No thanks</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div id="user-reminder" class="returning-reminder is-hidden">
     <div id="reminder-collapsed" class="reminder-collapsed clickable">
       <span class="reminder-text">Explore More Content</span>
@@ -1025,13 +1044,13 @@ The …</p>
       <div class="action-options">
         <a href="https://crowdlisten.com" target="_blank" rel="noopener" class="action-item">
           <div class="action-icon">👥</div>
-          <span class="action-text">Insights with Crowdlisten</span>
+          <span class="action-text">Insights with CrowdListen</span>
           <div class="action-arrow">›</div>
         </a>
 
         <a href="https://chinatravelmadeeasy.com" target="_blank" rel="noopener" class="action-item">
           <div class="action-icon">🧭</div>
-          <span class="action-text">Travel Guide on China</span>
+          <span class="action-text">Travel guide on China</span>
           <div class="action-arrow">›</div>
         </a>
 
@@ -1040,6 +1059,12 @@ The …</p>
           <span class="action-text">Top of minds answered</span>
           <div class="action-arrow">›</div>
         </a>
+
+        <button id="subscribe-trigger" class="action-item subscribe-item" type="button">
+          <div class="action-icon">✉️</div>
+          <span class="action-text">Subscribe for updates</span>
+          <div class="action-arrow">›</div>
+        </button>
       </div>
     </div>
   </div>
@@ -1051,6 +1076,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const collapsed = document.getElementById('reminder-collapsed');
   const expanded = document.getElementById('reminder-expanded');
   const close = document.getElementById('reminder-close');
+  const subscribeTrigger = document.getElementById('subscribe-trigger');
+  const modal = document.getElementById('subscription-modal');
+  const modalOverlay = modal?.querySelector('.modal-overlay');
+  const modalClose = document.getElementById('modal-close');
+  const modalNoThanks = document.getElementById('modal-no-thanks');
+  const subscriptionForm = document.getElementById('subscription-form');
+  const subscriptionEmail = document.getElementById('subscription-email');
+  const subscriptionMessage = document.getElementById('subscription-message');
 
   if (!reminder || !collapsed || !expanded || !close) return;
 
@@ -1070,12 +1103,238 @@ document.addEventListener('DOMContentLoaded', () => {
       collapsed.classList.remove('is-hidden');
     }, 200);
   });
+
+  const showModal = () => {
+    if (!modal || !subscriptionEmail) return;
+    modal.classList.remove('is-hidden');
+    modal.setAttribute('aria-hidden', 'false');
+    subscriptionEmail.focus();
+  };
+
+  const hideModal = () => {
+    if (!modal) return;
+    modal.classList.add('is-hidden');
+    modal.setAttribute('aria-hidden', 'true');
+  };
+
+  subscribeTrigger?.addEventListener('click', showModal);
+  modalClose?.addEventListener('click', hideModal);
+  modalOverlay?.addEventListener('click', hideModal);
+  modalNoThanks?.addEventListener('click', hideModal);
+
+  subscriptionForm?.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    const submit = subscriptionForm.querySelector('button[type="submit"]');
+    if (!subscriptionEmail || !subscriptionMessage || !submit) return;
+
+    submit.disabled = true;
+    submit.textContent = 'Subscribing...';
+    subscriptionMessage.textContent = '';
+    subscriptionMessage.classList.remove('success', 'error');
+
+    try {
+      await fetch('https://script.google.com/macros/s/AKfycbxF7czbmo2JEeATzFoMnHIfGASoSTzogbjJcuQm30sjBXFqmDOqISWkIHBr64GdmURS/exec', {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: new URLSearchParams({
+          email: subscriptionEmail.value,
+          pageUrl: window.location.href,
+          source: 'explore-more-panel',
+        }),
+      });
+
+      subscriptionMessage.textContent = 'Thanks for subscribing!';
+      subscriptionMessage.classList.add('success');
+      subscriptionEmail.value = '';
+      setTimeout(hideModal, 1600);
+    } catch (error) {
+      subscriptionMessage.textContent = 'Something went wrong. Please try again.';
+      subscriptionMessage.classList.add('error');
+    } finally {
+      submit.disabled = false;
+      submit.textContent = 'Subscribe';
+    }
+  });
 });
 </script>
 
 <style>
 #project-links-system .is-hidden {
   display: none !important;
+}
+
+.subscription-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.25s ease-out;
+}
+
+.modal-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.72);
+  backdrop-filter: blur(4px);
+}
+
+.subscription-modal .modal-content {
+  position: relative;
+  background: var(--entry);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  max-width: 680px;
+  width: 95%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  animation: modalSlideIn 0.3s ease-out;
+  font-family: inherit;
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--secondary);
+  padding: 8px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  opacity: 0.6;
+}
+
+.modal-close:hover {
+  opacity: 1;
+  background: var(--theme);
+  color: var(--primary);
+}
+
+.modal-body {
+  padding: 48px;
+  text-align: center;
+}
+
+.modal-body h2 {
+  margin: 0 0 24px;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--primary);
+  font-family: inherit;
+  line-height: 1.2;
+}
+
+.modal-body p {
+  margin: 0 auto 32px;
+  color: var(--secondary);
+  line-height: 1.6;
+  font-size: 16px;
+  font-family: inherit;
+  max-width: 480px;
+}
+
+.centered-subscribe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 0 auto 24px;
+  max-width: 400px;
+}
+
+.centered-subscribe-form input {
+  padding: 16px 20px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 16px;
+  background: var(--theme);
+  color: var(--primary);
+  font-family: inherit;
+  transition: border-color 0.2s ease;
+  text-align: center;
+}
+
+.centered-subscribe-form input::placeholder {
+  color: var(--secondary);
+  opacity: 0.7;
+}
+
+.centered-subscribe-form input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.submit-btn {
+  background: var(--primary);
+  color: var(--theme);
+  border: none;
+  padding: 16px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.submit-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.submit-btn:disabled {
+  opacity: 0.6;
+  transform: none;
+  cursor: not-allowed;
+}
+
+.modal-footer {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.no-thanks-btn {
+  background: none;
+  border: none;
+  color: var(--secondary);
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: underline;
+  font-family: inherit;
+  transition: color 0.2s ease;
+  opacity: 0.8;
+}
+
+.no-thanks-btn:hover {
+  color: var(--primary);
+  opacity: 1;
+}
+
+.form-message {
+  margin-top: 16px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  text-align: center;
+  font-family: inherit;
+}
+
+.form-message:empty {
+  display: none;
+}
+
+.form-message.success,
+.form-message.error {
+  background: var(--code-bg);
+  color: var(--primary);
+  border: 1px solid var(--border);
 }
 
 .returning-reminder {
@@ -1186,6 +1445,7 @@ document.addEventListener('DOMContentLoaded', () => {
 .action-item {
   display: flex;
   align-items: center;
+  width: 100%;
   padding: 12px 16px;
   border: 1px solid var(--border);
   border-radius: 8px;
@@ -1194,6 +1454,9 @@ document.addEventListener('DOMContentLoaded', () => {
   text-decoration: none;
   transition: all 0.2s ease;
   cursor: pointer;
+  font: inherit;
+  text-align: left;
+  box-sizing: border-box;
 }
 
 .action-item:hover {
@@ -1236,6 +1499,26 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modalSlideIn {
+  from {
+    transform: scale(0.95) translateY(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+
 @keyframes collapseVertical {
   from {
     transform: scaleY(1);
@@ -1250,6 +1533,14 @@ document.addEventListener('DOMContentLoaded', () => {
 }
 
 @media (max-width: 768px) {
+  .modal-body {
+    padding: 24px;
+  }
+
+  .modal-body h2 {
+    font-size: 28px;
+  }
+
   .returning-reminder {
     right: 0;
     bottom: 0;
