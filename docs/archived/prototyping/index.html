@@ -898,7 +898,7 @@ Credits: Lian Zhang, Janna Lee, Soham Shah, Jonny Kong">
 </a>
 
 <div id="project-links-system">
-  <div id="user-reminder" class="returning-reminder hidden">
+  <div id="user-reminder" class="returning-reminder is-hidden">
     <div id="reminder-collapsed" class="reminder-collapsed clickable">
       <span class="reminder-text">Explore More Content</span>
       <div class="expand-btn">
@@ -908,7 +908,7 @@ Credits: Lian Zhang, Janna Lee, Soham Shah, Jonny Kong">
       </div>
     </div>
 
-    <div id="reminder-expanded" class="reminder-expanded hidden">
+    <div id="reminder-expanded" class="reminder-expanded is-hidden">
       <div class="expanded-header">
         <h4>Explore more</h4>
         <button id="reminder-close" class="reminder-close" title="Minimize" type="button" aria-label="Minimize project links">
@@ -950,26 +950,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (!reminder || !collapsed || !expanded || !close) return;
 
-  reminder.classList.remove('hidden');
+  reminder.classList.remove('is-hidden');
 
   collapsed.addEventListener('click', () => {
-    collapsed.classList.add('hidden');
-    expanded.classList.remove('hidden');
+    collapsed.classList.add('is-hidden');
+    expanded.classList.remove('is-hidden');
   });
 
   close.addEventListener('click', () => {
     expanded.style.animation = 'collapseVertical 0.2s ease-in forwards';
 
     setTimeout(() => {
-      expanded.classList.add('hidden');
+      expanded.classList.add('is-hidden');
       expanded.style.animation = '';
-      collapsed.classList.remove('hidden');
+      collapsed.classList.remove('is-hidden');
     }, 200);
   });
 });
 </script>
 
 <style>
+#project-links-system .is-hidden {
+  display: none !important;
+}
+
 .returning-reminder {
   position: fixed;
   bottom: 0;
