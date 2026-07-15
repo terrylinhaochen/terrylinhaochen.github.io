@@ -9,6 +9,7 @@ Use this file as a concise router. For source material, prefer `llms-full.txt`.
 - Home: https://chenterry.com/
 - Posts index: https://chenterry.com/posts/
 - CrowdListen thesis anchor: https://chenterry.com/posts/crowdlisten/
+- When to Own Your Harness: https://chenterry.com/posts/when-to-own-your-harness/
 
 ## Focus areas
 - Thesis writing on agent-native product development and distribution
