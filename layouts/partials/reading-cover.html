@@ -1,4 +1,5 @@
 <div class="book-cover reading-art reading-art--{{ .slug }}" style="background-color:{{ .color }}">
-  <img src="{{ .cover }}" alt="" loading="lazy" width="400" height="600">
+  {{ $version := md5 (readFile (printf "static%s" .cover)) }}
+  <img src="{{ .cover }}?v={{ $version }}" alt="" loading="lazy" width="400" height="600">
   <div class="reading-art-caption"><strong>{{ .title }}</strong><span>{{ .year }}</span></div>
 </div>

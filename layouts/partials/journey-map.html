@@ -218,8 +218,8 @@ document.addEventListener('DOMContentLoaded', function() {
           description: "Founder and Head of Product | October 2024 - Present\nBuilding AI-powered sales automation tools to help businesses grow and scale their operations efficiently."
         },
         {
-          name: "College",
-          role: "Student",
+          name: "Northwestern",
+          role: "College",
           position: [42.0565, -87.6653],
           description: "CS @ Northwestern"
         }
@@ -232,9 +232,9 @@ document.addEventListener('DOMContentLoaded', function() {
       companies: [
         {
           name: "Toronto",
-          role: "Born & Raised",
+          role: "Home",
           position: [43.6532, -79.3832],
-          description: "Born & Raised"
+          description: "Home"
         }
       ]
     },
@@ -280,30 +280,11 @@ document.addEventListener('DOMContentLoaded', function() {
           role: "IB Diploma",
           position: [39.9647, 116.3407],
           description: "IB Diploma @ RDFZ"
-        },
-        {
-          name: "Family",
-          role: "Home",
-          position: [39.9747, 116.3507],
-          description: "Home"
-        }
-      ]
-    },
-    {
-      name: "New York City",
-      region: "nyc",
-      position: [40.7505, -73.9934],
-      companies: [
-        {
-          name: "Family",
-          role: "Home",
-          position: [40.7505, -73.9934],
-          description: ""
         }
       ]
     }
   ];
-  const regions = ['sanfrancisco', 'seattle', 'bayarea', 'chicago', 'beijing', 'toronto', 'nyc'];
+  const regions = ['sanfrancisco', 'seattle', 'bayarea', 'chicago', 'beijing', 'toronto'];
   let currentRegionIndex = Math.max(0, regions.indexOf(startRegion));
   const markers = [];
   const modal = document.getElementById('{{ $modalId }}');
@@ -317,8 +298,7 @@ document.addEventListener('DOMContentLoaded', function() {
     toronto: 12,
     bayarea: 10.5,
     seattle: 12,
-    beijing: 14,
-    nyc: 11.5
+    beijing: 14
   };
   const initialLocation = locations.find(loc => loc.region === startRegion) || locations[0];
   const map = L.map(mapId, {

@@ -1,0 +1,32 @@
+{
+  "method": "Built-in image generation; preview only; selected reading-library artwork unchanged.",
+  "variants": [
+    {
+      "slug": "yujun-product-methodology",
+      "title": "俞军产品方法论",
+      "year": "2020",
+      "name": "A · Fit, not scales",
+      "color": "#6535bd",
+      "prompt": "Use case: stylized-concept. Create a replacement book-cover illustration for an existing editorial library. Portrait 2:3 canvas. Use the attached original ONLY to preserve its basic palette and upper-emblem / empty-lower-third layout; replace the overly detailed art. Flat graphic illustration with clean, confident curved edges and generous negative space, like a restrained mid-century book jacket. OPAQUE, perfectly uniform solid-color background covering every pixel edge to edge, including the entire bottom 35%. NO transparency, texture, grain, gradient, glow, shading, lighting, shadows, 3D, realistic materials, micro-details, tiny repeated marks, borders, text, letters, or numbers. Exactly one compact visual idea entirely within the upper 58%, with broad margins. Only three flat foreground colors maximum. Titles will be added separately in HTML; leave lower 35% completely blank. Book: Yu Jun's Product Methodology. Uniform royal-violet background. Replace the scale, person and diamond entirely with two large complementary rounded interlocking shapes, one warm cream and one amber, with a small intentional purple gap between them. The shapes suggest a need and a solution fitting together, with a satisfying simple silhouette. No puzzle-piece knobs, scales, people, diamonds, diagrams, symbols, or small decoration. The concept should feel thoughtful and abstract, not a corporate infographic. Reference images shown above: image 1 is Yu Jun, image 2 is The Crowd, image 3 is True Demand. For this variant only image 1 is the palette/layout reference; ignore the other two.",
+      "source": "/Users/terry/.codex/generated_images/019f6452-637c-7e00-a1df-dc9560fd4adf/exec-d1d8aeb6-5302-408c-bb95-a7e438262b9f.png"
+    },
+    {
+      "slug": "the-crowd",
+      "title": "乌合之众 · The Crowd",
+      "year": "1895",
+      "name": "B · Room to breathe",
+      "color": "#c83a29",
+      "prompt": "Use case: stylized-concept. Create a replacement book-cover illustration for an existing editorial library. Portrait 2:3 canvas. Use the attached original ONLY to preserve its basic palette and upper-emblem / empty-lower-third layout; replace the overly detailed art. Flat graphic illustration with clean, confident curved edges and generous negative space, like a restrained mid-century book jacket. OPAQUE, perfectly uniform solid-color background covering every pixel edge to edge, including the entire bottom 35%. NO transparency, texture, grain, gradient, glow, shading, lighting, shadows, 3D, realistic materials, micro-details, tiny repeated marks, borders, text, letters, or numbers. Exactly one compact visual idea entirely within the upper 58%, with broad margins. Only three flat foreground colors maximum. Titles will be added separately in HTML; leave lower 35% completely blank. Book: The Crowd by Gustave Le Bon. Uniform deep-vermilion background. Replace the hundreds of dots with exactly FIVE large simple overlapping circular speech forms, each with a single subtle broad tail, arranged in a loose open group with generous space around the group. Use warm cream, amber and dark burgundy flat fills; crisp solid broad shapes. No small dots, bubbles inside bubbles, stippling, crowds of tiny heads, facial features or repetitive patterns. It should convey collective voices without visual density. All five forms visually large enough to read instantly at thumbnail size. Reference images shown above: image 1 is Yu Jun, image 2 is The Crowd, image 3 is True Demand. For this variant only image 2 is the palette/layout reference; ignore the other two.",
+      "source": "/Users/terry/.codex/generated_images/019f6452-637c-7e00-a1df-dc9560fd4adf/exec-aea50516-b92f-4d16-b72e-55a3646a4dcc.png"
+    },
+    {
+      "slug": "true-demand",
+      "title": "真需求 · True Demand",
+      "year": "2024",
+      "name": "C · Flat and focused",
+      "color": "#b82551",
+      "prompt": "Use case: stylized-concept. Create a replacement book-cover illustration for an existing editorial library. Portrait 2:3 canvas. Use the attached original ONLY to preserve its basic palette and upper-emblem / empty-lower-third layout; replace the overly detailed art. Flat graphic illustration with clean, confident curved edges and generous negative space, like a restrained mid-century book jacket. OPAQUE, perfectly uniform solid-color background covering every pixel edge to edge, including the entire bottom 35%. NO transparency, texture, grain, gradient, glow, shading, lighting, shadows, 3D, realistic materials, micro-details, tiny repeated marks, borders, text, letters, or numbers. Exactly one compact visual idea entirely within the upper 58%, with broad margins. Only three flat foreground colors maximum. Titles will be added separately in HTML; leave lower 35% completely blank. Book: True Demand by Liang Ning. Uniform raspberry-red background. Replace the realistic jeweled heart and ornate magnifying glass with one bold minimal cream magnifying-glass silhouette, a flat cream ring and short broad handle, framing a single simple amber heart. The interior of the ring is the same uniform raspberry background. Heart is one solid flat silhouette, without facets or highlights. No diamond, jewel, gem, sparkle, reflections, rays or ornamental handle. Restrained clean two-color emblem. Reference images shown above: image 1 is Yu Jun, image 2 is The Crowd, image 3 is True Demand. For this variant only image 3 is the palette/layout reference; ignore the other two.",
+      "source": "/Users/terry/.codex/generated_images/019f6452-637c-7e00-a1df-dc9560fd4adf/exec-167dbd75-e6e6-439e-a2d4-0d5bf5a4b50d.png"
+    }
+  ]
+}

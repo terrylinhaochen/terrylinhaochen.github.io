@@ -1,0 +1,77 @@
+<dialog id="reading-upload-modal" aria-label="Upload a book">
+  <div class="reading-upload-loading">
+    <button type="button" data-upload-dismiss aria-label="Close upload">×</button>
+    <p role="status">Loading book upload…</p>
+    <a href="/reading/upload/">Open upload separately</a>
+  </div>
+  <iframe title="Book upload and matching" data-upload-frame hidden></iframe>
+</dialog>
+<style>
+#reading-upload-modal{padding:0;border:1px solid var(--border);border-radius:24px;width:min(540px,calc(100vw - 32px));max-width:none;max-height:calc(100dvh - 32px);margin:auto;background:#fff;color:#282721;box-shadow:0 24px 100px #0003;overflow:hidden}
+#reading-upload-modal::backdrop{background:#18171466;backdrop-filter:blur(4px)}
+#reading-upload-modal iframe{display:block;border:0;width:100%;height:600px;max-height:calc(100dvh - 34px);background:transparent}
+#reading-upload-modal [hidden]{display:none!important}
+.reading-upload-loading{padding:32px;position:relative}.reading-upload-loading button{position:absolute;top:12px;right:18px;font-size:28px;cursor:pointer}.reading-upload-loading a{font-size:13px;text-decoration:underline}.recommend-button:focus-visible{outline:3px solid var(--primary);outline-offset:4px}
+</style>
+<script>
+(()=>{
+ const opener=document.querySelector('[data-open-reading-upload]');
+ const modal=document.getElementById('reading-upload-modal');
+ const frame=modal.querySelector('[data-upload-frame]');
+ const loading=modal.querySelector('.reading-upload-loading');
+ if(!opener||typeof modal.showModal!=='function')return;
+ let childDialog,resizeObserver,previousOverflow='',loadTimer;
+ const close=()=>{if(modal.open)modal.close()};
+ const sizeFrame=()=>{if(childDialog)frame.style.height=Math.min(childDialog.scrollHeight+2,window.innerHeight-34)+'px'};
+ modal.addEventListener('close',()=>{
+  document.body.style.overflow=previousOverflow;
+  if(childDialog?.open)childDialog.close();
+  opener.focus({preventScroll:true});
+ });
+ modal.querySelector('[data-upload-dismiss]').addEventListener('click',close);
+ modal.addEventListener('click',e=>{
+  if(e.target!==modal)return;const r=modal.getBoundingClientRect();
+  if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)close();
+ });
+ frame.addEventListener('load',()=>{
+  clearTimeout(loadTimer);
+  try{
+   const doc=frame.contentDocument;
+   childDialog=doc.querySelector('[data-book-request-dialog]');
+   if(!childDialog)throw new Error('Upload form unavailable');
+   // Keep the shared form and its styles isolated from the site's theme.
+   const style=doc.createElement('style');
+   style.textContent='html,body,main{background:transparent!important;min-height:0!important}main>div,main>section{display:none!important}dialog.add-book-dialog{position:fixed;inset:0 auto auto 0;margin:0!important;width:100%!important;max-width:none!important;max-height:100dvh!important;border:0!important;border-radius:0!important;box-shadow:none!important}dialog.add-book-dialog::backdrop{background:transparent!important;backdrop-filter:none!important}';
+   doc.head.append(style);
+   const privacy=childDialog.querySelector('.privacy-note');
+   if(privacy)privacy.append(' Confirmed details and email are sent to Answer with Books.');
+   childDialog.addEventListener('close',close);
+   doc.addEventListener('click',e=>{
+    const link=e.target.closest('a[href]');if(!link)return;
+    const url=new URL(link.href,location.href);
+    if(url.origin===location.origin&&url.pathname.startsWith('/reading/')||url.origin==='https://answerwithbooks.com'&&url.pathname.startsWith('/books/')){
+     e.preventDefault();location.assign(url.href);
+    }
+   });
+   resizeObserver?.disconnect();
+   resizeObserver=new ResizeObserver(sizeFrame);
+   resizeObserver.observe(childDialog.querySelector('.add-book-body'));
+   resizeObserver.observe(childDialog.querySelector('header'));
+   loading.hidden=true;frame.hidden=false;
+   if(modal.open){if(!childDialog.open)doc.querySelector('[data-open-book-request]').click();sizeFrame();doc.getElementById('book-query')?.focus()}
+   else if(childDialog.open)childDialog.close();
+  }catch(error){loading.querySelector('[role=status]').textContent='The upload form could not load. You can open it separately.'}
+ });
+ opener.addEventListener('click',e=>{
+  if(e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;
+  e.preventDefault();if(modal.open)return;
+  previousOverflow=document.body.style.overflow;document.body.style.overflow='hidden';modal.showModal();
+  if(childDialog){frame.contentDocument.querySelector('[data-open-book-request]').click();sizeFrame();frame.contentDocument.getElementById('book-query')?.focus()}
+  else if(!frame.hasAttribute('src')){
+   frame.src='/reading/upload/?modal=1';
+   loadTimer=setTimeout(()=>{loading.querySelector('[role=status]').textContent='Still loading. You can open the upload form separately.'},15000);
+  }
+ });
+ window.addEventListener('resize',sizeFrame);
+})();
+</script>

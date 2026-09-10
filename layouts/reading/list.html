@@ -14,8 +14,9 @@
     <h3>Have a book to add?</h3>
     <p>Upload a cover, PDF, or title. Review the match, then confirm.</p>
   </div>
-  <a class="recommend-button" href="/reading/upload/">Upload Book →</a>
+  <a class="recommend-button" href="/reading/upload/" data-open-reading-upload aria-haspopup="dialog" aria-controls="reading-upload-modal">Recommend a book →</a>
 </div>
+{{ partial "reading-upload-modal.html" . }}
 {{ partial "reading-cover-styles.html" . }}
 
 {{- $books := site.Data.books }}
