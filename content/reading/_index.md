@@ -1,11 +1,11 @@
 ---
 title: "Reading"
 url: "/reading/"
-summary: "Books I've read, books on the shelf, and recommendations from readers."
-description: "Terry Chen's book catalog with books read, personal notes, books on the shelf, and reader recommendations."
+summary: "Books I've read, books on the shelf, and editorial reading guides."
+description: "Terry Chen's book catalog with books read, personal notes, books on the shelf, editorial guides, and a simple book-upload flow."
 keywords: ["Terry Chen", "Reading", "Books", "Book Recommendations", "Book Notes"]
 hidemeta: true
 ShowBreadCrumbs: false
 ---
 
-A catalog of what I'm reading. Books I've finished carry my personal notes. Click a cover to read them. If you think there's something I should read next, recommend it below.
+A catalog of what I’m reading. Open any book for an editorial reading guide and any personal notes. Have a book to add? Upload a cover, PDF, or title, then confirm the match.

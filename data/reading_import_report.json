@@ -1,0 +1,294 @@
+{
+  "pastReads": 11,
+  "onTheShelf": 20,
+  "totalBooks": 31,
+  "covered": 31,
+  "reusedDigests": [
+    "the-mom-test",
+    "the-design-of-everyday-things",
+    "thinking-fast-and-slow",
+    "the-wisdom-of-crowds"
+  ],
+  "generatedCoverSlugs": [
+    "yujun-product-methodology",
+    "the-crowd",
+    "capital",
+    "the-globalization-paradox",
+    "the-great-divergence",
+    "taipei-people",
+    "the-peony-pavilion",
+    "miyazakiworld",
+    "disgrace",
+    "the-inevitable",
+    "outliers",
+    "duan-yongping-biography",
+    "the-light-of-operations",
+    "true-demand",
+    "how-to-win-friends",
+    "poor-charlies-almanack",
+    "mans-search-for-meaning",
+    "capitalism-socialism-democracy",
+    "the-score-takes-care-of-itself",
+    "steve-jobs",
+    "to-sell-is-human",
+    "on-task",
+    "the-technological-republic",
+    "zen-motorcycle-maintenance",
+    "a-culture-of-growth",
+    "value-zhang-lei",
+    "the-beginning-of-infinity"
+  ],
+  "readwiseSourceUnmodified": true,
+  "awbSourceCommit": "f0aa05b6f4eceec16045dc8284322b8abe941e1e",
+  "awbSourceHasLocalChanges": false,
+  "records": [
+    {
+      "title": "The Mom Test",
+      "slug": "the-mom-test",
+      "source": "https://answerwithbooks.com/books/the-mom-test/",
+      "wordCount": 1357,
+      "partial": false,
+      "readingStatus": "read"
+    },
+    {
+      "title": "The Design of Everyday Things",
+      "slug": "the-design-of-everyday-things",
+      "source": "https://answerwithbooks.com/books/the-design-of-everyday-things/",
+      "wordCount": 1837,
+      "partial": false,
+      "readingStatus": "read"
+    },
+    {
+      "title": "俞军产品方法论 (Yu Jun's Product Methodology)",
+      "slug": "yujun-product-methodology",
+      "source": "https://read.douban.com/ebook/130595723/",
+      "wordCount": 202,
+      "partial": false,
+      "readingStatus": "read"
+    },
+    {
+      "title": "The Crowd",
+      "slug": "the-crowd",
+      "source": "https://www.gutenberg.org/ebooks/445",
+      "wordCount": 198,
+      "partial": false,
+      "readingStatus": "read"
+    },
+    {
+      "title": "Capital (Das Kapital)",
+      "slug": "capital",
+      "source": "https://www.marxists.org/archive/marx/works/1867-c1/index.htm",
+      "wordCount": 210,
+      "partial": true,
+      "readingStatus": "read"
+    },
+    {
+      "title": "The Globalization Paradox",
+      "slug": "the-globalization-paradox",
+      "source": "https://www.hks.harvard.edu/publications/globalization-paradox",
+      "wordCount": 192,
+      "partial": false,
+      "readingStatus": "read"
+    },
+    {
+      "title": "The Great Divergence",
+      "slug": "the-great-divergence",
+      "source": "https://www.jstor.org/stable/j.ctv161f3dr",
+      "wordCount": 196,
+      "partial": false,
+      "readingStatus": "read"
+    },
+    {
+      "title": "台北人",
+      "slug": "taipei-people",
+      "source": "https://cup.columbia.edu/book/taipei-people/9789882370067",
+      "wordCount": 185,
+      "partial": false,
+      "readingStatus": "read"
+    },
+    {
+      "title": "牡丹亭",
+      "slug": "the-peony-pavilion",
+      "source": "https://www.cuhk.edu.hk/renditions/authors/tangxz.html",
+      "wordCount": 193,
+      "partial": false,
+      "readingStatus": "read"
+    },
+    {
+      "title": "Miyazakiworld",
+      "slug": "miyazakiworld",
+      "source": "https://yalebooks.yale.edu/book/9780300240962/miyazakiworld/",
+      "wordCount": 170,
+      "partial": false,
+      "readingStatus": "read"
+    },
+    {
+      "title": "耻",
+      "slug": "disgrace",
+      "source": "https://www.penguinrandomhouse.com/books/297589/disgrace-by-j-m-coetzee/",
+      "wordCount": 190,
+      "partial": false,
+      "readingStatus": "read"
+    },
+    {
+      "title": "Thinking, Fast and Slow",
+      "slug": "thinking-fast-and-slow",
+      "source": "https://answerwithbooks.com/books/thinking-fast-and-slow/",
+      "wordCount": 939,
+      "partial": false,
+      "readingStatus": "shelf"
+    },
+    {
+      "title": "The Wisdom of Crowds",
+      "slug": "the-wisdom-of-crowds",
+      "source": "https://answerwithbooks.com/books/the-wisdom-of-crowds/",
+      "wordCount": 1033,
+      "partial": false,
+      "readingStatus": "shelf"
+    },
+    {
+      "title": "The Inevitable (必然)",
+      "slug": "the-inevitable",
+      "source": "https://kk.org/books/the-inevitable/",
+      "wordCount": 165,
+      "partial": false,
+      "readingStatus": "shelf"
+    },
+    {
+      "title": "Outliers",
+      "slug": "outliers",
+      "source": "https://gladwell.com/books/outliers",
+      "wordCount": 155,
+      "partial": false,
+      "readingStatus": "shelf"
+    },
+    {
+      "title": "段永平传",
+      "slug": "duan-yongping-biography",
+      "source": "https://product.dangdang.com/29602326.html",
+      "wordCount": 163,
+      "partial": false,
+      "readingStatus": "shelf"
+    },
+    {
+      "title": "运营之光：我的互联网运营方法论与自白",
+      "slug": "the-light-of-operations",
+      "source": "https://read.douban.com/ebook/27118189/",
+      "wordCount": 160,
+      "partial": false,
+      "readingStatus": "shelf"
+    },
+    {
+      "title": "真需求 (True Demand)",
+      "slug": "true-demand",
+      "source": "https://book.douban.com/subject/37070351/",
+      "wordCount": 158,
+      "partial": false,
+      "readingStatus": "shelf"
+    },
+    {
+      "title": "How to Win Friends and Influence People",
+      "slug": "how-to-win-friends",
+      "source": "https://www.simonandschuster.com/books/How-to-Win-Friends-and-Influence-People/Dale-Carnegie/Dale-Carnegie-Books/9781982171452",
+      "wordCount": 148,
+      "partial": false,
+      "readingStatus": "shelf"
+    },
+    {
+      "title": "Poor Charlie's Almanack",
+      "slug": "poor-charlies-almanack",
+      "source": "https://stripepress.substack.com/p/preorder-poor-charlies-almanack-the",
+      "wordCount": 163,
+      "partial": false,
+      "readingStatus": "shelf"
+    },
+    {
+      "title": "Man's Search for Meaning",
+      "slug": "mans-search-for-meaning",
+      "source": "https://www.beacon.org/Assets/ClientPages/MansSearchForMeaningtg.aspx",
+      "wordCount": 157,
+      "partial": false,
+      "readingStatus": "shelf"
+    },
+    {
+      "title": "Capitalism, Socialism and Democracy",
+      "slug": "capitalism-socialism-democracy",
+      "source": "https://www.routledge.com/Capitalism-Socialism-and-Democracy/Schumpeter/p/book/9780415567893",
+      "wordCount": 158,
+      "partial": false,
+      "readingStatus": "shelf"
+    },
+    {
+      "title": "The Score Takes Care of Itself",
+      "slug": "the-score-takes-care-of-itself",
+      "source": "https://www.penguinrandomhouse.com/books/303810/the-score-takes-care-of-itself-by-bill-walsh-with-steve-jamison-and-craig-walsh/",
+      "wordCount": 161,
+      "partial": false,
+      "readingStatus": "shelf"
+    },
+    {
+      "title": "Steve Jobs",
+      "slug": "steve-jobs",
+      "source": "https://www.simonandschuster.com/books/Steve-Jobs/Walter-Isaacson/9781451648539",
+      "wordCount": 161,
+      "partial": false,
+      "readingStatus": "shelf"
+    },
+    {
+      "title": "To Sell Is Human",
+      "slug": "to-sell-is-human",
+      "source": "https://www.danpink.com/books/to-sell-is-human/",
+      "wordCount": 156,
+      "partial": false,
+      "readingStatus": "shelf"
+    },
+    {
+      "title": "On Task",
+      "slug": "on-task",
+      "source": "https://www.jstor.org/stable/j.ctv11hprj1",
+      "wordCount": 160,
+      "partial": false,
+      "readingStatus": "shelf"
+    },
+    {
+      "title": "The Technological Republic",
+      "slug": "the-technological-republic",
+      "source": "https://www.penguinrandomhouse.com/books/760945/the-technological-republic-by-alexander-c-karp-and-nicholas-w-zamiska/",
+      "wordCount": 156,
+      "partial": false,
+      "readingStatus": "shelf"
+    },
+    {
+      "title": "Zen and the Art of Motorcycle Maintenance",
+      "slug": "zen-motorcycle-maintenance",
+      "source": "https://b0f646cfbd7462424f7a-f9758a43fb7c33cc8adda0fd36101899.ssl.cf2.rackcdn.com/reading-guides/RG-9780688002305.pdf",
+      "wordCount": 159,
+      "partial": false,
+      "readingStatus": "shelf"
+    },
+    {
+      "title": "A Culture of Growth",
+      "slug": "a-culture-of-growth",
+      "source": "https://www.jstor.org/stable/j.ctt1wf4dft",
+      "wordCount": 162,
+      "partial": false,
+      "readingStatus": "shelf"
+    },
+    {
+      "title": "价值 (Value)",
+      "slug": "value-zhang-lei",
+      "source": "https://read.douban.com/ebook/158519375/",
+      "wordCount": 164,
+      "partial": false,
+      "readingStatus": "shelf"
+    },
+    {
+      "title": "The Beginning of Infinity",
+      "slug": "the-beginning-of-infinity",
+      "source": "https://beginningofinfinity.org/excerpt/",
+      "wordCount": 163,
+      "partial": false,
+      "readingStatus": "shelf"
+    }
+  ]
+}

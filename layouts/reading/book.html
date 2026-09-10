@@ -1,0 +1,41 @@
+{{ define "main" }}
+{{ partial "reading-cover-styles.html" . }}
+<article class="reading-detail">
+  <a class="reading-back" href="/reading/">← Reading shelf</a>
+  <header class="reading-book-header">
+    {{ $entry := index site.Data.reading_library .Title }}
+    {{ partial "reading-cover.html" $entry }}
+    <div><p class="reading-eyebrow">{{ if eq .Params.readingStatus "shelf" }}On the shelf · To read{{ else if .Params.partial }}Partially read{{ else }}From my past reads{{ end }}</p><h1>{{ .Title }}</h1><p class="reading-byline">{{ .Params.bookAuthor }} · {{ .Params.bookYear }}</p>
+      <a class="reading-primary" href="/reading/focus/?book={{ .Params.bookId }}">Speed read ↗</a>
+      <a class="reading-secondary" href="#my-question">Use with my question ↓</a>
+    </div>
+  </header>
+  <div class="reading-disclosure"><strong>{{ if eq .Params.editorialSourceLabel "Answer with Books editorial digest" }}Editorial digest{{ else }}Short reading guide{{ end }}</strong><p>An orientation to the book—not its original text or Terry’s personal notes.</p></div>
+  <div class="post-content">{{ .Content }}</div>
+  <section class="reading-source"><h2>Reading source</h2><a href="{{ .Params.editorialSource }}" target="_blank" rel="noopener noreferrer">{{ .Params.editorialSourceLabel }} ↗</a></section>
+  {{ if and .Params.personalNotes (not (in .Params.personalNotes "Notes coming soon")) }}<section class="post-content"><h2>My notes</h2>{{ .Params.personalNotes | markdownify }}</section>{{ end }}
+  <section id="my-question" class="reading-question" data-book-title="{{ .Title }}" data-book-url="https://chenterry.com{{ .RelPermalink }}">
+    <h2>Read with a question in mind</h2><p>Make a prompt to use with your preferred AI. Nothing is sent automatically.</p>
+    <label for="reading-question">What’s top of mind?</label><textarea id="reading-question" rows="3" placeholder="For example: how can I test this idea before committing?" maxlength="2000"></textarea>
+    <button class="reading-primary" type="button" id="copy-reading-prompt">Copy reading prompt</button><p id="reading-prompt-status" role="status"></p>
+    <textarea id="reading-prompt-fallback" rows="8" readonly hidden aria-label="Reading prompt to copy"></textarea>
+  </section>
+</article>
+<style>
+.reading-back{display:inline-block;color:var(--secondary);margin:0 0 32px;font-size:14px}
+.reading-book-header{display:grid;grid-template-columns:160px 1fr;gap:32px;align-items:center;margin-bottom:32px}
+.reading-book-header h1{font-size:32px;line-height:1.15;margin:8px 0 12px}
+.reading-eyebrow{color:var(--secondary);font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+.reading-byline{color:var(--secondary);font-size:16px;margin-bottom:20px}
+.reading-primary{display:inline-block;border:0;border-radius:8px;padding:10px 16px;background:var(--primary);color:var(--theme);font:600 14px/1.4 system-ui;cursor:pointer}
+.reading-secondary{display:block;margin-top:12px;font-size:13px;color:var(--secondary)}
+.reading-disclosure{border-block:1px solid var(--border);padding:16px 0;margin-bottom:32px;font-size:13px;color:var(--secondary)}
+.reading-disclosure p{margin:4px 0 0}.reading-source{border-top:1px solid var(--border);padding:24px 0;margin-top:32px}.reading-source h2{font-size:18px;margin-bottom:8px}.reading-source a{text-decoration:underline;color:var(--secondary);font-size:14px}
+.reading-question{background:var(--entry);border:1px solid var(--border);border-radius:14px;padding:24px;margin-top:24px;scroll-margin-top:24px}.reading-question h2{font-size:22px}.reading-question p{color:var(--secondary);font-size:14px;margin:8px 0 16px}.reading-question label{display:block;font-size:14px;font-weight:600;margin:16px 0 8px}.reading-question textarea{display:block;box-sizing:border-box;width:100%;padding:12px;border:1px solid var(--border);border-radius:8px;background:var(--theme);color:var(--primary);font:inherit;font-size:15px;margin:0 0 14px;resize:vertical}.reading-question textarea[hidden]{display:none}
+.awb-line-illustration svg{width:100%;height:auto;fill:var(--primary);font-size:13px}.awb-line-illustration__line{fill:none;stroke:var(--secondary);stroke-width:2}.awb-line-illustration figcaption{color:var(--secondary);font-size:13px}
+@media(max-width:500px){.reading-book-header{grid-template-columns:115px 1fr;gap:20px}.reading-book-header h1{font-size:25px}.reading-book-header .reading-art-caption strong{font-size:12px}.reading-book-header .reading-art-caption span{font-size:9px}.reading-question{padding:18px}.reading-byline{font-size:14px}}
+</style>
+<script>
+(()=>{const section=document.getElementById('my-question');const field=document.getElementById('reading-question');const status=document.getElementById('reading-prompt-status');document.getElementById('copy-reading-prompt').addEventListener('click',async()=>{const question=field.value.trim();if(!question){status.textContent='Add your question first.';field.focus();return;}const prompt=`My question: ${question}\n\nHelp me think about this using ${section.dataset.bookTitle}. Reading guide: ${section.dataset.bookUrl}\n\nIf you can access the guide, use it; otherwise ask me to paste it. Separate the book's ideas from your own applications, do not invent quotations, and suggest one concrete next step. Flag where the guide is too brief to support an answer.`;try{await navigator.clipboard.writeText(prompt);status.textContent='Copied. Paste it into your preferred AI.';}catch{const fallback=document.getElementById('reading-prompt-fallback');fallback.hidden=false;fallback.value=prompt;fallback.focus();fallback.select();status.textContent='Select and copy the prompt below.';}});})();
+</script>
+{{ end }}

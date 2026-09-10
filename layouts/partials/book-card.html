@@ -1,6 +1,14 @@
 {{- /* Renders one book card. Expects a dict: book, kind ("read"|"shelf"|"rec"), index */}}
 {{- $book := .book }}
+{{- $entry := index (site.Data.reading_library | default dict) $book.title }}
+{{- if $entry }}
+<a class="book-card book-card--digest" data-reading-status="{{ $entry.readingStatus }}" href="{{ $entry.url }}" aria-label="Read {{ $book.title }}">
+  {{ partial "reading-cover.html" $entry }}
+  <div class="book-meta"><h4>{{ $book.title }}</h4><p>{{ $book.author }}</p><p class="reading-guide-label">{{ if $entry.partial }}Partially read · {{ end }}Reading guide ↗</p></div>
+</a>
+{{- else }}
 {{- $cover := $book.cover }}
+
 {{- $coverOverrides := site.Data.books.cover_overrides | default dict }}
 {{- if not $cover }}
   {{- with index $coverOverrides $book.title }}
@@ -27,3 +35,5 @@
     {{- if eq .kind "rec" }}{{ with $book.recommended_by }}<p class="rec-by">via {{ . }}</p>{{ end }}{{ end }}
   </div>
 </div>
+
+{{- end }}

@@ -1,0 +1,312 @@
+{
+  "The Mom Test": {
+    "slug": "the-mom-test",
+    "url": "/reading/the-mom-test/",
+    "cover": "/images/reading-covers/the-mom-test.jpg",
+    "color": "#0096a6",
+    "title": "The Mom Test",
+    "year": 2013,
+    "partial": false,
+    "readingStatus": "read"
+  },
+  "The Design of Everyday Things": {
+    "slug": "the-design-of-everyday-things",
+    "url": "/reading/the-design-of-everyday-things/",
+    "cover": "/images/reading-covers/the-design-of-everyday-things.jpg",
+    "color": "#f2b70a",
+    "title": "Everyday Things",
+    "year": 1988,
+    "partial": false,
+    "readingStatus": "read"
+  },
+  "俞军产品方法论 (Yu Jun's Product Methodology)": {
+    "slug": "yujun-product-methodology",
+    "url": "/reading/yujun-product-methodology/",
+    "cover": "/images/reading-covers/yujun-product-methodology.png",
+    "color": "#59249a",
+    "title": "俞军产品方法论",
+    "year": 2019,
+    "partial": false,
+    "readingStatus": "read"
+  },
+  "The Crowd": {
+    "slug": "the-crowd",
+    "url": "/reading/the-crowd/",
+    "cover": "/images/reading-covers/the-crowd.png",
+    "color": "#b83725",
+    "title": "The Crowd",
+    "year": 1895,
+    "partial": false,
+    "readingStatus": "read"
+  },
+  "Capital (Das Kapital)": {
+    "slug": "capital",
+    "url": "/reading/capital/",
+    "cover": "/images/reading-covers/capital.png",
+    "color": "#811d38",
+    "title": "Capital",
+    "year": 1867,
+    "partial": true,
+    "readingStatus": "read"
+  },
+  "The Globalization Paradox": {
+    "slug": "the-globalization-paradox",
+    "url": "/reading/the-globalization-paradox/",
+    "cover": "/images/reading-covers/the-globalization-paradox.png",
+    "color": "#086e73",
+    "title": "Globalization Paradox",
+    "year": 2011,
+    "partial": false,
+    "readingStatus": "read"
+  },
+  "The Great Divergence": {
+    "slug": "the-great-divergence",
+    "url": "/reading/the-great-divergence/",
+    "cover": "/images/reading-covers/the-great-divergence.png",
+    "color": "#363997",
+    "title": "Great Divergence",
+    "year": 2000,
+    "partial": false,
+    "readingStatus": "read"
+  },
+  "台北人": {
+    "slug": "taipei-people",
+    "url": "/reading/taipei-people/",
+    "cover": "/images/reading-covers/taipei-people.png",
+    "color": "#147153",
+    "title": "台北人",
+    "year": 1971,
+    "partial": false,
+    "readingStatus": "read"
+  },
+  "牡丹亭": {
+    "slug": "the-peony-pavilion",
+    "url": "/reading/the-peony-pavilion/",
+    "cover": "/images/reading-covers/the-peony-pavilion.png",
+    "color": "#ab2764",
+    "title": "牡丹亭",
+    "year": 1598,
+    "partial": false,
+    "readingStatus": "read"
+  },
+  "Miyazakiworld": {
+    "slug": "miyazakiworld",
+    "url": "/reading/miyazakiworld/",
+    "cover": "/images/reading-covers/miyazakiworld.png",
+    "color": "#1763b2",
+    "title": "Miyazakiworld",
+    "year": 2018,
+    "partial": false,
+    "readingStatus": "read"
+  },
+  "耻": {
+    "slug": "disgrace",
+    "url": "/reading/disgrace/",
+    "cover": "/images/reading-covers/disgrace.png",
+    "color": "#914428",
+    "title": "耻 · Disgrace",
+    "year": 1999,
+    "partial": false,
+    "readingStatus": "read"
+  },
+  "Thinking, Fast and Slow": {
+    "slug": "thinking-fast-and-slow",
+    "url": "/reading/thinking-fast-and-slow/",
+    "cover": "/images/reading-covers/thinking-fast-and-slow.jpg",
+    "color": "#9c114c",
+    "title": "Thinking, Fast & Slow",
+    "year": 2011,
+    "partial": false,
+    "readingStatus": "shelf"
+  },
+  "The Wisdom of Crowds": {
+    "slug": "the-wisdom-of-crowds",
+    "url": "/reading/the-wisdom-of-crowds/",
+    "cover": "/images/reading-covers/the-wisdom-of-crowds.jpg",
+    "color": "#0877d9",
+    "title": "Wisdom of Crowds",
+    "year": 2004,
+    "partial": false,
+    "readingStatus": "shelf"
+  },
+  "The Inevitable (必然)": {
+    "slug": "the-inevitable",
+    "url": "/reading/the-inevitable/",
+    "cover": "/images/reading-covers/the-inevitable.png",
+    "color": "#087f99",
+    "title": "The Inevitable",
+    "year": 2016,
+    "partial": false,
+    "readingStatus": "shelf"
+  },
+  "Outliers": {
+    "slug": "outliers",
+    "url": "/reading/outliers/",
+    "cover": "/images/reading-covers/outliers.png",
+    "color": "#bd6128",
+    "title": "Outliers",
+    "year": 2008,
+    "partial": false,
+    "readingStatus": "shelf"
+  },
+  "段永平传": {
+    "slug": "duan-yongping-biography",
+    "url": "/reading/duan-yongping-biography/",
+    "cover": "/images/reading-covers/duan-yongping-biography.png",
+    "color": "#225cc0",
+    "title": "段永平传",
+    "year": 2023,
+    "partial": false,
+    "readingStatus": "shelf"
+  },
+  "运营之光：我的互联网运营方法论与自白": {
+    "slug": "the-light-of-operations",
+    "url": "/reading/the-light-of-operations/",
+    "cover": "/images/reading-covers/the-light-of-operations.png",
+    "color": "#663696",
+    "title": "运营之光",
+    "year": 2016,
+    "partial": false,
+    "readingStatus": "shelf"
+  },
+  "真需求 (True Demand)": {
+    "slug": "true-demand",
+    "url": "/reading/true-demand/",
+    "cover": "/images/reading-covers/true-demand.png",
+    "color": "#be3159",
+    "title": "真需求",
+    "year": 2024,
+    "partial": false,
+    "readingStatus": "shelf"
+  },
+  "How to Win Friends and Influence People": {
+    "slug": "how-to-win-friends",
+    "url": "/reading/how-to-win-friends/",
+    "cover": "/images/reading-covers/how-to-win-friends.png",
+    "color": "#207254",
+    "title": "Win Friends",
+    "year": 1936,
+    "partial": false,
+    "readingStatus": "shelf"
+  },
+  "Poor Charlie's Almanack": {
+    "slug": "poor-charlies-almanack",
+    "url": "/reading/poor-charlies-almanack/",
+    "cover": "/images/reading-covers/poor-charlies-almanack.png",
+    "color": "#79323e",
+    "title": "Poor Charlie",
+    "year": 2005,
+    "partial": false,
+    "readingStatus": "shelf"
+  },
+  "Man's Search for Meaning": {
+    "slug": "mans-search-for-meaning",
+    "url": "/reading/mans-search-for-meaning/",
+    "cover": "/images/reading-covers/mans-search-for-meaning.png",
+    "color": "#394785",
+    "title": "Search for Meaning",
+    "year": 1946,
+    "partial": false,
+    "readingStatus": "shelf"
+  },
+  "Capitalism, Socialism and Democracy": {
+    "slug": "capitalism-socialism-democracy",
+    "url": "/reading/capitalism-socialism-democracy/",
+    "cover": "/images/reading-covers/capitalism-socialism-democracy.png",
+    "color": "#236c71",
+    "title": "Capitalism & Democracy",
+    "year": 1942,
+    "partial": false,
+    "readingStatus": "shelf"
+  },
+  "The Score Takes Care of Itself": {
+    "slug": "the-score-takes-care-of-itself",
+    "url": "/reading/the-score-takes-care-of-itself/",
+    "cover": "/images/reading-covers/the-score-takes-care-of-itself.png",
+    "color": "#2659b2",
+    "title": "The Score",
+    "year": 2009,
+    "partial": false,
+    "readingStatus": "shelf"
+  },
+  "Steve Jobs": {
+    "slug": "steve-jobs",
+    "url": "/reading/steve-jobs/",
+    "cover": "/images/reading-covers/steve-jobs.png",
+    "color": "#48648f",
+    "title": "Steve Jobs",
+    "year": 2011,
+    "partial": false,
+    "readingStatus": "shelf"
+  },
+  "To Sell Is Human": {
+    "slug": "to-sell-is-human",
+    "url": "/reading/to-sell-is-human/",
+    "cover": "/images/reading-covers/to-sell-is-human.png",
+    "color": "#b95736",
+    "title": "To Sell Is Human",
+    "year": 2013,
+    "partial": false,
+    "readingStatus": "shelf"
+  },
+  "On Task": {
+    "slug": "on-task",
+    "url": "/reading/on-task/",
+    "cover": "/images/reading-covers/on-task.png",
+    "color": "#64419d",
+    "title": "On Task",
+    "year": 2020,
+    "partial": false,
+    "readingStatus": "shelf"
+  },
+  "The Technological Republic": {
+    "slug": "the-technological-republic",
+    "url": "/reading/the-technological-republic/",
+    "cover": "/images/reading-covers/the-technological-republic.png",
+    "color": "#233d78",
+    "title": "Tech Republic",
+    "year": 2025,
+    "partial": false,
+    "readingStatus": "shelf"
+  },
+  "Zen and the Art of Motorcycle Maintenance": {
+    "slug": "zen-motorcycle-maintenance",
+    "url": "/reading/zen-motorcycle-maintenance/",
+    "cover": "/images/reading-covers/zen-motorcycle-maintenance.png",
+    "color": "#187f83",
+    "title": "Zen & the Art",
+    "year": 1974,
+    "partial": false,
+    "readingStatus": "shelf"
+  },
+  "A Culture of Growth": {
+    "slug": "a-culture-of-growth",
+    "url": "/reading/a-culture-of-growth/",
+    "cover": "/images/reading-covers/a-culture-of-growth.png",
+    "color": "#6d7630",
+    "title": "A Culture of Growth",
+    "year": 2016,
+    "partial": false,
+    "readingStatus": "shelf"
+  },
+  "价值 (Value)": {
+    "slug": "value-zhang-lei",
+    "url": "/reading/value-zhang-lei/",
+    "cover": "/images/reading-covers/value-zhang-lei.png",
+    "color": "#8f3846",
+    "title": "价值 · Value",
+    "year": 2020,
+    "partial": false,
+    "readingStatus": "shelf"
+  },
+  "The Beginning of Infinity": {
+    "slug": "the-beginning-of-infinity",
+    "url": "/reading/the-beginning-of-infinity/",
+    "cover": "/images/reading-covers/the-beginning-of-infinity.png",
+    "color": "#344dad",
+    "title": "Beginning of Infinity",
+    "year": 2011,
+    "partial": false,
+    "readingStatus": "shelf"
+  }
+}

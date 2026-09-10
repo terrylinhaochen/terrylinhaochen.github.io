@@ -9,16 +9,14 @@
 </div>
 {{- end }}
 
-{{- $formUrl := site.Params.reading.recommendForm }}
-{{- if $formUrl }}
 <div class="recommend-banner">
   <div>
-    <h3>Recommend me a book</h3>
-    <p>Have a book that you'd recommend? Send it over. I'll add it to the gallery.</p>
+    <h3>Have a book to add?</h3>
+    <p>Upload a cover, PDF, or title. Review the match, then confirm.</p>
   </div>
-  <a class="recommend-button" href="{{ $formUrl }}" target="_blank" rel="noopener">Recommend a Book →</a>
+  <a class="recommend-button" href="/reading/upload/">Upload Book →</a>
 </div>
-{{- end }}
+{{ partial "reading-cover-styles.html" . }}
 
 {{- $books := site.Data.books }}
 
@@ -44,7 +42,7 @@
 {{- end }}
 
 <!-- On the Shelf -->
-<h2 class="reading-section-title">On the Shelf</h2>
+<h2 class="reading-section-title" id="on-the-shelf">On the Shelf</h2>
 {{- if or $books.shelf $rw.shelf }}
 <div class="book-gallery reading-collapsible" data-visible-rows="3">
   {{- range $books.shelf }}
