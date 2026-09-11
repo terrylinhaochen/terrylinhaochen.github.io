@@ -13,7 +13,7 @@ personalNotes: |
   *(Notes coming soon.)*
 partial: false
 readingStatus: read
-coverArt: /images/reading-covers/the-mom-test.jpg
+coverArt: /images/reading-covers/the-mom-test-solid.png
 coverTitle: The Mom Test
 coverColor: '#0096a6'
 hidemeta: true

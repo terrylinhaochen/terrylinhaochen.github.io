@@ -1,0 +1,33 @@
+{
+  "providers": [
+    {
+      "id": "chatgpt",
+      "label": "ChatGPT",
+      "url": "https://chatgpt.com/",
+      "icon": "/reading-ai/openai.svg"
+    },
+    {
+      "id": "claude",
+      "label": "Claude",
+      "url": "https://claude.ai/new",
+      "icon": "/reading-ai/claude.svg"
+    },
+    {
+      "id": "gemini",
+      "label": "Gemini",
+      "url": "https://gemini.google.com/app",
+      "icon": "/reading-ai/gemini.svg"
+    },
+    {
+      "id": "grok",
+      "label": "Grok",
+      "url": "https://grok.com/",
+      "icon": "/reading-ai/grok.svg"
+    }
+  ],
+  "skillUrl": "https://raw.githubusercontent.com/Crowdlisten/Crowdlisten_books/main/skill/answer-with-books/SKILL.md",
+  "promptTemplate": "Start a personalized reading experience for ${title} by ${author}.\n\nBook digest: ${bookUrl}\nSkill instructions: ${skillUrl}\n\nRead both, follow the skill's Book URL Contract, and begin.",
+  "sourceComponent": "src/components/BookDigestPersonalizer.astro",
+  "sourceCommit": "f0aa05b6f4eceec16045dc8284322b8abe941e1e",
+  "sourceHash": "6c4aebbcc80b6891f8bf9d34b5b5a61daa2c49e3b5c7d33e4f1ed9ef62c371d1"
+}

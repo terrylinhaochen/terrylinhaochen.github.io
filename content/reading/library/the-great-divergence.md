@@ -13,7 +13,7 @@ personalNotes: |
   *(Notes coming soon.)*
 partial: false
 readingStatus: read
-coverArt: /images/reading-covers/the-great-divergence.png
+coverArt: /images/reading-covers/the-great-divergence-solid.png
 coverTitle: Great Divergence
 coverColor: '#363997'
 hidemeta: true

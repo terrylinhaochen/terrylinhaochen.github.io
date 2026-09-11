@@ -12,7 +12,7 @@ editorialSourceLabel: 'Routledge: book overview'
 personalNotes: ''
 partial: false
 readingStatus: shelf
-coverArt: /images/reading-covers/capitalism-socialism-democracy.png
+coverArt: /images/reading-covers/capitalism-socialism-democracy-solid.png
 coverTitle: Capitalism & Democracy
 coverColor: '#236c71'
 hidemeta: true

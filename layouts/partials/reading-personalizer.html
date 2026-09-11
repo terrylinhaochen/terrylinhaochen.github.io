@@ -1,0 +1,26 @@
+{{ $handoff := site.Data.reading_ai_handoff }}
+{{ $prompt := replace $handoff.promptTemplate "${title}" .Title }}
+{{ $prompt = replace $prompt "${author}" .Params.bookAuthor }}
+{{ $prompt = replace $prompt "${bookUrl}" (printf "https://chenterry.com%s" .RelPermalink) }}
+{{ $prompt = replace $prompt "${skillUrl}" $handoff.skillUrl }}
+{{ $prompt = printf "%s\n\nApply the Book URL Contract to this chenterry.com reading guide. It is an editorial orientation, not the full book or Terry's personal notes. Do not overstate its coverage or invent quotations. If you cannot access the guide, ask me to paste it. Distinguish source ideas from your own applications, and never invent personal context." $prompt }}
+<section id="my-question" class="reading-personalizer" data-book-personalizer>
+ <div class="personalizer-layout">
+  <div><p class="personalizer-eyebrow">Personalize</p><h2>Connect this book to your experience.</h2><p class="personalizer-description">Read it in scope of your own experience. Select the ideas that matter to you, connect them to your context, and turn them into something you can use.</p></div>
+  <div class="personalizer-actions"><p class="personalizer-eyebrow">Open in</p>
+   <div class="personalizer-providers" role="group" aria-label="Choose your preferred AI">
+    {{ range $handoff.providers }}<button type="button" data-ai-provider="{{ .id }}" data-ai-url="{{ .url }}" aria-label="{{ .label }}" title="{{ .label }}"><img src="{{ .icon }}" alt="" width="28" height="28"></button>{{ end }}
+   </div>
+   <a class="personalizer-go" href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer" data-personalize-button>Personalize in ChatGPT</a>
+  </div>
+ </div>
+ <p class="personalizer-status" data-personalize-status aria-live="polite">Your choice is remembered. Personalization follows the <a href="{{ $handoff.skillUrl }}" target="_blank" rel="noopener noreferrer">Answer with Books skill</a>.</p>
+ <p class="personalizer-privacy">Opens your chosen AI with the book prompt. Nothing is sent until you click.</p>
+ <details class="personalizer-fallback"><summary>View or copy prompt</summary><textarea readonly rows="9" aria-label="Personalized reading prompt" data-personalize-prompt>{{ $prompt }}</textarea></details>
+</section>
+{{ $version := md5 (readFile "static/reading-ai/personalizer.js") }}
+<script type="module" src="/reading-ai/personalizer.js?v={{ $version }}"></script>
+<style>
+.reading-personalizer{padding:28px;border-radius:24px;background:#242321;color:#fff;margin-top:32px;scroll-margin-top:24px}.personalizer-layout{display:grid;grid-template-columns:minmax(0,1fr) 250px;align-items:center;gap:30px}.reading-personalizer h2{font:500 32px/1.15 Georgia,serif;margin:12px 0 16px;color:#fff}.personalizer-eyebrow{font:600 11px/1.4 system-ui;letter-spacing:.12em;text-transform:uppercase;color:#fff9;margin:0}.personalizer-description{font-size:15px;line-height:1.6;color:#fffb;margin:0}.personalizer-providers{display:flex;gap:10px;margin:14px 0}.personalizer-providers button{display:grid;place-items:center;width:54px;height:54px;border-radius:12px;background:#fff;border:2px solid transparent;cursor:pointer;padding:10px;opacity:.65}.personalizer-providers button[aria-pressed=true]{opacity:1;outline:2px solid #fff9;outline-offset:3px}.personalizer-providers button:hover{opacity:1}.personalizer-providers img{width:28px;height:28px;display:block}.personalizer-go{display:block;padding:12px 14px;text-align:center;border-radius:999px;background:#fff;color:#242321;font:600 14px/1.4 system-ui}.personalizer-go:focus-visible,.personalizer-providers button:focus-visible{outline:3px solid #fed876;outline-offset:4px}.personalizer-status{font-size:13px;line-height:1.5;color:#fff9;min-height:20px;margin:22px 0 0}.personalizer-status a{text-decoration:underline}.personalizer-privacy{font-size:11px;line-height:1.5;color:#fff9;margin:10px 0 0}.reading-personalizer [hidden]{display:none!important}@media(max-width:760px){.personalizer-layout{grid-template-columns:1fr;gap:24px}.personalizer-actions{max-width:280px}.reading-personalizer{padding:22px}.reading-personalizer h2{font-size:28px}}
+.personalizer-fallback{margin-top:12px;font-size:12px;color:#fff9}.personalizer-fallback summary{cursor:pointer}.personalizer-fallback textarea{width:100%;padding:12px;margin-top:12px;border:1px solid #fff5;border-radius:8px;background:#fff;color:#242321;font:13px/1.5 system-ui;resize:vertical;box-sizing:border-box}
+</style>

@@ -6,6 +6,7 @@ The Hugo reading catalog remains the source of Terry's personal reading history.
 
 - The real Answer with Books `AddBookDialog`, book matching, PDF extraction, image OCR, email validation and confirmation handler. The export route is `src/pages/embed/book-upload.astro` in the AWB web repo.
 - The existing focused reader, with this site's 31-book payload and return links.
+- The AWB `BookDigestPersonalizer` provider data, icons, prompt template and client behavior. `scripts/sync-book-personalizer.mjs` compiles its TypeScript and is run by the main import. Hugo renders a site-styled adapter with source-guide limitations and a manual-copy fallback. The generated `static/reading-ai/` assets and `data/reading_ai_handoff.json` are committed, so production builds do not require the AWB repository.
 - Four existing editorial digests and covers. Twenty-seven short, source-linked orientations are in `data/reading_guides.json` and `data/shelf_reading_guides.json`; these are not full-text books or Terry's personal notes. Original generated artwork and prompts are stored locally, with live HTML titles overlaid for legibility.
 
 ## Rebuild the shared export
@@ -20,11 +21,11 @@ The import validates that each currently included past read and shelf book has a
 
 Run `hugo --destination /tmp/chenterry-reading-preview --baseURL http://127.0.0.1:1313/`, then serve that directory on port 1313. Run `node scripts/test-reading-integration.mjs /path/to/answerwithbooks/web`. The test uses Playwright from the AWB repo and an installed Chrome; set `READING_TEST_URL` to override the preview URL.
 
-The browser test checks all 31 cards, covers and detail routes, including 20 unread-status checks; all 31 focus-reader return paths and matching for all 20 shelf titles; personalization prompt copying; required email; one-character Chinese title matching; actual PDF extraction and image OCR; mobile overflow and local asset errors. Supabase responses are mocked to test submission and local persistence without creating production requests.
+The browser test checks all 31 cards, covers and detail routes, including 20 unread-status checks; all 31 focus-reader return paths and matching for all 20 shelf titles; AI handoff prompt generation; required email; one-character Chinese title matching; actual PDF extraction and image OCR; mobile overflow and local asset errors. Supabase responses are mocked to test submission and local persistence without creating production requests.
 
 ## Data and privacy
 
-Uploads are parsed in the browser. Unknown matches can query Open Library. Confirmation sends book metadata and the required email to the existing AWB `book_requests` service using its public browser client and existing row-level security. No service-role key is bundled, and raw files are not stored. The resulting request and local browser additions are separate from Terry's public history. Existing-book confirmations link directly to a guide; new-book requests require editorial processing before a digest is ready. The copied personalization prompt is a user-controlled handoff, not an integrated LLM endpoint.
+Uploads are parsed in the browser. Unknown matches can query Open Library. Confirmation sends book metadata and the required email to the existing AWB `book_requests` service using its public browser client and existing row-level security. No service-role key is bundled, and raw files are not stored. The resulting request and local browser additions are separate from Terry's public history. Existing-book confirmations link directly to a guide; new-book requests require editorial processing before a digest is ready. The Open in AI control is a user-controlled handoff, not an integrated LLM endpoint. ChatGPT, Claude and Grok receive prompt query links as in AWB; Gemini uses a copied prompt. Provider selection is remembered on this site. Run `node scripts/test-reading-personalizer.mjs` to check all four provider handoffs, clipboard fallback, and the updated covers; provider destinations are mocked rather than sending test prompts to real AI services.
 
 ## Publishing
 

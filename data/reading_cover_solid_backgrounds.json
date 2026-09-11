@@ -1,0 +1,36 @@
+{
+  "method": "Built-in image generation",
+  "change": "Background only; retain artwork and HTML titles",
+  "variants": [
+    {
+      "slug": "how-to-win-friends",
+      "prompt": "Edit the FIRST attached image (How to Win Friends, handshake with two speech bubbles). The SECOND image is unrelated; ignore it. Change ONLY the background: replace the mottled/textured/translucent dark green field and any halo outside the sticker with a fully OPAQUE perfectly uniform SOLID forest-green fill (#146343), edge to edge. Preserve the exact central illustration: handshake, two speech bubbles, three rays, all outlines, proportions, position, colors, small graphic highlights, and cutout cream border. Do not redraw, simplify, add or remove details within the illustration. Preserve portrait 2:3 layout and the empty lower third reserved for HTML title. No new text or letters. No background texture, grain, gradients, glow, vignette, mottling, shadows or transparency. It must read as a flat single-color book jacket behind the unchanged illustration.",
+      "source": "/Users/terry/.codex/generated_images/019f6452-637c-7e00-a1df-dc9560fd4adf/exec-c74678a4-2d87-4b41-a38e-a0451249ce22.png",
+      "destination": "static/images/reading-covers/how-to-win-friends.png"
+    },
+    {
+      "slug": "poor-charlies-almanack",
+      "prompt": "Edit the SECOND attached image (Poor Charlie's Almanack, three interlocking gears). The FIRST image is unrelated; ignore it. Change ONLY the background: replace the mottled/textured/translucent burgundy field and any glowing halo outside the gear sticker with a fully OPAQUE perfectly uniform SOLID burgundy fill (#781c37), edge to edge. Preserve the exact central illustration: all three interlocking gears, spokes, outlines, proportions, position, colors, internal shading, and cutout cream border. Do not redraw, simplify, add or remove details within the gears. Preserve portrait 2:3 layout and the empty lower third reserved for HTML title. No new text or letters. No background texture, grain, gradients, glow, vignette, mottling, shadows or transparency. It must read as a flat single-color book jacket behind the unchanged illustration.",
+      "source": "/Users/terry/.codex/generated_images/019f6452-637c-7e00-a1df-dc9560fd4adf/exec-dea3bd06-0ff2-475e-8a65-f908983d5215.png",
+      "destination": "static/images/reading-covers/poor-charlies-almanack.png"
+    },
+    {
+      "slug": "the-mom-test",
+      "prompt": "Use case: precise-object-edit. Edit target: the attached teal portrait book-cover illustration for The Mom Test. Change ONLY its background to a single fully opaque flat solid teal #009eac, uniform edge to edge. Remove the lighter rectangular band across the bottom third and all background gradients, texture, grain, vignette, and seams. Preserve the existing microphone-in-speech-circle illustration exactly: position, scale, yellow and orange colors, thick white outline and small offset dark teal graphic shadow. Preserve portrait 2:3 composition and empty lower third for the separate HTML book title. No text, no letters, no new elements. Do not redesign or add detail to the illustration.",
+      "source": "/Users/terry/.codex/generated_images/019f6452-637c-7e00-a1df-dc9560fd4adf/exec-090ac91d-b432-4a8a-8886-74b891a23942.png",
+      "destination": "static/images/reading-covers/the-mom-test-solid.png"
+    },
+    {
+      "slug": "capitalism-socialism-democracy",
+      "prompt": "Use case: precise-object-edit. Edit target: FIRST of the two attached images, the factory/tree/gear cover illustration for Capitalism, Socialism and Democracy. Ignore the mountain/railway image. Change only the background and the rough outer halo: replace all transparent or mottled background with fully opaque perfectly uniform SOLID teal #236c71, edge to edge. Remove fuzzy grain and glow outside the cream sticker outline so its outer edge is crisp and clean. Preserve the factory, tree, sun, people, gear, outlines, positions, scale, and illustration colors. Keep the same portrait 2:3 composition and empty bottom third for separate HTML title. No text or letters. No background gradient, texture, grain, seams, lighting, shadow, vignette or transparency. Do not redesign the artwork.",
+      "source": "/Users/terry/.codex/generated_images/019f6452-637c-7e00-a1df-dc9560fd4adf/exec-cd9ce3f6-7e6e-469a-9200-31e88fc7822c.png",
+      "destination": "static/images/reading-covers/capitalism-socialism-democracy-solid.png"
+    },
+    {
+      "slug": "the-great-divergence",
+      "prompt": "Use case: precise-object-edit. Edit target: SECOND of the two attached images, the mountain and diverging railway illustration for The Great Divergence. Ignore the factory/tree/gear image. Change only the background and the rough outer halo: replace all transparent or mottled background with fully opaque perfectly uniform SOLID indigo #363997, edge to edge. Remove any fuzzy grain, glow and artifacts outside the cream sticker outline so its outer edge is crisp and clean. Preserve the mountain, two railway paths, trees, sun, clouds, landscape, outlines, positions, scale and illustration colors. Keep the same portrait 2:3 composition and empty bottom third for separate HTML title. No text or letters. No background gradient, texture, grain, seams, lighting, shadow, vignette or transparency. Do not redesign the artwork.",
+      "source": "/Users/terry/.codex/generated_images/019f6452-637c-7e00-a1df-dc9560fd4adf/exec-cea7d4bd-3f83-435e-8dcb-a3f4ff9b3771.png",
+      "destination": "static/images/reading-covers/the-great-divergence-solid.png"
+    }
+  ]
+}

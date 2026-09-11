@@ -2,7 +2,7 @@
   "The Mom Test": {
     "slug": "the-mom-test",
     "url": "/reading/the-mom-test/",
-    "cover": "/images/reading-covers/the-mom-test.jpg",
+    "cover": "/images/reading-covers/the-mom-test-solid.png",
     "color": "#0096a6",
     "title": "The Mom Test",
     "year": 2013,
@@ -62,7 +62,7 @@
   "The Great Divergence": {
     "slug": "the-great-divergence",
     "url": "/reading/the-great-divergence/",
-    "cover": "/images/reading-covers/the-great-divergence.png",
+    "cover": "/images/reading-covers/the-great-divergence-solid.png",
     "color": "#363997",
     "title": "Great Divergence",
     "year": 2000,
@@ -212,7 +212,7 @@
   "Capitalism, Socialism and Democracy": {
     "slug": "capitalism-socialism-democracy",
     "url": "/reading/capitalism-socialism-democracy/",
-    "cover": "/images/reading-covers/capitalism-socialism-democracy.png",
+    "cover": "/images/reading-covers/capitalism-socialism-democracy-solid.png",
     "color": "#236c71",
     "title": "Capitalism & Democracy",
     "year": 1942,

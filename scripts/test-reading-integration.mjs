@@ -16,14 +16,15 @@ try{
  await page.goto(base+'/reading/');assert.ok(await page.locator('.book-card[hidden]').evaluateAll(cs=>cs.every(c=>getComputedStyle(c).display==='none')),'Collapsed cards must be hidden');await page.locator('.gallery-toggle:not([hidden])').evaluateAll(bs=>bs.forEach(b=>b.click()));for(const card of await page.locator('.book-card--digest').all()) await card.scrollIntoViewIfNeeded();
  assert.equal(await page.locator('.book-card--digest').count(),31);assert.equal(await page.locator('[data-reading-status=read]').count(),11);assert.equal(await page.locator('[data-reading-status=shelf]').count(),20);
  await page.waitForFunction(()=>[...document.querySelectorAll('.book-card--digest img')].every(i=>i.complete&&i.naturalWidth>0));
- assert.equal(await page.getByRole('link',{name:'Recommend a Book →'}).count(),0);
+ assert.equal(await page.locator('[data-open-reading-upload]').count(),1);
  for(const book of Object.values(library)){
   const response=await page.goto(base+book.url);assert.equal(response.status(),200);
   assert.ok((await page.locator('.post-content').first().innerText()).length>500);
   assert.ok(await page.getByRole('link',{name:'Speed read ↗'}).isVisible());
   assert.equal(await page.locator('.reading-art-caption strong').innerText(),book.title);if(book.readingStatus==='shelf')assert.match(await page.locator('.reading-eyebrow').innerText(),/On the shelf.*To read/i);
   await page.getByRole('link',{name:'Speed read ↗'}).click();
-  await page.waitForFunction(()=>document.querySelector('[data-reader-book]')?.textContent!=='Focused reading');
+  await page.waitForURL('**/reading/focus/**');
+  await page.waitForFunction(url=>document.querySelector('[data-reader-exit]')?.getAttribute('href')?.startsWith(url),book.url);
   assert.ok((await page.locator('[data-reader-exit]').getAttribute('href')).startsWith(book.url));
 
  }
@@ -35,7 +36,7 @@ try{
  }
  await page.goto(base+'/reading/the-mom-test/');
 
- await page.getByLabel('What’s top of mind?').fill('How can I test an idea?');await page.getByRole('button',{name:'Copy reading prompt'}).click();await page.waitForFunction(()=>/Copied|Select and copy/.test(document.getElementById('reading-prompt-status').textContent));
+ assert.equal(await page.locator('[data-ai-provider]').count(),4);const aiPrompt=new URL(await page.locator('[data-personalize-button]').getAttribute('href')).searchParams.get('q');assert.ok(aiPrompt.includes('https://chenterry.com/reading/the-mom-test/'));assert.ok(aiPrompt.includes('Book URL Contract'));
  await page.getByRole('link',{name:'Speed read ↗'}).click();
  await page.waitForFunction(()=>document.querySelector('[data-reader-title]')?.textContent!=='Choose a book to start reading');
  const payload=JSON.parse(await page.locator('#speed-reader-data').textContent());assert.equal(payload.books.length,31);assert.ok(!JSON.stringify(payload).includes('<svg'));assert.equal(payload.bookBasePath,'/reading/');

@@ -1,5 +1,6 @@
 /** Run after the AWB build: node scripts/import-answer-with-books.mjs /path/to/answerwithbooks/web */
 import fs from 'node:fs';
+import {syncBookPersonalizer} from './sync-book-personalizer.mjs';
 import path from 'node:path';
 import {execFileSync} from 'node:child_process';
 import { createRequire } from 'node:module';
@@ -12,6 +13,9 @@ const past=[...manual.read,...rw.read.filter(b=>!manual.readwise_exclude.include
 const shelf=[...manual.shelf,...(rw.shelf||[]).filter(b=>!manual.readwise_exclude.includes(b.title))];
 const catalogBooks=[...past.map(b=>({...b,readingStatus:'read'})),...shelf.map(b=>({...b,readingStatus:'shelf'}))];
 const additions=[...JSON.parse(fs.readFileSync('data/reading_guides.json','utf8')),...JSON.parse(fs.readFileSync('data/shelf_reading_guides.json','utf8'))];
+// Keep approved personal-site cover edits when refreshing the shared AWB content.
+const coverOverrides=fs.existsSync('data/reading_cover_solid_backgrounds.json')
+ ? Object.fromEntries(JSON.parse(fs.readFileSync('data/reading_cover_solid_backgrounds.json','utf8')).variants.map(v=>[v.slug,v.destination.replace(/^static/, '')])) : {};
 const sharedIds=['the-mom-test','the-design-of-everyday-things','thinking-fast-and-slow','the-wisdom-of-crowds'];
 const shared=sharedIds.map(slug=>{const b=parseBook(path.join(awb,'src/content/books',slug+'.md'));return {...b,slug,source:`https://answerwithbooks.com/books/${slug}/`,sourceLabel:'Answer with Books editorial digest',description:b.oneLiner};});
 const coverTitles={'thinking-fast-and-slow':'Thinking, Fast & Slow','the-wisdom-of-crowds':'Wisdom of Crowds'};
@@ -28,8 +32,8 @@ const records=catalogBooks.map(b=>{const g=all.find(g=>g.title===b.title);if(!g)
 if(new Set(records.map(b=>b.slug)).size!==catalogBooks.length)throw Error('Duplicate import');
 fs.mkdirSync('content/reading/library',{recursive:true});fs.mkdirSync('static/images/reading-covers',{recursive:true});
 for(const b of records){
- const reused=sharedIds.includes(b.slug);const cover=`/images/reading-covers/${b.slug}.${reused?'jpg':'png'}`;
- if(reused)fs.copyFileSync(path.join(awb,'public/covers',b.slug+'.jpg'),'static'+cover);
+ const reused=sharedIds.includes(b.slug);const cover=coverOverrides[b.slug] || `/images/reading-covers/${b.slug}.${reused?'jpg':'png'}`;
+ if(reused && !coverOverrides[b.slug])fs.copyFileSync(path.join(awb,'public/covers',b.slug+'.jpg'),'static'+cover);
  if(!fs.existsSync('static'+cover))throw Error(`Missing cover for ${b.title}: ${cover}`);
  const meta={title:b.title,description:b.description,url:`/reading/${b.slug}/`,layout:'book',type:'reading',bookId:b.slug,bookAuthor:b.originalAuthor,bookYear:b.year,editorialSource:b.source,editorialSourceLabel:b.sourceLabel,personalNotes:b.personalNotes,partial:b.partial,readingStatus:b.readingStatus,coverArt:cover,coverTitle:b.shortTitle||(b.slug==='the-design-of-everyday-things'?'Everyday Things':b.title),coverColor:b.color||(b.slug==='the-mom-test'?'#0096a6':'#f2b70a'),hidemeta:true,ShowBreadCrumbs:false};
  fs.writeFileSync(`content/reading/library/${b.slug}.md`,'---\n'+yaml.dump(meta,{lineWidth:-1})+'---\n\n'+b.body.trim()+'\n');
@@ -54,3 +58,5 @@ upload=upload.replace(m[1],json(catalog)).replaceAll('href="https://chenterry.co
 for(const [route,html] of [['focus',reader],['upload',upload]]){const dir=`static/reading/${route}`;fs.mkdirSync(dir,{recursive:true});fs.writeFileSync(path.join(dir,'index.html'),html.replace(/(<link rel="canonical" href=")[^"]+("[^>]*>)/,`$1https://chenterry.com/reading/${route}/$2`));}
 fs.writeFileSync('data/reading_import_report.json',JSON.stringify({pastReads:past.length,onTheShelf:shelf.length,totalBooks:catalogBooks.length,covered:records.length,reusedDigests:sharedIds,generatedCoverSlugs:additions.map(b=>b.slug),readwiseSourceUnmodified:true,awbSourceCommit:execFileSync('git',['rev-parse','HEAD'],{cwd:awb,encoding:'utf8'}).trim(),awbSourceHasLocalChanges:!!execFileSync('git',['status','--porcelain'],{cwd:awb,encoding:'utf8'}).trim(),records:records.map(b=>({title:b.title,slug:b.slug,source:b.source,wordCount:clean(b.body).split(/\s+/).length,partial:b.partial,readingStatus:b.readingStatus}))},null,2)+'\n');
 console.log(`Imported ${records.length}/${catalogBooks.length} books (${past.length} past reads, ${shelf.length} on the shelf); reused ${shared.length} AWB digests and shared upload/reader components.`);
+
+syncBookPersonalizer(awb);
