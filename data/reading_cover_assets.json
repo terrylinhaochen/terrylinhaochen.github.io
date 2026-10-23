@@ -1,0 +1,163 @@
+{
+  "awbCommit": "28d3cac4998109ff4e16fcd09c6cb9cd946edc7d",
+  "jacketCssSha256": "90cc11a65a0670408734ef7160c87f3852a7a4a6d75de21fe15cf375cf98c084",
+  "books": {
+    "the-mom-test": {
+      "cover": "/images/reading-covers/awb/the-mom-test.jpg",
+      "source": "https://answerwithbooks.com/covers/the-mom-test.jpg",
+      "sha256": "179b0d63458a39b1e69c24868a9153e4014b44852682e2dee12ccac494254d33"
+    },
+    "the-design-of-everyday-things": {
+      "cover": "/images/reading-covers/awb/the-design-of-everyday-things.jpg",
+      "source": "https://answerwithbooks.com/covers/the-design-of-everyday-things.jpg",
+      "sha256": "efe3280bc53d6fe4d3f5a1169dc341134a97e59362cf40a4135a1cd2bcc051fc"
+    },
+    "the-crowd": {
+      "cover": "/images/reading-covers/awb/the-crowd.png",
+      "source": "https://answerwithbooks.com/covers/the-crowd.png",
+      "sha256": "237755bc42aa25611664855dcb9cee1b652b90d339a02b3b82907b7d1dbd15e1"
+    },
+    "thinking-fast-and-slow": {
+      "cover": "/images/reading-covers/awb/thinking-fast-and-slow.jpg",
+      "source": "https://answerwithbooks.com/covers/thinking-fast-and-slow.jpg",
+      "sha256": "e0e178ba8cefc9d930f6d791df1c2b629260618308baf2e37965c3e3096f2358"
+    },
+    "the-wisdom-of-crowds": {
+      "cover": "/images/reading-covers/awb/the-wisdom-of-crowds.jpg",
+      "source": "https://answerwithbooks.com/covers/the-wisdom-of-crowds.jpg",
+      "sha256": "cdbc878c2cdd9fba1613c1bea6a52d78ec003d2b1d7491267224e5639d110a2b"
+    }
+  },
+  "retained": [
+    {
+      "title": "俞军产品方法论 (Yu Jun's Product Methodology)",
+      "slug": "yujun-product-methodology",
+      "cover": "/images/reading-covers/yujun-product-methodology.png"
+    },
+    {
+      "title": "Capital (Das Kapital)",
+      "slug": "capital",
+      "cover": "/images/reading-covers/capital.png"
+    },
+    {
+      "title": "The Globalization Paradox",
+      "slug": "the-globalization-paradox",
+      "cover": "/images/reading-covers/the-globalization-paradox.png"
+    },
+    {
+      "title": "The Great Divergence",
+      "slug": "the-great-divergence",
+      "cover": "/images/reading-covers/the-great-divergence-solid.png"
+    },
+    {
+      "title": "台北人",
+      "slug": "taipei-people",
+      "cover": "/images/reading-covers/taipei-people.png"
+    },
+    {
+      "title": "牡丹亭",
+      "slug": "the-peony-pavilion",
+      "cover": "/images/reading-covers/the-peony-pavilion.png"
+    },
+    {
+      "title": "Miyazakiworld",
+      "slug": "miyazakiworld",
+      "cover": "/images/reading-covers/miyazakiworld.png"
+    },
+    {
+      "title": "耻",
+      "slug": "disgrace",
+      "cover": "/images/reading-covers/disgrace.png"
+    },
+    {
+      "title": "The Inevitable (必然)",
+      "slug": "the-inevitable",
+      "cover": "/images/reading-covers/the-inevitable.png"
+    },
+    {
+      "title": "Outliers",
+      "slug": "outliers",
+      "cover": "/images/reading-covers/outliers.png"
+    },
+    {
+      "title": "段永平传",
+      "slug": "duan-yongping-biography",
+      "cover": "/images/reading-covers/duan-yongping-biography.png"
+    },
+    {
+      "title": "运营之光：我的互联网运营方法论与自白",
+      "slug": "the-light-of-operations",
+      "cover": "/images/reading-covers/the-light-of-operations.png"
+    },
+    {
+      "title": "真需求 (True Demand)",
+      "slug": "true-demand",
+      "cover": "/images/reading-covers/true-demand.png"
+    },
+    {
+      "title": "How to Win Friends and Influence People",
+      "slug": "how-to-win-friends",
+      "cover": "/images/reading-covers/how-to-win-friends.png"
+    },
+    {
+      "title": "Poor Charlie's Almanack",
+      "slug": "poor-charlies-almanack",
+      "cover": "/images/reading-covers/poor-charlies-almanack.png"
+    },
+    {
+      "title": "Man's Search for Meaning",
+      "slug": "mans-search-for-meaning",
+      "cover": "/images/reading-covers/mans-search-for-meaning.png"
+    },
+    {
+      "title": "Capitalism, Socialism and Democracy",
+      "slug": "capitalism-socialism-democracy",
+      "cover": "/images/reading-covers/capitalism-socialism-democracy-solid.png"
+    },
+    {
+      "title": "The Score Takes Care of Itself",
+      "slug": "the-score-takes-care-of-itself",
+      "cover": "/images/reading-covers/the-score-takes-care-of-itself.png"
+    },
+    {
+      "title": "Steve Jobs",
+      "slug": "steve-jobs",
+      "cover": "/images/reading-covers/steve-jobs.png"
+    },
+    {
+      "title": "To Sell Is Human",
+      "slug": "to-sell-is-human",
+      "cover": "/images/reading-covers/to-sell-is-human.png"
+    },
+    {
+      "title": "On Task",
+      "slug": "on-task",
+      "cover": "/images/reading-covers/on-task.png"
+    },
+    {
+      "title": "The Technological Republic",
+      "slug": "the-technological-republic",
+      "cover": "/images/reading-covers/the-technological-republic.png"
+    },
+    {
+      "title": "Zen and the Art of Motorcycle Maintenance",
+      "slug": "zen-motorcycle-maintenance",
+      "cover": "/images/reading-covers/zen-motorcycle-maintenance.png"
+    },
+    {
+      "title": "A Culture of Growth",
+      "slug": "a-culture-of-growth",
+      "cover": "/images/reading-covers/a-culture-of-growth.png"
+    },
+    {
+      "title": "价值 (Value)",
+      "slug": "value-zhang-lei",
+      "cover": "/images/reading-covers/value-zhang-lei.png"
+    },
+    {
+      "title": "The Beginning of Infinity",
+      "slug": "the-beginning-of-infinity",
+      "cover": "/images/reading-covers/the-beginning-of-infinity.png"
+    }
+  ]
+}

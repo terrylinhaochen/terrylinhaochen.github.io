@@ -1,5 +1,16 @@
-<div class="book-cover reading-art reading-art--{{ .slug }}" style="background-color:{{ .color }}">
-  {{ $version := md5 (readFile (printf "static%s" .cover)) }}
-  <img src="{{ .cover }}?v={{ $version }}" alt="" loading="lazy" width="400" height="600">
-  <div class="reading-art-caption"><strong>{{ .title }}</strong><span>{{ .year }}</span></div>
+{{- $entry := . }}
+{{- $page := site.GetPage (printf "/reading/library/%s" .slug) }}
+{{- $title := $page.Title | default .title }}
+{{- $author := $page.Params.bookAuthor | default "" }}
+{{- $cover := .cover }}
+{{- with index site.Data.reading_cover_assets.books .slug }}{{ $cover = .cover }}{{ end }}
+{{- $version := md5 (readFile (printf "static%s" $cover)) }}
+<div class="book-cover reading-art reading-art--{{ .slug }}" style="--cloth:{{ .color }}">
+ <span class="jacket{{ if gt (len $title) 28 }} jacket--long{{ end }}{{ if gt (len $title) 50 }} jacket--very-long{{ end }}" aria-hidden="true">
+  <span class="jacket-back"></span><span class="jacket-pages"></span><span class="jacket-page-top"></span><span class="jacket-page-bottom"></span>
+  <span class="jacket-spine"><span>{{ $title }}</span></span><span class="jacket-board-edge"></span><span class="jacket-board-foot"></span>
+  <span class="jacket-face"><span class="jacket-art"><img src="{{ $cover }}?v={{ $version }}" alt="" loading="lazy" width="848" height="1264" draggable="false"></span>
+   <span class="jacket-type"><span class="jacket-title">{{ $title }}</span><span class="jacket-author">{{ $author }}</span></span>
+  </span>
+ </span>
 </div>

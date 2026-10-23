@@ -1,4 +1,5 @@
 {{ define "main" }}
+<div class="reading-shelf">
 <header class="page-header">
   <h1 class="post-title">{{ .Title }}</h1>
 </header>
@@ -133,11 +134,11 @@
 /* Gallery grid */
 .book-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 42px 24px;
 }
-@media (max-width: 500px) {
-  .book-gallery { grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 1rem; }
+@media (max-width: 700px) {
+  .book-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 18px; }
 }
 
 .gallery-toggle {
@@ -322,4 +323,5 @@ document.addEventListener('DOMContentLoaded', function() {
   document.addEventListener('keydown', e => { if (e.key === 'Escape') modal.style.display = 'none'; });
 });
 </script>
+</div>
 {{ end }}

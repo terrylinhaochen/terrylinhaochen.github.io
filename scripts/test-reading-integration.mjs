@@ -21,7 +21,7 @@ try{
   const response=await page.goto(base+book.url);assert.equal(response.status(),200);
   assert.ok((await page.locator('.post-content').first().innerText()).length>500);
   assert.ok(await page.getByRole('link',{name:'Speed read ↗'}).isVisible());
-  assert.equal(await page.locator('.reading-art-caption strong').innerText(),book.title);if(book.readingStatus==='shelf')assert.match(await page.locator('.reading-eyebrow').innerText(),/On the shelf.*To read/i);
+  assert.equal(await page.locator('.jacket-title').innerText(),await page.locator('.reading-book-header h1').innerText());if(book.readingStatus==='shelf')assert.match(await page.locator('.reading-eyebrow').innerText(),/On the shelf.*To read/i);
   await page.getByRole('link',{name:'Speed read ↗'}).click();
   await page.waitForURL('**/reading/focus/**');
   await page.waitForFunction(url=>document.querySelector('[data-reader-exit]')?.getAttribute('href')?.startsWith(url),book.url);

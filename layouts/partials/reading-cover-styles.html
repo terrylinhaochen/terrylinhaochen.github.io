@@ -1,15 +1,33 @@
+{{ $jacket := resources.Get "css/reading-jacket.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $jacket.RelPermalink }}" integrity="{{ $jacket.Data.Integrity }}">
 <style>
-.reading-art { container-type:inline-size; position:relative; aspect-ratio:2/3; overflow:hidden; border-radius:9px; box-shadow:0 5px 14px #0002; }
-.reading-art img { display:block; width:100%; height:100%; object-fit:cover; margin:0; }
-.reading-art-caption { position:absolute; inset:auto 0 0; height:33%; box-sizing:border-box; padding:0 9% 7%; display:flex; flex-direction:column; justify-content:flex-end; gap:5px; color:#fff; background:linear-gradient(transparent,#0002); }
-.reading-art-caption strong { font:700 clamp(13px,10cqw,21px)/1.15 Georgia,serif; overflow-wrap:break-word; }
-.reading-art-caption span { font:600 clamp(9px,6cqw,11px)/1.3 system-ui,sans-serif; letter-spacing:1.5px; }
-.reading-art--the-design-of-everyday-things .reading-art-caption { color:#17202b; background:none; }
-.book-card--digest { display:block; text-decoration:none; border-radius:9px; }
+.reading-shelf { --font-serif: Georgia, 'Times New Roman', serif; --shelf-ink:#30372f; }
+.main:has(.reading-shelf) { max-width:1160px; }
+.reading-shelf .page-header h1 { font:400 clamp(44px,6vw,64px)/1.05 Georgia,serif; letter-spacing:-.045em; }
+.reading-shelf .reading-intro { max-width:690px; color:var(--secondary); line-height:1.75; }
+.reading-shelf .reading-section-title { font:400 30px/1.2 Georgia,serif; letter-spacing:-.025em; margin-top:48px; padding-bottom:18px; }
+.reading-shelf .recommend-banner { border-radius:13px; background:var(--entry); }
+.reading-shelf .recommend-button { border-radius:24px; background:#354b38; color:#fffaf0; }
+.book-card--digest { display:block; min-width:0; text-decoration:none; }
 .book-card--digest[hidden] { display:none; }
-.book-card--digest:focus-visible { outline:3px solid var(--primary); outline-offset:5px; }
-.book-meta .reading-guide-label { margin-top:5px; font-size:11px; opacity:.8; }
-@media(prefers-reduced-motion:reduce){.book-card:hover .book-cover{transform:none}}
-:is(.reading-art--yujun-product-methodology,.reading-art--the-crowd,.reading-art--the-globalization-paradox,.reading-art--disgrace,.reading-art--the-inevitable,.reading-art--outliers,.reading-art--true-demand,.reading-art--mans-search-for-meaning,.reading-art--zen-motorcycle-maintenance,.reading-art--a-culture-of-growth,.reading-art--value-zhang-lei,.reading-art--the-beginning-of-infinity) .reading-art-caption { background:none; }
-:is(.reading-art--capitalism-socialism-democracy,.reading-art--the-great-divergence,.reading-art--the-mom-test,.reading-art--how-to-win-friends,.reading-art--poor-charlies-almanack) .reading-art-caption { background:none; }
+.book-card--digest:focus-visible { outline:2px solid #718459; outline-offset:6px; border-radius:13px; }
+.reading-cover-well { display:flex; position:relative; align-items:center; justify-content:center; height:270px; border-radius:13px; background:#e2e3d6; perspective:1000px; }
+.book-card:nth-child(3n+2) .reading-cover-well { background:#e9e0d2; }
+.book-card:nth-child(3n) .reading-cover-well { background:#e0e4df; }
+.book-card .reading-art, .reading-book-header .reading-art { --font-serif:Georgia,'Times New Roman',serif; display:block; position:relative; width:130px; aspect-ratio:2/3; overflow:visible; border:0; border-radius:0; background:none; box-shadow:none; transform-style:preserve-3d; transform:rotateY(-24deg) rotateZ(-4deg); transition:transform .35s ease; }
+.book-card:hover .reading-art { transform:translateY(-8px) rotateY(-32deg) rotateZ(-2deg); box-shadow:none; }
+.reading-art .jacket-art img { height:auto; object-fit:initial; border-radius:0; }
+.reading-open { position:absolute; right:17px; bottom:14px; font-size:18px; color:#626e57; }
+.book-card--digest .book-meta { padding:20px 2px 0; margin:0; }
+.book-card--digest .book-meta .reading-guide-label { font:600 9px/1.5 system-ui,sans-serif; text-transform:uppercase; letter-spacing:.1em; margin:0 0 9px; color:var(--secondary); }
+.book-card--digest .book-meta h4 { font:400 25px/1.1 Georgia,serif; letter-spacing:-.025em; overflow-wrap:anywhere; margin:0 0 9px; }
+.book-card--digest .book-meta>p:not(.reading-guide-label) { font-size:12px; line-height:1.6; }
+.book-card--digest .book-meta .reading-book-description { margin-top:13px; font-size:13px; line-height:1.75; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; }
+.reading-book-header { perspective:1000px; }
+.reading-book-header .reading-art { width:140px; margin:20px 10px; }
+.dark .reading-cover-well { background:#373d35; }.dark .book-card:nth-child(3n+2) .reading-cover-well { background:#423d35; }.dark .book-card:nth-child(3n) .reading-cover-well { background:#343e3b; }.dark .reading-open { color:#c1cab4; }
+@media(max-width:1000px) and (min-width:701px) { .reading-shelf .book-gallery { grid-template-columns:repeat(3,minmax(0,1fr)); gap:34px 20px; } }
+@media(max-width:700px) { .reading-cover-well { height:215px; }.book-card .reading-art { width:100px; }.book-card--digest .book-meta h4 { font-size:23px; }.reading-book-header .reading-art { width:100px; margin:12px 5px; } }
+@media(max-width:360px) { .reading-cover-well { height:185px; }.book-card .reading-art { width:83px; }.book-card--digest .book-meta h4 { font-size:20px; } }
+@media(prefers-reduced-motion:reduce){.book-card .reading-art{transition:none}.book-card:hover .reading-art{transform:rotateY(-24deg) rotateZ(-4deg)}}
 </style>
