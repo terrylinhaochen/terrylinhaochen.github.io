@@ -1,0 +1,115 @@
+{
+  "date": "2026-11-02",
+  "method": "Built-in image generation",
+  "style": "Single cel-shaded sticker object, warm-white outline, saturated background, no text; the existing cream title panel supplies typography.",
+  "references": [
+    "static/images/reading-covers/awb/the-mom-test.jpg",
+    "static/images/reading-covers/awb/the-design-of-everyday-things.jpg"
+  ],
+  "books": [
+    {
+      "slug": "capital",
+      "title": "Capital (Das Kapital)",
+      "source": "/Users/terry/.codex/generated_images/01a19e92-fbdb-7201-9829-459be9a40917/exec-11273482-76db-4ed5-b347-5be55b640a14.png",
+      "destination": "static/images/reading-covers/series-202611/capital.png",
+      "prompt": "Create a single original portrait 2:3 editorial illustration for the art layer of a book jacket. The two supplied images are approved STYLE REFERENCES ONLY: match their confident rounded contours, warm-white sticker border, crisp dark outline, 2–3 broad cel-shaded color planes, and simple drawn-object character. Match the blue door handle's moderate detail, not realistic materials or 3D rendering. Opaque perfectly uniform saturated background edge to edge: no gradient, glow, vignette, grain, texture, lighting effects, or scenery. One coherent object, about 60% of canvas width. CRITICAL COMPOSITION: the entire illustration including border and shadow must fit between 10% and 55% of canvas height, horizontally centered; bottom 40% stays entirely empty background because a cream title panel will cover it in the website. Only one short flat dark offset shadow immediately behind the sticker, no soft shadow. No typography, letters, numbers, logos, photographed book, title panel, or mockup. Book: Capital (Das Kapital). Background: solid deep burgundy #811d38. Subject: One chunky golden factory flywheel with six broad spokes and a navy-blue hub, seen at a slight three-quarter angle. A single physical machine part as a metaphor for production. No coin, portrait, factory silhouette, smoke, gears within gears, or extra icons.",
+      "sha256": "6c6a0b7abd32b02cd455cb7e2d4b9d9b358aca94504774a85827c7ab139e3284"
+    },
+    {
+      "slug": "the-globalization-paradox",
+      "title": "The Globalization Paradox",
+      "source": "/Users/terry/.codex/generated_images/01a19e92-fbdb-7201-9829-459be9a40917/exec-44901f32-4ae2-4eef-bc57-95c2f7498ebc.png",
+      "destination": "static/images/reading-covers/series-202611/the-globalization-paradox.png",
+      "prompt": "Create a single original portrait 2:3 editorial illustration for the art layer of a book jacket. The two supplied images are approved STYLE REFERENCES ONLY: match their confident rounded contours, warm-white sticker border, crisp dark outline, 2–3 broad cel-shaded color planes, and simple drawn-object character. Match the blue door handle's moderate detail, not realistic materials or 3D rendering. Opaque perfectly uniform saturated background edge to edge: no gradient, glow, vignette, grain, texture, lighting effects, or scenery. One coherent object, about 60% of canvas width. CRITICAL COMPOSITION: the entire illustration including border and shadow must fit between 10% and 55% of canvas height, horizontally centered; bottom 40% stays entirely empty background because a cream title panel will cover it in the website. Only one short flat dark offset shadow immediately behind the sticker, no soft shadow. No typography, letters, numbers, logos, photographed book, title panel, or mockup. Book: The Globalization Paradox. Background: solid deep teal #086e73. Subject: One bright golden desktop globe on a simple triangular stand. Blue sphere with only three broad green continent shapes and one curved cream longitude line. No detailed geography, separate triangle diagram, flags or miniature objects.",
+      "sha256": "0abe16428cb0f7769090f6ba794f36d235195e86de259b111986e82af65659fb"
+    },
+    {
+      "slug": "the-great-divergence",
+      "title": "The Great Divergence",
+      "source": "/Users/terry/.codex/generated_images/01a19e92-fbdb-7201-9829-459be9a40917/exec-da5ae178-27c1-41ba-a3c8-d0fea31b690e.png",
+      "destination": "static/images/reading-covers/series-202611/the-great-divergence.png",
+      "prompt": "Create a single original portrait 2:3 editorial illustration for the art layer of a book jacket. The two supplied images are approved STYLE REFERENCES ONLY: match their confident rounded contours, warm-white sticker border, crisp dark outline, 2–3 broad cel-shaded color planes, and simple drawn-object character. Match the blue door handle's moderate detail, not realistic materials or 3D rendering. Opaque perfectly uniform saturated background edge to edge: no gradient, glow, vignette, grain, texture, lighting effects, or scenery. One coherent object, about 60% of canvas width. CRITICAL COMPOSITION: the entire illustration including border and shadow must fit between 10% and 55% of canvas height, horizontally centered; bottom 40% stays entirely empty background because a cream title panel will cover it in the website. Only one short flat dark offset shadow immediately behind the sticker, no soft shadow. No typography, letters, numbers, logos, photographed book, title panel, or mockup. Book: The Great Divergence. Background: solid indigo #363997. Subject: One golden railway switch: a short, chunky Y-shaped section of rails, with five broad dark-blue sleepers, a single physical track object seen from above at a slight angle. No landscape, train, mountain, buildings or distant perspective.",
+      "sha256": "6adda99ea4877324d7e34ade93ca82af03b67618bf70a2efd2a4b3e7e88dd8b9"
+    },
+    {
+      "slug": "taipei-people",
+      "title": "台北人 (Taipei People)",
+      "source": "/Users/terry/.codex/generated_images/01a19e92-fbdb-7201-9829-459be9a40917/exec-fec3fed9-7ac8-494c-b121-6b0afc8ca7d1.png",
+      "destination": "static/images/reading-covers/series-202611/taipei-people.png",
+      "prompt": "Create a single original portrait 2:3 editorial illustration for the art layer of a book jacket. The two supplied images are approved STYLE REFERENCES ONLY: match their confident rounded contours, warm-white sticker border, crisp dark outline, 2–3 broad cel-shaded color planes, and simple drawn-object character. Match the blue door handle's moderate detail, not realistic materials or 3D rendering. Opaque perfectly uniform saturated background edge to edge: no gradient, glow, vignette, grain, texture, lighting effects, or scenery. One coherent object, about 60% of canvas width. CRITICAL COMPOSITION: the entire illustration including border and shadow must fit between 10% and 55% of canvas height, horizontally centered; bottom 40% stays entirely empty background because a cream title panel will cover it in the website. Only one short flat dark offset shadow immediately behind the sticker, no soft shadow. No typography, letters, numbers, logos, photographed book, title panel, or mockup. Book: 台北人 (Taipei People). Background: solid deep emerald #147153. Subject: One slightly open golden vintage window frame with two broad blue glass panes and a single warm coral curtain folded to one side. A self-contained domestic object suggesting memory and displacement. No people, city, landscape or tiny architectural detail.",
+      "sha256": "9812ceb512a176bf722be1497b8bf06c5007208fcf4eb4b0a2367e1596be9fa4"
+    },
+    {
+      "slug": "the-peony-pavilion",
+      "title": "牡丹亭 (The Peony Pavilion)",
+      "source": "/Users/terry/.codex/generated_images/01a19e92-fbdb-7201-9829-459be9a40917/exec-9a1377fd-b82e-4f3b-82a7-3688b320e50e.png",
+      "destination": "static/images/reading-covers/series-202611/the-peony-pavilion.png",
+      "prompt": "Create a single original portrait 2:3 editorial illustration for the art layer of a book jacket. The two supplied images are approved STYLE REFERENCES ONLY: match their confident rounded contours, warm-white sticker border, crisp dark outline, 2–3 broad cel-shaded color planes, and simple drawn-object character. Match the blue door handle's moderate detail, not realistic materials or 3D rendering. Opaque perfectly uniform saturated background edge to edge: no gradient, glow, vignette, grain, texture, lighting effects, or scenery. One coherent object, about 60% of canvas width. CRITICAL COMPOSITION: the entire illustration including border and shadow must fit between 10% and 55% of canvas height, horizontally centered; bottom 40% stays entirely empty background because a cream title panel will cover it in the website. Only one short flat dark offset shadow immediately behind the sticker, no soft shadow. No typography, letters, numbers, logos, photographed book, title panel, or mockup. Book: 牡丹亭 (The Peony Pavilion). Background: solid raspberry pink #ab2764. Subject: One open Chinese folding fan in golden yellow with five broad rounded folds, a simple coral peony blossom of five rounded petals printed on its face, and a short navy handle. One recognizable theatrical object, no pavilion scenery or intricate floral pattern.",
+      "sha256": "b0466beb00b650d2be3a0f7237d12f5154dce383f24741368d802f46c9839012"
+    },
+    {
+      "slug": "miyazakiworld",
+      "title": "Miyazakiworld",
+      "source": "/Users/terry/.codex/generated_images/01a19e92-fbdb-7201-9829-459be9a40917/exec-7d89f1d8-761d-4054-9a27-98a9266ffc6c.png",
+      "destination": "static/images/reading-covers/series-202611/miyazakiworld.png",
+      "prompt": "Create a single original portrait 2:3 editorial illustration for the art layer of a book jacket. The two supplied images are approved STYLE REFERENCES ONLY: match their confident rounded contours, warm-white sticker border, crisp dark outline, 2–3 broad cel-shaded color planes, and simple drawn-object character. Match the blue door handle's moderate detail, not realistic materials or 3D rendering. Opaque perfectly uniform saturated background edge to edge: no gradient, glow, vignette, grain, texture, lighting effects, or scenery. One coherent object, about 60% of canvas width. CRITICAL COMPOSITION: the entire illustration including border and shadow must fit between 10% and 55% of canvas height, horizontally centered; bottom 40% stays entirely empty background because a cream title panel will cover it in the website. Only one short flat dark offset shadow immediately behind the sticker, no soft shadow. No typography, letters, numbers, logos, photographed book, title panel, or mockup. Book: Miyazakiworld. Background: solid cobalt #1763b2. Subject: One small cream-and-golden hand-built toy glider, seen at a playful three-quarter angle, with broad wings, coral tail, and one simple navy propeller. An original aviation object, no copyrighted characters, forest, landscape, clouds or extra emblems.",
+      "sha256": "3a3f43b09bce01d3be28d39452a17aacfe592a163c413de5904216772d80e767"
+    },
+    {
+      "slug": "disgrace",
+      "title": "耻 (Disgrace)",
+      "source": "/Users/terry/.codex/generated_images/01a19e92-fbdb-7201-9829-459be9a40917/exec-635ae67a-3a61-47e6-b891-f41b7ebc1227.png",
+      "destination": "static/images/reading-covers/series-202611/disgrace.png",
+      "prompt": "Create a single original portrait 2:3 editorial illustration for the art layer of a book jacket. The two supplied images are approved STYLE REFERENCES ONLY: match their confident rounded contours, warm-white sticker border, crisp dark outline, 2–3 broad cel-shaded color planes, and simple drawn-object character. Match the blue door handle's moderate detail, not realistic materials or 3D rendering. Opaque perfectly uniform saturated background edge to edge: no gradient, glow, vignette, grain, texture, lighting effects, or scenery. One coherent object, about 60% of canvas width. CRITICAL COMPOSITION: the entire illustration including border and shadow must fit between 10% and 55% of canvas height, horizontally centered; bottom 40% stays entirely empty background because a cream title panel will cover it in the website. Only one short flat dark offset shadow immediately behind the sticker, no soft shadow. No typography, letters, numbers, logos, photographed book, title panel, or mockup. Book: 耻 (Disgrace). Background: solid burnt sienna #914428. Subject: One dark navy shield with a single broad zigzag crack across it, a cobalt side plane and one cream highlight. A sober symbol of damaged authority. No sprout, face, weapon, metallic texture, distressing or dramatic glow.",
+      "sha256": "b20c9e2a7dd7fed8b9215c11f3bd4f53bfc541b00689a4568561af1c1dcee956"
+    },
+    {
+      "slug": "duan-yongping-biography",
+      "title": "段永平传",
+      "source": "/Users/terry/.codex/generated_images/01a19e92-fbdb-7201-9829-459be9a40917/exec-958b533b-291e-4817-99ee-061597aab846.png",
+      "destination": "static/images/reading-covers/series-202611/duan-yongping-biography.png",
+      "prompt": "Create a single original portrait 2:3 editorial illustration for the art layer of a book jacket. The two supplied images are approved STYLE REFERENCES ONLY: match their confident rounded contours, warm-white sticker border, crisp dark outline, 2–3 broad cel-shaded color planes, and simple drawn-object character. Match the blue door handle's moderate detail, not realistic materials or 3D rendering. Opaque perfectly uniform saturated background edge to edge: no gradient, glow, vignette, grain, texture, lighting effects, or scenery. One coherent object, about 60% of canvas width. CRITICAL COMPOSITION: the entire illustration including border and shadow must fit between 10% and 55% of canvas height, horizontally centered; bottom 40% stays entirely empty background because a cream title panel will cover it in the website. Only one short flat dark offset shadow immediately behind the sticker, no soft shadow. No typography, letters, numbers, logos, photographed book, title panel, or mockup. Book: 段永平传. Background: solid royal blue #225cc0. Subject: One golden pocket compass with a single broad coral-and-cream needle, chunky rounded rim and a small top loop. Only four simple large tick marks without letters or numbers. A steady direction for long-term business decisions; no money, portrait or charts.",
+      "sha256": "6d4b428add675b1b807a46c825ccc03954bba47bed3b4408a8365dd73fdbe925"
+    },
+    {
+      "slug": "the-light-of-operations",
+      "title": "运营之光",
+      "source": "/Users/terry/.codex/generated_images/01a19e92-fbdb-7201-9829-459be9a40917/exec-807cbd30-0073-4ffb-9c12-723fcbe71b3c.png",
+      "destination": "static/images/reading-covers/series-202611/the-light-of-operations.png",
+      "prompt": "Create a single original portrait 2:3 editorial illustration for the art layer of a book jacket. The two supplied images are approved STYLE REFERENCES ONLY: match their confident rounded contours, warm-white sticker border, crisp dark outline, 2–3 broad cel-shaded color planes, and simple drawn-object character. Match the blue door handle's moderate detail, not realistic materials or 3D rendering. Opaque perfectly uniform saturated background edge to edge: no gradient, glow, vignette, grain, texture, lighting effects, or scenery. One coherent object, about 60% of canvas width. CRITICAL COMPOSITION: the entire illustration including border and shadow must fit between 10% and 55% of canvas height, horizontally centered; bottom 40% stays entirely empty background because a cream title panel will cover it in the website. Only one short flat dark offset shadow immediately behind the sticker, no soft shadow. No typography, letters, numbers, logos, photographed book, title panel, or mockup. Book: 运营之光. Background: solid violet #663696. Subject: One warm-yellow workbench desk lamp with two chunky hinged arms, a rounded coral lampshade and broad circular base. The lamp is the single illustrated object, no cast light cone, wires, desk, bulb rays or background effects.",
+      "sha256": "7c9b7e312b37f4abb72eaa3cc3647d2d8ca14ceee7a7ae777f0a14070ac4125b"
+    },
+    {
+      "slug": "poor-charlies-almanack",
+      "title": "Poor Charlie's Almanack",
+      "source": "/Users/terry/.codex/generated_images/01a19e92-fbdb-7201-9829-459be9a40917/exec-e967b5d9-8ed2-4d27-9d68-3cb8d3040e01.png",
+      "destination": "static/images/reading-covers/series-202611/poor-charlies-almanack.png",
+      "prompt": "Create a single original portrait 2:3 editorial illustration for the art layer of a book jacket. The two supplied images are approved STYLE REFERENCES ONLY: match their confident rounded contours, warm-white sticker border, crisp dark outline, 2–3 broad cel-shaded color planes, and simple drawn-object character. Match the blue door handle's moderate detail, not realistic materials or 3D rendering. Opaque perfectly uniform saturated background edge to edge: no gradient, glow, vignette, grain, texture, lighting effects, or scenery. One coherent object, about 60% of canvas width. CRITICAL COMPOSITION: the entire illustration including border and shadow must fit between 10% and 55% of canvas height, horizontally centered; bottom 40% stays entirely empty background because a cream title panel will cover it in the website. Only one short flat dark offset shadow immediately behind the sticker, no soft shadow. No typography, letters, numbers, logos, photographed book, title panel, or mockup. Book: Poor Charlie's Almanack. Background: solid wine red #79323e. Subject: One sturdy golden carpenter's folding rule folded into three connected broad segments, with just a few widely spaced navy tick marks, no digits. A single tool suggesting multiple mental models and practical judgment, no coins, portraits or collaged symbols.",
+      "sha256": "701789792d31dabaccb250ed829129bc9c075fea48c390288d6b6d868027953a"
+    },
+    {
+      "slug": "mans-search-for-meaning",
+      "title": "Man's Search for Meaning",
+      "source": "/Users/terry/.codex/generated_images/01a19e92-fbdb-7201-9829-459be9a40917/exec-f962c0b2-4bb8-452a-a5ff-75517ff7eb2e.png",
+      "destination": "static/images/reading-covers/series-202611/mans-search-for-meaning.png",
+      "prompt": "Create a single original portrait 2:3 editorial illustration for the art layer of a book jacket. The two supplied images are approved STYLE REFERENCES ONLY: match their confident rounded contours, warm-white sticker border, crisp dark outline, 2–3 broad cel-shaded color planes, and simple drawn-object character. Match the blue door handle's moderate detail, not realistic materials or 3D rendering. Opaque perfectly uniform saturated background edge to edge: no gradient, glow, vignette, grain, texture, lighting effects, or scenery. One coherent object, about 60% of canvas width. CRITICAL COMPOSITION: the entire illustration including border and shadow must fit between 10% and 55% of canvas height, horizontally centered; bottom 40% stays entirely empty background because a cream title panel will cover it in the website. Only one short flat dark offset shadow immediately behind the sticker, no soft shadow. No typography, letters, numbers, logos, photographed book, title panel, or mockup. Book: Man's Search for Meaning. Background: solid deep blue #394785. Subject: One small golden lantern with a broad rounded handle and one steady coral flame behind a single pale cream window. Clean navy side plane, quiet and dignified. No glow, rays, landscape, prison imagery or extra objects.",
+      "sha256": "1e48358af53e81f5ec9afbf5371d4978c045abd710875e95145d488272f1537e"
+    },
+    {
+      "slug": "capitalism-socialism-democracy",
+      "title": "Capitalism, Socialism and Democracy",
+      "source": "/Users/terry/.codex/generated_images/01a19e92-fbdb-7201-9829-459be9a40917/exec-7ccefd81-9722-4250-a0b1-23a88ca7a981.png",
+      "destination": "static/images/reading-covers/series-202611/capitalism-socialism-democracy.png",
+      "prompt": "Create a single original portrait 2:3 editorial illustration for the art layer of a book jacket. The two supplied images are approved STYLE REFERENCES ONLY: match their confident rounded contours, warm-white sticker border, crisp dark outline, 2–3 broad cel-shaded color planes, and simple drawn-object character. Match the blue door handle's moderate detail, not realistic materials or 3D rendering. Opaque perfectly uniform saturated background edge to edge: no gradient, glow, vignette, grain, texture, lighting effects, or scenery. One coherent object, about 60% of canvas width. CRITICAL COMPOSITION: the entire illustration including border and shadow must fit between 10% and 55% of canvas height, horizontally centered; bottom 40% stays entirely empty background because a cream title panel will cover it in the website. Only one short flat dark offset shadow immediately behind the sticker, no soft shadow. No typography, letters, numbers, logos, photographed book, title panel, or mockup. Book: Capitalism, Socialism and Democracy. Background: solid teal #236c71. Subject: One golden ballot box with a broad coral lid, a simple dark slot and one blank cream ballot entering it at a slight angle. The box is gently rounded with a blue side plane, readable and calm. No letters, checkmarks, portraits, money, political logos or multi-symbol collage.",
+      "sha256": "f6d52a5e43a566c0f376d069547a690ecbe88d162240ccf11b981ab55f9051cb"
+    },
+    {
+      "slug": "the-score-takes-care-of-itself",
+      "title": "The Score Takes Care of Itself",
+      "source": "/Users/terry/.codex/generated_images/01a19e92-fbdb-7201-9829-459be9a40917/exec-2beb9321-2a94-446c-8ded-eb477e4eb13d.png",
+      "destination": "static/images/reading-covers/series-202611/the-score-takes-care-of-itself.png",
+      "prompt": "Create a single original portrait 2:3 editorial illustration for the art layer of a book jacket. The two supplied images are approved STYLE REFERENCES ONLY: match their confident rounded contours, warm-white sticker border, crisp dark outline, 2–3 broad cel-shaded color planes, and simple drawn-object character. Match the blue door handle's moderate detail, not realistic materials or 3D rendering. Opaque perfectly uniform saturated background edge to edge: no gradient, glow, vignette, grain, texture, lighting effects, or scenery. One coherent object, about 60% of canvas width. CRITICAL COMPOSITION: the entire illustration including border and shadow must fit between 10% and 55% of canvas height, horizontally centered; bottom 40% stays entirely empty background because a cream title panel will cover it in the website. Only one short flat dark offset shadow immediately behind the sticker, no soft shadow. No typography, letters, numbers, logos, photographed book, title panel, or mockup. Book: The Score Takes Care of Itself. Background: solid cobalt blue #2659b2. Subject: One golden coach's whistle with a coral mouthpiece and a short simple navy loop, shown in three-quarter view. A single tactile sports object suggesting standards and practice. No trophy, football, scoreboard, letters, numbers or rays.",
+      "sha256": "61397832613e95d4a7dbadf3e1acece414440888d11cc348be3596d65a63453f"
+    }
+  ]
+}

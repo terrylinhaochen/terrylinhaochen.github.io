@@ -3,6 +3,8 @@
 <style>
 .reading-shelf { --font-serif: Georgia, 'Times New Roman', serif; --shelf-ink:#30372f; }
 .main:has(.reading-shelf) { max-width:1160px; }
+/* Keep the complete sticker inside the jacket's 60% illustration panel. */
+.reading-art--series-202611 .jacket-art img { top:-8%; }
 .reading-shelf .page-header h1 { font:400 clamp(44px,6vw,64px)/1.05 Georgia,serif; letter-spacing:-.045em; }
 .reading-shelf .reading-intro { max-width:690px; color:var(--secondary); line-height:1.75; }
 .reading-shelf .reading-section-title { font:400 30px/1.2 Georgia,serif; letter-spacing:-.025em; margin-top:48px; padding-bottom:18px; }

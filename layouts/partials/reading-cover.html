@@ -4,8 +4,10 @@
 {{- $author := $page.Params.bookAuthor | default "" }}
 {{- $cover := .cover }}
 {{- with index site.Data.reading_cover_assets.books .slug }}{{ $cover = .cover }}{{ end }}
+{{- $override := index site.Data.reading_cover_overrides .slug }}
+{{- with $override }}{{ $cover = .cover }}{{ end }}
 {{- $version := md5 (readFile (printf "static%s" $cover)) }}
-<div class="book-cover reading-art reading-art--{{ .slug }}" style="--cloth:{{ .color }}">
+<div class="book-cover reading-art reading-art--{{ .slug }}{{ with $override }} reading-art--series-{{ .series }}{{ end }}" style="--cloth:{{ .color }}">
  <span class="jacket{{ if gt (len $title) 28 }} jacket--long{{ end }}{{ if gt (len $title) 50 }} jacket--very-long{{ end }}" aria-hidden="true">
   <span class="jacket-back"></span><span class="jacket-pages"></span><span class="jacket-page-top"></span><span class="jacket-page-bottom"></span>
   <span class="jacket-spine"><span>{{ $title }}</span></span><span class="jacket-board-edge"></span><span class="jacket-board-foot"></span>
